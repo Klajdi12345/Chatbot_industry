@@ -1,0 +1,39 @@
+{
+  "_shenim": "Emrat anglisht të simptomave dhe gjendjeve (të shkruar me dorë). I jepen modelit si fjalor i detyrueshëm kur përkthen përgjigjen, që termat mjekësorë të mos përkthehen gabim.",
+  "simptomat": {
+    "dhimbje_koke": "Headache", "dhimbje_dhembi": "Toothache", "temperature": "Fever (high temperature)",
+    "grip_ftohje": "Flu / common cold", "dhimbje_fyti": "Sore throat", "kolle_thate": "Dry cough",
+    "kolle_gelbaze": "Chesty cough (with phlegm)", "bllokim_hunde": "Blocked / runny nose",
+    "alergji": "Seasonal allergy (hay fever)", "kruajtje_lekure": "Itchy skin / insect bite",
+    "kerpudha_lekure": "Fungal skin infection", "urth": "Heartburn / acid reflux", "diarre": "Diarrhoea",
+    "kapsllek": "Constipation", "fryrje_gazra": "Bloating / gas", "dhimbje_barku": "Stomach cramps",
+    "dhimbje_menstruale": "Period pain", "dhimbje_muskulore": "Muscle / joint pain, sprain",
+    "dhimbje_shpine": "Back pain", "nauze_te_vjella": "Nausea and vomiting", "semundje_udhetimi": "Motion sickness",
+    "dhimbje_veshi": "Earache", "pagjumesi": "Insomnia", "afte_gojore": "Mouth ulcers",
+    "herpes_labial": "Cold sores", "hemorroide": "Haemorrhoids (piles)", "sy_te_thate": "Dry / tired eyes",
+    "konjuktivit_alergjik": "Red itchy eyes (allergic conjunctivitis)", "akne": "Acne", "djegie_lekure": "Minor burn",
+    "plage_e_vogel": "Small cut / scrape", "morra": "Head lice", "zbokth": "Dandruff",
+    "kandidoze_vaginale": "Vaginal thrush (yeast infection)", "cistit": "Burning when urinating (cystitis)",
+    "marramendje": "Dizziness", "lodhje": "Persistent tiredness", "krimba": "Threadworms (pinworms)",
+    "lenie_duhani": "Quitting smoking", "lekure_e_thate": "Dry skin / eczema", "lytha_kallo": "Warts and corns",
+    "kerpudha_thonjsh": "Fungal nail infection", "gjakderdhje_hunde": "Nosebleed",
+    "humbje_zeri": "Hoarseness / lost voice", "ere_goje": "Bad breath", "dehidratim_vape": "Dehydration / heat",
+    "ankth_stres": "Anxiety and stress", "mungese_vitaminash": "Vitamins and immunity",
+    "anemi_hekur": "Iron deficiency / anaemia", "ngerce_kembesh": "Leg cramps", "dalje_dhembesh": "Baby teething",
+    "skuqje_pelenash": "Nappy (diaper) rash", "zgjebe": "Scabies", "dylle_veshi": "Ear wax (blocked ear)",
+    "venat_kembe": "Heavy legs and varicose veins", "mbrojtje_insekte": "Protection from mosquitoes and ticks",
+    "lemza": "Hiccups", "djersitje": "Excessive sweating", "renie_flokesh": "Hair loss",
+    "flluska_kembe": "Blisters from shoes", "buze_te_thata": "Dry, chapped lips",
+    "konjuktivit_infektiv": "Sticky eye with pus (infective conjunctivitis)",
+    "planifikim_shtatzenie": "Planning a pregnancy (folic acid)"
+  },
+  "fjale": {
+    "fyt": "throat", "fyti": "throat", "dhëmb": "tooth", "dhëmbi": "tooth", "kokë": "head", "koka": "head",
+    "bark": "stomach / belly", "stomak": "stomach", "shpinë": "back", "vesh": "ear", "sy": "eyes",
+    "kollë": "cough", "gëlbazë": "phlegm", "temperaturë": "fever", "ethe": "fever", "urth": "heartburn",
+    "farmacist": "pharmacist", "mjek": "doctor", "fletëudhëzues": "package leaflet", "pa recetë": "over the counter",
+    "shtatzëni": "pregnancy", "gjidhënie": "breast-feeding", "ulçerë": "stomach ulcer", "mëlçi": "liver",
+    "veshka": "kidneys", "hollimi i gjakut": "blood thinners (anticoagulants)", "kundërindikim": "contraindication",
+    "frenues MAO / antidepresivë": "antidepressants (including MAO inhibitors)"
+  }
+}

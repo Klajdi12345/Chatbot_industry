@@ -1,0 +1,20 @@
+{
+ "personi": "m dhem kryt qe prej dje, jom shtatzan",
+ "hapat": [
+  "📖 E lexova mesazhin: “m dhem kryt qe” → “me dhemb koka”, “jom shtatzan” → “jam shtatzene”  ·  0 s",
+  "🔎 Po kërkoj në bazën e njohurive (1213 fraza, edhe me variantin standard)...  ·  0 s",
+  "🧠 Po mendoj më thellë: çfarë do të thotë saktësisht mesazhi?  ·  0 s",
+  "📝 E kuptova kështu: “Me dhemb koka prej dje, jam shtatzane.”  ·  68 s",
+  "🤔 Simptomat që përmend: dhimbje koke  ·  68 s",
+  "🔎 Po i krahasoj me bazën e njohurive...  ·  68 s",
+  "✅ Modeli dhe baza përputhen: dhimbje koke  ·  68 s",
+  "💊 Po kontrolloj ilaçet për profilin tënd (mosha, gjendjet, kundërindikimet)...  ·  68 s",
+  "⛔ Hoqa 3 ilaçe që nuk janë të sigurta për profilin tënd.  ·  68 s",
+  "📚 Po kërkoj në burimet zyrtare mjekësore (openFDA, MedlinePlus)...  ·  68 s",
+  "📖 Po lexoj: MedlinePlus: Headache, openFDA: Acetaminophen  ·  69 s",
+  "⚠️ Fletëudhëzuesi zyrtar përmend gjendje të profilit tënd: Paracetamol 500 mg (shtatzëni)  ·  69 s"
+ ],
+ "bota": "ℹ️ _E mora parasysh: shtatzëni._\n\n🩺 **Simptoma:** Dhimbje koke\n\nℹ️ Shumica e dhimbjeve të kokës vijnë nga tensioni, lodhja, dehidratimi, gjumi i pakët ose migrena. Rrallë janë shenjë e diçkaje serioze.\n\nPër këtë zakonisht përdoren:\n- **Paracetamol 500 mg** (Paracetamol, Panadol, Efferalgan, Paracetamol Profarma ose Tylenol) — ⚠️ Zakonisht zgjedhja e parë në shtatzëni, por merr dozën më të ulët për kohën më të shkurtër dhe konsultohu me mjekun.\n\nTe kartat poshtë ke dozën dhe sa ditë mund ta marrësh pa mjek.\n\n**Nuk t'i sugjeroj:** Ibuprofen 200/400 mg: NSAID-të duhen shmangur në shtatzëni pa këshillë mjeku (sidomos pas javës 20).; Naproksen 220 mg: NSAID-të duhen shmangur në shtatzëni pa këshillë mjeku (sidomos pas javës 20).; Aspirinë 500 mg: Duhet shmangur në shtatzëni pa këshillë mjeku.\n\n**Këshilla:** Pusho në dhomë të qetë dhe me pak dritë. Pi ujë: dehidratimi shkakton dhimbje koke.\n\n**Shko te mjeku nëse:**\n- Dhimbja koke më e fortë e jetës ose që vjen papritur si goditje\n- Dhimbje koke me temperaturë dhe ngurtësim qafe\n- Dhimbje koke pas një goditjeje në kokë\n- Me humbje shikimi, dobësi në njërën anë të trupit ose vështirësi në të folur\n\n_Farmacisti mund ta konfirmojë zgjedhjen dhe dozën, sidomos nëse merr ilaçe të tjera._\n\n📄 **Kontroll në fletëudhëzuesin zyrtar (FDA, SHBA):**\n- **Paracetamol 500 mg**: fletëudhëzuesi zyrtar përmend kujdes për: shtatzëni [openFDA: Acetaminophen]\n\nPyet farmacistin para se ta përdorësh. Tekstin origjinal (anglisht) e ke te karta më poshtë.",
+ "sekonda": 69,
+ "mendimi": "Okay, let's tackle this query. The user provided the message \"m dhem kryt qe prej dje, jom shtatzan\" which is in informal Shqip. My task is to process this into a structured JSON response with three fields: shqip_standard, simptomat, and pyetje_sqaruese.\n\nFirst, I need to understand the original message. The user wrote in a chat-like style with abbreviations and possible spelling errors. Let's break it down. \"m dhem kryt\" likely translates to \"me dhemb koka\" which means \"headache\". Then \"qe prej dje\" is \"prej dje\" meaning \"since yesterday\". The next part is \"jom shtatzan\" which should be \"jam shtatzane\" meaning \"I am pregnant\".\n\nSo, the standard Shqip translation would be \"Me dhemb koka prej dje, jam shtatzane.\" Now, for the symptoms, the user mentioned a headache, so \"dhimbje koke\" is the symptom. Since they mentioned being pregnant, that's a condition, not a symptom. So simptomat should only include \"dhimbje koke\".\n\nThe message is clear, so pyetje_sqaruese should be an empty string. I need to make sure there are no additional symptoms mentioned. The user didn't mention any other symptoms like fever or nausea, so simptomat is just the headache. \n\nDouble-checking the original message: \"m dhem kryt\" is definitely headache. \"prej dje\" is since yesterday. \"jom shtatzan\" is corrected to \"jam shtatzane\". No other symptoms are present. Therefore, the JSON should have the standard translation, the symptom as headache, and no clarifying question needed.\n"
+}

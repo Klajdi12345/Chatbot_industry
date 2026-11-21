@@ -1,0 +1,4744 @@
+{
+  "_shenim": "Baza e njohurive për FarmaBot: ilaçe pa recetë (OTC), simptoma, sëmundje të lehta dhe nevoja të përditshme (vitamina, foshnja, lëkura, udhëtimi). Kontrollo dhe përditëso me një farmacist përpara përdorimit real.",
+  "gjendjet": [
+    {
+      "id": "shtatzeni",
+      "emer": "Shtatzëni"
+    },
+    {
+      "id": "gjidhenie",
+      "emer": "Gjidhënie"
+    },
+    {
+      "id": "femije_nen_12",
+      "emer": "Fëmijë nën 12 vjeç"
+    },
+    {
+      "id": "nen_16",
+      "emer": "Nën 16 vjeç"
+    },
+    {
+      "id": "mbi_65",
+      "emer": "Mbi 65 vjeç"
+    },
+    {
+      "id": "ulcer",
+      "emer": "Ulçerë ose gjakderdhje stomaku (tani ose në të kaluarën)"
+    },
+    {
+      "id": "veshka",
+      "emer": "Sëmundje e veshkave"
+    },
+    {
+      "id": "melci",
+      "emer": "Sëmundje e mëlçisë"
+    },
+    {
+      "id": "zemra",
+      "emer": "Sëmundje e zemrës / insuficiencë kardiake"
+    },
+    {
+      "id": "hipertension",
+      "emer": "Tension i lartë (hipertension)"
+    },
+    {
+      "id": "astme",
+      "emer": "Astmë"
+    },
+    {
+      "id": "diabet",
+      "emer": "Diabet"
+    },
+    {
+      "id": "glaukome",
+      "emer": "Glaukomë"
+    },
+    {
+      "id": "prostate",
+      "emer": "Prostatë e zmadhuar / vështirësi në urinim"
+    },
+    {
+      "id": "alkool",
+      "emer": "Konsum i rregullt alkooli"
+    },
+    {
+      "id": "antikoagulante",
+      "emer": "Merr ilaçe për hollimin e gjakut (p.sh. varfarinë)"
+    },
+    {
+      "id": "antidepresive",
+      "emer": "Merr antidepresivë (SSRI, MAOI etj.)"
+    },
+    {
+      "id": "alergji_nsaid",
+      "emer": "Alergji ndaj aspirinës / ibuprofenit (NSAID)"
+    },
+    {
+      "id": "alergji_paracetamol",
+      "emer": "Alergji ndaj paracetamolit"
+    },
+    {
+      "id": "alergji_antihistaminike",
+      "emer": "Alergji ndaj antihistaminikëve"
+    },
+    {
+      "id": "nen_2",
+      "emer": "Fëmijë nën 2 vjeç"
+    },
+    {
+      "id": "epilepsi",
+      "emer": "Epilepsi"
+    },
+    {
+      "id": "sedative",
+      "emer": "Merr ilaçe qetësuese ose gjumi"
+    },
+    {
+      "id": "tiroide",
+      "emer": "Sëmundje e tiroides"
+    },
+    {
+      "id": "imunitet",
+      "emer": "Imunitet i dobët (kimioterapi, kortizon afatgjatë, HIV)"
+    }
+  ],
+  "barnat": [
+    {
+      "id": "paracetamol",
+      "emer": "Paracetamol 500 mg",
+      "lende_aktive": "Paracetamol",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Paracetamol",
+        "Panadol",
+        "Efferalgan",
+        "Paracetamol Profarma",
+        "Tylenol"
+      ],
+      "doza": "1–2 tableta (500–1000 mg) çdo 4–6 orë sipas nevojës.",
+      "doza_maks": "Jo më shumë se 8 tableta (4000 mg) në 24 orë. Me sëmundje mëlçie ose alkool: jo më shumë se 3000 mg.",
+      "kohezgjatja": "Pa mjek jo më shumë se 3 ditë për temperaturë dhe 5 ditë për dhimbje.",
+      "si_merret": "Me ujë, me ose pa ushqim. Lër të paktën 4 orë mes dozave.",
+      "paralajmerime": [
+        "Mos e kombino me ilaçe të tjera që përmbajnë paracetamol (shumë ilaçe gripi e kanë).",
+        "Mbidoza dëmton rëndë mëlçinë edhe kur nuk ndihesh keq: shko menjëherë te urgjenca."
+      ],
+      "efekte_anesore": [
+        "Rrallë: skuqje lëkure",
+        "Shumë rrallë: probleme gjaku ose mëlçie"
+      ],
+      "kunderindikime": {
+        "alergji_paracetamol": "Ke alergji ndaj paracetamolit.",
+        "melci": "Në sëmundje të rëndë të mëlçisë paracetamoli mund ta dëmtojë më shumë mëlçinë."
+      },
+      "kujdes": {
+        "alkool": "Alkooli rrit rrezikun e dëmtimit të mëlçisë: mos kalo 3000 mg në ditë.",
+        "shtatzeni": "Zakonisht zgjedhja e parë në shtatzëni, por merr dozën më të ulët për kohën më të shkurtër dhe konsultohu me mjekun.",
+        "antikoagulante": "Përdorimi i rregullt mund të ndikojë te varfarina; konsultohu me mjekun.",
+        "femije_nen_12": "Për fëmijë doza varet nga pesha: përdor formën pediatrike (shurup) dhe pyet farmacistin."
+      }
+    },
+    {
+      "id": "ibuprofen",
+      "emer": "Ibuprofen 200/400 mg",
+      "lende_aktive": "Ibuprofen (NSAID)",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Brufen",
+        "Nurofen",
+        "Ibuprofen",
+        "Ibuprofen Profarma",
+        "Advil"
+      ],
+      "doza": "200–400 mg çdo 6–8 orë sipas nevojës.",
+      "doza_maks": "Jo më shumë se 1200 mg në 24 orë pa këshillë mjeku.",
+      "kohezgjatja": "Pa mjek jo më shumë se 3 ditë për temperaturë dhe 5 ditë për dhimbje.",
+      "si_merret": "Me ose pas ushqimit, me një gotë ujë.",
+      "paralajmerime": [
+        "Mos e kombino me NSAID të tjerë (aspirinë, diklofenak, naproksen).",
+        "Ndalo dhe shko te mjeku nëse ke dhimbje stomaku, jashtëqitje të zezë ose të vjella me gjak."
+      ],
+      "efekte_anesore": [
+        "Dhimbje ose acarim stomaku",
+        "Të përziera",
+        "Rrallë: gjakderdhje stomaku"
+      ],
+      "kunderindikime": {
+        "alergji_nsaid": "Ke alergji ndaj NSAID-ve.",
+        "ulcer": "Rrit rrezikun e gjakderdhjes së stomakut.",
+        "shtatzeni": "NSAID-të duhen shmangur në shtatzëni pa këshillë mjeku (sidomos pas javës 20).",
+        "zemra": "Mund ta përkeqësojë insuficiencën kardiake.",
+        "antikoagulante": "Me ilaçet e hollimit të gjakut rritet shumë rreziku i gjakderdhjes.",
+        "veshka": "Mund ta përkeqësojë funksionin e veshkave."
+      },
+      "kujdes": {
+        "astme": "Te disa astmatikë NSAID-të shkaktojnë krizë astme. Përdore vetëm nëse e ke marrë më parë pa problem.",
+        "hipertension": "Mund ta rrisë tensionin; mos e përdor gjatë.",
+        "mbi_65": "Te të moshuarit rreziku i gjakderdhjes së stomakut është më i lartë.",
+        "gjidhenie": "Zakonisht pranohet për periudhë të shkurtër, por pyet farmacistin.",
+        "melci": "Konsultohu me mjekun nëse ke sëmundje mëlçie.",
+        "femije_nen_12": "Për fëmijë doza varet nga pesha: përdor formën pediatrike dhe pyet farmacistin."
+      }
+    },
+    {
+      "id": "aspirine",
+      "emer": "Aspirinë 500 mg",
+      "lende_aktive": "Acid acetilsalicilik (NSAID)",
+      "forma": "Tableta / tableta që treten në ujë",
+      "emra_tregtare": [
+        "Aspirin",
+        "Aspirinë",
+        "Aspirin C",
+        "Aspirina"
+      ],
+      "doza": "500–1000 mg çdo 4–8 orë sipas nevojës.",
+      "doza_maks": "Jo më shumë se 3000 mg në 24 orë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 3 ditë.",
+      "si_merret": "Pas ushqimit, me shumë ujë.",
+      "paralajmerime": [
+        "Mos e jep kurrë te fëmijët dhe adoleshentët nën 16 vjeç (rrezik i sindromës së Reye-s).",
+        "Mos e kombino me NSAID të tjerë."
+      ],
+      "efekte_anesore": [
+        "Acarim stomaku",
+        "Rrezik gjakderdhjeje",
+        "Rrallë: krizë astme"
+      ],
+      "kunderindikime": {
+        "nen_16": "Nën 16 vjeç rrezikon sindromën e Reye-s.",
+        "alergji_nsaid": "Ke alergji ndaj NSAID-ve.",
+        "ulcer": "Rrit rrezikun e gjakderdhjes së stomakut.",
+        "antikoagulante": "Me ilaçet e hollimit të gjakut rritet shumë rreziku i gjakderdhjes.",
+        "shtatzeni": "Duhet shmangur në shtatzëni pa këshillë mjeku.",
+        "gjidhenie": "Kalon në qumësht; shmange gjatë gjidhënies."
+      },
+      "kujdes": {
+        "astme": "Mund të shkaktojë krizë astme.",
+        "veshka": "Konsultohu me mjekun nëse ke sëmundje veshkash.",
+        "mbi_65": "Te të moshuarit rreziku i gjakderdhjes është më i lartë.",
+        "zemra": "Konsultohu me mjekun."
+      }
+    },
+    {
+      "id": "loratadine",
+      "emer": "Loratadinë 10 mg",
+      "lende_aktive": "Loratadinë (antihistaminik)",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Claritine",
+        "Loratadine",
+        "Clarityn"
+      ],
+      "doza": "1 tabletë (10 mg) një herë në ditë.",
+      "doza_maks": "1 tabletë në 24 orë.",
+      "kohezgjatja": "Mund të përdoret gjatë sezonit të alergjisë; nëse simptomat nuk përmirësohen pas 7 ditësh, pyet mjekun.",
+      "si_merret": "Me ujë, me ose pa ushqim.",
+      "paralajmerime": [
+        "Zakonisht nuk të përgjum, por rrallë mund të ndodhë."
+      ],
+      "efekte_anesore": [
+        "Dhimbje koke",
+        "Lodhje",
+        "Gojë e thatë"
+      ],
+      "kunderindikime": {
+        "alergji_antihistaminike": "Ke alergji ndaj antihistaminikëve."
+      },
+      "kujdes": {
+        "melci": "Në sëmundje të rëndë mëlçie mund të duhet doza më e ulët; pyet mjekun.",
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "femije_nen_12": "Për fëmijë ka formë shurupi; doza varet nga mosha dhe pesha."
+      }
+    },
+    {
+      "id": "cetirizine",
+      "emer": "Cetirizinë 10 mg",
+      "lende_aktive": "Cetirizinë (antihistaminik)",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Zyrtec",
+        "Cetirizine"
+      ],
+      "doza": "1 tabletë (10 mg) një herë në ditë, mundësisht në mbrëmje.",
+      "doza_maks": "1 tabletë në 24 orë.",
+      "kohezgjatja": "Nëse simptomat nuk përmirësohen pas 7 ditësh, pyet mjekun.",
+      "si_merret": "Me ujë, me ose pa ushqim.",
+      "paralajmerime": [
+        "Mund të shkaktojë përgjumje: kujdes kur ngas makinën.",
+        "Shmang alkoolin."
+      ],
+      "efekte_anesore": [
+        "Përgjumje",
+        "Gojë e thatë",
+        "Dhimbje koke"
+      ],
+      "kunderindikime": {
+        "alergji_antihistaminike": "Ke alergji ndaj antihistaminikëve."
+      },
+      "kujdes": {
+        "veshka": "Në sëmundje veshkash duhet doza më e ulët; pyet mjekun.",
+        "prostate": "Mund ta vështirësojë urinimin.",
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Kalon në qumësht; konsultohu me mjekun.",
+        "femije_nen_12": "Për fëmijë ka formë pikash/shurupi; doza varet nga mosha."
+      }
+    },
+    {
+      "id": "oksimetazoline",
+      "emer": "Oksimetazolinë sprej hundësh 0,05%",
+      "lende_aktive": "Oksimetazolinë (dekongjestant)",
+      "forma": "Sprej hundësh",
+      "emra_tregtare": [
+        "Nasivin",
+        "Afrin"
+      ],
+      "doza": "1–2 spërkatje në çdo vrimë hunde, 2–3 herë në ditë.",
+      "doza_maks": "Jo më shumë se 3 herë në ditë.",
+      "kohezgjatja": "Jo më shumë se 5 ditë rresht: përdorimi i gjatë e bllokon hundën edhe më shumë (efekt rikthimi).",
+      "si_merret": "Shfryj hundën përpara përdorimit.",
+      "paralajmerime": [
+        "Mos e përdor më shumë se 5 ditë."
+      ],
+      "efekte_anesore": [
+        "Djegie ose thatësi në hundë",
+        "Teshtima"
+      ],
+      "kunderindikime": {
+        "glaukome": "Në glaukomë me kënd të mbyllur mund ta përkeqësojë gjendjen."
+      },
+      "kujdes": {
+        "hipertension": "Mund ta rrisë tensionin; përdore sa më pak.",
+        "zemra": "Konsultohu me mjekun.",
+        "shtatzeni": "Konsultohu me mjekun para përdorimit.",
+        "diabet": "Konsultohu me mjekun.",
+        "femije_nen_12": "Për fëmijë ka përqendrim më të ulët (0,025% ose 0,01%); pyet farmacistin."
+      }
+    },
+    {
+      "id": "kripe_fiziologjike",
+      "emer": "Sprej me ujë deti / kripë fiziologjike",
+      "lende_aktive": "Klorur natriumi (ujë deti)",
+      "forma": "Sprej hundësh",
+      "emra_tregtare": [
+        "Sterimar",
+        "Physiomer",
+        "Kripë fiziologjike 0,9%",
+        "Quixx",
+        "Humer"
+      ],
+      "doza": "1–2 spërkatje në çdo vrimë hunde, disa herë në ditë.",
+      "doza_maks": "Nuk ka kufi të rreptë.",
+      "kohezgjatja": "Mund të përdoret pa kufizim kohor.",
+      "si_merret": "Pastron dhe lagështon hundën.",
+      "paralajmerime": [],
+      "efekte_anesore": [
+        "Shumë rrallë: acarim i lehtë"
+      ],
+      "kunderindikime": {},
+      "kujdes": {}
+    },
+    {
+      "id": "antacid",
+      "emer": "Antacid (hidroksid alumini + magnezi)",
+      "lende_aktive": "Hidroksid alumini + hidroksid magnezi",
+      "forma": "Suspension / tableta për t'u përtypur",
+      "emra_tregtare": [
+        "Maalox",
+        "Rennie (karbonat kalciumi)",
+        "Talcid",
+        "Gastal"
+      ],
+      "doza": "1–2 tableta ose 10–20 ml, 20–60 minuta pas ngrënies dhe para gjumit.",
+      "doza_maks": "Sipas fletëudhëzuesit të paketimit (zakonisht jo më shumë se 4 herë në ditë).",
+      "kohezgjatja": "Pa mjek jo më shumë se 7–14 ditë.",
+      "si_merret": "Lër 2 orë diferencë nga ilaçet e tjera: antacidet ua ulin efektin.",
+      "paralajmerime": [
+        "Merre 2 orë larg ilaçeve të tjera."
+      ],
+      "efekte_anesore": [
+        "Kapsllëk ose diarre e lehtë"
+      ],
+      "kunderindikime": {
+        "veshka": "Në sëmundje të rëndë veshkash alumini dhe magnezi grumbullohen në trup."
+      },
+      "kujdes": {
+        "shtatzeni": "Zakonisht pranohet, por pyet farmacistin.",
+        "femije_nen_12": "Pyet farmacistin."
+      }
+    },
+    {
+      "id": "omeprazol",
+      "emer": "Omeprazol 20 mg",
+      "lende_aktive": "Omeprazol (frenues i pompës protonike)",
+      "forma": "Kapsula",
+      "emra_tregtare": [
+        "Omeprazol",
+        "Losec",
+        "Omeprazol Profarma",
+        "Ultop"
+      ],
+      "doza": "1 kapsulë (20 mg) një herë në ditë, në mëngjes para ngrënies.",
+      "doza_maks": "20 mg në ditë pa recetë.",
+      "kohezgjatja": "Jo më shumë se 14 ditë pa mjek. Mund të duhen 2–3 ditë derisa të ndihet efekti.",
+      "si_merret": "Gëlltite të plotë me ujë, para mëngjesit.",
+      "paralajmerime": [
+        "Nëse urthi zgjat përtej 14 ditësh, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Dhimbje koke",
+        "Diarre ose kapsllëk",
+        "Dhimbje barku"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "melci": "Konsultohu me mjekun.",
+        "shtatzeni": "Konsultohu me mjekun para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun para përdorimit.",
+        "mbi_65": "Te të moshuarit urthi i ri duhet parë nga mjeku.",
+        "femije_nen_12": "Nuk përdoret pa recetë te fëmijët."
+      }
+    },
+    {
+      "id": "loperamid",
+      "emer": "Loperamid 2 mg",
+      "lende_aktive": "Loperamid",
+      "forma": "Kapsula",
+      "emra_tregtare": [
+        "Imodium",
+        "Loperamide"
+      ],
+      "doza": "2 kapsula (4 mg) në fillim, pastaj 1 kapsulë (2 mg) pas çdo jashtëqitjeje të lëngshme.",
+      "doza_maks": "Jo më shumë se 6 kapsula (12 mg) në 24 orë.",
+      "kohezgjatja": "Jo më shumë se 48 orë pa mjek.",
+      "si_merret": "Me ujë. Pi shumë lëngje gjatë diarresë.",
+      "paralajmerime": [
+        "Mos e merr nëse ke gjak në jashtëqitje ose temperaturë të lartë.",
+        "Nuk e zëvendëson rehidratimin: pi lëngje ose kripëra rehidratimi."
+      ],
+      "efekte_anesore": [
+        "Kapsllëk",
+        "Fryrje barku",
+        "Marramendje"
+      ],
+      "kunderindikime": {
+        "femije_nen_12": "Nuk jepet te fëmijët nën 12 vjeç pa mjek."
+      },
+      "kujdes": {
+        "melci": "Konsultohu me mjekun.",
+        "shtatzeni": "Konsultohu me mjekun para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun para përdorimit."
+      }
+    },
+    {
+      "id": "ors",
+      "emer": "Kripëra rehidratimi oral (ORS)",
+      "lende_aktive": "Glukozë + kripëra (natrium, kalium)",
+      "forma": "Pluhur për tretësirë",
+      "emra_tregtare": [
+        "Dioralyte",
+        "Hidrasec ORS",
+        "ORS"
+      ],
+      "doza": "1 qeskë e tretur në sasinë e ujit që shkruan në paketim, pas çdo jashtëqitjeje të lëngshme.",
+      "doza_maks": "Sipas fletëudhëzuesit të paketimit.",
+      "kohezgjatja": "Sa të zgjasë diarreja.",
+      "si_merret": "Tret pluhurin vetëm në sasinë e saktë të ujit dhe pije me gllënjka.",
+      "paralajmerime": [
+        "Mos e tret në lëng frutash ose qumësht."
+      ],
+      "efekte_anesore": [
+        "Shumë rrallë: të përziera"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "veshka": "Konsultohu me mjekun nëse ke sëmundje veshkash.",
+        "diabet": "Përmban glukozë; kontrollo sheqerin."
+      }
+    },
+    {
+      "id": "dekstrometorfan",
+      "emer": "Dekstrometorfan shurup (për kollë të thatë)",
+      "lende_aktive": "Dekstrometorfan",
+      "forma": "Shurup",
+      "emra_tregtare": [
+        "Tussin",
+        "Robitussin Dry Cough",
+        "Sinecod (butamirat, i ngjashëm)"
+      ],
+      "doza": "Sipas fletëudhëzuesit (zakonisht 15 mg çdo 6–8 orë për të rriturit).",
+      "doza_maks": "Jo më shumë se 120 mg në 24 orë.",
+      "kohezgjatja": "Nëse kolla zgjat më shumë se 7 ditë, shko te mjeku.",
+      "si_merret": "Me lugën matëse të paketimit.",
+      "paralajmerime": [
+        "Vetëm për kollë të thatë, jo për kollë me gëlbazë.",
+        "Mund të shkaktojë përgjumje; shmang alkoolin."
+      ],
+      "efekte_anesore": [
+        "Përgjumje",
+        "Marramendje",
+        "Të përziera"
+      ],
+      "kunderindikime": {
+        "antidepresive": "Me antidepresivë (SSRI, MAOI) mund të shkaktojë sindromën serotoninergjike, e rrezikshme."
+      },
+      "kujdes": {
+        "astme": "Mos e përdor gjatë një krize astme.",
+        "melci": "Konsultohu me mjekun.",
+        "diabet": "Disa shurupe përmbajnë sheqer; kontrollo paketimin.",
+        "shtatzeni": "Konsultohu me mjekun para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun para përdorimit.",
+        "femije_nen_12": "Nuk rekomandohet te fëmijët e vegjël pa mjek."
+      }
+    },
+    {
+      "id": "ambroksol",
+      "emer": "Ambroksol 30 mg (për kollë me gëlbazë)",
+      "lende_aktive": "Ambroksol (mukolitik)",
+      "forma": "Tableta / shurup",
+      "emra_tregtare": [
+        "Mucosolvan",
+        "Ambroxol",
+        "Bronchopront",
+        "Ambrolan"
+      ],
+      "doza": "30 mg 3 herë në ditë për 2–3 ditët e para, pastaj 30 mg 2 herë në ditë.",
+      "doza_maks": "Jo më shumë se 90 mg në 24 orë.",
+      "kohezgjatja": "Nëse kolla zgjat më shumë se 7 ditë ose shfaqet temperaturë, shko te mjeku.",
+      "si_merret": "Pas ngrënies, me shumë ujë.",
+      "paralajmerime": [
+        "Mos e kombino me shurup kundër kollës (dekstrometorfan): gëlbaza duhet të dalë."
+      ],
+      "efekte_anesore": [
+        "Të përziera",
+        "Rrallë: skuqje lëkure"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "shtatzeni": "Shmange në 3 muajt e parë; më pas konsultohu me mjekun.",
+        "gjidhenie": "Konsultohu me mjekun para përdorimit.",
+        "ulcer": "Konsultohu me mjekun.",
+        "femije_nen_12": "Për fëmijë ka shurup me dozë sipas moshës."
+      }
+    },
+    {
+      "id": "makrogol",
+      "emer": "Makrogol 10 g (për kapsllëk)",
+      "lende_aktive": "Makrogol 4000",
+      "forma": "Pluhur në qeskë",
+      "emra_tregtare": [
+        "Forlax",
+        "Movicol"
+      ],
+      "doza": "1–2 qeska në ditë, mundësisht në mëngjes.",
+      "doza_maks": "2 qeska në ditë.",
+      "kohezgjatja": "Efekti fillon pas 24–48 orësh. Pa mjek jo më shumë se 14 ditë.",
+      "si_merret": "Tret qeskën në një gotë ujë dhe pi shumë lëngje gjatë ditës.",
+      "paralajmerime": [
+        "Ha fibra dhe pi ujë."
+      ],
+      "efekte_anesore": [
+        "Fryrje",
+        "Dhimbje barku",
+        "Diarre nëse doza është e lartë"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "shtatzeni": "Zakonisht pranohet, por pyet farmacistin.",
+        "femije_nen_12": "Ka formë pediatrike; pyet farmacistin."
+      }
+    },
+    {
+      "id": "simetikone",
+      "emer": "Simetikonë (për gazra dhe fryrje)",
+      "lende_aktive": "Simetikonë",
+      "forma": "Kapsula / pika",
+      "emra_tregtare": [
+        "Espumisan",
+        "Simethicone",
+        "Sab Simplex",
+        "Disflatyl"
+      ],
+      "doza": "2 kapsula (80 mg) 3–4 herë në ditë, pas ngrënies dhe para gjumit.",
+      "doza_maks": "Sipas fletëudhëzuesit të paketimit.",
+      "kohezgjatja": "Nëse fryrja zgjat më shumë se 2 javë, shko te mjeku.",
+      "si_merret": "Pas ngrënies.",
+      "paralajmerime": [],
+      "efekte_anesore": [
+        "Shumë rrallë"
+      ],
+      "kunderindikime": {},
+      "kujdes": {}
+    },
+    {
+      "id": "butilskopolamine",
+      "emer": "Butilskopolaminë 10 mg (për ngërçe barku)",
+      "lende_aktive": "Hioscinë butilbromid (spazmolitik)",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Buscopan",
+        "Buscol"
+      ],
+      "doza": "1–2 tableta (10–20 mg) deri në 3 herë në ditë.",
+      "doza_maks": "Jo më shumë se 6 tableta (60 mg) në 24 orë.",
+      "kohezgjatja": "Nëse dhimbja zgjat më shumë se 2 ditë, shko te mjeku.",
+      "si_merret": "Gëlltite të plotë me ujë.",
+      "paralajmerime": [
+        "Nëse dhimbja e barkut është e fortë ose e vazhdueshme, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Gojë e thatë",
+        "Rrahje të shpejta zemre",
+        "Shikim i turbullt",
+        "Kapsllëk"
+      ],
+      "kunderindikime": {
+        "glaukome": "Mund ta rrisë presionin e syrit.",
+        "prostate": "Mund të shkaktojë mbajtje të urinës."
+      },
+      "kujdes": {
+        "zemra": "Mund të shpejtojë rrahjet e zemrës.",
+        "shtatzeni": "Konsultohu me mjekun para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun para përdorimit.",
+        "femije_nen_12": "Nuk jepet pa recetë te fëmijët."
+      }
+    },
+    {
+      "id": "pastile_fyti",
+      "emer": "Pastila për fytin (antiseptike)",
+      "lende_aktive": "Amilmetakrezol + alkool diklorobenzilik",
+      "forma": "Pastila për t'u thithur",
+      "emra_tregtare": [
+        "Strepsils",
+        "Septolete",
+        "Faringosept",
+        "Mebucaine"
+      ],
+      "doza": "1 pastile çdo 2–3 orë, e lënë të shkrihet ngadalë në gojë.",
+      "doza_maks": "Jo më shumë se 12 pastila në 24 orë.",
+      "kohezgjatja": "Nëse dhimbja e fytit zgjat më shumë se 3 ditë ose ke temperaturë të lartë, shko te mjeku.",
+      "si_merret": "Thithe ngadalë, mos e përtyp.",
+      "paralajmerime": [],
+      "efekte_anesore": [
+        "Rrallë: acarim i gjuhës"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "diabet": "Disa variante përmbajnë sheqer; zgjidh variantin pa sheqer.",
+        "femije_nen_12": "Nuk jepen te fëmijët nën 6 vjeç."
+      }
+    },
+    {
+      "id": "hidrokortizon_krem",
+      "emer": "Hidrokortizon krem 1%",
+      "lende_aktive": "Hidrokortizon (kortikosteroid i lehtë)",
+      "forma": "Krem",
+      "emra_tregtare": [
+        "Hydrocortisone 1%",
+        "Locoid"
+      ],
+      "doza": "Një shtresë e hollë në zonën me kruajtje 1–2 herë në ditë.",
+      "doza_maks": "2 herë në ditë.",
+      "kohezgjatja": "Jo më shumë se 7 ditë pa mjek.",
+      "si_merret": "Vetëm për lëkurë. Laj duart pas përdorimit.",
+      "paralajmerime": [
+        "Mos e përdor në fytyrë, në sy ose në lëkurë të infektuar ose të çarë.",
+        "Mos e përdor në plagë të hapura."
+      ],
+      "efekte_anesore": [
+        "Djegie e lehtë",
+        "Përdorimi i gjatë e hollon lëkurën"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "shtatzeni": "Konsultohu me mjekun para përdorimit.",
+        "femije_nen_12": "Te fëmijët nën 10 vjeç përdoret vetëm me këshillë mjeku."
+      }
+    },
+    {
+      "id": "klotrimazol_krem",
+      "emer": "Klotrimazol krem 1% (për kërpudha)",
+      "lende_aktive": "Klotrimazol (antimykotik)",
+      "forma": "Krem",
+      "emra_tregtare": [
+        "Canesten",
+        "Clotrimazole"
+      ],
+      "doza": "Një shtresë e hollë 2–3 herë në ditë në zonën e prekur.",
+      "doza_maks": "3 herë në ditë.",
+      "kohezgjatja": "Vazhdo edhe 2 javë pasi zhduken simptomat (zakonisht 2–4 javë gjithsej). Nëse nuk ka përmirësim pas 2 javësh, shko te mjeku.",
+      "si_merret": "Laj dhe thaj mirë zonën përpara përdorimit.",
+      "paralajmerime": [
+        "Mbaje zonën të thatë; mos i ndaj peshqirët."
+      ],
+      "efekte_anesore": [
+        "Skuqje ose djegie e lehtë"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "diabet": "Te diabetikët problemet e lëkurës së këmbëve duhet t'i shohë mjeku.",
+        "shtatzeni": "Konsultohu me mjekun para përdorimit."
+      }
+    },
+    {
+      "id": "diklofenak_xhel",
+      "emer": "Diklofenak xhel 1% (për dhimbje lokale)",
+      "lende_aktive": "Diklofenak (NSAID në formë xheli)",
+      "forma": "Xhel",
+      "emra_tregtare": [
+        "Voltaren Emulgel",
+        "Diclofenac gel",
+        "Diclac gel",
+        "Olfen gel"
+      ],
+      "doza": "Masazho butësisht 2–4 g xhel në zonën me dhimbje, 3–4 herë në ditë.",
+      "doza_maks": "4 herë në ditë.",
+      "kohezgjatja": "Jo më shumë se 7–14 ditë pa mjek.",
+      "si_merret": "Vetëm në lëkurë të paprekur. Laj duart pas përdorimit.",
+      "paralajmerime": [
+        "Mos e vendos në plagë, në sy ose në mukoza.",
+        "Shmang ekspozimin e zonës në diell."
+      ],
+      "efekte_anesore": [
+        "Skuqje ose kruajtje lokale"
+      ],
+      "kunderindikime": {
+        "alergji_nsaid": "Ke alergji ndaj NSAID-ve."
+      },
+      "kujdes": {
+        "shtatzeni": "Mos e përdor në 3 muajt e fundit të shtatzënisë; më herët konsultohu me mjekun.",
+        "astme": "Rrallë mund të shkaktojë krizë astme.",
+        "antikoagulante": "Konsultohu me mjekun nëse e përdor në sipërfaqe të mëdha.",
+        "femije_nen_12": "Nuk rekomandohet nën 14 vjeç pa mjek."
+      }
+    },
+    {
+      "id": "naproksen",
+      "emer": "Naproksen 220 mg",
+      "lende_aktive": "Naproksen natriumi",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Aleve",
+        "Naprosyn",
+        "Naproxen"
+      ],
+      "doza": "1 tabletë (220 mg) çdo 8–12 orë. Për dozën e parë mund të merren 2 tableta.",
+      "doza_maks": "Jo më shumë se 3 tableta (660 mg) në 24 orë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 10 ditë për dhimbje dhe 3 ditë për temperaturë.",
+      "si_merret": "Me një gotë ujë, mundësisht me ushqim ose qumësht.",
+      "paralajmerime": [
+        "Mos e kombino me ibuprofen, aspirinë ose NSAID të tjera.",
+        "Ndalo dhe shko te mjeku nëse ke dhimbje të fortë stomaku ose jashtëqitje të zezë."
+      ],
+      "efekte_anesore": [
+        "Dhimbje ose djegie stomaku",
+        "Të përziera",
+        "Marramendje"
+      ],
+      "kunderindikime": {
+        "alergji_nsaid": "Ke alergji ndaj NSAID-ve.",
+        "ulcer": "Rrit rrezikun e gjakderdhjes së stomakut.",
+        "shtatzeni": "NSAID-të duhen shmangur në shtatzëni pa këshillë mjeku (sidomos pas javës 20).",
+        "zemra": "Mund ta përkeqësojë insuficiencën kardiake.",
+        "antikoagulante": "Me ilaçet e hollimit të gjakut rritet shumë rreziku i gjakderdhjes.",
+        "veshka": "Mund ta përkeqësojë funksionin e veshkave.",
+        "femije_nen_12": "Naprokseni pa recetë nuk jepet te fëmijët nën 12 vjeç."
+      },
+      "kujdes": {
+        "astme": "Te disa astmatikë NSAID-të shkaktojnë krizë astme.",
+        "hipertension": "Mund ta rrisë tensionin; mos e përdor gjatë.",
+        "mbi_65": "Te të moshuarit rreziku i gjakderdhjes së stomakut është më i lartë.",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "melci": "Konsultohu me mjekun nëse ke sëmundje mëlçie."
+      }
+    },
+    {
+      "id": "desloratadine",
+      "emer": "Desloratadinë 5 mg",
+      "lende_aktive": "Desloratadinë",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Aerius",
+        "Desloratadine"
+      ],
+      "doza": "1 tabletë (5 mg) një herë në ditë.",
+      "doza_maks": "Jo më shumë se 1 tabletë (5 mg) në 24 orë.",
+      "kohezgjatja": "Mund të përdoret gjatë sezonit të alergjisë; nëse simptomat nuk përmirësohen pas 2 javësh, pyet mjekun.",
+      "si_merret": "Me ujë, me ose pa ushqim, në të njëjtën orë çdo ditë.",
+      "paralajmerime": [
+        "Rrallë shkakton përgjumje; kujdes kur nget makinën derisa të shohësh si të ndikon."
+      ],
+      "efekte_anesore": [
+        "Lodhje",
+        "Tharje goje",
+        "Dhimbje koke"
+      ],
+      "kunderindikime": {
+        "alergji_antihistaminike": "Ke alergji ndaj antihistaminikëve."
+      },
+      "kujdes": {
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "veshka": "Në sëmundje të rëndë veshkash pyet mjekun.",
+        "epilepsi": "Rrallë mund të ulë pragun e krizave; pyet mjekun.",
+        "femije_nen_12": "Për fëmijë ka formë shurupi; doza varet nga mosha."
+      }
+    },
+    {
+      "id": "feksofenadine",
+      "emer": "Feksofenadinë 120 mg",
+      "lende_aktive": "Feksofenadinë",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Telfast",
+        "Allegra",
+        "Fexofenadine"
+      ],
+      "doza": "1 tabletë (120 mg) një herë në ditë.",
+      "doza_maks": "Jo më shumë se 1 tabletë (120 mg) në 24 orë.",
+      "kohezgjatja": "Gjatë sezonit të alergjisë; nëse nuk ka përmirësim pas 2 javësh, pyet mjekun.",
+      "si_merret": "Me ujë, jo me lëng frutash (portokall, grejpfrut, mollë): e ulin efektin.",
+      "paralajmerime": [
+        "Mos e merr bashkë me antacide: lër 2 orë mes tyre."
+      ],
+      "efekte_anesore": [
+        "Dhimbje koke",
+        "Marramendje",
+        "Të përziera"
+      ],
+      "kunderindikime": {
+        "alergji_antihistaminike": "Ke alergji ndaj antihistaminikëve.",
+        "femije_nen_12": "Tableta 120 mg nuk jepet te fëmijët nën 12 vjeç."
+      },
+      "kujdes": {
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "veshka": "Pyet mjekun për dozën.",
+        "mbi_65": "Pyet farmacistin, sidomos nëse ke probleme me veshkat."
+      }
+    },
+    {
+      "id": "famotidine",
+      "emer": "Famotidinë 20 mg",
+      "lende_aktive": "Famotidinë",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Quamatel",
+        "Pepcid",
+        "Famotidine"
+      ],
+      "doza": "1 tabletë (20 mg) kur ke simptoma, ose 15–60 min para ushqimit që të shkakton urth.",
+      "doza_maks": "Jo më shumë se 2 tableta (40 mg) në 24 orë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 14 ditë.",
+      "si_merret": "Me një gotë ujë, me ose pa ushqim.",
+      "paralajmerime": [
+        "Nëse urthi zgjat më shumë se 2 javë ose ke vështirësi në gëlltitje, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Dhimbje koke",
+        "Kapsllëk ose diarre",
+        "Marramendje"
+      ],
+      "kunderindikime": {
+        "femije_nen_12": "Nuk përdoret pa recetë te fëmijët nën 12 vjeç."
+      },
+      "kujdes": {
+        "veshka": "Me sëmundje veshkash mund të duhet doza më e ulët; pyet mjekun.",
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "mbi_65": "Te të moshuarit urthi i ri duhet parë nga mjeku."
+      }
+    },
+    {
+      "id": "alginat",
+      "emer": "Alginat + antacid (suspension)",
+      "lende_aktive": "Alginat natriumi, bikarbonat natriumi, karbonat kalciumi",
+      "forma": "Suspension oral / tableta për t'u përtypur",
+      "emra_tregtare": [
+        "Gaviscon",
+        "Gaviscon Advance"
+      ],
+      "doza": "10–20 ml (ose 2–4 tableta të përtypura) pas ngrënies dhe para gjumit.",
+      "doza_maks": "Jo më shumë se 4 herë në ditë (deri 80 ml në 24 orë).",
+      "kohezgjatja": "Pa mjek jo më shumë se 7 ditë.",
+      "si_merret": "Pas ushqimit dhe para gjumit. Lër 2 orë ndërmjet tij dhe ilaçeve të tjera.",
+      "paralajmerime": [
+        "Përmban natrium dhe kalcium: kujdes nëse ke dietë me pak kripë."
+      ],
+      "efekte_anesore": [
+        "Fryrje barku",
+        "Rrallë: kapsllëk"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "hipertension": "Përmban natrium (kripë): përdore për kohë të shkurtër.",
+        "zemra": "Përmban natrium: pyet mjekun nëse ke insuficiencë kardiake.",
+        "veshka": "Përmban natrium dhe kalcium: pyet mjekun.",
+        "shtatzeni": "Zakonisht i përshtatshëm në shtatzëni për kohë të shkurtër; pyet farmacistin.",
+        "femije_nen_12": "Pyet farmacistin për dozën e fëmijëve."
+      }
+    },
+    {
+      "id": "bisakodil",
+      "emer": "Bisakodil 5 mg",
+      "lende_aktive": "Bisakodil",
+      "forma": "Tableta gastrorezistente",
+      "emra_tregtare": [
+        "Dulcolax",
+        "Bisacodyl"
+      ],
+      "doza": "1–2 tableta (5–10 mg) në mbrëmje para gjumit.",
+      "doza_maks": "Jo më shumë se 2 tableta (10 mg) në 24 orë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 5 ditë.",
+      "si_merret": "E plotë me ujë, jo me qumësht ose antacide (lër 1 orë mes tyre). Vepron pas 6–12 orësh.",
+      "paralajmerime": [
+        "Përdorimi i gjatë i laksativëve e dobëson zorrën; mos e përdor çdo ditë.",
+        "Mos e merr nëse ke dhimbje të fortë barku, të vjella ose temperaturë."
+      ],
+      "efekte_anesore": [
+        "Ngërçe barku",
+        "Diarre",
+        "Të përziera"
+      ],
+      "kunderindikime": {
+        "femije_nen_12": "Nuk jepet te fëmijët nën 10–12 vjeç pa mjek."
+      },
+      "kujdes": {
+        "shtatzeni": "Pyet mjekun; zakonisht preferohen laksativët osmotikë (makrogol, laktulozë).",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "veshka": "Diarreja mund të çojë në humbje kripërash; pi lëngje."
+      }
+    },
+    {
+      "id": "laktuloze",
+      "emer": "Laktulozë shurup",
+      "lende_aktive": "Laktulozë",
+      "forma": "Shurup / tretësirë orale",
+      "emra_tregtare": [
+        "Duphalac",
+        "Lactulose"
+      ],
+      "doza": "15–30 ml një herë në ditë (mund të ndahet në 2 doza).",
+      "doza_maks": "Jo më shumë se 45 ml në ditë pa mjek.",
+      "kohezgjatja": "Efekti fillon pas 1–2 ditësh. Pa mjek jo më shumë se 1–2 javë.",
+      "si_merret": "Mund të përzihet me ujë ose lëng. Pi shumë lëngje gjatë ditës.",
+      "paralajmerime": [
+        "Në ditët e para shkakton gazra dhe fryrje që zakonisht pakësohen."
+      ],
+      "efekte_anesore": [
+        "Gazra",
+        "Fryrje barku",
+        "Diarre në doza të larta"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "diabet": "Përmban pak sheqerna; zakonisht nuk ka problem në dozat për kapsllëk, por pyet mjekun.",
+        "shtatzeni": "Zakonisht e sigurt në shtatzëni; pyet farmacistin.",
+        "femije_nen_12": "Ka dozë për fëmijë sipas moshës; pyet farmacistin ose pediatrin."
+      }
+    },
+    {
+      "id": "racekadotril",
+      "emer": "Racekadotril 100 mg",
+      "lende_aktive": "Racekadotril",
+      "forma": "Kapsula",
+      "emra_tregtare": [
+        "Hidrasec",
+        "Tiorfan"
+      ],
+      "doza": "1 kapsulë (100 mg) në fillim, pastaj 1 kapsulë 3 herë në ditë, para ushqimit.",
+      "doza_maks": "Jo më shumë se 4 kapsula në ditën e parë dhe 3 kapsula në ditët e tjera.",
+      "kohezgjatja": "Derisa të kthehen 2 jashtëqitje normale, jo më shumë se 7 ditë.",
+      "si_merret": "Me ujë. Pi shumë lëngje ose kripëra rehidratimi.",
+      "paralajmerime": [
+        "Mos e merr nëse ke gjak në jashtëqitje ose temperaturë të lartë.",
+        "Ndalo menjëherë nëse shfaqet skuqje ose ënjtje e lëkurës."
+      ],
+      "efekte_anesore": [
+        "Dhimbje koke",
+        "Rrallë: skuqje lëkure"
+      ],
+      "kunderindikime": {
+        "shtatzeni": "Nuk rekomandohet në shtatzëni.",
+        "gjidhenie": "Nuk rekomandohet gjatë gjidhënies.",
+        "femije_nen_12": "Për fëmijë ka formë tjetër (pluhur) që jepet sipas peshës nga mjeku."
+      },
+      "kujdes": {
+        "melci": "Konsultohu me mjekun.",
+        "veshka": "Konsultohu me mjekun."
+      }
+    },
+    {
+      "id": "dimenhidrinat",
+      "emer": "Dimenhidrinat 50 mg",
+      "lende_aktive": "Dimenhidrinat",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Dramamine",
+        "Vomex",
+        "Travel-Gum"
+      ],
+      "doza": "1–2 tableta (50–100 mg) 30–60 minuta para udhëtimit; mund të përsëritet çdo 4–6 orë.",
+      "doza_maks": "Jo më shumë se 8 tableta (400 mg) në 24 orë.",
+      "kohezgjatja": "Vetëm gjatë udhëtimit.",
+      "si_merret": "Me ujë, para nisjes.",
+      "paralajmerime": [
+        "Shkakton përgjumje: mos nget makinën dhe mos përdor makineri.",
+        "Mos e kombino me alkool ose ilaçe gjumi/qetësuese."
+      ],
+      "efekte_anesore": [
+        "Përgjumje",
+        "Tharje goje",
+        "Shikim i turbullt"
+      ],
+      "kunderindikime": {
+        "glaukome": "Mund ta rrisë presionin e syrit.",
+        "prostate": "Mund ta vështirësojë urinimin.",
+        "alergji_antihistaminike": "Është antihistaminik; ke alergji ndaj tyre."
+      },
+      "kujdes": {
+        "mbi_65": "Te të moshuarit shkakton më shpesh konfuzion dhe rënie.",
+        "alkool": "Alkooli e shton shumë përgjumjen.",
+        "sedative": "Me ilaçe qetësuese ose gjumi përgjumja shtohet shumë.",
+        "epilepsi": "Mund të ulë pragun e krizave; pyet mjekun.",
+        "astme": "Pyet mjekun.",
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "femije_nen_12": "Për fëmijët 6–12 vjeç doza është më e vogël; pyet farmacistin."
+      }
+    },
+    {
+      "id": "difenhidramine",
+      "emer": "Difenhidraminë 50 mg (për gjumë)",
+      "lende_aktive": "Difenhidraminë",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Benadryl Sleep",
+        "Nytol",
+        "Sominex"
+      ],
+      "doza": "1 tabletë (50 mg) 20–30 minuta para gjumit.",
+      "doza_maks": "Jo më shumë se 1 tabletë (50 mg) në natë.",
+      "kohezgjatja": "Vetëm për pagjumësi të rastit, jo më shumë se 7 netë rresht.",
+      "si_merret": "Me ujë, vetëm kur ke 7–8 orë kohë për të fjetur.",
+      "paralajmerime": [
+        "Të nesërmen mund të ndihesh i përgjumur: kujdes me makinën.",
+        "Mos e kombino me alkool ose ilaçe të tjera gjumi."
+      ],
+      "efekte_anesore": [
+        "Përgjumje të nesërmen",
+        "Tharje goje",
+        "Kapsllëk",
+        "Vështirësi në urinim"
+      ],
+      "kunderindikime": {
+        "glaukome": "Mund ta rrisë presionin e syrit.",
+        "prostate": "Mund të shkaktojë mbajtje të urinës.",
+        "mbi_65": "Te të moshuarit shkakton konfuzion, rënie dhe probleme me kujtesën.",
+        "femije_nen_12": "Nuk përdoret për gjumë te fëmijët.",
+        "shtatzeni": "Nuk rekomandohet si ilaç gjumi në shtatzëni.",
+        "gjidhenie": "Kalon në qumësht dhe mund ta përgjumë foshnjën.",
+        "alergji_antihistaminike": "Është antihistaminik; ke alergji ndaj tyre."
+      },
+      "kujdes": {
+        "alkool": "Alkooli e shton shumë përgjumjen.",
+        "sedative": "Me ilaçe qetësuese ose gjumi përgjumja shtohet shumë.",
+        "astme": "Pyet mjekun.",
+        "zemra": "Pyet mjekun.",
+        "epilepsi": "Pyet mjekun."
+      }
+    },
+    {
+      "id": "melatonine",
+      "emer": "Melatoninë 1–2 mg",
+      "lende_aktive": "Melatoninë",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Melatonin",
+        "Circadin (me recetë)",
+        "Melatonina"
+      ],
+      "doza": "1 tabletë (1–2 mg) 30–60 minuta para gjumit.",
+      "doza_maks": "Jo më shumë se 2 mg në natë pa mjek.",
+      "kohezgjatja": "Për probleme të përkohshme (p.sh. jet lag) disa ditë; jo më shumë se 3–4 javë pa mjek.",
+      "si_merret": "Me ujë, pas ushqimit, në të njëjtën orë çdo natë.",
+      "paralajmerime": [
+        "Mos nget makinën për disa orë pas marrjes.",
+        "Mos e kombino me alkool."
+      ],
+      "efekte_anesore": [
+        "Përgjumje",
+        "Dhimbje koke",
+        "Marramendje"
+      ],
+      "kunderindikime": {
+        "shtatzeni": "Nuk ka të dhëna të mjaftueshme për sigurinë në shtatzëni.",
+        "gjidhenie": "Nuk rekomandohet gjatë gjidhënies.",
+        "femije_nen_12": "Te fëmijët përdoret vetëm me këshillë mjeku."
+      },
+      "kujdes": {
+        "antikoagulante": "Mund të ndikojë te varfarina; pyet mjekun.",
+        "epilepsi": "Pyet mjekun.",
+        "sedative": "Shton përgjumjen.",
+        "melci": "Pyet mjekun.",
+        "alkool": "Alkooli e prish gjumin dhe shton përgjumjen."
+      }
+    },
+    {
+      "id": "valeriane",
+      "emer": "Valerianë (bimore)",
+      "lende_aktive": "Ekstrakt rrënje valeriane",
+      "forma": "Tableta / kapsula",
+      "emra_tregtare": [
+        "Valerian",
+        "Sedonium",
+        "Valdispert"
+      ],
+      "doza": "Sipas paketimit, zakonisht 1–2 tableta 30–60 minuta para gjumit.",
+      "doza_maks": "Mos e kalo dozën e shkruar në paketim.",
+      "kohezgjatja": "Efekti shihet pas 2–4 javësh përdorimi të rregullt. Nëse nuk ka përmirësim pas 4 javësh, pyet mjekun.",
+      "si_merret": "Me ujë.",
+      "paralajmerime": [
+        "Mund të shkaktojë përgjumje: kujdes me makinën.",
+        "Mos e kombino me alkool."
+      ],
+      "efekte_anesore": [
+        "Shqetësim stomaku",
+        "Dhimbje koke",
+        "Përgjumje"
+      ],
+      "kunderindikime": {
+        "shtatzeni": "Nuk rekomandohet në shtatzëni.",
+        "gjidhenie": "Nuk rekomandohet gjatë gjidhënies.",
+        "femije_nen_12": "Nuk rekomandohet te fëmijët nën 12 vjeç."
+      },
+      "kujdes": {
+        "alkool": "Shton përgjumjen.",
+        "sedative": "Shton efektin e ilaçeve qetësuese.",
+        "melci": "Rrallë është lidhur me dëmtim mëlçie; pyet mjekun."
+      }
+    },
+    {
+      "id": "benzokaine_xhel",
+      "emer": "Xhel gojor anestezik (benzokainë)",
+      "lende_aktive": "Benzokainë",
+      "forma": "Xhel për gojën",
+      "emra_tregtare": [
+        "Orajel",
+        "Anbesol"
+      ],
+      "doza": "Një sasi e vogël mbi plagë ose dhëmb, deri 4 herë në ditë.",
+      "doza_maks": "Jo më shumë se 4 aplikime në ditë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 7 ditë.",
+      "si_merret": "Thaje zonën me garzë, vendos xhelin me gisht të pastër ose shtupë pambuku.",
+      "paralajmerime": [
+        "Rrallë shkakton methemoglobinemi: lëkurë gri/blu, frymëmarrje e shpejtë → urgjencë.",
+        "Mos ha ose pi 1 orë pas aplikimit nëse goja është e mpirë."
+      ],
+      "efekte_anesore": [
+        "Mpirje",
+        "Djegie e lehtë"
+      ],
+      "kunderindikime": {
+        "nen_2": "Benzokaina nuk përdoret te fëmijët nën 2 vjeç (rrezik methemoglobinemie)."
+      },
+      "kujdes": {
+        "femije_nen_12": "Pyet farmacistin për formën dhe sasinë për fëmijë.",
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit."
+      }
+    },
+    {
+      "id": "klorheksidine_shpelares",
+      "emer": "Shpëlarës goje klorheksidinë 0,12–0,2%",
+      "lende_aktive": "Klorheksidinë diglukonat",
+      "forma": "Shpëlarës goje",
+      "emra_tregtare": [
+        "Corsodyl",
+        "Curasept",
+        "Eludril"
+      ],
+      "doza": "10 ml, shpëlaj gojën për 1 minutë, 2 herë në ditë.",
+      "doza_maks": "2 herë në ditë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 2 javë (mund të ngjyrosë dhëmbët).",
+      "si_merret": "Mos e gëlltit. Përdore 30 minuta pas larjes së dhëmbëve (pasta e dobëson efektin).",
+      "paralajmerime": [
+        "Përdorimi i gjatë ngjyros dhëmbët dhe ndryshon shijen; kalon pas ndërprerjes."
+      ],
+      "efekte_anesore": [
+        "Ngjyrosje kafe e dhëmbëve",
+        "Ndryshim i shijes"
+      ],
+      "kunderindikime": {
+        "femije_nen_12": "Nuk rekomandohet te fëmijët që mund ta gëlltisin."
+      },
+      "kujdes": {}
+    },
+    {
+      "id": "aciklovir_krem",
+      "emer": "Aciklovir krem 5%",
+      "lende_aktive": "Aciklovir",
+      "forma": "Krem",
+      "emra_tregtare": [
+        "Zovirax",
+        "Aciclovir",
+        "Acyvir"
+      ],
+      "doza": "Një shtresë e hollë mbi zonë 5 herë në ditë (rreth çdo 4 orë, jo natën).",
+      "doza_maks": "5 aplikime në ditë.",
+      "kohezgjatja": "5 ditë; nëse nuk ka shëruar, deri në 10 ditë. Pastaj te mjeku.",
+      "si_merret": "Fillo sapo ndjen djegien ose të mpirët para flluskave. Laj duart para dhe pas.",
+      "paralajmerime": [
+        "Herpesi ngjitet: mos puth dhe mos ndaj gota/peshqirë derisa të shërohet.",
+        "Mos e vendos brenda gojës ose në sy."
+      ],
+      "efekte_anesore": [
+        "Djegie ose thumbim i lehtë",
+        "Tharje e lëkurës"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Mos e vendos te gjinjtë.",
+        "imunitet": "Me imunitet të dobët herpesi duhet parë nga mjeku."
+      }
+    },
+    {
+      "id": "krem_hemorroidesh",
+      "emer": "Krem/supozitor për hemorroide",
+      "lende_aktive": "Lidokainë + hidrokortizon (ose kombinime të ngjashme)",
+      "forma": "Krem rektal / supozitorë",
+      "emra_tregtare": [
+        "Procto-Glyvenol",
+        "Anusol",
+        "Preparation H"
+      ],
+      "doza": "Aplikoje mëngjes, mbrëmje dhe pas çdo jashtëqitjeje.",
+      "doza_maks": "Jo më shumë se 4 herë në ditë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 7 ditë.",
+      "si_merret": "Laj dhe thaj zonën para aplikimit. Laj duart pas.",
+      "paralajmerime": [
+        "Gjaku i shumtë, jashtëqitja e zezë ose ndryshimi i zakoneve të zorrës duhet parë nga mjeku."
+      ],
+      "efekte_anesore": [
+        "Djegie ose kruajtje e lehtë lokale"
+      ],
+      "kunderindikime": {
+        "femije_nen_12": "Nuk përdoret te fëmijët pa mjek."
+      },
+      "kujdes": {
+        "shtatzeni": "Hemorroidet janë të shpeshta në shtatzëni; pyet farmacistin për produktin e duhur.",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "antikoagulante": "Gjakderdhja nga hemorroidet duhet parë nga mjeku."
+      }
+    },
+    {
+      "id": "lot_artificiale",
+      "emer": "Lot artificialë (pika sysh)",
+      "lende_aktive": "Hipromelozë / acid hialuronik",
+      "forma": "Pika sysh",
+      "emra_tregtare": [
+        "Systane",
+        "Hylo-Comod",
+        "Artelac",
+        "Optive"
+      ],
+      "doza": "1–2 pika në çdo sy sipas nevojës, zakonisht 3–6 herë në ditë.",
+      "doza_maks": "Sipas nevojës; nëse të duhen më shumë se 6 herë në ditë, përdor pika pa konservues.",
+      "kohezgjatja": "Mund të përdoren për kohë të gjatë.",
+      "si_merret": "Mos e prek majën e shishes me syrin. Hiq lentet e kontaktit nëse pikat kanë konservues.",
+      "paralajmerime": [
+        "Dhimbja e syrit, ulja e shikimit ose ndjeshmëria nga drita kërkojnë mjek."
+      ],
+      "efekte_anesore": [
+        "Turbullim i shkurtër i shikimit pas pikave"
+      ],
+      "kunderindikime": {},
+      "kujdes": {}
+    },
+    {
+      "id": "kromoglikat_pika",
+      "emer": "Kromoglikat natriumi 2% pika sysh",
+      "lende_aktive": "Kromoglikat natriumi",
+      "forma": "Pika sysh",
+      "emra_tregtare": [
+        "Opticrom",
+        "Cromabak",
+        "Allergo-Comod"
+      ],
+      "doza": "1–2 pika në çdo sy, 4 herë në ditë.",
+      "doza_maks": "4 herë në ditë.",
+      "kohezgjatja": "Gjatë periudhës së alergjisë. Efekti i plotë pas disa ditësh përdorimi të rregullt.",
+      "si_merret": "Hiq lentet e kontaktit dhe prit 15 min para se t'i vendosësh përsëri.",
+      "paralajmerime": [
+        "Nëse syri ka qelb, dhemb ose shikimi bie, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Djegie e shkurtër",
+        "Turbullim i shkurtër i shikimit"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "femije_nen_12": "Pyet farmacistin për fëmijët e vegjël."
+      }
+    },
+    {
+      "id": "benzoil_peroksid",
+      "emer": "Benzoil peroksid 5% xhel",
+      "lende_aktive": "Benzoil peroksid",
+      "forma": "Xhel",
+      "emra_tregtare": [
+        "Effaclar Duo",
+        "PanOxyl",
+        "Basiron AC"
+      ],
+      "doza": "Shtresë e hollë 1 herë në ditë në fillim; pas 1 jave mund të shkohet në 2 herë në ditë.",
+      "doza_maks": "2 herë në ditë.",
+      "kohezgjatja": "Përmirësimi shihet pas 4–6 javësh. Nëse nuk ka përmirësim pas 2–3 muajsh, pyet mjekun.",
+      "si_merret": "Mbi lëkurë të pastër dhe të thatë. Shmang sytë, buzët dhe lëkurën e plagosur.",
+      "paralajmerime": [
+        "Zbardh rrobat, peshqirët dhe flokët.",
+        "Përdor krem dielli: lëkura bëhet më e ndjeshme."
+      ],
+      "efekte_anesore": [
+        "Tharje",
+        "Skuqje",
+        "Lëvozhgim i lëkurës"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "shtatzeni": "Zakonisht pranohet për përdorim lokal; pyet farmacistin."
+      }
+    },
+    {
+      "id": "dekspantenol_krem",
+      "emer": "Dekspantenol 5% krem/sprej",
+      "lende_aktive": "Dekspantenol",
+      "forma": "Krem / sprej / pomadë",
+      "emra_tregtare": [
+        "Bepanthen",
+        "Panthenol spray",
+        "D-Panthenol"
+      ],
+      "doza": "Shtresë e hollë 1–3 herë në ditë ose sipas nevojës.",
+      "doza_maks": "Sipas nevojës.",
+      "kohezgjatja": "Derisa të shërohet lëkura. Nëse nuk ka përmirësim pas 1 jave, pyet farmacistin.",
+      "si_merret": "Mbi lëkurë të pastër. Te djegiet, ftohe më parë zonën me ujë rrjedhës 20 minuta.",
+      "paralajmerime": [
+        "Djegiet e mëdha, në fytyrë, duar, organe gjenitale ose me flluska të mëdha kërkojnë mjek."
+      ],
+      "efekte_anesore": [
+        "Shumë rrallë: alergji lëkure"
+      ],
+      "kunderindikime": {},
+      "kujdes": {}
+    },
+    {
+      "id": "povidon_jod",
+      "emer": "Povidon-jod 10% (antiseptik)",
+      "lende_aktive": "Povidon-jod",
+      "forma": "Tretësirë / pomadë",
+      "emra_tregtare": [
+        "Betadine",
+        "Braunol"
+      ],
+      "doza": "Aplikoje mbi plagën e pastruar 1–2 herë në ditë.",
+      "doza_maks": "2 herë në ditë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 7–14 ditë.",
+      "si_merret": "Fillimisht laje plagën me ujë të pastër, pastaj aplikoje dhe mbuloje me fashë sterile.",
+      "paralajmerime": [
+        "Plagët e thella, nga kafshimi, me ndotje ose që nuk ndalojnë së gjakosuri kërkojnë mjek (edhe për tetanosin)."
+      ],
+      "efekte_anesore": [
+        "Ngjyrosje e përkohshme e lëkurës",
+        "Rrallë: irritim"
+      ],
+      "kunderindikime": {
+        "tiroide": "Jodi mund të ndikojë te tiroidja; përdor një antiseptik pa jod (p.sh. klorheksidinë)."
+      },
+      "kujdes": {
+        "shtatzeni": "Mos e përdor gjatë ose mbi sipërfaqe të mëdha; pyet farmacistin.",
+        "gjidhenie": "Mos e përdor gjatë ose mbi sipërfaqe të mëdha; pyet farmacistin.",
+        "nen_2": "Te foshnjat përdor antiseptik pa jod."
+      }
+    },
+    {
+      "id": "dimetikon_losion",
+      "emer": "Dimetikon 4% losion për morrat",
+      "lende_aktive": "Dimetikon",
+      "forma": "Losion / sprej",
+      "emra_tregtare": [
+        "Hedrin",
+        "Nyda",
+        "Paranix"
+      ],
+      "doza": "Lagu flokët e thatë plotësisht, lëre sa thotë paketimi (zakonisht 8 orë ose gjithë natën), pastaj laji.",
+      "doza_maks": "Një trajtim; përsërite pas 7 ditësh.",
+      "kohezgjatja": "2 trajtime me 7 ditë diferencë. Krehëri i dendur çdo 3–4 ditë për 2 javë.",
+      "si_merret": "Vetëm në flokë dhe lëkurën e kokës. Kontrollo gjithë familjen.",
+      "paralajmerime": [
+        "Është i djegshëm: mos u afro zjarrit ose cigares me flokët e trajtuar.",
+        "Mos e fut në sy."
+      ],
+      "efekte_anesore": [
+        "Rrallë: irritim i lëkurës së kokës"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "nen_2": "Për foshnjat nën 6 muaj pyet mjekun.",
+        "astme": "Shmang thithjen e spërkatjes."
+      }
+    },
+    {
+      "id": "ketokonazol_shampo",
+      "emer": "Ketokonazol 2% shampo",
+      "lende_aktive": "Ketokonazol",
+      "forma": "Shampo",
+      "emra_tregtare": [
+        "Nizoral",
+        "Ketoderm"
+      ],
+      "doza": "Lag flokët, vendos shampon, lëre 3–5 minuta, pastaj shpëlaj.",
+      "doza_maks": "2 herë në javë.",
+      "kohezgjatja": "2 herë në javë për 2–4 javë, pastaj 1 herë në 1–2 javë për ta parandaluar.",
+      "si_merret": "Vetëm në flokë dhe lëkurën e kokës. Shmang sytë.",
+      "paralajmerime": [
+        "Nëse lëkura e kokës ka plagë, qelb ose rënie flokësh në pika, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Irritim i lëkurës",
+        "Flokë të thatë ose të yndyrshëm"
+      ],
+      "kunderindikime": {},
+      "kujdes": {}
+    },
+    {
+      "id": "klotrimazol_vaginal",
+      "emer": "Klotrimazol vaginal (500 mg ose krem 2%)",
+      "lende_aktive": "Klotrimazol",
+      "forma": "Tabletë vaginale / krem vaginal",
+      "emra_tregtare": [
+        "Canesten",
+        "Gyno-Canesten"
+      ],
+      "doza": "1 tabletë vaginale 500 mg në mbrëmje (një dozë e vetme), ose krem 2% 1 herë në ditë për 3 ditë.",
+      "doza_maks": "Një trajtim.",
+      "kohezgjatja": "Simptomat zakonisht përmirësohen brenda 3–7 ditësh. Nëse jo, te mjeku.",
+      "si_merret": "Në mbrëmje para gjumit, thellë në vaginë.",
+      "paralajmerime": [
+        "Nëse është hera e parë, ke temperaturë, dhimbje barku, rrjedhje me erë të keqe ose me gjak, shko te mjeku.",
+        "Mund ta dëmtojë prezervativin prej lateksi."
+      ],
+      "efekte_anesore": [
+        "Djegie ose kruajtje e lehtë lokale"
+      ],
+      "kunderindikime": {
+        "nen_16": "Nën 16 vjeç duhet parë nga mjeku."
+      },
+      "kujdes": {
+        "shtatzeni": "Në shtatzëni pyet mjekun; nëse e përdor, vendose pa aplikator.",
+        "diabet": "Kandidoza e përsëritur te diabetikët duhet parë nga mjeku.",
+        "mbi_65": "Mbi 60 vjeç pyet mjekun para trajtimit."
+      }
+    },
+    {
+      "id": "mebendazol",
+      "emer": "Mebendazol 100 mg",
+      "lende_aktive": "Mebendazol",
+      "forma": "Tabletë / suspension",
+      "emra_tregtare": [
+        "Vermox",
+        "Mebendazole"
+      ],
+      "doza": "1 tabletë (100 mg) si dozë e vetme; përsërite pas 2 javësh.",
+      "doza_maks": "1 tabletë në ditën e trajtimit.",
+      "kohezgjatja": "Dy doza me 2 javë diferencë. Trajto gjithë familjen në të njëjtën kohë.",
+      "si_merret": "Mund të përtypet ose gëlltitet. Laj duart, prit thonjtë, ndërro çarçafët.",
+      "paralajmerime": [
+        "Krimbat ngjiten lehtë: higjiena është po aq e rëndësishme sa ilaçi."
+      ],
+      "efekte_anesore": [
+        "Dhimbje barku",
+        "Diarre"
+      ],
+      "kunderindikime": {
+        "shtatzeni": "Nuk rekomandohet në shtatzëni.",
+        "nen_2": "Nuk jepet te fëmijët nën 2 vjeç pa mjek."
+      },
+      "kujdes": {
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "melci": "Konsultohu me mjekun."
+      }
+    },
+    {
+      "id": "nikotine",
+      "emer": "Nikotinë zëvendësuese (çamçakëz 2/4 mg ose ngjitës)",
+      "lende_aktive": "Nikotinë",
+      "forma": "Çamçakëz / ngjitës / pastila",
+      "emra_tregtare": [
+        "Nicorette",
+        "NiQuitin",
+        "Nicotinell"
+      ],
+      "doza": "Çamçakëz: 1 copë kur ke dëshirë për cigare (zakonisht 8–12 në ditë). Ngjitës: 1 në ditë. Fortësia (2 mg/4 mg) varet nga sa cigare pi.",
+      "doza_maks": "Çamçakëz: jo më shumë se 15 copë 4 mg ose 24 copë 2 mg në ditë.",
+      "kohezgjatja": "Zakonisht 8–12 javë, duke e ulur dozën gradualisht.",
+      "si_merret": "Përtype çamçakëzin ngadalë derisa të ndjesh shije, pastaj vendose mes faqes dhe mishit të dhëmbëve.",
+      "paralajmerime": [
+        "Mos pi duhan ndërkohë që përdor ngjitësin."
+      ],
+      "efekte_anesore": [
+        "Irritim goje/fyti",
+        "Lemza",
+        "Të përziera",
+        "Ëndrra të gjalla (ngjitësi natën)"
+      ],
+      "kunderindikime": {
+        "nen_16": "Nën 18 vjeç përdoret vetëm me këshillë mjeku."
+      },
+      "kujdes": {
+        "zemra": "Pas infarkti, aritmie ose anginë të paqëndrueshme pyet mjekun para fillimit.",
+        "hipertension": "Pyet mjekun nëse tensioni nuk është i kontrolluar.",
+        "diabet": "Kontrollo sheqerin më shpesh kur lë duhanin.",
+        "shtatzeni": "Në shtatzëni ndalimi pa ilaç është më mirë; nëse nuk ia del, pyet mjekun.",
+        "ulcer": "Mund ta acarojë stomakun; pyet mjekun."
+      }
+    },
+    {
+      "id": "krem_emolient",
+      "emer": "Krem emolient (hidratues për lëkurë të thatë)",
+      "lende_aktive": "Parafinë/glicerinë/ure 5–10%",
+      "forma": "Krem / losion",
+      "emra_tregtare": [
+        "Eucerin UreaRepair",
+        "Cetaphil",
+        "La Roche-Posay Lipikar",
+        "Bioderma Atoderm"
+      ],
+      "doza": "Shtresë e bollshme 2–3 herë në ditë dhe pas larjes.",
+      "doza_maks": "Sipas nevojës.",
+      "kohezgjatja": "Përdorim i vazhdueshëm.",
+      "si_merret": "Mbi lëkurë ende pak të lagur pas dushit, në drejtim të qimeve.",
+      "paralajmerime": [
+        "Kremrat me parafinë e bëjnë rrobën më të djegshme: mos u afro zjarrit."
+      ],
+      "efekte_anesore": [
+        "Rrallë: djegie e lehtë te lëkura e plasaritur (sidomos me ure)"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "nen_2": "Te foshnjat përdor kremra pa ure dhe pa parfum."
+      }
+    },
+    {
+      "id": "acid_salicilik",
+      "emer": "Acid salicilik 12–26% (për lytha dhe kallo)",
+      "lende_aktive": "Acid salicilik",
+      "forma": "Tretësirë / xhel / ngjitës",
+      "emra_tregtare": [
+        "Duofilm",
+        "Verrumal",
+        "Compeed (kallo)",
+        "Scholl"
+      ],
+      "doza": "1 herë në ditë mbi lyth/kallo.",
+      "doza_maks": "1 herë në ditë.",
+      "kohezgjatja": "Deri në 12 javë për lythat. Nëse nuk ka përmirësim, te mjeku.",
+      "si_merret": "Zbut zonën në ujë të ngrohtë 5 min, thaje, mbro lëkurën përreth me vazelinë, vendos ilaçin. Një herë në javë fërko me limë.",
+      "paralajmerime": [
+        "Mos e përdor në fytyrë, organe gjenitale, nishane ose lëkurë të plagosur."
+      ],
+      "efekte_anesore": [
+        "Irritim ose zbardhje e lëkurës përreth"
+      ],
+      "kunderindikime": {
+        "diabet": "Me diabet, problemet e këmbëve trajtohen nga mjeku (rrezik plage dhe infeksioni)."
+      },
+      "kujdes": {
+        "shtatzeni": "Pyet farmacistin para përdorimit.",
+        "femije_nen_12": "Pyet farmacistin."
+      }
+    },
+    {
+      "id": "amorolfine",
+      "emer": "Amorolfinë 5% llak për thonjtë",
+      "lende_aktive": "Amorolfinë",
+      "forma": "Llak thonjsh",
+      "emra_tregtare": [
+        "Loceryl",
+        "Curanail"
+      ],
+      "doza": "1–2 herë në javë mbi thoin e prekur.",
+      "doza_maks": "2 herë në javë.",
+      "kohezgjatja": "6 muaj për thonjtë e duarve, 9–12 muaj për thonjtë e këmbëve.",
+      "si_merret": "Lima sipërfaqen e thoit, pastroje me shtupën e paketimit, vendos llakun. Mos e ndaj limën.",
+      "paralajmerime": [
+        "Nëse janë prekur më shumë se 2 thonj ose rrënja e thoit, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Rrallë: irritim rreth thoit"
+      ],
+      "kunderindikime": {
+        "nen_16": "Nën 18 vjeç përdoret vetëm me këshillë mjeku."
+      },
+      "kujdes": {
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "diabet": "Me diabet, problemet e thonjve të këmbëve duhet t'i shohë mjeku.",
+        "imunitet": "Me imunitet të dobët pyet mjekun."
+      }
+    },
+    {
+      "id": "terbinafine_krem",
+      "emer": "Terbinafinë krem 1%",
+      "lende_aktive": "Terbinafinë",
+      "forma": "Krem",
+      "emra_tregtare": [
+        "Lamisil",
+        "Terbinafine"
+      ],
+      "doza": "Shtresë e hollë 1–2 herë në ditë.",
+      "doza_maks": "2 herë në ditë.",
+      "kohezgjatja": "Zakonisht 1 javë (këmba e atletit) deri në 2 javë.",
+      "si_merret": "Laj dhe thaj mirë lëkurën, sidomos mes gishtave. Laj duart pas.",
+      "paralajmerime": [
+        "Mbaj këmbët të thata dhe ndërro çorapet çdo ditë."
+      ],
+      "efekte_anesore": [
+        "Skuqje ose kruajtje e lehtë"
+      ],
+      "kunderindikime": {
+        "femije_nen_12": "Nuk rekomandohet te fëmijët nën 12 vjeç pa mjek."
+      },
+      "kujdes": {
+        "shtatzeni": "Konsultohu me mjekun ose farmacistin para përdorimit.",
+        "gjidhenie": "Mos e vendos te gjinjtë."
+      }
+    },
+    {
+      "id": "benzidamine_sprej",
+      "emer": "Benzidaminë 0,15% sprej/shpëlarës për fytin",
+      "lende_aktive": "Benzidaminë",
+      "forma": "Sprej goje ose shpëlarës",
+      "emra_tregtare": [
+        "Tantum Verde",
+        "Benzydamine",
+        "Difflam"
+      ],
+      "doza": "Sprej: 4–8 spërkatje në fyt 2–6 herë në ditë. Shpëlarës: 15 ml për 20–30 sekonda, 2–3 herë në ditë (mos e gëlltit).",
+      "doza_maks": "Jo më shumë se 6 herë në ditë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 7 ditë.",
+      "si_merret": "Pas ngrënies. Mos ha e mos pi për 15–20 minuta pas përdorimit.",
+      "paralajmerime": [
+        "Mund të japë mpirje ose djegie të lehtë në gojë.",
+        "Nëse dhimbja e fytit zgjat mbi 7 ditë ose ke temperaturë të lartë, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Mpirje ose djegie në gojë",
+        "Rrallë: skuqje lëkure, spazmë bronkesh"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "astme": "Rrallë mund të shkaktojë spazmë të bronkeve: përdore me kujdes.",
+        "shtatzeni": "Pyet farmacistin ose mjekun para përdorimit.",
+        "femije_nen_12": "Sprej mund të përdoret nga 6 vjeç me dozë më të ulët; pyet farmacistin."
+      }
+    },
+    {
+      "id": "acetilcisteine",
+      "emer": "Acetilcisteinë 600 mg (për gëlbazë të trashë)",
+      "lende_aktive": "Acetilcisteinë",
+      "forma": "Tableta shkumëzuese ose pluhur",
+      "emra_tregtare": [
+        "ACC 600",
+        "Fluimucil",
+        "NAC"
+      ],
+      "doza": "600 mg një herë në ditë, ose 200 mg 3 herë në ditë.",
+      "doza_maks": "Jo më shumë se 600 mg në 24 orë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 5–7 ditë.",
+      "si_merret": "Tretet në një gotë ujë dhe pihet pas ushqimit. Pi shumë lëngje gjatë ditës. Mos e merr vonë në mbrëmje.",
+      "paralajmerime": [
+        "Mos e kombino me ilaçe që ndalojnë kollën (p.sh. dekstrometorfan): gëlbaza mbetet në mushkëri.",
+        "Antibiotikët merri 2 orë larg acetilcisteinës."
+      ],
+      "efekte_anesore": [
+        "Të përziera, urth, diarre",
+        "Rrallë: reaksione alergjike, spazmë bronkesh"
+      ],
+      "kunderindikime": {
+        "nen_2": "Nuk përdoret te fëmijët nën 2 vjeç."
+      },
+      "kujdes": {
+        "astme": "Mund të shkaktojë spazmë të bronkeve te astmatikët.",
+        "ulcer": "Me ulçerë përdore me kujdes: mund ta irritojë stomakun.",
+        "shtatzeni": "Konsultohu me mjekun para përdorimit.",
+        "gjidhenie": "Konsultohu me mjekun.",
+        "femije_nen_12": "Për fëmijë ka forma dhe doza të veçanta: pyet farmacistin."
+      }
+    },
+    {
+      "id": "hedera_shurup",
+      "emer": "Shurup me ekstrakt gjethesh urthi (Hedera helix)",
+      "lende_aktive": "Ekstrakt i thatë i gjetheve të urthit",
+      "forma": "Shurup",
+      "emra_tregtare": [
+        "Prospan",
+        "Hedelix",
+        "Bronchipret"
+      ],
+      "doza": "Të rriturit: 5–7,5 ml 2–3 herë në ditë (shiko fletëudhëzuesin e produktit).",
+      "doza_maks": "Mos e kalo dozën ditore të shkruar në paketim.",
+      "kohezgjatja": "Pa mjek jo më shumë se 1 javë.",
+      "si_merret": "Me ose pa ushqim. Tunde shishen para përdorimit.",
+      "paralajmerime": [
+        "Nëse ke vështirësi në frymëmarrje, temperaturë ose gëlbazë me gjak, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Të përziera, diarre",
+        "Rrallë: reaksione alergjike"
+      ],
+      "kunderindikime": {
+        "nen_2": "Nuk përdoret te fëmijët nën 2 vjeç (rrezik për rrugët e frymëmarrjes)."
+      },
+      "kujdes": {
+        "astme": "Me astmë pyet mjekun para përdorimit.",
+        "shtatzeni": "Pyet mjekun ose farmacistin.",
+        "gjidhenie": "Pyet mjekun ose farmacistin.",
+        "femije_nen_12": "Për fëmijë doza është më e vogël: pyet farmacistin.",
+        "diabet": "Disa shurupe kanë sheqer: kontrollo paketimin."
+      }
+    },
+    {
+      "id": "mentol_balsam",
+      "emer": "Balsam me mentol dhe eukalipt (për fërkim në gjoks)",
+      "lende_aktive": "Mentol, kamfor, vaj eukalipti",
+      "forma": "Pomadë",
+      "emra_tregtare": [
+        "Vicks VapoRub",
+        "Pectoral balsam"
+      ],
+      "doza": "Fërko një sasi të vogël në gjoks dhe shpinë deri në 3 herë në ditë.",
+      "doza_maks": "Jo më shumë se 3 herë në ditë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 5–7 ditë.",
+      "si_merret": "Vetëm në lëkurë të paprekur. Mos e vendos në hundë, gojë ose në plagë. Laj duart pas përdorimit.",
+      "paralajmerime": [
+        "Mos e gëlltit: kamfori është helmues.",
+        "Mbaje larg syve."
+      ],
+      "efekte_anesore": [
+        "Irritim i lëkurës",
+        "Rrallë: kollë ose spazmë nga avujt"
+      ],
+      "kunderindikime": {
+        "nen_2": "Kamfori dhe mentoli mund të shkaktojnë probleme në frymëmarrje te fëmijët nën 2 vjeç."
+      },
+      "kujdes": {
+        "astme": "Avujt e mentolit mund të shkaktojnë krizë astme.",
+        "epilepsi": "Kamfori mund të ulë pragun e krizave.",
+        "shtatzeni": "Pyet farmacistin."
+      }
+    },
+    {
+      "id": "vitamine_d",
+      "emer": "Vitaminë D3 1000 IU",
+      "lende_aktive": "Kolekalciferol",
+      "forma": "Tableta, kapsula ose pika",
+      "emra_tregtare": [
+        "Vigantol",
+        "Devit",
+        "D3 1000 IU"
+      ],
+      "doza": "1000 IU (25 mikrogram) një herë në ditë.",
+      "doza_maks": "Pa mjek jo më shumë se 4000 IU në ditë.",
+      "kohezgjatja": "Mund të merret gjatë dimrit ose afatgjatë; mjeku mund të kontrollojë nivelin në gjak.",
+      "si_merret": "Pas vaktit kryesor (përthithet më mirë me yndyrë).",
+      "paralajmerime": [
+        "Mos merr disa produkte me vitaminë D njëkohësisht (multivitamina e kanë shpesh).",
+        "Dozat e larta afatgjata mund të rrisin kalciumin në gjak."
+      ],
+      "efekte_anesore": [
+        "Në doza të larta: të përziera, etje, kapsllëk, gurë në veshka"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "veshka": "Me sëmundje veshkash ose gurë në veshka konsultohu me mjekun.",
+        "femije_nen_12": "Fëmijët kanë doza të veçanta (zakonisht pika): pyet pediatrin."
+      }
+    },
+    {
+      "id": "vitamine_c",
+      "emer": "Vitaminë C 500 mg",
+      "lende_aktive": "Acid askorbik",
+      "forma": "Tableta ose tableta shkumëzuese",
+      "emra_tregtare": [
+        "Cevit",
+        "Redoxon",
+        "Vitamin C 500"
+      ],
+      "doza": "500–1000 mg në ditë.",
+      "doza_maks": "Jo më shumë se 2000 mg në ditë.",
+      "kohezgjatja": "Mund të merret disa javë; ushqimi (frutat, perimet) mbetet burimi më i mirë.",
+      "si_merret": "Me ose pas ushqimit.",
+      "paralajmerime": [
+        "Dozat e larta mund të shkaktojnë diarre dhe gurë në veshka.",
+        "Tabletat shkumëzuese kanë natrium: kujdes me tensionin."
+      ],
+      "efekte_anesore": [
+        "Diarre, urth ose dhimbje barku në doza të larta"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "veshka": "Me gurë ose sëmundje veshkash mos kalo 500 mg në ditë pa mjek.",
+        "hipertension": "Tabletat shkumëzuese kanë kripë (natrium); zgjidh tabletat e zakonshme."
+      }
+    },
+    {
+      "id": "zink",
+      "emer": "Zink 10–25 mg",
+      "lende_aktive": "Glukonat ose sulfat zinku",
+      "forma": "Tableta ose pastila",
+      "emra_tregtare": [
+        "Zinkorot",
+        "Zinc 25",
+        "Zincovit"
+      ],
+      "doza": "10–25 mg zink në ditë. Te ftohja: pastila zinku që nga dita e parë.",
+      "doza_maks": "Jo më shumë se 40 mg zink në ditë.",
+      "kohezgjatja": "Te ftohja 5–7 ditë; si suplement jo më shumë se disa javë pa mjek.",
+      "si_merret": "Pas ushqimit (me stomak bosh të përzien).",
+      "paralajmerime": [
+        "Antibiotikët (tetraciklinë, ciprofloksacinë) dhe hekuri merren të paktën 2 orë larg zinkut.",
+        "Përdorimi i gjatë në doza të larta ul bakrin në trup."
+      ],
+      "efekte_anesore": [
+        "Të përziera, shije metalike"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "femije_nen_12": "Fëmijët kanë doza më të vogla: pyet farmacistin."
+      }
+    },
+    {
+      "id": "multivitamine",
+      "emer": "Multivitaminë me minerale",
+      "lende_aktive": "Vitamina dhe minerale të kombinuara",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Centrum",
+        "Supradyn",
+        "Pharmaton",
+        "Berocca"
+      ],
+      "doza": "1 tabletë në ditë.",
+      "doza_maks": "1 tabletë në ditë. Mos e kombino me vitamina të tjera pa pyetur.",
+      "kohezgjatja": "1–3 muaj, pastaj pushim; ushqimi i larmishëm mbetet më i rëndësishmi.",
+      "si_merret": "Në mëngjes pas ushqimit.",
+      "paralajmerime": [
+        "Mbaje larg fëmijëve: hekuri në multivitamina është i rrezikshëm për ta në sasi të mëdha.",
+        "Urina mund të ngjyroset e verdhë: është normale."
+      ],
+      "efekte_anesore": [
+        "Të përziera, shije e keqe, kapsllëk (nga hekuri)"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "shtatzeni": "Në shtatzëni përdor vetëm multivitamina për shtatzëni (pa shumë vitaminë A).",
+        "antikoagulante": "Vitamina K mund të ndikojë te varfarina: pyet mjekun.",
+        "veshka": "Me sëmundje veshkash pyet mjekun.",
+        "tiroide": "Levotiroksina merret 4 orë larg multivitaminës."
+      }
+    },
+    {
+      "id": "hekur",
+      "emer": "Hekur (sulfat/fumarat hekuri) për mungesë hekuri",
+      "lende_aktive": "Hekur dyvalent",
+      "forma": "Tableta ose shurup",
+      "emra_tregtare": [
+        "Ferro-Gradumet",
+        "Tardyferon",
+        "Ferrum Lek",
+        "Maltofer"
+      ],
+      "doza": "Zakonisht 1 tabletë (60–100 mg hekur) në ditë, ose çdo dy ditë sipas mjekut.",
+      "doza_maks": "Sipas mjekut; mos e kalo dozën e paketimit.",
+      "kohezgjatja": "Zakonisht 3 muaj; mjeku kontrollon gjakun.",
+      "si_merret": "Me stomak bosh me ujë ose lëng portokalli. Jo me çaj, kafe ose qumësht (2 orë larg).",
+      "paralajmerime": [
+        "Mungesa e hekurit duhet konfirmuar me analizë gjaku para se të marrësh hekur.",
+        "Mbaje larg fëmijëve: mbidoza e hekurit është e rrezikshme për ta.",
+        "Jashtëqitja bëhet e zezë: është normale."
+      ],
+      "efekte_anesore": [
+        "Kapsllëk, të përziera, dhimbje barku",
+        "Jashtëqitje e zezë"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "ulcer": "Hekuri irriton stomakun: me ulçerë pyet mjekun.",
+        "tiroide": "Levotiroksina merret 4 orë larg hekurit.",
+        "femije_nen_12": "Fëmijët kanë doza sipas peshës: vetëm sipas pediatrit."
+      }
+    },
+    {
+      "id": "acid_folik",
+      "emer": "Acid folik 0,4 mg",
+      "lende_aktive": "Acid folik",
+      "forma": "Tableta",
+      "emra_tregtare": [
+        "Folacin",
+        "Acid folik 0,4 mg",
+        "Folio"
+      ],
+      "doza": "0,4 mg (400 mikrogram) një herë në ditë.",
+      "doza_maks": "Pa mjek jo më shumë se 1 mg në ditë.",
+      "kohezgjatja": "Nga të paktën 1 muaj para shtatzënisë deri në javën e 12-të të shtatzënisë.",
+      "si_merret": "Çdo ditë në të njëjtën orë, me ose pa ushqim.",
+      "paralajmerime": [
+        "Me epilepsi, diabet ose kur je mbipeshë mjeku mund të japë dozë më të lartë (5 mg)."
+      ],
+      "efekte_anesore": [
+        "Rrallë: të përziera, fryrje"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "epilepsi": "Disa ilaçe kundër epilepsisë ndërveprojnë me acidin folik: pyet mjekun."
+      }
+    },
+    {
+      "id": "magnez",
+      "emer": "Magnez 300 mg",
+      "lende_aktive": "Citrat ose oksid magnezi",
+      "forma": "Tableta, kapsula ose pluhur",
+      "emra_tregtare": [
+        "Magnesium Verla",
+        "Magne B6",
+        "Magnerot"
+      ],
+      "doza": "300 mg në ditë (në 1–2 doza).",
+      "doza_maks": "Jo më shumë se 350 mg magnez suplement në ditë pa mjek.",
+      "kohezgjatja": "2–4 javë; nëse ngërçet vazhdojnë, shko te mjeku.",
+      "si_merret": "Pas ushqimit, mundësisht në mbrëmje.",
+      "paralajmerime": [
+        "Antibiotikët dhe ilaçet për osteoporozë merren 2 orë larg magnezit.",
+        "Në doza të larta jep diarre."
+      ],
+      "efekte_anesore": [
+        "Diarre, dhimbje barku"
+      ],
+      "kunderindikime": {
+        "veshka": "Me sëmundje veshkash magnezi grumbullohet në gjak dhe mund të jetë i rrezikshëm."
+      },
+      "kujdes": {
+        "femije_nen_12": "Pyet farmacistin për dozën te fëmijët."
+      }
+    },
+    {
+      "id": "probiotik",
+      "emer": "Probiotik (Saccharomyces boulardii ose Lactobacillus)",
+      "lende_aktive": "Mikroorganizma probiotike",
+      "forma": "Kapsula ose qeskë",
+      "emra_tregtare": [
+        "Enterol",
+        "Linex",
+        "Bioflorin",
+        "Lactogermina"
+      ],
+      "doza": "1 kapsulë/qeskë 1–2 herë në ditë (sipas produktit).",
+      "doza_maks": "Sipas paketimit.",
+      "kohezgjatja": "Gjatë diarresë dhe disa ditë pas saj; me antibiotik, gjatë kurës dhe 1 javë pas.",
+      "si_merret": "Me ujë jo të nxehtë. Merre 2–3 orë larg antibiotikut.",
+      "paralajmerime": [
+        "Probiotiku nuk zëvendëson rehidratimin: te diarreja pi shumë lëngje ose ORS."
+      ],
+      "efekte_anesore": [
+        "Fryrje e lehtë në ditët e para"
+      ],
+      "kunderindikime": {
+        "imunitet": "Me imunitet të dobët ose kateter venoz, rrallë mund të shkaktojë infeksion në gjak."
+      },
+      "kujdes": {}
+    },
+    {
+      "id": "glicerine_supozitor",
+      "emer": "Supozitor glicerine",
+      "lende_aktive": "Glicerinë",
+      "forma": "Supozitor (për të rritur dhe për fëmijë)",
+      "emra_tregtare": [
+        "Glycerin supp",
+        "Supposte Glicerina"
+      ],
+      "doza": "1 supozitor sipas nevojës, 1 herë në ditë.",
+      "doza_maks": "1 herë në ditë.",
+      "kohezgjatja": "Për raste të rastësishme; jo çdo ditë për më shumë se 1 javë pa mjek.",
+      "si_merret": "Lagu me ujë dhe vendose në anus. Vepron brenda 15–30 minutave.",
+      "paralajmerime": [
+        "Nëse kapsllëku zgjat mbi 2 javë ose ka gjak, shko te mjeku."
+      ],
+      "efekte_anesore": [
+        "Djegie e lehtë në anus"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "femije_nen_12": "Për fëmijë ka supozitorë më të vegjël (pediatrikë)."
+      }
+    },
+    {
+      "id": "senna",
+      "emer": "Senna (laksativ bimor)",
+      "lende_aktive": "Sennozidë A dhe B",
+      "forma": "Tableta ose çaj",
+      "emra_tregtare": [
+        "Senokot",
+        "Laxatan",
+        "X-Prep"
+      ],
+      "doza": "7,5–15 mg sennozidë në mbrëmje para gjumit.",
+      "doza_maks": "Jo më shumë se 30 mg në ditë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 1 javë.",
+      "si_merret": "Para gjumit me ujë; vepron pas 8–12 orësh.",
+      "paralajmerime": [
+        "Përdorimi i gjatë e dobëson zorrën dhe ul kaliumin.",
+        "Mos e përdor me dhimbje të fortë barku pa ditur shkakun."
+      ],
+      "efekte_anesore": [
+        "Ngërçe barku",
+        "Urina mund të ngjyroset kuqërremtë"
+      ],
+      "kunderindikime": {
+        "femije_nen_12": "Nuk përdoret te fëmijët nën 12 vjeç pa mjek."
+      },
+      "kujdes": {
+        "shtatzeni": "Në shtatzëni zgjidh më parë makrogol ose laktulozë.",
+        "gjidhenie": "Pyet mjekun.",
+        "zemra": "Ulja e kaliumit është e rrezikshme me disa ilaçe të zemrës."
+      }
+    },
+    {
+      "id": "oksid_zinku_krem",
+      "emer": "Pastë me oksid zinku (për skuqje pelenash)",
+      "lende_aktive": "Oksid zinku",
+      "forma": "Pastë ose krem",
+      "emra_tregtare": [
+        "Sudocrem",
+        "Desitin",
+        "Bepanthen Baby (dekspantenol)",
+        "Pastë zinku"
+      ],
+      "doza": "Shtresë e hollë në lëkurë të pastër dhe të thatë në çdo ndërrim pelene.",
+      "doza_maks": "Sa herë që nevojitet.",
+      "kohezgjatja": "Nëse skuqja nuk përmirësohet për 3 ditë, shko te pediatri.",
+      "si_merret": "Pastro dhe thaje mirë lëkurën para se ta vendosësh.",
+      "paralajmerime": [
+        "Mos e vendos në plagë të hapura ose me qelb."
+      ],
+      "efekte_anesore": [
+        "Shumë rrallë: irritim"
+      ],
+      "kunderindikime": {},
+      "kujdes": {}
+    },
+    {
+      "id": "permetrine_krem",
+      "emer": "Permetrinë 5% krem (për zgjebe)",
+      "lende_aktive": "Permetrinë",
+      "forma": "Krem",
+      "emra_tregtare": [
+        "Lyclear",
+        "Permethrin 5%",
+        "Infectoscab"
+      ],
+      "doza": "Vendose në të gjithë trupin nga qafa deri te gishtat e këmbëve, lëre 8–12 orë dhe pastaj lahu. Përsërite pas 7 ditësh.",
+      "doza_maks": "Zakonisht 30 g për të rritur për një aplikim.",
+      "kohezgjatja": "2 aplikime me 7 ditë diferencë. Kruajtja mund të zgjasë edhe 2–4 javë pas trajtimit.",
+      "si_merret": "Mbrëmjeve në lëkurë të ftohtë e të thatë. Mos harro mes gishtave, nën thonj dhe në organet gjenitale.",
+      "paralajmerime": [
+        "Trajtohet e gjithë familja dhe personat që jetojnë bashkë në të njëjtën ditë.",
+        "Rrobat dhe çarçafët lahen në 60 °C ose mbyllen në qese për 3 ditë.",
+        "Mbaje larg syve dhe gojës."
+      ],
+      "efekte_anesore": [
+        "Djegie, kruajtje ose skuqje e përkohshme"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "nen_2": "Te foshnjat vetëm sipas mjekut (përfshin edhe kokën dhe fytyrën).",
+        "shtatzeni": "Mund të përdoret, por konsultohu me mjekun.",
+        "gjidhenie": "Lahe kremin nga gjiri para ushqyerjes.",
+        "femije_nen_12": "Doza është më e vogël: pyet farmacistin."
+      }
+    },
+    {
+      "id": "heparinoid_xhel",
+      "emer": "Heparinë xhel (për mavijosje dhe këmbë të rënda)",
+      "lende_aktive": "Heparinë natriumi ose heparinoid",
+      "forma": "Xhel",
+      "emra_tregtare": [
+        "Lioton 1000",
+        "Hirudoid",
+        "Contractubex (për shenja)"
+      ],
+      "doza": "Fërko 3–10 cm xhel në zonë 1–3 herë në ditë.",
+      "doza_maks": "3 herë në ditë.",
+      "kohezgjatja": "Pa mjek jo më shumë se 10 ditë.",
+      "si_merret": "Vetëm në lëkurë të paprekur, jo në plagë të hapura ose në mukoza.",
+      "paralajmerime": [
+        "Ënjtje e njëanshme e këmbës me dhimbje dhe nxehtësi mund të jetë trombozë: shko menjëherë te mjeku."
+      ],
+      "efekte_anesore": [
+        "Rrallë: skuqje lëkure"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "antikoagulante": "Nëse merr ilaçe hollimi gjaku dhe të dalin mavijosje pa shkak, fol me mjekun."
+      }
+    },
+    {
+      "id": "aloe_xhel",
+      "emer": "Xhel me aloe vera (pas diellit)",
+      "lende_aktive": "Aloe vera",
+      "forma": "Xhel",
+      "emra_tregtare": [
+        "Aloe Vera Gel",
+        "After Sun",
+        "Panthenol After Sun"
+      ],
+      "doza": "Vendose në lëkurë disa herë në ditë.",
+      "doza_maks": "Sa herë që nevojitet.",
+      "kohezgjatja": "Derisa lëkura të qetësohet (zakonisht 2–5 ditë).",
+      "si_merret": "Mbaje në frigorifer: i ftohtë qetëson më shumë.",
+      "paralajmerime": [
+        "Mos e vendos në flluska të çara ose plagë të hapura."
+      ],
+      "efekte_anesore": [
+        "Rrallë: alergji"
+      ],
+      "kunderindikime": {},
+      "kujdes": {}
+    },
+    {
+      "id": "repelent",
+      "emer": "Repelent kundër mushkonjave dhe rriqrave (DEET ose ikaridinë)",
+      "lende_aktive": "DEET 20–50% ose ikaridinë 20%",
+      "forma": "Sprej ose losion",
+      "emra_tregtare": [
+        "Autan",
+        "OFF!",
+        "Moskito Guard"
+      ],
+      "doza": "Shtresë e hollë në lëkurën e zbuluar; përsërite sipas paketimit (zakonisht çdo 4–8 orë).",
+      "doza_maks": "Sipas paketimit.",
+      "kohezgjatja": "Për sa kohë je në rrezik pickimi.",
+      "si_merret": "Kremi i diellit vihet i pari, repelenti pas 20 minutash. Mos e sprucit në fytyrë: vendose me dorë.",
+      "paralajmerime": [
+        "Mbaje larg syve, gojës dhe plagëve.",
+        "Lahu kur kthehesh brenda."
+      ],
+      "efekte_anesore": [
+        "Irritim i lëkurës ose i syve"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "nen_2": "Te foshnjat nën 2 muaj nuk përdoret; te fëmijët e vegjël përdor përqendrim të ulët (DEET ≤ 30%).",
+        "shtatzeni": "Ikaridina ose DEET në përqendrim të ulët konsiderohen të sigurta; pyet farmacistin.",
+        "femije_nen_12": "Zgjidh produkte për fëmijë dhe vendose ti në duart e fëmijës, jo ai vetë."
+      }
+    },
+    {
+      "id": "pika_veshi_dylle",
+      "emer": "Pika veshi për zbutjen e dyllit",
+      "lende_aktive": "Karbamid peroksid 6,5% ose vaj ulliri/bajameje",
+      "forma": "Pika veshi",
+      "emra_tregtare": [
+        "Otex",
+        "Cerumol",
+        "A-Cerumen",
+        "Vaj ulliri"
+      ],
+      "doza": "3–5 pika në veshin e bllokuar 2 herë në ditë.",
+      "doza_maks": "2 herë në ditë.",
+      "kohezgjatja": "3–5 ditë. Nëse veshi mbetet i bllokuar, mjeku e lan veshin.",
+      "si_merret": "Shtrihu anash, hidh pikat dhe qëndro 5 minuta në atë pozicion.",
+      "paralajmerime": [
+        "Mos përdor pika nëse ke dhimbje të fortë, rrjedhje nga veshi ose daulle të shpuar.",
+        "Mos fut shkopinj pambuku në vesh: e shtyjnë dyllin më thellë."
+      ],
+      "efekte_anesore": [
+        "Ndjesi fërgëllimë ose ulje e përkohshme e dëgjimit"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "femije_nen_12": "Te fëmijët pyet pediatrin para përdorimit."
+      }
+    },
+    {
+      "id": "plaster_hidrokoloid",
+      "emer": "Leukoplast hidrokoloid për flluska",
+      "lende_aktive": "Hidrokoloid",
+      "forma": "Leukoplast",
+      "emra_tregtare": [
+        "Compeed",
+        "Hansaplast Blister",
+        "Leukoplast"
+      ],
+      "doza": "Një leukoplast mbi flluskë; lëre derisa të bjerë vetë (disa ditë).",
+      "doza_maks": "Sipas nevojës.",
+      "kohezgjatja": "Derisa flluska të shërohet.",
+      "si_merret": "Lëkura duhet të jetë e pastër dhe e thatë. Mos e ço flluskën.",
+      "paralajmerime": [
+        "Me diabet, flluskat në këmbë duhet t'i shohë mjeku ose infermieri."
+      ],
+      "efekte_anesore": [
+        "Shumë rrallë: irritim nga ngjitësi"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "diabet": "Me diabet plagët e këmbëve shërohen më ngadalë: kontrollo çdo ditë dhe fol me mjekun."
+      }
+    },
+    {
+      "id": "klorur_alumini",
+      "emer": "Antidjersë me klorur alumini 15–20%",
+      "lende_aktive": "Klorur alumini heksahidrat",
+      "forma": "Roll-on ose sprej",
+      "emra_tregtare": [
+        "Driclor",
+        "Etiaxil",
+        "Perspirex",
+        "Odaban"
+      ],
+      "doza": "Në mbrëmje në lëkurë të thatë, çdo natë derisa djersitja të ulet, pastaj 1–2 herë në javë.",
+      "doza_maks": "1 herë në ditë.",
+      "kohezgjatja": "Afatgjatë sipas nevojës.",
+      "si_merret": "Mbrëmjeve, në lëkurë plotësisht të thatë; lahet në mëngjes. Jo menjëherë pas rruajtjes.",
+      "paralajmerime": [
+        "Mos e vendos në lëkurë të irrituar ose të çarë."
+      ],
+      "efekte_anesore": [
+        "Djegie ose kruajtje e lëkurës"
+      ],
+      "kunderindikime": {},
+      "kujdes": {
+        "veshka": "Me sëmundje të rëndë veshkash pyet mjekun para produkteve me alumin."
+      }
+    },
+    {
+      "id": "minoksidil",
+      "emer": "Minoksidil 5% (për rënien e flokëve)",
+      "lende_aktive": "Minoksidil",
+      "forma": "Losion ose shkumë",
+      "emra_tregtare": [
+        "Regaine",
+        "Rogaine",
+        "Alopexy"
+      ],
+      "doza": "1 ml në lëkurën e thatë të kokës 2 herë në ditë (gratë: 5% 1 herë në ditë ose 2% 2 herë).",
+      "doza_maks": "2 ml në ditë.",
+      "kohezgjatja": "Rezultatet duken pas 3–6 muajsh; kur ndërpritet, flokët bien sërish.",
+      "si_merret": "Vetëm në lëkurën e kokës, laj duart pas përdorimit. Mos e lag kokën për 4 orë.",
+      "paralajmerime": [
+        "Në javët e para rënia e flokëve mund të shtohet përkohësisht.",
+        "Rënie e papritur ose me njolla e flokëve duhet parë nga mjeku."
+      ],
+      "efekte_anesore": [
+        "Kruajtje e lëkurës së kokës",
+        "Rrallë: rrahje zemre, marramendje, qime në fytyrë"
+      ],
+      "kunderindikime": {
+        "shtatzeni": "Nuk përdoret në shtatzëni.",
+        "gjidhenie": "Nuk përdoret gjatë gjidhënies.",
+        "nen_16": "Nuk përdoret nën 18 vjeç."
+      },
+      "kujdes": {
+        "zemra": "Me sëmundje zemre pyet mjekun: mund të shpejtojë rrahjet.",
+        "hipertension": "Me tension të lartë pyet mjekun para përdorimit."
+      }
+    },
+    {
+      "id": "vazeline",
+      "emer": "Vazelinë / balsam buzësh",
+      "lende_aktive": "Vazelinë e bardhë, dyll",
+      "forma": "Pomadë ose stik",
+      "emra_tregtare": [
+        "Vaseline",
+        "Labello",
+        "Blistex",
+        "Bepanthen (dekspantenol)"
+      ],
+      "doza": "Shtresë e hollë disa herë në ditë dhe para gjumit.",
+      "doza_maks": "Sa herë që nevojitet.",
+      "kohezgjatja": "Sipas nevojës.",
+      "si_merret": "Në buzë ose lëkurë të thatë e të çarë.",
+      "paralajmerime": [
+        "Mos e vendos brenda hundës te personat që marrin oksigjen."
+      ],
+      "efekte_anesore": [
+        "Shumë rrallë: alergji"
+      ],
+      "kunderindikime": {},
+      "kujdes": {}
+    }
+  ],
+  "simptomat": [
+    {
+      "id": "dhimbje_koke",
+      "emer": "Dhimbje koke",
+      "pershkrim": "Dhimbje në kokë, ballë ose tëmtha, përfshirë dhimbjen nga tensioni dhe migrenën e lehtë.",
+      "fraza": [
+        "dhimbje koke",
+        "më dhemb koka",
+        "kam dhimbje koke",
+        "migrenë",
+        "më dhemb balli",
+        "kokëdhimbje",
+        "më ngjesh koka",
+        "kam migrenë",
+        "më çahet koka",
+        "më rëndon koka",
+        "dhimbje në tëmtha",
+        "më dhemb kryet",
+        "kam kokëdhimbje",
+        "më pëlcet koka",
+        "më dhemb koka nga stresi",
+        "dhimbje koke nga lodhja",
+        "më rrah koka",
+        "më dhemb koka prej mëngjesit",
+        "migrenë me të përziera",
+        "m dhem kryt",
+        "po m dhemb koka fort",
+        "kom dhimje koke",
+        "m plas kryet",
+        "m rreh koka si çekiç",
+        "kokdhimbje qe prej mengjesit",
+        "m dhemb koka mbrapa",
+        "me dhem koka kur ngrihem"
+      ],
+      "barnat": [
+        "paracetamol",
+        "ibuprofen",
+        "naproksen",
+        "aspirine"
+      ],
+      "shenja_alarmi": [
+        "Dhimbja koke më e fortë e jetës ose që vjen papritur si goditje",
+        "Dhimbje koke me temperaturë dhe ngurtësim qafe",
+        "Dhimbje koke pas një goditjeje në kokë",
+        "Me humbje shikimi, dobësi në njërën anë të trupit ose vështirësi në të folur",
+        "Dhimbje koke që zgjat më shumë se 3 ditë ose përsëritet shpesh"
+      ],
+      "keshilla": [
+        "Pusho në dhomë të qetë dhe me pak dritë.",
+        "Pi ujë: dehidratimi shkakton dhimbje koke."
+      ],
+      "fjale_kyce": "\\bkok(a|e|en|es)\\b|\\bkrye(t|ni|n)?\\b|migren|\\bball(i|e)\\b|temth",
+      "info": "Shumica e dhimbjeve të kokës vijnë nga tensioni, lodhja, dehidratimi, gjumi i pakët ose migrena. Rrallë janë shenjë e diçkaje serioze.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "dhimbje_dhembi",
+      "emer": "Dhimbje dhëmbi",
+      "pershkrim": "Dhimbje në dhëmb, mishrat e dhëmbëve ose nofull.",
+      "fraza": [
+        "dhimbje dhëmbi",
+        "më dhemb dhëmbi",
+        "më dhembin dhëmbët",
+        "dhimbje në mishrat e dhëmbëve",
+        "dhëmballë",
+        "më dhemb nofulla",
+        "më dhemb dhëmballa",
+        "më janë ënjtur mishrat e dhëmbëve",
+        "më therr një dhëmb",
+        "më dhemb dhâmbi",
+        "dhëmbi i pjekur",
+        "më dhemb dhëmbi i pjekurisë",
+        "më dhemb dhëmbi kur pi ujë të ftohtë",
+        "më janë skuqur mishrat",
+        "më gjakosen mishrat e dhëmbëve",
+        "më është ënjtur faqja nga dhëmbi",
+        "m dhem dhambi",
+        "po m dhemb dhamballa",
+        "m dhemb nji dham",
+        "dhambi m vret",
+        "me dhemb dhembi poshte",
+        "m dhem mishi i dhambit",
+        "nuk ha dot nga dhambi"
+      ],
+      "barnat": [
+        "ibuprofen",
+        "paracetamol",
+        "naproksen",
+        "benzokaine_xhel"
+      ],
+      "shenja_alarmi": [
+        "Ënjtje e fytyrës ose e qafës",
+        "Temperaturë e lartë bashkë me dhimbjen e dhëmbit",
+        "Vështirësi në gëlltitje ose në frymëmarrje",
+        "Dhimbja zgjat më shumë se 2 ditë: ilaçet vetëm e lehtësojnë, duhet dentisti"
+      ],
+      "keshilla": [
+        "Lini takim te dentisti sa më shpejt.",
+        "Shmang ushqimet shumë të ftohta, të nxehta ose të ëmbla."
+      ],
+      "fjale_kyce": "(?<!dalin )(?<!dalja e )(?<!dalje e )\\bdhemb(i|et|e|eve)\\b|\\bdhamb(i|et|e)?\\b|dhemball|nofull|mishrat e dhembe|mishrat\\w*( \\w+){0,2} (gjakos|skuq|enjt)|pjekuris",
+      "info": "Dhimbja e dhëmbit vjen zakonisht nga kariesi, infeksioni ose mishrat e përflakur. Ilaçi e qetëson, por shkakun e zgjidh vetëm dentisti.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "temperature",
+      "emer": "Temperaturë (ethe)",
+      "pershkrim": "Temperaturë e trupit mbi 38°C.",
+      "fraza": [
+        "temperaturë",
+        "kam temperaturë",
+        "ethe",
+        "kam ethe",
+        "më ka rënë temperatura",
+        "jam i nxehtë",
+        "febër",
+        "kam 38 gradë",
+        "më është ngritur temperatura",
+        "jam me temperaturë",
+        "kam zjarrmi",
+        "kam ethe dhe dridhje",
+        "jam me 38",
+        "kam temperaturë të lartë",
+        "më nxehet trupi",
+        "kam temperaturë që nga dje",
+        "ethet nuk më ulen",
+        "kom zjarrmi",
+        "jom me zjarrmi",
+        "m ka ra temperatura 39",
+        "kam temp 38 e gjysem",
+        "jom nxeht krejt",
+        "fmija ka zjarrmi",
+        "temperatura nuk po bie"
+      ],
+      "barnat": [
+        "paracetamol",
+        "ibuprofen"
+      ],
+      "shenja_alarmi": [
+        "Temperaturë mbi 39,5°C që nuk bie me ilaçe",
+        "Temperaturë që zgjat më shumë se 3 ditë",
+        "Foshnje nën 3 muaj me temperaturë mbi 38°C",
+        "Temperaturë me ngurtësim qafe, skuqje lëkure që nuk zbehet kur shtyp, konfuzion ose vështirësi në frymëmarrje"
+      ],
+      "keshilla": [
+        "Pi shumë lëngje.",
+        "Vish rroba të lehta dhe pusho."
+      ],
+      "fjale_kyce": "temperatur|\\bethe(t)?\\b|febr|zjarrm",
+      "info": "Temperatura është mbrojtja e trupit kundër infeksionit. Mbi 38°C konsiderohet ethe. Qëllimi i ilaçit është të ndihesh më mirë, jo domosdoshmërisht ta zbresë në normale.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "grip_ftohje",
+      "emer": "Grip / ftohje",
+      "pershkrim": "Ftohje e zakonshme ose grip me rrufë, dhimbje trupi dhe lodhje.",
+      "fraza": [
+        "grip",
+        "jam ftohur",
+        "kam grip",
+        "ftohje",
+        "më dhemb trupi",
+        "jam i sëmurë me grip",
+        "virozë",
+        "jam me viroze",
+        "më kapi gripi",
+        "jam i ftohur",
+        "me ka zene gripi",
+        "kam simptoma gripi",
+        "më dhemb i gjithë trupi dhe jam ftohur",
+        "kam covid",
+        "jam me korona",
+        "më ka kapur një virozë",
+        "kam ftohje dhe rrufë",
+        "jam ftohur keq",
+        "jom ftof",
+        "m ka zan gripi",
+        "jom smut me grip",
+        "kom grip e m dhemb krejt trupi",
+        "jom ftof keq",
+        "kam ftohje me rrufe e koll",
+        "po m kap ni grip"
+      ],
+      "barnat": [
+        "paracetamol",
+        "ibuprofen",
+        "kripe_fiziologjike",
+        "zink",
+        "mentol_balsam"
+      ],
+      "shenja_alarmi": [
+        "Vështirësi në frymëmarrje ose dhimbje gjoksi",
+        "Temperaturë e lartë që zgjat më shumë se 3 ditë",
+        "Përkeqësim pas një përmirësimi fillestar",
+        "Je mbi 65 vjeç, shtatzënë ose ke sëmundje kronike dhe simptomat rëndohen"
+      ],
+      "keshilla": [
+        "Pusho dhe pi shumë lëngje.",
+        "Antibiotikët NUK ndihmojnë te gripi dhe ftohja."
+      ],
+      "fjale_kyce": "\\bgrip|ftohur|ftohje(?! ne buz)|viroz|\\bcovid|korona",
+      "info": "Gripi dhe ftohja shkaktohen nga viruse; antibiotikët nuk ndihmojnë. Ftohja kalon brenda 7–10 ditëve, gripi është më i rëndë dhe zgjat 1–2 javë.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "dhimbje_fyti",
+      "emer": "Dhimbje fyti",
+      "pershkrim": "Dhimbje ose acarim i fytit, sidomos kur gëlltit.",
+      "fraza": [
+        "dhimbje fyti",
+        "më dhemb fyti",
+        "fyt i skuqur",
+        "më djeg fyti",
+        "gëlltit me dhimbje",
+        "bajame të enjtura",
+        "më dhemb fyti kur gëlltit",
+        "më gërvish fyti",
+        "më janë skuqur bajamet",
+        "më dhemb gurmazi",
+        "kam faringjit",
+        "kam angjinë",
+        "më djeg gurmazi",
+        "kam tonsilit",
+        "më dhemb fyti kur flas",
+        "fyti më është tharë dhe më dhemb",
+        "m dhem gurmazi",
+        "m dhemb gryka",
+        "kom gurmaz te skuqun",
+        "nuk gelltis dot nga fyti",
+        "m djeg gurmazi kur pi uj",
+        "kam bajamet te enjtura"
+      ],
+      "barnat": [
+        "pastile_fyti",
+        "paracetamol",
+        "ibuprofen",
+        "benzidamine_sprej"
+      ],
+      "shenja_alarmi": [
+        "Vështirësi në frymëmarrje ose në gëlltitjen e pështymës",
+        "Temperaturë e lartë dhe pllaka të bardha në bajame",
+        "Dhimbja zgjat më shumë se 1 javë",
+        "Nuk mund ta hapësh gojën plotësisht"
+      ],
+      "keshilla": [
+        "Gargarë me ujë të ngrohtë me kripë.",
+        "Pije të ngrohta me mjaltë (jo për foshnje nën 1 vjeç)."
+      ],
+      "fjale_kyce": "\\bfyt|bajame|gellt|gurmaz|faringjit|tonsilit|angjin",
+      "info": "Shumica e dhimbjeve të fytit janë virale dhe kalojnë brenda 1 jave pa antibiotik.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "kolle_thate",
+      "emer": "Kollë e thatë",
+      "pershkrim": "Kollë pa gëlbazë, që gërvisht fytin.",
+      "fraza": [
+        "kollë e thatë",
+        "kollitem pa gëlbazë",
+        "kollë që më gërvisht fytin",
+        "kam kollë të thatë",
+        "kollë irrituese",
+        "kollitem pa nxjerrë gjë",
+        "kollë e thatë që s'më lë të fle",
+        "kollë e thatë natën",
+        "kollitem gjithë natën pa nxjerrë",
+        "kollë që më kruan fytin",
+        "kollë e thatë pas gripit",
+        "kollitje e thatë",
+        "kom koll t thate",
+        "po kollitem pa nxjerr kurgja",
+        "koll e that natën",
+        "kolla s m le me fjet",
+        "kolle e thate qe m gervisht"
+      ],
+      "barnat": [
+        "dekstrometorfan",
+        "pastile_fyti",
+        "hedera_shurup"
+      ],
+      "shenja_alarmi": [
+        "Vështirësi në frymëmarrje, fishkëllimë ose dhimbje gjoksi",
+        "Kollë me gjak",
+        "Kollë që zgjat më shumë se 3 javë",
+        "Humbje peshe pa arsye ose djersitje natën"
+      ],
+      "keshilla": [
+        "Pi lëngje të ngrohta.",
+        "Mbaj ajrin e dhomës të lagësht."
+      ],
+      "fjale_kyce": "koll\\w*.*\\b(thate|pa gelbaz)|\\b(thate|pa gelbaz)\\w*.*koll",
+      "info": "Kolla e thatë shpesh mbetet 2–3 javë pas një virusi. Mund të vijë edhe nga alergjia, refluksi ose disa ilaçe tensioni.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "kolle_gelbaze",
+      "emer": "Kollë me gëlbazë",
+      "pershkrim": "Kollë produktive me sekrecione ose gëlbazë.",
+      "fraza": [
+        "kollë me gëlbazë",
+        "kollitem dhe nxjerr gëlbazë",
+        "kollë me sekrecione",
+        "kam gëlbazë",
+        "kollë e lagësht",
+        "nxjerr gëlbazë",
+        "kollë me sekrecion",
+        "kollitem dhe nxjerr gëlbazë të verdhë",
+        "nxjerr sekrecione kur kollitem",
+        "kollë e rëndë me gëlbazë",
+        "kollë me flegmë",
+        "më mblidhet gëlbaza në gjoks",
+        "gëlbazë në fyt",
+        "kom koll me glbaz",
+        "nxjerr glbaz kur kollitem",
+        "kolle me gelbaz te verdhe",
+        "m mblidhet glbaza ne gjoks",
+        "koll e lagesht"
+      ],
+      "barnat": [
+        "ambroksol",
+        "acetilcisteine",
+        "hedera_shurup"
+      ],
+      "shenja_alarmi": [
+        "Vështirësi në frymëmarrje ose dhimbje gjoksi",
+        "Kollë me gjak ose gëlbazë ngjyrë kafe/ndryshku",
+        "Temperaturë e lartë bashkë me kollën",
+        "Kollë që zgjat më shumë se 3 javë"
+      ],
+      "keshilla": [
+        "Pi shumë ujë që gëlbaza të hollohet.",
+        "Inhalime me avull uji."
+      ],
+      "fjale_kyce": "\\b(me|nxjerr|kam) gelbaz|gelbaz|sekrecion|kolle e lageshte|flegm",
+      "info": "Kolla me gëlbazë është mënyra e trupit për të pastruar rrugët e frymëmarrjes; zakonisht vjen pas ftohjes.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "bllokim_hunde",
+      "emer": "Hundë e bllokuar / rrufë",
+      "pershkrim": "Hundë e zënë, rrjedhje hunde ose rrufë.",
+      "fraza": [
+        "hundë e bllokuar",
+        "më është zënë hunda",
+        "rrufë",
+        "më rrjedh hunda",
+        "nuk marr dot frymë nga hunda",
+        "sinusit",
+        "më rrjedhin hundët",
+        "kam sinusit",
+        "s'marr frymë dot nga hunda",
+        "me ka zene hunda",
+        "hundë e zënë",
+        "kam hundë të bllokuar natën",
+        "më pikon hunda",
+        "më rrjedh hunda si ujë",
+        "nuk marr frymë dot nga hundët",
+        "kam rrufë të fortë",
+        "më dhemb balli nga sinusi",
+        "m ka zan hunda",
+        "kom rruf",
+        "po m pikojn hundt",
+        "hundt m jan zan krejt",
+        "nuk marr frym nga hunda natën",
+        "m rrjedh hunda uj"
+      ],
+      "barnat": [
+        "kripe_fiziologjike",
+        "oksimetazoline",
+        "mentol_balsam"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje e fortë në fytyrë ose rreth syve me temperaturë",
+        "Simptomat zgjasin më shumë se 10 ditë",
+        "Rrjedhje gjaku nga hunda që nuk ndalet"
+      ],
+      "keshilla": [
+        "Inhalime me avull.",
+        "Fli me kokën pak më lart."
+      ],
+      "fjale_kyce": "\\bhund|rrufe|sinus",
+      "info": "Hunda bllokohet sepse enët e gjakut në hundë fryhen nga virusi ose alergjia. Kalon zakonisht brenda 1 jave.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "alergji",
+      "emer": "Alergji sezonale",
+      "pershkrim": "Teshtima, sy që lotojnë ose kruhen, rrufë nga poleni, pluhuri ose kafshët.",
+      "fraza": [
+        "alergji",
+        "teshtij shumë",
+        "më lotojnë sytë",
+        "më kruhen sytë",
+        "alergji nga poleni",
+        "rinit alergjik",
+        "alergji pranverore",
+        "kam alergji pranverore",
+        "më bën alergji poleni",
+        "teshtij gjithë ditën",
+        "kam alergji nga pluhuri",
+        "alergji nga macja",
+        "teshtitje të shpeshta",
+        "më kruhet hunda dhe teshtij",
+        "alergji sezonale",
+        "teshtij çdo mëngjes",
+        "jam alergjik nga poleni",
+        "kom alergji",
+        "po teshtij pa pushim",
+        "m lotojn syt e teshtij",
+        "alergjia e pranveres",
+        "jom alergjik nga pluhni",
+        "m kruhet hunda e teshtij"
+      ],
+      "barnat": [
+        "loratadine",
+        "cetirizine",
+        "kripe_fiziologjike",
+        "desloratadine",
+        "feksofenadine"
+      ],
+      "shenja_alarmi": [
+        "Ënjtje e buzëve, gjuhës, fytyrës ose fytit: URGJENCË, telefono 127/112",
+        "Vështirësi në frymëmarrje ose fishkëllimë",
+        "Marramendje e fortë ose të fikët pas kontaktit me alergjenin"
+      ],
+      "keshilla": [
+        "Mbaj dritaret mbyllur kur ka shumë polen.",
+        "Laj fytyrën dhe flokët kur kthehesh në shtëpi."
+      ],
+      "fjale_kyce": "alergj|teshtij|teshtim|teshtit|polen|lotojne syte|kruhen syte|syte\\w* (me )?(lotojne|kruhen)",
+      "info": "Alergjia sezonale (rinitit alergjik) është reaksion i sistemit imunitar ndaj polenit, pluhurit ose qimeve të kafshëve. Nuk ngjitet.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "kruajtje_lekure",
+      "emer": "Kruajtje lëkure / pickim insekti",
+      "pershkrim": "Kruajtje, skuqje e lehtë, urtikarie ose pickim insekti.",
+      "fraza": [
+        "më kruhet lëkura",
+        "kruajtje",
+        "më ka pickuar mushkonja",
+        "pickim insekti",
+        "puçrra që kruhen",
+        "urtikarie",
+        "skuqje lëkure",
+        "më pickoi mushkonja",
+        "kam urtikarie",
+        "më kruhet trupi",
+        "më ha lëkura",
+        "më ha trupi",
+        "më ka pickuar mizë",
+        "më pickoi një insekt",
+        "kam pickime mushkonjash",
+        "më doli skuqje që kruhet",
+        "më kruhet krahu",
+        "më kruhet shumë natën",
+        "u dogja nga hithra",
+        "m ha lkura",
+        "m kruhet lekura krejt",
+        "m ka pick mushkonja",
+        "m kan dal pika te kuqe qe m hajn",
+        "m pickoi nji insekt e u ajt",
+        "m ha trupi naten"
+      ],
+      "barnat": [
+        "hidrokortizon_krem",
+        "loratadine",
+        "cetirizine",
+        "krem_emolient"
+      ],
+      "shenja_alarmi": [
+        "Ënjtje e fytyrës, buzëve ose fytit, ose vështirësi në frymëmarrje: URGJENCË 127/112",
+        "Skuqja përhapet shpejt, ka temperaturë ose flluska të mëdha",
+        "Skuqje që nuk zbehet kur e shtyp me gotë",
+        "Zona e pickimit bëhet e kuqe, e nxehtë dhe e dhimbshme (infeksion)"
+      ],
+      "keshilla": [
+        "Kompresa të ftohta.",
+        "Mos e grith lëkurën."
+      ],
+      "fjale_kyce": "kruh\\w* (e |me )?lekur|lekur\\w*( \\w+){0,2} kruh|pick|mushkonj|urtikar|skuqje (e |ne )?lekur|kruajtje|me ha (lekura|trupi|krahu|kemba|dora)|hithr|me kruhet (trupi|krahu|kemba|dora)",
+      "info": "Kruajtja vjen shpesh nga pickimet, alergjitë e lehta ose lëkura e thatë.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "kerpudha_lekure",
+      "emer": "Kërpudha të lëkurës",
+      "pershkrim": "Infeksion me kërpudha në lëkurë, si këmba e atletit ose kërpudha në ijë.",
+      "fraza": [
+        "kërpudha në këmbë",
+        "këmba e atletit",
+        "kërpudha lëkure",
+        "më kruhen gishtat e këmbës",
+        "lëkurë që zhvishet mes gishtave",
+        "mykozë",
+        "më kruhet mes gishtave të këmbës",
+        "kam mykozë",
+        "më kruhet mes gishtave",
+        "kam kërpudha në ijë",
+        "lëkurë e bardhë dhe e lagësht mes gishtave",
+        "më zhvishet lëkura e këmbëve",
+        "njolla që kruhen në lëkurë",
+        "kom kerpudha te kamba",
+        "m kruhet mes gishtave t kambes",
+        "lekura mes gishtave u bardh e m ha",
+        "kerpudha ne lekure qe kruhen"
+      ],
+      "barnat": [
+        "klotrimazol_krem",
+        "terbinafine_krem"
+      ],
+      "shenja_alarmi": [
+        "Nuk ka përmirësim pas 2 javësh trajtim",
+        "Je diabetik dhe ke plagë në këmbë",
+        "Kërpudha në thonj (kërkon trajtim nga mjeku)"
+      ],
+      "keshilla": [
+        "Mbaj këmbët të thata dhe ndërro çorapet çdo ditë."
+      ],
+      "fjale_kyce": "kerpudh|mykoz|kemba e atletit",
+      "info": "Kërpudhat e lëkurës rriten në vende të ngrohta dhe të lagështa (mes gishtave, ijë). Ngjiten në dushe dhe pishina.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "urth",
+      "emer": "Urth / thartirë stomaku",
+      "pershkrim": "Djegie pas kockës së gjoksit, thartirë ose tretje e vështirë pas ngrënies.",
+      "fraza": [
+        "urth",
+        "thartirë",
+        "më djeg stomaku",
+        "acid në stomak",
+        "refluks",
+        "djegie në gjoks pas ngrënies",
+        "tretje e vështirë",
+        "më ngjitet acidi në fyt",
+        "kam refluks",
+        "më djeg pas buzës së gjoksit pas ngrënies",
+        "kam gastrit",
+        "më vjen acid në gojë",
+        "djegie pas buzës së gjoksit",
+        "më djeg gjoksi pasi ha",
+        "kam thartira",
+        "stomaku më djeg natën",
+        "kam tretje të keqe",
+        "m djeg lukthi",
+        "m djeg stomaku pas bukes",
+        "kom thartira",
+        "m vjen acidi n gryk",
+        "m djeg nen gjoks kur ha",
+        "kam urth gjith naten"
+      ],
+      "barnat": [
+        "antacid",
+        "alginat",
+        "famotidine",
+        "omeprazol"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje gjoksi që përhapet në krah, nofull ose shpinë, ose me djersitje: mund të jetë zemra, telefono 127/112",
+        "Vështirësi ose dhimbje në gëlltitje",
+        "Të vjella me gjak ose jashtëqitje e zezë",
+        "Humbje peshe pa arsye",
+        "Je mbi 55 vjeç dhe urthi është i ri"
+      ],
+      "keshilla": [
+        "Shmang ushqimet e yndyrshme, kafenë dhe alkoolin.",
+        "Mos u shtri menjëherë pas ngrënies."
+      ],
+      "fjale_kyce": "\\burth|thartir|refluks|djeg\\w* (\\w+ )?stomak|stomak\\w* (me )?djeg|\\bacid|gastrit|tretje (e |te )?(keqe|veshtire)",
+      "info": "Urthi ndodh kur acidi i stomakut ngjitet në ezofag. Përkeqësohet nga ushqimet e rënda, kafeja, alkooli, duhani dhe shtrirja menjëherë pas ngrënies.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "diarre",
+      "emer": "Diarre",
+      "pershkrim": "Jashtëqitje të lëngshme dhe të shpeshta.",
+      "fraza": [
+        "diarre",
+        "kam diarre",
+        "jashtëqitje të lëngshme",
+        "më ka prishur barku",
+        "shkoj shpesh në tualet",
+        "shkoj shpesh në tualet me ujë",
+        "më shkon barku",
+        "kam barkqitje",
+        "barku i lirë",
+        "kam diarre prej 2 ditësh",
+        "jashtëqitje e ujshme",
+        "diarre pas një ushqimi të prishur",
+        "fëmija ka diarre",
+        "m shkon barku",
+        "barku m shkon uj",
+        "kom diare prej 2 ditsh",
+        "po dal shpesh ne wc me bark t lir",
+        "m ka prish barku",
+        "fmija ka diare"
+      ],
+      "barnat": [
+        "ors",
+        "loperamid",
+        "racekadotril",
+        "probiotik"
+      ],
+      "shenja_alarmi": [
+        "Gjak ose mukozë në jashtëqitje",
+        "Temperaturë e lartë",
+        "Shenja dehidratimi: shumë pak urinë, gojë shumë e thatë, marramendje",
+        "Diarre që zgjat më shumë se 2 ditë te të rriturit",
+        "Diarre te foshnjat ose të moshuarit e dobët"
+      ],
+      "keshilla": [
+        "Gjëja më e rëndësishme është rehidratimi.",
+        "Ha ushqime të lehta: oriz, banane, bukë të thekur."
+      ],
+      "fjale_kyce": "diarre|jashteqitje (te |e )?(lengshme|ujshme)|prishur barku|barkqitj|bark(u)? (i |te )?lir|me shkon barku",
+      "info": "Diarreja akute vjen zakonisht nga virus ose ushqim i prishur dhe kalon brenda 2–3 ditësh. Më e rëndësishme është të zëvendësosh lëngjet.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "kapsllek",
+      "emer": "Kapsllëk",
+      "pershkrim": "Jashtëqitje të rralla ose të vështira.",
+      "fraza": [
+        "kapsllëk",
+        "nuk shkoj dot në tualet",
+        "jam kapsllëk",
+        "jashtëqitje e fortë",
+        "nuk kam dalë jashtë prej ditësh",
+        "s'kam dalë jashtë prej 3 ditësh",
+        "kam bark të zënë",
+        "nuk dal dot jashtë",
+        "kam vështirësi për të dalë jashtë",
+        "jam kapsllëk prej ditësh",
+        "jashtëqitje e fortë dhe me dhimbje",
+        "kom bark te zan",
+        "s po dal dot jasht",
+        "nuk kam dal ne wc 4 dit",
+        "jom kapsllek",
+        "barku m osht zan"
+      ],
+      "barnat": [
+        "makrogol",
+        "laktuloze",
+        "bisakodil",
+        "glicerine_supozitor",
+        "senna"
+      ],
+      "shenja_alarmi": [
+        "Gjak në jashtëqitje",
+        "Dhimbje e fortë barku ose bark i fryrë me të vjella",
+        "Ndryshim i papritur i zakoneve të tualetit mbi 50 vjeç",
+        "Humbje peshe pa arsye",
+        "Zgjat më shumë se 1 javë pavarësisht trajtimit"
+      ],
+      "keshilla": [
+        "Ha më shumë fibra (fruta, perime, drithëra integrale).",
+        "Pi të paktën 1,5–2 litra ujë në ditë dhe lëviz."
+      ],
+      "fjale_kyce": "kapsllek|kapllek|bark\\w* (i |te )?(zene|mbyllur)|(nuk|s') ?(shkoj|dal) dot (ne tualet|jashte)|jashteqitje (e |te )?fort",
+      "info": "Kapsllëku lidhet shpesh me pak fibra, pak ujë, pak lëvizje ose me disa ilaçe (p.sh. kundër dhimbjes).",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "fryrje_gazra",
+      "emer": "Fryrje barku / gazra",
+      "pershkrim": "Bark i fryrë dhe gazra pas ngrënies.",
+      "fraza": [
+        "fryrje barku",
+        "kam gazra",
+        "më fryhet barku",
+        "bark i fryrë",
+        "meteorizëm",
+        "më fryhet barku pas ngrënies",
+        "kam shumë gazra",
+        "kam gaze",
+        "barku më është fryrë si top",
+        "fryhem pas ngrënies",
+        "kam fryrje",
+        "m fryhet barku",
+        "kom gaza shum",
+        "barku m osht ba si top",
+        "jom fry pas ngranjes"
+      ],
+      "barnat": [
+        "simetikone"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje e fortë barku",
+        "Të vjella ose nuk nxjerr dot gazra",
+        "Humbje peshe pa arsye ose gjak në jashtëqitje"
+      ],
+      "keshilla": [
+        "Ha ngadalë.",
+        "Shmang pijet e gazuara dhe fasulet."
+      ],
+      "fjale_kyce": "gazra|\\bgaze\\b|fryr\\w* (e )?bark|bark\\w* (i |me )?fry|fryhet barku|fryhem|meteoriz",
+      "info": "Gazrat vijnë nga ajri që gëlltitet dhe nga tretja e disa ushqimeve (fasule, lakra, pije me gaz).",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "dhimbje_barku",
+      "emer": "Dhimbje barku me ngërçe",
+      "pershkrim": "Dhimbje barku me ngërçe ose spazma.",
+      "fraza": [
+        "më dhemb barku",
+        "ngërçe barku",
+        "spazma në bark",
+        "dhimbje stomaku",
+        "kollik",
+        "më përdridhet barku",
+        "kam ngërçe në stomak",
+        "më përdridhen zorrët",
+        "më dhemb stomaku",
+        "kam dhimbje barku",
+        "më ther barku",
+        "ngërçe në zorrë",
+        "m dhem barku",
+        "m dhemb lukthi",
+        "m perdridhen zorrt",
+        "kom dhimje barku",
+        "m ther barku"
+      ],
+      "barnat": [
+        "butilskopolamine",
+        "paracetamol"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje e fortë ose e vazhdueshme, sidomos poshtë djathtas (mund të jetë apendicit)",
+        "Bark i fortë si dërrasë ose dhimbje që përkeqësohet kur lëviz",
+        "Të vjella me gjak, jashtëqitje e zezë ose me gjak",
+        "Temperaturë bashkë me dhimbjen e barkut",
+        "Mundësi shtatzënie me dhimbje barku"
+      ],
+      "keshilla": [
+        "Shishe me ujë të ngrohtë në bark.",
+        "Ushqime të lehta."
+      ],
+      "fjale_kyce": "\\bbark|\\bstomak|ngerc(?!\\w* (ne |te |e )?(kemb|pulp|kofsh|dor|duar|gisht))|spazm|kollik|zorr",
+      "info": "Ngërçet e lehta të barkut vijnë shpesh nga gazrat, tretja ose një virus. Dhimbja e fortë ose e vazhdueshme duhet parë nga mjeku.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "dhimbje_menstruale",
+      "emer": "Dhimbje menstruale",
+      "pershkrim": "Dhimbje ose ngërçe në fund të barkut gjatë menstruacioneve.",
+      "fraza": [
+        "dhimbje menstruale",
+        "dhimbje gjatë ciklit",
+        "më dhemb barku nga cikli",
+        "ngërçe menstruale",
+        "dismenorre",
+        "më dhemb barku nga perioda",
+        "dhimbje me ciklin",
+        "më dhemb barku nga regjimi",
+        "dhimbje gjatë periodës",
+        "kam periodën dhe më dhemb",
+        "dhimbje menstruacionesh",
+        "më dhemb mesi nga cikli",
+        "m dhemb barku nga cikli",
+        "jom me cikel e m dhemb",
+        "dhimje me rregulla",
+        "m dhem mesi nga perioda",
+        "dhimbje te forta me menstruacione"
+      ],
+      "barnat": [
+        "ibuprofen",
+        "naproksen",
+        "paracetamol",
+        "butilskopolamine"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje shumë e fortë që nuk kalon me ilaçe",
+        "Gjakderdhje shumë e madhe (ndërron pecetë çdo orë)",
+        "Mundësi shtatzënie me dhimbje barku dhe gjakderdhje",
+        "Temperaturë ose sekrecione me erë të keqe"
+      ],
+      "keshilla": [
+        "Shishe me ujë të ngrohtë në bark.",
+        "Lëvizje e lehtë fizike."
+      ],
+      "fjale_kyce": "menstru|\\bcikl|perjodi|\\bperiod|dismenorre|regjim",
+      "info": "Dhimbja menstruale vjen nga tkurrjet e mitrës (prostaglandinat). Ilaçet antiinflamatore funksionojnë më mirë kur merren në fillim të dhimbjes.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "dhimbje_muskulore",
+      "emer": "Dhimbje muskujsh / kyçesh / ndrydhje",
+      "pershkrim": "Dhimbje muskujsh, kyçesh, ndrydhje ose mavijosje.",
+      "fraza": [
+        "dhimbje muskujsh",
+        "më dhembin muskujt",
+        "ndrydhje",
+        "më dhemb gjuri",
+        "dhimbje kyçesh",
+        "e kam përdredhur këmbën",
+        "mavijosje",
+        "u ndrydha në këmbë",
+        "më dhemb qafa",
+        "kam dhimbje kyçesh",
+        "më dhemb krahu",
+        "më dhemb supi",
+        "më dhemb bryli",
+        "më dhembin kockat",
+        "kam artrozë",
+        "më dhembin nyjet",
+        "u mavijosa",
+        "më dhemb kyçi i dorës",
+        "më dhembin këmbët",
+        "u ndrydha në dorë",
+        "kam ngurtësi në qafë",
+        "më dhemb qafa nga gjumi",
+        "m dhemb krahu",
+        "m dhem gjuni",
+        "m dhembin eshtnat",
+        "u ndrydha te kamba",
+        "m dhemb qafa nga gjumi",
+        "m dhembin muskujt pas palestres",
+        "kom dhimje ne sup"
+      ],
+      "barnat": [
+        "diklofenak_xhel",
+        "ibuprofen",
+        "paracetamol",
+        "naproksen",
+        "heparinoid_xhel"
+      ],
+      "shenja_alarmi": [
+        "Deformim i dukshëm ose nuk mund ta mbash peshën mbi këmbë",
+        "Ënjtje e madhe menjëherë pas një rënieje",
+        "Kyç i kuq, i nxehtë dhe i ënjtur me temperaturë",
+        "Mpirje ose ndjesi të ftohtë në krah ose këmbë"
+      ],
+      "keshilla": [
+        "Pushim, akull 15–20 minuta, fashë elastike dhe gjymtyra e ngritur (në 48 orët e para)."
+      ],
+      "fjale_kyce": "muskuj|\\bkyc|\\bgjur|ndrydh|perdredh|mavijos|\\bkrah|\\bkemb|\\bqaf|\\bsup(i|et|in)?\\b|\\bbryl|\\bkock|\\bnyj|artroz|artrit|reumat|tendin|ngurtesi",
+      "info": "Dhimbjet e muskujve dhe ndrydhjet e lehta shërohen zakonisht brenda 1–2 javësh. Në 48 orët e para ndihmon akulli, më pas nxehtësia.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "dhimbje_shpine",
+      "emer": "Dhimbje shpine",
+      "pershkrim": "Dhimbje në mesin ose në pjesën e poshtme të shpinës.",
+      "fraza": [
+        "dhimbje shpine",
+        "më dhemb shpina",
+        "më dhemb mesi",
+        "lumbago",
+        "dhimbje mesi",
+        "kam lumbago",
+        "më dhemb shpina poshtë",
+        "më dhemb kurrizi",
+        "më dhemb shpina në mes",
+        "më ka kapur mesi",
+        "dhimbje në shpinë kur ngrihem",
+        "më dhemb shpina nga puna",
+        "dhimbje lumbare",
+        "m dhem kurrizi",
+        "m dhemb shpina posht",
+        "m ka kap mesi",
+        "nuk ngrihem dot nga mesi",
+        "m dhem shpina nga puna"
+      ],
+      "barnat": [
+        "ibuprofen",
+        "paracetamol",
+        "naproksen",
+        "diklofenak_xhel"
+      ],
+      "shenja_alarmi": [
+        "Humbje kontrolli të urinës ose të jashtëqitjes, ose mpirje në ijë: URGJENCË",
+        "Dobësi ose mpirje në këmbë",
+        "Temperaturë bashkë me dhimbjen e shpinës",
+        "Dhimbje pas një aksidenti ose rënieje",
+        "Dhimbje që nuk lehtësohet as kur pushon ose natën"
+      ],
+      "keshilla": [
+        "Qëndro në lëvizje të lehtë; pushimi i plotë në shtrat e vonon shërimin.",
+        "Ngrohje lokale."
+      ],
+      "fjale_kyce": "\\bshpin|\\bmes(i|in)\\b|lumbag|lumbar|kurriz",
+      "info": "Shumica e dhimbjeve të shpinës vijnë nga muskujt dhe përmirësohen brenda 2–6 javësh. Lëvizja e lehtë ndihmon më shumë se pushimi në shtrat.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "nauze_te_vjella",
+      "emer": "Të përziera dhe të vjella",
+      "pershkrim": "Ndjenjë të përzieri, të vjella, stomak i shqetësuar, shpesh nga virus stomaku ose ushqim i prishur.",
+      "info": "Shumicën e herëve vjen nga një virus stomaku ose nga ushqimi dhe kalon vetë brenda 1–2 ditëve. Rreziku kryesor është humbja e lëngjeve (dehidratimi).",
+      "fraza": [
+        "kam të vjella",
+        "vjell",
+        "më përzihet",
+        "kam të përziera",
+        "më vjen për të vjellë",
+        "jam i përzier",
+        "vjella gjithë natën",
+        "nauze",
+        "më vjen për me vjellë",
+        "kam të vjella prej mëngjesit",
+        "vjell gjithçka që ha",
+        "ndihem i përzier",
+        "më vjen të vjell",
+        "m vjen me vjell",
+        "po vjell",
+        "m perzihet",
+        "jom tu vjell gjith diten",
+        "kom te perziera",
+        "fmija po vjell"
+      ],
+      "barnat": [
+        "ors"
+      ],
+      "shenja_alarmi": [
+        "Të vjella që zgjasin më shumë se 24 orë (te fëmijët më shumë se 12 orë)",
+        "Nuk mban dot as ujë, ose nuk urinon për më shumë se 8 orë",
+        "Gjak ose diçka si kafe në të vjella",
+        "Dhimbje e fortë barku, ngurtësim qafe ose përgjumje e rëndë"
+      ],
+      "keshilla": [
+        "Pi lëngje me gllënjka të vogla dhe shpesh.",
+        "Kur të përmirësohesh, ha pak e nga pak ushqime të thjeshta (oriz, bukë, banane)."
+      ],
+      "fjale_kyce": "vjell|nauze|perzihet|perzier|perziera|me vjen per te vjelle",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "semundje_udhetimi",
+      "emer": "Sëmundje udhëtimi",
+      "pershkrim": "Të përziera, marramendje dhe djersitje gjatë udhëtimit me makinë, anije, autobus ose avion.",
+      "info": "Ndodh kur sytë dhe veshi i brendshëm (organi i ekuilibrit) dërgojnë sinjale të ndryshme te truri. Është e padëmshme dhe kalon pasi ndalon lëvizja.",
+      "fraza": [
+        "më përzihet në makinë",
+        "sëmundje udhëtimi",
+        "më bëhet keq në anije",
+        "më merren mendtë kur udhëtoj",
+        "vjell në autobus",
+        "do udhëtoj dhe më bëhet keq",
+        "më bëhet keq në makinë",
+        "sëmundje deti",
+        "fëmijës i bëhet keq në makinë",
+        "më përzihet në aeroplan",
+        "kam frikë se do vjell në udhëtim",
+        "m ba keq ne makin",
+        "m perzihet kur udhetoj",
+        "fmija vjell ne makine",
+        "m vjen me vjell ne autobus",
+        "m ba keq ne aeroplan"
+      ],
+      "barnat": [
+        "dimenhidrinat"
+      ],
+      "shenja_alarmi": [
+        "Simptomat vazhdojnë edhe pasi ka mbaruar udhëtimi",
+        "Marramendje e fortë me dhimbje koke, dobësi ose vështirësi në të folur"
+      ],
+      "keshilla": [
+        "Ulu përpara (në makinë) ose në mes (në anije) dhe shiko horizontin.",
+        "Mos lexo dhe mos shiko telefonin gjatë udhëtimit.",
+        "Hap dritaren për ajër të pastër."
+      ],
+      "fjale_kyce": "semundje (e )?udhetimit|(ne|me) (makine|anije|autobus|aeroplan|avion|traget)|kur udhetoj|udhetim",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "dhimbje_veshi",
+      "emer": "Dhimbje veshi",
+      "pershkrim": "Dhimbje në vesh, vesh i bllokuar ose që therr, shpesh pas ftohjes ose notit.",
+      "info": "Shpesh shkaktohet nga ftohja (bllokim i tubit që lidh veshin me hundën) ose nga infeksioni i veshit. Shumë raste përmirësohen vetë brenda 3 ditësh.",
+      "fraza": [
+        "më dhemb veshi",
+        "dhimbje veshi",
+        "më therr veshi",
+        "kam vesh të bllokuar",
+        "më është zënë veshi",
+        "djali ka dhimbje veshi",
+        "më dhembin veshët",
+        "më ther veshi",
+        "më dhemb veshi natën",
+        "më bubullon veshi",
+        "otit",
+        "m dhem veshi",
+        "m ther veshi",
+        "m dhembin veshat",
+        "veshi m osht zan e m dhemb",
+        "fmija ka dhimje veshi"
+      ],
+      "barnat": [
+        "paracetamol",
+        "ibuprofen"
+      ],
+      "shenja_alarmi": [
+        "Del qelb, lëng ose gjak nga veshi",
+        "Temperaturë e lartë ose dhimbje që nuk përmirësohet pas 2–3 ditësh",
+        "Ënjtje ose dhimbje pas veshit",
+        "Humbje e dëgjimit ose marramendje",
+        "Foshnjë nën 6 muaj me dhimbje veshi"
+      ],
+      "keshilla": [
+        "Mos fut shkopinj pambuku ose objekte në vesh.",
+        "Një leckë e ngrohtë mbi vesh mund ta qetësojë dhimbjen."
+      ],
+      "fjale_kyce": "\\bvesh(i|in|et|ve)?\\b|otit",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "pagjumesi",
+      "emer": "Pagjumësi",
+      "pershkrim": "Vështirësi për të fjetur, zgjim natën ose shumë herët.",
+      "info": "Pagjumësia e përkohshme shkaktohet shpesh nga stresi, kafeja, ekranet natën ose ndryshimi i orarit. Rregullat e gjumit ndihmojnë më shumë se ilaçet.",
+      "fraza": [
+        "nuk më zë gjumi",
+        "s'më zë gjumi",
+        "nuk fle dot",
+        "kam pagjumësi",
+        "zgjohem natën dhe s'fle dot",
+        "nuk fle mirë",
+        "fle shumë pak",
+        "s'po më merr gjumi",
+        "nuk më merr gjumi natën",
+        "zgjohem herët dhe s'fle dot",
+        "kam gjumë të çrregullt",
+        "fle keq",
+        "s po m merr gjumi",
+        "nuk po fle naten",
+        "s muj me fjet",
+        "zgjohem naten e s fle ma",
+        "kom pagjumesi",
+        "nuk m ze gjumi hiq"
+      ],
+      "barnat": [
+        "melatonine",
+        "valeriane",
+        "difenhidramine"
+      ],
+      "shenja_alarmi": [
+        "Pagjumësi që zgjat më shumë se 3–4 javë",
+        "Gërhitje e fortë me ndalim frymëmarrjeje gjatë gjumit",
+        "Pagjumësi me trishtim të thellë, ankth ose mendime për vetëdëmtim",
+        "Përgjumje gjatë ditës që të pengon të punosh ose të ngasësh makinën"
+      ],
+      "keshilla": [
+        "Fli dhe zgjohu në të njëjtën orë çdo ditë.",
+        "Shmang kafenë pas orës 14 dhe ekranet 1 orë para gjumit.",
+        "Mbaje dhomën të errët, të qetë dhe të freskët."
+      ],
+      "fjale_kyce": "pagjum|insomn|(nuk|s')( ?po)?( ?me)? (ze|merr)( dot)? gjum|fle dot|(nuk|s') fle\\b|zgjohem (shpesh|naten|heret)|nuk fle mire|fle keq|gjume (te |i )?crregull",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "afte_gojore",
+      "emer": "Afte (plagë në gojë)",
+      "pershkrim": "Plagë të vogla, të bardha ose të verdha me buzë të kuqe brenda gojës, në faqe, gjuhë ose mish dhëmbësh.",
+      "info": "Aftet nuk ngjiten. Shkaktohen nga stresi, kafshimi i faqes, ushqime acide ose mungesë vitaminash, dhe zakonisht shërohen vetë brenda 1–2 javësh.",
+      "fraza": [
+        "kam afte",
+        "plagë në gojë",
+        "më del afte",
+        "më dhemb një plagë brenda gojës",
+        "plagë në gjuhë",
+        "plagë te mishi i dhëmbëve",
+        "kam afte ne goje",
+        "më ka dalë një plagë në gojë",
+        "plagë e bardhë në gojë",
+        "më djeg goja nga një plagë",
+        "plagë në buzë nga brenda",
+        "kom afte n goj",
+        "m ka dal ni plage n goj",
+        "m djeg ni plage n gjuh",
+        "plage e bardh ne goje"
+      ],
+      "barnat": [
+        "benzokaine_xhel",
+        "klorheksidine_shpelares",
+        "benzidamine_sprej"
+      ],
+      "shenja_alarmi": [
+        "Afte që nuk shërohet pas 2–3 javësh",
+        "Afte shumë të mëdha ose shumë të shpeshta",
+        "Me temperaturë, dobësi ose plagë edhe në pjesë të tjera të trupit"
+      ],
+      "keshilla": [
+        "Shmang ushqimet pikante, acide dhe të forta.",
+        "Përdor furçë të butë dhëmbësh."
+      ],
+      "fjale_kyce": "\\baft(e|a|et)\\b|plag\\w* (ne |te |brenda )(goj|gjuh|mish)|stomatit",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "herpes_labial",
+      "emer": "Herpes në buzë",
+      "pershkrim": "Flluska të vogla me djegie ose kruajtje në buzë ose rreth gojës.",
+      "info": "Shkaktohet nga virusi herpes simplex që fshihet në trup dhe rizgjohet me ftohje, diell, stres ose menstruacione. Ngjitet me puthje dhe gota të përbashkëta.",
+      "fraza": [
+        "kam herpes",
+        "flluska në buzë",
+        "më doli herpes",
+        "më djeg buza dhe më del flluskë",
+        "ftohje në buzë",
+        "më doli herpesi",
+        "kam flluskë në buzë",
+        "kam ftohje në buzë",
+        "më ka dalë uzbek në buzë",
+        "m ka dal herpesi",
+        "kom flluske n buz",
+        "m doli ftohje ne buze",
+        "m djeg buza e po m del flluske"
+      ],
+      "barnat": [
+        "aciklovir_krem"
+      ],
+      "shenja_alarmi": [
+        "Flluska afër syrit ose dhimbje syri",
+        "Herpes te foshnja, ose te persona me imunitet të dobët",
+        "Nuk shërohet pas 10 ditësh, ose përhapet shumë"
+      ],
+      "keshilla": [
+        "Mos i shpërthe flluskat.",
+        "Mos puth dhe mos ndaj gota, peshqirë ose buzëkuq derisa të shërohet.",
+        "Përdor buzëkuq me mbrojtje nga dielli."
+      ],
+      "fjale_kyce": "herpes|fllusk\\w* (ne |te |rreth )?(buz|goj)|ftohje ne buz|uzbek",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "hemorroide",
+      "emer": "Hemorroide (majasëll)",
+      "pershkrim": "Dhimbje, kruajtje, ënjtje ose pak gjak i kuq i ndezur rreth anusit, sidomos pas jashtëqitjes.",
+      "info": "Hemorroidet janë vena të fryra në fund të zorrës. Janë shumë të shpeshta, sidomos me kapsllëk, shtatzëni ose ndenjje të gjatë.",
+      "fraza": [
+        "kam hemorroide",
+        "majasëll",
+        "më del gjak pas tualetit",
+        "kruajtje në anus",
+        "dhimbje kur shkoj në tualet",
+        "më ka dalë një fryrje në anus",
+        "kam hemoroide",
+        "më del gjak kur shkoj jashtë",
+        "dhimbje në anus",
+        "më kruhet anusi",
+        "kam majasëll të fryrë",
+        "kom hemoroide",
+        "m del gjak kur dal n wc",
+        "m dhem prapanica",
+        "kom majasell"
+      ],
+      "barnat": [
+        "krem_hemorroidesh",
+        "makrogol"
+      ],
+      "shenja_alarmi": [
+        "Gjak i shumtë, jashtëqitje e zezë ose me gjak të përzier",
+        "Ndryshim i zakoneve të zorrës, humbje peshe pa arsye (sidomos mbi 40 vjeç)",
+        "Dhimbje shumë e fortë ose fryrje e fortë që nuk futet brenda",
+        "Nuk përmirësohet pas 7 ditësh"
+      ],
+      "keshilla": [
+        "Ha më shumë fibra (fruta, perime, drithëra integrale) dhe pi ujë.",
+        "Mos rri gjatë në tualet dhe mos shtrëngohu.",
+        "Banjë e ngrohtë ulur (10–15 min) e qetëson dhimbjen."
+      ],
+      "fjale_kyce": "hemoroid|hemorroid|majasel|\\banus|prapanic",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "sy_te_thate",
+      "emer": "Sy të thatë / të lodhur",
+      "pershkrim": "Sy që djegin, thahen, ndjehen si me rërë ose lodhen pas ekranit.",
+      "info": "Lotët avullojnë më shpejt kur shikon ekranin gjatë (pulsojmë më pak), me kondicioner, erë ose lente kontakti.",
+      "fraza": [
+        "më thahen sytë",
+        "sy të thatë",
+        "më djegin sytë nga kompjuteri",
+        "kam sy të lodhur",
+        "ndjej sikur kam rërë në sy",
+        "sytë më djegin",
+        "sy të lodhur nga telefoni",
+        "më djegin sytë në fund të ditës",
+        "më duket sikur kam rërë në sy",
+        "m thahen syt",
+        "syt m djegin nga kompjuteri",
+        "kom syt e lodhun",
+        "m duket sikur kam rer n sy"
+      ],
+      "barnat": [
+        "lot_artificiale"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje e fortë syri ose ndjeshmëri e fortë nga drita",
+        "Ulje e shikimit",
+        "Sy shumë i kuq vetëm në njërën anë, ose pas goditjes",
+        "Nuk përmirësohet pas 1–2 javësh me lot artificialë"
+      ],
+      "keshilla": [
+        "Rregulla 20-20-20: çdo 20 minuta shiko 20 sekonda diçka larg.",
+        "Puslo shpesh dhe mbaj ajrin e dhomës të lagësht."
+      ],
+      "fjale_kyce": "\\bsy(te)?\\b( \\w+){0,2} (that|thahen|djeg|lodh)|sy (te |e )?(that|lodh)|lodhj\\w* (e |te )?syve|rere ne sy",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "konjuktivit_alergjik",
+      "emer": "Sy të kuq që kruhen (alergji)",
+      "pershkrim": "Sy të kuq, që kruhen, lotojnë dhe janë të fryrë, shpesh në pranverë ose nga pluhuri dhe kafshët.",
+      "info": "Konjuktiviti alergjik nuk ngjitet. Shpesh vjen bashkë me teshtitje dhe hundë që rrjedh. Nëse syri ka qelb të verdhë, mund të jetë infeksion.",
+      "fraza": [
+        "më janë skuqur sytë",
+        "sy të kuq",
+        "më kruhen sytë dhe janë të kuq",
+        "konjuktivit",
+        "sytë më lotojnë nga poleni",
+        "më janë skuqur sytë dhe më kruhen",
+        "sytë e kuq nga alergjia",
+        "më kruhen sytë nga poleni",
+        "m jan skuq syt e m kruhen",
+        "syt t kuq nga alergjia",
+        "m kruhen syt shum"
+      ],
+      "barnat": [
+        "kromoglikat_pika",
+        "lot_artificiale",
+        "loratadine"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje syri, ndjeshmëri e fortë nga drita ose ulje e shikimit",
+        "Qelb i trashë që ngjit qerpikët",
+        "Sy i kuq pas goditjes ose me lente kontakti",
+        "Foshnjë me sy të kuq"
+      ],
+      "keshilla": [
+        "Mos i fërko sytë.",
+        "Komprese të ftohta e qetësojnë kruajtjen.",
+        "Hiq lentet e kontaktit derisa të kalojë."
+      ],
+      "fjale_kyce": "\\bsy(te)?\\b( \\w+){0,3} (kuq|skuq)|skuq\\w* (e |te )?syve|syte (e |te )?kuq|konjuktiv|konjunktiv",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "akne",
+      "emer": "Akne (puçrra)",
+      "pershkrim": "Puçrra, pika të zeza ose të bardha në fytyrë, gjoks ose shpinë.",
+      "info": "Aknet lindin kur poret mbyllen nga yndyra dhe qelizat e lëkurës. Janë të shpeshta në adoleshencë dhe nuk vijnë nga mungesa e pastërtisë.",
+      "fraza": [
+        "kam akne",
+        "më dalin puçrra",
+        "puçrra në fytyrë",
+        "pika të zeza",
+        "kam lëkurë me puçrra",
+        "kam puçrra",
+        "më dalin puçrra në ballë",
+        "kam akne në shpinë",
+        "puçërr e madhe në fytyrë",
+        "m dalin puqrra",
+        "kom puqrra n fytyre",
+        "kom akne",
+        "m kan dal bibilaqe",
+        "puqrra ne balle e mjeker"
+      ],
+      "barnat": [
+        "benzoil_peroksid"
+      ],
+      "shenja_alarmi": [
+        "Puçrra të mëdha, të dhimbshme e të thella (kiste) ose që lënë shenja",
+        "Akne që nuk përmirësohen pas 2–3 muajsh trajtim",
+        "Akne që të shqetësojnë shumë emocionalisht"
+      ],
+      "keshilla": [
+        "Laje fytyrën 2 herë në ditë me sapun të butë.",
+        "Mos i shtrydh puçrrat: lënë shenja.",
+        "Përdor kremra 'non-comedogenic' (që nuk mbyllin poret)."
+      ],
+      "fjale_kyce": "\\bakne|pucrr|pucer|pika (te )?zeza|komedon",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "djegie_lekure",
+      "emer": "Djegie e lehtë e lëkurës",
+      "pershkrim": "Djegie e vogël nga uji i nxehtë, hekuri, furra ose dielli; lëkurë e kuqe dhe e dhimbshme.",
+      "info": "Djegiet e lehta (të kuqe, pa flluska ose me flluska të vogla) shërohen brenda 1–2 javësh. Ftohja e menjëhershme me ujë është hapi më i rëndësishëm.",
+      "fraza": [
+        "u dogja",
+        "më dogji uji i nxehtë",
+        "u dogja me hekur",
+        "më dogji dielli",
+        "djegie nga dielli",
+        "dogja gishtin në furrë",
+        "u dogja me vaj",
+        "më dogji dielli shpatullat",
+        "u dogja nga dielli",
+        "djegie e lehtë në dorë",
+        "u dogja me tenxhere",
+        "më është skuqur lëkura nga dielli",
+        "u dogja me uj t nxeht",
+        "m dogj dielli",
+        "m doli flluske nga djegia"
+      ],
+      "barnat": [
+        "dekspantenol_krem",
+        "paracetamol",
+        "aloe_xhel"
+      ],
+      "shenja_alarmi": [
+        "Djegie më e madhe se pëllëmba e dorës, ose në fytyrë, duar, këmbë, organe gjenitale",
+        "Flluska të mëdha, lëkurë e bardhë ose e nxirë, ose pa dhimbje (djegie e thellë)",
+        "Djegie nga kimikate ose elektricitet",
+        "Djegie te foshnja ose të moshuar",
+        "Shenja infeksioni: qelb, skuqje që përhapet, temperaturë"
+      ],
+      "keshilla": [
+        "Ftohe menjëherë me ujë rrjedhës të vakët/të ftohtë për 20 minuta (jo akull).",
+        "Mos vendos pastë dhëmbësh, vaj ose kos.",
+        "Mos i shpërthe flluskat."
+      ],
+      "fjale_kyce": "dogj|djeg\\w* (nga )?(dielli|uji|vaji|furr|hekur)|djegie (e |ne )?lekur|djegie nga dielli",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "plage_e_vogel",
+      "emer": "Plagë e vogël / gërvishtje",
+      "pershkrim": "Prerje e vogël, gërvishtje ose lëkurë e çjerrë.",
+      "info": "Plagët e vogla dhe të cekëta shërohen vetë brenda disa ditësh nëse mbahen të pastra.",
+      "fraza": [
+        "u preva",
+        "kam një prerje të vogël",
+        "u gërvishta",
+        "më çori lëkura",
+        "plagë e vogël në gisht",
+        "rashë dhe u gërvishta në gju",
+        "u preva me thike",
+        "kam një plagë të vogël",
+        "u gërvishta në dorë",
+        "më çau lëkurën macja",
+        "u preva duke rruar",
+        "gërvishtje në gju",
+        "u preva me thik",
+        "kom ni plage t vogel",
+        "m doli gjak nga nji prerje"
+      ],
+      "barnat": [
+        "povidon_jod",
+        "dekspantenol_krem"
+      ],
+      "shenja_alarmi": [
+        "Plagë e thellë, e gjatë mbi 1 cm ose me buzë të hapura (mund të duhen qepje)",
+        "Gjaku nuk ndalon pas 10 minutash shtypje",
+        "Plagë nga kafshim kafshe ose njeriu, ose me ndotje/gozhdë (tetanoz)",
+        "Skuqje që përhapet, qelb, temperaturë"
+      ],
+      "keshilla": [
+        "Shtyp plagën me garzë të pastër derisa të ndalojë gjaku.",
+        "Laje me ujë të pastër rrjedhës.",
+        "Mbuloje me fashë dhe ndërroje çdo ditë."
+      ],
+      "fjale_kyce": "gervisht|u preva|preva\\b|prerje|plag\\w* (e |te )?vogel|cori lekur|u cora",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "morra",
+      "emer": "Morra të kokës",
+      "pershkrim": "Kruajtje e lëkurës së kokës, morra ose thëngla (vezë) në flokë, sidomos te fëmijët.",
+      "info": "Morrat ngjiten me kontakt kokë më kokë, jo nga mungesa e pastërtisë. Nuk kalojnë te kafshët.",
+      "fraza": [
+        "fëmija ka morra",
+        "kam morra",
+        "thëngla në flokë",
+        "i kruhet koka vajzës dhe ka morra",
+        "vajza ka morra",
+        "djali ka morra në flokë",
+        "morra në kokë",
+        "fëmija solli morra nga shkolla",
+        "goca ka morra",
+        "cuni ka morra n koke",
+        "fmija ka morra prej shkolle"
+      ],
+      "barnat": [
+        "dimetikon_losion"
+      ],
+      "shenja_alarmi": [
+        "Lëkura e kokës ka plagë me qelb ose ënjtje të gjëndrave",
+        "Morrat mbeten pas 2 trajtimeve",
+        "Foshnjë nën 6 muaj"
+      ],
+      "keshilla": [
+        "Kontrollo të gjithë familjen me krehër të dendur.",
+        "Laj çarçafët dhe kapelet në 60°C.",
+        "Nuk ka nevojë të presësh flokët."
+      ],
+      "fjale_kyce": "\\bmorr|thengl",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "zbokth",
+      "emer": "Zbokth (luspa në flokë)",
+      "pershkrim": "Luspa të bardha në flokë dhe kruajtje e lëkurës së kokës.",
+      "info": "Zbokthi lidhet me një kërpudhë të zakonshme të lëkurës dhe me yndyrën. Nuk ngjitet dhe kontrollohet mirë me shampo të veçanta.",
+      "fraza": [
+        "kam zbokth",
+        "luspa në flokë",
+        "më kruhet lëkura e kokës",
+        "flokët më mbushen me luspa",
+        "kam zbokth në flokë",
+        "më bien luspa nga koka",
+        "zbokth",
+        "lëkura e kokës më kruhet dhe zhvishet",
+        "kom zbokth",
+        "m bien luspa nga koka",
+        "m kruhet koka e m bie zbokth"
+      ],
+      "barnat": [
+        "ketokonazol_shampo"
+      ],
+      "shenja_alarmi": [
+        "Skuqje e fortë, plagë ose qelb në lëkurën e kokës",
+        "Rënie flokësh në pika",
+        "Nuk përmirësohet pas 1 muaji me shampo"
+      ],
+      "keshilla": [
+        "Laj flokët rregullisht.",
+        "Shmang produktet me alkool për flokët."
+      ],
+      "fjale_kyce": "zbokth|lusp\\w* (ne |te )?flok|seborre|lekur\\w* (e |te )?kokes",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "kandidoze_vaginale",
+      "emer": "Kandidozë vaginale (kërpudha)",
+      "pershkrim": "Kruajtje dhe djegie vaginale me rrjedhje të bardhë e të trashë, pa erë të keqe.",
+      "info": "Shkaktohet nga kërpudha Candida. Shfaqet shpesh pas antibiotikëve, në shtatzëni ose me diabet. Nuk konsiderohet sëmundje seksualisht e transmetueshme.",
+      "fraza": [
+        "kam kandidozë",
+        "kruajtje vaginale",
+        "rrjedhje e bardhë",
+        "kërpudha vaginale",
+        "më djeg dhe më kruhet poshtë",
+        "kruajtje në vaginë",
+        "rrjedhje e bardhë si gjizë",
+        "infeksion vaginal me kërpudha",
+        "kom kandidoze",
+        "m kruhet poshte e kam rrjedhje t bardhe"
+      ],
+      "barnat": [
+        "klotrimazol_vaginal"
+      ],
+      "shenja_alarmi": [
+        "Hera e parë që ke këto simptoma",
+        "Je shtatzënë, ose nën 16 / mbi 60 vjeç",
+        "Rrjedhje me erë të keqe, me ngjyrë ose me gjak",
+        "Temperaturë ose dhimbje barku",
+        "Më shumë se 2 herë në 6 muaj"
+      ],
+      "keshilla": [
+        "Vish të brendshme pambuku dhe shmang larjet e brendshme (dush vaginal).",
+        "Mos përdor sapun me parfum në zonë."
+      ],
+      "fjale_kyce": "kandid|vagin|kruajtje (e )?(brendshme|poshte)|rrjedhje (e )?bardhe",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "cistit",
+      "emer": "Djegie gjatë urinimit (cistit)",
+      "pershkrim": "Djegie ose dhimbje kur urinon, urinim i shpeshtë, ndjesi që nuk e zbraz plotësisht fshikëzën.",
+      "info": "Zakonisht është infeksion i fshikëzës (cistit). Te gratë është i shpeshtë; shpesh duhet antibiotik me recetë, prandaj duhet folur me mjekun ose farmacistin.",
+      "fraza": [
+        "më djeg kur urinoj",
+        "djegie në urinim",
+        "urinoj shumë shpesh",
+        "kam infeksion urinar",
+        "cistit",
+        "dhimbje kur bëj pipi",
+        "më djeg kur bëj pipi",
+        "kam infeksion në urinë",
+        "urinoj shpesh dhe pak",
+        "më therr kur urinoj",
+        "infeksion i fshikëzës",
+        "m djeg kur shurrej",
+        "m djeg kur bej pipi",
+        "po shkoj shpesh me shurr",
+        "kom infeksion t urines"
+      ],
+      "barnat": [
+        "paracetamol"
+      ],
+      "shenja_alarmi": [
+        "Temperaturë, dridhje ose dhimbje në mes (veshkat)",
+        "Gjak në urinë",
+        "Je burrë, shtatzënë, fëmijë ose ke diabet",
+        "Simptomat nuk përmirësohen pas 2 ditësh"
+      ],
+      "keshilla": [
+        "Pi shumë ujë.",
+        "Mos e mbaj urinën gjatë."
+      ],
+      "fjale_kyce": "djeg\\w* (kur|gjate|ne) (urin|bej pipi)|urin\\w* (me )?djeg|urinoj (shume )?shpesh|cistit|infeksion\\w*( \\w+){0,2} urin|fshikez|pipi|therr\\w* (kur|gjate) urin",
+      "kerkon_mjek": true
+    },
+    {
+      "id": "marramendje",
+      "emer": "Marramendje",
+      "pershkrim": "Ndjenjë rrotullimi, paqëndrueshmërie ose sikur do bie të fikët.",
+      "info": "Shkaqet më të shpeshta janë ngritja e shpejtë në këmbë, dehidratimi, uria ose problemet e veshit të brendshëm. Marramendja që përsëritet duhet parë nga mjeku.",
+      "fraza": [
+        "më merren mendtë",
+        "kam marramendje",
+        "më vjen rrotull koka",
+        "më sillet bota rrotull",
+        "ndjehem i paqëndrueshëm",
+        "më merret mendja",
+        "më vjen mendja rrotull",
+        "kam marramendje kur ngrihem",
+        "më turbullohet kur ngrihem",
+        "m merren mendt",
+        "m vjen mendja rrotull",
+        "m sillet krejt dhoma",
+        "kom marrmendje kur ngrihem"
+      ],
+      "barnat": [],
+      "shenja_alarmi": [
+        "Me dobësi në njërën anë, fytyrë të shtrembër, vështirësi në të folur ose shikim të dyfishtë: telefono 112",
+        "Me dhimbje gjoksi, rrahje të shpejta të zemrës ose të fikët",
+        "Pas goditjes në kokë",
+        "Marramendje që përsëritet ose zgjat më shumë se 1 ditë"
+      ],
+      "keshilla": [
+        "Ulu ose shtrihu menjëherë që të mos biesh.",
+        "Ngrihu ngadalë nga shtrati.",
+        "Pi ujë dhe ha diçka nëse nuk ke ngrënë."
+      ],
+      "fjale_kyce": "marramendj|merren mendt|merret mendja|mendja( me)? (vjen )?rrotull|vjen rrotull|sillet (bota|koka)|vertigo|turbullohet",
+      "kerkon_mjek": true
+    },
+    {
+      "id": "lodhje",
+      "emer": "Lodhje e vazhdueshme",
+      "pershkrim": "Ndjenjë lodhjeje, mungesë energjie dhe dobësi për ditë ose javë.",
+      "info": "Lodhja shkaktohet shpesh nga gjumi i pakët, stresi ose një virus i kohëve të fundit. Kur zgjat, mund të lidhet me anemi, tiroiden ose diabetin, që zbulohen me analiza gjaku.",
+      "fraza": [
+        "ndihem shumë i lodhur",
+        "jam pa energji",
+        "kam lodhje gjithë kohën",
+        "ndihem pa fuqi",
+        "jam gjithmonë i lodhur",
+        "jam i këputur",
+        "jam i dërrmuar",
+        "jam pa takat",
+        "ndihem i lodhur gjithë kohën",
+        "jam shumë e lodhur",
+        "jom i lodhun gjith kohen",
+        "jom pa fuqi",
+        "jom i kputun",
+        "s kam energji hiq"
+      ],
+      "barnat": [
+        "multivitamine"
+      ],
+      "shenja_alarmi": [
+        "Lodhje që zgjat më shumë se 2–3 javë",
+        "Me humbje peshe pa arsye, djersë natën ose temperaturë",
+        "Me etje dhe urinim të shpeshtë",
+        "Me lëkurë shumë të zbehtë ose frymëmarrje të shkurtër"
+      ],
+      "keshilla": [
+        "Fli 7–8 orë dhe ha rregullisht.",
+        "Bëj pak aktivitet fizik çdo ditë, edhe ecje 20 minuta."
+      ],
+      "fjale_kyce": "\\blodh(ur|je)\\b(?! (e |te )?sy)|pa energji|pa fuqi|ndihem i dobet|keputur|dermuar|pa takat",
+      "kerkon_mjek": true
+    },
+    {
+      "id": "krimba",
+      "emer": "Krimba (oksiure)",
+      "pershkrim": "Kruajtje rreth anusit, sidomos natën; krimba të vegjël e të bardhë si fije peri, shpesh te fëmijët.",
+      "info": "Oksiuret janë shumë të shpeshta te fëmijët dhe ngjiten lehtë brenda familjes nëpërmjet duarve.",
+      "fraza": [
+        "fëmija ka krimba",
+        "kam krimba",
+        "kruajtje në prapanicë natën",
+        "pashë krimba të bardha",
+        "oksiure",
+        "djali ka krimba",
+        "kruajtje në anus natën te fëmija",
+        "fëmija ka parazitë",
+        "krimba të vegjël të bardhë",
+        "fmija ka krimba",
+        "cunit i kruhet prapanica naten",
+        "kam pa krimba te bardhe"
+      ],
+      "barnat": [
+        "mebendazol"
+      ],
+      "shenja_alarmi": [
+        "Fëmijë nën 2 vjeç ose shtatzëni",
+        "Dhimbje barku, humbje peshe ose krimba të mëdha",
+        "Krimbat kthehen pas 2 trajtimeve"
+      ],
+      "keshilla": [
+        "Laj duart para ngrënies dhe pas tualetit.",
+        "Prit thonjtë shkurt.",
+        "Laj çarçafët dhe pizhamat në ujë të nxehtë."
+      ],
+      "fjale_kyce": "krimb|oksiur|parazit",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "lenie_duhani",
+      "emer": "Lënia e duhanit",
+      "pershkrim": "Dëshirë për të lënë cigaren dhe ndihmë kundër dëshirës për nikotinë.",
+      "info": "Zëvendësuesit e nikotinës e dyfishojnë mundësinë për ta lënë duhanin. Ndihma nga mjeku ose një program e rrit edhe më shumë suksesin.",
+      "fraza": [
+        "dua të lë duhanin",
+        "si ta lë cigaren",
+        "dua të heq dorë nga duhani",
+        "çamçakëz nikotine",
+        "pi shumë cigare",
+        "dua të heq cigaren",
+        "dua të lë cigaret",
+        "si ta lë duhanin",
+        "pi një paketë në ditë dhe dua ta lë",
+        "dua të ndaloj duhanin",
+        "du me lan duhanin",
+        "si me e lan cigaren",
+        "du me hjek cigaret"
+      ],
+      "barnat": [
+        "nikotine"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje gjoksi ose rrahje të çrregullta të zemrës",
+        "Trishtim i thellë ose ankth i fortë kur e lë"
+      ],
+      "keshilla": [
+        "Zgjidh një ditë për ta lënë dhe largo cigaret, çakmakët dhe tavllat.",
+        "Shmang situatat që të kujtojnë cigaren (kafe, alkool) në javët e para."
+      ],
+      "fjale_kyce": "duhan|cigar|nikotin",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "lekure_e_thate",
+      "emer": "Lëkurë e thatë / ekzemë",
+      "pershkrim": "Lëkurë e thatë, që kruhet, plasaritet ose skuqet në pjesë (ekzemë).",
+      "info": "Lëkura e thatë përkeqësohet në dimër dhe nga larjet e shpeshta me ujë të nxehtë. Ekzema (dermatiti atopik) kontrollohet kryesisht me hidratim të përditshëm.",
+      "fraza": [
+        "kam lëkurë të thatë",
+        "më plasaritet lëkura",
+        "kam ekzemë",
+        "më thahen duart",
+        "dermatit",
+        "më thahet lëkura",
+        "lekure e thate",
+        "kam lëkurë të ashpër",
+        "lëkura më plasaritet në dimër",
+        "më janë çarë duart",
+        "m thahet lkura",
+        "m jan qa duert",
+        "lekura m plasaritet",
+        "kom ekzeme"
+      ],
+      "barnat": [
+        "krem_emolient",
+        "hidrokortizon_krem",
+        "vazeline"
+      ],
+      "shenja_alarmi": [
+        "Lëkurë që lëngon, ka kore të verdha, dhemb ose ka temperaturë (infeksion)",
+        "Ekzemë që nuk përmirësohet pas 1 jave ose prek pjesë të mëdha",
+        "Ekzemë te foshnja"
+      ],
+      "keshilla": [
+        "Bëj dush me ujë të vakët dhe jo të gjatë.",
+        "Përdor sapun pa parfum.",
+        "Hidrato lëkurën menjëherë pas dushit."
+      ],
+      "fjale_kyce": "lekur\\w* (e |te )?(that|plasarit)|ekzem|dermatit|plasarit|thahen duart|cahen duart",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "lytha_kallo",
+      "emer": "Lytha dhe kallo",
+      "pershkrim": "Lytha (verruka) në duar ose këmbë, ose kallo/lëkurë e trashur në shputë.",
+      "info": "Lythat shkaktohen nga një virus (HPV) dhe shpesh zhduken vetë brenda 1–2 vjetësh. Kallot vijnë nga fërkimi ose këpucët e ngushta.",
+      "fraza": [
+        "kam një lyth",
+        "lytha në dorë",
+        "kallo në këmbë",
+        "verrukë",
+        "lëkurë e trashë në shputë",
+        "kam lytha",
+        "kam kallo në gisht të këmbës",
+        "lyth në shputë",
+        "lëkurë e fortë në thembër",
+        "kom ni lyth",
+        "kom kallo te kamba",
+        "m ka dal ni lyth n gisht"
+      ],
+      "barnat": [
+        "acid_salicilik"
+      ],
+      "shenja_alarmi": [
+        "Diabet ose qarkullim i dobët i gjakut në këmbë",
+        "Lyth në fytyrë ose organe gjenitale",
+        "Lyth që ndryshon ngjyrë, gjakoset ose rritet shpejt"
+      ],
+      "keshilla": [
+        "Mos e kruaj dhe mos e kafsho lythin.",
+        "Vish këpucë të gjera dhe të rehatshme."
+      ],
+      "fjale_kyce": "lyth|verruk|kallo",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "kerpudha_thonjsh",
+      "emer": "Kërpudha të thonjve",
+      "pershkrim": "Thonj të verdhë, të trashur, që thyhen ose shkëputen.",
+      "info": "Kërpudhat e thonjve janë të shpeshta te thonjtë e këmbëve dhe trajtohen ngadalë, sepse thoi rritet ngadalë.",
+      "fraza": [
+        "kam kërpudha në thonj",
+        "thoi më është zverdhur",
+        "thonj të trashur",
+        "thoi i këmbës më është prishur",
+        "thonjtë më janë verdhur",
+        "kerpudha ne thonj",
+        "thoi më është trashur dhe zverdhur",
+        "thoi m osht verdh",
+        "kom kerpudha n thoj",
+        "thonjt e kambes m jan trash"
+      ],
+      "barnat": [
+        "amorolfine"
+      ],
+      "shenja_alarmi": [
+        "Më shumë se 2 thonj të prekur ose rrënja e thoit",
+        "Diabet ose qarkullim i dobët",
+        "Dhimbje, ënjtje ose qelb rreth thoit"
+      ],
+      "keshilla": [
+        "Mbaj këmbët të thata dhe ndërro çorapet çdo ditë.",
+        "Mos ec zbathur në pishina dhe dushe publike."
+      ],
+      "fjale_kyce": "thonj|thoi\\b|thoin",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "gjakderdhje_hunde",
+      "emer": "Gjakderdhje nga hunda",
+      "pershkrim": "Gjak që rrjedh nga hunda, shpesh nga ajri i thatë, fërkimi ose ftohja.",
+      "info": "Shumica e gjakderdhjeve nga hunda vijnë nga enë të vogla në pjesën e përparme dhe ndalen me shtypje brenda 10–15 minutave.",
+      "fraza": [
+        "më rrjedh gjak nga hunda",
+        "gjakderdhje hunde",
+        "më doli gjak nga hunda",
+        "hunda më nxjerr gjak",
+        "më rrjedh gjak nga hundët",
+        "fëmijës i rrjedh gjak nga hunda",
+        "më del gjak nga hunda kur fryj",
+        "m rrjedh gjak prej hunes",
+        "m del gjak nga hunda",
+        "fmijes i rrjedh gjak nga hunda"
+      ],
+      "barnat": [],
+      "shenja_alarmi": [
+        "Gjaku nuk ndalon pas 20 minutash shtypje",
+        "Pas goditjes në kokë ose në fytyrë",
+        "Merr ilaçe hollimi gjaku, ose ndodh shumë shpesh",
+        "Gjak i shumtë që të bën të ndihesh i dobët"
+      ],
+      "keshilla": [
+        "Ulu dhe përkulu pak përpara (jo prapa).",
+        "Shtrëngo pjesën e butë të hundës për 10–15 minuta pa e lëshuar.",
+        "Mos e fryj hundën për disa orë pas."
+      ],
+      "fjale_kyce": "gjak\\w* (nga |nga )?hund|hund\\w*( \\w+){0,2} gjak|epistaks",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "humbje_zeri",
+      "emer": "Ngjirje / humbje zëri",
+      "pershkrim": "Zë i ngjirur ose i humbur, shpesh pas ftohjes ose përdorimit të tepërt të zërit.",
+      "info": "Laringiti zakonisht vjen nga virus ose lodhja e zërit dhe kalon brenda 1–2 javësh me pushim të zërit.",
+      "fraza": [
+        "më është ngjirur zëri",
+        "kam humbur zërin",
+        "nuk flas dot nga zëri",
+        "laringit",
+        "zë i ngjirur",
+        "më ka rënë zëri",
+        "nuk më del zëri",
+        "zëri më është ngjirur nga të bërtiturat",
+        "m ka ra zani",
+        "s m del zani",
+        "m osht ngjir zani"
+      ],
+      "barnat": [
+        "pastile_fyti",
+        "paracetamol"
+      ],
+      "shenja_alarmi": [
+        "Ngjirje që zgjat më shumë se 3 javë (sidomos te duhanpirësit)",
+        "Vështirësi në frymëmarrje ose gëlltitje",
+        "Gjak kur kollitesh"
+      ],
+      "keshilla": [
+        "Pusho zërin dhe mos pëshpërit (e lodh më shumë).",
+        "Pi lëngje të ngrohta dhe thith avull."
+      ],
+      "fjale_kyce": "\\bzer(i|in)\\b|ngjir|laringit",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "ere_goje",
+      "emer": "Erë e keqe e gojës",
+      "pershkrim": "Frymë me erë të keqe, shpesh në mëngjes ose pavarësisht larjes së dhëmbëve.",
+      "info": "Shkaku më i shpeshtë janë bakteret në gjuhë dhe mes dhëmbëve, mishrat e përflakur ose goja e thatë.",
+      "fraza": [
+        "më vjen erë goja",
+        "erë e keqe e gojës",
+        "kam frymë të keqe",
+        "halitozë",
+        "goja më mban erë",
+        "erë e keqe nga goja në mëngjes",
+        "m vjen er goja",
+        "goja m mban er t keqe"
+      ],
+      "barnat": [
+        "klorheksidine_shpelares"
+      ],
+      "shenja_alarmi": [
+        "Mishra që gjakosen ose dhëmbë që lëvizin",
+        "Erë e keqe me dhimbje fyti, temperaturë ose sinusit të zgjatur"
+      ],
+      "keshilla": [
+        "Laj dhëmbët 2 herë në ditë dhe pastro gjuhën.",
+        "Përdor fill dentar çdo ditë.",
+        "Pi ujë dhe shmang duhanin."
+      ],
+      "fjale_kyce": "ere\\w*( \\w+){0,2} goj|goj\\w*( \\w+){0,2} ere|fryme (te |e )?keqe|halitoz",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "dehidratim_vape",
+      "emer": "Dehidratim / vapë",
+      "pershkrim": "Etje e fortë, gojë e thatë, urinë e errët, dobësi dhe dhimbje koke nga vapa ose humbja e lëngjeve.",
+      "info": "Dehidratimi i lehtë rregullohet duke pirë lëngje. Pika e diellit (goditje nga të nxehtit) me konfuzion ose pa djersë është urgjencë.",
+      "fraza": [
+        "kam etje të madhe",
+        "jam dehidratuar",
+        "më bëri keq vapa",
+        "pikë dielli",
+        "urina shumë e errët",
+        "më ka goditur dielli",
+        "goditje nga dielli",
+        "kam pirë pak ujë dhe ndihem keq",
+        "jam dehidratuar nga diarreja",
+        "më ka rënë të fikët nga vapa",
+        "m ka goditur dielli",
+        "jom dehidratu",
+        "kom etje t madhe nga vapa",
+        "m ba keq nga nxehtesia"
+      ],
+      "barnat": [
+        "ors"
+      ],
+      "shenja_alarmi": [
+        "Konfuzion, të fikët, lëkurë e nxehtë dhe e thatë pa djersë: telefono 112",
+        "Nuk urinon për më shumë se 8 orë",
+        "Foshnjë ose i moshuar që nuk pi"
+      ],
+      "keshilla": [
+        "Shko në vend të freskët dhe me hije.",
+        "Pi ujë ose kripëra rehidratimi me gllënjka.",
+        "Fresko lëkurën me ujë dhe ajër."
+      ],
+      "fjale_kyce": "dehidrat|\\bvape|pike (e )?diell|goditur dielli|goditje (nga |e )?diell|\\betje",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "ankth_stres",
+      "emer": "Ankth dhe stres",
+      "pershkrim": "Nervozizëm, merak i vazhdueshëm, tension, zemër që rreh shpejt nga stresi.",
+      "info": "Ankthi i lehtë dhe stresi janë të zakonshëm. Kur zgjat ose të pengon në jetën e përditshme, psikologu ose mjeku mund të ndihmojnë shumë.",
+      "fraza": [
+        "kam ankth",
+        "jam shumë i stresuar",
+        "ndihem nervoz",
+        "kam panik",
+        "jam në ankth gjithë kohën",
+        "jam nervoz",
+        "ndihem i shqetësuar",
+        "kam stres në punë",
+        "jam me ankth",
+        "zemra më rreh nga stresi",
+        "kam merak dhe s'qetësohem",
+        "jom nervoz",
+        "kom ankth",
+        "jom i stresum",
+        "m rreh zemra nga merzia",
+        "s qetesohem dot"
+      ],
+      "barnat": [
+        "valeriane"
+      ],
+      "shenja_alarmi": [
+        "Mendime për vetëdëmtim: telefono 127/112 ose fol menjëherë me dikë",
+        "Sulme paniku që përsëriten, ose dhimbje gjoksi",
+        "Ankth që zgjat më shumë se 2 javë ose të pengon në punë/shkollë"
+      ],
+      "keshilla": [
+        "Frymëmarrje e ngadaltë: thith 4 sekonda, mbaj 4, nxirr 6.",
+        "Ul kafenë dhe alkoolin.",
+        "Fol me dikë që i beson."
+      ],
+      "fjale_kyce": "ankth|\\bstres|nervoz|\\bpanik|merak|shqetesuar",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "mungese_vitaminash",
+      "emer": "Vitamina dhe forcim imuniteti",
+      "pershkrim": "Pyetje për vitamina, minerale dhe për të forcuar organizmin, p.sh. në dimër ose kur sëmuresh shpesh.",
+      "fraza": [
+        "dua vitamina",
+        "çfarë vitamina të marr",
+        "dua të forcoj imunitetin",
+        "sëmurem shpesh",
+        "vitaminë D",
+        "vitamin c",
+        "më duhen vitamina për dimër",
+        "multivitaminë",
+        "kam mungesë vitamine D",
+        "dua zink",
+        "du vitamina",
+        "qfar vitamina me marr",
+        "du me forcu imunitetin"
+      ],
+      "barnat": [
+        "vitamine_d",
+        "vitamine_c",
+        "zink",
+        "multivitamine"
+      ],
+      "shenja_alarmi": [
+        "Sëmuresh shumë shpesh ose infeksionet nuk kalojnë (mund të ketë shkak tjetër)",
+        "Lodhje e madhe, humbje peshe pa shkak ose djersë natën",
+        "Dhimbje kockash ose dobësi muskujsh e vazhdueshme"
+      ],
+      "keshilla": [
+        "Ushqim i larmishëm: fruta, perime, peshk, vezë, bishtajore.",
+        "Fli 7–9 orë dhe lëviz çdo ditë.",
+        "15–20 minuta diell në ditë ndihmojnë për vitaminën D.",
+        "Mos merr disa suplemente njëkohësisht pa pyetur farmacistin."
+      ],
+      "fjale_kyce": "vitamin|multivitamin|forcoj imunitet|forcim (i )?imunitet|semurem (shume )?shpesh|\\bzink",
+      "info": "Shumica e njerëzve me ushqim të larmishëm nuk kanë nevojë për shumë suplemente. Vitamina D mungon shpesh në dimër dhe te ata që dalin pak në diell; vitamina C dhe zinku mund ta shkurtojnë pak ftohjen.",
+      "kerkon_mjek": false
+    },
+    {
+      "id": "anemi_hekur",
+      "emer": "Mungesë hekuri / anemi",
+      "kerkon_mjek": true,
+      "pershkrim": "Lodhje, zbehje dhe hemoglobinë e ulët nga mungesa e hekurit.",
+      "fraza": [
+        "kam anemi",
+        "kam mungesë hekuri",
+        "hemoglobina e ulët",
+        "më ka dalë hekuri i ulët",
+        "ferritina e ulët",
+        "jam i zbehtë dhe i lodhur",
+        "dua hekur",
+        "kam gjak të pakët",
+        "kom hekur t ulet",
+        "kom anemi",
+        "m ka dal hemoglobina e ulet"
+      ],
+      "barnat": [
+        "hekur",
+        "vitamine_c"
+      ],
+      "shenja_alarmi": [
+        "Gulçim, rrahje të shpejta zemre ose të fikët",
+        "Jashtëqitje e zezë ose me gjak, ose menstruacione shumë të rënda",
+        "Humbje peshe pa shkak",
+        "Anemi në shtatzëni ose te fëmijët"
+      ],
+      "keshilla": [
+        "Ha mish të kuq, mëlçi, bishtajore, spinaq dhe vezë.",
+        "Vitamina C (portokall, limon) ndihmon përthithjen e hekurit.",
+        "Çaji dhe kafja pas ngrënies ulin përthithjen: pi 1–2 orë më vonë."
+      ],
+      "fjale_kyce": "\\banemi|hekur|hemoglobin|ferritin|gjak (te |i )?pak|zbeht",
+      "info": "Anemia nga mungesa e hekurit vjen shpesh nga menstruacionet e rënda, shtatzënia ose ushqimi i varfër, por mund të jetë edhe shenjë gjakderdhjeje në stomak ose zorrë. Prandaj duhet konfirmuar me analizë dhe shkaku duhet gjetur nga mjeku."
+    },
+    {
+      "id": "ngerce_kembesh",
+      "emer": "Ngërçe në këmbë",
+      "kerkon_mjek": false,
+      "pershkrim": "Tkurrje e papritur dhe me dhimbje e muskujve të pulpës ose këmbës, shpesh natën.",
+      "fraza": [
+        "më mblidhen këmbët natën",
+        "kam ngërç në pulpë",
+        "ngërçe në këmbë",
+        "më kap ngërçi natën",
+        "më tërhiqet muskuli i këmbës",
+        "kram në këmbë",
+        "më mpihen dhe më mblidhen këmbët",
+        "ngërç në gishtat e këmbës",
+        "m kap ngerqi n kambe naten",
+        "m mblidhen kambet",
+        "kom ngerqe ne pulpe"
+      ],
+      "barnat": [
+        "magnez"
+      ],
+      "shenja_alarmi": [
+        "Këmba e ënjtur, e kuqe, e nxehtë dhe me dhimbje (mund të jetë trombozë)",
+        "Dobësi ose mpirje e vazhdueshme e këmbës",
+        "Ngërçe shumë të shpeshta pas fillimit të një bari të ri (p.sh. diuretik)"
+      ],
+      "keshilla": [
+        "Shtrije muskulin: tërhiq gishtat e këmbës drejt vetes.",
+        "Masazho dhe ngroh muskulin.",
+        "Pi mjaft ujë, sidomos në vapë ose pas sportit.",
+        "Bëj shtrirje të lehta para gjumit."
+      ],
+      "fjale_kyce": "ngerc\\w*( \\w+){0,2} (kemb|pulp|kofsh|gisht)|(kemb|pulp)\\w*( \\w+){0,3} ngerc|\\bkram|me mblidhen (kembet|muskujt)|\\bpulp",
+      "info": "Ngërçet e këmbëve janë të zakonshme, sidomos natën, pas sportit, në shtatzëni dhe te të moshuarit. Zakonisht kalojnë vetë pas disa minutash."
+    },
+    {
+      "id": "dalje_dhembesh",
+      "emer": "Dalja e dhëmbëve te foshnja",
+      "kerkon_mjek": false,
+      "pershkrim": "Foshnja është e mërzitur, jargavitet dhe kafshon gjëra kur i dalin dhëmbët.",
+      "fraza": [
+        "po i dalin dhëmbët foshnjës",
+        "beba po nxjerr dhëmbë",
+        "i dalin dhëmbët",
+        "dalja e dhëmbëve",
+        "foshnja kafshon gjithçka dhe qan",
+        "djalit të vogël i dalin dhëmbët",
+        "jargavitet shumë dhe i dalin dhëmbët",
+        "bebes po i dalin dhambet",
+        "beba po nxjerr dhamb",
+        "po i dalin dhambt"
+      ],
+      "barnat": [],
+      "shenja_alarmi": [
+        "Temperaturë mbi 38 °C (dalja e dhëmbëve nuk jep temperaturë të lartë)",
+        "Foshnja nën 3 muaj me temperaturë: urgjencë",
+        "Diarre, të vjella ose refuzon të pijë",
+        "Qan pa pushim dhe nuk qetësohet"
+      ],
+      "keshilla": [
+        "Jepi unazë dhëmbësh të ftohtë (jo të ngrirë) ose një pecetë të lagur e të ftohtë.",
+        "Fërkoji lehtë mishin e dhëmbëve me gisht të pastër.",
+        "Fshi jargët shpesh që të mos skuqet lëkura.",
+        "Për dhimbje: paracetamol ose ibuprofen në formë shurupi për fëmijë, me dozë sipas peshës; pyet farmacistin ose pediatrin."
+      ],
+      "fjale_kyce": "dalin dhembet|dalja e dhembeve|dalje (e )?dhembeve|nxjerr dhembe|dhembe(t)? (e )?(pare|qumeshtit)",
+      "info": "Dhëmbët e parë dalin zakonisht nga 6 muaj deri në 2–3 vjeç. Foshnja mund të jetë nervoze, të jargavitet dhe të ketë temperaturë pak të ngritur, por temperatura e lartë ose diarreja vijnë nga shkaqe të tjera."
+    },
+    {
+      "id": "skuqje_pelenash",
+      "emer": "Skuqje nga pelenat",
+      "kerkon_mjek": false,
+      "pershkrim": "Lëkurë e kuqe dhe e irrituar në zonën e pelenës te foshnja.",
+      "fraza": [
+        "foshnja ka skuqje nga pelena",
+        "skuqje pelenash",
+        "beba është skuqur te pelena",
+        "i është skuqur prapanica bebes",
+        "irritim nga pelenat",
+        "djali i vogël është skuqur poshtë",
+        "beba osht skuq nga pelena",
+        "beba ka skuqje te pelena"
+      ],
+      "barnat": [
+        "oksid_zinku_krem",
+        "dekspantenol_krem"
+      ],
+      "shenja_alarmi": [
+        "Flluska, plagë të hapura ose qelb",
+        "Temperaturë ose foshnja duket e sëmurë",
+        "Skuqje e kuqe e ndezur me pika anash (mund të jetë kërpudhë)",
+        "Nuk përmirësohet pas 3 ditësh"
+      ],
+      "keshilla": [
+        "Ndërro pelenën shpesh dhe sapo të laget.",
+        "Lëre foshnjën pa pelenë disa minuta në ditë.",
+        "Pastro me ujë të ngrohtë; shmang letrat e lagura me parfum.",
+        "Thaje lëkurën duke e prekur lehtë, jo duke fërkuar."
+      ],
+      "fjale_kyce": "pelen|skuq\\w*( \\w+){0,2} (bebe|beba|foshnj)",
+      "info": "Skuqja e pelenave vjen nga lagështia, urina dhe jashtëqitja që irritojnë lëkurën. Me ndërrim të shpeshtë dhe një pastë mbrojtëse zakonisht kalon brenda 2–3 ditësh."
+    },
+    {
+      "id": "zgjebe",
+      "emer": "Zgjebe",
+      "kerkon_mjek": false,
+      "pershkrim": "Kruajtje e fortë, sidomos natën, me kokrriza të vogla mes gishtave, në kyçe, bel ose organe gjenitale.",
+      "fraza": [
+        "kam zgjebe",
+        "zgjebe",
+        "më kruhet shumë natën mes gishtave",
+        "e gjithë familja kruhet",
+        "skabie",
+        "kokrriza që kruhen mes gishtave të duarve",
+        "kom zgjebe",
+        "m ha naten mes gishtave",
+        "krejt familja po kruhet"
+      ],
+      "barnat": [
+        "permetrine_krem",
+        "loratadine"
+      ],
+      "shenja_alarmi": [
+        "Plagë me qelb ose temperaturë (infeksion)",
+        "Kruajtja nuk ulet 4 javë pas trajtimit",
+        "Lëkurë e trashë me kore (zgjebe e rëndë)",
+        "Te foshnjat nën 2 muaj"
+      ],
+      "keshilla": [
+        "Trajto të gjithë njerëzit e shtëpisë në të njëjtën ditë.",
+        "Lahi rrobat, peshqirët dhe çarçafët në 60 °C.",
+        "Mos e ndaj krevatin ose peshqirin derisa të përfundojë trajtimi.",
+        "Është mirë që mjeku ta konfirmojë diagnozën."
+      ],
+      "fjale_kyce": "zgjeb|skabie|scabies",
+      "info": "Zgjebja shkaktohet nga një parazit shumë i vogël që hyn në lëkurë. Ngjitet me kontakt të gjatë lëkurë me lëkurë, prandaj trajtohet e gjithë familja njëkohësisht."
+    },
+    {
+      "id": "dylle_veshi",
+      "emer": "Dyll në vesh (vesh i zënë)",
+      "kerkon_mjek": false,
+      "pershkrim": "Vesh i bllokuar nga dylli, me dëgjim më të ulët, pa dhimbje të fortë.",
+      "fraza": [
+        "kam dyll në vesh",
+        "më është zënë veshi nga dylli",
+        "tapë dylli në vesh",
+        "nuk dëgjoj mirë nga një vesh",
+        "dyll veshi",
+        "më duket veshi i mbyllur pas dushit",
+        "veshi m osht zan me dyll",
+        "kom dyll n vesh",
+        "s ndegjoj mir nga nji vesh"
+      ],
+      "barnat": [
+        "pika_veshi_dylle"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje e fortë, temperaturë ose rrjedhje nga veshi",
+        "Humbje e papritur e dëgjimit",
+        "Marramendje ose zhurmë e vazhdueshme në vesh",
+        "Ke pasur daulle të shpuar ose operacion në vesh"
+      ],
+      "keshilla": [
+        "Mos përdor shkopinj pambuku brenda veshit.",
+        "Pika vaji ulliri për disa ditë e zbutin dyllin.",
+        "Nëse veshi mbetet i bllokuar pas 5 ditësh, mjeku ose infermieri e lan."
+      ],
+      "fjale_kyce": "\\bdyll|cerumen|tap\\w* (e |dylli )?(ne |te )?vesh",
+      "info": "Dylli e mbron veshin dhe zakonisht del vetë. Kur grumbullohet, zbutet me pika dhe vetëm rrallë duhet larje te mjeku."
+    },
+    {
+      "id": "venat_kembe",
+      "emer": "Këmbë të rënda dhe vena varikoze",
+      "kerkon_mjek": false,
+      "pershkrim": "Rëndim, lodhje ose ënjtje e lehtë e të dyja këmbëve në mbrëmje, venat e dukshme.",
+      "fraza": [
+        "kam këmbë të rënda",
+        "më ënjten këmbët në mbrëmje",
+        "kam variçe",
+        "vena varikoze",
+        "më rëndohen këmbët nga qëndrimi",
+        "më fryhen kyçet e këmbëve nga vapa",
+        "kam venat e fryra në këmbë",
+        "m rendohen kambet",
+        "kom variqe",
+        "m ajten kambet ne mbramje"
+      ],
+      "barnat": [
+        "heparinoid_xhel"
+      ],
+      "shenja_alarmi": [
+        "Vetëm njëra këmbë e ënjtur, e kuqe, e nxehtë dhe me dhimbje (trombozë): shko menjëherë te mjeku",
+        "Gulçim ose dhimbje në gjoks bashkë me ënjtjen: telefono 127/112",
+        "Ënjtje e të dyja këmbëve me gulçim ose shtim peshe (zemra ose veshkat)",
+        "Plagë në këmbë që nuk shërohen"
+      ],
+      "keshilla": [
+        "Ngri këmbët mbi nivelin e zemrës kur pushon.",
+        "Ec çdo ditë dhe mos qëndro gjatë në këmbë ose ulur pa lëvizur.",
+        "Çorape kompresive (nga farmacia) ndihmojnë shumë.",
+        "Shmang vapën e madhe, saunën dhe këpucët me taka."
+      ],
+      "fjale_kyce": "varic|varikoz|\\bvenat|kemb\\w* (te |e )?rend|enjt\\w*( \\w+){0,2} kemb|kemb\\w*( \\w+){0,2} (enjt|fryh)|me enjten kembet",
+      "info": "Këmbët e rënda vijnë shpesh nga qëndrimi i gjatë në këmbë, vapa, shtatzënia ose venat e dobësuara. Ënjtja e njërës këmbë me dhimbje ndryshon: duhet parë menjëherë."
+    },
+    {
+      "id": "mbrojtje_insekte",
+      "emer": "Mbrojtje nga mushkonjat dhe rriqrat",
+      "kerkon_mjek": false,
+      "pershkrim": "Si të mbrohesh nga pickimet e mushkonjave dhe rriqrave, dhe çfarë të bësh kur të kap një rriqër.",
+      "fraza": [
+        "si të mbrohem nga mushkonjat",
+        "repelent për mushkonja",
+        "më ka kapur një rriqër",
+        "kam një rriqër në lëkurë",
+        "si ta heq rriqrën",
+        "dua diçka kundër mushkonjave",
+        "sprej kundër insekteve",
+        "si me u mbrojt prej mushkonjave",
+        "m ka kap nji rriqer"
+      ],
+      "barnat": [
+        "repelent"
+      ],
+      "shenja_alarmi": [
+        "Pas pickimit të rriqrës: temperaturë, dhimbje trupi ose gjakderdhje nga mishrat/hunda (shko menjëherë te mjeku)",
+        "Rreth i kuq që zgjerohet rreth pickimit të rriqrës (sëmundja e Lyme)",
+        "Ënjtje e fytyrës, buzëve ose vështirësi në frymëmarrje pas pickimit: urgjencë 127/112"
+      ],
+      "keshilla": [
+        "Rriqrën hiqe me piskatore, afër lëkurës, duke tërhequr ngadalë drejt lart pa e shtrydhur.",
+        "Mos e djeg dhe mos vendos vaj ose alkool mbi rriqrën.",
+        "Pas heqjes pastro me antiseptik dhe shëno datën.",
+        "Vish rroba të gjata, me ngjyrë të çelët, dhe kontrollo trupin pas shëtitjeve në bar.",
+        "Përdor rrjeta në dritare dhe hiq ujin e ndenjur rreth shtëpisë."
+      ],
+      "fjale_kyce": "repelent|rriq|mbroh\\w*( \\w+){0,2} (mushkonj|insekt)|kunder (mushkonj|insekt)",
+      "info": "Mushkonjat dhe rriqrat mund të bartin sëmundje. Repelenti dhe rrobat mbrojtëse e ulin rrezikun; rriqra e hequr shpejt (brenda 24 orësh) e ul shumë rrezikun e infeksionit."
+    },
+    {
+      "id": "lemza",
+      "emer": "Lemza (hik)",
+      "kerkon_mjek": false,
+      "pershkrim": "Kontraksione të papritura të diafragmës me zhurmë karakteristike.",
+      "fraza": [
+        "kam lemzë",
+        "më ka zënë lemza",
+        "nuk më ndalet lemza",
+        "lemza",
+        "kam hik",
+        "kam lemzë prej orësh",
+        "m ka zan lemza",
+        "s m ndalet lemza",
+        "kom lemz"
+      ],
+      "barnat": [],
+      "shenja_alarmi": [
+        "Lemzë që zgjat më shumë se 48 orë",
+        "Me dhimbje gjoksi, vështirësi në gëlltitje ose në frymëmarrje",
+        "Me të vjella ose humbje peshe"
+      ],
+      "keshilla": [
+        "Pi ngadalë një gotë ujë të ftohtë.",
+        "Mbaj frymën 10–20 sekonda disa herë.",
+        "Gëlltit një lugë sheqer.",
+        "Ha ngadalë dhe shmang pijet me gaz."
+      ],
+      "fjale_kyce": "lemz|\\bhik\\b",
+      "info": "Lemza zakonisht kalon vetë brenda pak minutash. Shkaktohet nga ngrënia e shpejtë, pijet me gaz, alkooli ose emocionet."
+    },
+    {
+      "id": "djersitje",
+      "emer": "Djersitje e tepërt",
+      "kerkon_mjek": false,
+      "pershkrim": "Djersë e shumtë nën sqetull, në duar ose në këmbë, edhe pa vapë apo sport.",
+      "fraza": [
+        "djersitem shumë",
+        "kam djersitje të tepërt",
+        "më djersijnë duart",
+        "djersë nën sqetull",
+        "më djersijnë këmbët",
+        "erë e keqe nga djersa",
+        "djersitem shum",
+        "m djersijn duert",
+        "djerse e tepert nen sqetull"
+      ],
+      "barnat": [
+        "klorur_alumini"
+      ],
+      "shenja_alarmi": [
+        "Djersë natën që të lagin çarçafët, me temperaturë ose humbje peshe",
+        "Djersitje e papritur me dhimbje gjoksi: urgjencë",
+        "Djersitje me dridhje, rrahje zemre ose humbje peshe (tiroide)"
+      ],
+      "keshilla": [
+        "Vish pambuk ose rroba sportive që thahen shpejt.",
+        "Ndërro çorapet çdo ditë dhe alterno këpucët.",
+        "Antidjersa vihet në mbrëmje, jo në mëngjes.",
+        "Shmang kafenë, alkoolin dhe ushqimet pikante."
+      ],
+      "fjale_kyce": "djers",
+      "info": "Djersitja e tepërt (hiperhidrozë) është e zakonshme dhe zakonisht e padëmshme. Djersa natën me humbje peshe ose temperaturë kërkon kontroll."
+    },
+    {
+      "id": "renie_flokesh",
+      "emer": "Rënie flokësh",
+      "kerkon_mjek": false,
+      "pershkrim": "Rënie e shtuar e flokëve ose rrallim gradual në krye.",
+      "fraza": [
+        "më bien flokët",
+        "rënie flokësh",
+        "po më rrallohen flokët",
+        "po qeroset koka",
+        "më bien flokët shumë kur lahem",
+        "po tullacem",
+        "alopeci",
+        "m bien flokt",
+        "po m rrallohen flokt",
+        "po m bien flok shum"
+      ],
+      "barnat": [
+        "minoksidil"
+      ],
+      "shenja_alarmi": [
+        "Rënie me njolla të rrumbullakëta pa flokë",
+        "Rënie e madhe e papritur, me lodhje ose shtim/humbje peshe (tiroide, hekur)",
+        "Te gratë: me cikël të çrregullt, akne ose qime në fytyrë",
+        "Lëkura e kokës e skuqur, me plagë ose dhimbje"
+      ],
+      "keshilla": [
+        "Rënia 50–100 fije në ditë është normale.",
+        "Pas lindjes, stresit ose një sëmundjeje me temperaturë flokët bien 2–3 muaj dhe pastaj rriten vetë.",
+        "Ha mjaft proteina dhe kontrollo hekurin dhe tiroiden nëse rënia zgjat.",
+        "Shmang bishtat shumë të shtrënguar dhe nxehtësinë e tepërt."
+      ],
+      "fjale_kyce": "(bien|renie|rrallo\\w*)( \\w+){0,2} flok|flok\\w*( \\w+){0,2} (bien|rrallo)|qeros|tullac|alopeci",
+      "info": "Rënia e flokëve vjen shpesh nga trashëgimia, stresi, lindja, dietat e rrepta ose mungesa e hekurit. Minoksidili ndihmon te rrallimi trashëgues, por duhet përdorur vazhdimisht."
+    },
+    {
+      "id": "flluska_kembe",
+      "emer": "Flluska nga këpucët",
+      "kerkon_mjek": false,
+      "pershkrim": "Flluskë me lëng në thembër ose gishta nga fërkimi i këpucëve.",
+      "fraza": [
+        "më vranë këpucët",
+        "kam flluskë në thembër",
+        "flluska nga këpucët e reja",
+        "më doli flluskë në këmbë nga ecja",
+        "më ka çarë këpuca",
+        "flluskë në gisht të këmbës",
+        "m kan vra kepucet",
+        "kom flluske n thember",
+        "m doli flluske nga kepucet e reja"
+      ],
+      "barnat": [
+        "plaster_hidrokoloid",
+        "povidon_jod"
+      ],
+      "shenja_alarmi": [
+        "Skuqje që zgjerohet, qelb, nxehtësi ose temperaturë (infeksion)",
+        "Me diabet ose qarkullim të dobët të gjakut",
+        "Flluska pa shkak të dukshëm ose në shumë vende të trupit"
+      ],
+      "keshilla": [
+        "Mos e ço flluskën: lëkura sipër mbron nga infeksioni.",
+        "Nëse çahet vetë, pastroje dhe mbuloje me leukoplast.",
+        "Vish çorape të thata dhe këpucë të provuara; këpucët e reja vishi pak nga pak."
+      ],
+      "fjale_kyce": "fllusk\\w*( \\w+){0,2} (kemb|themb|gisht|kepuc|ecj)|kepuc\\w*( \\w+){0,2} (vrane|fllusk|cari|cau)|me vrane kepucet",
+      "info": "Flluskat nga fërkimi shërohen vetë brenda një jave nëse mbrohen nga fërkimi dhe nuk çohen."
+    },
+    {
+      "id": "buze_te_thata",
+      "emer": "Buzë të thata dhe të çara",
+      "kerkon_mjek": false,
+      "pershkrim": "Buzë të thata, të plasaritura ose të çara në cepa, sidomos në dimër.",
+      "fraza": [
+        "më janë çarë buzët",
+        "buzë të thata",
+        "më plasariten buzët",
+        "më thahen buzët",
+        "çarje në cep të buzës",
+        "buzët më djegin nga i ftohti",
+        "m jan qa buzt",
+        "m thahen buzt",
+        "buzt m plasariten"
+      ],
+      "barnat": [
+        "vazeline",
+        "dekspantenol_krem"
+      ],
+      "shenja_alarmi": [
+        "Plagë në buzë që nuk shërohet pas 3 javësh",
+        "Flluska që djegin (mund të jetë herpes)",
+        "Çarje në cepat e buzës që nuk kalojnë (mund të jetë kërpudhë ose mungesë vitamine)"
+      ],
+      "keshilla": [
+        "Mos i lëpi buzët: i than më shumë.",
+        "Pi ujë mjaftueshëm.",
+        "Përdor balsam buzësh me mbrojtje nga dielli kur del jashtë.",
+        "Përdor lagështues ajri në dhomë në dimër."
+      ],
+      "fjale_kyce": "buz\\w*( \\w+){0,2} (that|plasarit|cahen|care|cara|djeg)|(care|carje|plasarit\\w*|that\\w*) (e |te |ne )?(cep \\w+ )?buz",
+      "info": "Buzët thahen nga i ftohti, era, dielli dhe lëpirja. Balsami i thjeshtë disa herë në ditë zakonisht mjafton."
+    },
+    {
+      "id": "konjuktivit_infektiv",
+      "emer": "Sy me qelb (konjuktivit infektiv)",
+      "kerkon_mjek": true,
+      "pershkrim": "Sy i kuq me sekrecion të verdhë ose qepalla që ngjiten në mëngjes.",
+      "fraza": [
+        "më ngjiten sytë në mëngjes",
+        "kam qelb në sy",
+        "syri më nxjerr qelb",
+        "sy i kuq me cipa",
+        "fëmija ka sy me qelb",
+        "më del lëng i verdhë nga syri",
+        "m ngjiten syt n mengjes",
+        "kom qelb n sy",
+        "syni m nxjerr qelb"
+      ],
+      "barnat": [
+        "lot_artificiale"
+      ],
+      "shenja_alarmi": [
+        "Dhimbje e fortë syri, ulje e shikimit ose ndjeshmëri e madhe ndaj dritës",
+        "Te foshnjat nën 1 muaj",
+        "Përdor lente kontakti dhe syri është i kuq",
+        "Nuk përmirësohet pas 3 ditësh"
+      ],
+      "keshilla": [
+        "Pastro sytë me garzë të lagur në ujë të zier e të ftohur, nga brenda jashtë, garzë e re për çdo sy.",
+        "Laj duart shpesh dhe mos e ndaj peshqirin.",
+        "Mos përdor lente kontakti derisa të shërohesh."
+      ],
+      "fjale_kyce": "qelb\\w*( \\w+){0,2} sy|\\bsy\\w*( \\w+){0,3} (qelb|ngjit|cipa)|ngjiten syte",
+      "info": "Syri me qelb shkaktohet shpesh nga bakteret ose viruset dhe ngjitet lehtë. Pikat me antibiotik jepen me recetë, prandaj farmacisti ose mjeku duhet ta shohë."
+    },
+    {
+      "id": "planifikim_shtatzenie",
+      "emer": "Planifikim shtatzënie (acid folik)",
+      "kerkon_mjek": false,
+      "pershkrim": "Përgatitja para shtatzënisë dhe në muajt e parë: acidi folik dhe kujdesi me ilaçet.",
+      "fraza": [
+        "dua të mbetem shtatzënë",
+        "po planifikojmë një fëmijë",
+        "acid folik",
+        "çfarë duhet të marr para shtatzënisë",
+        "duam të bëjmë fëmijë",
+        "sa acid folik duhet të marr",
+        "du me met shtatzan",
+        "po planifikojme nji fmij",
+        "qfar me marr para shtatzanis"
+      ],
+      "barnat": [
+        "acid_folik"
+      ],
+      "shenja_alarmi": [
+        "Gjakderdhje vaginale ose dhimbje e fortë barku në fillim të shtatzënisë",
+        "Të vjella aq të shpeshta sa nuk mban dot as ujin",
+        "Merr ilaçe për epilepsi, diabet, tension ose depresion: fol me mjekun para shtatzënisë"
+      ],
+      "keshilla": [
+        "Fillo acidin folik të paktën 1 muaj para shtatzënisë.",
+        "Lëre duhanin dhe alkoolin.",
+        "Para çdo ilaçi të ri pyet farmacistin nëse je ose mund të jesh shtatzënë.",
+        "Bëj një kontroll te mjeku ose gjinekologu para shtatzënisë."
+      ],
+      "fjale_kyce": "acid folik|\bfolik|mbetem shtatzen|planifik\\w*( \\w+){0,2} (femij|shtatzen|bebe)|(bejme|bej) (nje )?femij",
+      "info": "Acidi folik para dhe në 12 javët e para të shtatzënisë ul shumë rrezikun e defekteve të shtyllës kurrizore te foshnja."
+    }
+  ]
+}

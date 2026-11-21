@@ -1,0 +1,28 @@
+# Sekretet
+.env
+.env.*
+!.env.example
+
+# Mjedisi dhe skedarë të përkohshëm
+venv_chatbot/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+
+# Neo4j lokal (serveri + Java, ~570 MB) dhe të dhënat
+neo4j_local/
+
+# Datasete të shkarkuara (rikrijohen me: python shkarko_datasetet.py)
+data/burime/
+data/pdf/
+
+# Kopjet e vjetra të bazës dhe ikonat e vjetra
+data/njohurite.para_zgjerimit*.json
+assets/vjeter/
+
+# Windows
+*.lnk
+Thumbs.db
+desktop.ini

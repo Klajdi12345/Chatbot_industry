@@ -1,0 +1,724 @@
+{
+ "_shenim": "Anglisht → shqip standard (i normalizuar, pa ë/ç). Kur mesazhi zbulohet në anglisht, gjuha.py e kthen në shqip me këtë fjalor, që rregullat (urgjencat, profili, qëllimet) dhe kërkimi në bazë të punojnë njësoj. Përgjigjja pastaj përkthehet në anglisht (perkthimi.py). Shprehjet zbatohen me radhë, pastaj fjalët (më të gjatat të parat).",
+ "fjale_angleze": [
+  "a",
+  "about",
+  "ache",
+  "aching",
+  "after",
+  "again",
+  "ago",
+  "all",
+  "allergy",
+  "also",
+  "am",
+  "an",
+  "and",
+  "any",
+  "anything",
+  "are",
+  "at",
+  "baby",
+  "back",
+  "bad",
+  "badly",
+  "be",
+  "because",
+  "been",
+  "before",
+  "being",
+  "best",
+  "better",
+  "bit",
+  "breathe",
+  "breathing",
+  "but",
+  "bye",
+  "can",
+  "can't",
+  "cannot",
+  "cant",
+  "child",
+  "cold",
+  "cough",
+  "could",
+  "daughter",
+  "day",
+  "days",
+  "did",
+  "didn't",
+  "dizzy",
+  "do",
+  "doctor",
+  "does",
+  "doesn't",
+  "don't",
+  "dont",
+  "dose",
+  "drug",
+  "drugs",
+  "during",
+  "ear",
+  "eating",
+  "else",
+  "evening",
+  "every",
+  "exhausted",
+  "eyes",
+  "feel",
+  "feeling",
+  "fever",
+  "flu",
+  "food",
+  "for",
+  "from",
+  "get",
+  "gets",
+  "getting",
+  "good",
+  "goodbye",
+  "got",
+  "had",
+  "has",
+  "have",
+  "he",
+  "headache",
+  "hello",
+  "help",
+  "her",
+  "hey",
+  "him",
+  "his",
+  "hour",
+  "hours",
+  "how",
+  "hurt",
+  "hurting",
+  "hurts",
+  "i",
+  "i'm",
+  "if",
+  "ill",
+  "im",
+  "in",
+  "is",
+  "it",
+  "it's",
+  "itching",
+  "itchy",
+  "its",
+  "ive",
+  "just",
+  "keep",
+  "keeps",
+  "killing",
+  "less",
+  "like",
+  "little",
+  "lot",
+  "many",
+  "me",
+  "meal",
+  "meals",
+  "medication",
+  "medicine",
+  "more",
+  "morning",
+  "much",
+  "my",
+  "need",
+  "night",
+  "no",
+  "nose",
+  "not",
+  "now",
+  "of",
+  "often",
+  "old",
+  "on",
+  "only",
+  "or",
+  "other",
+  "our",
+  "pain",
+  "pharmacist",
+  "pharmacy",
+  "pill",
+  "pills",
+  "please",
+  "pregnant",
+  "quite",
+  "rash",
+  "really",
+  "recommend",
+  "runny",
+  "safe",
+  "same",
+  "she",
+  "should",
+  "sick",
+  "since",
+  "skin",
+  "sleep",
+  "so",
+  "some",
+  "something",
+  "son",
+  "sore",
+  "still",
+  "stomach",
+  "stuffy",
+  "suffering",
+  "suggest",
+  "symptom",
+  "symptoms",
+  "tablet",
+  "tablets",
+  "take",
+  "taking",
+  "than",
+  "thank",
+  "thanks",
+  "that",
+  "the",
+  "their",
+  "them",
+  "then",
+  "there",
+  "they",
+  "this",
+  "throat",
+  "throwing",
+  "tired",
+  "to",
+  "today",
+  "too",
+  "tooth",
+  "up",
+  "very",
+  "was",
+  "we",
+  "week",
+  "well",
+  "what",
+  "when",
+  "where",
+  "which",
+  "while",
+  "who",
+  "why",
+  "will",
+  "with",
+  "won't",
+  "wont",
+  "work",
+  "worked",
+  "worse",
+  "worst",
+  "would",
+  "years",
+  "yes",
+  "yesterday",
+  "you",
+  "your"
+ ],
+ "fjale_neutrale": [
+  "ok",
+  "okay",
+  "hello",
+  "hi",
+  "hey",
+  "ciao",
+  "bye",
+  "covid",
+  "paracetamol",
+  "ibuprofen",
+  "aspirin",
+  "super",
+  "alo",
+  "stres",
+  "migrena",
+  "a",
+  "me",
+  "i",
+  "e",
+  "po",
+  "do",
+  "sa",
+  "per",
+  "pa",
+  "ne",
+  "te",
+  "kur"
+ ],
+ "shprehje": [
+  [
+   "\\b(i want to|i wanna) (kill myself|die|end my life|hurt myself)\\b|\\bsuicid\\w*|\\bkill myself\\b|\\bdon'?t want to live\\b",
+   "dua te vdes"
+  ],
+  [
+   "\\b(chest pain|pain in (my|the) chest|my chest (hurts|is tight|feels tight)|tight(ness)? in (my )?chest|chest tightness)\\b",
+   "dhimbje gjoksi"
+  ],
+  [
+   "\\b(can'?t|cannot|can not|unable to) breathe\\b|\\b(short(ness)? of breath|difficulty breathing|trouble breathing|hard to breathe|struggling to breathe|choking)\\b",
+   "nuk marr fryme"
+  ],
+  [
+   "\\b(swollen|swelling( of| in)?( my| the)?) (tongue|lips?|throat|face)\\b|\\b(tongue|lips?|throat) (is |are )?(swollen|swelling)\\b|\\banaphyla\\w*",
+   "enjtur gjuha"
+  ],
+  [
+   "\\b(fainted|passed out|unconscious|blacked out|collapsed|lost consciousness)\\b",
+   "ra pa ndjenja"
+  ],
+  [
+   "\\b(seizure|seizures|convulsion\\w*)\\b",
+   "konvulsion"
+  ],
+  [
+   "\\b(stroke|face (is )?drooping|drooping face|slurred speech|can'?t (move|feel) (my )?(arm|leg|hand)|paraly\\w*|numb on one side)\\b",
+   "paraliz"
+  ],
+  [
+   "\\b(vomiting|throwing up|coughing( up)?) blood\\b|\\bblood in (my )?(stool|poo|poop)\\b|\\b(black|bloody) stool\\w*\\b|\\bbleeding (heavily|a lot|that won'?t stop)\\b|\\bwon'?t stop bleeding\\b",
+   "gjakderdhje e madhe"
+  ],
+  [
+   "\\b(overdose\\w*|took too many (pills|tablets)|poison\\w*|swallowed (pills|tablets|medicine))\\b",
+   "mbidoz"
+  ],
+  [
+   "\\b(worst headache (of|in) my life)\\b",
+   "dhimbja koke me e forte e jetes"
+  ],
+  [
+   "\\b(baby|newborn|infant)\\b.*\\b(fever|temperature)\\b|\\b(fever|temperature)\\b.*\\b(baby|newborn|infant)\\b",
+   "foshnja ka temperature"
+  ],
+  [
+   "\\b(my )?head (hurts|aches|is (hurting|killing me|pounding))\\b|\\bhead ?ache\\w*|\\bheadache\\w*|\\bpounding head\\b|\\bmigraine\\w*",
+   "me dhemb koka"
+  ],
+  [
+   "\\b(my )?(tooth|teeth) (hurts?|aches?|is hurting)\\b|\\btooth ?ache\\w*|\\b(sore|painful|bleeding|swollen) gums?\\b|\\bwisdom tooth\\b",
+   "me dhemb dhembi"
+  ],
+  [
+   "\\b(sore|scratchy|painful|burning) throat\\b|\\b(my )?throat (hurts|is sore|burns)\\b|\\bpain when swallowing\\b|\\btonsillitis\\b|\\bstrep\\b",
+   "me dhemb fyti"
+  ],
+  [
+   "\\b(stomach|tummy|belly|abdominal) (ache|pain|cramps?)\\b|\\b(my )?(stomach|tummy|belly) (hurts|aches)\\b|\\bstomachache\\b",
+   "me dhemb barku"
+  ],
+  [
+   "\\b(period|menstrual) (pain|cramps?)\\b|\\bcramps? (during|on) my period\\b|\\bdysmenorrh\\w*",
+   "dhimbje menstruale"
+  ],
+  [
+   "\\b(back ?ache|back pain|lower back|lumbago)\\b|\\b(my )?back (hurts|aches|is killing me)\\b",
+   "me dhemb shpina"
+  ],
+  [
+   "\\b(ear ?ache|ear pain|ear infection)\\b|\\b(my )?ears? (hurts?|aches?)\\b",
+   "me dhemb veshi"
+  ],
+  [
+   "\\b(my )?(knee|shoulder|neck|arm|leg|wrist|ankle|elbow|joints?|muscles?) (hurts?|aches?|is sore|are sore)\\b|\\b(muscle|joint|knee|neck|shoulder) (pain|ache)s?\\b|\\bsprain\\w*|\\btwisted my (ankle|wrist|knee)\\b|\\barthritis\\b",
+   "me dhembin muskujt"
+  ],
+  [
+   "\\b(dry|tickly|tickling|irritating) cough\\b",
+   "kolle e thate"
+  ],
+  [
+   "\\b(wet|productive|chesty|phlegmy) cough\\b|\\bcough(ing)? (up )?(phlegm|mucus|sputum)\\b|\\bphlegm\\b|\\bmucus\\b",
+   "kolle me gelbaze"
+  ],
+  [
+   "\\b(stuffy|blocked|congested) nose\\b|\\bnasal congestion\\b|\\brunny nose\\b|\\bmy nose (is runny|is blocked|keeps running)\\b|\\bsinus\\w*",
+   "hunde e bllokuar"
+  ],
+  [
+   "\\b(hay fever|seasonal allerg\\w*|pollen allerg\\w*|sneez\\w*|watery eyes|itchy eyes)\\b",
+   "alergji teshtij"
+  ],
+  [
+   "\\b(itchy|itching) skin\\b|\\bmy skin (is itchy|itches)\\b|\\b(insect|bug|mosquito) bites?\\b|\\bhives\\b|\\bitchy rash\\b|\\bstung by\\b",
+   "me kruhet lekura"
+  ],
+  [
+   "\\bathlete'?s foot\\b|\\bfungal (infection|skin)\\b|\\bringworm\\b|\\bitchy (feet|toes)\\b",
+   "kerpudha ne kembe"
+  ],
+  [
+   "\\b(heart ?burn|acid reflux|reflux|indigestion|acidity|gerd|sour stomach)\\b",
+   "urth"
+  ],
+  [
+   "\\b(diarrh(o)?ea|loose stools?|the runs|watery stool\\w*)\\b",
+   "diarre"
+  ],
+  [
+   "\\b(constipat\\w*|can'?t poop|haven'?t pooped|hard stools?)\\b",
+   "kapsllek"
+  ],
+  [
+   "\\b(bloat\\w*|gas|wind|flatulence|gassy)\\b",
+   "fryrje barku gazra"
+  ],
+  [
+   "\\b(nause\\w*|feel(ing)? sick|vomit\\w*|throwing up|threw up|puking|queasy)\\b",
+   "me perzihet te vjella"
+  ],
+  [
+   "\\b(motion|car|sea|travel) sickness\\b|\\bcarsick\\b|\\bseasick\\b",
+   "semundje udhetimi"
+  ],
+  [
+   "\\b(insomnia|can'?t sleep|cannot sleep|trouble sleeping|unable to sleep|sleepless|can'?t fall asleep)\\b",
+   "nuk me ze gjumi"
+  ],
+  [
+   "\\b(mouth ulcers?|canker sores?|sore in my mouth)\\b",
+   "afte ne goje"
+  ],
+  [
+   "\\b(cold sores?|fever blisters?|herpes( on| in)? (my )?lips?)\\b",
+   "herpes ne buze"
+  ],
+  [
+   "\\b(ha?emorrhoids?|piles)\\b",
+   "hemorroide"
+  ],
+  [
+   "\\b(dry|tired|strained) eyes\\b",
+   "sy te thate"
+  ],
+  [
+   "\\b(red|pink|bloodshot) eyes?\\b|\\bpink ?eye\\b|\\bconjunctivitis\\b",
+   "sy te kuq"
+  ],
+  [
+   "\\b(sticky|crusty) eyes?\\b|\\bpus (in|from) (my )?eyes?\\b|\\beye discharge\\b",
+   "qelb ne sy"
+  ],
+  [
+   "\\b(acne|pimples?|spots|zits?|blackheads?)\\b",
+   "akne pucrra"
+  ],
+  [
+   "\\b(sun ?burn\\w*|burned|burnt|minor burn|scald\\w*)\\b",
+   "u dogja"
+  ],
+  [
+   "\\b(cut|cuts|scrape\\w*|graze\\w*|scratch(ed)?|small wound)\\b",
+   "plage e vogel u preva"
+  ],
+  [
+   "\\b(head ?lice|lice|nits)\\b",
+   "morra"
+  ],
+  [
+   "\\bdandruff\\b|\\bflaky scalp\\b",
+   "zbokth"
+  ],
+  [
+   "\\b(vaginal )?(yeast|thrush|candida)( infection)?\\b",
+   "kandidoze vaginale"
+  ],
+  [
+   "\\b(burn\\w* when (i )?(pee|urinat\\w*)|painful urination|uti|urinary (tract )?infection|bladder infection|cystitis)\\b",
+   "me djeg kur urinoj"
+  ],
+  [
+   "\\b(dizz\\w*|lightheaded|light-headed|vertigo|room is spinning)\\b",
+   "marramendje"
+  ],
+  [
+   "\\b(tired all the time|fatigue|exhausted|no energy|always tired|weak and tired)\\b",
+   "lodhje pa energji"
+  ],
+  [
+   "\\b(worms|pinworms?|threadworms?)\\b",
+   "krimba"
+  ],
+  [
+   "\\b(quit|stop|give up) smoking\\b|\\bnicotine\\b|\\bcigarettes?\\b",
+   "dua te le duhanin"
+  ],
+  [
+   "\\b(dry skin|eczema|cracked skin|chapped hands)\\b",
+   "lekure e thate ekzeme"
+  ],
+  [
+   "\\b(warts?|verruca\\w*|corns?|calluse?s?)\\b",
+   "lytha kallo"
+  ],
+  [
+   "\\b(nail fungus|fungal nails?|toenail fungus|yellow (toe)?nails?)\\b",
+   "kerpudha ne thonj"
+  ],
+  [
+   "\\b(nose ?bleeds?|bleeding (from my|nose)|my nose is bleeding)\\b",
+   "me rrjedh gjak nga hunda"
+  ],
+  [
+   "\\b(lost my voice|hoarse\\w*|laryngitis)\\b",
+   "me eshte ngjirur zeri"
+  ],
+  [
+   "\\b(bad breath|halitosis)\\b",
+   "ere e keqe goje"
+  ],
+  [
+   "\\b(dehydrat\\w*|heat ?stroke|sunstroke|too much sun|very thirsty)\\b",
+   "dehidratim vape"
+  ],
+  [
+   "\\b(anxi\\w*|stress\\w*|nervous|panic( attack)?s?|worried all the time)\\b",
+   "ankth stres"
+  ],
+  [
+   "\\b(vitamins?|immune system|immunity|boost my immun\\w*)\\b",
+   "vitamina imunitet"
+  ],
+  [
+   "\\b(an(a)?emia|an(a)?emic|low iron|iron deficiency|low h(a)?emoglobin)\\b",
+   "anemi mungese hekuri"
+  ],
+  [
+   "\\b(leg cramps?|cramps? in my legs?|calf cramps?)\\b",
+   "ngerce ne kembe"
+  ],
+  [
+   "\\bteething\\b",
+   "dalja e dhembeve te foshnja"
+  ],
+  [
+   "\\bnappy rash\\b|\\bdiaper rash\\b",
+   "skuqje pelenash"
+  ],
+  [
+   "\\bscabies\\b",
+   "zgjebe"
+  ],
+  [
+   "\\b(ear ?wax|blocked ear|clogged ear)\\b",
+   "dyll ne vesh"
+  ],
+  [
+   "\\b(varicose veins?|heavy legs|swollen (legs|ankles))\\b",
+   "kembe te renda varice"
+  ],
+  [
+   "\\b(mosquito(es)? repellent|repellent|ticks?)\\b",
+   "mbrojtje nga mushkonjat rriqrat"
+  ],
+  [
+   "\\b(hiccups?|hiccough\\w*)\\b",
+   "lemze"
+  ],
+  [
+   "\\b(sweat(ing)? (a lot|too much)|excessive sweating|hyperhidrosis)\\b",
+   "djersitje e tepert"
+  ],
+  [
+   "\\b(hair loss|losing (my )?hair|hair (is )?falling out|balding)\\b",
+   "renie flokesh"
+  ],
+  [
+   "\\b(blisters?)\\b",
+   "flluska ne kembe"
+  ],
+  [
+   "\\b(chapped|cracked|dry) lips\\b",
+   "buze te thata"
+  ],
+  [
+   "\\b(trying to get pregnant|planning (a )?pregnancy|folic acid)\\b",
+   "planifikim shtatzenie acid folik"
+  ],
+  [
+   "\\b(fever|high temperature|temperature|feverish|chills)\\b",
+   "kam temperature"
+  ],
+  [
+   "\\b(flu|influenza|a cold|common cold|caught a cold|covid)\\b",
+   "grip ftohje"
+  ],
+  [
+   "\\b(tired|exhausted|fatigued|worn out)\\b",
+   "lodhje"
+  ],
+  [
+   "\\bcough\\w*\\b",
+   "kolle"
+  ],
+  [
+   "\\bitch\\w*\\b",
+   "kruhet"
+  ],
+  [
+   "\\bi'?m pregnant\\b|\\bi am pregnant\\b|\\bpregnan\\w*",
+   "jam shtatzene"
+  ],
+  [
+   "\\bbreast ?feeding\\b|\\bnursing\\b",
+   "i jap gji"
+  ],
+  [
+   "\\b(i have|i've got|i got) (type [12] )?diabetes\\b|\\bdiabet\\w*",
+   "kam diabet"
+  ],
+  [
+   "\\b(high blood pressure|hypertension)\\b",
+   "tension te larte"
+  ],
+  [
+   "\\bstomach ulcer\\b|\\bulcer\\b",
+   "ulcer"
+  ],
+  [
+   "\\basthma\\w*",
+   "astme"
+  ],
+  [
+   "\\bkidney\\w*",
+   "veshka"
+  ],
+  [
+   "\\bliver\\b|\\bhepatitis\\b",
+   "melci"
+  ],
+  [
+   "\\bheart (problem|disease|condition|failure)s?\\b",
+   "zemra"
+  ],
+  [
+   "\\b(blood thinners?|warfarin|anticoagulants?)\\b",
+   "antikoagulante"
+  ],
+  [
+   "\\b(allergic to|allergy to) (ibuprofen|aspirin|nsaids?)\\b",
+   "alergji nga ibuprofen"
+  ],
+  [
+   "\\b(allergic to|allergy to) (paracetamol|acetaminophen|tylenol)\\b",
+   "alergji nga paracetamol"
+  ],
+  [
+   "\\bantidepressants?\\b",
+   "antidepresive"
+  ],
+  [
+   "\\b(\\d{1,3})[ -]?(years?|yrs?)[ -]?old\\b|\\baged? (\\d{1,3})\\b",
+   "\\1\\3 vjec"
+  ],
+  [
+   "\\b(\\d{1,2})[ -]?months?[ -]?old\\b",
+   "\\1 muaj"
+  ],
+  [
+   "\\bhow (often|many times)\\b|\\bhow much (should|can|do) i take\\b|\\b(what'?s|what is) the dose\\b|\\bdos(e|age|ing)\\b|\\bhow (do|should) i take\\b|\\bbefore or after (food|eating|meals)\\b|\\bempty stomach\\b|\\bmaximum\\b",
+   "sa here ta marr doza"
+  ],
+  [
+   "\\bwhat else can i do\\b|\\b(any )?(tips|advice|home remed\\w*|natural remed\\w*)\\b|\\bwithout medicine\\b",
+   "cfare tjeter mund te bej keshilla"
+  ],
+  [
+   "\\b(something else|another (medicine|one|drug)|alternatives?|other (medicine|option)s?|(it )?(didn'?t|doesn'?t|did not) (work|help)|stronger)\\b",
+   "ilac tjeter alternativa"
+  ],
+  [
+   "\\bwhen should i (see|go to|call) (a |the )?doctor\\b|\\b(see|need) a doctor\\b|\\bis it serious\\b|\\bdangerous\\b",
+   "kur duhet te shkoj te mjeku"
+  ],
+  [
+   "\\bwhat (is|causes) (it|this)\\b|\\bwhy do i (have|get)\\b|\\bis it contagious\\b|\\bhow long (does it|will it) last\\b",
+   "cfare eshte nga vjen"
+  ],
+  [
+   "\\bwhat is (\\w+)\\b",
+   "cfare eshte \\1"
+  ],
+  [
+   "\\bwho are you\\b|\\bwhat can you do\\b|\\bhow (does this|do you) work\\b",
+   "kush je"
+  ],
+  [
+   "\\bhow are you\\b",
+   "si je"
+  ],
+  [
+   "\\b(thank you|thanks|thx|ty|cheers|great|perfect)\\b",
+   "faleminderit"
+  ],
+  [
+   "\\b(goodbye|bye|see you|good night)\\b",
+   "mirupafshim"
+  ],
+  [
+   "^(hello|hi|hey|good (morning|afternoon|evening))\\b",
+   "pershendetje"
+  ],
+  [
+   "^(ok|okay|alright|got it|i see|sure|yes)$",
+   "ok"
+  ],
+  [
+   "\\b(also|as well|too|plus)\\b",
+   "edhe"
+  ],
+  [
+   "\\bi (also )?have\\b|\\bi'?ve got\\b|\\bi got\\b|\\bi'?m having\\b|\\bi am having\\b",
+   "kam"
+  ],
+  [
+   "\\bi'?m\\b|\\bi am\\b|\\bi feel\\b|\\bi'?m feeling\\b",
+   "jam"
+  ],
+  [
+   "\\bmy (son|boy)\\b",
+   "djali"
+  ],
+  [
+   "\\bmy (daughter|girl)\\b",
+   "vajza"
+  ],
+  [
+   "\\bmy (baby|child|kid)\\b|\\b(baby|child|kid|toddler)\\b",
+   "femija"
+  ],
+  [
+   "\\bcan i (take|use|have)\\b|\\bis it (safe|ok|okay) to (take|use)\\b",
+   "a mund te marr"
+  ],
+  [
+   "\\b(medicine|medication|drug|pill|pills|tablets?)\\b",
+   "ilac"
+  ],
+  [
+   "\\bdoctor\\b",
+   "mjek"
+  ],
+  [
+   "\\bpain\\b|\\bhurts?\\b|\\baches?\\b|\\bsore\\b",
+   "dhimbje"
+  ],
+  [
+   "\\bsince yesterday\\b",
+   "prej dje"
+  ],
+  [
+   "\\bfor (\\d+) days\\b|\\b(\\d+) days\\b",
+   "prej \\1\\2 ditesh"
+  ],
+  [
+   "\\?$",
+   " ?"
+  ]
+ ]
+}

@@ -1,0 +1,179 @@
+[
+ {
+  "emri": "Biseda shqip",
+  "mesazhet": [
+   {
+    "personi": "përshëndetje",
+    "bota": "Mirë se erdhe! Më thuaj çfarë të shqetëson (p.sh. dhimbje, kollë, alergji) dhe e shohim bashkë.",
+    "qellimi": "pershendetje",
+    "gjuha": "sq",
+    "hapat": [
+     "📖 E lexova mesazhin."
+    ],
+    "sekonda": 0,
+    "barnat": []
+   },
+   {
+    "personi": "po m dhem kryt prej dy ditsh",
+    "bota": "E kuptoj, dhimbje koke është e bezdisshme.\n🩺 **Simptoma:** Dhimbje koke\n\nℹ️ Shumica e dhimbjeve të kokës vijnë nga tensioni, lodhja, dehidratimi, gjumi i pakët ose migrena. Rrallë janë shenjë e diçkaje serioze.\n\nPër këtë zakonisht përdoren:\n- **Paracetamol 500 mg** (Paracetamol, Panadol, Efferalgan, Paracetamol Profarma ose Tylenol)\n- **Ibuprofen 200/400 mg** (Brufen, Nurofen, Ibuprofen, Ibuprofen Profarma ose Advil)\n- **Naproksen 220 mg** (Aleve, Naprosyn ose Naproxen)\n- **Aspirinë 500 mg** (Aspirin, Aspirinë, Aspirin C ose Aspirina)\n\nTe kartat poshtë ke dozën dhe sa ditë mund ta marrësh pa mjek.\n\n**Këshilla:** Pusho në dhomë të qetë dhe me pak dritë. Pi ujë: dehidratimi shkakton dhimbje koke.\n\n**Shko te mjeku nëse:**\n- Dhimbja koke më e fortë e jetës ose që vjen papritur si goditje\n- Dhimbje koke me temperaturë dhe ngurtësim qafe\n- Dhimbje koke pas një goditjeje në kokë\n- Me humbje shikimi, dobësi në njërën anë të trupit ose vështirësi në të folur\n\n_Para se ta marrësh, konfirmoje me farmacistin._\n\nMund të më pyesësh: *\"sa herë ta marr?\"*, *\"çfarë tjetër mund të bëj?\"* ose *\"kur duhet mjeku?\"*.",
+    "qellimi": "simptome",
+    "gjuha": "sq",
+    "hapat": [
+     "📖 E lexova mesazhin: “m dhem kryt” → “me dhemb koka”, “ditsh” → “ditesh”",
+     "🔎 Po kërkoj në bazën e njohurive (1213 fraza, edhe me variantin standard)...",
+     "💊 Po kontrolloj ilaçet për profilin tënd (mosha, gjendjet, kundërindikimet)..."
+    ],
+    "sekonda": 0,
+    "barnat": [
+     "Paracetamol 500 mg",
+     "Ibuprofen 200/400 mg",
+     "Naproksen 220 mg",
+     "Aspirinë 500 mg"
+    ]
+   },
+   {
+    "personi": "sa herë ta marr?",
+    "bota": "Ja udhëzimet për secilin:\n\n💊 **Paracetamol 500 mg** (Paracetamol, Panadol, Efferalgan, Paracetamol Profarma ose Tylenol)\nPërdoret për: ngjirje / humbje zëri, djegie gjatë urinimit (cistit), djegie e lehtë e lëkurës, dhimbje veshi, dhimbje shpine, dhimbje muskujsh / kyçesh / ndrydhje, dhimbje menstruale, dhimbje barku me ngërçe, dhimbje fyti, grip / ftohje, temperaturë (ethe), dhimbje dhëmbi, dhimbje koke.\n\n- **Doza (të rritur):** 1–2 tableta (500–1000 mg) çdo 4–6 orë sipas nevojës.\n- **Maksimumi:** Jo më shumë se 8 tableta (4000 mg) në 24 orë. Me sëmundje mëlçie ose alkool: jo më shumë se 3000 mg.\n- **Kohëzgjatja:** Pa mjek jo më shumë se 3 ditë për temperaturë dhe 5 ditë për dhimbje.\n- **Si merret:** Me ujë, me ose pa ushqim. Lër të paktën 4 orë mes dozave.\n- Mos e kombino me ilaçe të tjera që përmbajnë paracetamol (shumë ilaçe gripi e kanë).\n- Mbidoza dëmton rëndë mëlçinë edhe kur nuk ndihesh keq: shko menjëherë te urgjenca.\n\n💊 **Ibuprofen 200/400 mg** (Brufen, Nurofen, Ibuprofen, Ibuprofen Profarma ose Advil)\nPërdoret për: dhimbje veshi, dhimbje shpine, dhimbje muskujsh / kyçesh / ndrydhje, dhimbje menstruale, dhimbje fyti, grip / ftohje, temperaturë (ethe), dhimbje dhëmbi, dhimbje koke.\n\n- **Doza (të rritur):** 200–400 mg çdo 6–8 orë sipas nevojës.\n- **Maksimumi:** Jo më shumë se 1200 mg në 24 orë pa këshillë mjeku.\n- **Kohëzgjatja:** Pa mjek jo më shumë se 3 ditë për temperaturë dhe 5 ditë për dhimbje.\n- **Si merret:** Me ose pas ushqimit, me një gotë ujë.\n- Mos e kombino me NSAID të tjerë (aspirinë, diklofenak, naproksen).\n- Ndalo dhe shko te mjeku nëse ke dhimbje stomaku, jashtëqitje të zezë ose të vjella me gjak.\n\n💊 **Naproksen 220 mg** (Aleve, Naprosyn ose Naproxen)\nPërdoret për: dhimbje shpine, dhimbje muskujsh / kyçesh / ndrydhje, dhimbje menstruale, dhimbje dhëmbi, dhimbje koke.\n\n- **Doza (të rritur):** 1 tabletë (220 mg) çdo 8–12 orë. Për dozën e parë mund të merren 2 tableta.\n- **Maksimumi:** Jo më shumë se 3 tableta (660 mg) në 24 orë.\n- **Kohëzgjatja:** Pa mjek jo më shumë se 10 ditë për dhimbje dhe 3 ditë për temperaturë.\n- **Si merret:** Me një gotë ujë, mundësisht me ushqim ose qumësht.\n- Mos e kombino me ibuprofen, aspirinë ose NSAID të tjera.\n- Ndalo dhe shko te mjeku nëse ke dhimbje të fortë stomaku ose jashtëqitje të zezë.\n\n_Lexo fletëudhëzuesin e paketimit dhe konfirmoje me farmacistin._",
+    "qellimi": "doza",
+    "gjuha": "sq",
+    "hapat": [
+     "📖 E lexova mesazhin.",
+     "🔎 Po kërkoj në bazën e njohurive (1213 fraza, edhe me variantin standard)..."
+    ],
+    "sekonda": 0,
+    "barnat": []
+   },
+   {
+    "personi": "kam edhe kollë",
+    "bota": "A është kolla **e thatë** (pa gëlbazë) apo **me gëlbazë**?",
+    "qellimi": "sqarim",
+    "gjuha": "sq",
+    "hapat": [
+     "📖 E lexova mesazhin.",
+     "🔎 Po kërkoj në bazën e njohurive (1213 fraza, edhe me variantin standard)..."
+    ],
+    "sekonda": 0,
+    "barnat": []
+   },
+   {
+    "personi": "e thatë",
+    "bota": "Më vjen keq që nuk ndihesh mirë.\n🩺 **Simptoma:** Dhimbje koke + Kollë e thatë\n\nℹ️ Shumica e dhimbjeve të kokës vijnë nga tensioni, lodhja, dehidratimi, gjumi i pakët ose migrena. Rrallë janë shenjë e diçkaje serioze. Kolla e thatë shpesh mbetet 2–3 javë pas një virusi. Mund të vijë edhe nga alergjia, refluksi ose disa ilaçe tensioni.\n\nOpsionet pa recetë që të përshtaten janë:\n- **Paracetamol 500 mg** (Paracetamol, Panadol, Efferalgan, Paracetamol Profarma ose Tylenol)\n- **Dekstrometorfan shurup (për kollë të thatë)** (Tussin, Robitussin Dry Cough ose Sinecod (butamirat, i ngjashëm))\n- **Ibuprofen 200/400 mg** (Brufen, Nurofen, Ibuprofen, Ibuprofen Profarma ose Advil)\n- **Pastila për fytin (antiseptike)** (Strepsils, Septolete, Faringosept ose Mebucaine)\n\nTe kartat poshtë ke dozën dhe sa ditë mund ta marrësh pa mjek.\n\n**Këshilla:** Pusho në dhomë të qetë dhe me pak dritë. Pi ujë: dehidratimi shkakton dhimbje koke. Pi lëngje të ngrohta. Mbaj ajrin e dhomës të lagësht.\n\n**Shko te mjeku nëse:**\n- Dhimbja koke më e fortë e jetës ose që vjen papritur si goditje\n- Dhimbje koke me temperaturë dhe ngurtësim qafe\n- Dhimbje koke pas një goditjeje në kokë\n- Me humbje shikimi, dobësi në njërën anë të trupit ose vështirësi në të folur\n\n_Para se ta marrësh, konfirmoje me farmacistin._\n\nNëse do, të them më shumë për njërin prej tyre ose çfarë mund të bësh pa ilaç.",
+    "qellimi": "simptome",
+    "gjuha": "sq",
+    "hapat": [
+     "📖 E lexova mesazhin.",
+     "💊 Po kontrolloj ilaçet për profilin tënd (mosha, gjendjet, kundërindikimet)..."
+    ],
+    "sekonda": 0,
+    "barnat": [
+     "Paracetamol 500 mg",
+     "Dekstrometorfan shurup (për kollë të thatë)",
+     "Ibuprofen 200/400 mg",
+     "Pastila për fytin (antiseptike)"
+    ]
+   },
+   {
+    "personi": "faleminderit",
+    "bota": "S'ka përse! Nëse do, mund të të them si merret ilaçi ose çfarë tjetër mund të bësh për dhimbje koke dhe kollë e thatë.",
+    "qellimi": "faleminderit",
+    "gjuha": "sq",
+    "hapat": [
+     "📖 E lexova mesazhin."
+    ],
+    "sekonda": 0,
+    "barnat": []
+   }
+  ]
+ },
+ {
+  "emri": "Profili ndryshon",
+  "mesazhet": [
+   {
+    "personi": "kam urth pas ngrënies",
+    "bota": "Më vjen keq që nuk ndihesh mirë.\n🩺 **Simptoma:** Urth / thartirë stomaku\n\nℹ️ Urthi ndodh kur acidi i stomakut ngjitet në ezofag. Përkeqësohet nga ushqimet e rënda, kafeja, alkooli, duhani dhe shtrirja menjëherë pas ngrënies.\n\nPër këtë zakonisht përdoren:\n- **Antacid (hidroksid alumini + magnezi)** (Maalox, Rennie (karbonat kalciumi), Talcid ose Gastal)\n- **Alginat + antacid (suspension)** (Gaviscon ose Gaviscon Advance)\n- **Famotidinë 20 mg** (Quamatel, Pepcid ose Famotidine)\n- **Omeprazol 20 mg** (Omeprazol, Losec, Omeprazol Profarma ose Ultop)\n\nSi merret secili e ke te kartat më poshtë (doza, maksimumi, kohëzgjatja).\n\n**Këshilla:** Shmang ushqimet e yndyrshme, kafenë dhe alkoolin. Mos u shtri menjëherë pas ngrënies.\n\n**Shko te mjeku nëse:**\n- Dhimbje gjoksi që përhapet në krah, nofull ose shpinë, ose me djersitje: mund të jetë zemra, telefono 127/112\n- Vështirësi ose dhimbje në gëlltitje\n- Të vjella me gjak ose jashtëqitje e zezë\n- Humbje peshe pa arsye\n\n_Para se ta marrësh, konfirmoje me farmacistin._\n\nNëse do, të them më shumë për njërin prej tyre ose çfarë mund të bësh pa ilaç.",
+    "qellimi": "simptome",
+    "gjuha": "sq",
+    "hapat": [
+     "📖 E lexova mesazhin.",
+     "🔎 Po kërkoj në bazën e njohurive (1213 fraza, edhe me variantin standard)...",
+     "💊 Po kontrolloj ilaçet për profilin tënd (mosha, gjendjet, kundërindikimet)..."
+    ],
+    "sekonda": 0,
+    "barnat": [
+     "Antacid (hidroksid alumini + magnezi)",
+     "Alginat + antacid (suspension)",
+     "Famotidinë 20 mg",
+     "Omeprazol 20 mg"
+    ]
+   },
+   {
+    "personi": "jam shtatzënë",
+    "bota": "ℹ️ _E mora parasysh: shtatzëni._\n\nE kuptoj, urth / thartirë stomaku është e bezdisshme.\n🩺 **Simptoma:** Urth / thartirë stomaku\n\nℹ️ Urthi ndodh kur acidi i stomakut ngjitet në ezofag. Përkeqësohet nga ushqimet e rënda, kafeja, alkooli, duhani dhe shtrirja menjëherë pas ngrënies.\n\nOpsionet pa recetë që të përshtaten janë:\n- **Antacid (hidroksid alumini + magnezi)** (Maalox, Rennie (karbonat kalciumi), Talcid ose Gastal) — ⚠️ Zakonisht pranohet, por pyet farmacistin.\n- **Alginat + antacid (suspension)** (Gaviscon ose Gaviscon Advance) — ⚠️ Zakonisht i përshtatshëm në shtatzëni për kohë të shkurtër; pyet farmacistin.\n- **Famotidinë 20 mg** (Quamatel, Pepcid ose Famotidine) — ⚠️ Konsultohu me mjekun ose farmacistin para përdorimit.\n- **Omeprazol 20 mg** (Omeprazol, Losec, Omeprazol Profarma ose Ultop) — ⚠️ Konsultohu me mjekun para përdorimit.\n\nTe kartat poshtë ke dozën dhe sa ditë mund ta marrësh pa mjek.\n\n**Këshilla:** Shmang ushqimet e yndyrshme, kafenë dhe alkoolin. Mos u shtri menjëherë pas ngrënies.\n\n**Shko te mjeku nëse:**\n- Dhimbje gjoksi që përhapet në krah, nofull ose shpinë, ose me djersitje: mund të jetë zemra, telefono 127/112\n- Vështirësi ose dhimbje në gëlltitje\n- Të vjella me gjak ose jashtëqitje e zezë\n- Humbje peshe pa arsye\n\n_Farmacisti mund ta konfirmojë zgjedhjen dhe dozën, sidomos nëse merr ilaçe të tjera._",
+    "qellimi": "profil",
+    "gjuha": "sq",
+    "hapat": [
+     "📖 E lexova mesazhin.",
+     "🔎 Po kërkoj në bazën e njohurive (1213 fraza, edhe me variantin standard)..."
+    ],
+    "sekonda": 0,
+    "barnat": [
+     "Antacid (hidroksid alumini + magnezi)",
+     "Alginat + antacid (suspension)",
+     "Famotidinë 20 mg",
+     "Omeprazol 20 mg"
+    ]
+   }
+  ]
+ },
+ {
+  "emri": "Urgjenca",
+  "mesazhet": [
+   {
+    "personi": "s'po muj me marr frym",
+    "bota": "⚠️ **Kjo mund të jetë urgjencë.** Vështirësia në frymëmarrje kërkon ndihmë të menjëhershme.\n\n**Telefono menjëherë 127 (Urgjenca) ose 112**, ose shko në urgjencën më të afërt.\n\nMos merr ilaçe pa folur më parë me personelin mjekësor.",
+    "qellimi": "urgjence",
+    "gjuha": "sq",
+    "hapat": [
+     "🚨 Shenjë urgjence: përgjigjem menjëherë, pa pritur."
+    ],
+    "sekonda": 0,
+    "barnat": []
+   },
+   {
+    "personi": "I have chest pain",
+    "bota": "⚠️ **This may be an emergency.** Chest pain can be a sign of a heart problem.\n\n**Call 127 (Albanian emergency) or 112 now**, or go to the nearest emergency department.\n\nDo not take any medicine before speaking to medical staff.",
+    "qellimi": "urgjence",
+    "gjuha": "en",
+    "hapat": [
+     "🚨 Emergency sign: answering immediately, without waiting."
+    ],
+    "sekonda": 0,
+    "barnat": []
+   }
+  ]
+ },
+ {
+  "emri": "Anglisht",
+  "mesazhet": [
+   {
+    "personi": "I have heartburn after eating",
+    "bota": "I’m so sorry you’re not feeling well.\n🩺 **Symptoms:** Heartburn / acid reflux\n\nℹ️ Heartburn happens when stomach acid rises into the esophagus. It’s worsened by fatty foods, coffee, alcohol, tobacco, and lying down immediately after eating.\n\nThese over the counter medications are suitable for you:\n- **Antacid (aluminium hydroxide + magnesium)** (Maalox, Rennie (calcium carbonate), Talcid or Gastal)\n- **Alginate + antacid (suspension)** (Gaviscon or Gaviscon Advance)\n- **Famotidine 20 mg** (Quamatel, Pepcid or Famotidine)\n- **Omeprazole 20 mg** (Omeprazole, Losec, Omeprazole Profarma or Ultop)\n\nOn the cards below you have the dose and how many days you can take it without a doctor.\n\n**Advice:** Avoid fatty foods, coffee and alcohol. Don’t lie down immediately after eating.\n\n**See a doctor if:**\n- Chest pain that spreads to the arm, neck or back, or with shortness of breath: it could be the heart, phone 127/112\n- Difficulty or pain when swallowing\n- Vomiting with blood or black stools\n- Unexplained weight loss\n\n_Ask the pharmacist before taking: they also look at other medications you take._\n\nYou can ask them: *\"how often should I take it?\"*, *\"what else can I do?\"* or *\"when does the doctor need to be seen?\"*.",
+    "qellimi": "simptome",
+    "gjuha": "en",
+    "hapat": [
+     "📖 Read the message (Albanian reading: “kam urth”)",
+     "🔎 Searching the knowledge base (1213 phrases)...",
+     "💊 Checking the medicines against your profile (age, conditions, contraindications)...",
+     "🌐 Translating the answer into English (glossary of medical terms; every number is checked)..."
+    ],
+    "sekonda": 34,
+    "barnat": [
+     "Antacid (hidroksid alumini + magnezi)",
+     "Alginat + antacid (suspension)",
+     "Famotidinë 20 mg",
+     "Omeprazol 20 mg"
+    ]
+   }
+  ]
+ }
+]
