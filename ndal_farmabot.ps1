@@ -1,9 +1,9 @@
 ﻿# FarmaBot: ndal aplikacionin dhe databazën lokale Neo4j (Ollama lihet ndezur).
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-# Aplikacioni Streamlit i këtij projekti
+# Aplikacioni FarmaBot (web, ose versioni i vjetër Streamlit)
 Get-CimInstance Win32_Process -Filter "Name = 'python.exe'" |
-    Where-Object { $_.CommandLine -like '*streamlit*' -and $_.ExecutablePath -like "$root*" } |
+    Where-Object { ($_.CommandLine -like '*-m web*' -or $_.CommandLine -like '*streamlit*') -and $_.ExecutablePath -like "$root*" } |
     ForEach-Object { Stop-Process -Id $_.ProcessId -Force; Write-Host "U ndal FarmaBot (PID $($_.ProcessId))" }
 
 # Neo4j lokal i këtij projekti (java nga neo4j_local\jre)

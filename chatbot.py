@@ -931,11 +931,12 @@ def _pyetje_kandidatesh(kandidatet: list[dict], historia) -> str:
 def pergjigju(mesazh: str, historia: list[dict], profili: Profili,
               simptomat_e_meparshme: list[str] | None = None,
               konteksti: Konteksti | None = None, mendo: bool = False,
-              on_hap=None, on_mendim=None) -> Pergjigje:
+              on_hap=None, on_mendim=None, gjuha: str | None = None) -> Pergjigje:
     """Përgjigjja e FarmaBot-it. Me mendo=True bota mendon më thellë (si Claude): modeli gjuhësor me
     thinking e rilexon mesazhin, baza e verifikon, dhe hapat shfaqen live (on_hap, on_mendim).
-    Urgjencat dhe bisedat e thjeshta përgjigjen menjëherë, pa pritur modelin."""
-    gjuha = gjuha_e_bisedes(mesazh, historia or [])
+    Urgjencat dhe bisedat e thjeshta përgjigjen menjëherë, pa pritur modelin.
+    gjuha="sq"/"en" e cakton gjuhën e përgjigjes (p.sh. nga zgjedhja e ndërfaqes); None = sipas mesazhit."""
+    gjuha = gjuha if gjuha in ("sq", "en") else gjuha_e_bisedes(mesazh, historia or [])
     m = Mendimi(aktiv=mendo, on_hap=on_hap, on_mendim=on_mendim, gjuha=gjuha)
     fillimi = time.perf_counter()
     p = _pergjigju(mesazh, historia, profili, simptomat_e_meparshme, konteksti, m)

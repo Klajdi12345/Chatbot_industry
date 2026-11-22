@@ -6,22 +6,26 @@ Personi shkruan simptomat në shqip ose anglisht (p.sh. *"më dhemb dhëmbi"*) d
 Ai heq barnat që nuk janë të sigurta për profilin e personit (moshë, shtatzëni, ulçerë, barna që merr...)
 dhe tregon kur duhet shkuar te mjeku.
 
-## 🎨 Ndërfaqja
+## 🖥️ Ndërfaqja web (stili ChatGPT / Claude)
 
-Pamje në stilin e Claude.ai: kolonë bisede në mes, përshëndetje e madhe kur biseda është bosh,
-flluska djathtas për mesazhet e tua, përgjigjet pa kornizë dhe fusha e shkrimit e rrumbullakët poshtë.
+Aplikacioni është web i plotë: server Python (Starlette + Uvicorn, `web/server.py`) dhe faqe HTML/CSS/JS
+pa librari të jashtme (`web/static/`). Niset me `python -m web` → http://localhost:8501 (vetëm në këtë kompjuter).
 
-| Kontrolli | Ku | Çfarë bën |
-|---|---|---|
-| ☰ | sipër majtas | hap / mbyll panelin anësor |
-| **SQ / EN** | sipër djathtas | gjuha e ndërfaqes (shqip / anglisht) |
-| **☀️ E bardhë / 🌙 E zezë** | sipër djathtas | tema |
-| 🩺 Profili · 💊 Gjendjet · ⚙️ Cilësimet | paneli anësor | seksione që hapen e mbyllen; gjendja mbahet gjatë sesionit |
+| Pjesa | Çfarë bën |
+|---|---|
+| Paneli majtas | *Bisedë e re*, kërkim, lista e bisedave sipas datës (Sot, Dje, 7 ditët e fundit…), riemërto / shkarko / fshi |
+| Butoni i panelit | e mbyll / hap panelin (edhe me **Ctrl+B**); gjendja mbahet në shfletues |
+| Fusha e shkrimit | Enter dërgon, Shift+Enter rresht i ri; butoni **Mendo më thellë** ndez arsyetimin e modelit |
+| Përgjigjja | hapat e mendimit (të mbyllshëm), teksti, kartat e ilaçeve, ilaçet e përjashtuara, kur duhet mjeku, fletëudhëzuesi FDA |
+| Cilësimet | Tema (Sistemi / E bardhë / E zezë), Gjuha (Shqip / English), Profili shëndetësor, Llogaria |
+| Paneli i adminit | Përmbledhje, Përdoruesit (rolet, fjalëkalimet, bisedat), Ilaçet (ndrysho / shto), Backup |
 
-Gjuha dhe tema ruhen në URL (`?gjuha=en&tema=dark`), prandaj mbeten edhe pas rifreskimit.
-Bota i përgjigjet gjithmonë në gjuhën që shkruan (shqip → shqip, anglisht → anglisht).
-Tekstet e ndërfaqes janë te `faqet/teksti.py`, ngjyrat e dy temave te `faqet/stili.py` (`TEMAT`).
-Ikona dhe logot (`logo.png`, `logo_erret.png`) rikrijohen me `python assets/krijo_ikonen.py`.
+- **Gjuha** ndryshon të gjithë ndërfaqen dhe gjuhën e përgjigjeve: me *English* bota përgjigjet anglisht
+  edhe kur pyetja shkruhet shqip (kartat përkthehen me kontrollin e numrave).
+- **Bisedat** ruhen në Neo4j: `(:Person)-[:KA_BISEDE]->(:Bisede)-[:PERMBAN]->(:Mesazh)` (`bisedat.py`),
+  bashkë me kartat dhe kontekstin, që biseda të vazhdojë kur rihapet. Vizitorët nuk ruajnë asgjë në databazë.
+- Teksti i përgjigjeve shfaqet pa emoji (`web/pergjigja.py`); ndërfaqja ka ikona të pakta e të njëtrajtshme.
+- Ikona dhe logot rikrijohen me `python assets/krijo_ikonen.py`.
 
 ## Instalimi nga GitHub
 
@@ -33,7 +37,7 @@ venv_chatbot\Scripts\pip install -r requirements.txt
 copy .env.example .env           # plotëso fjalëkalimet
 ollama pull bge-m3 && ollama pull gemma3:4b
 python ngarko_grafin.py          # ngarkon bazën e njohurive në Neo4j
-streamlit run app.py
+python -m web                    # http://localhost:8501
 ```
 
 `neo4j_local/`, `data/burime/` (datasetet, rikrijohen me `shkarko_datasetet.py`) dhe `.env` nuk ngarkohen në GitHub.
@@ -58,7 +62,7 @@ FarmaBot e kupton shqipen ashtu si shkruhet në chat: gegërisht, pa ë/ç, me "
    *"po më dhemb koka e kam temperaturë"*, *"s'po muj me marr frym"* → urgjencë, *"kam sheqer"* → diabet, *"lukthi"* → stomaku.
    Urgjencat, profili, qëllimet dhe kërkimi kontrollojnë edhe mesazhin origjinal, edhe variantin standard.
 2. **Fraza të reja** (`zgjero_njohurite_3.py`): 260 fraza në gegërisht/chat. Çdo frazë ruhet në graf edhe në shqip standard.
-3. **Mendimi** (butoni *🧠 Mendo më thellë* majtas, i ndezur si parazgjedhje): modeli `qwen3:8b` mendon (thinking)
+3. **Mendimi** (butoni *Mendo më thellë* te fusha e shkrimit): modeli `qwen3:8b` mendon (thinking)
    për mesazhin, e rishkruan në shqip standard dhe thotë cilat simptoma përmend. **Vendimin e merr baza**: formulimi i
    modelit shtohet si kërkim, por simptoma pranohet me të njëjtat rregulla (prag ngjashmërie, fjalë kyçe). Hapat shfaqen
    live dhe pastaj mbyllen si *"🧠 Mendoi për 48 sekonda"*. Zgjat ~30 s deri në 2 min në këtë kompjuter (CPU).
@@ -119,7 +123,8 @@ Siguria nuk i lihet LLM-së: urgjencat, filtrimi i barnave dhe dozat vijnë nga 
 | `ngarko_grafin.py` | Ngarkon JSON-in në Neo4j dhe krijon embeddings |
 | `ngarko_pdf.py` | Ngarkon fletëudhëzues PDF nga `data/pdf/` (opsionale) |
 | `chatbot.py` | Logjika: urgjenca, kërkimi, filtrimi, përgjigja |
-| `app.py` | Ndërfaqja web (Streamlit) |
+| `web/` | Ndërfaqja web: `server.py` (API), `admin.py`, `pergjigja.py`, `static/` (HTML/CSS/JS) |
+| `bisedat.py` | Bisedat e ruajtura në Neo4j |
 | `testo.py` | Provë e shpejtë nga terminali |
 | `tests/` | Testet automatike (pytest), shiko më poshtë |
 | `.env` | Kredencialet e Neo4j dhe modelet (mos e ndaj me askënd) |
@@ -132,9 +137,8 @@ Siguria nuk i lihet LLM-së: urgjencat, filtrimi i barnave dhe dozat vijnë nga 
                                                  -[:SUGJEROI]->(:Barna)
 ```
 
-Te paneli majtas: **➕ Person i ri** (emri, mosha, pëlqimi), zgjidh personin, **💾 Ruaj profilin**,
-**🗑️ Fshi personin** (fshin edhe bisedat). Gjendjet që personi i shkruan në bisedë
-(p.sh. "jam shtatzënë") i shtohen profilit automatikisht. Opsioni "Pa ruajtur (anonim)" nuk ruan asgjë.
+Profili ndryshohet te **Cilësimet → Profili shëndetësor** (mosha, gjendjet, alergjitë). Gjendjet që personi
+i shkruan në bisedë (p.sh. "jam shtatzënë") i shtohen profilit automatikisht. Vizitorët nuk ruajnë asgjë.
 Këto janë të dhëna shëndetësore: ruaji vetëm me pëlqim dhe fshiji kur kërkohet.
 
 ## Nisja
@@ -194,7 +198,7 @@ venv_chatbot\Scripts\python -m pytest -m llm       # testet me modelin gjuhësor
 | `test_simptomat.py` | ~150 mënyra si e shkruajnë njerëzit simptomën; mesazhe pa lidhje |
 | `test_siguria.py` | çdo kundërindikim në databazë × çdo simptomë (gjenerohet nga të dhënat) |
 | `test_biseda.py` | biseda me shumë mesazhe, sqarime, pyetje vijuese, larmia e përgjigjeve |
-| `test_nderfaqja.py` | formulari real i regjistrimit dhe biseda në Streamlit (AppTest) |
+| `test_web.py` | aplikacioni web: hyrja, regjistrimi, bisedat, profili, gjuha, admini |
 | `test_gjuha.py` | fjalori: gegërisht/chat → standard, urgjenca e profili në gegërisht, mendimi i thellë (`-m llm`) |
 
 Testet që kanë nevojë për Neo4j/Ollama anashkalohen vetë nëse shërbimet nuk janë ndezur.
@@ -204,11 +208,11 @@ Llogaritë e testit krijohen me emër `test_...` dhe fshihen në fund.
 
 | Roli | Çfarë sheh |
 |---|---|
-| **Vizitor** (pa llogari) | 💬 Biseda (asgjë nuk ruhet) |
-| **Përdorues** | 💬 Biseda + 👤 Llogaria ime (profili, historia, ndrysho fjalëkalimin, fshi të dhënat e mia) |
-| **Admin** | të gjitha + 📊 Përmbledhje · 👥 Përdoruesit · 💊 Barnat · 💾 Backup |
+| **Vizitor** (pa llogari) | Biseda (asgjë nuk ruhet pasi mbyll faqen) |
+| **Përdorues** | Biseda të ruajtura + Cilësimet (profili, fjalëkalimi, fshirja e llogarisë) |
+| **Admin** | të gjitha + Paneli i administratorit: Përmbledhje · Përdoruesit · Ilaçet · Backup |
 
-- Herën e parë krijohet automatikisht llogaria **admin**. Fjalëkalimi është te `.env` (`ADMIN_PASSWORD`). Ndryshoje pas hyrjes së parë te 👤 Llogaria ime.
+- Herën e parë krijohet automatikisht llogaria **admin**. Fjalëkalimi është te `.env` (`ADMIN_PASSWORD`). Ndryshoje pas hyrjes së parë te Cilësimet → Llogaria.
 - Fjalëkalimet ruhen në Neo4j vetëm si hash PBKDF2-SHA256 me kripë: `(:Llogari)-[:ESHTE]->(:Person)`.
 - Ndryshimet te 💊 Barnat ruhen në Neo4j dhe te `data/njohurite.json`.
 

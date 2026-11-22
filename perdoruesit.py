@@ -68,6 +68,7 @@ def merr_person(pid: str) -> dict | None:
 
 def fshi_person(pid: str):
     """Fshin personin bashkë me të gjitha mesazhet e tij."""
+    query("MATCH (p:Person {id: $id}) OPTIONAL MATCH (p)-[:KA_BISEDE]->(b:Bisede) DETACH DELETE b", id=pid)
     query("MATCH (p:Person {id: $id}) OPTIONAL MATCH (p)-[:DERGOI]->(m:Mesazh) "
           "DETACH DELETE m, p", id=pid)
 

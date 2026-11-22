@@ -1,5 +1,8 @@
 # FarmaBot: varësitë kryesore   pip install -r requirements.txt
-streamlit>=1.67
+starlette>=1.10
+uvicorn>=0.54
+itsdangerous>=2.2
+httpx>=0.28        # testet (TestClient)
 neo4j>=6.4
 requests>=2.34
 python-dotenv>=1.2

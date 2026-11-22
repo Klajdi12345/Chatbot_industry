@@ -50,12 +50,12 @@ try {
         Ok 'Neo4j u nis'
     }
 
-    # 3. Aplikacioni FarmaBot (Streamlit)
+    # 3. Aplikacioni FarmaBot (web: python -m web)
     if (Test-Porti 8501) { Ok 'FarmaBot po punon' }
     else {
         Hap '[3/3] Po nis FarmaBot-in...'
         Start-Process (Join-Path $root 'venv_chatbot\Scripts\python.exe') `
-            -ArgumentList '-m', 'streamlit', 'run', 'app.py' -WorkingDirectory $root -WindowStyle Hidden `
+            -ArgumentList '-m', 'web' -WorkingDirectory $root -WindowStyle Hidden `
             -RedirectStandardOutput "$logs\farmabot.out.log" -RedirectStandardError "$logs\farmabot.err.log"
         Prit-Portin 8501 90 'FarmaBot'
         Ok 'FarmaBot u nis'
