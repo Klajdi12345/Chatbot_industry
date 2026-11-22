@@ -329,3 +329,7 @@ tbody tr:hover td { background: var(--sidebar); }
   .settings nav { grid-auto-flow: column; overflow-x: auto; }
   .msg.user .bubble { max-width: 90%; }
 }
+
+.msg-actions .icon-btn.on { color: var(--accent); }
+.msg-actions .icon-btn:disabled { cursor: default; }
+.stat .hint { display: block; margin-top: .2rem; }

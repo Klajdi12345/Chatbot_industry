@@ -39,30 +39,48 @@ def vendos_farën(fara: int | None):
 # ---------------------------------------------------------------- urgjencat
 # Teksti krahasohet pasi normalizohet (pa ë/ç, shkronja të vogla).
 URGJENCAT = [
-    (r"dhimbje (ne )?gjoks|me dhemb gjoksi|shtrengim (ne )?gjoks|me shtrengon gjoksi",
+    (r"dhimbje (ne )?gjoks|me dhemb gjoksi|shtrengim (ne )?gjoks|me shtrengon gjoksi|"
+     r"dhimbj\w*( \w+){0,3} (ne |te )?gjoks|gjoks\w*( \w+){0,6} krah\w* (e |te )?majt",
      "Dhimbja në gjoks mund të jetë shenjë e problemit me zemrën."),
-    (r"nuk (marr|mund te marr|arrij te marr) (dot )?fryme|veshtiresi (ne|per) frymemarrje|"
+    (r"nuk (marr|mund te marr|arrij te marr) (dot )?fryme(?! (nga|me) hund)|veshtiresi (ne|per) frymemarrje|"
      r"me zihet fryma|po mbytem|nuk kam ajer",
      "Vështirësia në frymëmarrje kërkon ndihmë të menjëhershme."),
-    (r"(enjtur|enjtje|fryre)\w* (e |te )?(gjuh|buz|fyt)|(gjuh|buz|fyt)\w*( \w+){0,3} (enjt|fry)",
+    (r"(enjtur|enjtje|fryre)\w* (e |te )?(gjuh|buz|fyt)|(gjuh|buz|fyt)\w*( \w+){0,3} (enjt|fry)|"
+     r"\b(enjt|enjten|enjtin|u enjt|fryn|u fry)\w*( \w+){0,2} (gjuh|buz|fyt|fytyr)",
      "Ënjtja e gjuhës, buzëve ose fytit mund të jetë reaksion alergjik i rëndë (anafilaksi)."),
-    (r"humb\w* ndjenja|ra pa ndjenja|pa ndjenja|te fiket|bie te fiket|konvulsion|kriz\w* epilept",
+    (r"humb\w* ndjenja|ra pa ndjenja|pa ndjenja|te fiket|bie te fiket|konvulsion|kriz\w* epilept|"
+     r"(u rrezua|ra|u shemb|eshte shtrire)( \w+){0,4} nuk (po )?(i |te )?(pergjigj|reag|zgjoh)|nuk (po )?(reagon|zgjohet)\b",
      "Humbja e ndjenjave ose konvulsionet kërkojnë ndihmë të menjëhershme."),
     (r"fytyra (e |me )?shtremb|nuk (levize|levizi|mund te levize) (dot )?(krahun|kemben|doren)|"
-     r"paraliz|flas (te )?(ngaterruar|prapsht)|nuk flas dot",
+     r"nuk (e |i |mund ta |mund t.?i )?leviz\w*( dot)? (krah|kemb|dor|gjysm)|humb\w* (fuqine|forcen) ne (krah|kemb|dor|gjysm)|"
+     r"paraliz|flas (te )?(ngaterruar|prapsht)|nuk flas dot|nuk flet (dot )?mire|nuk fl(et|ase) dot|"
+     r"(ka |i )?ra(ne)? fytyra|fytyra( \w+){0,3} (ne )?(njeren|nje) ane|goj\w* (e |te )?shtremb|\binsult|goditje (ne )?tru",
      "Këto mund të jenë shenja të një goditjeje në tru (insult). Çdo minutë ka rëndësi."),
     (r"gjakderdhje (e madhe|qe nuk ndalet)|nuk (me )?ndalet gjaku|vjell\w* gjak|kollit\w* gjak|"
+     r"gjak( \w+){0,2} (me |nga |kur )?koll|koll\w*( \w+){0,2} gjak\b|nxjerr\w* gjak (me |nga |kur )?(koll|goj)|"
      r"jashteqitje( e| te)? (zeze|me gjak)|diarre me gjak|gjak ne jashteqitje",
      "Gjakderdhja kërkon kontroll mjekësor urgjent."),
     (r"mbidoz|kam pire shume (tableta|ilace|barna)|piu (shume )?(ilace|barna|tableta)|helmu|helmim|"
-     r"gelltiti (ilace|barna|tableta)",
+     r"gelltiti (ilace|barna|tableta)|"
+     r"\b(mora|piva|gelltita|kam marre|kam pire|ka marre|ka pire|mori|piu|gelltiti)( \w+){0,2} "
+     r"([1-9]\d+|shume|gjithe|nje kuti|kutine)( \w+){0,2} (tablet|kokrr|hape|pilul|kapsul|ilac|bar)|"
+     r"\b(mora|piva|gelltita|mori|piu|gelltiti|ka pire|ka marre|ka gelltitur)( \w+){0,2} (shishe|kuti|paket)\w*( \w+){0,2} "
+     r"(tablet|kokrr|hape|pilul|kapsul|ilac|bar|shurup)",
      "Mbidoza ose helmimi kërkon ndihmë të menjëhershme, edhe nëse personi ndihet mirë tani."),
-    (r"dhimbj\w*( e)?( kok\w*)? (me e forte|me e madhe) (e|ne) jet",
+    (r"dhimbj\w*( e)?( kok\w*)? (me e forte|me e madhe) (e|ne) jet|"
+     r"dhimbj\w* (me e|me te) (forte|madhe|keqe|rende)( \w+){0,4} (ne |e |te )?jet(en|es|e)\b",
      "Një dhimbje koke e papritur dhe shumë e fortë duhet parë menjëherë nga mjeku."),
-    (r"(temperatur|ethe)\w*( \w+){0,4} (foshnj|bebe|i porsalindur)|(foshnj|bebe|porsalindur)\w*( \w+){0,4} (temperatur|ethe)",
+    (r"(temperatur|ethe)\w*( \w+){0,4} (foshnj|bebe|i porsalindur)|(foshnj|bebe|porsalindur)\w*( \w+){0,4} (temperatur|ethe)|"
+     r"\b([0-2]|nje|dy) (muaj|jav)\w*( \w+){0,4} (temperatur|ethe)|(temperatur|ethe)\w*( \w+){0,4} \b([0-2]|nje|dy) (muaj|jav)|"
+     r"(foshnj\w*|porsalindur|\b([1-9]|1[0-2]) jav\w*|\b([0-2]|nje|dy) muaj\w*)( \w+){0,4} (3[89]|4[0-2])([.,]\d)?\b",
      "Temperatura te një foshnjë e vogël (nën 3 muaj) duhet parë menjëherë nga mjeku."),
 ]
-VETEDEMTIM = r"vetevras|te vras veten|vras veten|dua te vdes|te demtoj veten|nuk dua te jetoj"
+# Përjashtime për disa rregulla (indeksi te URGJENCAT → pattern që e anulon atë rregull).
+PERJASHTIMET = {
+    8: r"teeth|dal\w* (e |te )?dhemb|dhemb\w* (po )?(i )?dal",   # foshnja me pak temperaturë nga dalja e dhëmbëve
+}
+VETEDEMTIM = (r"vetevras|te vras veten|vras veten|dua te vdes|te demtoj veten|nuk dua te jetoj|"
+              r"jap fund jet|fund jetes|ta mbyll jeten|nuk ia vlen (te )?jetoj|me mire (te )?vdes|iki nga kjo jete")
 
 MESAZH_URGJENCE = (
     "⚠️ **Kjo mund të jetë urgjencë.** {arsye}\n\n"
@@ -107,6 +125,8 @@ def kontrollo_urgjencen(tekst: str, gjuha: str = "sq") -> str | None:
     if any(re.search(VETEDEMTIM, t) for t in vs):
         return MESAZH_VETEDEMTIM_EN if en else MESAZH_VETEDEMTIM
     for i, (pattern, arsye) in enumerate(URGJENCAT):
+        if i in PERJASHTIMET and any(re.search(PERJASHTIMET[i], t) for t in vs):
+            continue
         if any(re.search(pattern, t) for t in vs):
             return MESAZH_URGJENCE_EN.format(arsye=ARSYET_EN[i]) if en else MESAZH_URGJENCE.format(arsye=arsye)
     return None

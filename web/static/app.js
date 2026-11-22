@@ -58,6 +58,19 @@ const TEKSTE = {
     contraFor: "Kundërindikohet për (hiqet automatikisht)", cautionFor: "Kujdes për (shfaqet paralajmërim)",
     backupNow: "Bëj backup tani", backupDone: d => `Backup-i u ruajt te ${d}`, backupHelp: "Ruan gjithë databazën (JSON + skript Cypher) në Desktop.",
     recentBackups: "Backup-et e fundit", connection: "Lidhja", backToChat: "Kthehu te biseda", noChatsUser: "Pa biseda.",
+    good: "Përgjigje e mirë", bad: "Përgjigje e gabuar", thanksFb: "Faleminderit! Reagimi u ruajt.",
+    whatWrong: "Çfarë nuk shkoi?", r_nuk_kuptoi: "Nuk e kuptoi simptomën", r_ilac_gabim: "Ilaçi nuk ishte i duhuri",
+    r_e_paqarte: "Përgjigja ishte e paqartë ose e gabuar", r_tjeter: "Tjetër", commentOpt: "Shpjego shkurt (opsionale)",
+    send: "Dërgo", training: "Trajnimi", evalRun: "Nis vlerësimin", evalRunning: "Po vlerësoj…",
+    evalHelp: "Kalon rreth 270 pyetje provë (simptoma, urgjenca, siguria, anglisht, biseda) dhe mat saktësinë. Zgjat rreth 1 minutë.",
+    lastEval: "Vlerësimi i fundit", overall: "Saktësia e përgjithshme", passed: "Kaloi", failed: "Nuk kaloi",
+    category: "Kategoria", correct: "Saktë", threshold: "Kufiri", progress: "Përparimi", noEval: "Ende pa vlerësim. Kliko “Nis vlerësimin”.",
+    evalErrors: "Gabimet e vlerësimit", evalErrorsHint: "Mos i kopjo këto fraza te baza: përndryshe vlerësimi nuk mat më asgjë. Mëso konceptin me fjalë të tjera.",
+    expected: "Pritej", got: "U gjet", feedback: "Reagimet negative të përdoruesve", noFeedback: "Asnjë reagim negativ i hapur.",
+    question: "Pyetja", answer: "Përgjigjja", reason: "Arsyeja", teach: "Mësoji botit", chooseSymptom: "Zgjidh simptomën e saktë…",
+    resolve: "Shëno si zgjidhur", taught: s => `U mësua: “${s}”`, manualTeach: "Mësim manual", phrase: "Fraza (si e shkruajnë njerëzit)",
+    phrasePh: "p.sh. më ka zënë i ftohti", symptom: "Simptoma", recentLessons: "Mësimet e fundit", likes: "Pëlqime", complaints: "Ankesa të hapura",
+    historyEval: "Historiku i saktësisë", urgency: "Urgjencat", accuracy: "Saktësia",
   },
   en: {
     newChat: "New chat", search: "Search chats", today: "Today", yesterday: "Yesterday", week: "Previous 7 days",
@@ -113,6 +126,19 @@ const TEKSTE = {
     contraFor: "Contraindicated for (removed automatically)", cautionFor: "Caution for (shows a warning)",
     backupNow: "Back up now", backupDone: d => `Backup saved to ${d}`, backupHelp: "Saves the whole database (JSON + Cypher script) to the Desktop.",
     recentBackups: "Recent backups", connection: "Connection", backToChat: "Back to chat", noChatsUser: "No chats.",
+    good: "Good answer", bad: "Bad answer", thanksFb: "Thank you! Your feedback was saved.",
+    whatWrong: "What went wrong?", r_nuk_kuptoi: "It didn't understand the symptom", r_ilac_gabim: "The medicine wasn't right",
+    r_e_paqarte: "The answer was unclear or wrong", r_tjeter: "Other", commentOpt: "Explain briefly (optional)",
+    send: "Send", training: "Training", evalRun: "Run evaluation", evalRunning: "Evaluating…",
+    evalHelp: "Runs about 270 test questions (symptoms, emergencies, safety, English, conversations) and measures accuracy. Takes about 1 minute.",
+    lastEval: "Latest evaluation", overall: "Overall accuracy", passed: "Passed", failed: "Failed",
+    category: "Category", correct: "Correct", threshold: "Threshold", progress: "Progress", noEval: "No evaluation yet. Click “Run evaluation”.",
+    evalErrors: "Evaluation errors", evalErrorsHint: "Don't copy these phrases into the knowledge base, or the evaluation stops measuring anything. Teach the concept in other words.",
+    expected: "Expected", got: "Got", feedback: "Negative user feedback", noFeedback: "No open negative feedback.",
+    question: "Question", answer: "Answer", reason: "Reason", teach: "Teach the bot", chooseSymptom: "Choose the correct symptom…",
+    resolve: "Mark as resolved", taught: s => `Learned: “${s}”`, manualTeach: "Manual lesson", phrase: "Phrase (how people write it)",
+    phrasePh: "e.g. I've caught a chill", symptom: "Symptom", recentLessons: "Recent lessons", likes: "Likes", complaints: "Open complaints",
+    historyEval: "Accuracy history", urgency: "Emergencies", accuracy: "Accuracy",
   },
 };
 
@@ -148,6 +174,9 @@ const P = {
   plus: '<path d="M12 5v14M5 12h14"/>',
   eye: '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
   eyeoff: '<path d="M9.9 4.2A10 10 0 0 1 12 4c6.5 0 10 8 10 8a17 17 0 0 1-2.2 3.2M6.6 6.6C3.7 8.5 2 12 2 12s3.5 8 10 8a9.7 9.7 0 0 0 5.4-1.6"/><path d="M14.1 14.1a3 3 0 1 1-4.2-4.2"/><path d="m2 2 20 20"/>',
+  thumbup: '<path d="M7 10v12"/><path d="M15 5.9 14 10h5.8a2 2 0 0 1 2 2.3l-1.4 8A2 2 0 0 1 18.4 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.8a2 2 0 0 0 1.8-1.1L12 2a3.1 3.1 0 0 1 3 3.9Z"/>',
+  thumbdown: '<path d="M17 14V2"/><path d="M9 18.1 10 14H4.2a2 2 0 0 1-2-2.3l1.4-8A2 2 0 0 1 5.6 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.8a2 2 0 0 0-1.8 1.1L12 22a3.1 3.1 0 0 1-3-3.9Z"/>',
+  play: '<polygon points="6 3 20 12 6 21 6 3"/>',
   mail: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
   database: '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/>',
 };
@@ -558,7 +587,11 @@ function vizatoKryesoren() {
     document.querySelectorAll(".suggestions button").forEach(b => b.addEventListener("click", () => dergo(b.textContent)));
   } else {
     const el = $("#mesazhet");
-    S.aktive.mesazhet.forEach((m, i) => el.appendChild(elMesazhi(m, i === S.aktive.mesazhet.length - 1)));
+    let pyetja = "";
+    S.aktive.mesazhet.forEach((m, i) => {
+      el.appendChild(elMesazhi(m, i === S.aktive.mesazhet.length - 1, pyetja));
+      if (m.role === "user") pyetja = m.content;
+    });
     poshte(false);
   }
 }
@@ -650,11 +683,40 @@ function htmlMendimi(d) {
     ${d.mendimi ? `<div class="reason"><strong>${esc(E.reasoning)}</strong>\n${esc(d.mendimi)}</div>` : ""}</div></div>`;
 }
 
-function htmlVeprimet(tekst) {
-  return `<div class="msg-actions"><button class="icon-btn sm" data-kopjo title="${t("copy")}" aria-label="${t("copy")}">${ic("copy", 15)}</button></div>`;
+function htmlVeprimet(bot = false) {
+  return `<div class="msg-actions"><button class="icon-btn sm" data-kopjo title="${t("copy")}" aria-label="${t("copy")}">${ic("copy", 15)}</button>
+    ${bot ? `<button class="icon-btn sm" data-reagim="1" title="${t("good")}" aria-label="${t("good")}">${ic("thumbup", 15)}</button>
+    <button class="icon-btn sm" data-reagim="-1" title="${t("bad")}" aria-label="${t("bad")}">${ic("thumbdown", 15)}</button>` : ""}</div>`;
 }
 
-function lidhVeprimet(el, tekst) {
+async function dergoReagimin(el, vlera, m, pyetja, trupi = {}) {
+  await api("POST", "/api/reagim", { vlera, pyetja, pergjigjja: m.content, gjuha: m.te_dhena?.gjuha || S.gjuha,
+    simptomat: (m.te_dhena?.alarmi || []).map(x => x.emer), ...trupi });
+  el.querySelectorAll("[data-reagim]").forEach(b => { b.disabled = true; b.classList.toggle("on", +b.dataset.reagim === vlera); });
+  toast(t("thanksFb"));
+}
+
+function hapAnkesen(el, m, pyetja) {
+  const arsyet = ["r_nuk_kuptoi", "r_ilac_gabim", "r_e_paqarte", "r_tjeter"];
+  modal({ titull: t("whatWrong"),
+    trup: `<div style="display:grid;gap:.5rem;margin-bottom:1rem">${arsyet.map((a, i) =>
+        `<label class="check"><input type="radio" name="arsye" value="${a.slice(2)}" ${i === 0 ? "checked" : ""}><span>${t(a)}</span></label>`).join("")}</div>
+      <div class="field"><label for="fb-k">${t("commentOpt")}</label><textarea class="input" id="fb-k" maxlength="1000"></textarea></div>
+      <div class="error-text" id="fb-err"></div>`,
+    fund: `<button class="btn" data-mbyll>${t("cancel")}</button><button class="btn primary" id="fb-ok">${t("send")}</button>`,
+    pasHapjes: (o, mbyll) => o.querySelector("#fb-ok").addEventListener("click", async () => {
+      try {
+        await dergoReagimin(el, -1, m, pyetja, { arsye: o.querySelector("input[name=arsye]:checked").value, koment: o.querySelector("#fb-k").value });
+        mbyll();
+      } catch (x) { o.querySelector("#fb-err").textContent = x.message; }
+    }) });
+}
+
+function lidhVeprimet(el, tekst, m = null, pyetja = "") {
+  el.querySelectorAll("[data-reagim]").forEach(b => b.addEventListener("click", async () => {
+    if (+b.dataset.reagim === -1) { hapAnkesen(el, m, pyetja); return; }
+    try { await dergoReagimin(el, 1, m, pyetja); } catch (x) { toast(x.message, true); }
+  }));
   el.querySelector("[data-kopjo]")?.addEventListener("click", async e => {
     const b = e.currentTarget;
     try { await navigator.clipboard.writeText(tekst); b.innerHTML = ic("check", 15); toast(t("copied")); setTimeout(() => (b.innerHTML = ic("copy", 15)), 1500); }
@@ -663,7 +725,7 @@ function lidhVeprimet(el, tekst) {
   el.querySelector(".thought-toggle")?.addEventListener("click", e => e.currentTarget.parentElement.classList.toggle("open"));
 }
 
-function elMesazhi(m, iFundit = false) {
+function elMesazhi(m, iFundit = false, pyetja = "") {
   const el = document.createElement("div");
   if (m.role === "user") {
     el.className = "msg user";
@@ -674,9 +736,9 @@ function elMesazhi(m, iFundit = false) {
     const trupi = d?.urgjence
       ? `<div class="alert danger" role="alert">${ic("alert", 20)}<div class="md">${md(m.content)}</div></div>`
       : `<div class="md">${md(m.content)}</div>`;
-    el.innerHTML = htmlMendimi(d) + trupi + htmlKartat(d) + htmlVeprimet();
+    el.innerHTML = htmlMendimi(d) + trupi + htmlKartat(d) + htmlVeprimet(true);
   }
-  lidhVeprimet(el, m.content);
+  lidhVeprimet(el, m.content, m, pyetja);
   return el;
 }
 
@@ -736,7 +798,7 @@ async function dergo(tekst) {
     if (!fundi) throw new Error(t("error"));
     const m = { role: "assistant", content: fundi.pergjigja.tekst, te_dhena: fundi.pergjigja };
     S.aktive.mesazhet.push(m);
-    bot.replaceWith(elMesazhi(m, true));
+    bot.replaceWith(elMesazhi(m, true, tekst));
     if (fundi.profili) S.sesioni.profili = fundi.profili;
     const b = S.bisedat.find(x => x.id === S.aktive.id);
     if (b) { b.perditesuar = new Date().toISOString(); S.bisedat = [b, ...S.bisedat.filter(x => x !== b)]; vizatoListen(); }
@@ -887,13 +949,13 @@ function skedaCilesimeve(skeda, o) {
 
 /* ================================================================ admin */
 function vizatoAdminin() {
-  const skedat = [["permbledhje", t("overview")], ["perdoruesit", t("users")], ["barnat", t("medicines")], ["backup", t("backup")]];
+  const skedat = [["permbledhje", t("overview")], ["perdoruesit", t("users")], ["barnat", t("medicines")], ["trajnimi", t("training")], ["backup", t("backup")]];
   $("#main").innerHTML = `<header class="topbar" id="koka"></header><div class="admin"><div class="admin-inner">
     <div class="tabs" role="tablist">${skedat.map(([k, e]) => `<button role="tab" data-t="${k}" class="${S.adminTab === k ? "on" : ""}">${esc(e)}</button>`).join("")}</div>
     <div id="a-trupi"><div class="dots"><i></i><i></i><i></i></div></div></div></div>`;
   vizatoKoken();
   document.querySelectorAll("[data-t]").forEach(b => b.addEventListener("click", () => { S.adminTab = b.dataset.t; location.hash = `#/admin/${b.dataset.t}`; vizatoAdminin(); }));
-  ({ permbledhje: aPermbledhje, perdoruesit: aPerdoruesit, barnat: aBarnat, backup: aBackup })[S.adminTab]()
+  ({ permbledhje: aPermbledhje, perdoruesit: aPerdoruesit, barnat: aBarnat, trajnimi: aTrajnimi, backup: aBackup })[S.adminTab]()
     .catch(x => { $("#a-trupi").innerHTML = `<div class="alert danger">${ic("alert", 20)}<div>${esc(x.message)}</div></div>`; });
 }
 
@@ -1031,6 +1093,76 @@ function barneERe(d) {
         catch (x) { o.querySelector("#d-err").textContent = x.message; }
       });
     } });
+}
+
+let _sondazhi = null;
+async function aTrajnimi() {
+  clearTimeout(_sondazhi);
+  const d = await api("GET", "/api/admin/trajnimi");
+  if (S.adminTab !== "trajnimi" || !$("#a-trupi")) return;
+  const f = d.i_fundit, puna = d.puna;
+  const pct = x => `${Math.round(x * 100)}%`;
+  const opsionet = `<option value="">${t("chooseSymptom")}</option>` + d.simptomat.map(s => `<option value="${esc(s.id)}">${esc(s.emer)}</option>`).join("");
+  const kategorite = f ? Object.values(f.kategorite).map(k => `<tr><td>${esc(k.emri)}</td><td>${k.sakte}/${k.gjithsej}${k.pyeti ? ` <span class="muted">(+${k.pyeti})</span>` : ""}</td>
+      <td style="min-width:140px"><div class="bar" style="margin:0"><span>${pct(k.saktesia)}</span><span class="muted">${pct(k.kufiri)}</span><i style="--w:${pct(k.saktesia)}"></i></div></td>
+      <td><span class="badge${k.kaloi ? " admin" : ""}" style="${k.kaloi ? "" : "background:var(--danger-soft);color:var(--danger)"}">${k.kaloi ? t("passed") : t("failed")}</span></td></tr>`) : [];
+  const gabimet = (f?.gabimet || []).slice(0, 30).map(g => `<tr><td class="muted">${esc(g.kategoria)}</td><td>${esc(g.mesazh)}</td>
+      <td>${esc(Array.isArray(g.pritet) ? g.pritet.join(", ") : g.pritet)}</td><td>${esc(Array.isArray(g.gjetur) ? g.gjetur.join(", ") || "–" : g.gjetur)}</td></tr>`);
+  $("#a-trupi").innerHTML = `
+    <div class="stats">
+      <div class="stat"><small>${t("overall")}</small><b>${f ? pct(f.saktesia) : "–"}</b><span class="hint">${f ? esc(f.data) + " · " + (f.kaloi ? t("passed") : t("failed")) : ""}</span></div>
+      <div class="stat"><small>${t("urgency") || "Urgjencat"}</small><b>${f?.kategorite?.urgjence ? pct(f.kategorite.urgjence.saktesia) : "–"}</b></div>
+      <div class="stat"><small>${t("likes")}</small><b>${d.numrat.pelqime}</b></div>
+      <div class="stat"><small>${t("complaints")}</small><b>${d.numrat.te_hapura}</b></div>
+    </div>
+    <div class="panel" style="margin-bottom:1.4rem"><div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap;justify-content:space-between">
+      <div><h3 style="margin:0 0 .2rem">${t("lastEval")}</h3><p class="hint" style="margin:0">${t("evalHelp")}</p></div>
+      <button class="btn primary" id="t-nis" ${puna.aktive ? "disabled" : ""}>${ic("play", 15)}${puna.aktive ? t("evalRunning") : t("evalRun")}</button></div>
+      ${puna.aktive ? `<div class="bar" style="margin-top:1rem"><span>${t("progress")}: ${puna.i}/${puna.n || "…"} · ${esc(puna.kategoria)}</span><span></span>
+        <i style="--w:${puna.n ? Math.round(puna.i / puna.n * 100) : 2}%"></i></div>` : ""}
+      ${puna.gabim ? `<div class="error-text">${esc(puna.gabim)}</div>` : ""}
+      ${f ? `<div style="margin-top:1rem">${tabele([t("category"), t("correct"), `${t("accuracy") || "Saktësia"} / ${t("threshold")}`, ""], kategorite)}</div>` : `<p class="muted">${t("noEval")}</p>`}
+      ${d.historiku.length > 1 ? `<h3 style="margin:1.2rem 0 .6rem">${t("historyEval")}</h3>${d.historiku.map(h =>
+        `<div class="bar"><span>${esc(h.data)}</span><span class="muted">${pct(h.saktesia)} · ${h.gjithsej}</span><i style="--w:${pct(h.saktesia)}"></i></div>`).join("")}` : ""}
+    </div>
+    <div class="panel" style="margin-bottom:1.4rem"><h3>${t("feedback")}</h3>
+      ${d.reagimet.length ? d.reagimet.map(r => `<div class="card" data-r="${esc(r.id)}" style="margin-bottom:.7rem">
+          <div class="hint">${esc(r.ora.replace("T", " "))} · ${esc(r.perdoruesi || t("guest"))} · ${esc(t("r_" + r.arsye) || r.arsye || "")}</div>
+          <div style="margin:.4rem 0"><strong>${t("question")}:</strong> ${esc(r.pyetja)}</div>
+          ${r.koment ? `<div class="note warn" style="margin:.3rem 0">${esc(r.koment)}</div>` : ""}
+          <details class="more-info"><summary>${ic("chev", 14)}${t("answer")}</summary><div class="md" style="font-size:.88rem;margin-top:.4rem">${md(r.pergjigjja)}</div></details>
+          <div class="toolbar" style="margin:.8rem 0 0"><select class="input" style="max-width:300px;height:36px">${opsionet}</select>
+            <button class="btn primary sm" data-meso>${t("teach")}</button><button class="btn sm" data-zgjidh>${t("resolve")}</button></div></div>`).join("")
+        : `<p class="muted">${t("noFeedback")}</p>`}
+    </div>
+    <div class="grid2">
+      <div class="panel"><h3>${t("manualTeach")}</h3>
+        <div class="field"><label for="m-f">${t("phrase")}</label><input class="input" id="m-f" placeholder="${t("phrasePh")}" maxlength="200"></div>
+        <div class="field"><label for="m-s">${t("symptom")}</label><select class="input" id="m-s">${opsionet}</select></div>
+        <div class="error-text" id="m-err"></div><button class="btn primary" id="m-ok">${t("teach")}</button></div>
+      <div class="panel"><h3>${t("recentLessons")}</h3>${d.mesimet.length ? `<ul style="margin:0;padding-left:1.1rem;font-size:.87rem">${d.mesimet.map(x =>
+        `<li><strong>${esc(x.fraza)}</strong> → ${esc(x.simptoma)} <span class="muted">· ${esc(x.ora)} · ${esc(x.kush)}</span></li>`).join("")}</ul>` : `<p class="muted">–</p>`}</div>
+    </div>
+    ${gabimet.length ? `<h3 style="font-size:.95rem;margin:1.4rem 0 .3rem">${t("evalErrors")}</h3><p class="hint" style="margin:0 0 .7rem">${t("evalErrorsHint")}</p>
+      ${tabele(["", t("question"), t("expected"), t("got")], gabimet)}` : ""}`;
+
+  $("#t-nis").addEventListener("click", async () => {
+    try { await api("POST", "/api/admin/trajnimi/vlereso"); aTrajnimi(); } catch (x) { toast(x.message, true); }
+  });
+  const meso = async (fraza, simptoma, reagim_id, gabimEl) => {
+    if (!simptoma) { gabimEl ? (gabimEl.textContent = t("chooseSymptom")) : toast(t("chooseSymptom"), true); return; }
+    try { const r = await api("POST", "/api/admin/trajnimi/meso", { fraza, simptoma, reagim_id }); toast(t("taught")(r.fraza)); aTrajnimi(); }
+    catch (x) { gabimEl ? (gabimEl.textContent = x.message) : toast(x.message, true); }
+  };
+  document.querySelectorAll("[data-r]").forEach(c => {
+    const r = d.reagimet.find(x => x.id === c.dataset.r);
+    c.querySelector("[data-meso]").addEventListener("click", () => meso(r.pyetja, c.querySelector("select").value, r.id));
+    c.querySelector("[data-zgjidh]").addEventListener("click", async () => {
+      try { await api("POST", `/api/admin/trajnimi/reagim/${r.id}/zgjidh`, {}); aTrajnimi(); } catch (x) { toast(x.message, true); }
+    });
+  });
+  $("#m-ok").addEventListener("click", () => meso($("#m-f").value, $("#m-s").value, null, $("#m-err")));
+  if (puna.aktive) _sondazhi = setTimeout(() => { if (S.adminTab === "trajnimi" && S.pamja === "admin") aTrajnimi(); }, 1500);
 }
 
 async function aBackup() {

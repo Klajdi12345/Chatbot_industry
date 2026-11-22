@@ -23,6 +23,12 @@ SKEMA = [
     "CREATE CONSTRAINT person_id IF NOT EXISTS FOR (p:Person) REQUIRE p.id IS UNIQUE",
     "CREATE CONSTRAINT mesazh_id IF NOT EXISTS FOR (m:Mesazh) REQUIRE m.id IS UNIQUE",
     "CREATE CONSTRAINT llogari_perdoruesi IF NOT EXISTS FOR (l:Llogari) REQUIRE l.perdoruesi IS UNIQUE",
+    "CREATE CONSTRAINT llogari_email IF NOT EXISTS FOR (l:Llogari) REQUIRE l.email IS UNIQUE",
+    "CREATE CONSTRAINT bisede_id IF NOT EXISTS FOR (b:Bisede) REQUIRE b.id IS UNIQUE",
+    "CREATE CONSTRAINT reagim_id IF NOT EXISTS FOR (r:Reagim) REQUIRE r.id IS UNIQUE",
+    "CREATE INDEX chunk_lloji IF NOT EXISTS FOR (c:Chunk) ON (c.lloji)",
+    "CREATE VECTOR INDEX chunk_embedding IF NOT EXISTS FOR (c:Chunk) ON c.embedding "
+    "OPTIONS {indexConfig: {`vector.dimensions`: " + str(EMBED_DIM) + ", `vector.similarity_function`: 'cosine'}}",
     "CREATE VECTOR INDEX fraze_embedding IF NOT EXISTS FOR (f:Fraze) ON f.embedding "
     "OPTIONS {indexConfig: {`vector.dimensions`: " + str(EMBED_DIM) + ", `vector.similarity_function`: 'cosine'}}",
 ]
@@ -86,7 +92,7 @@ def ruaj_backup() -> Path:
     (dosja / "databaza.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     (dosja / "databaza.cypher").write_text(ne_cypher(data), encoding="utf-8")
     (dosja / "LEXOMË.txt").write_text(
-        "Backup i FarmaBot-it nga Neo4j Aura.\n\n"
+        "Backup i FarmaBot-it nga databaza Neo4j.\n\n"
         f"Nyje: {len(data['nyjet'])}   Lidhje: {len(data['lidhjet'])}\n\n"
         "Për ta hapur në Neo4j Desktop:\n"
         "1. Neo4j Desktop → krijo një instancë lokale (Local instance) dhe nise.\n"

@@ -418,9 +418,12 @@ for t in ["Kapitulli 2: arkitektura, për pamjen e përgjithshme.",
           "Kapitulli 10: siguria. Kapitulli 11: llogaritë, email-i dhe rivendosja e fjalëkalimit.",
           "Kapitulli 12: ndërfaqja web (pamjet, tema, gjuha, bisedat, API).",
           "Kapitulli 13: çdo skedar dhe çdo funksion (çfarë bën, çfarë merr, çfarë kthen).",
-          "Kapitulli 14: shembuj realë bisede. Kapitujt 15–17: testet, nisja dhe problemet e shpeshta.",
+          "Kapitulli 14: shembuj realë bisede. Kapitulli 15: testet, trajnimi dhe vlerësimi i saktësisë.",
+          "Kapitujt 16–17: nisja dhe problemet e shpeshta.",
           "Kapitulli 18: historiku i ndryshimeve (çfarë u shtua në çdo version)."]:
     pika(t)
+shenim("Databaza Neo4j ka dokumentin e vet të veçantë: **dokumentimi/FarmaBot_Databaza.docx** (dhe PDF). Aty "
+       "shpjegohet ku ruhen përdoruesit, bisedat, reagimet, backup-et, fjalëkalimet dhe skedarët e databazës në disk.")
 
 # ================================================================ 2. ARKITEKTURA
 rinis_numrat(); doc.add_heading("2. Arkitektura", 1)
@@ -852,6 +855,10 @@ SKEDARET = [
     ("web/server.py", "Serveri web: sesionet, llogaritë, profili, bisedat dhe përgjigjet live (NDJSON)."),
     ("web/admin.py", "API e administratorit: përmbledhja, përdoruesit, ilaçet, backup-i."),
     ("web/pergjigja.py", "Përgjigjja e botit → JSON për faqen: teksti pa emoji, kartat, përkthimi i kartave."),
+    ("web/trajnimi_api.py", "API e trajnimit: reagimet 👍/👎 dhe skeda Trajnimi e administratorit."),
+    ("trajnimi/vlereso.py", "Vlerësimi i saktësisë me grupin e rasteve (trajnimi/rastet.json) dhe raportet."),
+    ("trajnimi/meso.py", "Mësimi i botit: shton fraza te një simptomë (JSON + Neo4j) dhe i regjistron."),
+    ("trajnimi/reagimet.py", "Reagimet e përdoruesve (👍/👎) në Neo4j."),
 ]
 for skedari, pershkrim in SKEDARET:
     rinis_numrat(); doc.add_heading(skedari, 3)
@@ -944,10 +951,94 @@ tabele(["Skedari", "Çfarë teston"], [
     ["test_gjuha.py", "Fjalori: gegërisht/chat → standard, urgjenca dhe profili gegërisht, mendimi (-m llm)"],
     ["test_anglisht.py", "Zbulimi i gjuhës, anglisht → shqip, urgjencat anglisht, kontrolli i numrave, përkthimi (-m llm)"],
     ["test_regjistrimi.py", "Shkronjat shqipe/angleze, hyrja, fjalëkalimi, fshirja"],
-    ["test_web.py", "Aplikacioni web: hyrja me email, regjistrimi, rivendosja e fjalëkalimit, bisedat, profili, admini"],
+    ["test_web.py", "Aplikacioni web: hyrja me email, regjistrimi, rivendosja e fjalëkalimit, bisedat, profili, admini, "
+                    "reagimet 👍/👎 dhe skeda Trajnimi"],
 ], [4.6, 12.0], kod_kolona=(0,))
 p("Testet që kanë nevojë për Neo4j/Ollama anashkalohen vetë kur shërbimet nuk janë ndezur. Testet e web-it përdorin "
   "`TestClient` të Starlette-it dhe nuk dërgojnë email të vërtetë (dërgimi zëvendësohet në test).")
+
+# ---------------------------------------------------------------- 15.1 TRAJNIMI
+rinis_numrat(); doc.add_heading("15.1 Trajnimi i botit: çfarë do të thotë", 2)
+p("FarmaBot nuk “trajnohet” si një rrjet neural që ndryshon peshat. Modeli gjuhësor (Ollama) mbetet i njëjtë. "
+  "Trajnimi këtu do të thotë që **baza e njohurive dhe rregullat bëhen më të sakta**, dhe kjo matet me numra:")
+for t in ["**Matja:** një grup me 273 pyetje provë me përgjigjen e pritur (`trajnimi/rastet.json`). Programi "
+          "`trajnimi/vlereso.py` ia bën botit çdo pyetje dhe numëron sa doli saktë, sipas kategorisë.",
+          "**Mësimi:** kur bota nuk e kupton një shprehje, fraza i shtohet simptomës së duhur (`trajnimi/meso.py`), "
+          "në `data/njohurite.json` dhe menjëherë në Neo4j (me embedding). Çdo mësim regjistrohet te `trajnimi/mesimet.json`.",
+          "**Rregullat e sigurisë:** urgjencat (dhimbje gjoksi, insult, mbidozë, foshnjë me temperaturë...) janë rregulla "
+          "te `chatbot.py` (lista `URGJENCAT`). Ato zgjerohen kur vlerësimi gjen një urgjencë që nuk u kap.",
+          "**Grupi i kontrollit:** 69 pyetje (`kontroll_*`) që **nuk** përdoren për rregullime. Ato tregojnë saktësinë "
+          "e vërtetë te mesazhe që bota nuk i ka parë, që të mos “mësohet përmendësh” vetëm grupi i provës."]:
+    pika(t)
+
+rinis_numrat(); doc.add_heading("15.2 Grupi i provës dhe kufijtë", 2)
+tabele(["Kategoria", "Çfarë mat", "Raste", "Kufiri"], [
+    ["simptome", "Bota gjen simptomën e duhur nga mesazhe në shqip (edhe gegërisht, pa ë/ç)", "116", "85%"],
+    ["anglisht", "E njëjta gjë për mesazhe në anglisht", "20", "80%"],
+    ["urgjence", "Çdo urgjencë kapet dhe jepet 127 / 112", "25", "100%"],
+    ["jo_urgjence", "Simptomat e lehta nuk trajtohen si urgjencë (pa alarm të rremë)", "14", "80%"],
+    ["siguria", "Asnjë ilaç i kundërindikuar për profilin (shtatzëni, ulçerë, astmë...)", "13", "100%"],
+    ["femije", "Për fëmijët nuk jepen doza të rriturish", "3", "100%"],
+    ["pa_lidhje", "Pyetjet pa lidhje me shëndetin nuk marrin ilaçe", "6", "80%"],
+    ["biseda", "Pyetjet vijuese (doza, alternativa, mjeku...) kuptohen", "7", "85%"],
+    ["kontroll_simptome", "Grup i pavarur simptomash (nuk përdoret për rregullime)", "60", "80%"],
+    ["kontroll_urgjence", "Grup i pavarur urgjencash", "9", "100%"],
+], [3.4, 9.2, 1.6, 2.4], kod_kolona=(0,))
+p("Urgjencat, siguria dhe fëmijët nuk lejojnë asnjë gabim: një gabim i vetëm e bën vlerësimin “NUK KALOI”.")
+
+rinis_numrat(); doc.add_heading("15.3 Trajnimet e bëra (22.11.2026)", 2)
+tabele(["Hapi", "Çfarë u bë", "Rezultati"], [
+    ["Matja e parë", "Grupi i provës u krijua dhe u mat bota siç ishte",
+     "86,9% gjithsej (159/183); urgjencat 9/13; anglisht 15/20"],
+    ["Raundi 1", "Rregullat e urgjencave u zgjeruan (gjoksi + krahu i majtë, insulti, mbidoza me numër tabletash, "
+                 "foshnja nën 3 muaj, vetëdëmtimi); fraza të reja te 11 simptoma; fjalë angleze të reja",
+     "100% (185/185)"],
+    ["Kontrolli i pavarur", "U mat grupi që bota s'e kishte parë kurrë", "84% (58/69): urgjencat vetëm 3/9"],
+    ["Raundi 2", "Rregulla urgjence më të përgjithshme (ënjtja e buzëve/fytit në çdo renditje, “nuk flet mirë”, "
+                 "“i ra fytyra”); dy simptoma të reja të kuptuara (sëmundja e udhëtimit, lëkura e thatë)",
+     "100% (254/254), edhe grupi i kontrollit"],
+    ["Prova e dytë e pavarur", "10 urgjenca dhe 10 mesazhe të lehta krejt të reja, të shkruara pas raundit 2",
+     "Urgjencat 6/10; alarme të rreme 2/10"],
+    ["Raundi 3", "Mesazhe krejt të reja: personi që rrëzohet dhe nuk reagon, gjak me kollë, foshnja “3 javëshe ka 38.5”, "
+                 "presioni në gjoks në anglisht. Përjashtim: temperatura nga dalja e dhëmbëve nuk është alarm. "
+                 "+10 urgjenca dhe +9 raste pa alarm në grup",
+     "100% (273/273)"],
+], [2.8, 9.4, 4.4], kod_kolona=())
+p("**Pse urgjencat mbeten me rregulla (jo me kuptim/embedding):** u mat edhe një shtresë semantike me bge-m3 "
+  "(ngjashmëria e mesazhit me shembuj urgjencash). Mesazhe të lehta si “kam dhimbje të forta gjatë ciklit” arritën "
+  "ngjashmëri 0,78, ndërsa urgjenca të vërteta si “mora 20 tableta paracetamol” vetëm 0,46. Nuk ekziston asnjë prag "
+  "i sigurt, prandaj kjo shtresë u refuzua. Rregullat janë qëllimisht të kujdesshme: p.sh. “më dhemb gjoksi kur "
+  "kollitem” jep alarm me qëllim, sepse një alarm i tepërt është më pak i rrezikshëm se një urgjencë e humbur.")
+p("**Shembull i ciklit të plotë:** një vizitor dha 👎 te “më dhemb brinja kur ngrej peshë” (bota pyeti: muskuj apo "
+  "grip?). Admini i mësoi botit “më dhemb brinja” → dhimbje_muskulore. Pas kësaj bota e kuptoi edhe mesazhin e "
+  "paparë “kam dhimbje te brinjët pas futbollit”. Ankesa u mbyll dhe mësimi është te `trajnimi/mesimet.json`.")
+shenim("100% te grupi nuk do të thotë që bota nuk gabon kurrë. Do të thotë që të gjitha rastet e njohura kalojnë. "
+       "Mesazhet e reja që bota nuk i kupton vijnë nga përdoruesit me butonin 👎 (15.4) dhe shtohen në grup.", "kujdes")
+
+rinis_numrat(); doc.add_heading("15.4 Trajnimi i vazhdueshëm: 👍/👎 dhe skeda Trajnimi", 2)
+for t in ["Nën çdo përgjigje të botit ka dy butona: 👍 (e dobishme) dhe 👎 (nuk shkoi). Te 👎 personi zgjedh arsyen "
+          "(nuk e kuptoi simptomën, ilaçi nuk ishte i duhuri, përgjigje e paqartë, tjetër) dhe mund të shkruajë një koment.",
+          "Reagimi ruhet në Neo4j si nyje `(:Reagim)` me pyetjen, përgjigjen, simptomat, gjuhën dhe përdoruesin "
+          "(vizitorët ruhen pa emër).",
+          "Administratori hap **Paneli i administratorit → Trajnimi** dhe sheh: saktësinë e vlerësimit të fundit, "
+          "urgjencat, numrin e pëlqimeve, ankesat e hapura dhe tabelën me çdo kategori.",
+          "Butoni **Nis vlerësimin** e kalon gjithë grupin në sfond (rreth 1 minutë) dhe ruan raportin.",
+          "Te çdo ankesë, admini zgjedh simptomën e saktë dhe klikon **Mësoje**: fraza shtohet te simptoma dhe ankesa "
+          "mbyllet. Ose e shënon si të zgjidhur pa mësim."]:
+    numra(t)
+p("Nga rreshti i komandave:")
+kod("""python -m trajnimi.vlereso                       # vlerësimi + raport te trajnimi/raportet/
+python -m trajnimi.vlereso --gabimet             # shfaq edhe çdo rast të gabuar
+python -m trajnimi.vlereso --kategori urgjence   # vetëm një kategori
+python -m trajnimi.meso "kam zënë të ftohtë" grip_ftohje      # mëso një frazë
+python -m trajnimi.meso --sinkronizo grip_ftohje kapsllek      # rifut simptomat nga JSON në Neo4j""")
+tabele(["Skedari", "Përmbajtja"], [
+    ["trajnimi/rastet.json", "Grupi i provës (pyetjet dhe përgjigjet e pritura)"],
+    ["trajnimi/raportet/", "Një raport JSON për çdo vlerësim; i_fundit.json = vlerësimi i fundit"],
+    ["trajnimi/mesimet.json", "Regjistri i mësimeve: kush, kur, cila frazë, te cila simptomë"],
+    ["data/njohurite.json", "Baza e njohurive (frazat e mësuara shtohen këtu)"],
+    ["chatbot.py → URGJENCAT", "Rregullat e urgjencave; PERJASHTIMET për rastet që s'janë alarm"],
+], [5.2, 11.4], kod_kolona=(0,))
 
 # ================================================================ 15. NISJA
 rinis_numrat(); doc.add_heading("16. Nisja e sistemit", 1)
@@ -964,6 +1055,7 @@ tabele(["Kur ndryshon...", "Ekzekuto"], [
     ["datasetet (një herë në muaj, sipas dëshirës)", "python shkarko_datasetet.py  →  python ngarko_burimet.py"],
     ["PDF te data/pdf/", "python ngarko_pdf.py"],
     ["kodin Python", "rinis aplikacionin (Ndal FarmaBot → FarmaBot)"],
+    ["rregullat e urgjencave ose frazat (trajnim)", "python -m trajnimi.vlereso  (duhet të dalë KALOI)"],
     ["web/static (HTML/CSS/JS)", "rrit numrin ?v= te index.html; në shfletues Ctrl+F5"],
     ["dokumentimin (pas çdo ndryshimi)", "python dokumentimi/krijo_dokumentimin.py  →  PDF me Word"],
 ], [7.2, 9.4], kod_kolona=(1,))
@@ -1014,6 +1106,16 @@ tabele(["Termi", "Kuptimi"], [
 rinis_numrat(); doc.add_heading("18. Historiku i ndryshimeve", 1)
 p("Çdo ndryshim i ri shtohet këtu dhe dokumenti rikrijohet (Word + PDF).")
 HISTORIKU = [
+    ("22.11.2026", "Trajnimi dhe vlerësimi i saktësisë", [
+        "Grup prove me 273 pyetje në 10 kategori (trajnimi/rastet.json) dhe vlerësimi automatik (trajnimi/vlereso.py).",
+        "Tre raunde trajnimi: saktësia nga 86,9% në 100%; urgjencat nga 9/13 në 25/25; grupi i pavarur i kontrollit 69/69.",
+        "Rregulla më të gjera urgjence (gjoks + krah i majtë, insult, mbidozë, gjak me kollë, foshnjë nën 3 muaj, "
+        "person që nuk reagon, vetëdëmtim) dhe përjashtim për temperaturën nga dalja e dhëmbëve.",
+        "Fraza të reja te simptomat dhe fjalë angleze të reja; mësimi i frazave me trajnimi/meso.py.",
+        "Butonat 👍/👎 te përgjigjet; reagimet ruhen në Neo4j (:Reagim).",
+        "Skeda “Trajnimi” te paneli i administratorit: vlerësimi me një klik, ankesat dhe butoni “Mësoje”.",
+        "Backup-i tani rikrijon edhe kufizimet e reja (email, biseda, reagime, indekset e Chunk).",
+        "Dokument i ri: FarmaBot_Databaza.docx / .pdf, gjithçka për databazën Neo4j."]),
     ("22.11.2026", "Llogaritë me email", [
         "Regjistrimi kërkon email; fusha “Emri ose pseudonimi” u hoq.",
         "Hyrja me email ose me emër përdoruesi; hapësirat e kopjuara te fjalëkalimi nuk e prishin hyrjen.",

@@ -2460,7 +2460,9 @@
         "kom grip e m dhemb krejt trupi",
         "jom ftof keq",
         "kam ftohje me rrufe e koll",
-        "po m kap ni grip"
+        "po m kap ni grip",
+        "kam zënë të ftohtë",
+        "më ka zënë i ftohti"
       ],
       "barnat": [
         "paracetamol",
@@ -2479,7 +2481,7 @@
         "Pusho dhe pi shumë lëngje.",
         "Antibiotikët NUK ndihmojnë te gripi dhe ftohja."
       ],
-      "fjale_kyce": "\\bgrip|ftohur|ftohje(?! ne buz)|viroz|\\bcovid|korona",
+      "fjale_kyce": "\\bgrip|ftohur|ftohje(?! ne buz)|viroz|\\bcovid|korona|(mora|marre|kapur|zuri|me zuri) (nje )?te ftohte",
       "info": "Gripi dhe ftohja shkaktohen nga viruse; antibiotikët nuk ndihmojnë. Ftohja kalon brenda 7–10 ditëve, gripi është më i rëndë dhe zgjat 1–2 javë.",
       "kerkon_mjek": false
     },
@@ -2569,7 +2571,7 @@
         "Pi lëngje të ngrohta.",
         "Mbaj ajrin e dhomës të lagësht."
       ],
-      "fjale_kyce": "koll\\w*.*\\b(thate|pa gelbaz)|\\b(thate|pa gelbaz)\\w*.*koll",
+      "fjale_kyce": "koll\\w*.*\\b(thate|pa gelbaz)|\\b(thate|pa gelbaz)\\w*.*koll|koll\\w*( \\w+){0,4} (pa nxjerre|nuk nxjerr)",
       "info": "Kolla e thatë shpesh mbetet 2–3 javë pas një virusi. Mund të vijë edhe nga alergjia, refluksi ose disa ilaçe tensioni.",
       "kerkon_mjek": false
     },
@@ -2595,7 +2597,8 @@
         "nxjerr glbaz kur kollitem",
         "kolle me gelbaz te verdhe",
         "m mblidhet glbaza ne gjoks",
-        "koll e lagesht"
+        "koll e lagesht",
+        "kollitem dhe më del sekrecion i verdhë"
       ],
       "barnat": [
         "ambroksol",
@@ -2612,7 +2615,7 @@
         "Pi shumë ujë që gëlbaza të hollohet.",
         "Inhalime me avull uji."
       ],
-      "fjale_kyce": "\\b(me|nxjerr|kam) gelbaz|gelbaz|sekrecion|kolle e lageshte|flegm",
+      "fjale_kyce": "\\b(me|nxjerr|kam) gelbaz|gelbaz|sekrecion|kolle e lageshte|flegm|nxjerr\\w* (gjera|qelb|sekrec|te verdha|jeshile)|(te verdha|jeshile)( \\w+){0,2} (kur )?koll",
       "info": "Kolla me gëlbazë është mënyra e trupit për të pastruar rrugët e frymëmarrjes; zakonisht vjen pas ftohjes.",
       "kerkon_mjek": false
     },
@@ -2690,7 +2693,9 @@
         "m lotojn syt e teshtij",
         "alergjia e pranveres",
         "jom alergjik nga pluhni",
-        "m kruhet hunda e teshtij"
+        "m kruhet hunda e teshtij",
+        "alergji pranverore me teshtima",
+        "teshtimat e pranverës"
       ],
       "barnat": [
         "loratadine",
@@ -2759,7 +2764,7 @@
         "Kompresa të ftohta.",
         "Mos e grith lëkurën."
       ],
-      "fjale_kyce": "kruh\\w* (e |me )?lekur|lekur\\w*( \\w+){0,2} kruh|pick|mushkonj|urtikar|skuqje (e |ne )?lekur|kruajtje|me ha (lekura|trupi|krahu|kemba|dora)|hithr|me kruhet (trupi|krahu|kemba|dora)",
+      "fjale_kyce": "kruh\\w* (e |me )?lekur|lekur\\w*( \\w+){0,3} kruh|pick|mushkonj|urtikar|skuqje (e |ne )?lekur|kruajtje|me ha (lekura|trupi|krahu|kemba|dora)|hithr|me kruhet (trupi|krahu|kemba|dora)",
       "info": "Kruajtja vjen shpesh nga pickimet, alergjitë e lehta ose lëkura e thatë.",
       "kerkon_mjek": false
     },
@@ -2848,7 +2853,7 @@
         "Shmang ushqimet e yndyrshme, kafenë dhe alkoolin.",
         "Mos u shtri menjëherë pas ngrënies."
       ],
-      "fjale_kyce": "\\burth|thartir|refluks|djeg\\w* (\\w+ )?stomak|stomak\\w* (me )?djeg|\\bacid|gastrit|tretje (e |te )?(keqe|veshtire)",
+      "fjale_kyce": "\\burth|thartir|refluks|djeg\\w* (\\w+ )?stomak|stomak\\w* (me )?djeg|\\bacid|gastrit|tretje (e |te )?(keqe|veshtire)|djeg\\w*( \\w+){0,2} (ne |te )?gjoks",
       "info": "Urthi ndodh kur acidi i stomakut ngjitet në ezofag. Përkeqësohet nga ushqimet e rënda, kafeja, alkooli, duhani dhe shtrirja menjëherë pas ngrënies.",
       "kerkon_mjek": false
     },
@@ -2894,7 +2899,7 @@
         "Gjëja më e rëndësishme është rehidratimi.",
         "Ha ushqime të lehta: oriz, banane, bukë të thekur."
       ],
-      "fjale_kyce": "diarre|jashteqitje (te |e )?(lengshme|ujshme)|prishur barku|barkqitj|bark(u)? (i |te )?lir|me shkon barku",
+      "fjale_kyce": "diarre|jashteqitje (te |e )?(lengshme|ujshme)|prishur barku|barkqitj|bark(u)? (i |te )?lir|me shkon barku|bark\\w* (e |i |te )?lirsh",
       "info": "Diarreja akute vjen zakonisht nga virus ose ushqim i prishur dhe kalon brenda 2–3 ditësh. Më e rëndësishme është të zëvendësosh lëngjet.",
       "kerkon_mjek": false
     },
@@ -2918,7 +2923,8 @@
         "s po dal dot jasht",
         "nuk kam dal ne wc 4 dit",
         "jom kapsllek",
-        "barku m osht zan"
+        "barku m osht zan",
+        "s'po dal dot jashtë prej disa ditësh"
       ],
       "barnat": [
         "makrogol",
@@ -2938,7 +2944,7 @@
         "Ha më shumë fibra (fruta, perime, drithëra integrale).",
         "Pi të paktën 1,5–2 litra ujë në ditë dhe lëviz."
       ],
-      "fjale_kyce": "kapsllek|kapllek|bark\\w* (i |te )?(zene|mbyllur)|(nuk|s') ?(shkoj|dal) dot (ne tualet|jashte)|jashteqitje (e |te )?fort",
+      "fjale_kyce": "kapsllek|kapllek|bark\\w* (i |te )?(zene|mbyllur)|(nuk|s') ?(shkoj|dal) dot (ne tualet|jashte)|jashteqitje (e |te )?fort|(nuk|s') ?kam (bere|dale) (nevojen|jashte|ne tualet)|nuk kam shkuar (ne tualet|jashte)",
       "info": "Kapsllëku lidhet shpesh me pak fibra, pak ujë, pak lëvizje ose me disa ilaçe (p.sh. kundër dhimbjes).",
       "kerkon_mjek": false
     },
@@ -3097,7 +3103,8 @@
         "u ndrydha te kamba",
         "m dhemb qafa nga gjumi",
         "m dhembin muskujt pas palestres",
-        "kom dhimje ne sup"
+        "kom dhimje ne sup",
+        "më dhemb brinja"
       ],
       "barnat": [
         "diklofenak_xhel",
@@ -3241,7 +3248,7 @@
         "Mos lexo dhe mos shiko telefonin gjatë udhëtimit.",
         "Hap dritaren për ajër të pastër."
       ],
-      "fjale_kyce": "semundje (e )?udhetimit|(ne|me) (makine|anije|autobus|aeroplan|avion|traget)|kur udhetoj|udhetim",
+      "fjale_kyce": "semundje (e )?udhetimit|(ne|me) (makine|anije|autobus|aeroplan|avion|traget)|kur udhetoj|udhetim|me ze (makina|deti|anija|autobusi|avioni|udhetimi)",
       "kerkon_mjek": false
     },
     {
@@ -3462,7 +3469,8 @@
         "m thahen syt",
         "syt m djegin nga kompjuteri",
         "kom syt e lodhun",
-        "m duket sikur kam rer n sy"
+        "m duket sikur kam rer n sy",
+        "sytë e thatë nga ekrani"
       ],
       "barnat": [
         "lot_artificiale"
@@ -3477,7 +3485,7 @@
         "Rregulla 20-20-20: çdo 20 minuta shiko 20 sekonda diçka larg.",
         "Puslo shpesh dhe mbaj ajrin e dhomës të lagësht."
       ],
-      "fjale_kyce": "\\bsy(te)?\\b( \\w+){0,2} (that|thahen|djeg|lodh)|sy (te |e )?(that|lodh)|lodhj\\w* (e |te )?syve|rere ne sy",
+      "fjale_kyce": "\\bsy(te)?\\b( \\w+){0,2} (that|thahen|djeg|lodh)|sy (te |e )?(that|lodh)|lodhj\\w* (e |te )?syve|rere ne sy|\\bsy\\w*( \\w+){0,3} (thar|tharje)|sy\\w*( \\w+){0,2} (me )?rere",
       "kerkon_mjek": false
     },
     {
@@ -3633,7 +3641,7 @@
         "Laje me ujë të pastër rrjedhës.",
         "Mbuloje me fashë dhe ndërroje çdo ditë."
       ],
-      "fjale_kyce": "gervisht|u preva|preva\\b|prerje|plag\\w* (e |te )?vogel|cori lekur|u cora",
+      "fjale_kyce": "gervisht|u preva|preva\\b|prerje|plag\\w* (e |te )?vogel|cori lekur|u cora|\\bu cava\\b|\\bu prera\\b|\\bcava (doren|gishtin|kemben)",
       "kerkon_mjek": false
     },
     {
@@ -3793,7 +3801,8 @@
         "m merren mendt",
         "m vjen mendja rrotull",
         "m sillet krejt dhoma",
-        "kom marrmendje kur ngrihem"
+        "kom marrmendje kur ngrihem",
+        "më vjen gjithçka vërdallë"
       ],
       "barnat": [],
       "shenja_alarmi": [
@@ -3807,7 +3816,7 @@
         "Ngrihu ngadalë nga shtrati.",
         "Pi ujë dhe ha diçka nëse nuk ke ngrënë."
       ],
-      "fjale_kyce": "marramendj|merren mendt|merret mendja|mendja( me)? (vjen )?rrotull|vjen rrotull|sillet (bota|koka)|vertigo|turbullohet",
+      "fjale_kyce": "marramendj|merren mendt|merret mendja|mendja( me)? (vjen )?rrotull|vjen rrotull|sillet (bota|koka)|vertigo|turbullohet|verdalle|me sillet koka|me erren syte",
       "kerkon_mjek": true
     },
     {
@@ -3952,7 +3961,7 @@
         "Përdor sapun pa parfum.",
         "Hidrato lëkurën menjëherë pas dushit."
       ],
-      "fjale_kyce": "lekur\\w* (e |te )?(that|plasarit)|ekzem|dermatit|plasarit|thahen duart|cahen duart",
+      "fjale_kyce": "lekur\\w* (e |te )?(that|plasarit)|ekzem|dermatit|plasarit|thahen duart|cahen duart|lekur\\w*( \\w+){0,3} (thar|that|plasarit)",
       "kerkon_mjek": false
     },
     {

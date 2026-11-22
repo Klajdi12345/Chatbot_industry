@@ -200,3 +200,26 @@ def test_rivendosja_e_fjalekalimit_me_email(klienti, perdorues, monkeypatch):
     assert klienti.post("/api/rivendos", json={"token": token, "fjalekalimi": "Tjeter-654321"}).status_code == 400  # njëpërdorimësh
     assert klienti.post("/api/hyr", json={"perdoruesi": u, "fjalekalimi": FJ}).status_code == 401
     assert klienti.post("/api/hyr", json={"perdoruesi": u, "fjalekalimi": "Tjeter-123456"}).status_code == 200
+
+
+def test_reagimet_dhe_trajnimi(klienti, perdorues):
+    from trajnimi import reagimet
+    klienti.post("/api/vizitor")
+    r = klienti.post("/api/reagim", json={"vlera": -1, "pyetja": "test_reagim pyetje", "pergjigjja": "x", "arsye": "nuk_kuptoi"})
+    assert r.status_code == 200
+    rid = r.json()["id"]
+    assert klienti.post("/api/reagim", json={"vlera": 5, "pyetja": "x", "pergjigjja": "x"}).status_code == 400
+    try:
+        assert klienti.get("/api/admin/trajnimi").status_code == 403          # vizitori jo
+        u = perdorues()
+        _regjistro(klienti, u)
+        llogarite.ndrysho_rolin(u, "admin")
+        klienti.post("/api/hyr", json={"perdoruesi": u, "fjalekalimi": FJ})
+        d = klienti.get("/api/admin/trajnimi").json()
+        assert any(x["id"] == rid for x in d["reagimet"]) and d["simptomat"]
+        assert klienti.post(f"/api/admin/trajnimi/reagim/{rid}/zgjidh", json={}).status_code == 200
+        assert not any(x["id"] == rid for x in klienti.get("/api/admin/trajnimi").json()["reagimet"])
+        assert klienti.post("/api/admin/trajnimi/meso", json={"fraza": "x", "simptoma": "nuk_ekziston"}).status_code == 400
+    finally:
+        from config import query
+        query("MATCH (r:Reagim {id: $id}) DETACH DELETE r", id=rid)

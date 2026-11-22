@@ -41,7 +41,8 @@ import llogarite
 import perdoruesit as db_p
 from chatbot import Konteksti, Profili, pergjigju
 from config import ROOT, query
-from web import admin
+from trajnimi import reagimet
+from web import admin, trajnimi_api
 from web.pergjigja import pa_emoji, te_dhenat
 
 STATIKE = Path(__file__).parent / "static"
@@ -434,6 +435,7 @@ def krijo_aplikacionin() -> Starlette:
         Route("/api/bisedat/{bid}", biseda_fshi, methods=["DELETE"]),
         Route("/api/biseda", biseda_mesazh, methods=["POST"]),
         *admin.rruget(llogaria, trupi, gabim),
+        *trajnimi_api.rruget(llogaria, trupi, gabim, lambda r: bool(llogaria(r) or r.session.get("vizitor"))),
         Mount("/static", StaticFiles(directory=STATIKE), name="static"),
         Mount("/assets", StaticFiles(directory=ROOT / "assets"), name="assets"),
     ]
@@ -444,6 +446,7 @@ def krijo_aplikacionin() -> Starlette:
     async def jeta(_app):
         db_p.krijo_skemen()
         db_b.krijo_skemen()
+        reagimet.krijo_skemen()
         llogarite.sigurohu_per_admin()
         yield
 
