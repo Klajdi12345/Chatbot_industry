@@ -128,7 +128,10 @@ async def sesioni(request: Request):
 
 async def hyr(request: Request):
     d = await trupi(request)
-    l = llogarite.hyr(d.get("perdoruesi", ""), d.get("fjalekalimi", ""))
+    u, fj = str(d.get("perdoruesi") or "").strip(), str(d.get("fjalekalimi") or "")
+    l = llogarite.hyr(u, fj)
+    if not l and fj != fj.strip():  # hapësira të kopjuara bashkë me fjalëkalimin
+        l = llogarite.hyr(u, fj.strip())
     if not l:
         return gabim("Emri ose fjalëkalimi nuk është i saktë.", 401)
     request.session.clear()
