@@ -27,6 +27,7 @@ import uuid
 from pathlib import Path
 
 from starlette.applications import Starlette
+from starlette.concurrency import run_in_threadpool
 from starlette.middleware import Middleware
 from starlette.middleware.sessions import SessionMiddleware
 from starlette.requests import Request
@@ -35,6 +36,7 @@ from starlette.routing import Mount, Route
 from starlette.staticfiles import StaticFiles
 
 import bisedat as db_b
+import emaili
 import llogarite
 import perdoruesit as db_p
 from chatbot import Konteksti, Profili, pergjigju
@@ -119,7 +121,8 @@ async def faqja(request: Request):
 async def sesioni(request: Request):
     l = llogaria(request)
     return JSONResponse({
-        "llogaria": {"perdoruesi": l["perdoruesi"], "roli": l["roli"]} if l else None,
+        "llogaria": {"perdoruesi": l["perdoruesi"], "roli": l["roli"], "email": llogarite.email_i(l["perdoruesi"])}
+        if l else None,
         "vizitor": bool(request.session.get("vizitor")) and not l,
         "profili": _profili(request) if (l or request.session.get("vizitor")) else None,
         "gjendjet": [g for g in _gjendjet() if g["id"] not in AUTOMATIKE],
@@ -133,7 +136,7 @@ async def hyr(request: Request):
     if not l and fj != fj.strip():  # hapësira të kopjuara bashkë me fjalëkalimin
         l = llogarite.hyr(u, fj.strip())
     if not l:
-        return gabim("Emri ose fjalëkalimi nuk është i saktë.", 401)
+        return gabim("Emri, email-i ose fjalëkalimi nuk është i saktë.", 401)
     request.session.clear()
     request.session["llogaria"] = l
     return await sesioni(request)
@@ -141,15 +144,15 @@ async def hyr(request: Request):
 
 async def regjistrohu(request: Request):
     d = await trupi(request)
-    u, fj, emer = d.get("perdoruesi", ""), d.get("fjalekalimi", ""), (d.get("emer") or "").strip()
-    if e := llogarite.valido(u, fj) or llogarite.valido_emrin(emer):
+    u, fj, email = d.get("perdoruesi", ""), d.get("fjalekalimi", ""), str(d.get("email") or "").strip()
+    if e := llogarite.valido(u, fj) or llogarite.valido_email(email):
         return gabim(e)
     if not d.get("pelqim"):
         return gabim("Duhet pëlqimi për të ruajtur të dhënat.")
     mosha = d.get("mosha")
     try:
         mosha = int(mosha) if mosha not in (None, "") else None
-        llogarite.krijo_llogari(u, fj, "perdorues", emer or None, mosha)
+        llogarite.krijo_llogari(u, fj, "perdorues", None, mosha, email=email)
     except ValueError as e:
         return gabim(str(e))
     request.session.clear()
@@ -168,6 +171,32 @@ async def dil(request: Request):
     VIZITORET.pop(request.session.get("vizitor") or "", None)
     request.session.clear()
     return JSONResponse({"ok": True})
+
+
+async def harrova(request: Request):
+    """Dërgon lidhjen e rivendosjes. Përgjigjja është gjithmonë e njëjtë, që të mos zbulohet
+    nëse një email ka llogari apo jo."""
+    d = await trupi(request)
+    email = str(d.get("email") or "").strip()
+    if e := llogarite.valido_email(email):
+        return gabim(e)
+    r = llogarite.krijo_rivendosje(email)
+    if r:
+        try:
+            await run_in_threadpool(emaili.email_rivendosjeje, r["email"], r["perdoruesi"], r["token"],
+                                    "en" if d.get("gjuha") == "en" else "sq")
+        except Exception as x:  # noqa: BLE001
+            return gabim(f"Email-i nuk u dërgua dot: {x}", 502)
+    return JSONResponse({"ok": True, "smtp": emaili.eshte_konfiguruar()})
+
+
+async def rivendos(request: Request):
+    d = await trupi(request)
+    try:
+        u = llogarite.rivendos_fjalekalimin(str(d.get("token") or ""), str(d.get("fjalekalimi") or ""))
+    except ValueError as e:
+        return gabim(str(e))
+    return JSONResponse({"ok": True, "perdoruesi": u})
 
 
 def _kerkon_sesion(f):
@@ -210,6 +239,20 @@ async def fjalekalimi(request: Request):
     except ValueError as e:
         return gabim(str(e))
     return JSONResponse({"ok": True})
+
+
+async def ndrysho_email(request: Request):
+    l = llogaria(request)
+    if not l:
+        return gabim("Hyr në llogari.", 401)
+    d = await trupi(request)
+    if not llogarite.hyr(l["perdoruesi"], d.get("fjalekalimi", "")):
+        return gabim("Fjalëkalimi aktual nuk është i saktë.")
+    try:
+        llogarite.vendos_email(l["perdoruesi"], str(d.get("email") or ""))
+    except ValueError as e:
+        return gabim(str(e))
+    return JSONResponse({"email": llogarite.email_i(l["perdoruesi"])})
 
 
 async def fshi_llogarine(request: Request):
@@ -381,6 +424,9 @@ def krijo_aplikacionin() -> Starlette:
         Route("/api/dil", dil, methods=["POST"]),
         Route("/api/profili", profili_ruaj, methods=["PUT"]),
         Route("/api/fjalekalimi", fjalekalimi, methods=["POST"]),
+        Route("/api/email", ndrysho_email, methods=["PUT"]),
+        Route("/api/harrova", harrova, methods=["POST"]),
+        Route("/api/rivendos", rivendos, methods=["POST"]),
         Route("/api/llogaria", fshi_llogarine, methods=["DELETE"]),
         Route("/api/bisedat", bisedat_lista),
         Route("/api/bisedat/{bid}", biseda_merr, methods=["GET"]),

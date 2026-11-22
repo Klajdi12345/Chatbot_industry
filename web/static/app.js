@@ -35,6 +35,13 @@ const TEKSTE = {
     login: "Hyr", register: "Regjistrohu", continueGuest: "Vazhdo pa llogari", or: "ose",
     nameOpt: "Emri ose pseudonimi (opsional)", ageOpt: "Mosha (opsionale)", repeatPw: "Përsërit fjalëkalimin",
     consent: "Pranoj që profili dhe bisedat e mia të ruhen. Mund t'i fshij kur të dua.", createAccount: "Krijo llogarinë",
+    email: "Email-i", emailOrUser: "Email-i ose emri i përdoruesit", emailHelp: "Për rivendosjen e fjalëkalimit, nëse e harron.",
+    forgot: "Ke harruar fjalëkalimin?", forgotTitle: "Rivendos fjalëkalimin", forgotSub: "Shkruaj email-in e llogarisë dhe do të të dërgojmë një lidhje për të zgjedhur fjalëkalim të ri.",
+    sendLink: "Dërgo lidhjen", linkSent: "Nëse ky email ka llogari, të kemi dërguar një lidhje. Shiko edhe dosjen Spam. Lidhja vlen 30 minuta.",
+    smtpMissing: "Dërgimi i email-eve nuk është konfiguruar ende në këtë server. Kërkoji administratorit lidhjen (logs/emailet.log).",
+    backToLogin: "Kthehu te hyrja", resetTitle: "Zgjidh fjalëkalimin e ri", resetSub: "Fjalëkalimi duhet të ketë të paktën 8 karaktere.",
+    resetDone: "Fjalëkalimi u ndryshua. Tani mund të hysh me fjalëkalimin e ri.", showPw: "Shfaq fjalëkalimin", hidePw: "Fshih fjalëkalimin",
+    emailSaved: "Email-i u ruajt", noEmail: "Pa email: nuk mund ta rivendosësh fjalëkalimin nëse e harron.", saveEmail: "Ruaj email-in",
     pwMismatch: "Fjalëkalimet nuk përputhen.", usernameHelp: "3–30 karaktere: shkronja (edhe ç, ë), shifra dhe _ . -",
     feat1: "Nga simptoma te ilaçi pa recetë, me doza nga databaza.", feat2: "Heq ilaçet që nuk të përshtaten: shtatzëni, ulçerë, ilaçe që merr.",
     feat3: "Njeh shenjat e rrezikut dhe të dërgon te mjeku.",
@@ -83,6 +90,13 @@ const TEKSTE = {
     login: "Sign in", register: "Sign up", continueGuest: "Continue without an account", or: "or",
     nameOpt: "Name or nickname (optional)", ageOpt: "Age (optional)", repeatPw: "Repeat the password",
     consent: "I agree that my profile and chats are stored. I can delete them any time.", createAccount: "Create account",
+    email: "Email", emailOrUser: "Email or username", emailHelp: "Used to reset your password if you forget it.",
+    forgot: "Forgot password?", forgotTitle: "Reset your password", forgotSub: "Enter your account email and we'll send you a link to choose a new password.",
+    sendLink: "Send link", linkSent: "If this email has an account, we've sent a link. Check your spam folder too. The link is valid for 30 minutes.",
+    smtpMissing: "Email sending isn't set up on this server yet. Ask the administrator for the link (logs/emailet.log).",
+    backToLogin: "Back to sign in", resetTitle: "Choose a new password", resetSub: "The password must have at least 8 characters.",
+    resetDone: "Your password was changed. You can now sign in with the new password.", showPw: "Show password", hidePw: "Hide password",
+    emailSaved: "Email saved", noEmail: "No email: you can't reset your password if you forget it.", saveEmail: "Save email",
     pwMismatch: "The passwords do not match.", usernameHelp: "3–30 characters: letters (also ç, ë), digits and _ . -",
     feat1: "From symptom to over-the-counter medicine, with doses from the database.", feat2: "Removes medicines that don't suit you: pregnancy, ulcer, medicines you take.",
     feat3: "Recognises danger signs and sends you to a doctor.",
@@ -132,6 +146,9 @@ const P = {
   key: '<circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/>',
   file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
+  eye: '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
+  eyeoff: '<path d="M9.9 4.2A10 10 0 0 1 12 4c6.5 0 10 8 10 8a17 17 0 0 1-2.2 3.2M6.6 6.6C3.7 8.5 2 12 2 12s3.5 8 10 8a9.7 9.7 0 0 0 5.4-1.6"/><path d="M14.1 14.1a3 3 0 1 1-4.2-4.2"/><path d="m2 2 20 20"/>',
+  mail: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
   database: '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/>',
 };
 const ic = (n, s = 18) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n]}</svg>`;
@@ -225,6 +242,7 @@ function modal({ titull, trup, fund = "", gjere = false, pasHapjes }) {
   o.querySelectorAll("[data-mbyll]").forEach(b => b.addEventListener("click", mbyll));
   document.addEventListener("keydown", esc_);
   document.body.appendChild(o);
+  syte(o);
   pasHapjes?.(o, mbyll);
   o.querySelector("input, textarea, select")?.focus();
   return { el: o, mbyll };
@@ -296,24 +314,66 @@ function nderroPanelin(v) {
 }
 
 /* ---------------------------------------------------------------- hyrja */
-function vizatoHyrjen(skeda = "hyr") {
-  const reg = skeda === "regj";
-  $("#root").innerHTML = `<div class="auth">
-    <div class="auth-top"><div class="brand"><img src="/assets/ikona.png" alt="">FarmaBot</div>
-      <div style="display:flex;gap:.3rem">
-        <button class="icon-btn" id="a-gjuha" title="${t("language")}">${ic("globe")}</button>
-        <button class="icon-btn" id="a-tema" title="${t("theme")}">${ic(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
-      </div></div>
-    <div class="auth-center"><div class="auth-card">
-      <img class="logo" src="/assets/ikona.png" alt="">
-      <h1>${t("welcome")}</h1><p class="sub">${t("welcomeSub")}</p>
-      <div class="seg"><button class="${reg ? "" : "on"}" data-skeda="hyr">${t("login")}</button><button class="${reg ? "on" : ""}" data-skeda="regj">${t("register")}</button></div>
+/* Butoni i syrit: shfaq / fsheh fjalëkalimin te çdo fushë fjalëkalimi brenda `el`. */
+function syte(el) {
+  el.querySelectorAll('input[type="password"]').forEach(inp => {
+    if (inp.parentElement.classList.contains("pw")) return;
+    const w = document.createElement("div");
+    w.className = "pw";
+    inp.replaceWith(w);
+    w.appendChild(inp);
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "pw-eye";
+    b.setAttribute("aria-label", t("showPw"));
+    b.title = t("showPw");
+    b.innerHTML = ic("eye", 18);
+    b.addEventListener("click", () => {
+      const fshehur = inp.type === "password";
+      inp.type = fshehur ? "text" : "password";
+      b.innerHTML = ic(fshehur ? "eyeoff" : "eye", 18);
+      b.title = fshehur ? t("hidePw") : t("showPw");
+      b.setAttribute("aria-label", b.title);
+      inp.focus();
+    });
+    w.appendChild(b);
+  });
+}
+
+function vizatoHyrjen(skeda = "hyr", { token = null, mesazh = "" } = {}) {
+  const reg = skeda === "regj", harrova = skeda === "harrova", rivendos = skeda === "rivendos";
+  let forma;
+  if (harrova) {
+    forma = `<h1>${t("forgotTitle")}</h1><p class="sub">${t("forgotSub")}</p>
       <form id="auth-form" novalidate>
-        <div class="field"><label for="f-u">${t("username")}</label><input class="input" id="f-u" autocomplete="username" required ${reg ? `aria-describedby="f-uh"` : ""}>
+        <div class="field"><label for="f-email">${t("email")}</label><input class="input" id="f-email" type="email" autocomplete="email" required></div>
+        <div class="error-text" id="f-err" role="alert"></div><div class="ok-text" id="f-ok" role="status"></div>
+        <button class="btn primary block" style="height:44px;margin-top:.3rem" type="submit">${ic("mail", 16)}${t("sendLink")}</button>
+      </form>
+      <button class="link-btn" id="a-kthehu">${t("backToLogin")}</button>`;
+  } else if (rivendos) {
+    forma = `<h1>${t("resetTitle")}</h1><p class="sub">${t("resetSub")}</p>
+      <form id="auth-form" novalidate>
+        <div class="field"><label for="f-p">${t("newPw")}</label><input class="input" id="f-p" type="password" autocomplete="new-password" required></div>
+        <div class="field"><label for="f-p2">${t("repeatPw")}</label><input class="input" id="f-p2" type="password" autocomplete="new-password" required></div>
+        <div class="error-text" id="f-err" role="alert"></div>
+        <button class="btn primary block" style="height:44px;margin-top:.3rem" type="submit">${t("save")}</button>
+      </form>
+      <button class="link-btn" id="a-kthehu">${t("backToLogin")}</button>`;
+  } else {
+    forma = `<h1>${t("welcome")}</h1><p class="sub">${t("welcomeSub")}</p>
+      <div class="seg"><button class="${reg ? "" : "on"}" data-skeda="hyr">${t("login")}</button><button class="${reg ? "on" : ""}" data-skeda="regj">${t("register")}</button></div>
+      ${mesazh ? `<div class="note info" style="margin:0 0 1rem">${esc(mesazh)}</div>` : ""}
+      <form id="auth-form" novalidate>
+        <div class="field"><label for="f-u">${reg ? t("username") : t("emailOrUser")}</label>
+          <input class="input" id="f-u" autocomplete="username" required ${reg ? `aria-describedby="f-uh"` : ""}>
           ${reg ? `<span class="hint" id="f-uh">${t("usernameHelp")}</span>` : ""}</div>
-        ${reg ? `<div class="field"><label for="f-e">${t("nameOpt")}</label><input class="input" id="f-e" autocomplete="nickname"></div>
+        ${reg ? `<div class="field"><label for="f-email">${t("email")}</label><input class="input" id="f-email" type="email" autocomplete="email" required aria-describedby="f-eh">
+            <span class="hint" id="f-eh">${t("emailHelp")}</span></div>
           <div class="field"><label for="f-m">${t("ageOpt")}</label><input class="input" id="f-m" type="number" min="0" max="110" inputmode="numeric"></div>` : ""}
-        <div class="field"><label for="f-p">${reg ? t("newPw") : t("password")}</label><input class="input" id="f-p" type="password" autocomplete="${reg ? "new-password" : "current-password"}" required></div>
+        <div class="field"><div class="label-row"><label for="f-p">${reg ? t("newPw") : t("password")}</label>
+            ${reg ? "" : `<button type="button" class="link-btn sm" id="a-harrova">${t("forgot")}</button>`}</div>
+          <input class="input" id="f-p" type="password" autocomplete="${reg ? "new-password" : "current-password"}" required></div>
         ${reg ? `<div class="field"><label for="f-p2">${t("repeatPw")}</label><input class="input" id="f-p2" type="password" autocomplete="new-password"></div>
           <label class="check" style="margin-bottom:.9rem"><input type="checkbox" id="f-c"><span>${t("consent")}</span></label>` : ""}
         <div class="error-text" id="f-err" role="alert"></div>
@@ -321,29 +381,56 @@ function vizatoHyrjen(skeda = "hyr") {
       </form>
       <div class="divider">${t("or")}</div>
       <button class="btn block" style="height:44px" id="a-vizitor">${t("continueGuest")}</button>
-      <div class="feature-list">${["feat1", "feat2", "feat3"].map(k => `<div>${ic("check", 16)}<span>${t(k)}</span></div>`).join("")}</div>
-    </div></div>
+      <div class="feature-list">${["feat1", "feat2", "feat3"].map(k => `<div>${ic("check", 16)}<span>${t(k)}</span></div>`).join("")}</div>`;
+  }
+  $("#root").innerHTML = `<div class="auth">
+    <div class="auth-top"><div class="brand"><img src="/assets/ikona.png" alt="">FarmaBot</div>
+      <div style="display:flex;gap:.3rem">
+        <button class="icon-btn" id="a-gjuha" title="${t("language")}" aria-label="${t("language")}">${ic("globe")}</button>
+        <button class="icon-btn" id="a-tema" title="${t("theme")}" aria-label="${t("theme")}">${ic(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
+      </div></div>
+    <div class="auth-center"><div class="auth-card"><img class="logo" src="/assets/ikona.png" alt="">${forma}</div></div>
     <div class="auth-foot">${t("disclaimer")}</div></div>`;
+  syte($("#root"));
+  const rivizato = () => vizatoHyrjen(skeda, { token, mesazh });
   document.querySelectorAll("[data-skeda]").forEach(b => b.addEventListener("click", () => vizatoHyrjen(b.dataset.skeda)));
-  $("#a-gjuha").addEventListener("click", () => { S.gjuha = S.gjuha === "sq" ? "en" : "sq"; ruaj("gjuha", S.gjuha); vizatoHyrjen(skeda); });
-  $("#a-tema").addEventListener("click", () => { vendosTemen(document.documentElement.dataset.theme === "dark" ? "light" : "dark"); vizatoHyrjen(skeda); });
-  $("#a-vizitor").addEventListener("click", async () => { S.sesioni = await api("POST", "/api/vizitor"); await nisAplikacionin(); });
+  $("#a-gjuha").addEventListener("click", () => { S.gjuha = S.gjuha === "sq" ? "en" : "sq"; ruaj("gjuha", S.gjuha); document.documentElement.lang = S.gjuha; rivizato(); });
+  $("#a-tema").addEventListener("click", () => { vendosTemen(document.documentElement.dataset.theme === "dark" ? "light" : "dark"); rivizato(); });
+  $("#a-vizitor")?.addEventListener("click", async () => { S.sesioni = await api("POST", "/api/vizitor"); await nisAplikacionin(); });
+  $("#a-harrova")?.addEventListener("click", () => vizatoHyrjen("harrova"));
+  $("#a-kthehu")?.addEventListener("click", () => { history.replaceState(null, "", "/"); vizatoHyrjen("hyr"); });
+
   $("#auth-form").addEventListener("submit", async e => {
     e.preventDefault();
-    const err = $("#f-err"); err.textContent = "";
-    const u = $("#f-u").value.trim(), p = $("#f-p").value;
+    const err = $("#f-err"), btn = e.submitter || $("#auth-form button[type=submit]");
+    err.textContent = "";
+    btn.disabled = true;
     try {
+      if (harrova) {
+        const r = await api("POST", "/api/harrova", { email: $("#f-email").value.trim(), gjuha: S.gjuha });
+        $("#f-ok").textContent = r.smtp ? t("linkSent") : t("smtpMissing");
+        return;
+      }
+      if (rivendos) {
+        if ($("#f-p").value !== $("#f-p2").value) { err.textContent = t("pwMismatch"); return; }
+        await api("POST", "/api/rivendos", { token, fjalekalimi: $("#f-p").value });
+        history.replaceState(null, "", "/");
+        vizatoHyrjen("hyr", { mesazh: t("resetDone") });
+        return;
+      }
+      const u = $("#f-u").value.trim(), p = $("#f-p").value;
       if (reg) {
         if (p !== $("#f-p2").value) { err.textContent = t("pwMismatch"); return; }
-        S.sesioni = await api("POST", "/api/regjistrohu", { perdoruesi: u, fjalekalimi: p, emer: $("#f-e").value,
+        S.sesioni = await api("POST", "/api/regjistrohu", { perdoruesi: u, email: $("#f-email").value.trim(), fjalekalimi: p,
           mosha: $("#f-m").value || null, pelqim: $("#f-c").checked });
       } else {
         S.sesioni = await api("POST", "/api/hyr", { perdoruesi: u, fjalekalimi: p });
       }
       await nisAplikacionin();
     } catch (x) { err.textContent = x.message; }
+    finally { if (document.body.contains(btn)) btn.disabled = false; }
   });
-  $("#f-u").focus();
+  ($("#f-u") || $("#f-email") || $("#f-p"))?.focus();
 }
 
 /* ---------------------------------------------------------------- paneli anësor */
@@ -768,11 +855,23 @@ function skedaCilesimeve(skeda, o) {
     }
     el.innerHTML = `
       <div class="row"><div class="lbl">${t("username")}<small>${esc(l.perdoruesi)}</small></div><span class="badge${l.roli === "admin" ? " admin" : ""}">${l.roli === "admin" ? t("administrator") : t("user")}</span></div>
+      <div class="row" style="display:block"><div class="lbl" style="margin-bottom:.7rem">${t("email")}${l.email ? "" : `<small>${t("noEmail")}</small>`}</div>
+        <div class="field"><input class="input" id="l-email" type="email" autocomplete="email" value="${esc(l.email || "")}" placeholder="emri@gmail.com" aria-label="${t("email")}"></div>
+        <div class="field"><label for="l-ep">${t("currentPw")}</label><input class="input" id="l-ep" type="password" autocomplete="current-password"></div>
+        <div class="error-text" id="l-eerr"></div><button class="btn" id="l-eruaj">${ic("mail", 16)}${t("saveEmail")}</button></div>
       <div class="row" style="display:block"><div class="lbl" style="margin-bottom:.7rem">${t("changePw")}</div>
         <div class="field"><label for="l-a">${t("currentPw")}</label><input class="input" id="l-a" type="password" autocomplete="current-password"></div>
         <div class="field"><label for="l-r">${t("newPw")}</label><input class="input" id="l-r" type="password" autocomplete="new-password"></div>
         <div class="error-text" id="l-err"></div><button class="btn" id="l-ndrysho">${ic("key", 16)}${t("changePw")}</button></div>
       <div class="row"><div class="lbl">${t("deleteAccount")}<small>${t("deleteAccountHelp")}</small></div><button class="btn danger" id="l-fshi">${t("del")}</button></div>`;
+    syte(el);
+    el.querySelector("#l-eruaj").addEventListener("click", async () => {
+      const err = el.querySelector("#l-eerr"); err.textContent = "";
+      try {
+        const r = await api("PUT", "/api/email", { email: el.querySelector("#l-email").value, fjalekalimi: el.querySelector("#l-ep").value });
+        l.email = r.email; el.querySelector("#l-ep").value = ""; toast(t("emailSaved"));
+      } catch (x) { err.textContent = x.message; }
+    });
     el.querySelector("#l-ndrysho").addEventListener("click", async () => {
       const err = el.querySelector("#l-err"); err.textContent = "";
       try { await api("POST", "/api/fjalekalimi", { aktual: el.querySelector("#l-a").value, i_ri: el.querySelector("#l-r").value });
@@ -824,21 +923,22 @@ async function aPermbledhje() {
 async function aPerdoruesit() {
   const d = await api("GET", "/api/admin/perdoruesit");
   $("#a-trupi").innerHTML = `<div class="toolbar"><button class="btn primary sm" id="u-re">${ic("plus", 16)}${t("newAccount")}</button></div>
-    ${tabele([t("username"), t("role"), t("name"), t("age"), t("messages"), t("created"), t("lastLogin"), ""], d.llogarite.map(u => `<tr>
+    ${tabele([t("username"), t("email"), t("role"), t("age"), t("messages"), t("created"), t("lastLogin"), ""], d.llogarite.map(u => `<tr>
       <td><strong>${esc(u.perdoruesi)}</strong>${u.perdoruesi === d.une ? ' <span class="muted">(ti)</span>' : ""}</td>
+      <td class="muted">${esc(u.email || "–")}</td>
       <td><span class="badge${u.roli === "admin" ? " admin" : ""}">${u.roli === "admin" ? t("administrator") : t("user")}</span></td>
-      <td>${esc(u.emer || "–")}</td><td>${u.mosha ?? "–"}</td><td>${u.mesazhe}</td>
+      <td>${u.mosha ?? "–"}</td><td>${u.mesazhe}</td>
       <td class="muted">${esc(u.krijuar)}</td><td class="muted">${esc(u.hyrja_fundit || "–")}</td>
       <td><button class="icon-btn sm" data-u="${esc(u.perdoruesi)}" aria-label="${t("actions")}">${ic("more", 16)}</button></td></tr>`))}`;
   $("#u-re").addEventListener("click", () => {
     modal({ titull: t("newAccount"), trup: `<div class="field"><label>${t("username")}</label><input class="input" id="n-u"></div>
-        <div class="field"><label>${t("nameOpt")}</label><input class="input" id="n-e"></div>
+        <div class="field"><label>${t("email")}</label><input class="input" id="n-e" type="email"></div>
         <div class="field"><label>${t("newPw")}</label><input class="input" id="n-p" type="password" autocomplete="new-password"></div>
         <div class="field"><label>${t("role")}</label><select class="input" id="n-r"><option value="perdorues">${t("user")}</option><option value="admin">${t("administrator")}</option></select></div>
         <div class="error-text" id="n-err"></div>`,
       fund: `<button class="btn" data-mbyll>${t("cancel")}</button><button class="btn primary" id="n-ok">${t("create")}</button>`,
       pasHapjes: (o, mbyll) => o.querySelector("#n-ok").addEventListener("click", async () => {
-        try { await api("POST", "/api/admin/perdoruesit", { perdoruesi: o.querySelector("#n-u").value, emer: o.querySelector("#n-e").value,
+        try { await api("POST", "/api/admin/perdoruesit", { perdoruesi: o.querySelector("#n-u").value, email: o.querySelector("#n-e").value,
             fjalekalimi: o.querySelector("#n-p").value, roli: o.querySelector("#n-r").value }); mbyll(); aPerdoruesit(); }
         catch (x) { o.querySelector("#n-err").textContent = x.message; }
       }) });
@@ -969,6 +1069,8 @@ document.addEventListener("keydown", e => {
 (async () => {
   document.documentElement.lang = S.gjuha;
   aplikoTemen();
+  const rv = location.hash.match(/^#\/rivendos\/([\w-]+)$/);
+  if (rv) { S.sesioni = { llogaria: null, vizitor: false }; vizatoHyrjen("rivendos", { token: rv[1] }); return; }
   try { S.sesioni = await api("GET", "/api/sesioni"); }
   catch (x) { $("#root").innerHTML = `<div class="auth-center" style="min-height:100vh"><div class="alert danger">${ic("alert", 20)}<div>${esc(x.message)}<br>${esc(t("serviceErr"))}</div></div></div>`; return; }
   if (S.sesioni.llogaria || S.sesioni.vizitor) await nisAplikacionin(); else vizato();

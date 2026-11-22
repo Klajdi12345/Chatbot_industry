@@ -24,6 +24,10 @@ pa librari të jashtme (`web/static/`). Niset me `python -m web` → http://loca
   edhe kur pyetja shkruhet shqip (kartat përkthehen me kontrollin e numrave).
 - **Bisedat** ruhen në Neo4j: `(:Person)-[:KA_BISEDE]->(:Bisede)-[:PERMBAN]->(:Mesazh)` (`bisedat.py`),
   bashkë me kartat dhe kontekstin, që biseda të vazhdojë kur rihapet. Vizitorët nuk ruajnë asgjë në databazë.
+- **Llogaritë:** regjistrimi kërkon emër përdoruesi dhe email; hyrja pranon email-in ose emrin e përdoruesit.
+  Te fushat e fjalëkalimit, butoni i syrit e shfaq ose e fsheh fjalëkalimin. Email-i ndryshohet te Cilësimet → Llogaria.
+- **Ke harruar fjalëkalimin?** dërgon një lidhje me email (`emaili.py`, SMTP te `.env`). Lidhja vlen 30 minuta dhe
+  përdoret vetëm një herë. Pa SMTP, email-i shkruhet te `logs/emailet.log`.
 - Teksti i përgjigjeve shfaqet pa emoji (`web/pergjigja.py`); ndërfaqja ka ikona të pakta e të njëtrajtshme.
 - Ikona dhe logot rikrijohen me `python assets/krijo_ikonen.py`.
 

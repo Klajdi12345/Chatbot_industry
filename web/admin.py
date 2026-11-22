@@ -72,7 +72,7 @@ def rruget(llogaria, trupi, gabim) -> list[Route]:
         try:
             llogarite.krijo_llogari(d.get("perdoruesi", ""), d.get("fjalekalimi", ""),
                                     d.get("roli") if d.get("roli") in llogarite.ROLET else "perdorues",
-                                    (d.get("emer") or "").strip() or None)
+                                    (d.get("emer") or "").strip() or None, email=str(d.get("email") or "").strip() or None)
         except ValueError as e:
             return gabim(str(e))
         return JSONResponse({"ok": True})
