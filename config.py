@@ -1,5 +1,4 @@
 """Konfigurimi i përbashkët: lidhja me Neo4j dhe modelet e Ollama-s."""
-import contextvars
 import os
 import unicodedata
 from functools import lru_cache
@@ -109,42 +108,8 @@ def embed(tekste: list[str]) -> list[list[float]]:
     return r.json()["embeddings"]
 
 
-# ---------------------------------------------------------------- motori gjuhësor: Claude ose Ollama
-# LLM_PROVIDER=auto (parazgjedhja): Claude nëse ka ANTHROPIC_API_KEY, përndryshe Ollama lokal.
-# Paneli i bisedës mund ta ndryshojë për sesionin (vendos_motorin).
-
-_motori_sesionit: contextvars.ContextVar[str | None] = contextvars.ContextVar("motori", default=None)
-_efforti_sesionit: contextvars.ContextVar[str | None] = contextvars.ContextVar("efforti", default=None)
-
-
-def motori_parazgjedhur() -> str:
-    import claude_ai
-    p = os.getenv("LLM_PROVIDER", "auto").lower()
-    if p in ("claude", "ollama"):
-        return p
-    return "claude" if claude_ai.ka_kredenciale() else "ollama"
-
-
-def vendos_motorin(motori: str | None, effort: str | None = None):
-    """Për kërkesën aktuale: 'claude' ose 'ollama' (None = parazgjedhja nga .env)."""
-    _motori_sesionit.set(motori)
-    _efforti_sesionit.set(effort)
-
-
-def motori() -> str:
-    return _motori_sesionit.get() or motori_parazgjedhur()
-
-
-def emri_motorit() -> str:
-    import claude_ai
-    return f"Claude · {claude_ai.MODEL}" if motori() == "claude" else f"Ollama · {LLM_MODEL}"
-
-
 def chat(mesazhet: list[dict]) -> str:
     """mesazhet: [{'role': 'system'|'user'|'assistant', 'content': ...}]"""
-    if motori() == "claude":
-        import claude_ai
-        return claude_ai.chat(mesazhet, effort="low")
     r = requests.post(f"{OLLAMA_URL}/api/chat", json={
         "model": LLM_MODEL, "messages": mesazhet, "stream": False,
         "options": {"temperature": 0.5, "num_ctx": 4096}, "keep_alive": "30m",
@@ -182,11 +147,6 @@ def chat_mendo(mesazhet: list[dict], on_mendim=None, on_pergjigje=None, format_j
     """Si chat(), por me modelin që mendon dhe me streaming.
     on_mendim(copa) thirret për çdo copë të arsyetimit, on_pergjigje(copa) për përgjigjen.
     Kthen (pergjigja, mendimi)."""
-    if motori() == "claude":
-        import claude_ai
-        return claude_ai.chat_mendo(mesazhet, on_mendim=on_mendim, on_pergjigje=on_pergjigje,
-                                    format_json=format_json,
-                                    effort="low" if format_json else _efforti_sesionit.get())
     import json as _json
     model, mendon = modeli_i_mendimit()
     trupi = {"model": model, "messages": mesazhet, "stream": True, "keep_alive": "30m",

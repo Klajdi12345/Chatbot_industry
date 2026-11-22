@@ -105,19 +105,22 @@ def ruaj():
         DIR / "farmabot.ico", sizes=[(16, 16), (24, 24), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256)])
 
     # logo: ikona + "FarmaBot" ("Bot" me ngjyrë)
+    # logo.png për temën e bardhë, logo_erret.png për temën e zezë
     L = 4
-    logo = Image.new("RGBA", (384 * L, 96 * L), (0, 0, 0, 0))
-    logo.alpha_composite(madhe.resize((80 * L, 80 * L), Image.LANCZOS), (8 * L, 8 * L))
     try:
         shkronja = ImageFont.truetype("C:/Windows/Fonts/segoeuib.ttf", 46 * L)
     except OSError:
         shkronja = ImageFont.load_default(46 * L)
-    d = ImageDraw.Draw(logo)
-    y = 48 * L
-    d.text((104 * L, y), "Farma", font=shkronja, fill=(15, 23, 42, 255), anchor="lm")
-    w = d.textlength("Farma", font=shkronja)
-    d.text((104 * L + w, y), "Bot", font=shkronja, fill=(13, 148, 136, 255), anchor="lm")
-    logo.resize((384, 96), Image.LANCZOS).save(DIR / "logo.png")
+    for emri, farma, bot in (("logo.png", (31, 30, 29, 255), (13, 148, 136, 255)),
+                             ("logo_erret.png", (243, 241, 234, 255), (63, 200, 164, 255))):
+        logo = Image.new("RGBA", (384 * L, 96 * L), (0, 0, 0, 0))
+        logo.alpha_composite(madhe.resize((80 * L, 80 * L), Image.LANCZOS), (8 * L, 8 * L))
+        d = ImageDraw.Draw(logo)
+        y = 48 * L
+        d.text((104 * L, y), "Farma", font=shkronja, fill=farma, anchor="lm")
+        w = d.textlength("Farma", font=shkronja)
+        d.text((104 * L + w, y), "Bot", font=shkronja, fill=bot, anchor="lm")
+        logo.resize((384, 96), Image.LANCZOS).save(DIR / emri)
 
 
 if __name__ == "__main__":

@@ -3,7 +3,6 @@ streamlit>=1.67
 neo4j>=6.4
 requests>=2.34
 python-dotenv>=1.2
-anthropic>=2.12
 pillow>=13.0
 pytest>=9.2
 

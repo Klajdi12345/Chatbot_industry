@@ -13,7 +13,7 @@ import re
 import threading
 from functools import lru_cache
 
-from config import LLM_MODEL, OLLAMA_URL, ROOT, motori
+from config import LLM_MODEL, OLLAMA_URL, ROOT
 
 import requests
 
@@ -66,12 +66,6 @@ def _thirr_modelin(tekst: str, terma: dict | None = None) -> str:
         if prezente:
             sistemi += ("\n- GLOSSARY (mandatory, use these exact English terms):\n"
                         + "\n".join(f"  {sq} = {en}" for sq, en in prezente.items()))
-    if motori() == "claude":
-        import claude_ai
-        try:
-            return claude_ai.chat([{"role": "system", "content": sistemi}, {"role": "user", "content": tekst}])
-        except Exception as e:  # përkthimi dështon → teksti mbetet shqip me shënim
-            raise requests.RequestException(str(e)) from e
     r = requests.post(f"{OLLAMA_URL}/api/chat", json={
         "model": LLM_MODEL, "stream": False, "keep_alive": "30m",
         "messages": [{"role": "system", "content": sistemi}, {"role": "user", "content": tekst}],
@@ -118,19 +112,12 @@ def perkthe_shume(tekste: list[str], madhesia: int = 25) -> list[str]:
         sistemi = (PROMPT + "\n- Input is a JSON list of Albanian strings. "
                    'Return JSON {"en": [...]} with exactly one English translation per item, same order.')
         try:
-            if motori() == "claude":
-                import claude_ai
-                pergjigja = claude_ai.chat([{"role": "system", "content": sistemi + " Return only the JSON."},
-                                            {"role": "user", "content": hyrja}], max_tokens=8000)
-                m = re.search(r"\{.*\}", pergjigja, re.S)
-                dalja = json.loads(m.group(0)).get("en") or [] if m else []
-            else:
-                r = requests.post(f"{OLLAMA_URL}/api/chat", json={
-                    "model": LLM_MODEL, "stream": False, "format": "json", "keep_alive": "30m",
-                    "messages": [{"role": "system", "content": sistemi}, {"role": "user", "content": hyrja}],
-                    "options": {"temperature": 0.1, "num_ctx": 8192, "num_predict": 4096}}, timeout=900)
-                r.raise_for_status()
-                dalja = json.loads(r.json()["message"]["content"]).get("en") or []
+            r = requests.post(f"{OLLAMA_URL}/api/chat", json={
+                "model": LLM_MODEL, "stream": False, "format": "json", "keep_alive": "30m",
+                "messages": [{"role": "system", "content": sistemi}, {"role": "user", "content": hyrja}],
+                "options": {"temperature": 0.1, "num_ctx": 8192, "num_predict": 4096}}, timeout=900)
+            r.raise_for_status()
+            dalja = json.loads(r.json()["message"]["content"]).get("en") or []
         except Exception:
             continue
         if len(dalja) != len(grupi):

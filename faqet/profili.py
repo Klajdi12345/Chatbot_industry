@@ -3,61 +3,64 @@ import streamlit as st
 
 import llogarite
 import perdoruesit as db_p
+from faqet.stili import IKONA
 from faqet.perbashket import gjendjet_nga_db, perdoruesi
+from faqet.teksti import t
 
 
 def faqja():
     llogaria = perdoruesi()
     if not llogaria:
-        st.info("Hyr në llogari për ta parë këtë faqe.")
+        st.info(t("hyr_per_faqen"))
         return
-    st.title("👤 Llogaria ime")
+    st.title("👤 " + t("llogaria_ime"))
     person = db_p.merr_person(llogaria["person_id"]) if llogaria["person_id"] else None
     gjendjet = gjendjet_nga_db()
 
     k1, k2, k3 = st.columns(3)
-    k1.metric("Përdoruesi", llogaria["perdoruesi"])
-    k2.metric("Roli", "Admin" if llogaria["roli"] == "admin" else "Përdorues")
-    k3.metric("Mesazhe të ruajtura", len(db_p.historia(llogaria["person_id"], 10_000)) if person else 0)
+    k1.metric(t("perdoruesi"), llogaria["perdoruesi"])
+    k2.metric(t("roli"), "Admin" if llogaria["roli"] == "admin" else t("perdorues_thjeshte"))
+    k3.metric(t("mesazhe_ruajtura"), len(db_p.historia(llogaria["person_id"], 10_000)) if person else 0)
 
     if person:
-        st.subheader("Profili i ruajtur")
-        st.markdown(f"**Emri:** {person['emer']}  \n**Mosha:** {person['mosha'] if person['mosha'] is not None else '–'}  \n"
-                    f"**Gjendje:** {', '.join(gjendjet.get(g, g) for g in person['gjendjet']) or '–'}  \n"
-                    f"**Alergji / ilaçe të tjera:** {person['shenime'] or '–'}")
-        st.caption("Profilin e ndryshon te paneli majtas i faqes 💬 Biseda, me butonin 💾 Ruaj profilin.")
+        st.subheader(t("profili_ruajtur"))
+        st.markdown(f"**{t('emri')}:** {person['emer']}  \n**{t('mosha')}:** {person['mosha'] if person['mosha'] is not None else '–'}  \n"
+                    f"**{t('gjendje')}:** {', '.join(gjendjet.get(g, g) for g in person['gjendjet']) or '–'}  \n"
+                    f"**{t('alergji_shkurt')}:** {person['shenime'] or '–'}")
+        st.caption(t("ndrysho_profilin"))
 
-        st.subheader("Historia e bisedave")
+        st.subheader(t("historia"))
         historia = db_p.historia(llogaria["person_id"], 200)
         if not historia:
-            st.info("Nuk ke ende biseda të ruajtura.")
+            st.info(t("pa_histori"))
         for m in historia:
-            with st.chat_message(m["role"]):
+            with st.chat_message(m["role"], avatar=IKONA if m["role"] == "assistant" else None):
                 st.caption(m["ora"][:16].replace("T", " "))
                 st.markdown(m["content"])
 
-    st.subheader("🔑 Ndrysho fjalëkalimin")
+    st.subheader(t("ndrysho_fj"))
     with st.form("fjalekalimi", clear_on_submit=True):
-        aktual = st.text_input("Fjalëkalimi aktual", type="password")
-        i_ri = st.text_input("Fjalëkalimi i ri (min. 8 karaktere)", type="password")
-        perserit = st.text_input("Përsërit fjalëkalimin e ri", type="password")
-        if st.form_submit_button("Ndrysho"):
+        aktual = st.text_input(t("fj_aktual"), type="password")
+        i_ri = st.text_input(t("fj_ri"), type="password")
+        perserit = st.text_input(t("fj_perserit"), type="password")
+        if st.form_submit_button(t("ndrysho")):
             if not llogarite.hyr(llogaria["perdoruesi"], aktual):
-                st.error("Fjalëkalimi aktual nuk është i saktë.")
+                st.error(t("fj_gabim"))
             elif i_ri != perserit:
-                st.error("Fjalëkalimet e reja nuk përputhen.")
+                st.error(t("fj_nuk_perputhen"))
             else:
                 try:
                     llogarite.ndrysho_fjalekalimin(llogaria["perdoruesi"], i_ri)
-                    st.success("Fjalëkalimi u ndryshua.")
+                    st.success(t("fj_ndryshoi"))
                 except ValueError as e:
                     st.error(str(e))
 
     if llogaria["roli"] != "admin":
-        st.subheader("🗑️ Fshi llogarinë dhe të dhënat")
-        st.caption("Fshihen llogaria, profili dhe të gjitha bisedat e tua. Kjo nuk kthehet pas.")
-        if st.checkbox("E kuptoj, dua t'i fshij të gjitha të dhënat e mia"):
-            if st.button("Fshi përgjithmonë", type="primary"):
+        st.subheader(t("fshi_titull"))
+        st.caption(t("fshi_shenim"))
+        if st.checkbox(t("fshi_konfirmo")):
+            if st.button(t("fshi_btn"), type="primary"):
                 llogarite.fshi_llogari(llogaria["perdoruesi"])
-                st.session_state.clear()
+                for k in [k for k in st.session_state if k not in ("paneli_hapur", "gjuha", "tema")]:
+                    del st.session_state[k]
                 st.rerun()

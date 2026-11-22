@@ -1,16 +1,19 @@
-"""Faqja e bisedës, e njëjtë për përdoruesit, adminët dhe vizitorët anonimë."""
+"""Faqja e bisedës (në stilin e Claude.ai), e njëjtë për përdoruesit, adminët dhe vizitorët anonimë.
+
+Paneli anësor ka seksione që hapen e mbyllen (Profili, Gjendjet, Cilësimet); gjendja e tyre mbahet
+gjatë sesionit. I gjithë paneli hapet/mbyllet me ☰ sipër."""
+import base64
 import os
 import time
 
 import streamlit as st
 
-import claude_ai
-import config
 import perdoruesit as db_p
 from chatbot import Konteksti, Profili, gjuha_e_bisedes, pergjigju
-from faqet.stili import IKONA, stili_motorit
 from faqet.perbashket import (AUTOMATIKE, apliko_ne_pritje, gjendjet_nga_db, perdoruesi,
                               shfaq_kartat, vendos_me_vone)
+from faqet.stili import IKONA
+from faqet.teksti import pershendetja, t
 
 
 def _ngarko_profilin(pid: str | None, gjendjet: dict[str, str]):
@@ -27,29 +30,25 @@ def _ngarko_profilin(pid: str | None, gjendjet: dict[str, str]):
     st.session_state._kopje_profili = {}
 
 
-SHEMBUJ = [("🦷", "Më dhemb dhëmbi"), ("🤒", "Kam temperaturë dhe grip"),
-           ("🤧", "Teshtij shumë dhe më lotojnë sytë"), ("🔥", "Më djeg stomaku pas ngrënies")]
+def _avatar(roli: str) -> str | None:
+    return IKONA if roli == "assistant" else None  # përdoruesi: flluskë pa avatar (si te Claude)
 
 
-def _avatar(roli: str) -> str:
-    return IKONA if roli == "assistant" else "🧑"
-
-
-def _kohezgjatja(sekonda: float, gjuha: str = "sq") -> str:
+def _kohezgjatja(sekonda: float, gj: str = "sq") -> str:
     if sekonda < 60:
-        if gjuha == "en":
+        if gj == "en":
             return f"{sekonda:.0f} seconds" if sekonda >= 2 else "1 second"
         return f"{sekonda:.0f} sekonda" if sekonda >= 2 else "1 sekondë"
     return f"{int(sekonda // 60)} min {int(sekonda % 60)} s"
 
 
 def _titulli_mendimit(p) -> str:
-    gjuha = getattr(p, "gjuha", "sq")
-    return ("🧠 Thought for " if gjuha == "en" else "🧠 Mendoi për ") + _kohezgjatja(p.sekonda, gjuha)
+    gj = getattr(p, "gjuha", "sq")
+    return ("🧠 Thought for " if gj == "en" else "🧠 Mendoi për ") + _kohezgjatja(p.sekonda, gj)
 
 
 def _shfaq_mendimin(p):
-    """Paneli i mbyllur "🧠 Mendoi për ..." mbi përgjigje (si te Claude)."""
+    """Paneli i mbyllur "🧠 Mendoi për ..." mbi përgjigje."""
     if not p or not getattr(p, "hapat", None):
         return
     with st.expander(_titulli_mendimit(p)):
@@ -59,61 +58,80 @@ def _shfaq_mendimin(p):
             st.text(p.mendimi_modelit[-4000:])
 
 
-MOTORET = {"claude": "✨ Claude AI", "ollama": "💻 Lokal (Ollama)"}
-NIVELET = {"low": "⚡ I shpejtë", "medium": "⚖️ I balancuar", "high": "🎯 Më i saktë"}
-
-
-def _paneli_motorit() -> str:
-    """Zgjedhja e motorit gjuhësor për këtë sesion (Claude ose modeli lokal)."""
-    ka_claude = claude_ai.ka_kredenciale()
-    st.session_state.setdefault("motori", config.motori_parazgjedhur())
-    with st.expander("🤖 Motori AI", expanded=False):
-        st.radio("Motori", list(MOTORET), format_func=MOTORET.get, key="motori", horizontal=True,
-                 label_visibility="collapsed")
-        if st.session_state.motori == "claude":
-            if not ka_claude:
-                st.warning("Mungon `ANTHROPIC_API_KEY` te `.env`. Shto çelësin dhe rinise aplikacionin.")
-            st.session_state.setdefault("efforti", claude_ai.EFFORT if claude_ai.EFFORT in NIVELET else "medium")
-            st.select_slider("Përpjekja e mendimit", list(NIVELET), format_func=NIVELET.get, key="efforti",
-                             help="Sa thellë mendon Claude te “🧠 Mendo më thellë”. Më i saktë = më i ngadaltë.")
-            st.caption(f"Modeli: `{claude_ai.MODEL}` · 📷 mund të dërgosh edhe foto të ilaçit. "
-                       "Mesazhet dërgohen te Anthropic: mos shkruaj emra ose të dhëna që të identifikojnë.")
-        else:
-            st.caption(f"Modeli lokal: `{config.LLM_MODEL}`. Asgjë nuk del nga kompjuteri.")
-    motori = st.session_state.motori
-    if motori == "claude" and not ka_claude:
-        motori = "ollama"
-    config.vendos_motorin(motori, st.session_state.get("efforti"))
-    return motori
-
-
 def _eksporto(mesazhet: list[dict]) -> str:
-    rreshta = ["# Biseda me FarmaBot", "", f"_{time.strftime('%Y-%m-%d %H:%M')}_", ""]
+    rreshta = ["# FarmaBot", "", f"_{time.strftime('%Y-%m-%d %H:%M')}_", ""]
     for m in mesazhet:
-        rreshta += [f"**{'Ti' if m['role'] == 'user' else 'FarmaBot'}:**", "", m["content"], ""]
-    rreshta.append("_Informacion i përgjithshëm, jo zëvendësim i mjekut ose farmacistit._")
+        rreshta += [f"**{t('ti') if m['role'] == 'user' else 'FarmaBot'}:**", "", m["content"], ""]
     return "\n".join(rreshta)
 
 
-def _pyetja_nga_foto(foto, tekst: str, en: bool) -> tuple[str, str]:
-    """Claude Vision lexon foton; emrat e lexuar i shtohen pyetjes, që baza të gjejë ilaçin
-    dhe të kontrollojë profilin (dozat vijnë gjithmonë nga databaza)."""
-    lloji = foto.type or claude_ai.LLOJET_FOTO.get(foto.name.rsplit(".", 1)[-1].lower(), "image/jpeg")
-    d = claude_ai.lexo_foton(foto.getvalue(), lloji, tekst)
-    emrat = list(dict.fromkeys(d["emrat_tregtare"] + d["lende_aktive"]))
-    if not d["eshte_ilac"] or not emrat:
-        shenim = d["pershkrim"] or ("I could not read a medicine in the photo." if en
-                                    else "Nuk lexova dot një ilaç në foto.")
-        return tekst, shenim
-    forca = f" {d['forca']}" if d["forca"] else ""
-    shenim = ("📷 In the photo: " if en else "📷 Në foto: ") + ", ".join(emrat) + forca
-    if tekst:
-        pyetja = tekst if any(e.lower() in tekst.lower() for e in emrat) else f"{tekst} ({', '.join(emrat)})"
-    elif en:
-        pyetja = f"What is {' / '.join(emrat)} and how do I take it?"
-    else:
-        pyetja = f"Çfarë është {' / '.join(emrat)} dhe si merret?"
-    return pyetja, shenim
+def _bisede_e_re():
+    st.session_state.mesazhet = []
+    st.session_state.simptomat = []
+    st.session_state.barnat_e_fundit = []
+    st.session_state.pritje, st.session_state.pritje_shto = [], False
+
+
+def _seksion(emri: str, titulli: str, hapur: bool = True):
+    """Seksion i panelit që hapet/mbyllet dhe e mban gjendjen gjatë sesionit."""
+    celesi = f"seksioni_{emri}"
+    st.session_state.setdefault(celesi, hapur)
+    return st.expander(titulli, key=celesi, on_change="rerun")
+
+
+def _paneli(gjendjet: dict[str, str], pid: str | None) -> tuple[Profili, set]:
+    with st.sidebar:
+        st.button(t("biseda_re"), width="stretch", type="primary", on_click=_bisede_e_re, help=t("biseda_re_help"))
+
+        with _seksion("profili", f"🩺 {t('profili')}"):
+            if not pid:
+                st.caption(t("pa_llogari_shenim"))
+            mosha = st.number_input(t("mosha"), min_value=0, max_value=110, step=1, key="mosha",
+                                    placeholder=t("mosha_ph"))
+            shenime = st.text_area(t("alergji"), key="shenime", placeholder=t("alergji_ph"))
+
+        zgjedhura = set()
+        with _seksion("gjendjet", f"💊 {t('gjendjet')}", hapur=False):
+            for gid, emer in gjendjet.items():
+                if gid not in AUTOMATIKE and st.checkbox(emer, key=f"gj_{gid}"):
+                    zgjedhura.add(gid)
+
+        with _seksion("cilesimet", f"⚙️ {t('cilesimet')}", hapur=False):
+            st.session_state.setdefault("mendo", os.getenv("FARMABOT_MENDO", "1") != "0")
+            st.toggle(t("mendo"), key="mendo", help=t("mendo_help"))
+            if st.session_state.mesazhet:
+                st.download_button(t("shkarko"), _eksporto(st.session_state.mesazhet),
+                                   file_name=f"farmabot_{time.strftime('%Y%m%d_%H%M')}.md", mime="text/markdown",
+                                   width="stretch")
+
+        st.session_state._kopje_profili = {
+            "mosha": mosha, "shenime": shenime,
+            **{f"gj_{gid}": gid in zgjedhura for gid in gjendjet if gid not in AUTOMATIKE}}
+        if pid and st.button(t("ruaj_profilin"), width="stretch"):
+            db_p.perditeso_person(pid, mosha=int(mosha) if mosha is not None else None,
+                                  gjendjet=zgjedhura, shenime=shenime)
+            st.toast(t("profili_u_ruajt"))
+    profili = Profili(mosha=int(mosha) if mosha is not None else None,
+                      gjendjet=zgjedhura, shenime=(shenime or "").strip())
+    return profili, zgjedhura
+
+
+def _pershendetja(llogaria: dict | None):
+    """Ekrani bosh: përshëndetje e madhe në mes dhe shembuj (si faqja e re te Claude.ai)."""
+    emri = ""
+    if llogaria and llogaria.get("person_id"):
+        person = db_p.merr_person(llogaria["person_id"])
+        emri = ((person or {}).get("emer") or llogaria["perdoruesi"]).split()[0]
+    ikona = base64.b64encode(open(IKONA, "rb").read()).decode()
+    teksti = f"{pershendetja()}, {emri}" if emri else t("si_ndihesh")
+    st.markdown(f'<div class="fb-pershendetje"><img src="data:image/png;base64,{ikona}" alt="">'
+                f'<span>{teksti}</span><p>{t("paralajmerim")}</p></div>', unsafe_allow_html=True)
+    shembujt = t("shembuj")
+    kolonat = st.columns(2)
+    for i, (ikona_sh, tekst) in enumerate(shembujt):
+        if kolonat[i % 2].button(f"{ikona_sh} {tekst}", width="stretch", key=f"shembull_{i}"):
+            st.session_state._shembull = tekst
+            st.rerun()
 
 
 def faqja():
@@ -135,56 +153,17 @@ def faqja():
         st.session_state.setdefault(k, v)
     apliko_ne_pritje()
 
-    with st.sidebar:
-        st.header("🩺 Profili")
-        if not pid:
-            st.caption("Je pa llogari: asgjë nuk ruhet. Hyr ose regjistrohu për ta ruajtur profilin.")
-        mosha = st.number_input("Mosha", min_value=0, max_value=110, step=1, key="mosha",
-                                placeholder="p.sh. 30")
-        zgjedhura = set()
-        with st.expander("Gjendje dhe ilaçe që merr", expanded=True):
-            for gid, emer in gjendjet.items():
-                if gid not in AUTOMATIKE and st.checkbox(emer, key=f"gj_{gid}"):
-                    zgjedhura.add(gid)
-        st.session_state.setdefault("mendo", os.getenv("FARMABOT_MENDO", "1") != "0")
-        st.toggle("🧠 Mendo më thellë", key="mendo",
-                  help="Bota e rilexon mesazhin me një model që mendon (si Claude), e kontrollon në bazë "
-                       "dhe të tregon hapat. Zgjat nga disa sekonda deri në 1–2 minuta. "
-                       "Urgjencat përgjigjen gjithmonë menjëherë.")
-        shenime = st.text_area("Alergji ose ilaçe të tjera", key="shenime",
-                               placeholder="p.sh. alergji nga penicilina")
-        st.session_state._kopje_profili = {
-            "mosha": mosha, "shenime": shenime,
-            **{f"gj_{gid}": gid in zgjedhura for gid in gjendjet if gid not in AUTOMATIKE}}
-        motori = _paneli_motorit()
-        if pid and st.button("💾 Ruaj profilin", width="stretch"):
-            db_p.perditeso_person(pid, mosha=int(mosha) if mosha is not None else None,
-                                  gjendjet=zgjedhura, shenime=shenime)
-            st.toast("Profili u ruajt.")
-        if st.button("🆕 Bisedë e re", width="stretch",
-                     help="Fillon nga e para. Nuk është e nevojshme: mund të vazhdosh me një temë tjetër në të njëjtën bisedë."):
-            st.session_state.mesazhet = []
-            st.session_state.simptomat = []
-            st.session_state.barnat_e_fundit = []
-            st.session_state.pritje, st.session_state.pritje_shto = [], False
-            st.rerun()
-        if st.session_state.mesazhet:
-            st.download_button("⬇️ Shkarko bisedën", _eksporto(st.session_state.mesazhet),
-                               file_name=f"farmabot_{time.strftime('%Y%m%d_%H%M')}.md", mime="text/markdown",
-                               width="stretch")
+    profili, _ = _paneli(gjendjet, pid)
+    st.markdown('<div class="fb-biseda"></div>', unsafe_allow_html=True)  # kolonë e ngushtë në mes
 
-    profili = Profili(mosha=int(mosha) if mosha is not None else None,
-                      gjendjet=zgjedhura, shenime=(shenime or "").strip())
-
-    st.markdown(f'## Si ndihesh sot? {stili_motorit(config.emri_motorit(), motori)}', unsafe_allow_html=True)
-    st.caption("ℹ️ Informacion i përgjithshëm për ilaçe pa recetë, jo zëvendësim i mjekut ose farmacistit. "
-               "Në urgjencë telefono **127** ose **112**.")
+    if not st.session_state.mesazhet:
+        _pershendetja(llogaria)
+    else:
+        st.caption("ℹ️ " + t("shenim_mjeku"))
 
     for m in st.session_state.mesazhet:
         with st.chat_message(m["role"], avatar=_avatar(m["role"])):
             _shfaq_mendimin(m.get("pergjigje"))
-            if m.get("foto"):
-                st.image(m["foto"], width=220)
             if m.get("urgjence"):
                 st.error(m["content"])
             else:
@@ -192,46 +171,13 @@ def faqja():
             if m.get("pergjigje"):
                 shfaq_kartat(m["pergjigje"])
 
-    if not st.session_state.mesazhet:
-        st.markdown("Shkruaj simptomat poshtë, ose provo një nga këto:")
-        kolonat = st.columns(len(SHEMBUJ))
-        for kol, (ikona, tekst) in zip(kolonat, SHEMBUJ):
-            if kol.button(f"{ikona} {tekst}", width="stretch"):
-                st.session_state._shembull = tekst
-                st.rerun()
-
-    me_foto = motori == "claude"
-    hyrja = st.chat_input("Përshkruaj simptomat, p.sh. “më dhemb koka prej dy ditësh”"
-                          + (" · 📎 ose dërgo foton e ilaçit" if me_foto else "") + " · You can also write in English",
-                          accept_file=me_foto, file_type=list(claude_ai.LLOJET_FOTO) if me_foto else None)
-    foto = None
-    if hyrja is not None and not isinstance(hyrja, str):
-        foto = hyrja.files[0] if hyrja.files else None
-        hyrja = (hyrja.text or "").strip()
-    pyetja = hyrja or st.session_state.pop("_shembull", None) or ""
-    if not pyetja and not foto:
+    pyetja = st.chat_input(t("fusha"))
+    pyetja = pyetja or st.session_state.pop("_shembull", None)
+    if not pyetja:
         return
     with st.chat_message("user", avatar=_avatar("user")):
-        if foto:
-            st.image(foto.getvalue(), width=220)
-        if pyetja:
-            st.markdown(pyetja)
+        st.markdown(pyetja)
     historia = [{"role": m["role"], "content": m["content"]} for m in st.session_state.mesazhet]
-    shenim_foto = ""
-    if foto:
-        with st.spinner("📷 Claude po lexon foton..."):
-            try:
-                en_foto = bool(pyetja) and gjuha_e_bisedes(pyetja, historia) == "en"
-                pyetja, shenim_foto = _pyetja_nga_foto(foto, pyetja, en_foto)
-            except Exception as e:
-                st.error(f"Nuk e lexova dot foton: {e}")
-                st.stop()
-        if not pyetja:
-            with st.chat_message("assistant", avatar=_avatar("assistant")):
-                st.markdown(shenim_foto)
-            st.session_state.mesazhet.append({"role": "user", "content": "(foto)", "foto": foto.getvalue()})
-            st.session_state.mesazhet.append({"role": "assistant", "content": shenim_foto})
-            return
     with st.chat_message("assistant", avatar=_avatar("assistant")):
         mendo = bool(st.session_state.get("mendo"))
         en = gjuha_e_bisedes(pyetja, historia) == "en"
@@ -260,21 +206,17 @@ def faqja():
             p = pergjigju(pyetja, historia, profili, konteksti=konteksti, mendo=mendo,
                           on_hap=on_hap, on_mendim=on_mendim)
         except Exception as e:
-            statusi.update(label="An error occurred" if en else "Ndodhi një gabim", state="error")
-            st.error(f"Ndodhi një gabim: {e}\n\nKontrollo që Neo4j dhe Ollama (embeddings) janë ndezur"
-                     + (" dhe që çelësi i Claude është i saktë." if motori == "claude" else "."))
+            statusi.update(label=t("gabim"), state="error")
+            st.error(f"{t('gabim')}: {e}\n\n{t('gabim_sherbime')}")
             st.stop()
         vendi_mendimit.empty()
         statusi.update(label=_titulli_mendimit(p), state="complete", expanded=False)
-        if shenim_foto:
-            st.caption(shenim_foto)
         if p.urgjence:
             st.error(p.tekst)
         else:
             st.markdown(p.tekst)
         shfaq_kartat(p)
-    st.session_state.mesazhet.append({"role": "user", "content": pyetja,
-                                      **({"foto": foto.getvalue()} if foto else {})})
+    st.session_state.mesazhet.append({"role": "user", "content": pyetja})
     st.session_state.mesazhet.append({"role": "assistant", "content": p.tekst,
                                       "urgjence": p.urgjence, "pergjigje": p})
     # Konteksti i bisedës: biseda vazhdon pa u rinisur (pyetje vijuese, "kam edhe...", përgjigje sqaruese).
@@ -300,3 +242,5 @@ def faqja():
         if p.mosha_e_re is not None:
             vendos_me_vone(mosha=p.mosha_e_re)
         st.rerun()
+    elif len(st.session_state.mesazhet) == 2:
+        st.rerun()  # largon përshëndetjen e ekranit bosh pas mesazhit të parë

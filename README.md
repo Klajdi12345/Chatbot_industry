@@ -1,43 +1,27 @@
 <p align="center"><img src="assets/ikona.png" width="120" alt="FarmaBot"></p>
 
-# FarmaBot: chatbot farmacie (GraphRAG + Claude AI)
+# FarmaBot: chatbot farmacie (GraphRAG lokal)
 
 Personi shkruan simptomat në shqip ose anglisht (p.sh. *"më dhemb dhëmbi"*) dhe chatbot-i sugjeron ilaçe pa recetë.
 Ai heq barnat që nuk janë të sigurta për profilin e personit (moshë, shtatzëni, ulçerë, barna që merr...)
 dhe tregon kur duhet shkuar te mjeku.
 
-## ✨ Claude AI
+## 🎨 Ndërfaqja
 
-FarmaBot mund të përdorë **Claude** (Anthropic) si motor gjuhësor, ose modelin lokal të Ollama-s.
-Zgjedhja bëhet te paneli majtas → **🤖 Motori AI** (për sesionin), ose te `.env` me `LLM_PROVIDER`.
+Pamje në stilin e Claude.ai: kolonë bisede në mes, përshëndetje e madhe kur biseda është bosh,
+flluska djathtas për mesazhet e tua, përgjigjet pa kornizë dhe fusha e shkrimit e rrumbullakët poshtë.
 
-| Veçoria | Si funksionon |
-|---|---|
-| 🧠 **Mendim i thellë** | *Adaptive thinking*: Claude vendos vetë sa të mendojë; arsyetimi i përmbledhur shfaqet live dhe mbyllet si *"🧠 Mendoi për 6 sekonda"* |
-| ⚖️ **Përpjekja** | ⚡ i shpejtë / ⚖️ i balancuar / 🎯 më i saktë (`effort`: low / medium / high) |
-| 📷 **Foto e ilaçit** | Dërgo foton e kutisë ose të fletëudhëzuesit (📎 te fusha e mesazhit). Claude lexon emrin dhe lëndën aktive; **baza** gjen ilaçin, kontrollon profilin dhe jep dozat |
-| 🌐 **Përkthimi** | Përgjigjet në anglisht përkthehen nga Claude, me të njëjtin kontroll numrash |
-| ⬇️ **Shkarko bisedën** | Biseda ruhet si skedar Markdown |
-| 💸 **Prompt caching** | Promptet e sistemit ruhen në cache: më shpejt dhe më lirë |
-| 🛟 **Fallback** | Nëse modeli refuzon një kërkesë, serveri e rikalon te një model tjetër (`fallbacks: "default"`) |
+| Kontrolli | Ku | Çfarë bën |
+|---|---|---|
+| ☰ | sipër majtas | hap / mbyll panelin anësor |
+| **SQ / EN** | sipër djathtas | gjuha e ndërfaqes (shqip / anglisht) |
+| **☀️ E bardhë / 🌙 E zezë** | sipër djathtas | tema |
+| 🩺 Profili · 💊 Gjendjet · ⚙️ Cilësimet | paneli anësor | seksione që hapen e mbyllen; gjendja mbahet gjatë sesionit |
 
-**Siguria nuk i kalon Claude-it:** urgjencat, filtrimi i barnave sipas profilit dhe dozat vijnë gjithmonë nga
-rregullat dhe nga Neo4j. Embeddings (bge-m3) mbeten lokale, prandaj Ollama duhet të jetë ndezur edhe me Claude.
-
-**Privatësia:** me Claude, mesazhet (pa emrin e llogarisë) dërgohen te Anthropic. Për të dhëna shumë të ndjeshme
-përdor 💻 *Lokal (Ollama)*, ku asgjë nuk del nga kompjuteri.
-
-Konfigurimi (`.env`, shiko `.env.example`):
-
-```
-ANTHROPIC_API_KEY=sk-ant-...     # https://console.anthropic.com → API Keys
-LLM_PROVIDER=auto                # auto = Claude kur ka çelës, përndryshe Ollama
-CLAUDE_MODEL=claude-opus-5-5
-CLAUDE_EFFORT=medium
-```
-
-Kodi: `claude_ai.py` (klienti, streaming, vision) dhe `config.py` (`chat`, `chat_mendo` zgjedhin motorin).
-Ikona rikrijohet me `python assets/krijo_ikonen.py` (ikonat e vjetra: `assets/vjeter/`).
+Gjuha dhe tema ruhen në URL (`?gjuha=en&tema=dark`), prandaj mbeten edhe pas rifreskimit.
+Bota i përgjigjet gjithmonë në gjuhën që shkruan (shqip → shqip, anglisht → anglisht).
+Tekstet e ndërfaqes janë te `faqet/teksti.py`, ngjyrat e dy temave te `faqet/stili.py` (`TEMAT`).
+Ikona dhe logot (`logo.png`, `logo_erret.png`) rikrijohen me `python assets/krijo_ikonen.py`.
 
 ## Instalimi nga GitHub
 
@@ -46,7 +30,7 @@ git clone <url-i-repos> chatbot_industri
 cd chatbot_industri
 python -m venv venv_chatbot
 venv_chatbot\Scripts\pip install -r requirements.txt
-copy .env.example .env           # plotëso fjalëkalimet dhe çelësin e Claude
+copy .env.example .env           # plotëso fjalëkalimet
 ollama pull bge-m3 && ollama pull gemma3:4b
 python ngarko_grafin.py          # ngarkon bazën e njohurive në Neo4j
 streamlit run app.py
@@ -63,7 +47,7 @@ mesazhi ──► 1. Kontroll urgjence (rregulla)  ──► "Telefono 127/112"
                barnat e kundërindikuara për profilin hiqen në Cypher
         ──► 4. Përgjigje standarde nga databaza + kartat me doza
         ──► 5. Pyetje vijuese (doza, alternativa, këshilla, mjeku, info) → nga databaza
-        ──► 6. Pyetje e lirë → LLM (Claude ose Ollama) me kontekstin nga grafi (dozat me numra filtrohen)
+        ──► 6. Pyetje e lirë → LLM (Ollama) me kontekstin nga grafi (dozat me numra filtrohen)
 ```
 
 ### 🧠 Mendim i thellë dhe shqipja e folur

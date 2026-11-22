@@ -10,13 +10,14 @@ import llogarite
 import perdoruesit as db_p
 from config import ROOT, menyra_lidhjes, query
 from faqet.perbashket import gjendjet_nga_db, perdoruesi
+from faqet.teksti import t
 
 SKEDARI_NJOHURIVE = ROOT / "data" / "njohurite.json"
 
 
 # ---------------------------------------------------------------- 📊 Përmbledhje
 def permbledhje():
-    st.title("📊 Përmbledhje")
+    st.title("📊 " + t("permbledhje"))
     st.caption(f"Databaza: Neo4j Aura · lidhja: **{menyra_lidhjes().upper()}**")
     n = query("""
         CALL () { MATCH (l:Llogari) RETURN count(l) AS llogari }
@@ -52,7 +53,7 @@ def permbledhje():
 
 # ---------------------------------------------------------------- 👥 Përdoruesit
 def perdoruesit_faqe():
-    st.title("👥 Përdoruesit")
+    st.title("👥 " + t("perdoruesit"))
     unë = perdoruesi()["perdoruesi"]
     llogarite_lista = llogarite.lista_llogarive()
     st.dataframe([{"Përdoruesi": l["perdoruesi"], "Roli": l["roli"], "Emri": l["emer"], "Mosha": l["mosha"],
@@ -156,7 +157,7 @@ def _ruaj_ne_json(perditesime: dict[str, dict] | None = None, i_ri: dict | None 
 
 
 def barnat_faqe():
-    st.title("💊 Ilaçet")
+    st.title("💊 " + t("ilacet"))
     st.caption("Ndryshimet ruhen menjëherë në Neo4j dhe te data/njohurite.json. "
                "Para përdorimit real, çdo ndryshim duhet ta kontrollojë një farmacist.")
     barnat = query("MATCH (b:Barna) OPTIONAL MATCH (s:Simptome)-[:TRAJTOHET_ME]->(b) "
