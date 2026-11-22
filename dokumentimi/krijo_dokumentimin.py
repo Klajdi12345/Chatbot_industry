@@ -372,7 +372,7 @@ for _ in range(5):
     doc.add_paragraph()
 p("FarmaBot", stil="Title")
 p("Dokumentimi i plotë teknik", size=18, ngjyra=GRI)
-p("Asistent farmacie në shqip · GraphRAG lokal me Neo4j dhe Ollama", size=13, ngjyra=GRI)
+p("Asistent farmacie në shqip dhe anglisht · GraphRAG lokal me Neo4j dhe Ollama · ndërfaqe web", size=13, ngjyra=GRI)
 doc.add_paragraph()
 p("Si lidhet me databazën, si funksionon çdo skedar dhe çdo funksion kryesor, me shembuj kodi dhe "
   "shembuj realë bisede. I shkruar për ta mësuar sistemin hap pas hapi.", size=12)
@@ -403,8 +403,9 @@ for t in ["e kupton mesazhin, edhe në gegërisht, pa ë/ç ose në anglisht;",
           "tregon dozat nga databaza, këshillat dhe kur duhet mjeku;",
           "në urgjencë (dhimbje gjoksi, vështirësi në frymëmarrje...) ndalon dhe thotë **127 / 112**."]:
     pika(t)
-p("Gjithçka punon lokalisht në kompjuter: databaza Neo4j, modelet gjuhësore (Ollama) dhe ndërfaqja web (Streamlit). "
-  "Asnjë e dhënë shëndetësore nuk dërgohet jashtë.")
+p("Gjithçka punon lokalisht në kompjuter: databaza Neo4j, modelet gjuhësore (Ollama) dhe ndërfaqja web "
+  "(FarmaBot Web, në stilin e ChatGPT / Claude). Asnjë e dhënë shëndetësore nuk dërgohet jashtë. I vetmi shërbim "
+  "i jashtëm është Gmail-i, vetëm për email-et e rivendosjes së fjalëkalimit.")
 shenim("**Parimi kryesor:** vendimet që mund të dëmtojnë (urgjencat, cilat ilaçe lejohen, dozat) i marrin rregullat "
        "dhe databaza. Modeli gjuhësor ndihmon të kuptohet mesazhi dhe të shkruhet përgjigjja, por nuk zgjedh ilaçe "
        "dhe nuk shkruan doza.")
@@ -414,16 +415,21 @@ for t in ["Kapitulli 2: arkitektura, për pamjen e përgjithshme.",
           "Kapitulli 3: lidhja me databazën, hap pas hapi (.env, config.py, bolt/https/auto, lokal/Aura, backup).",
           "Kapitulli 4: struktura e grafit dhe query-t Cypher.",
           "Kapitujt 5–9: si përpunohet një mesazh: rrjedha, fjalori shqip, anglishtja, mendimi i thellë, datasetet.",
-          "Kapitulli 10: siguria. Kapitulli 11: llogaritë.",
-          "Kapitulli 12: çdo skedar dhe çdo funksion (çfarë bën, çfarë merr, çfarë kthen).",
-          "Kapitulli 13: shembuj realë bisede. Kapitujt 14–16: testet, nisja dhe problemet e shpeshta."]:
+          "Kapitulli 10: siguria. Kapitulli 11: llogaritë, email-i dhe rivendosja e fjalëkalimit.",
+          "Kapitulli 12: ndërfaqja web (pamjet, tema, gjuha, bisedat, API).",
+          "Kapitulli 13: çdo skedar dhe çdo funksion (çfarë bën, çfarë merr, çfarë kthen).",
+          "Kapitulli 14: shembuj realë bisede. Kapitujt 15–17: testet, nisja dhe problemet e shpeshta.",
+          "Kapitulli 18: historiku i ndryshimeve (çfarë u shtua në çdo version)."]:
     pika(t)
 
 # ================================================================ 2. ARKITEKTURA
 rinis_numrat(); doc.add_heading("2. Arkitektura", 1)
 figure("slajdi_03.png", "Figura 1. Pjesët e sistemit dhe si komunikojnë")
 tabele(["Pjesa", "Roli", "Ku ndodhet"], [
-    ["Streamlit", "Ndërfaqja web: hyrja, biseda, paneli i profilit, paneli i adminit", "app.py, faqet/"],
+    ["FarmaBot Web", "Ndërfaqja: hyrja, bisedat, cilësimet, paneli i adminit (HTML/CSS/JS pa librari)", "web/static/"],
+    ["Serveri (API)", "Starlette + Uvicorn: sesionet, llogaritë, bisedat, përgjigjet live", "web/server.py, web/admin.py"],
+    ["bisedat.py", "Bisedat e ruajtura (shumë për çdo përdorues) me kartat dhe kontekstin", "bisedat.py"],
+    ["emaili.py", "Email-et e rivendosjes së fjalëkalimit (SMTP, Gmail)", "emaili.py, .env"],
     ["chatbot.py", "Logjika: urgjenca, profili, kërkimi, filtrimi, përgjigjja, mendimi", "chatbot.py"],
     ["gjuha.py", "Shqipja e folur → standard; zbulimi i anglishtes; anglisht → shqip", "gjuha.py, data/fjalori_*.json"],
     ["perkthimi.py", "Përkthimi i përgjigjes në anglisht me kontroll numrash", "perkthimi.py"],
@@ -431,7 +437,8 @@ tabele(["Pjesa", "Roli", "Ku ndodhet"], [
     ["Ollama", "bge-m3 (embeddings), qwen3:8b (mendimi), gemma3:4b (përkthimi, pyetjet e lira)", "porti 11434"],
     ["Të dhënat", "Baza e njohurive, fjalorët, datasetet e shkarkuara", "data/"],
 ], [3.0, 8.6, 5.0], kod_kolona=(0,))
-p("Teknologjitë: Python 3.12, Streamlit, Neo4j 2026 (Community, lokal), drajveri zyrtar `neo4j` për Python, "
+p("Teknologjitë: Python 3.12, Starlette + Uvicorn (serveri web), HTML/CSS/JavaScript pa librari të jashtme, "
+  "Neo4j 2026 (Community, lokal), drajveri zyrtar `neo4j` për Python, "
   "`requests` për Ollama dhe Query API, `python-dotenv` për .env, `pytest` për testet.")
 
 # ================================================================ 3. LIDHJA ME DATABAZËN
@@ -481,7 +488,7 @@ p("Vendimi merret **një herë për proces** nga `menyra_lidhjes()` (me `lru_cac
 kod(funksioni("config.py", "_bolt_punon") + "\n\n\n" + funksioni("config.py", "menyra_lidhjes"))
 
 rinis_numrat(); doc.add_heading("3.4 Hapi 4: query(), funksioni që përdor gjithë kodi", 2)
-p("I gjithë kodi (chatbot.py, perdoruesit.py, llogarite.py, backup.py, faqet/) thërret vetëm `query()`. "
+p("I gjithë kodi (chatbot.py, perdoruesit.py, bisedat.py, llogarite.py, backup.py, web/) thërret vetëm `query()`. "
   "Ai kthen gjithmonë një listë me dict, njësoj për Bolt dhe HTTPS, kështu që pjesa tjetër e kodit nuk e di "
   "si është lidhur:")
 kod(funksioni("config.py", "query"))
@@ -709,29 +716,121 @@ tabele(["Mbrojtja", "Ku", "Çfarë garanton"], [
     ["Urgjencat me rregulla", "kontrollo_urgjencen()", "Dhimbje gjoksi, frymëmarrje, anafilaksi, të fikët, insult, gjakderdhje, mbidozë, "
      "foshnjë me temperaturë, vetëdëmtim → 127/112, para çdo modeli, edhe gegërisht/anglisht"],
     ["Filtrim në Cypher", "merr_barnat()", "Ilaçet e kundërindikuara nuk arrijnë te teksti ose te modeli"],
-    ["Dozat nga databaza", "kartat (stili.karta_ilaci)", "Doza, maksimumi dhe kohëzgjatja lexohen nga JSON-i"],
+    ["Dozat nga databaza", "kartat (app.js · htmlKartat)", "Doza, maksimumi dhe kohëzgjatja lexohen nga databaza"],
     ["Pa doza nga modeli", "pastro_dozat()", "Rreshtat me doza numerike në tekstin e modelit zëvendësohen me referencë te kartat"],
     ["Kontroll numrash", "perkthimi.numrat_perputhen()", "Përkthimi nuk ndryshon dot një dozë pa u refuzuar"],
     ["Fëmijët", "Profili.femije", "Pa doza për fëmijë nën 12 (varen nga pesha) → farmacisti/pediatri"],
-    ["Të dhënat lokale", "Neo4j në 127.0.0.1", "Asgjë nuk del jashtë; fjalëkalime PBKDF2; HTML i escape-uar"],
+    ["Të dhënat lokale", "Neo4j dhe serveri në 127.0.0.1", "Asgjë nuk del jashtë; fjalëkalime PBKDF2; çdo tekst escape-ohet para se të shfaqet"],
+    ["Sesioni", "web/server.py", "Cookie e nënshkruar (SESSION_SECRET te .env), 14 ditë; bisedat e të tjerëve kthejnë 404"],
+    ["Rivendosja", "llogarite.krijo_rivendosje()", "Token i rastësishëm, njëpërdorimësh, 30 minuta; ruhet vetëm hash-i; e njëjta përgjigje edhe për email të panjohur"],
 ], [3.6, 4.4, 8.6], kod_kolona=(1,))
 kod(funksioni("chatbot.py", "pastro_dozat"))
 
 # ================================================================ 11. LLOGARITË
 rinis_numrat(); doc.add_heading("11. Llogaritë dhe rolet", 1)
 figure("slajdi_12.png", "Figura 10. Rolet")
-for t in ["**Vizitor:** vetëm biseda; asgjë nuk ruhet.",
-          "**Përdorues:** biseda + 👤 Llogaria ime (profili, historia, ndrysho fjalëkalimin, fshi të dhënat e mia). "
-          "Gjendjet e shkruara në bisedë (“jam shtatzënë”) i shtohen profilit.",
-          "**Admin:** gjithçka + 📊 Përmbledhje · 👥 Përdoruesit · 💊 Ilaçet · 💾 Backup. Herën e parë krijohet "
-          "`admin` me fjalëkalimin te .env (`ADMIN_PASSWORD`); ndryshoje pas hyrjes së parë.",
+for t in ["**Vizitor** (“Vazhdo pa llogari”): bisedon normalisht; bisedat dhe profili mbahen vetëm në kujtesën e "
+          "serverit dhe humbasin kur mbyllet faqja ose rindizet serveri.",
+          "**Përdorues:** bisedat ruhen në Neo4j; Cilësimet → Profili shëndetësor, Llogaria (email-i, fjalëkalimi, "
+          "fshirja e llogarisë). Gjendjet e shkruara në bisedë (“jam shtatzënë”) i shtohen profilit.",
+          "**Admin:** gjithçka + Paneli i administratorit: Përmbledhje · Përdoruesit (rolet, fjalëkalimet, bisedat) · "
+          "Ilaçet · Backup. Herën e parë krijohet `admin` me fjalëkalimin te .env (`ADMIN_PASSWORD`); ndryshoje pas "
+          "hyrjes së parë.",
           "Fjalëkalimet: PBKDF2-HMAC-SHA256, kripë e rastësishme, 200 000 iteracione, në (:Llogari)-[:ESHTE]->(:Person).",
           "Emri i përdoruesit pranon shkronja shqipe dhe angleze (ç, ë), shifra dhe _ . - (3–30); “Ëndrra” = “ëndrra”."]:
     pika(t)
 kod(funksioni("llogarite.py", "hyr"))
 
+rinis_numrat(); doc.add_heading("11.1 Regjistrimi dhe hyrja me email", 2)
+figure("ui_regjistrimi.png", "Figura 11. Regjistrimi: emri i përdoruesit, email-i, mosha (opsionale), fjalëkalimi me butonin e syrit", 12.5)
+for t in ["Regjistrimi kërkon **emrin e përdoruesit** dhe **email-in** (fusha e emrit/pseudonimit u hoq). Mosha është opsionale.",
+          "Email-i normalizohet (shkronja të vogla, pa hapësira) dhe është **unik**: `CREATE CONSTRAINT llogari_email ... IS UNIQUE`.",
+          "Hyrja pranon **email-in ose emrin e përdoruesit**. Hapësirat e kopjuara në skaje të fjalëkalimit nuk e prishin hyrjen.",
+          "**Butoni i syrit** anash çdo fushe fjalëkalimi e shfaq ose e fsheh tekstin, që personi të kontrollojë çfarë shkroi.",
+          "Llogaritë e vjetra pa email e shtojnë te **Cilësimet → Llogaria → Email-i** (kërkohet fjalëkalimi aktual)."]:
+    pika(t)
+
+rinis_numrat(); doc.add_heading("11.2 Rivendosja e fjalëkalimit me email", 2)
+figure("ui_harrova.png", "Figura 12. “Ke harruar fjalëkalimin?”: personi shkruan email-in e llogarisë", 12.5)
+for t in ["Te hyrja, **Ke harruar fjalëkalimin?** → personi shkruan email-in → `POST /api/harrova`.",
+          "Nëse email-i ka llogari, krijohet një token i rastësishëm (`secrets.token_urlsafe(32)`). Në Neo4j ruhet vetëm "
+          "**hash-i SHA-256** i tij, bashkë me skadimin (30 minuta).",
+          "`emaili.py` dërgon me SMTP (Gmail) një email me lidhjen `http://localhost:8501/#/rivendos/<token>`.",
+          "Lidhja hap faqen “Zgjidh fjalëkalimin e ri” → `POST /api/rivendos`. Token-i fshihet pas përdorimit: "
+          "lidhja vlen **vetëm një herë**.",
+          "Përgjigjja është e njëjtë edhe kur email-i nuk ekziston (nuk zbulohet kush ka llogari). Brenda 60 sekondave "
+          "nuk dërgohet email i dytë për të njëjtën llogari."]:
+    numra(t)
+p("Konfigurimi te `.env` (Gmail kërkon Verifikimin me 2 hapa dhe një **App password**, jo fjalëkalimin e zakonshëm):")
+kod("""SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=adresa@gmail.com
+SMTP_PASSWORD=xxxx xxxx xxxx xxxx      # App password nga myaccount.google.com/apppasswords
+SMTP_FROM=FarmaBot <adresa@gmail.com>
+FARMABOT_URL=http://localhost:8501     # adresa që del te lidhja e email-it""")
+shenim("Pa SMTP të konfiguruar, email-i nuk dërgohet: shkruhet te `logs/emailet.log`, dhe faqja e thotë këtë. "
+       "Lidhja hapet vetëm në kompjuterin ku punon FarmaBot, sepse serveri dëgjon vetëm në `127.0.0.1`.", "kujdes")
+kod(funksioni("llogarite.py", "krijo_rivendosje") + "\n\n\n" + funksioni("llogarite.py", "rivendos_fjalekalimin"))
+
+# ================================================================ 12. NDËRFAQJA WEB
+rinis_numrat(); doc.add_heading("12. Ndërfaqja web", 1)
+p("Ndërfaqja është shkruar nga e para në stilin e ChatGPT / Claude: serveri Python (`web/server.py`, Starlette + "
+  "Uvicorn) dhe një faqe e vetme HTML/CSS/JavaScript pa librari të jashtme (`web/static/`). Niset me "
+  "`python -m web` dhe hapet te http://localhost:8501.")
+figure("ui_bosh.png", "Figura 13. Bisedë e re: përshëndetja, fusha e shkrimit dhe shembujt")
+figure("ui_pergjigja.png", "Figura 14. Përgjigjja: hapat (të mbyllshëm), teksti pa emoji dhe kartat e ilaçeve më poshtë")
+
+rinis_numrat(); doc.add_heading("12.1 Pjesët e faqes", 2)
+tabele(["Pjesa", "Çfarë bën"], [
+    ["Paneli majtas", "Bisedë e re; Paneli i administratorit (vetëm admin); kërkimi; lista e bisedave sipas datës "
+     "(Sot, Dje, 7 ditët e fundit, 30 ditët e fundit, Më herët); menuja ⋯: riemërto, shkarko, fshi"],
+    ["Butoni i panelit", "E mbyll / hap panelin majtas (edhe me Ctrl+B); gjendja mbahet në shfletues. Në celular paneli del sipër faqes"],
+    ["Koka", "Titulli i bisedës, shkarkimi si .md dhe ndërrimi i shpejtë i temës (diell / hënë)"],
+    ["Fusha e shkrimit", "Enter dërgon, Shift+Enter rresht i ri; zgjerohet vetë; butoni Mendo më thellë (i fikur si parazgjedhje)"],
+    ["Përgjigjja", "Hapat e mendimit (“U përgjigj për 3 sekonda”), teksti, kartat e ilaçeve, ilaçet që s'të përshtaten, "
+     "kur duhet mjeku, fletëudhëzuesi FDA, burimet; butoni Kopjo"],
+    ["Poshtë majtas", "Emri dhe roli; menuja: Profili shëndetësor, Cilësimet, Paneli i administratorit, Dil"],
+], [3.6, 13.0], kod_kolona=())
+
+rinis_numrat(); doc.add_heading("12.2 Tema, gjuha dhe paneli", 2)
+figure("ui_cilesimet.png", "Figura 15. Cilësimet në temën e zezë: tema, gjuha, mendimi i thellë, shkurtoret")
+for t in ["**Tema:** Sistemi / E bardhë / E zezë. Ngjyrat janë variabla CSS (`:root` dhe `[data-theme=\"dark\"]` "
+          "te app.css). Tema vendoset para se të vizatohet faqja, që të mos ketë “flash” të bardhë.",
+          "**Gjuha:** Shqip / English ndryshon gjithë ndërfaqen dhe gjuhën e përgjigjeve. Me English, bota përgjigjet "
+          "anglisht edhe kur pyetja shkruhet shqip: `pergjigju(..., gjuha=\"en\")`, dhe kartat përkthehen me kontrollin e numrave.",
+          "**Ruajtja:** tema, gjuha, mendimi dhe gjendja e panelit ruhen te `localStorage` i shfletuesit.",
+          "**Shkurtoret:** Ctrl+Shift+O bisedë e re · Ctrl+B paneli · Enter dërgo · Shift+Enter rresht i ri · Esc mbyll dritaren."]:
+    pika(t)
+figure("ui_paneli_mbyllur.png", "Figura 16. Paneli majtas i mbyllur në temën e zezë")
+
+rinis_numrat(); doc.add_heading("12.3 Bisedat në databazë", 2)
+p("Çdo përdorues ka shumë biseda. Mesazhet ruhen bashkë me kartat (JSON), që biseda të rishfaqet e plotë kur rihapet, "
+  "dhe me kontekstin (simptomat, ilaçet, pyetja sqaruese), që biseda të vazhdojë aty ku mbeti:")
+kod("""(:Person)-[:KA_BISEDE]->(:Bisede {id, titull, krijuar, perditesuar, konteksti})
+(:Bisede)-[:PERMBAN]->(:Mesazh {id, roli, tekst, ora, te_dhena})
+(:Person)-[:DERGOI]->(:Mesazh)        // si më parë: statistikat e adminit""")
+p("Mesazhet e versionit të vjetër (pa bisedë) mblidhen automatikisht në një bisedë “Biseda e mëparshme”.")
+
+rinis_numrat(); doc.add_heading("12.4 API dhe përgjigjja live", 2)
+tabele(["Kërkesa", "Çfarë bën"], [
+    ["GET /api/sesioni", "Kush je (llogaria ose vizitor), profili, lista e gjendjeve"],
+    ["POST /api/hyr · /api/regjistrohu · /api/vizitor · /api/dil", "Hyrja (email ose emër), regjistrimi (me email), vizitori, dalja"],
+    ["POST /api/harrova · /api/rivendos", "Email-i i rivendosjes; fjalëkalimi i ri me token"],
+    ["PUT /api/profili · /api/email; POST /api/fjalekalimi; DELETE /api/llogaria", "Profili shëndetësor, email-i, fjalëkalimi, fshirja"],
+    ["GET /api/bisedat · /api/bisedat/{id}", "Lista e bisedave; mesazhet e një bisede"],
+    ["PATCH · DELETE /api/bisedat/{id}", "Riemërto / fshi bisedën"],
+    ["POST /api/biseda", "Mesazh i ri; përgjigjja vjen live si NDJSON: bisede → hap → mendim → fund"],
+    ["/api/admin/...", "Përmbledhja, përdoruesit, ilaçet, backup-i (vetëm për rolin admin)"],
+], [6.6, 10.0], kod_kolona=(0,))
+p("Përgjigjja live: serveri e ekzekuton `pergjigju()` në një thread dhe çdo hap (`on_hap`) dhe copë arsyetimi "
+  "(`on_mendim`) i dërgohet menjëherë shfletuesit si një rresht JSON. Në fund vjen `fund` me tekstin e pastruar nga "
+  "emoji-t (`web/pergjigja.py`) dhe kartat. Shembull:")
+kod("""{"lloji": "bisede", "id": "5a5a…", "titull": "më dhemb koka"}
+{"lloji": "hap", "tekst": "Po kërkoj në bazën e njohurive…"}
+{"lloji": "fund", "pergjigja": {"tekst": "…", "barnat": [...], "te_perjashtuara": [...], "alarmi": [...]}}""")
+
 # ================================================================ 12. SKEDARËT DHE FUNKSIONET
-rinis_numrat(); doc.add_heading("12. Skedarët dhe funksionet", 1)
+rinis_numrat(); doc.add_heading("13. Skedarët dhe funksionet", 1)
 p("Për çdo skedar: çfarë bën, dhe tabela e funksioneve me parametrat (Merr) dhe vlerën që kthejnë (Kthen). "
   "Funksionet që fillojnë me `_` janë të brendshme (përdoren vetëm brenda skedarit).")
 SKEDARET = [
@@ -739,8 +838,10 @@ SKEDARET = [
     ("gjuha.py", "Shqipja e folur → standard; zbulimi i anglishtes; anglisht → shqip."),
     ("perkthimi.py", "Përkthimi i përgjigjeve në anglisht me kontroll numrash dhe cache."),
     ("chatbot.py", "Logjika e plotë e bisedës: urgjenca, profili, kërkimi, filtrimi, përgjigjet, mendimi, burimet."),
-    ("perdoruesit.py", "Personat dhe historia e bisedave në Neo4j."),
-    ("llogarite.py", "Llogaritë e hyrjes, fjalëkalimet, rolet."),
+    ("perdoruesit.py", "Personat (profili shëndetësor) në Neo4j."),
+    ("bisedat.py", "Bisedat e ruajtura: lista, mesazhet me kartat, konteksti, riemërtimi, fshirja."),
+    ("llogarite.py", "Llogaritë e hyrjes, email-i, fjalëkalimet, rivendosja me token, rolet."),
+    ("emaili.py", "Dërgimi i email-eve me SMTP (rivendosja e fjalëkalimit)."),
     ("backup.py", "Backup në Desktop dhe kopjim në Neo4j lokal."),
     ("ngarko_grafin.py", "Ngarkon data/njohurite.json në Neo4j me embeddings."),
     ("ngarko_pdf.py", "Ngarkon fletëudhëzues PDF nga data/pdf/ (opsionale)."),
@@ -748,12 +849,9 @@ SKEDARET = [
     ("ngarko_burimet.py", "Ngarkon datasetet si (:Chunk) me embeddings."),
     ("zgjero_njohurite.py", "Zgjerimi 2 i bazës: fraza, fjalë kyçe, ilaçe dhe simptoma të reja."),
     ("zgjero_njohurite_3.py", "Zgjerimi 3: 262 fraza në shqipen e folur."),
-    ("app.py", "Hyrja, rolet dhe navigimi i Streamlit-it."),
-    ("faqet/chat.py", "Faqja e bisedës, paneli i profilit dhe paneli i mendimit."),
-    ("faqet/perbashket.py", "Gjëra të përbashkëta: kartat, gjendjet, përdoruesi aktual."),
-    ("faqet/stili.py", "CSS dhe kartat HTML (shqip/anglisht)."),
-    ("faqet/admin.py", "Paneli i administratorit."),
-    ("faqet/profili.py", "Llogaria ime: profili, historia, fshirja."),
+    ("web/server.py", "Serveri web: sesionet, llogaritë, profili, bisedat dhe përgjigjet live (NDJSON)."),
+    ("web/admin.py", "API e administratorit: përmbledhja, përdoruesit, ilaçet, backup-i."),
+    ("web/pergjigja.py", "Përgjigjja e botit → JSON për faqen: teksti pa emoji, kartat, përkthimi i kartave."),
 ]
 for skedari, pershkrim in SKEDARET:
     rinis_numrat(); doc.add_heading(skedari, 3)
@@ -768,11 +866,16 @@ tabele(["Skedari", "Çfarë është"], [
     ["data/perkthime_en.json", "Cache e përkthimeve (krijohet vetë; mund të rishikohet nga një njeri)"],
     ["data/burime/", "MedlinePlus XML dhe openFDA JSON të shkarkuara"],
     ["nis_farmabot.ps1 / ndal_farmabot.ps1", "Nisja dhe ndalimi i Ollama, Neo4j dhe aplikacionit"],
+    ["web/static/index.html", "Faqja e vetme; vendos temën para vizatimit"],
+    ["web/static/app.js", "E gjithë ndërfaqja: tekstet SQ/EN, ikonat, hyrja, paneli, biseda, cilësimet, admini"],
+    ["web/static/app.css", "Stili dhe dy temat (variabla CSS)"],
+    ["web/__main__.py", "python -m web: nis Uvicorn në 127.0.0.1:8501"],
+    ["assets/krijo_ikonen.py", "Krijon ikonën dhe logot (logo.png, logo_erret.png, farmabot.ico)"],
     ["testo.py", "Provë e shpejtë nga terminali"],
-    ["tests/", "Testet automatike (kapitulli 14)"],
+    ["tests/", "Testet automatike (kapitulli 15)"],
     ["dokumentimi/", "Ky dokument, prezantimi dhe skriptet që i krijojnë"],
 ], [5.6, 11.0], kod_kolona=(0,))
-rinis_numrat(); doc.add_heading("12.1 Shembull: thirrja e botës nga Python", 2)
+rinis_numrat(); doc.add_heading("13.1 Shembull: thirrja e botës nga Python", 2)
 kod("""from chatbot import Konteksti, Profili, pergjigju
 
 profili = Profili(mosha=34, gjendjet={"ulcer"})
@@ -786,7 +889,7 @@ print([x["emer"] for x in p.te_perjashtuara])
 print(p.tekst)                           # teksti që sheh personi (markdown)""")
 
 # ================================================================ 13. SHEMBUJ BISEDE
-rinis_numrat(); doc.add_heading("13. Shembuj realë bisede", 1)
+rinis_numrat(); doc.add_heading("14. Shembuj realë bisede", 1)
 p("Këto biseda u gjeneruan nga bota reale (`dokumentimi/shembuj_bisede.json`). Përgjigjet e gjata janë shkurtuar me “…”; "
   "kartat me doza nuk shfaqen këtu.")
 
@@ -827,7 +930,7 @@ if mendimi.exists():
     mesazh_bote(m["bota"], maks=3000)
 
 # ================================================================ 14. TESTET
-rinis_numrat(); doc.add_heading("14. Testet", 1)
+rinis_numrat(); doc.add_heading("15. Testet", 1)
 kod("""venv_chatbot\\Scripts\\python -m pytest            # të gjitha (pa model gjuhësor), ~1 minutë
 venv_chatbot\\Scripts\\python -m pytest -m llm     # testet me modelin (mendimi, përkthimi), më të ngadalta
 venv_chatbot\\Scripts\\python -m pytest tests/test_gjuha.py -q""")
@@ -841,18 +944,19 @@ tabele(["Skedari", "Çfarë teston"], [
     ["test_gjuha.py", "Fjalori: gegërisht/chat → standard, urgjenca dhe profili gegërisht, mendimi (-m llm)"],
     ["test_anglisht.py", "Zbulimi i gjuhës, anglisht → shqip, urgjencat anglisht, kontrolli i numrave, përkthimi (-m llm)"],
     ["test_regjistrimi.py", "Shkronjat shqipe/angleze, hyrja, fjalëkalimi, fshirja"],
-    ["test_nderfaqja.py", "Formulari real dhe biseda në Streamlit (AppTest)"],
+    ["test_web.py", "Aplikacioni web: hyrja me email, regjistrimi, rivendosja e fjalëkalimit, bisedat, profili, admini"],
 ], [4.6, 12.0], kod_kolona=(0,))
-p("Testet që kanë nevojë për Neo4j/Ollama anashkalohen vetë kur shërbimet nuk janë ndezur. Ndërfaqja në teste "
-  "punon pa mendim të thellë (`FARMABOT_MENDO=0` te conftest.py), që testet të mbeten të shpejta.")
+p("Testet që kanë nevojë për Neo4j/Ollama anashkalohen vetë kur shërbimet nuk janë ndezur. Testet e web-it përdorin "
+  "`TestClient` të Starlette-it dhe nuk dërgojnë email të vërtetë (dërgimi zëvendësohet në test).")
 
 # ================================================================ 15. NISJA
-rinis_numrat(); doc.add_heading("15. Nisja e sistemit", 1)
+rinis_numrat(); doc.add_heading("16. Nisja e sistemit", 1)
 for t in ["Herën e parë: `ollama pull bge-m3`, `ollama pull qwen3:8b`, `ollama pull gemma3:4b`.",
           "Kliko dy herë ikonën **FarmaBot** në Desktop (ose `nis_farmabot.ps1`). Skripti nis me radhë Ollama (11434), "
-          "Neo4j lokal (7687, 7474) dhe Streamlit (8501), dhe pret që secili port të hapet.",
+          "Neo4j lokal (7687, 7474) dhe FarmaBot Web (`python -m web`, 8501), dhe pret që secili port të hapet.",
           "Shfletuesi hapet te http://localhost:8501.",
-          "Ndalimi: “Ndal FarmaBot” në dosjen e projektit. Log-et janë te `logs\\`."]:
+          "Ndalimi: “Ndal FarmaBot” në dosjen e projektit. Log-et janë te `logs\\`.",
+          "Për email-et e rivendosjes: plotëso `SMTP_*` te `.env` (kapitulli 11.2)."]:
     numra(t)
 p("Pas ndryshimeve:")
 tabele(["Kur ndryshon...", "Ekzekuto"], [
@@ -860,10 +964,12 @@ tabele(["Kur ndryshon...", "Ekzekuto"], [
     ["datasetet (një herë në muaj, sipas dëshirës)", "python shkarko_datasetet.py  →  python ngarko_burimet.py"],
     ["PDF te data/pdf/", "python ngarko_pdf.py"],
     ["kodin Python", "rinis aplikacionin (Ndal FarmaBot → FarmaBot)"],
+    ["web/static (HTML/CSS/JS)", "rrit numrin ?v= te index.html; në shfletues Ctrl+F5"],
+    ["dokumentimin (pas çdo ndryshimi)", "python dokumentimi/krijo_dokumentimin.py  →  PDF me Word"],
 ], [7.2, 9.4], kod_kolona=(1,))
 
 # ================================================================ 16. PROBLEMET
-rinis_numrat(); doc.add_heading("16. Problemet e shpeshta", 1)
+rinis_numrat(); doc.add_heading("17. Problemet e shpeshta", 1)
 tabele(["Simptoma", "Shkaku i mundshëm", "Zgjidhja"], [
     ["“Ndodhi një gabim… Kontrollo që Ollama dhe Neo4j janë ndezur”", "Një nga shërbimet nuk po punon",
      "Nis FarmaBot nga ikona; shiko logs\\neo4j.err.log dhe logs\\ollama.err.log"],
@@ -875,6 +981,14 @@ tabele(["Simptoma", "Shkaku i mundshëm", "Zgjidhja"], [
     ["Mendimi zgjat shumë (> 3 min)", "Modeli në CPU, ose modelet po ngarkohen nga disku",
      "Pyetja e parë pas nisjes është më e ngadalta; fike butonin 🧠 për përgjigje të menjëhershme"],
     ["Përgjigjja anglisht del shqip me shënim", "Përkthimi nuk kaloi kontrollin e numrave", "Kjo është masë sigurie; pyet përsëri ose shkruaj shqip"],
+    ["Ndryshimet nuk duken / pamja e vjetër", "Serveri i vjetër është ende ndezur, ose shfletuesi mban cache",
+     "Ndal FarmaBot → FarmaBot; në shfletues Ctrl+F5"],
+    ["“Email-i, emri ose fjalëkalimi nuk është i saktë”", "Fjalëkalim i gabuar ose llogari pa email",
+     "Butoni i syrit për ta kontrolluar; Ke harruar fjalëkalimin?; admini mund të vendosë fjalëkalim të ri"],
+    ["Email-i i rivendosjes nuk vjen", "Spam, SMTP i pakonfiguruar ose App password i gabuar",
+     "Shiko Spam; kontrollo SMTP_* te .env; pa SMTP lidhja është te logs\\emailet.log"],
+    ["Lidhja e email-it nuk hapet në telefon", "Serveri dëgjon vetëm në këtë kompjuter (127.0.0.1)",
+     "Hape lidhjen në kompjuterin ku punon FarmaBot"],
     ["Bota nuk e njeh një fjalë", "Mungon te fjalori ose te frazat",
      "Shtoje te data/fjalori_shqip.json ose te frazat e simptomës; pastaj ngarko_grafin.py"],
 ], [5.0, 5.2, 6.4], kod_kolona=())
@@ -890,7 +1004,36 @@ tabele(["Termi", "Kuptimi"], [
     ["Thinking", "Modeli shkruan arsyetimin para përgjigjes (qwen3)"],
     ["OTC", "Over the counter: ilaç pa recetë"],
     ["Kundërindikim", "Gjendje për të cilën ilaçi nuk duhet përdorur"],
+    ["Starlette / Uvicorn", "Framework-u web në Python dhe serveri që e ekzekuton"],
+    ["NDJSON", "Një objekt JSON për çdo rresht; lejon që përgjigjja të vijë live, copë pas cope"],
+    ["SMTP / App password", "Protokolli i dërgimit të email-eve; fjalëkalim i veçantë që Gmail jep për aplikacione"],
+    ["Token", "Kod i rastësishëm njëpërdorimësh te lidhja e rivendosjes"],
 ], [3.8, 12.8], kod_kolona=())
+
+# ================================================================ 18. HISTORIKU
+rinis_numrat(); doc.add_heading("18. Historiku i ndryshimeve", 1)
+p("Çdo ndryshim i ri shtohet këtu dhe dokumenti rikrijohet (Word + PDF).")
+HISTORIKU = [
+    ("22.11.2026", "Llogaritë me email", [
+        "Regjistrimi kërkon email; fusha “Emri ose pseudonimi” u hoq.",
+        "Hyrja me email ose me emër përdoruesi; hapësirat e kopjuara te fjalëkalimi nuk e prishin hyrjen.",
+        "Butoni i syrit te çdo fushë fjalëkalimi.",
+        "“Ke harruar fjalëkalimin?”: rivendosja me email (Gmail SMTP, token 30 minuta, njëpërdorimësh).",
+        "Email-i shtohet / ndryshohet te Cilësimet → Llogaria; admini i sheh email-et te tabela e përdoruesve."]),
+    ("22.11.2026", "FarmaBot Web (zëvendëson Streamlit)", [
+        "Aplikacion web në stilin e ChatGPT / Claude: paneli majtas me listën e bisedave, kërkimi, riemërtimi, shkarkimi, fshirja.",
+        "Tema Sistemi / E bardhë / E zezë dhe gjuha Shqip / English për gjithë ndërfaqen dhe përgjigjet.",
+        "Paneli majtas hapet / mbyllet (edhe me Ctrl+B); cilësimet, profili shëndetësor, llogaria.",
+        "Shumë biseda për përdorues në Neo4j (bisedat.py), me kartat dhe kontekstin e secilës.",
+        "Paneli i administratorit: përmbledhje, përdoruesit (rolet, fjalëkalimet, bisedat), ilaçet (ndrysho / shto), backup.",
+        "Teksti i përgjigjeve pa emoji; ikona të pakta e të njëtrajtshme; “Mendo më thellë” i fikur si parazgjedhje."]),
+    ("22.11.2026", "Ikona e re", [
+        "Ikona dhe logot e reja (flluskë bisede me kapsulë), edhe logo për temën e zezë; ikona e Desktop-it u përditësua."]),
+]
+for data, titulli, pikat in HISTORIKU:
+    rinis_numrat(); doc.add_heading(f"{data} · {titulli}", 3)
+    for t in pikat:
+        pika(t)
 
 doc.core_properties.title = "FarmaBot: dokumentimi teknik"
 doc.core_properties.author = "FarmaBot"
