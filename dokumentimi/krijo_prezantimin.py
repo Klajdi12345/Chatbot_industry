@@ -460,7 +460,7 @@ tekst(sl, 9.3, 4.5, 3.45, 2.0, [("python -m pytest", {"size": 14, "face": "Conso
                                 ("Më të shumtat: çdo kundërindikim × çdo simptomë", {"size": 13, "color": GRI})])
 
 # ================================================================ 14. Nisja e sistemit
-sl = slajd("Nisja e sistemit", "Një klik te ikona FarmaBot në Desktop, ose nis_farmabot.ps1",
+sl = slajd("Nisja e sistemit", "Një klik te ikona FarmaBot në Desktop, ose nis_farmabot.pyw",
            shenime="Skripti nis me radhë Ollama, Neo4j lokal dhe Streamlit, dhe pret që secili porti të hapet.")
 for i, (nr, t, n, porti) in enumerate([("1", "Ollama", "bge-m3 · qwen3:8b · gemma3:4b", "11434"),
                                        ("2", "Neo4j lokal", "neo4j_local\\ me Java brenda", "7687 · 7474"),

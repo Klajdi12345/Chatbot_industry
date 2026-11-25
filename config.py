@@ -1,4 +1,5 @@
 """Konfigurimi i përbashkët: lidhja me Neo4j dhe modelet e Ollama-s."""
+import logging
 import os
 import unicodedata
 from functools import lru_cache
@@ -108,14 +109,50 @@ def embed(tekste: list[str]) -> list[list[float]]:
     return r.json()["embeddings"]
 
 
+# ---------------------------------------------------------------- modeli rezervë
+# Nëse modeli kryesor dështon (s'ngarkohet, mbaron memoria, s'përgjigjet në kohë), përgjigjen e jep
+# llama3.2:3b: më i vogël dhe më i shpejtë. Shqipja e tij është më e dobët, por është më mirë se asnjë përgjigje.
+REZERVE_MODEL = os.getenv("OLLAMA_REZERVE_MODEL", "llama3.2:3b")
+KOHA_KRYESORI = int(os.getenv("OLLAMA_KOHA_KRYESORI", "180"))  # sekonda para se të kalohet te rezerva
+log = logging.getLogger("farmabot.modelet")
+MODELI_I_FUNDIT = {"modeli": None, "rezerve": False}   # cili model u përdor herën e fundit (për teste/log)
+
+
+def modelet_per_rradhe(kryesori: str) -> list[str]:
+    """[kryesori, rezerva]: rezerva shtohet vetëm nëse është e ndryshme dhe e instaluar."""
+    lista = [kryesori]
+    if REZERVE_MODEL and REZERVE_MODEL != kryesori and _aftesite(REZERVE_MODEL):
+        lista.append(REZERVE_MODEL)
+    return lista
+
+
+def chat_me_rezerve(trupi: dict, kryesori: str = None, timeout: int = 600, rezerve: bool = True) -> str:
+    """Thirrje /api/chat pa streaming: provon modelin kryesor, pastaj (nëse rezerve=True) modelin rezervë."""
+    kryesori = kryesori or LLM_MODEL
+    modelet = modelet_per_rradhe(kryesori) if rezerve else [kryesori]
+    gabimi = None
+    for i, model in enumerate(modelet):
+        try:
+            koha = min(timeout, KOHA_KRYESORI) if i < len(modelet) - 1 else timeout
+            r = requests.post(f"{OLLAMA_URL}/api/chat", json={**trupi, "model": model}, timeout=koha)
+            r.raise_for_status()
+            tekst = r.json()["message"]["content"].strip()
+            if not tekst:
+                raise ValueError("përgjigje bosh")
+            MODELI_I_FUNDIT.update(modeli=model, rezerve=i > 0)
+            if i > 0:
+                log.warning("U përdor modeli rezervë %s (kryesori %s dështoi: %s)", model, kryesori, gabimi)
+            return tekst
+        except (requests.RequestException, ValueError, KeyError) as e:
+            gabimi = e
+            log.warning("Modeli %s dështoi: %s", model, e)
+    raise gabimi
+
+
 def chat(mesazhet: list[dict]) -> str:
     """mesazhet: [{'role': 'system'|'user'|'assistant', 'content': ...}]"""
-    r = requests.post(f"{OLLAMA_URL}/api/chat", json={
-        "model": LLM_MODEL, "messages": mesazhet, "stream": False,
-        "options": {"temperature": 0.5, "num_ctx": 4096}, "keep_alive": "30m",
-    }, timeout=600)
-    r.raise_for_status()
-    return r.json()["message"]["content"].strip()
+    return chat_me_rezerve({"messages": mesazhet, "stream": False,
+                            "options": {"temperature": 0.5, "num_ctx": 4096}, "keep_alive": "30m"})
 
 
 # ---------------------------------------------------------------- modeli që "mendon"
@@ -149,28 +186,48 @@ def chat_mendo(mesazhet: list[dict], on_mendim=None, on_pergjigje=None, format_j
     Kthen (pergjigja, mendimi)."""
     import json as _json
     model, mendon = modeli_i_mendimit()
-    trupi = {"model": model, "messages": mesazhet, "stream": True, "keep_alive": "30m",
-             "options": {"temperature": temperatura, "num_ctx": 8192, "num_predict": num_predict}}
-    if mendon:
-        trupi["think"] = True
-    if format_json:
-        trupi["format"] = "json"
-    pergjigja, mendimi = [], []
-    with requests.post(f"{OLLAMA_URL}/api/chat", json=trupi, stream=True, timeout=900) as r:
-        r.raise_for_status()
-        for rresht in r.iter_lines():
-            if not rresht:
-                continue
-            m = _json.loads(rresht).get("message") or {}
-            if copa := m.get("thinking"):
-                mendimi.append(copa)
-                if on_mendim:
-                    on_mendim(copa)
-            if copa := m.get("content"):
-                pergjigja.append(copa)
-                if on_pergjigje:
-                    on_pergjigje(copa)
-    return "".join(pergjigja).strip(), "".join(mendimi).strip()
+    # Radha: modeli që mendon → modeli kryesor → modeli rezervë (pa dyfishime, vetëm të instaluarit).
+    radha = [(model, mendon)]
+    for m in modelet_per_rradhe(LLM_MODEL):
+        if m not in [x for x, _ in radha]:
+            radha.append((m, "thinking" in _aftesite(m)))
+    gabimi = None
+    for i, (model, mendon) in enumerate(radha):
+        trupi = {"model": model, "messages": mesazhet, "stream": True, "keep_alive": "30m",
+                 "options": {"temperature": temperatura, "num_ctx": 8192, "num_predict": num_predict}}
+        if mendon:
+            trupi["think"] = True
+        if format_json:
+            trupi["format"] = "json"
+        pergjigja, mendimi = [], []
+        try:
+            koha = (KOHA_KRYESORI, 900) if i < len(radha) - 1 else 900   # (lidhja + copa e parë, gjithsej)
+            with requests.post(f"{OLLAMA_URL}/api/chat", json=trupi, stream=True, timeout=koha) as r:
+                r.raise_for_status()
+                for rresht in r.iter_lines():
+                    if not rresht:
+                        continue
+                    m = _json.loads(rresht).get("message") or {}
+                    if copa := m.get("thinking"):
+                        mendimi.append(copa)
+                        if on_mendim:
+                            on_mendim(copa)
+                    if copa := m.get("content"):
+                        pergjigja.append(copa)
+                        if on_pergjigje:
+                            on_pergjigje(copa)
+            if not "".join(pergjigja).strip():
+                raise ValueError("përgjigje bosh")
+            MODELI_I_FUNDIT.update(modeli=model, rezerve=i > 0)
+            if i > 0:
+                log.warning("Mendimi: u përdor %s (modeli i parë dështoi: %s)", model, gabimi)
+            return "".join(pergjigja).strip(), "".join(mendimi).strip()
+        except (requests.RequestException, ValueError) as e:
+            gabimi = e
+            log.warning("Modeli %s dështoi: %s", model, e)
+            if pergjigja and on_pergjigje:
+                raise   # përgjigja ka filluar t'i shfaqet personit: nuk e nisim nga e para me model tjetër
+    raise gabimi
 
 
 def normalizo(tekst: str) -> str:

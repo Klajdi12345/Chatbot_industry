@@ -30,6 +30,9 @@ const TEKSTE = {
     username: "Emri i përdoruesit", password: "Fjalëkalimi", changePw: "Ndrysho fjalëkalimin", currentPw: "Fjalëkalimi aktual",
     newPw: "Fjalëkalimi i ri (min. 8 karaktere)", pwChanged: "Fjalëkalimi u ndryshua", deleteAccount: "Fshi llogarinë",
     deleteAccountHelp: "Fshihen llogaria, profili dhe të gjitha bisedat. Kjo nuk kthehet pas.",
+    deleteUser: "Fshi përdoruesin", deleteUserQ: u => `Të fshihet përdoruesi “${u}”?`,
+    deleteUserHelp: n => `Fshihen llogaria, profili shëndetësor dhe të gjitha bisedat e tij (${n} mesazhe). Kjo nuk kthehet pas; nëse duhet, bëj më parë një backup.`,
+    userDeleted: u => `Përdoruesi “${u}” u fshi`,
     confirmDeleteChat: t => `Të fshihet biseda “${t}”?`, confirmDeleteAccount: "Të fshihet llogaria dhe të gjitha të dhënat?",
     welcome: "Mirë se erdhe në FarmaBot", welcomeSub: "Asistenti yt i farmacisë, në shqip dhe anglisht.",
     login: "Hyr", register: "Regjistrohu", continueGuest: "Vazhdo pa llogari", or: "ose",
@@ -57,7 +60,8 @@ const TEKSTE = {
     drugId: "ID (pa hapësira)", activeIng: "Lënda aktive", form: "Forma", tradeNames: "Emra tregtarë (me presje)",
     contraFor: "Kundërindikohet për (hiqet automatikisht)", cautionFor: "Kujdes për (shfaqet paralajmërim)",
     backupNow: "Bëj backup tani", backupDone: d => `Backup-i u ruajt te ${d}`, backupHelp: "Ruan gjithë databazën (JSON + skript Cypher) në Desktop.",
-    recentBackups: "Backup-et e fundit", connection: "Lidhja", backToChat: "Kthehu te biseda", noChatsUser: "Pa biseda.",
+    recentBackups: "Backup-et e fundit", connection: "Lidhja", backToChat: "Kthehu te biseda", noChatsUser: "Pa biseda.", deletedByUser: "Fshirë nga përdoruesi",
+    chatDeleteNote: "Biseda hiqet nga lista jote. Administratori i FarmaBot-it mund ta shohë ende.",
     good: "Përgjigje e mirë", bad: "Përgjigje e gabuar", thanksFb: "Faleminderit! Reagimi u ruajt.",
     whatWrong: "Çfarë nuk shkoi?", r_nuk_kuptoi: "Nuk e kuptoi simptomën", r_ilac_gabim: "Ilaçi nuk ishte i duhuri",
     r_e_paqarte: "Përgjigja ishte e paqartë ose e gabuar", r_tjeter: "Tjetër", commentOpt: "Shpjego shkurt (opsionale)",
@@ -98,6 +102,9 @@ const TEKSTE = {
     username: "Username", password: "Password", changePw: "Change password", currentPw: "Current password",
     newPw: "New password (min. 8 characters)", pwChanged: "Password changed", deleteAccount: "Delete account",
     deleteAccountHelp: "Your account, profile and all chats are deleted. This cannot be undone.",
+    deleteUser: "Delete user", deleteUserQ: u => `Delete the user “${u}”?`,
+    deleteUserHelp: n => `The account, health profile and all their chats (${n} messages) are deleted. This cannot be undone; make a backup first if needed.`,
+    userDeleted: u => `User “${u}” deleted`,
     confirmDeleteChat: t => `Delete the chat “${t}”?`, confirmDeleteAccount: "Delete your account and all data?",
     welcome: "Welcome to FarmaBot", welcomeSub: "Your pharmacy assistant, in Albanian and English.",
     login: "Sign in", register: "Sign up", continueGuest: "Continue without an account", or: "or",
@@ -125,7 +132,8 @@ const TEKSTE = {
     drugId: "ID (no spaces)", activeIng: "Active ingredient", form: "Form", tradeNames: "Trade names (comma-separated)",
     contraFor: "Contraindicated for (removed automatically)", cautionFor: "Caution for (shows a warning)",
     backupNow: "Back up now", backupDone: d => `Backup saved to ${d}`, backupHelp: "Saves the whole database (JSON + Cypher script) to the Desktop.",
-    recentBackups: "Recent backups", connection: "Connection", backToChat: "Back to chat", noChatsUser: "No chats.",
+    recentBackups: "Recent backups", connection: "Connection", backToChat: "Back to chat", noChatsUser: "No chats.", deletedByUser: "Deleted by the user",
+    chatDeleteNote: "The chat is removed from your list. The FarmaBot administrator can still see it.",
     good: "Good answer", bad: "Bad answer", thanksFb: "Thank you! Your feedback was saved.",
     whatWrong: "What went wrong?", r_nuk_kuptoi: "It didn't understand the symptom", r_ilac_gabim: "The medicine wasn't right",
     r_e_paqarte: "The answer was unclear or wrong", r_tjeter: "Other", commentOpt: "Explain briefly (optional)",
@@ -277,15 +285,16 @@ function modal({ titull, trup, fund = "", gjere = false, pasHapjes }) {
   return { el: o, mbyll };
 }
 
-function konfirmo(pyetja, { butoni = t("del"), rrezik = true } = {}) {
+function konfirmo(pyetja, { butoni = t("del"), rrezik = true, pershkrimi = "" } = {}) {
   return new Promise(res => {
-    const m = modal({ titull: pyetja, trup: "", fund: `<button class="btn" data-mbyll>${t("cancel")}</button>
+    const m = modal({ titull: pyetja, trup: pershkrimi ? `<p class="hint" style="margin:0">${esc(pershkrimi)}</p>` : "",
+      fund: `<button class="btn" data-mbyll>${t("cancel")}</button>
       <button class="btn ${rrezik ? "danger" : "primary"}" data-po>${esc(butoni)}</button>`,
       pasHapjes: (o, mbyll) => {
         o.querySelector("[data-po]").addEventListener("click", () => { mbyll(); res(true); });
         o.querySelectorAll("[data-mbyll]").forEach(b => b.addEventListener("click", () => res(false)));
       } });
-    m.el.querySelector(".modal-body").remove();
+    if (!pershkrimi) m.el.querySelector(".modal-body").remove();
   });
 }
 
@@ -545,7 +554,7 @@ function riemerto(c, b) {
 }
 
 async function fshiBiseden(b) {
-  if (!await konfirmo(t("confirmDeleteChat")(b.titull))) return;
+  if (!await konfirmo(t("confirmDeleteChat")(b.titull), { pershkrimi: S.sesioni?.llogaria ? t("chatDeleteNote") : "" })) return;
   try {
     await api("DELETE", `/api/bisedat/${b.id}`);
     S.bisedat = S.bisedat.filter(x => x.id !== b.id);
@@ -991,7 +1000,7 @@ async function aPerdoruesit() {
       <td><span class="badge${u.roli === "admin" ? " admin" : ""}">${u.roli === "admin" ? t("administrator") : t("user")}</span></td>
       <td>${u.mosha ?? "–"}</td><td>${u.mesazhe}</td>
       <td class="muted">${esc(u.krijuar)}</td><td class="muted">${esc(u.hyrja_fundit || "–")}</td>
-      <td><button class="icon-btn sm" data-u="${esc(u.perdoruesi)}" aria-label="${t("actions")}">${ic("more", 16)}</button></td></tr>`))}`;
+      <td style="white-space:nowrap">${u.perdoruesi !== d.une ? `<button class="icon-btn sm danger" data-fshi="${esc(u.perdoruesi)}" title="${t("deleteUser")}" aria-label="${t("deleteUser")}">${ic("trash", 16)}</button>` : ""}<button class="icon-btn sm" data-u="${esc(u.perdoruesi)}" aria-label="${t("actions")}">${ic("more", 16)}</button></td></tr>`))}`;
   $("#u-re").addEventListener("click", () => {
     modal({ titull: t("newAccount"), trup: `<div class="field"><label>${t("username")}</label><input class="input" id="n-u"></div>
         <div class="field"><label>${t("email")}</label><input class="input" id="n-e" type="email"></div>
@@ -1019,16 +1028,27 @@ async function aPerdoruesit() {
             try { await api("PATCH", `/api/admin/perdoruesit/${encodeURIComponent(u.perdoruesi)}`, { fjalekalimi: o.querySelector("#r-p").value }); mbyll(); toast(t("pwChanged")); }
             catch (x) { o.querySelector("#r-err").textContent = x.message; }
           }) }) }];
-    if (u.perdoruesi !== d.une) art.push("-", { tekst: t("del"), ikona: "trash", rrezik: true, veprim: async () => {
-      if (!await konfirmo(`${t("deleteAccount")}: ${u.perdoruesi}?`)) return;
-      try { await api("DELETE", `/api/admin/perdoruesit/${encodeURIComponent(u.perdoruesi)}`); aPerdoruesit(); } catch (x) { toast(x.message, true); } } });
+    if (u.perdoruesi !== d.une) art.push("-", { tekst: t("deleteUser"), ikona: "trash", rrezik: true, veprim: () => fshiPerdoruesin(u) });
     hapMenune(b, art);
   }));
+  document.querySelectorAll("[data-fshi]").forEach(b => b.addEventListener("click", e => {
+    e.stopPropagation();
+    fshiPerdoruesin(d.llogarite.find(x => x.perdoruesi === b.dataset.fshi));
+  }));
+}
+
+async function fshiPerdoruesin(u) {
+  if (!await konfirmo(t("deleteUserQ")(u.perdoruesi), { butoni: t("deleteUser"), pershkrimi: t("deleteUserHelp")(u.mesazhe) })) return;
+  try {
+    await api("DELETE", `/api/admin/perdoruesit/${encodeURIComponent(u.perdoruesi)}`);
+    toast(t("userDeleted")(u.perdoruesi));
+    aPerdoruesit();
+  } catch (x) { toast(x.message, true); }
 }
 
 async function shikoBisedat(u) {
   const d = await api("GET", `/api/admin/perdoruesit/${encodeURIComponent(u)}/bisedat`);
-  const trup = d.bisedat.length ? d.bisedat.map(b => `<details class="card" style="margin-bottom:.6rem"><summary>${ic("chev", 14)}${esc(b.titull)} <span class="muted" style="font-weight:400">· ${esc((b.perditesuar || "").slice(0, 16).replace("T", " "))}</span></summary>
+  const trup = d.bisedat.length ? d.bisedat.map(b => `<details class="card" style="margin-bottom:.6rem"><summary>${ic("chev", 14)}${esc(b.titull)} <span class="muted" style="font-weight:400">· ${esc((b.perditesuar || "").slice(0, 16).replace("T", " "))}</span>${b.fshire ? ` <span class="badge deleted">${t("deletedByUser")}${b.fshire_me ? ` · ${esc(b.fshire_me.slice(0, 16).replace("T", " "))}` : ""}</span>` : ""}</summary>
       <div class="chat-log">${b.mesazhet.map(m => m.role === "user" ? `<div class="msg user"><div class="bubble">${esc(m.content)}</div></div>` : `<div class="msg bot"><div class="md">${md(m.content)}</div></div>`).join("")}</div></details>`).join("")
     : `<p class="muted">${t("noChatsUser")}</p>`;
   modal({ titull: `${t("viewChats")}: ${u}`, trup, gjere: true });

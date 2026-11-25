@@ -13,7 +13,7 @@ import re
 import threading
 from functools import lru_cache
 
-from config import LLM_MODEL, OLLAMA_URL, ROOT
+from config import ROOT, chat_me_rezerve
 
 import requests
 
@@ -66,13 +66,11 @@ def _thirr_modelin(tekst: str, terma: dict | None = None) -> str:
         if prezente:
             sistemi += ("\n- GLOSSARY (mandatory, use these exact English terms):\n"
                         + "\n".join(f"  {sq} = {en}" for sq, en in prezente.items()))
-    r = requests.post(f"{OLLAMA_URL}/api/chat", json={
-        "model": LLM_MODEL, "stream": False, "keep_alive": "30m",
+    return chat_me_rezerve({
+        "stream": False, "keep_alive": "30m",
         "messages": [{"role": "system", "content": sistemi}, {"role": "user", "content": tekst}],
         "options": {"temperature": 0.1, "num_ctx": 8192, "num_predict": 1500},
-    }, timeout=600)
-    r.raise_for_status()
-    return r.json()["message"]["content"].strip()
+    }, timeout=600, rezerve=False)  # pa rezervë: llama3.2 e përkthen shqipen gabim (prova 24.11.2026)
 
 
 def perkthe(tekst: str, cache: bool = True, terma: dict | None = None) -> tuple[str, bool]:
@@ -85,7 +83,7 @@ def perkthe(tekst: str, cache: bool = True, terma: dict | None = None) -> tuple[
     for _ in range(2):  # një provë e dytë nëse numrat nuk përputhen
         try:
             en = _thirr_modelin(tekst, terma)
-        except requests.RequestException:
+        except (requests.RequestException, ValueError, KeyError):
             break
         if en and numrat_perputhen(tekst, en):
             if cache:
@@ -112,12 +110,10 @@ def perkthe_shume(tekste: list[str], madhesia: int = 25) -> list[str]:
         sistemi = (PROMPT + "\n- Input is a JSON list of Albanian strings. "
                    'Return JSON {"en": [...]} with exactly one English translation per item, same order.')
         try:
-            r = requests.post(f"{OLLAMA_URL}/api/chat", json={
-                "model": LLM_MODEL, "stream": False, "format": "json", "keep_alive": "30m",
+            dalja = json.loads(chat_me_rezerve({
+                "stream": False, "format": "json", "keep_alive": "30m",
                 "messages": [{"role": "system", "content": sistemi}, {"role": "user", "content": hyrja}],
-                "options": {"temperature": 0.1, "num_ctx": 8192, "num_predict": 4096}}, timeout=900)
-            r.raise_for_status()
-            dalja = json.loads(r.json()["message"]["content"]).get("en") or []
+                "options": {"temperature": 0.1, "num_ctx": 8192, "num_predict": 4096}}, timeout=900, rezerve=False)).get("en") or []
         except Exception:
             continue
         if len(dalja) != len(grupi):

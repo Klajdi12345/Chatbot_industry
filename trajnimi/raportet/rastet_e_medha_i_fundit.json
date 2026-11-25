@@ -1,0 +1,299 @@
+{
+ "data": "2026-11-25 18:13",
+ "raste": 6701,
+ "sekonda": 473.9,
+ "kaloi": true,
+ "kategorite": {
+  "regjistri_emer": {
+   "sakte": 2351,
+   "gjithsej": 2355,
+   "saktesia": 0.9983014861995754
+  },
+  "regjistri_lende": {
+   "sakte": 1112,
+   "gjithsej": 1114,
+   "saktesia": 0.9982046678635548
+  },
+  "siguria_recete": {
+   "sakte": 900,
+   "gjithsej": 900,
+   "saktesia": 1.0
+  },
+  "semundje": {
+   "sakte": 357,
+   "gjithsej": 360,
+   "saktesia": 0.9916666666666667
+  },
+  "profili_info": {
+   "sakte": 20,
+   "gjithsej": 20,
+   "saktesia": 1.0
+  },
+  "medlineplus": {
+   "sakte": 966,
+   "gjithsej": 1017,
+   "saktesia": 0.9498525073746312
+  },
+  "pa_ngaterrese": {
+   "sakte": 934,
+   "gjithsej": 935,
+   "saktesia": 0.9989304812834224
+  }
+ },
+ "gabimet": {
+  "regjistri_emer": [
+   {
+    "mesazh": "informacion per etol sri",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "informacion per fix ati",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "c'eshte calci di",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Spazmofarma",
+    "arsye": "qëllimi simptome"
+   }
+  ],
+  "regjistri_lende": [
+   {
+    "mesazh": "nikotinamidë",
+    "arsye": "qëllimi simptome"
+   },
+   {
+    "mesazh": "vitamina b1",
+    "arsye": "qëllimi simptome"
+   }
+  ],
+  "semundje": [
+   {
+    "mesazh": "What is Proximal humerus fracture?",
+    "arsye": "qëllimi ilac"
+   },
+   {
+    "mesazh": "What is Humeral shaft fracture?",
+    "arsye": "qëllimi ilac"
+   },
+   {
+    "mesazh": "What is Distal humerus fracture?",
+    "arsye": "qëllimi ilac"
+   }
+  ],
+  "medlineplus": [
+   {
+    "mesazh": "What is A1C?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Abortion?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Acne",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Arsenic?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is Bile Duct Diseases?",
+    "arsye": "u gjet Bile Duct Cancer"
+   },
+   {
+    "mesazh": "What are the symptoms of Blood?",
+    "arsye": "u gjet Blood Disorders"
+   },
+   {
+    "mesazh": "Tell me about Body Lice",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is Bone Cancer?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Bone Diseases?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Bone Infections",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about CPR",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is Cancer?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is Cold and Cough Medicines?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of College Health?",
+    "arsye": "u gjet Teen Mental Health"
+   },
+   {
+    "mesazh": "What are the symptoms of Coma?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Cough",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Diets?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of E. coli Infections?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is Ear Disorders?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Ear Infections",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Eye Cancer",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Eye Care?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is Eye Diseases?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Eye Infections",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Fire Safety?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Floods?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Foreign Bodies",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Gas",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is Gum Disease?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is HIV?",
+    "arsye": "qëllimi profil"
+   },
+   {
+    "mesazh": "What are the symptoms of HIV and Infections?",
+    "arsye": "qëllimi profil"
+   },
+   {
+    "mesazh": "What is HPV?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Health Fraud?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Health Occupations?",
+    "arsye": "u gjet Occupational Health"
+   },
+   {
+    "mesazh": "What are the symptoms of Infectious Diseases?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Lyme Disease",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is MRSA?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Medical Ethics?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Mercury?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Mood Disorders",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Opioid Use Disorder (OUD) Treatment?",
+    "arsye": "u gjet Opioids and Opioid Use Disorder (OUD)"
+   },
+   {
+    "mesazh": "What are the symptoms of Orthodontia?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Pain?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Phenylketonuria?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Rare Diseases?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What are the symptoms of Safe Opioid Use?",
+    "arsye": "u gjet Opioids and Opioid Use Disorder (OUD)"
+   },
+   {
+    "mesazh": "What is Sexual Health?",
+    "arsye": "u gjet Teen Sexual Health"
+   },
+   {
+    "mesazh": "What are the symptoms of Spleen Diseases?",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Tinea Infections",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "Tell me about Tooth Disorders",
+    "arsye": "qëllimi sqarim"
+   },
+   {
+    "mesazh": "What is Whooping Cough?",
+    "arsye": "qëllimi sqarim"
+   }
+  ],
+  "pa_ngaterrese": [
+   {
+    "mesazh": "sa acid folik duhet të marr",
+    "arsye": "regjistri: ACIDO FOLICO GENERIS"
+   }
+  ]
+ }
+}

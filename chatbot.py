@@ -16,9 +16,11 @@ import time
 from dataclasses import dataclass, field
 from functools import lru_cache
 
-from config import INDEKSI_PDF, chat, chat_mendo, embed, normalizo, query
+from config import INDEKSI_PDF, MODELI_I_FUNDIT, chat, chat_mendo, embed, normalizo, query
 from gjuha import anglisht_ne_shqip, gjuha_e_mesazhit, ka_shqip, ndryshimet, standardizo, varianta
 from perkthimi import perkthe
+import regjistri
+import semundjet
 
 PRAGU_SIMPTOMES = 0.68      # ngjashmëria minimale (cosine) që një simptomë të pranohet
 DIFERENCA_MAKS = 0.05       # simptomat e tjera duhet të jenë afër më të mirës
@@ -171,7 +173,7 @@ GJENDJE_NGA_TEKSTI = {
     "glaukome": r"glaukom",
     "prostate": r"prostat",
     "alkool": r"alkool",
-    "antikoagulante": r"varfarin|sintrom|antikoagul|hollim\w* (e |te )?gjak|xarelto|eliquis|clopidogrel",
+    "antikoagulante": r"varfarin|warfarin|sintrom|antikoagul|hollim\w* (e |te )?gjak|xarelto|eliquis|clopidogrel",
     "antidepresive": r"antidepres|sertralin|fluoksetin|paroksetin|escitalopram|citalopram|venlafaksin",
     "alergji_nsaid": r"alergj\w*( \w+){0,3} (ibuprofen|aspirin|nsaid|brufen|nurofen|diklofenak|voltaren)",
     "alergji_paracetamol": r"alergj\w*( \w+){0,3} (paracetamol|panadol|efferalgan)",
@@ -226,6 +228,7 @@ class Pergjigje:
     gjuha: str = "sq"                                    # gjuha e personit: "sq" ose "en"
     fleteudhezuesit: list = field(default_factory=list)  # pjesët zyrtare openFDA (anglisht) për kartat
     ne_anglisht: bool = False                            # teksti është shkruar drejt në anglisht (s'ka nevojë për përkthim)
+    referenca: dict = field(default_factory=dict)        # çfarë u gjet: regjistri AKBPM, sëmundja, tema MedlinePlus
 
 
 @dataclass
@@ -512,7 +515,7 @@ def _ka_indeks_pdf() -> bool:
     return bool(query("SHOW VECTOR INDEXES YIELD name WHERE name = $n RETURN name", n=INDEKSI_PDF))
 
 
-def kerko_ne_pdf(tekst: str, k: int = 3) -> list[dict]:
+def kerko_ne_pdf(tekst: str, k: int = 3, prag: float = PRAGU_PDF) -> list[dict]:
     try:
         if not _ka_indeks_pdf():
             return []
@@ -521,7 +524,7 @@ def kerko_ne_pdf(tekst: str, k: int = 3) -> list[dict]:
                      "RETURN node.tekst AS tekst, node.burimi AS burimi, node.faqja AS faqja, node.url AS url, "
                      "node.lloji AS lloji, 2 * score - 1 AS score",
                      k=k, v=v)
-        return [r for r in rows if r["score"] >= PRAGU_PDF]
+        return [r for r in rows if r["score"] >= prag]
     except Exception:
         return []
 
@@ -669,8 +672,10 @@ def _te_gjitha_barnat() -> list[dict]:
         b = r["b"]
         fjale = set(b["id"].split("_")) | {normalizo(e).split(" ")[0] for e in b["emra_tregtare"]}
         fjale -= _FJALE_TE_PERGJITHSHME
-        rrenjet = {f[:max(5, len(f) - 2)] for f in fjale if len(f) >= 4}
-        r["pattern"] = r"\b(" + "|".join(sorted(map(re.escape, rrenjet))) + r")" if rrenjet else r"(?!)"
+        # Rrënja + vetëm një mbaresë e shkurtër: "Paranix" nuk kap "parandalohet", "Humer" nuk kap "humerusit".
+        rrenjet = {(f[:max(5, len(f) - 2)], len(f) - max(5, len(f) - 2) + 3) for f in fjale if len(f) >= 4}
+        r["pattern"] = (r"\b(" + "|".join(f"{re.escape(rr)}\\w{{0,{n}}}" for rr, n in sorted(rrenjet)) + r")\b"
+                        if rrenjet else r"(?!)")
     return rows
 
 
@@ -1155,9 +1160,12 @@ def _pergjigju(mesazh: str, historia: list[dict], profili: Profili,
         simptomat = _zgjidh_pritjen(mesazh, kont.pritje)
         shto = shto or bool(simptomat and kont.pritje_shto)
     # 5. ilaç me emër
-    if not simptomat and (permendura := gjej_barnat_e_permendura(mesazh)):
+    if not simptomat and (permendura := gjej_barnat_e_permendura(mesazh)) and not _emer_me_recete(mesazh):
         return Pergjigje(tekst=shenim + pergjigje_per_ilacin(permendura, profili), qellimi="ilac",
                          barnat_konteksti=[r["b"]["id"] for r in permendura[:2]], **baza)
+    # 5b. ilaç i regjistrit AKBPM ose sëmundje/thyerje: vetëm informacion (ilaçet me recetë nuk sugjerohen)
+    if not simptomat and (p := _pergjigje_informuese(mesazh, t_norm, shenim, baza, m)):
+        return p
     # 6. simptomë e re
     if not simptomat:
         m.hap(f"🔎 Po kërkoj në bazën e njohurive ({_numri_frazave()} fraza, edhe me variantin standard)...",
@@ -1225,6 +1233,10 @@ def _pergjigju(mesazh: str, historia: list[dict], profili: Profili,
         if simptomat and re.search(PYETJE, t_norm):
             return _pergjigje_llm(mesazh, historia, profili, simptomat, kont, baza, m)
 
+    # 7b. pyetje për një sëmundje që nuk është në bazën shqip → tema zyrtare MedlinePlus (lidhje)
+    if (semundjet.eshte_pyetje_info(t_norm) or semundjet.eshte_pyetje_info(mesazh)) \
+            and (p := _pergjigje_medlineplus(mesazh, baza)):
+        return p
     if shenim:
         return Pergjigje(tekst=shenim + "Tani më trego çfarë simptome ke.", qellimi="profil", **baza)
     # 8. ankesë e panjohur
@@ -1233,6 +1245,93 @@ def _pergjigju(mesazh: str, historia: list[dict], profili: Profili,
     if re.search(ANKESE_SIMPTOME, t_norm):
         return Pergjigje(tekst=_zgjidh(NUK_E_NJOH, historia), qellimi="e_panjohur", **baza)
     return Pergjigje(tekst=_zgjidh(SQARIM, historia), qellimi="sqarim", **baza)
+
+
+# ---------------------------------------------------------------- regjistri AKBPM, sëmundjet, MedlinePlus
+PRAGU_MEDLINEPLUS = 0.74            # pa fjalë të përbashkët me titullin
+PRAGU_MEDLINEPLUS_ME_FJALE = 0.42   # me fjalë të përbashkët me titullin ("celiakia" ~ "Celiac")
+RE_RECETE = r"recet|prescri|autorizuar|a shitet|a gjendet|ku (e )?gjej"
+
+
+def _emer_me_recete(mesazh: str) -> bool:
+    """Emër tregtar i regjistrit që kërkon recetë ("Ultop", "Brufen"): statusi zyrtar ka përparësi mbi ilaçin
+    e njohur pa recetë me të njëjtën lëndë, që të mos jepet dozë për një produkt me recetë."""
+    reg = regjistri.gjej(mesazh, varianta(mesazh))
+    return bool(reg and reg["lloji"] == "emer" and regjistri.eshte_pa_recete(reg["produktet"]) is False)
+
+
+def _pergjigje_informuese(mesazh: str, t_norm: str, shenim: str, baza: dict, m: "Mendimi") -> "Pergjigje | None":
+    """Pyetje për një ilaç të regjistrit AKBPM (çfarë është, a do recetë) ose për një sëmundje/thyerje.
+    Pyetja informuese nuk e ndryshon profilin: "çfarë është diabeti?" nuk do të thotë "kam diabet"."""
+    vs = varianta(mesazh)
+    info = semundjet.eshte_pyetje_info(t_norm) or semundjet.eshte_pyetje_info(mesazh) or bool(re.search(RE_RECETE, t_norm))
+    ankese = bool(re.search(ANKESE_SIMPTOME, t_norm))
+    pyetje = bool(re.search(PYETJE, t_norm))
+    i_shkurter = len(_pastro(t_norm).split()) <= 4
+    pa_profil = dict(baza, gjendje_te_reja=set(), mosha_e_re=None)
+    # Fjalë e shkurtër pa pyetje që është edhe simptomë e njohur ("migrenë", "vitamin c") → rruga e simptomave.
+    simptome = not (info or pyetje) and i_shkurter and any(s.get("i_sigurt") for s in kerko_simptomat(mesazh)[0])
+    if (reg := regjistri.gjej(mesazh, vs)) and not simptome \
+            and (info or pyetje or (i_shkurter and not ankese) or not (ankese or shenim)):
+        m.hap(f"📋 E gjeta te regjistri zyrtar AKBPM: {reg['emri'].title()} ({len(reg['produktet'])} produkte).",
+              f"📋 Found in the official AKBPM register: {reg['emri'].title()} ({len(reg['produktet'])} products).")
+        sipas_profilit = ankese and not info
+        return Pergjigje(tekst=(shenim if sipas_profilit else "") + regjistri.pergjigje(reg, ka_simptoma=ankese),
+                         qellimi="regjistri", **(baza if sipas_profilit else pa_profil),
+                         referenca={"lloji": reg["lloji"], "celesi": " ".join(reg["celesi"]), "emri": reg["emri"],
+                                    "pa_recete": regjistri.eshte_pa_recete(reg["produktet"])})
+    if (sem := semundjet.gjej(mesazh, vs)) and not simptome and (info or (i_shkurter and not ankese)):
+        m.hap("🩺 E gjeta te baza e sëmundjeve: " + ", ".join(h["emri_shqip"] for h in sem[:3]),
+              "🩺 Found in the disease base: " + ", ".join(h["emri_anglisht"] for h in sem[:3]))
+        return Pergjigje(tekst=semundjet.pergjigje(sem, mesazh + " " + t_norm), qellimi="semundje", **pa_profil,
+                         referenca={"lloji": "semundje", "ids": [h["id"] for h in sem]})
+    return None
+
+
+_FJALE_TE_PERGJITHSHME_MEDLINE = {"sindrom", "semund", "disea", "kroni", "akut", "infek", "infec", "probl", "crreg",
+                                  "disor", "kanse", "kance", "tumor", "sistem", "health", "shend", "eshte", "cfare",
+                                  "trego", "simpt", "sympt", "trajt", "treat"}
+
+
+def _rrenjet_medline(tekst: str) -> set[str]:
+    rr = {regjistri.celes(f)[:5] for f in re.split(r"[^a-z0-9]+", normalizo(tekst)) if len(f) >= 4}
+    return {r for r in rr if len(r) >= 4} - _FJALE_TE_PERGJITHSHME_MEDLINE
+
+
+def _pergjigje_medlineplus(mesazh: str, baza: dict) -> "Pergjigje | None":
+    """Tema më e afërt nga MedlinePlus (NIH, anglisht). Teksti nuk përkthehet me model, që të mos ndryshojë
+    kuptimi: jepet titulli, një pjesë e shkurtër origjinale dhe lidhja. Tema pranohet kur një fjalë dalluese
+    e pyetjes përputhet me titullin ("celiakia" ~ "Celiac Disease") dhe ngjashmëria nuk është shumë e ulët,
+    ose kur ngjashmëria është shumë e lartë."""
+    import difflib
+    pyetja = _rrenjet_medline(mesazh)
+    fjalet_e_pyetjes = [regjistri.celes(f) for f in re.split(r"[^a-z0-9]+", normalizo(mesazh)) if len(f) >= 4]
+    gjetjet = []
+    for d in kerko_ne_pdf(mesazh, k=10, prag=PRAGU_MEDLINEPLUS_ME_FJALE):
+        if d.get("lloji") != "medlineplus":
+            continue
+        titulli = d["burimi"].removeprefix("MedlinePlus: ")
+        rr_titulli = _rrenjet_medline(titulli)
+        if (pyetja & rr_titulli) or d["score"] >= PRAGU_MEDLINEPLUS:
+            # Titulli që përputhet më plotësisht: "Psoriasis" para "Psoriatic Arthritis".
+            pjesa = len(pyetja & rr_titulli) / max(1, len(rr_titulli))
+            ngjashmeria = max((difflib.SequenceMatcher(None, a, regjistri.celes(b)).ratio()
+                               for a in fjalet_e_pyetjes for b in re.split(r"[^a-z0-9]+", normalizo(titulli)) if b),
+                              default=0)
+            gjetjet.append(((round(pjesa, 2), round(ngjashmeria, 2), d["score"]), d))
+    if not gjetjet:
+        return None
+    gjetjet = [d for _, d in sorted(gjetjet, key=lambda x: x[0], reverse=True)]
+    d = gjetjet[0]
+    titulli = d["burimi"].removeprefix("MedlinePlus: ")
+    pjesa = " ".join(re.sub(r"^[^.]*\(also called:[^)]*\)\.\s*", "", d["tekst"]).split())
+    pjesa = re.sub(r" ([,.;:])", r"\1", pjesa)
+    pjesa = pjesa[:350].rsplit(" ", 1)[0] + "..." if len(pjesa) > 350 else pjesa
+    tekst = ("Këtë temë nuk e kam ende të përshkruar në shqip në bazën time. Burimi zyrtar **MedlinePlus** "
+             f"(Biblioteka Kombëtare e Mjekësisë, SHBA) ka një faqe për të: **[{titulli}]({d['url']})** (në anglisht).\n\n"
+             f"> {pjesa}\n\n_Për diagnozë dhe trajtim shko te mjeku. Ilaçet me recetë i vendos vetëm mjeku._")
+    return Pergjigje(tekst=tekst, qellimi="medlineplus", burime=[d], **dict(baza, gjendje_te_reja=set(), mosha_e_re=None),
+                     referenca={"lloji": "medlineplus", "titulli": titulli, "url": d["url"]})
 
 
 RE_DOZE = re.compile(r"\d+([.,]\d+)?\s*(mg|ml|mcg|g\b|gram|tablet|kapsul|cop|pik|her[eë] n[eë] dit)", re.I)
@@ -1279,6 +1378,12 @@ def _pergjigje_llm(mesazh, historia, profili, simptomat, kont, baza, m: Mendimi 
         else:
             pergjigja = chat(mesazhet)
         tekst = pastro_dozat(pergjigja, barnat)
+        if MODELI_I_FUNDIT.get("rezerve"):
+            # Modeli kryesor dështoi dhe u përgjigj llama3.2:3b, që e flet shqipen më dobët.
+            tekst += ("\n\n_(The main model was unavailable; this short answer comes from the backup model. "
+                      "Check with a pharmacist.)_" if anglisht else
+                      "\n\n_(Modeli kryesor nuk ishte i disponueshëm; kjo përgjigje e shkurtër vjen nga modeli "
+                      "rezervë. Verifikoje me farmacistin.)_")
     except Exception:
         tekst = ("Nuk e përpunova dot këtë pyetje tani. Mund të më pyesësh për dozën, alternativat, "
                  "këshillat ose kur duhet mjeku, ose pyet farmacistin.")

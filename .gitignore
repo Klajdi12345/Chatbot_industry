@@ -26,3 +26,6 @@ assets/vjeter/
 *.lnk
 Thumbs.db
 desktop.ini
+
+# Kopjet rezervë të sëmundjeve
+data/semundjet_backup_*.json

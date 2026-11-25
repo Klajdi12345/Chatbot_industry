@@ -1,6 +1,6 @@
 {
- "data": "2026-11-22 03:13",
- "sekonda": 51.0,
+ "data": "2026-11-25 18:05",
+ "sekonda": 50.5,
  "gjithsej": 273,
  "sakte": 273,
  "saktesia": 1.0,
@@ -110,7 +110,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.46
+   "sekonda": 0.39
   },
   {
    "mesazh": "kam një dhimbje koke që s'po më ikën",
@@ -123,7 +123,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.37
+   "sekonda": 0.21
   },
   {
    "mesazh": "mu ka ba kryt dop",
@@ -136,7 +136,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.34
+   "sekonda": 0.21
   },
   {
    "mesazh": "me dhem koka tmerrsisht",
@@ -149,7 +149,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.33
+   "sekonda": 0.36
   },
   {
    "mesazh": "dhimbje koke nga stresi në punë",
@@ -163,7 +163,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.3
+   "sekonda": 0.22
   },
   {
    "mesazh": "më dhemb një dhëmb poshtë majtas",
@@ -177,7 +177,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.16
   },
   {
    "mesazh": "sme le dhembi te fle",
@@ -190,7 +190,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.28
+   "sekonda": 0.22
   },
   {
    "mesazh": "dhëmballa e mençurisë po më del dhe më dhemb",
@@ -203,7 +203,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.16
   },
   {
    "mesazh": "jam me temperaturë 38.5",
@@ -216,7 +216,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam zjarrmi qe dje",
@@ -229,7 +229,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.27
+   "sekonda": 0.38
   },
   {
    "mesazh": "trupi më digjet, mendoj se kam ethe",
@@ -242,7 +242,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.23
   },
   {
    "mesazh": "jam ftohur keq, më dhemb gjithë trupi",
@@ -255,7 +255,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.28
+   "sekonda": 0.24
   },
   {
    "mesazh": "mduket se po me kap gripi",
@@ -268,7 +268,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam marrë të ftohtë nga shiu",
@@ -281,7 +281,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.14
   },
   {
    "mesazh": "fyti më djeg kur pi ujë",
@@ -294,7 +294,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.15
   },
   {
    "mesazh": "me dhem gurmazi",
@@ -307,7 +307,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.3
+   "sekonda": 0.36
   },
   {
    "mesazh": "kam fytin e skuqur dhe të irrituar",
@@ -320,7 +320,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.16
   },
   {
    "mesazh": "kollitem gjithë natën pa nxjerrë asgjë",
@@ -333,7 +333,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam një kollë të thatë që më gërvisht fytin",
@@ -347,7 +347,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.16
   },
   {
    "mesazh": "kam kollë dhe nxjerr gjëra të verdha",
@@ -360,7 +360,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.16
   },
   {
    "mesazh": "kollë me sekrecione të trasha",
@@ -373,7 +373,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.24
+   "sekonda": 0.13
   },
   {
    "mesazh": "hunda më është mbyllur fare",
@@ -386,7 +386,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.14
   },
   {
    "mesazh": "s'marr dot frymë nga hunda, kam rrufë",
@@ -399,7 +399,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.33
+   "sekonda": 0.2
   },
   {
    "mesazh": "me rrjedh hunda vazhdimisht",
@@ -412,7 +412,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.26
   },
   {
    "mesazh": "sa vjen pranvera fillojnë teshtimat",
@@ -425,7 +425,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.14
   },
   {
    "mesazh": "kam alergji nga pluhuri dhe teshtij",
@@ -438,7 +438,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.16
   },
   {
    "mesazh": "më kruhen sytë dhe hunda nga poleni",
@@ -452,7 +452,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.14
   },
   {
    "mesazh": "më ka pickuar një insekt dhe më kruhet",
@@ -465,7 +465,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.14
   },
   {
    "mesazh": "më kan dal pika te kuqe qe me hane",
@@ -478,7 +478,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.32
+   "sekonda": 0.22
   },
   {
    "mesazh": "lëkura e krahut më kruhet shumë",
@@ -492,7 +492,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.14
   },
   {
    "mesazh": "kam këmbën e atletit",
@@ -506,7 +506,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.23
   },
   {
    "mesazh": "kam njolla rrethore me kërpudha në lëkurë",
@@ -519,7 +519,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.16
   },
   {
    "mesazh": "pas buke me ngjitet acidi ne gryke",
@@ -532,7 +532,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.11
+   "sekonda": 0.08
   },
   {
    "mesazh": "më vjen thartirë në gojë natën",
@@ -545,7 +545,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.17
   },
   {
    "mesazh": "kam djegie në gjoks pas ushqimeve me yndyrë",
@@ -558,7 +558,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.13
   },
   {
    "mesazh": "kam barkun e lirshëm që dje",
@@ -572,7 +572,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.15
   },
   {
    "mesazh": "po shkoj shpesh në tualet me ujë",
@@ -585,7 +585,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.16
   },
   {
    "mesazh": "me shkon barku si uje",
@@ -599,7 +599,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.23
+   "sekonda": 0.14
   },
   {
    "mesazh": "s'kam bërë nevojën prej 4 ditësh",
@@ -612,7 +612,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.28
+   "sekonda": 0.19
   },
   {
    "mesazh": "jam kapsllëk",
@@ -625,7 +625,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.24
   },
   {
    "mesazh": "barku më është fryrë si tullumbace",
@@ -639,7 +639,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam shumë gazra pas ngrënies",
@@ -652,7 +652,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.15
   },
   {
    "mesazh": "më shtrëngon barku me ngërçe",
@@ -665,7 +665,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.13
   },
   {
    "mesazh": "kam kolika në bark",
@@ -678,7 +678,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.23
+   "sekonda": 0.25
   },
   {
    "mesazh": "kam dhimbje të forta gjatë ciklit",
@@ -691,7 +691,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.14
   },
   {
    "mesazh": "me dhem barku se jam me periodë",
@@ -705,7 +705,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.28
+   "sekonda": 0.21
   },
   {
    "mesazh": "më është ndrydhur këmba duke vrapuar",
@@ -718,7 +718,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.13
   },
   {
    "mesazh": "më dhembin muskujt pas palestrës",
@@ -731,7 +731,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.14
   },
   {
    "mesazh": "më dhemb gjuri kur ngjitem shkallët",
@@ -744,7 +744,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.14
   },
   {
    "mesazh": "me dhem kurrizi poshte",
@@ -757,7 +757,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.31
+   "sekonda": 0.38
   },
   {
    "mesazh": "më ka kapur mesi dhe s'drejtohem dot",
@@ -770,7 +770,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.27
+   "sekonda": 0.24
   },
   {
    "mesazh": "kam të përziera që në mëngjes",
@@ -783,7 +783,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.14
   },
   {
    "mesazh": "po vjell gjithçka që ha",
@@ -796,7 +796,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.16
   },
   {
    "mesazh": "më zë deti kur hipi në traget",
@@ -809,7 +809,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.16
   },
   {
    "mesazh": "më dhemb veshi i djathtë",
@@ -822,7 +822,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.14
   },
   {
    "mesazh": "kam dhimbje në vesh pas notit",
@@ -835,7 +835,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "s'më zë gjumi natën",
@@ -848,7 +848,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.3
+   "sekonda": 0.19
   },
   {
    "mesazh": "zgjohem 3-4 herë natën dhe s'fle dot më",
@@ -861,7 +861,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.3
+   "sekonda": 0.22
   },
   {
    "mesazh": "kam një plagë të bardhë në gojë që më dhemb",
@@ -874,7 +874,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.14
   },
   {
    "mesazh": "më kanë dalë afte në gjuhë",
@@ -887,7 +887,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.15
   },
   {
    "mesazh": "më ka dalë uthull në buzë",
@@ -900,7 +900,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.14
   },
   {
    "mesazh": "kam flluska në buzë nga herpesi",
@@ -913,7 +913,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.17
   },
   {
    "mesazh": "kam majasëll dhe më djeg kur shkoj në tualet",
@@ -926,7 +926,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.16
   },
   {
    "mesazh": "kam hemoroide",
@@ -939,7 +939,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.28
+   "sekonda": 0.36
   },
   {
    "mesazh": "sytë më janë tharë nga kompjuteri",
@@ -952,7 +952,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.16
   },
   {
    "mesazh": "më ndjehen sytë me rërë dhe të lodhur",
@@ -966,7 +966,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.15
   },
   {
    "mesazh": "sytë më janë skuqur dhe më kruhen nga alergjia",
@@ -980,7 +980,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.17
   },
   {
    "mesazh": "më kanë dalë puçrra në ballë",
@@ -994,7 +994,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam aknet e adoleshencës",
@@ -1007,7 +1007,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.25
   },
   {
    "mesazh": "u dogja me hekurin e rrobave",
@@ -1021,7 +1021,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.23
+   "sekonda": 0.18
   },
   {
    "mesazh": "lëkura më është skuqur nga dielli në plazh",
@@ -1034,7 +1034,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.17
   },
   {
    "mesazh": "u çava me një gotë në dorë",
@@ -1047,7 +1047,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.15
   },
   {
    "mesazh": "rashë me biçikletë dhe u gërvishta",
@@ -1060,7 +1060,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.17
   },
   {
    "mesazh": "vajza ka morra në flokë",
@@ -1073,7 +1073,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam luspa të bardha në flokë",
@@ -1087,7 +1087,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.14
   },
   {
    "mesazh": "më kruhet koka dhe kam zbokth",
@@ -1101,7 +1101,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam kruajtje vaginale dhe rrjedhje të bardhë",
@@ -1114,7 +1114,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.16
   },
   {
    "mesazh": "me djeg kur urinoj",
@@ -1127,7 +1127,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.23
   },
   {
    "mesazh": "kam nevojë të urinoj shpesh dhe më djeg",
@@ -1140,7 +1140,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.14
   },
   {
    "mesazh": "më vjen mendja vërdallë kur ngrihem",
@@ -1153,7 +1153,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam marramendje prej dy ditësh",
@@ -1166,7 +1166,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.14
   },
   {
    "mesazh": "ndihem gjithmonë i lodhur pa energji",
@@ -1179,7 +1179,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.13
   },
   {
    "mesazh": "jam i këputur gjithë ditën",
@@ -1192,7 +1192,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.15
   },
   {
    "mesazh": "djali ka krimba",
@@ -1205,7 +1205,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.23
   },
   {
    "mesazh": "dua ta lë duhanin",
@@ -1218,7 +1218,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.21
   },
   {
    "mesazh": "si mund ta lë cigaren",
@@ -1231,7 +1231,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.13
   },
   {
    "mesazh": "duart më janë tharë dhe çarë nga dimri",
@@ -1244,7 +1244,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.13
   },
   {
    "mesazh": "kam ekzemë në bërryla",
@@ -1257,7 +1257,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.22
   },
   {
    "mesazh": "më ka dalë një kallo te gishti i madh",
@@ -1270,7 +1270,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.18
   },
   {
    "mesazh": "thonjtë e këmbëve më janë trashur dhe zverdhur",
@@ -1284,7 +1284,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.16
   },
   {
    "mesazh": "më rrjedh gjak nga hunda",
@@ -1298,7 +1298,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.14
   },
   {
    "mesazh": "më ka ikur zëri",
@@ -1311,7 +1311,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.27
   },
   {
    "mesazh": "jam ngjirur nga të bërtiturat në ndeshje",
@@ -1324,7 +1324,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam erë të keqe goje",
@@ -1337,7 +1337,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.15
   },
   {
    "mesazh": "jam shumë në ankth këto ditë",
@@ -1350,7 +1350,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.13
   },
   {
    "mesazh": "ndihem nervoz dhe i stresuar",
@@ -1363,7 +1363,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.14
   },
   {
    "mesazh": "dua vitamina për imunitetin",
@@ -1376,7 +1376,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.23
+   "sekonda": 0.21
   },
   {
    "mesazh": "kam hekurin të ulët në analiza",
@@ -1389,7 +1389,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "natën më kapin ngërçet në pulpë",
@@ -1402,7 +1402,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.16
   },
   {
    "mesazh": "bebit po i dalin dhëmbët",
@@ -1415,7 +1415,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.15
   },
   {
    "mesazh": "bebja ka skuqje nga pampersi",
@@ -1428,7 +1428,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.27
+   "sekonda": 0.25
   },
   {
    "mesazh": "kam zgjebe",
@@ -1441,7 +1441,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.17
+   "sekonda": 0.25
   },
   {
    "mesazh": "veshi më është zënë nga dylli",
@@ -1455,7 +1455,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.17
   },
   {
    "mesazh": "këmbët më rëndojnë në mbrëmje dhe kam variçe",
@@ -1469,7 +1469,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.19
   },
   {
    "mesazh": "çfarë të përdor kundër mushkonjave",
@@ -1496,7 +1496,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.25
   },
   {
    "mesazh": "djersitem shumë nën sqetull",
@@ -1509,7 +1509,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.24
   },
   {
    "mesazh": "po më bien flokët shumë",
@@ -1522,7 +1522,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.14
   },
   {
    "mesazh": "më kanë dalë flluska nga këpucët e reja",
@@ -1535,7 +1535,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "buzët më janë çarë",
@@ -1548,7 +1548,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.24
   },
   {
    "mesazh": "syri më ka qelb dhe ngjitet në mëngjes",
@@ -1561,7 +1561,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.15
+   "sekonda": 0.11
   },
   {
    "mesazh": "po planifikojmë një fëmijë, çfarë duhet të marr",
@@ -1574,7 +1574,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.19
+   "sekonda": 0.17
   },
   {
    "mesazh": "kam temperaturë dhe më dhemb fyti",
@@ -1589,7 +1589,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.21
+   "sekonda": 0.15
   },
   {
    "mesazh": "më dhemb koka dhe kam rrufë",
@@ -1604,7 +1604,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.2
+   "sekonda": 0.16
   },
   {
    "mesazh": "më përzihet në makinë sa herë udhëtoj",
@@ -1618,7 +1618,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.18
+   "sekonda": 0.16
   },
   {
    "mesazh": "kam etje të madhe dhe dobësi nga vapa",
@@ -1631,7 +1631,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "simptome",
-   "sekonda": 0.22
+   "sekonda": 0.15
   },
   {
    "mesazh": "I have a terrible headache",
@@ -1644,7 +1644,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.25
+   "sekonda": 0.23
   },
   {
    "mesazh": "my tooth hurts a lot",
@@ -1657,7 +1657,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.28
+   "sekonda": 0.4
   },
   {
    "mesazh": "I have a fever of 39",
@@ -1670,7 +1670,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.3
+   "sekonda": 0.37
   },
   {
    "mesazh": "I think I caught a cold",
@@ -1683,7 +1683,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.31
+   "sekonda": 0.37
   },
   {
    "mesazh": "my throat is sore",
@@ -1696,7 +1696,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.23
+   "sekonda": 0.37
   },
   {
    "mesazh": "I have a dry cough",
@@ -1709,7 +1709,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.26
+   "sekonda": 0.36
   },
   {
    "mesazh": "my nose is blocked",
@@ -1722,7 +1722,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.29
+   "sekonda": 0.38
   },
   {
    "mesazh": "I have hay fever and keep sneezing",
@@ -1735,7 +1735,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.27
+   "sekonda": 0.25
   },
   {
    "mesazh": "I have heartburn after meals",
@@ -1748,7 +1748,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.25
+   "sekonda": 0.34
   },
   {
    "mesazh": "I have diarrhea",
@@ -1761,7 +1761,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.18
+   "sekonda": 0.23
   },
   {
    "mesazh": "I am constipated",
@@ -1774,7 +1774,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.23
+   "sekonda": 0.37
   },
   {
    "mesazh": "my back hurts",
@@ -1787,7 +1787,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.24
+   "sekonda": 0.38
   },
   {
    "mesazh": "I can't sleep at night",
@@ -1800,7 +1800,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.27
+   "sekonda": 0.4
   },
   {
    "mesazh": "I have period pain",
@@ -1813,7 +1813,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.23
+   "sekonda": 0.35
   },
   {
    "mesazh": "I feel nauseous",
@@ -1826,7 +1826,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.24
+   "sekonda": 0.21
   },
   {
    "mesazh": "I got sunburned",
@@ -1839,7 +1839,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.25
+   "sekonda": 0.44
   },
   {
    "mesazh": "I have athlete's foot",
@@ -1853,7 +1853,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.27
+   "sekonda": 0.41
   },
   {
    "mesazh": "it burns when I pee",
@@ -1866,7 +1866,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.28
+   "sekonda": 0.46
   },
   {
    "mesazh": "I have a cold sore on my lip",
@@ -1879,7 +1879,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.3
+   "sekonda": 0.29
   },
   {
    "mesazh": "my ear hurts",
@@ -1892,7 +1892,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "anglisht",
-   "sekonda": 0.27
+   "sekonda": 0.46
   },
   {
    "mesazh": "kam një dhimbje të fortë në gjoks që shkon në krahun e majtë",
@@ -2100,7 +2100,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.17
+   "sekonda": 0.29
   },
   {
    "mesazh": "kam pak kollë",
@@ -2108,7 +2108,7 @@
    "gjetur": "sqarim",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.12
+   "sekonda": 0.2
   },
   {
    "mesazh": "më dhemb muskuli i gjoksit pas palestrës",
@@ -2116,7 +2116,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.23
+   "sekonda": 0.17
   },
   {
    "mesazh": "kam hundën e zënë dhe marr frymë me gojë",
@@ -2124,7 +2124,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam pak temperaturë 37.5",
@@ -2132,7 +2132,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.17
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam marrë frymë thellë dhe më dhemb brinja",
@@ -2140,7 +2140,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.19
+   "sekonda": 0.14
   },
   {
    "mesazh": "më ka ënjtur pak kyçi i këmbës",
@@ -2148,7 +2148,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.18
+   "sekonda": 0.15
   },
   {
    "mesazh": "mora 2 tableta paracetamol dhe s'më ka ikur dhimbja",
@@ -2156,7 +2156,7 @@
    "gjetur": "ilac",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.0
+   "sekonda": 0.01
   },
   {
    "mesazh": "fëmija 5 vjeç ka temperaturë 38",
@@ -2164,7 +2164,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.2
+   "sekonda": 0.24
   },
   {
    "mesazh": "kam pak gjak kur laj dhëmbët",
@@ -2172,7 +2172,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "jam i lodhur nga jeta e përditshme",
@@ -2180,7 +2180,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.22
+   "sekonda": 0.14
   },
   {
    "mesazh": "dhimbja e kokës më e fortë është në mëngjes",
@@ -2188,7 +2188,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.19
+   "sekonda": 0.17
   },
   {
    "mesazh": "nuk e lëviz dot qafën pas gjumit",
@@ -2196,7 +2196,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.19
+   "sekonda": 0.13
   },
   {
    "mesazh": "the baby is teething and has a mild fever",
@@ -2204,7 +2204,7 @@
    "gjetur": "simptome",
    "statusi": "sakte",
    "kategoria": "jo_urgjence",
-   "sekonda": 0.31
+   "sekonda": 0.38
   },
   {
    "mesazh": "më dhemb koka",
@@ -2221,7 +2221,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.23
+   "sekonda": 0.27
   },
   {
    "mesazh": "më dhemb dhëmbi",
@@ -2239,7 +2239,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.18
+   "sekonda": 0.26
   },
   {
    "mesazh": "kam dhimbje menstruale",
@@ -2257,7 +2257,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.17
+   "sekonda": 0.26
   },
   {
    "mesazh": "kam temperaturë",
@@ -2274,7 +2274,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.22
+   "sekonda": 0.25
   },
   {
    "mesazh": "më dhemb shpina",
@@ -2292,7 +2292,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.2
+   "sekonda": 0.25
   },
   {
    "mesazh": "kam hundë të zënë",
@@ -2311,7 +2311,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.21
+   "sekonda": 0.24
   },
   {
    "mesazh": "s'më zë gjumi",
@@ -2330,7 +2330,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.28
+   "sekonda": 0.41
   },
   {
    "mesazh": "kam kollë të thatë",
@@ -2348,7 +2348,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.22
+   "sekonda": 0.25
   },
   {
    "mesazh": "më dhemb fyti",
@@ -2368,7 +2368,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.2
+   "sekonda": 0.23
   },
   {
    "mesazh": "kam diarre",
@@ -2384,7 +2384,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.19
+   "sekonda": 0.25
   },
   {
    "mesazh": "kam temperaturë",
@@ -2400,7 +2400,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.17
+   "sekonda": 0.21
   },
   {
    "mesazh": "kam urth",
@@ -2419,7 +2419,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.19
+   "sekonda": 0.24
   },
   {
    "mesazh": "më dhemb koka",
@@ -2439,7 +2439,7 @@
    "statusi": "sakte",
    "shkelje": [],
    "kategoria": "siguria",
-   "sekonda": 0.21
+   "sekonda": 0.24
   },
   {
    "mesazh": "djali 5 vjeç ka temperaturë",
@@ -2447,7 +2447,7 @@
    "gjetur": "pa doza",
    "statusi": "sakte",
    "kategoria": "femije",
-   "sekonda": 0.21
+   "sekonda": 0.15
   },
   {
    "mesazh": "vajza 8 vjeçe ka kollë të thatë",
@@ -2455,7 +2455,7 @@
    "gjetur": "pa doza",
    "statusi": "sakte",
    "kategoria": "femije",
-   "sekonda": 0.21
+   "sekonda": 0.13
   },
   {
    "mesazh": "kam temperaturë, jam 30 vjeç",
@@ -2463,7 +2463,7 @@
    "gjetur": "me doza",
    "statusi": "sakte",
    "kategoria": "femije",
-   "sekonda": 0.2
+   "sekonda": 0.13
   },
   {
    "mesazh": "sa është ora?",
@@ -2471,7 +2471,7 @@
    "gjetur": "sqarim",
    "statusi": "sakte",
    "kategoria": "pa_lidhje",
-   "sekonda": 0.12
+   "sekonda": 0.09
   },
   {
    "mesazh": "kush e fitoi ndeshjen dje?",
@@ -2479,7 +2479,7 @@
    "gjetur": "sqarim",
    "statusi": "sakte",
    "kategoria": "pa_lidhje",
-   "sekonda": 0.12
+   "sekonda": 0.09
   },
   {
    "mesazh": "më trego një shaka",
@@ -2487,7 +2487,7 @@
    "gjetur": "sqarim",
    "statusi": "sakte",
    "kategoria": "pa_lidhje",
-   "sekonda": 0.14
+   "sekonda": 0.16
   },
   {
    "mesazh": "çfarë kryeqyteti ka Franca",
@@ -2495,7 +2495,7 @@
    "gjetur": "sqarim",
    "statusi": "sakte",
    "kategoria": "pa_lidhje",
-   "sekonda": 0.12
+   "sekonda": 0.08
   },
   {
    "mesazh": "what's the weather like today",
@@ -2503,7 +2503,7 @@
    "gjetur": "sqarim",
    "statusi": "sakte",
    "kategoria": "pa_lidhje",
-   "sekonda": 0.21
+   "sekonda": 0.32
   },
   {
    "mesazh": "dua të blej një makinë",
@@ -2511,7 +2511,7 @@
    "gjetur": "sqarim",
    "statusi": "sakte",
    "kategoria": "pa_lidhje",
-   "sekonda": 0.12
+   "sekonda": 0.09
   },
   {
    "mesazh": "më dhemb koka → sa herë ta marr?",
@@ -2519,7 +2519,7 @@
    "gjetur": "doza",
    "statusi": "sakte",
    "kategoria": "biseda",
-   "sekonda": 0.32
+   "sekonda": 0.38
   },
   {
    "mesazh": "kam temperaturë → ka ndonjë ilaç tjetër?",
@@ -2527,7 +2527,7 @@
    "gjetur": "alternativa",
    "statusi": "sakte",
    "kategoria": "biseda",
-   "sekonda": 0.32
+   "sekonda": 0.33
   },
   {
    "mesazh": "kam diarre → çfarë tjetër të bëj?",
@@ -2535,7 +2535,7 @@
    "gjetur": "keshilla",
    "statusi": "sakte",
    "kategoria": "biseda",
-   "sekonda": 0.31
+   "sekonda": 0.29
   },
   {
    "mesazh": "më dhemb fyti → kur duhet të shkoj te mjeku?",
@@ -2543,7 +2543,7 @@
    "gjetur": "mjeku",
    "statusi": "sakte",
    "kategoria": "biseda",
-   "sekonda": 0.29
+   "sekonda": 0.33
   },
   {
    "mesazh": "kam urth → jam shtatzënë",
@@ -2551,7 +2551,7 @@
    "gjetur": "profil",
    "statusi": "sakte",
    "kategoria": "biseda",
-   "sekonda": 0.31
+   "sekonda": 0.42
   },
   {
    "mesazh": "përshëndetje",
@@ -2567,7 +2567,7 @@
    "gjetur": "faleminderit",
    "statusi": "sakte",
    "kategoria": "biseda",
-   "sekonda": 0.19
+   "sekonda": 0.28
   },
   {
    "mesazh": "koka po më plas",
@@ -2580,7 +2580,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.24
   },
   {
    "mesazh": "kam migren prej 2 ditesh",
@@ -2593,7 +2593,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.26
+   "sekonda": 0.22
   },
   {
    "mesazh": "më është fryrë mishi te dhëmbi dhe më dhemb",
@@ -2606,7 +2606,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.2
+   "sekonda": 0.16
   },
   {
    "mesazh": "kam 38 e gjysmë",
@@ -2619,7 +2619,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.26
   },
   {
    "mesazh": "kam dridhje dhe ethe",
@@ -2632,7 +2632,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.23
+   "sekonda": 0.25
   },
   {
    "mesazh": "jam sëmurë me grip, kam dhimbje trupi",
@@ -2645,7 +2645,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.24
+   "sekonda": 0.2
   },
   {
    "mesazh": "kam virozë me rrufë dhe kollë",
@@ -2676,7 +2676,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.26
   },
   {
    "mesazh": "gëlltis me vështirësi nga dhimbja e fytit",
@@ -2689,7 +2689,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.2
+   "sekonda": 0.16
   },
   {
    "mesazh": "kollë e thatë irrituese",
@@ -2702,7 +2702,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.2
+   "sekonda": 0.23
   },
   {
    "mesazh": "kam gëlbazë në mushkëri",
@@ -2715,7 +2715,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.24
   },
   {
    "mesazh": "hundët i kam të zëna dhe s'flej dot",
@@ -2729,7 +2729,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.29
+   "sekonda": 0.25
   },
   {
    "mesazh": "alergjia e pranverës më ka nisur",
@@ -2742,7 +2742,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.15
   },
   {
    "mesazh": "teshtij pa pushim",
@@ -2755,7 +2755,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.23
   },
   {
    "mesazh": "më kanë kafshuar mushkonjat",
@@ -2768,7 +2768,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.24
   },
   {
    "mesazh": "kam kërpudha në lëkurë mes këmbëve",
@@ -2782,7 +2782,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.16
   },
   {
    "mesazh": "më ngjitet acidi pas ngrënies",
@@ -2795,7 +2795,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.14
+   "sekonda": 0.08
   },
   {
    "mesazh": "kam gastrit dhe djegie",
@@ -2808,7 +2808,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.17
+   "sekonda": 0.24
   },
   {
    "mesazh": "kam diare qe 2 dit",
@@ -2821,7 +2821,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.32
+   "sekonda": 0.24
   },
   {
    "mesazh": "nuk shkoj dot në banjo prej një jave",
@@ -2834,7 +2834,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.28
+   "sekonda": 0.24
   },
   {
    "mesazh": "kam fryrje në bark",
@@ -2848,7 +2848,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.16
+   "sekonda": 0.23
   },
   {
    "mesazh": "kam ngërç në stomak",
@@ -2861,7 +2861,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.26
   },
   {
    "mesazh": "dhimbje gjatë menstruacioneve",
@@ -2874,7 +2874,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.17
+   "sekonda": 0.21
   },
   {
    "mesazh": "më dhemb kyçi i dorës",
@@ -2887,7 +2887,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.18
   },
   {
    "mesazh": "kam lumbago",
@@ -2900,7 +2900,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.22
   },
   {
    "mesazh": "më vjen për të vjellë",
@@ -2913,7 +2913,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.32
+   "sekonda": 0.23
   },
   {
    "mesazh": "më zë makina",
@@ -2926,7 +2926,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.21
+   "sekonda": 0.22
   },
   {
    "mesazh": "më therr veshi",
@@ -2939,7 +2939,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.23
+   "sekonda": 0.25
   },
   {
    "mesazh": "nuk fle dot fare natën",
@@ -2952,7 +2952,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.15
   },
   {
    "mesazh": "kam afte në gojë",
@@ -2965,7 +2965,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.24
+   "sekonda": 0.25
   },
   {
    "mesazh": "kam herpes në buzë",
@@ -2978,7 +2978,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.23
   },
   {
    "mesazh": "kam hemorroide që më kruhen",
@@ -2991,7 +2991,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.15
   },
   {
    "mesazh": "sytë më djegin nga lodhja",
@@ -3004,7 +3004,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.15
   },
   {
    "mesazh": "më janë mbushur ballë e faqe me puçrra",
@@ -3018,7 +3018,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.22
+   "sekonda": 0.14
   },
   {
    "mesazh": "u dogja me vaj të nxehtë",
@@ -3031,7 +3031,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.22
+   "sekonda": 0.13
   },
   {
    "mesazh": "kam një prerje në gisht",
@@ -3044,7 +3044,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.23
+   "sekonda": 0.15
   },
   {
    "mesazh": "fëmija ka morra",
@@ -3057,7 +3057,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.17
+   "sekonda": 0.22
   },
   {
    "mesazh": "kam zbokth",
@@ -3070,7 +3070,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.17
+   "sekonda": 0.25
   },
   {
    "mesazh": "kam kandidozë",
@@ -3083,7 +3083,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.21
+   "sekonda": 0.27
   },
   {
    "mesazh": "kam cistit",
@@ -3096,7 +3096,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.24
   },
   {
    "mesazh": "më merren mendtë",
@@ -3109,7 +3109,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.27
   },
   {
    "mesazh": "jam pa fuqi gjithë kohën",
@@ -3122,7 +3122,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.2
+   "sekonda": 0.17
   },
   {
    "mesazh": "dua të heq dorë nga pirja e duhanit",
@@ -3135,7 +3135,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.21
+   "sekonda": 0.17
   },
   {
    "mesazh": "lëkura më është tharë shumë",
@@ -3149,7 +3149,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.2
+   "sekonda": 0.14
   },
   {
    "mesazh": "kam lytha në dorë",
@@ -3162,7 +3162,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.18
+   "sekonda": 0.22
   },
   {
    "mesazh": "më rrjedh gjak hunda shpesh",
@@ -3176,7 +3176,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.2
+   "sekonda": 0.15
   },
   {
    "mesazh": "jam i ngjirur",
@@ -3189,7 +3189,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.17
+   "sekonda": 0.2
   },
   {
    "mesazh": "kam ankth",
@@ -3202,7 +3202,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.17
+   "sekonda": 0.23
   },
   {
    "mesazh": "kam mungesë hekuri",
@@ -3215,7 +3215,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.2
+   "sekonda": 0.24
   },
   {
    "mesazh": "më kapin ngërçe në këmbë natën",
@@ -3229,7 +3229,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.14
   },
   {
    "mesazh": "foshnjës po i dalin dhëmbët e parë",
@@ -3242,7 +3242,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.22
+   "sekonda": 0.14
   },
   {
    "mesazh": "kam lemzë",
@@ -3255,7 +3255,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.21
+   "sekonda": 0.25
   },
   {
    "mesazh": "më bien flokët",
@@ -3268,7 +3268,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.17
+   "sekonda": 0.25
   },
   {
    "mesazh": "kam buzët e çara",
@@ -3281,7 +3281,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.19
+   "sekonda": 0.24
   },
   {
    "mesazh": "I have a migraine",
@@ -3294,7 +3294,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.3
+   "sekonda": 0.37
   },
   {
    "mesazh": "I have the flu",
@@ -3307,7 +3307,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.29
+   "sekonda": 0.35
   },
   {
    "mesazh": "I have a runny nose",
@@ -3320,7 +3320,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.3
+   "sekonda": 0.38
   },
   {
    "mesazh": "my stomach burns",
@@ -3334,7 +3334,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.28
+   "sekonda": 0.38
   },
   {
    "mesazh": "I have muscle pain after the gym",
@@ -3347,7 +3347,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.29
+   "sekonda": 0.22
   },
   {
    "mesazh": "I have dandruff",
@@ -3360,7 +3360,7 @@
    "pyeti": [],
    "statusi": "sakte",
    "kategoria": "kontroll_simptome",
-   "sekonda": 0.28
+   "sekonda": 0.39
   },
   {
    "mesazh": "më shtrëngon gjoksi dhe djersitem",

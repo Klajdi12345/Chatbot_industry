@@ -108,7 +108,7 @@ def rruget(llogaria, trupi, gabim) -> list[Route]:
             return JSONResponse({"profili": None, "bisedat": []})
         pid = rows[0]["pid"]
         bisedat = [{**b, "mesazhet": [{"role": m["role"], "content": m["content"], "ora": m["ora"][:16]}
-                                      for m in db_b.mesazhet(b["id"])]} for b in db_b.lista(pid)[:20]]
+                                      for m in db_b.mesazhet(b["id"])]} for b in db_b.lista_admin(pid)[:50]]
         return JSONResponse({"profili": db_p.merr_person(pid), "bisedat": bisedat})
 
     @vetem_admin

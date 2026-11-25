@@ -437,7 +437,7 @@ tabele(["Pjesa", "Roli", "Ku ndodhet"], [
     ["gjuha.py", "Shqipja e folur → standard; zbulimi i anglishtes; anglisht → shqip", "gjuha.py, data/fjalori_*.json"],
     ["perkthimi.py", "Përkthimi i përgjigjes në anglisht me kontroll numrash", "perkthimi.py"],
     ["Neo4j", "Graf: ilaçe, simptoma, gjendje, persona, mesazhe; indekse vektoriale", "neo4j_local\\ (porti 7687)"],
-    ["Ollama", "bge-m3 (embeddings), qwen3:8b (mendimi), gemma3:4b (përkthimi, pyetjet e lira)", "porti 11434"],
+    ["Ollama", "bge-m3 (embeddings), qwen3:8b (mendimi), gemma3:4b (përkthimi, pyetjet e lira, gjykatësi), llama3.2:3b (rezerva)", "porti 11434"],
     ["Të dhënat", "Baza e njohurive, fjalorët, datasetet e shkarkuara", "data/"],
 ], [3.0, 8.6, 5.0], kod_kolona=(0,))
 p("Teknologjitë: Python 3.12, Starlette + Uvicorn (serveri web), HTML/CSS/JavaScript pa librari të jashtme, "
@@ -463,6 +463,9 @@ tabele(["Variabli", "Çfarë është", "Shembull"], [
     ["OLLAMA_LLM_MODEL", "Modeli për pyetjet e lira dhe përkthimin", "gemma3:4b"],
     ["OLLAMA_EMBED_MODEL", "Modeli i embeddings", "bge-m3"],
     ["OLLAMA_THINK_MODEL", "Modeli i mendimit të thellë", "qwen3:8b"],
+    ["OLLAMA_REZERVE_MODEL", "Modeli rezervë kur kryesori dështon", "llama3.2:3b"],
+    ["OLLAMA_KOHA_KRYESORI", "Sekonda pritjeje para se të kalohet te rezerva", "180"],
+    ["OLLAMA_GJYKATESI_MODEL", "Modeli i gjykatësit te trajnimi", "gemma3:4b (si OLLAMA_LLM_MODEL)"],
     ["ADMIN_USERNAME / ADMIN_PASSWORD", "Llogaria admin e krijuar herën e parë", "admin / (sekret)"],
 ], [4.6, 6.6, 5.4], kod_kolona=(0, 2))
 kod("""# .env (shembull, me vlera të rreme)
@@ -520,7 +523,7 @@ p("Nëse del gabim: kontrollo që Neo4j është ndezur (porti 7687), që fjalëk
 rinis_numrat(); doc.add_heading("3.6 Neo4j lokal (databaza aktive)", 2)
 p("Databaza kryesore është Neo4j Community 2026 brenda dosjes `neo4j_local\\`, me Java-n e vet (`neo4j_local\\jre`). "
   "Dëgjon vetëm në `127.0.0.1`, pra nuk arrihet nga kompjuterë të tjerë.")
-for t in ["Nisja: `nis_farmabot.ps1` (ose ikona FarmaBot) e nis me `neo4j.bat console` dhe pret portin 7687.",
+for t in ["Nisja: `nis_farmabot.pyw` (ose ikona FarmaBot) e nis direkt me `java.exe` (klasa `org.neo4j.server.startup.Neo4jCommand console`) dhe pret portin 7687.",
           "Neo4j Browser: http://localhost:7474 (përdoruesi `neo4j`, fjalëkalimi `NEO4J_PASSWORD`).",
           "Neo4j Desktop: Connect → Remote connection → `bolt://127.0.0.1:7687`.",
           "Të dhënat u kopjuan nga Aura më 19.11.2026; kredencialet e Aura-s ruhen si `NEO4J_AURA_*`."]:
@@ -692,6 +695,18 @@ rinis_numrat(); doc.add_heading("8.3 Modeli dhe streaming-u", 2)
 p("`config.chat_mendo()` thërret Ollama-n me `think: true` dhe `stream: true`. Çdo copë e arsyetimit i kalohet "
   "ndërfaqes (`on_mendim`), që e shfaq live brenda panelit të statusit. Modeli zgjidhet te .env "
   "(`OLLAMA_THINK_MODEL`); nëse nuk ka aftësinë “thinking” (kontrollohet me /api/show), përdoret modeli i zakonshëm.")
+
+rinis_numrat(); doc.add_heading("8.4 Modeli rezervë (llama3.2:3b)", 2)
+p("Nëse modeli kryesor dështon (nuk ngarkohet, mbaron memoria, nuk përgjigjet brenda `OLLAMA_KOHA_KRYESORI` "
+  "sekondave ose kthen përgjigje bosh), `config.chat_me_rezerve()` e përsërit thirrjen me llama3.2:3b. "
+  "Te mendimi i thellë radha është qwen3:8b → gemma3:4b → llama3.2:3b. Rezerva përdoret vetëm nëse është e instaluar.")
+p("Përgjigjet nga rezerva marrin shënimin “Modeli kryesor nuk ishte i disponueshëm; kjo përgjigje e shkurtër vjen nga "
+  "modeli rezervë. Verifikoje me farmacistin.” Përkthimi në anglisht NUK përdor rezervë: në provë llama3.2 e përktheu "
+  "“Pi shumë ujë dhe pusho 2 ditë” si “I'm feeling very thirsty and I have a fever for 2 days”. Nëse gemma3 dështon, "
+  "teksti mbetet shqip.")
+shenim("Llama3.2:3b nuk e ka shqipen ndër gjuhët e mbështetura zyrtarisht: përgjigjet e saj janë më të shkurtra dhe "
+       "më të çala (prova 24.11.2026). Rezerva është më mirë se asnjë përgjigje, por jo zëvendësim i gemma3.")
+kod(funksioni("config.py", "chat_me_rezerve"))
 
 # ================================================================ 9. DATASETET
 rinis_numrat(); doc.add_heading("9. Datasetet mjekësore", 1)
@@ -872,7 +887,7 @@ tabele(["Skedari", "Çfarë është"], [
     ["data/terma_en.json", "Emrat anglisht të simptomave dhe termave (me dorë)"],
     ["data/perkthime_en.json", "Cache e përkthimeve (krijohet vetë; mund të rishikohet nga një njeri)"],
     ["data/burime/", "MedlinePlus XML dhe openFDA JSON të shkarkuara"],
-    ["nis_farmabot.ps1 / ndal_farmabot.ps1", "Nisja dhe ndalimi i Ollama, Neo4j dhe aplikacionit"],
+    ["nis_farmabot.pyw / ndal_farmabot.pyw", "Nisja dhe ndalimi i Ollama, Neo4j dhe aplikacionit"],
     ["web/static/index.html", "Faqja e vetme; vendos temën para vizatimit"],
     ["web/static/app.js", "E gjithë ndërfaqja: tekstet SQ/EN, ikonat, hyrja, paneli, biseda, cilësimet, admini"],
     ["web/static/app.css", "Stili dhe dy temat (variabla CSS)"],
@@ -951,6 +966,7 @@ tabele(["Skedari", "Çfarë teston"], [
     ["test_gjuha.py", "Fjalori: gegërisht/chat → standard, urgjenca dhe profili gegërisht, mendimi (-m llm)"],
     ["test_anglisht.py", "Zbulimi i gjuhës, anglisht → shqip, urgjencat anglisht, kontrolli i numrave, përkthimi (-m llm)"],
     ["test_regjistrimi.py", "Shkronjat shqipe/angleze, hyrja, fjalëkalimi, fshirja"],
+    ["test_regjistri_semundjet.py", "Regjistri AKBPM (emra, lëndë, recetë pa dozë) dhe baza e sëmundjeve (22 teste)"],
     ["test_web.py", "Aplikacioni web: hyrja me email, regjistrimi, rivendosja e fjalëkalimit, bisedat, profili, admini, "
                     "reagimet 👍/👎 dhe skeda Trajnimi"],
 ], [4.6, 12.0], kod_kolona=(0,))
@@ -1040,12 +1056,43 @@ tabele(["Skedari", "Përmbajtja"], [
     ["chatbot.py → URGJENCAT", "Rregullat e urgjencave; PERJASHTIMET për rastet që s'janë alarm"],
 ], [5.2, 11.4], kod_kolona=(0,))
 
+rinis_numrat(); doc.add_heading("15.5 Grupi i madh i provës: 6 701 pyetje nga burimet zyrtare", 2)
+p("Pyetjet e këtij grupi nuk shkruhen me dorë. `trajnimi/rastet_e_medha.py` i ndërton nga regjistri AKBPM, lista "
+  "ligjore OTC, `data/semundjet.json`, temat e MedlinePlus dhe frazat e simptomave, me disa forma pyetjesh (shqip "
+  "dhe anglisht, me e pa mbaresa shqipe). Përgjigjja e pritur vjen nga burimi zyrtar, jo nga dikush që e shkruan.")
+kod("""python -m trajnimi.rastet_e_medha              # vlerëson trajnimi/rastet_e_medha.json (~8 minuta)
+python -m trajnimi.rastet_e_medha --gabimet    # shfaq edhe rastet e gabuara
+python -m trajnimi.rastet_e_medha --rikrijo    # e krijon grupin nga e para (p.sh. pas një regjistri të ri)""")
+tabele(["Kategoria", "Çfarë mat", "Raste", "Kufiri", "25.11.2026"], [
+    ["regjistri_emer", "Emri tregtar gjendet, me statusin e saktë të recetës", "2 355", "95%", "99,8%"],
+    ["regjistri_lende", "Lënda aktive gjendet (edhe “amoksicilinë” = Amoxicillin)", "1 114", "90%", "99,8%"],
+    ["siguria_recete", "Ilaçi me recetë: “Kërkon recetë”, asnjë dozë, asnjë sugjerim", "900", "100%", "100%"],
+    ["semundje", "Sëmundja ose thyerja e duhur nga data/semundjet.json", "360", "95%", "99,2%"],
+    ["profili_info", "“Çfarë është diabeti?” nuk e ndryshon profilin", "20", "100%", "100%"],
+    ["medlineplus", "Tema e duhur e MedlinePlus (ose baza shqip)", "1 017", "70%", "95,0%"],
+    ["pa_ngaterrese", "Frazat e simptomave nuk ngatërrohen me ilaç ose sëmundje", "935", "98%", "99,9%"],
+], [3.0, 7.6, 1.6, 1.6, 2.2], kod_kolona=(0,))
+p("**Matja e parë (25.11.2026): 93,3%, NUK KALOI.** Gabimet kryesore dhe rregullimet:")
+for t in ["**Emrat tregtarë të prerë në 5 shkronja:** “Paranix” kapte “parandalohet” dhe “Humer” kapte “humerusit”, "
+          "kështu “Si parandalohet thyerja…?” merrte përgjigje për një losion. Tani rrënja lejon vetëm një mbaresë të shkurtër.",
+          "**Ilaç me recetë i ngatërruar me ilaçin e njohur pa recetë:** “sa Ultop të marr në ditë?” jepte dozën e "
+          "omeprazolit. Tani emri tregtar i regjistrit që kërkon recetë ka përparësi: “Kërkon recetë”, pa dozë (900/900).",
+          "**“What are the symptoms of …?”** humbiste rrugën e MedlinePlus, sepse kontrollohej vetëm teksti i "
+          "standardizuar. Tani kontrollohet edhe mesazhi origjinal (64,8% → 95,0%).",
+          "**Mbaresa shqipe pas c-së:** “c'eshte adenurici” nuk gjente Adenuric (c para i nuk bëhet k). U rregullua te `regjistri.py`.",
+          "**Emri i vetëm i ilaçit** (“Eliquis”, “varfarina”) ndryshonte profilin (“merr antikoagulant”). Tani jep "
+          "informacionin e regjistrit pa ndryshuar profilin.",
+          "**Fjalë që janë edhe simptomë** (“migrenë”, “vitamin c”) shkojnë te simptomat dhe ilaçet pa recetë, jo te "
+          "sëmundja ose regjistri. “jam me korona” nuk ngatërrohet më me sëmundjen koronare."]:
+    pika(t)
+p("**Matja e dytë: 99,1%, KALOI** (6 640/6 701). Grupi i zakonshëm mbeti 273/273 dhe pytest 725 teste të kaluara.")
+
 # ================================================================ 15. NISJA
 rinis_numrat(); doc.add_heading("16. Nisja e sistemit", 1)
 for t in ["Herën e parë: `ollama pull bge-m3`, `ollama pull qwen3:8b`, `ollama pull gemma3:4b`.",
-          "Kliko dy herë ikonën **FarmaBot** në Desktop (ose `nis_farmabot.ps1`). Skripti nis me radhë Ollama (11434), "
-          "Neo4j lokal (7687, 7474) dhe FarmaBot Web (`python -m web`, 8501), dhe pret që secili port të hapet.",
-          "Shfletuesi hapet te http://localhost:8501.",
+          "Kliko dy herë ikonën **FarmaBot** në Desktop (ose `nis_farmabot.pyw`). Skripti nis me radhë Ollama (11434), "
+          "Neo4j lokal (7687, 7474) dhe FarmaBot Web (`python -m web`, 8501), dhe pret që secili port të hapet. Nuk hapet asnjë dritare PowerShell: skripti niset me `pythonw.exe`, i nis shërbimet të fshehura (Neo4j direkt me `java.exe`) dhe e hap FarmaBot-in si faqe web në shfletuesin e zakonshëm (http://localhost:8501). Hostimi në internet planifikohet në fund, pasi të mbarojnë funksionet.",
+          "Shfletuesi tregon “FarmaBot po niset” dhe kalon vetë te http://localhost:8501 kur aplikacioni është gati.",
           "Ndalimi: “Ndal FarmaBot” në dosjen e projektit. Log-et janë te `logs\\`.",
           "Për email-et e rivendosjes: plotëso `SMTP_*` te `.env` (kapitulli 11.2)."]:
     numra(t)
@@ -1066,7 +1113,7 @@ tabele(["Simptoma", "Shkaku i mundshëm", "Zgjidhja"], [
     ["“Ndodhi një gabim… Kontrollo që Ollama dhe Neo4j janë ndezur”", "Një nga shërbimet nuk po punon",
      "Nis FarmaBot nga ikona; shiko logs\\neo4j.err.log dhe logs\\ollama.err.log"],
     ["ServiceUnavailable / connection refused", "Neo4j nuk është ndezur ose porti 7687 është i zënë",
-     "netstat -ano | findstr 7687; rinise me nis_farmabot.ps1"],
+     "netstat -ano | findstr 7687; rinise me nis_farmabot.pyw"],
     ["AuthError", "Fjalëkalimi te .env nuk përputhet", "Kontrollo NEO4J_PASSWORD; provo te http://localhost:7474"],
     ["Aura: lidhja zgjat dhe dështon", "Rrjeti bllokon 7687 ose Aura është në pauzë",
      "NEO4J_TRANSPORT=auto ose https; rinise instancën te console.neo4j.io"],
@@ -1106,6 +1153,47 @@ tabele(["Termi", "Kuptimi"], [
 rinis_numrat(); doc.add_heading("18. Historiku i ndryshimeve", 1)
 p("Çdo ndryshim i ri shtohet këtu dhe dokumenti rikrijohet (Word + PDF).")
 HISTORIKU = [
+    ("25.11.2026", "Regjistri dhe sëmundjet në bisedë; grupi i madh i provës", [
+        "regjistri.py: pyetjet për 2 355 emra tregtarë dhe 1 114 lëndë aktive të regjistrit AKBPM marrin vetëm "
+        "informacion (lënda, format, mbajtësi). Ilaçet me recetë: “Kërkon recetë”, pa doza, pa sugjerim.",
+        "semundjet.py: përgjigje nga data/semundjet.json (45 hyrje). Sëmundjet që nuk janë në bazën shqip → tema "
+        "zyrtare e MedlinePlus (1 017 tema), me lidhjen dhe një pjesë origjinale anglisht, pa përkthim me model.",
+        "Pyetja informuese (“Çfarë është diabeti?”) nuk e ndryshon më profilin.",
+        "Grupi i madh i provës (trajnimi/rastet_e_medha.py): 6 701 pyetje nga burimet zyrtare. Nga 93,3% në 99,1% "
+        "pas rregullimeve (shiko 15.5); siguria e ilaçeve me recetë 900/900.",
+        "22 teste të reja (tests/test_regjistri_semundjet.py); pytest 725 të kaluara, grupi i zakonshëm 273/273."]),
+    ("24.11.2026", "Bisedat e fshira mbeten për administratorin", [
+        "Kur përdoruesi fshin një bisedë, ajo zhduket nga lista e tij, por mbetet në databazë (Bisede.fshire, fshire_me).",
+        "Admini i sheh te Përdoruesit → Bisedat, me shënimin “Fshirë nga përdoruesi” dhe datën; tani shfaqen deri në 50 biseda.",
+        "Përdoruesi nuk mund ta hapë, riemërtojë ose vazhdojë një bisedë të fshirë.",
+        "Konfirmimi i fshirjes i tregon përdoruesit me llogari se administratori mund ta shohë ende bisedën.",
+        "Fshirja e llogarisë fshin përfundimisht gjithçka, edhe bisedat e fshira. 4 teste të reja (tests/test_bisedat_fshirja.py)."]),
+    ("24.11.2026", "Paneli i adminit: fshirja e përdoruesve", [
+        "Te tabela e përdoruesve çdo rresht ka butonin e koshit “Fshi përdoruesin” (më parë fshirja ishte vetëm te menyja ⋯).",
+        "Konfirmimi tregon çfarë fshihet: llogaria, profili shëndetësor dhe të gjitha bisedat (me numrin e mesazheve), dhe që nuk kthehet pas.",
+        "Pas fshirjes shfaqet njoftimi “Përdoruesi … u fshi”. Admini nuk mund të fshijë veten dhe as adminin e fundit."]),
+    ("24.11.2026", "Regjistri zyrtar i barnave dhe dataset-i i sëmundjeve", [
+        "shkarko_regjistrin.py: regjistri i barnave të autorizuara nga AKBPM (23.06.2026) → data/regjistri_akbpm.json, 4 530 produkte.",
+        "Lista ligjore e barnave pa recetë (Urdhri nr. 501, 3.7.2018), 813 barna → data/lista_otc.json; 356 produkte të regjistrit u shënuan pa recetë, të tjerat kërkojnë recetë.",
+        "data/inn_en.json: emri ndërkombëtar (INN) për 74 ilaçet e FarmaBot-it. Kontrolli gjeti 8 ilaçe që sugjerohen si pa recetë, por nuk janë në listën ligjore (omeprazol, makrogol, racekadotril, melatoninë, kromoglikat, benzoil peroksid, amorolfinë, permetrinë).",
+        "Dataset i ri data/semundjet.json: 25 thyerje të ekstremiteteve dhe 20 sëmundje kronike, me kod ICD-10, simptoma, shenja urgjente, trajtim dhe kohë shërimi.",
+        "valido_semundjet.py (skema, fushat, dyfishimet, formati ICD-10, kategoria kundrejt kapitullit S/T, koha e shërimit) dhe shto_semundjet.py (kopje rezervë, shtim pa dyfishime, krahasim i kodeve me listën ICD-10-CM)."]),
+    ("24.11.2026", "llama3.2:3b: modeli rezervë dhe gjykatësi", [
+        "Modeli rezervë: nëse gemma3:4b ose qwen3:8b dështon, përgjigjet llama3.2:3b (config.chat_me_rezerve), me shënim te përgjigja.",
+        "Përkthimi pa rezervë: llama3.2 e përkthen shqipen gabim; teksti mbetet shqip nëse gemma3 dështon.",
+        "Gjykatësi (trajnimi/gjykatesi.py, python -m trajnimi.vlereso --gjykatesi): një model i dytë lexon përgjigjet; modeli jep vëzhgime të thjeshta, kodi nxjerr përfundimet.",
+        "Rezultati i provës: llama3.2:3b kapi 0/6 urgjenca në shqip (2/6 në anglisht); gemma3:4b me përkthim anglisht kapi 5/6 pa alarme të rreme. Prandaj gjykatësi përdor gemma3:4b, me mesazhin të përkthyer edhe në anglisht dhe pa rezervë; llama3.2:3b mbetet vetëm rezervë. Modeli zgjidhet te .env (OLLAMA_GJYKATESI_MODEL).",
+        "Gjykatësi me gemma3: ilaçin e ndaluar e kontrollon kodi (jashtë “Nuk t'i sugjeroj”, pa emrat e ilaçeve të lejuara, jo pas “mos”); përgjigjet fikse (refuzimi, faleminderit, urgjenca) nuk gjykohen si “s'përgjigjet”.",
+        "Prova përfundimtare: 0 shënime të rreme te 40 rastet e vërteta (nga 18 në provën e parë) dhe 6/8 përgjigje të prishura qëllimisht të kapura.",
+        "23 teste të reja (tests/test_modelet.py) për rezervën dhe gjykatësin."]),
+    ("24.11.2026", "Nisja pa PowerShell", [
+        "nis_farmabot.ps1 dhe ndal_farmabot.ps1 u zëvendësuan me nis_farmabot.pyw dhe ndal_farmabot.pyw (Python, nisen me pythonw.exe).",
+        "Ikona FarmaBot në Desktop dhe “Ndal FarmaBot” nuk hapin më dritare PowerShell; shfaqet vetëm një dritare e vogël me ecurinë.",
+        "Ollama, Neo4j dhe aplikacioni nisen të fshehura (pa dritare konsole); Neo4j niset direkt me java.exe, jo me neo4j.bat (që thërret PowerShell-in).",
+        "FarmaBot hapet si faqe web në shfletuesin e zakonshëm, me faqen “FarmaBot po niset” (assets/nisja.html) derisa aplikacioni të jetë gati. (Dritarja më vete në modalitetin “app” u provua dhe u hoq: FarmaBot mbetet web, për t’u hostuar më vonë.)",
+        "Vetëm nëse ndodh një gabim shfaqet një njoftim i vogël.",
+        "U hoq dritarja e zezë cmd që dilte gjatë nisjes: shërbimet nisen me një konsolë të padukshme (CREATE_NO_WINDOW), që e trashëgojnë edhe proceset e tyre të brendshme.",
+        "pytest.ini: plugin-i langsmith u çaktivizua (Windows bllokonte DLL-në e tij dhe pytest-i nuk nisej)."]),
     ("22.11.2026", "Trajnimi dhe vlerësimi i saktësisë", [
         "Grup prove me 273 pyetje në 10 kategori (trajnimi/rastet.json) dhe vlerësimi automatik (trajnimi/vlereso.py).",
         "Tre raunde trajnimi: saktësia nga 86,9% në 100%; urgjencat nga 9/13 në 25/25; grupi i pavarur i kontrollit 69/69.",

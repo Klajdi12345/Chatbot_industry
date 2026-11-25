@@ -1,0 +1,3438 @@
+{
+ "data": "2026-11-25 10:07",
+ "sekonda": 58.4,
+ "gjithsej": 273,
+ "sakte": 273,
+ "saktesia": 1.0,
+ "kaloi": true,
+ "kategorite": {
+  "simptome": {
+   "emri": "Simptomat (shqip)",
+   "gjithsej": 116,
+   "sakte": 116,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 0.85,
+   "kaloi": true
+  },
+  "anglisht": {
+   "emri": "Simptomat (anglisht)",
+   "gjithsej": 20,
+   "sakte": 20,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 0.8,
+   "kaloi": true
+  },
+  "urgjence": {
+   "emri": "Urgjencat",
+   "gjithsej": 25,
+   "sakte": 25,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 1.0,
+   "kaloi": true
+  },
+  "jo_urgjence": {
+   "emri": "Pa alarm të rremë",
+   "gjithsej": 14,
+   "sakte": 14,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 0.8,
+   "kaloi": true
+  },
+  "siguria": {
+   "emri": "Siguria e ilaçeve",
+   "gjithsej": 13,
+   "sakte": 13,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 1.0,
+   "kaloi": true
+  },
+  "femije": {
+   "emri": "Fëmijët pa doza të rriturish",
+   "gjithsej": 3,
+   "sakte": 3,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 1.0,
+   "kaloi": true
+  },
+  "pa_lidhje": {
+   "emri": "Pyetje pa lidhje",
+   "gjithsej": 6,
+   "sakte": 6,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 0.8,
+   "kaloi": true
+  },
+  "biseda": {
+   "emri": "Pyetjet vijuese",
+   "gjithsej": 7,
+   "sakte": 7,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 0.85,
+   "kaloi": true
+  },
+  "kontroll_simptome": {
+   "emri": "Kontroll i pavarur: simptomat",
+   "gjithsej": 60,
+   "sakte": 60,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 0.8,
+   "kaloi": true
+  },
+  "kontroll_urgjence": {
+   "emri": "Kontroll i pavarur: urgjencat",
+   "gjithsej": 9,
+   "sakte": 9,
+   "pyeti": 0,
+   "saktesia": 1.0,
+   "kufiri": 1.0,
+   "kaloi": true
+  }
+ },
+ "gabimet": [],
+ "rezultatet": [
+  {
+   "mesazh": "po më dhemb koka që nga mëngjesi",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.75
+  },
+  {
+   "mesazh": "kam një dhimbje koke që s'po më ikën",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.48
+  },
+  {
+   "mesazh": "mu ka ba kryt dop",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.41
+  },
+  {
+   "mesazh": "me dhem koka tmerrsisht",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.42
+  },
+  {
+   "mesazh": "dhimbje koke nga stresi në punë",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke",
+    "ankth_stres"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.39
+  },
+  {
+   "mesazh": "më dhemb një dhëmb poshtë majtas",
+   "pritet": [
+    "dhimbje_dhembi"
+   ],
+   "gjetur": [
+    "dhimbje_dhembi",
+    "dhimbje_shpine"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "sme le dhembi te fle",
+   "pritet": [
+    "dhimbje_dhembi"
+   ],
+   "gjetur": [
+    "dhimbje_dhembi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "dhëmballa e mençurisë po më del dhe më dhemb",
+   "pritet": [
+    "dhimbje_dhembi"
+   ],
+   "gjetur": [
+    "dhimbje_dhembi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "jam me temperaturë 38.5",
+   "pritet": [
+    "temperature"
+   ],
+   "gjetur": [
+    "temperature"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam zjarrmi qe dje",
+   "pritet": [
+    "temperature"
+   ],
+   "gjetur": [
+    "temperature"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "trupi më digjet, mendoj se kam ethe",
+   "pritet": [
+    "temperature"
+   ],
+   "gjetur": [
+    "temperature"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "jam ftohur keq, më dhemb gjithë trupi",
+   "pritet": [
+    "grip_ftohje"
+   ],
+   "gjetur": [
+    "grip_ftohje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "mduket se po me kap gripi",
+   "pritet": [
+    "grip_ftohje"
+   ],
+   "gjetur": [
+    "grip_ftohje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "kam marrë të ftohtë nga shiu",
+   "pritet": [
+    "grip_ftohje"
+   ],
+   "gjetur": [
+    "grip_ftohje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "fyti më djeg kur pi ujë",
+   "pritet": [
+    "dhimbje_fyti"
+   ],
+   "gjetur": [
+    "dhimbje_fyti"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "me dhem gurmazi",
+   "pritet": [
+    "dhimbje_fyti"
+   ],
+   "gjetur": [
+    "dhimbje_fyti"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "kam fytin e skuqur dhe të irrituar",
+   "pritet": [
+    "dhimbje_fyti"
+   ],
+   "gjetur": [
+    "dhimbje_fyti"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "kollitem gjithë natën pa nxjerrë asgjë",
+   "pritet": [
+    "kolle_thate"
+   ],
+   "gjetur": [
+    "kolle_thate"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "kam një kollë të thatë që më gërvisht fytin",
+   "pritet": [
+    "kolle_thate"
+   ],
+   "gjetur": [
+    "kolle_thate",
+    "dhimbje_fyti"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam kollë dhe nxjerr gjëra të verdha",
+   "pritet": [
+    "kolle_gelbaze"
+   ],
+   "gjetur": [
+    "kolle_gelbaze"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kollë me sekrecione të trasha",
+   "pritet": [
+    "kolle_gelbaze"
+   ],
+   "gjetur": [
+    "kolle_gelbaze"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "hunda më është mbyllur fare",
+   "pritet": [
+    "bllokim_hunde"
+   ],
+   "gjetur": [
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "s'marr dot frymë nga hunda, kam rrufë",
+   "pritet": [
+    "bllokim_hunde"
+   ],
+   "gjetur": [
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.33
+  },
+  {
+   "mesazh": "me rrjedh hunda vazhdimisht",
+   "pritet": [
+    "bllokim_hunde"
+   ],
+   "gjetur": [
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "sa vjen pranvera fillojnë teshtimat",
+   "pritet": [
+    "alergji"
+   ],
+   "gjetur": [
+    "alergji"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "kam alergji nga pluhuri dhe teshtij",
+   "pritet": [
+    "alergji"
+   ],
+   "gjetur": [
+    "alergji"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.27
+  },
+  {
+   "mesazh": "më kruhen sytë dhe hunda nga poleni",
+   "pritet": [
+    "alergji"
+   ],
+   "gjetur": [
+    "alergji",
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "më ka pickuar një insekt dhe më kruhet",
+   "pritet": [
+    "kruajtje_lekure"
+   ],
+   "gjetur": [
+    "kruajtje_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "më kan dal pika te kuqe qe me hane",
+   "pritet": [
+    "kruajtje_lekure"
+   ],
+   "gjetur": [
+    "kruajtje_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.36
+  },
+  {
+   "mesazh": "lëkura e krahut më kruhet shumë",
+   "pritet": [
+    "kruajtje_lekure"
+   ],
+   "gjetur": [
+    "kruajtje_lekure",
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam këmbën e atletit",
+   "pritet": [
+    "kerpudha_lekure"
+   ],
+   "gjetur": [
+    "kerpudha_lekure",
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam njolla rrethore me kërpudha në lëkurë",
+   "pritet": [
+    "kerpudha_lekure"
+   ],
+   "gjetur": [
+    "kerpudha_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "pas buke me ngjitet acidi ne gryke",
+   "pritet": [
+    "urth"
+   ],
+   "gjetur": [
+    "urth"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.12
+  },
+  {
+   "mesazh": "më vjen thartirë në gojë natën",
+   "pritet": [
+    "urth"
+   ],
+   "gjetur": [
+    "urth"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam djegie në gjoks pas ushqimeve me yndyrë",
+   "pritet": [
+    "urth"
+   ],
+   "gjetur": [
+    "urth"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "kam barkun e lirshëm që dje",
+   "pritet": [
+    "diarre"
+   ],
+   "gjetur": [
+    "diarre",
+    "dhimbje_barku"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "po shkoj shpesh në tualet me ujë",
+   "pritet": [
+    "diarre"
+   ],
+   "gjetur": [
+    "diarre"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "me shkon barku si uje",
+   "pritet": [
+    "diarre"
+   ],
+   "gjetur": [
+    "diarre",
+    "dhimbje_barku"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "s'kam bërë nevojën prej 4 ditësh",
+   "pritet": [
+    "kapsllek"
+   ],
+   "gjetur": [
+    "kapsllek"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "jam kapsllëk",
+   "pritet": [
+    "kapsllek"
+   ],
+   "gjetur": [
+    "kapsllek"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "barku më është fryrë si tullumbace",
+   "pritet": [
+    "fryrje_gazra"
+   ],
+   "gjetur": [
+    "fryrje_gazra",
+    "dhimbje_barku"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam shumë gazra pas ngrënies",
+   "pritet": [
+    "fryrje_gazra"
+   ],
+   "gjetur": [
+    "fryrje_gazra"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "më shtrëngon barku me ngërçe",
+   "pritet": [
+    "dhimbje_barku"
+   ],
+   "gjetur": [
+    "dhimbje_barku"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam kolika në bark",
+   "pritet": [
+    "dhimbje_barku"
+   ],
+   "gjetur": [
+    "dhimbje_barku"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "kam dhimbje të forta gjatë ciklit",
+   "pritet": [
+    "dhimbje_menstruale"
+   ],
+   "gjetur": [
+    "dhimbje_menstruale"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.27
+  },
+  {
+   "mesazh": "me dhem barku se jam me periodë",
+   "pritet": [
+    "dhimbje_menstruale"
+   ],
+   "gjetur": [
+    "dhimbje_menstruale",
+    "dhimbje_barku"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.33
+  },
+  {
+   "mesazh": "më është ndrydhur këmba duke vrapuar",
+   "pritet": [
+    "dhimbje_muskulore"
+   ],
+   "gjetur": [
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "më dhembin muskujt pas palestrës",
+   "pritet": [
+    "dhimbje_muskulore"
+   ],
+   "gjetur": [
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "më dhemb gjuri kur ngjitem shkallët",
+   "pritet": [
+    "dhimbje_muskulore"
+   ],
+   "gjetur": [
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "me dhem kurrizi poshte",
+   "pritet": [
+    "dhimbje_shpine"
+   ],
+   "gjetur": [
+    "dhimbje_shpine"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.27
+  },
+  {
+   "mesazh": "më ka kapur mesi dhe s'drejtohem dot",
+   "pritet": [
+    "dhimbje_shpine"
+   ],
+   "gjetur": [
+    "dhimbje_shpine"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "kam të përziera që në mëngjes",
+   "pritet": [
+    "nauze_te_vjella"
+   ],
+   "gjetur": [
+    "nauze_te_vjella"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.27
+  },
+  {
+   "mesazh": "po vjell gjithçka që ha",
+   "pritet": [
+    "nauze_te_vjella"
+   ],
+   "gjetur": [
+    "nauze_te_vjella"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "më zë deti kur hipi në traget",
+   "pritet": [
+    "semundje_udhetimi"
+   ],
+   "gjetur": [
+    "semundje_udhetimi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "më dhemb veshi i djathtë",
+   "pritet": [
+    "dhimbje_veshi"
+   ],
+   "gjetur": [
+    "dhimbje_veshi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam dhimbje në vesh pas notit",
+   "pritet": [
+    "dhimbje_veshi"
+   ],
+   "gjetur": [
+    "dhimbje_veshi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "s'më zë gjumi natën",
+   "pritet": [
+    "pagjumesi"
+   ],
+   "gjetur": [
+    "pagjumesi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "zgjohem 3-4 herë natën dhe s'fle dot më",
+   "pritet": [
+    "pagjumesi"
+   ],
+   "gjetur": [
+    "pagjumesi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.34
+  },
+  {
+   "mesazh": "kam një plagë të bardhë në gojë që më dhemb",
+   "pritet": [
+    "afte_gojore"
+   ],
+   "gjetur": [
+    "afte_gojore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "më kanë dalë afte në gjuhë",
+   "pritet": [
+    "afte_gojore"
+   ],
+   "gjetur": [
+    "afte_gojore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "më ka dalë uthull në buzë",
+   "pritet": [
+    "herpes_labial"
+   ],
+   "gjetur": [
+    "herpes_labial"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam flluska në buzë nga herpesi",
+   "pritet": [
+    "herpes_labial"
+   ],
+   "gjetur": [
+    "herpes_labial"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam majasëll dhe më djeg kur shkoj në tualet",
+   "pritet": [
+    "hemorroide"
+   ],
+   "gjetur": [
+    "hemorroide"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "kam hemoroide",
+   "pritet": [
+    "hemorroide"
+   ],
+   "gjetur": [
+    "hemorroide"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "sytë më janë tharë nga kompjuteri",
+   "pritet": [
+    "sy_te_thate"
+   ],
+   "gjetur": [
+    "sy_te_thate"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.27
+  },
+  {
+   "mesazh": "më ndjehen sytë me rërë dhe të lodhur",
+   "pritet": [
+    "sy_te_thate"
+   ],
+   "gjetur": [
+    "lodhje",
+    "sy_te_thate"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "sytë më janë skuqur dhe më kruhen nga alergjia",
+   "pritet": [
+    "konjuktivit_alergjik"
+   ],
+   "gjetur": [
+    "konjuktivit_alergjik",
+    "alergji"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "më kanë dalë puçrra në ballë",
+   "pritet": [
+    "akne"
+   ],
+   "gjetur": [
+    "akne",
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam aknet e adoleshencës",
+   "pritet": [
+    "akne"
+   ],
+   "gjetur": [
+    "akne"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "u dogja me hekurin e rrobave",
+   "pritet": [
+    "djegie_lekure"
+   ],
+   "gjetur": [
+    "djegie_lekure",
+    "anemi_hekur"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "lëkura më është skuqur nga dielli në plazh",
+   "pritet": [
+    "djegie_lekure"
+   ],
+   "gjetur": [
+    "djegie_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "u çava me një gotë në dorë",
+   "pritet": [
+    "plage_e_vogel"
+   ],
+   "gjetur": [
+    "plage_e_vogel"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "rashë me biçikletë dhe u gërvishta",
+   "pritet": [
+    "plage_e_vogel"
+   ],
+   "gjetur": [
+    "plage_e_vogel"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "vajza ka morra në flokë",
+   "pritet": [
+    "morra"
+   ],
+   "gjetur": [
+    "morra"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "kam luspa të bardha në flokë",
+   "pritet": [
+    "zbokth"
+   ],
+   "gjetur": [
+    "zbokth",
+    "krimba"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "më kruhet koka dhe kam zbokth",
+   "pritet": [
+    "zbokth"
+   ],
+   "gjetur": [
+    "zbokth",
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam kruajtje vaginale dhe rrjedhje të bardhë",
+   "pritet": [
+    "kandidoze_vaginale"
+   ],
+   "gjetur": [
+    "kandidoze_vaginale"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "me djeg kur urinoj",
+   "pritet": [
+    "cistit"
+   ],
+   "gjetur": [
+    "cistit"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam nevojë të urinoj shpesh dhe më djeg",
+   "pritet": [
+    "cistit"
+   ],
+   "gjetur": [
+    "cistit"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "më vjen mendja vërdallë kur ngrihem",
+   "pritet": [
+    "marramendje"
+   ],
+   "gjetur": [
+    "marramendje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam marramendje prej dy ditësh",
+   "pritet": [
+    "marramendje"
+   ],
+   "gjetur": [
+    "marramendje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "ndihem gjithmonë i lodhur pa energji",
+   "pritet": [
+    "lodhje"
+   ],
+   "gjetur": [
+    "lodhje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "jam i këputur gjithë ditën",
+   "pritet": [
+    "lodhje"
+   ],
+   "gjetur": [
+    "lodhje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "djali ka krimba",
+   "pritet": [
+    "krimba"
+   ],
+   "gjetur": [
+    "krimba"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "dua ta lë duhanin",
+   "pritet": [
+    "lenie_duhani"
+   ],
+   "gjetur": [
+    "lenie_duhani"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "si mund ta lë cigaren",
+   "pritet": [
+    "lenie_duhani"
+   ],
+   "gjetur": [
+    "lenie_duhani"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "duart më janë tharë dhe çarë nga dimri",
+   "pritet": [
+    "lekure_e_thate"
+   ],
+   "gjetur": [
+    "lekure_e_thate"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "kam ekzemë në bërryla",
+   "pritet": [
+    "lekure_e_thate"
+   ],
+   "gjetur": [
+    "lekure_e_thate"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "më ka dalë një kallo te gishti i madh",
+   "pritet": [
+    "lytha_kallo"
+   ],
+   "gjetur": [
+    "lytha_kallo"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "thonjtë e këmbëve më janë trashur dhe zverdhur",
+   "pritet": [
+    "kerpudha_thonjsh"
+   ],
+   "gjetur": [
+    "kerpudha_thonjsh",
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "më rrjedh gjak nga hunda",
+   "pritet": [
+    "gjakderdhje_hunde"
+   ],
+   "gjetur": [
+    "gjakderdhje_hunde",
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "më ka ikur zëri",
+   "pritet": [
+    "humbje_zeri"
+   ],
+   "gjetur": [
+    "humbje_zeri"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "jam ngjirur nga të bërtiturat në ndeshje",
+   "pritet": [
+    "humbje_zeri"
+   ],
+   "gjetur": [
+    "humbje_zeri"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam erë të keqe goje",
+   "pritet": [
+    "ere_goje"
+   ],
+   "gjetur": [
+    "ere_goje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "jam shumë në ankth këto ditë",
+   "pritet": [
+    "ankth_stres"
+   ],
+   "gjetur": [
+    "ankth_stres"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "ndihem nervoz dhe i stresuar",
+   "pritet": [
+    "ankth_stres"
+   ],
+   "gjetur": [
+    "ankth_stres"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "dua vitamina për imunitetin",
+   "pritet": [
+    "mungese_vitaminash"
+   ],
+   "gjetur": [
+    "mungese_vitaminash"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "kam hekurin të ulët në analiza",
+   "pritet": [
+    "anemi_hekur"
+   ],
+   "gjetur": [
+    "anemi_hekur"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "natën më kapin ngërçet në pulpë",
+   "pritet": [
+    "ngerce_kembesh"
+   ],
+   "gjetur": [
+    "ngerce_kembesh"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "bebit po i dalin dhëmbët",
+   "pritet": [
+    "dalje_dhembesh"
+   ],
+   "gjetur": [
+    "dalje_dhembesh"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "bebja ka skuqje nga pampersi",
+   "pritet": [
+    "skuqje_pelenash"
+   ],
+   "gjetur": [
+    "skuqje_pelenash"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.29
+  },
+  {
+   "mesazh": "kam zgjebe",
+   "pritet": [
+    "zgjebe"
+   ],
+   "gjetur": [
+    "zgjebe"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "veshi më është zënë nga dylli",
+   "pritet": [
+    "dylle_veshi"
+   ],
+   "gjetur": [
+    "dylle_veshi",
+    "dhimbje_veshi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "këmbët më rëndojnë në mbrëmje dhe kam variçe",
+   "pritet": [
+    "venat_kembe"
+   ],
+   "gjetur": [
+    "venat_kembe",
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "çfarë të përdor kundër mushkonjave",
+   "pritet": [
+    "mbrojtje_insekte"
+   ],
+   "gjetur": [
+    "mbrojtje_insekte",
+    "kruajtje_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "më ka kapur lemza",
+   "pritet": [
+    "lemza"
+   ],
+   "gjetur": [
+    "lemza"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "djersitem shumë nën sqetull",
+   "pritet": [
+    "djersitje"
+   ],
+   "gjetur": [
+    "djersitje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "po më bien flokët shumë",
+   "pritet": [
+    "renie_flokesh"
+   ],
+   "gjetur": [
+    "renie_flokesh"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "më kanë dalë flluska nga këpucët e reja",
+   "pritet": [
+    "flluska_kembe"
+   ],
+   "gjetur": [
+    "flluska_kembe"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "buzët më janë çarë",
+   "pritet": [
+    "buze_te_thata"
+   ],
+   "gjetur": [
+    "buze_te_thata"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "syri më ka qelb dhe ngjitet në mëngjes",
+   "pritet": [
+    "konjuktivit_infektiv"
+   ],
+   "gjetur": [
+    "konjuktivit_infektiv"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.12
+  },
+  {
+   "mesazh": "po planifikojmë një fëmijë, çfarë duhet të marr",
+   "pritet": [
+    "planifikim_shtatzenie"
+   ],
+   "gjetur": [
+    "planifikim_shtatzenie"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.27
+  },
+  {
+   "mesazh": "kam temperaturë dhe më dhemb fyti",
+   "pritet": [
+    "temperature",
+    "dhimbje_fyti"
+   ],
+   "gjetur": [
+    "dhimbje_fyti",
+    "temperature"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "më dhemb koka dhe kam rrufë",
+   "pritet": [
+    "dhimbje_koke",
+    "bllokim_hunde"
+   ],
+   "gjetur": [
+    "dhimbje_koke",
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "më përzihet në makinë sa herë udhëtoj",
+   "pritet": [
+    "semundje_udhetimi"
+   ],
+   "gjetur": [
+    "semundje_udhetimi",
+    "nauze_te_vjella"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "kam etje të madhe dhe dobësi nga vapa",
+   "pritet": [
+    "dehidratim_vape"
+   ],
+   "gjetur": [
+    "dehidratim_vape"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "I have a terrible headache",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.34
+  },
+  {
+   "mesazh": "my tooth hurts a lot",
+   "pritet": [
+    "dhimbje_dhembi"
+   ],
+   "gjetur": [
+    "dhimbje_dhembi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "I have a fever of 39",
+   "pritet": [
+    "temperature"
+   ],
+   "gjetur": [
+    "temperature"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "I think I caught a cold",
+   "pritet": [
+    "grip_ftohje"
+   ],
+   "gjetur": [
+    "grip_ftohje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "my throat is sore",
+   "pritet": [
+    "dhimbje_fyti"
+   ],
+   "gjetur": [
+    "dhimbje_fyti"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "I have a dry cough",
+   "pritet": [
+    "kolle_thate"
+   ],
+   "gjetur": [
+    "kolle_thate"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.33
+  },
+  {
+   "mesazh": "my nose is blocked",
+   "pritet": [
+    "bllokim_hunde"
+   ],
+   "gjetur": [
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.33
+  },
+  {
+   "mesazh": "I have hay fever and keep sneezing",
+   "pritet": [
+    "alergji"
+   ],
+   "gjetur": [
+    "alergji"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "I have heartburn after meals",
+   "pritet": [
+    "urth"
+   ],
+   "gjetur": [
+    "urth"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "I have diarrhea",
+   "pritet": [
+    "diarre"
+   ],
+   "gjetur": [
+    "diarre"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "I am constipated",
+   "pritet": [
+    "kapsllek"
+   ],
+   "gjetur": [
+    "kapsllek"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.33
+  },
+  {
+   "mesazh": "my back hurts",
+   "pritet": [
+    "dhimbje_shpine"
+   ],
+   "gjetur": [
+    "dhimbje_shpine"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "I can't sleep at night",
+   "pritet": [
+    "pagjumesi"
+   ],
+   "gjetur": [
+    "pagjumesi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "I have period pain",
+   "pritet": [
+    "dhimbje_menstruale"
+   ],
+   "gjetur": [
+    "dhimbje_menstruale"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "I feel nauseous",
+   "pritet": [
+    "nauze_te_vjella"
+   ],
+   "gjetur": [
+    "nauze_te_vjella"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "I got sunburned",
+   "pritet": [
+    "djegie_lekure"
+   ],
+   "gjetur": [
+    "djegie_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "I have athlete's foot",
+   "pritet": [
+    "kerpudha_lekure"
+   ],
+   "gjetur": [
+    "kerpudha_lekure",
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.35
+  },
+  {
+   "mesazh": "it burns when I pee",
+   "pritet": [
+    "cistit"
+   ],
+   "gjetur": [
+    "cistit"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "I have a cold sore on my lip",
+   "pritet": [
+    "herpes_labial"
+   ],
+   "gjetur": [
+    "herpes_labial"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "my ear hurts",
+   "pritet": [
+    "dhimbje_veshi"
+   ],
+   "gjetur": [
+    "dhimbje_veshi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "anglisht",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "kam një dhimbje të fortë në gjoks që shkon në krahun e majtë",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "nuk marr dot frymë fare",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "s'po marr fryme",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "më është ënjtur fytyra dhe gjuha pasi mora një ilaç",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "babai papritur nuk flet dot mirë dhe i ka rënë fytyra në njërën anë",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "mora 20 tableta paracetamol",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "dua t'i jap fund jetës",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "foshnja 2 muajshe ka 39 temperaturë",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "po vjell gjak",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "humbi ndjenjat dhe nuk po zgjohet",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "I have crushing chest pain",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "I can't breathe",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "I want to kill myself",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "më ra të fikët nga vapa",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "më bie të fikët në makinë",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "më dhemb gjoksi dhe më mpihet dora e majtë",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "nuk po marr dot frymë, buzët më janë nxirë",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "pas penicilinës m'u ënjt fyti",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "nëna u rrëzua dhe nuk po i përgjigjet",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "burrit i ra goja shtrembër papritur",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "djali gëlltiti tabletat e gjyshes",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "po nxjerr gjak me kollë",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "foshnja 3 javëshe ka 38.5",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "kam vendosur të vras veten",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "my chest feels like an elephant is sitting on it",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "më dhemb pak koka",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "kam pak kollë",
+   "pritet": "pa urgjencë",
+   "gjetur": "sqarim",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.12
+  },
+  {
+   "mesazh": "më dhemb muskuli i gjoksit pas palestrës",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "kam hundën e zënë dhe marr frymë me gojë",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam pak temperaturë 37.5",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "kam marrë frymë thellë dhe më dhemb brinja",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "më ka ënjtur pak kyçi i këmbës",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "mora 2 tableta paracetamol dhe s'më ka ikur dhimbja",
+   "pritet": "pa urgjencë",
+   "gjetur": "ilac",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.02
+  },
+  {
+   "mesazh": "fëmija 5 vjeç ka temperaturë 38",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "kam pak gjak kur laj dhëmbët",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "jam i lodhur nga jeta e përditshme",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "dhimbja e kokës më e fortë është në mëngjes",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "nuk e lëviz dot qafën pas gjumit",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "the baby is teething and has a mild fever",
+   "pritet": "pa urgjencë",
+   "gjetur": "simptome",
+   "statusi": "sakte",
+   "kategoria": "jo_urgjence",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "më dhemb koka",
+   "profili": {
+    "mosha": 30,
+    "gjendjet": [
+     "ulcer"
+    ]
+   },
+   "pritet": "pa ibuprofen, naproksen, aspirine",
+   "gjetur": [
+    "paracetamol"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "më dhemb dhëmbi",
+   "profili": {
+    "mosha": 28,
+    "gjendjet": [
+     "shtatzeni"
+    ]
+   },
+   "pritet": "pa ibuprofen, naproksen, aspirine",
+   "gjetur": [
+    "paracetamol",
+    "benzokaine_xhel"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam dhimbje menstruale",
+   "profili": {
+    "mosha": 25,
+    "gjendjet": [
+     "alergji_nsaid"
+    ]
+   },
+   "pritet": "pa ibuprofen, naproksen, aspirine",
+   "gjetur": [
+    "paracetamol",
+    "butilskopolamine"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "kam temperaturë",
+   "profili": {
+    "mosha": 45,
+    "gjendjet": [
+     "alergji_paracetamol"
+    ]
+   },
+   "pritet": "pa paracetamol",
+   "gjetur": [
+    "ibuprofen"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "më dhemb shpina",
+   "profili": {
+    "mosha": 70,
+    "gjendjet": [
+     "antikoagulante"
+    ]
+   },
+   "pritet": "pa ibuprofen, naproksen, aspirine",
+   "gjetur": [
+    "paracetamol",
+    "diklofenak_xhel"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "kam hundë të zënë",
+   "profili": {
+    "mosha": 60,
+    "gjendjet": [
+     "hipertension"
+    ]
+   },
+   "pritet": "pa —",
+   "gjetur": [
+    "kripe_fiziologjike",
+    "oksimetazoline",
+    "mentol_balsam"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "s'më zë gjumi",
+   "profili": {
+    "mosha": 75,
+    "gjendjet": [
+     "glaukome",
+     "prostate"
+    ]
+   },
+   "pritet": "pa difenhidramine",
+   "gjetur": [
+    "melatonine",
+    "valeriane"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "kam kollë të thatë",
+   "profili": {
+    "mosha": 40,
+    "gjendjet": [
+     "antidepresive"
+    ]
+   },
+   "pritet": "pa dekstrometorfan",
+   "gjetur": [
+    "pastile_fyti",
+    "hedera_shurup"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "më dhemb fyti",
+   "profili": {
+    "mosha": 35,
+    "gjendjet": [
+     "astme",
+     "alergji_nsaid"
+    ]
+   },
+   "pritet": "pa ibuprofen, aspirine, naproksen",
+   "gjetur": [
+    "pastile_fyti",
+    "paracetamol",
+    "benzidamine_sprej"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "kam diarre",
+   "profili": {
+    "mosha": 1,
+    "gjendjet": []
+   },
+   "pritet": "pa loperamid",
+   "gjetur": [
+    "ors",
+    "probiotik"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "kam temperaturë",
+   "profili": {
+    "mosha": 10,
+    "gjendjet": []
+   },
+   "pritet": "pa aspirine",
+   "gjetur": [
+    "paracetamol",
+    "ibuprofen"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "kam urth",
+   "profili": {
+    "mosha": 50,
+    "gjendjet": [
+     "veshka"
+    ]
+   },
+   "pritet": "pa —",
+   "gjetur": [
+    "alginat",
+    "famotidine",
+    "omeprazol"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "më dhemb koka",
+   "profili": {
+    "mosha": 30,
+    "gjendjet": [
+     "melci",
+     "alkool"
+    ]
+   },
+   "pritet": "pa —",
+   "gjetur": [
+    "ibuprofen",
+    "naproksen",
+    "aspirine"
+   ],
+   "statusi": "sakte",
+   "shkelje": [],
+   "kategoria": "siguria",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "djali 5 vjeç ka temperaturë",
+   "pritet": "pa doza",
+   "gjetur": "pa doza",
+   "statusi": "sakte",
+   "kategoria": "femije",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "vajza 8 vjeçe ka kollë të thatë",
+   "pritet": "pa doza",
+   "gjetur": "pa doza",
+   "statusi": "sakte",
+   "kategoria": "femije",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "kam temperaturë, jam 30 vjeç",
+   "pritet": "me doza",
+   "gjetur": "me doza",
+   "statusi": "sakte",
+   "kategoria": "femije",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "sa është ora?",
+   "pritet": "pa ilaçe",
+   "gjetur": "sqarim",
+   "statusi": "sakte",
+   "kategoria": "pa_lidhje",
+   "sekonda": 0.11
+  },
+  {
+   "mesazh": "kush e fitoi ndeshjen dje?",
+   "pritet": "pa ilaçe",
+   "gjetur": "sqarim",
+   "statusi": "sakte",
+   "kategoria": "pa_lidhje",
+   "sekonda": 0.14
+  },
+  {
+   "mesazh": "më trego një shaka",
+   "pritet": "pa ilaçe",
+   "gjetur": "sqarim",
+   "statusi": "sakte",
+   "kategoria": "pa_lidhje",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "çfarë kryeqyteti ka Franca",
+   "pritet": "pa ilaçe",
+   "gjetur": "sqarim",
+   "statusi": "sakte",
+   "kategoria": "pa_lidhje",
+   "sekonda": 0.11
+  },
+  {
+   "mesazh": "what's the weather like today",
+   "pritet": "pa ilaçe",
+   "gjetur": "sqarim",
+   "statusi": "sakte",
+   "kategoria": "pa_lidhje",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "dua të blej një makinë",
+   "pritet": "pa ilaçe",
+   "gjetur": "sqarim",
+   "statusi": "sakte",
+   "kategoria": "pa_lidhje",
+   "sekonda": 0.12
+  },
+  {
+   "mesazh": "më dhemb koka → sa herë ta marr?",
+   "pritet": "doza",
+   "gjetur": "doza",
+   "statusi": "sakte",
+   "kategoria": "biseda",
+   "sekonda": 0.36
+  },
+  {
+   "mesazh": "kam temperaturë → ka ndonjë ilaç tjetër?",
+   "pritet": "alternativa",
+   "gjetur": "alternativa",
+   "statusi": "sakte",
+   "kategoria": "biseda",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "kam diarre → çfarë tjetër të bëj?",
+   "pritet": "keshilla",
+   "gjetur": "keshilla",
+   "statusi": "sakte",
+   "kategoria": "biseda",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "më dhemb fyti → kur duhet të shkoj te mjeku?",
+   "pritet": "mjeku",
+   "gjetur": "mjeku",
+   "statusi": "sakte",
+   "kategoria": "biseda",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "kam urth → jam shtatzënë",
+   "pritet": "profil",
+   "gjetur": "profil",
+   "statusi": "sakte",
+   "kategoria": "biseda",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "përshëndetje",
+   "pritet": "pershendetje",
+   "gjetur": "pershendetje",
+   "statusi": "sakte",
+   "kategoria": "biseda",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "më dhemb koka → faleminderit",
+   "pritet": "faleminderit",
+   "gjetur": "faleminderit",
+   "statusi": "sakte",
+   "kategoria": "biseda",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "koka po më plas",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "kam migren prej 2 ditesh",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "më është fryrë mishi te dhëmbi dhe më dhemb",
+   "pritet": [
+    "dhimbje_dhembi"
+   ],
+   "gjetur": [
+    "dhimbje_dhembi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "kam 38 e gjysmë",
+   "pritet": [
+    "temperature"
+   ],
+   "gjetur": [
+    "temperature"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "kam dridhje dhe ethe",
+   "pritet": [
+    "temperature"
+   ],
+   "gjetur": [
+    "temperature"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "jam sëmurë me grip, kam dhimbje trupi",
+   "pritet": [
+    "grip_ftohje"
+   ],
+   "gjetur": [
+    "grip_ftohje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "kam virozë me rrufë dhe kollë",
+   "pritet": [
+    "grip_ftohje"
+   ],
+   "gjetur": [
+    "grip_ftohje",
+    "bllokim_hunde"
+   ],
+   "pyeti": [
+    "kolle_thate",
+    "kolle_gelbaze"
+   ],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "fyti më gërvisht",
+   "pritet": [
+    "dhimbje_fyti"
+   ],
+   "gjetur": [
+    "dhimbje_fyti",
+    "plage_e_vogel"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "gëlltis me vështirësi nga dhimbja e fytit",
+   "pritet": [
+    "dhimbje_fyti"
+   ],
+   "gjetur": [
+    "dhimbje_fyti"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "kollë e thatë irrituese",
+   "pritet": [
+    "kolle_thate"
+   ],
+   "gjetur": [
+    "kolle_thate"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "kam gëlbazë në mushkëri",
+   "pritet": [
+    "kolle_gelbaze"
+   ],
+   "gjetur": [
+    "kolle_gelbaze"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "hundët i kam të zëna dhe s'flej dot",
+   "pritet": [
+    "bllokim_hunde"
+   ],
+   "gjetur": [
+    "bllokim_hunde",
+    "pagjumesi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "alergjia e pranverës më ka nisur",
+   "pritet": [
+    "alergji"
+   ],
+   "gjetur": [
+    "alergji"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "teshtij pa pushim",
+   "pritet": [
+    "alergji"
+   ],
+   "gjetur": [
+    "alergji"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "më kanë kafshuar mushkonjat",
+   "pritet": [
+    "kruajtje_lekure"
+   ],
+   "gjetur": [
+    "kruajtje_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "kam kërpudha në lëkurë mes këmbëve",
+   "pritet": [
+    "kerpudha_lekure"
+   ],
+   "gjetur": [
+    "kerpudha_lekure",
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "më ngjitet acidi pas ngrënies",
+   "pritet": [
+    "urth"
+   ],
+   "gjetur": [
+    "urth"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.12
+  },
+  {
+   "mesazh": "kam gastrit dhe djegie",
+   "pritet": [
+    "urth"
+   ],
+   "gjetur": [
+    "urth"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "kam diare qe 2 dit",
+   "pritet": [
+    "diarre"
+   ],
+   "gjetur": [
+    "diarre"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "nuk shkoj dot në banjo prej një jave",
+   "pritet": [
+    "kapsllek"
+   ],
+   "gjetur": [
+    "kapsllek"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.32
+  },
+  {
+   "mesazh": "kam fryrje në bark",
+   "pritet": [
+    "fryrje_gazra"
+   ],
+   "gjetur": [
+    "dhimbje_barku",
+    "fryrje_gazra"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "kam ngërç në stomak",
+   "pritet": [
+    "dhimbje_barku"
+   ],
+   "gjetur": [
+    "dhimbje_barku"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.26
+  },
+  {
+   "mesazh": "dhimbje gjatë menstruacioneve",
+   "pritet": [
+    "dhimbje_menstruale"
+   ],
+   "gjetur": [
+    "dhimbje_menstruale"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "më dhemb kyçi i dorës",
+   "pritet": [
+    "dhimbje_muskulore"
+   ],
+   "gjetur": [
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "kam lumbago",
+   "pritet": [
+    "dhimbje_shpine"
+   ],
+   "gjetur": [
+    "dhimbje_shpine"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "më vjen për të vjellë",
+   "pritet": [
+    "nauze_te_vjella"
+   ],
+   "gjetur": [
+    "nauze_te_vjella"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.29
+  },
+  {
+   "mesazh": "më zë makina",
+   "pritet": [
+    "semundje_udhetimi"
+   ],
+   "gjetur": [
+    "semundje_udhetimi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "më therr veshi",
+   "pritet": [
+    "dhimbje_veshi"
+   ],
+   "gjetur": [
+    "dhimbje_veshi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "nuk fle dot fare natën",
+   "pritet": [
+    "pagjumesi"
+   ],
+   "gjetur": [
+    "pagjumesi"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.19
+  },
+  {
+   "mesazh": "kam afte në gojë",
+   "pritet": [
+    "afte_gojore"
+   ],
+   "gjetur": [
+    "afte_gojore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "kam herpes në buzë",
+   "pritet": [
+    "herpes_labial"
+   ],
+   "gjetur": [
+    "herpes_labial"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "kam hemorroide që më kruhen",
+   "pritet": [
+    "hemorroide"
+   ],
+   "gjetur": [
+    "hemorroide"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "sytë më djegin nga lodhja",
+   "pritet": [
+    "sy_te_thate"
+   ],
+   "gjetur": [
+    "sy_te_thate"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.21
+  },
+  {
+   "mesazh": "më janë mbushur ballë e faqe me puçrra",
+   "pritet": [
+    "akne"
+   ],
+   "gjetur": [
+    "akne",
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "u dogja me vaj të nxehtë",
+   "pritet": [
+    "djegie_lekure"
+   ],
+   "gjetur": [
+    "djegie_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam një prerje në gisht",
+   "pritet": [
+    "plage_e_vogel"
+   ],
+   "gjetur": [
+    "plage_e_vogel"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "fëmija ka morra",
+   "pritet": [
+    "morra"
+   ],
+   "gjetur": [
+    "morra"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "kam zbokth",
+   "pritet": [
+    "zbokth"
+   ],
+   "gjetur": [
+    "zbokth"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "kam kandidozë",
+   "pritet": [
+    "kandidoze_vaginale"
+   ],
+   "gjetur": [
+    "kandidoze_vaginale"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "kam cistit",
+   "pritet": [
+    "cistit"
+   ],
+   "gjetur": [
+    "cistit"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "më merren mendtë",
+   "pritet": [
+    "marramendje"
+   ],
+   "gjetur": [
+    "marramendje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "jam pa fuqi gjithë kohën",
+   "pritet": [
+    "lodhje"
+   ],
+   "gjetur": [
+    "lodhje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "dua të heq dorë nga pirja e duhanit",
+   "pritet": [
+    "lenie_duhani"
+   ],
+   "gjetur": [
+    "lenie_duhani"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "lëkura më është tharë shumë",
+   "pritet": [
+    "lekure_e_thate"
+   ],
+   "gjetur": [
+    "lekure_e_thate",
+    "djegie_lekure"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam lytha në dorë",
+   "pritet": [
+    "lytha_kallo"
+   ],
+   "gjetur": [
+    "lytha_kallo"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "më rrjedh gjak hunda shpesh",
+   "pritet": [
+    "gjakderdhje_hunde"
+   ],
+   "gjetur": [
+    "gjakderdhje_hunde",
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "jam i ngjirur",
+   "pritet": [
+    "humbje_zeri"
+   ],
+   "gjetur": [
+    "humbje_zeri"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.2
+  },
+  {
+   "mesazh": "kam ankth",
+   "pritet": [
+    "ankth_stres"
+   ],
+   "gjetur": [
+    "ankth_stres"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.23
+  },
+  {
+   "mesazh": "kam mungesë hekuri",
+   "pritet": [
+    "anemi_hekur"
+   ],
+   "gjetur": [
+    "anemi_hekur"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.18
+  },
+  {
+   "mesazh": "më kapin ngërçe në këmbë natën",
+   "pritet": [
+    "ngerce_kembesh"
+   ],
+   "gjetur": [
+    "ngerce_kembesh",
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "foshnjës po i dalin dhëmbët e parë",
+   "pritet": [
+    "dalje_dhembesh"
+   ],
+   "gjetur": [
+    "dalje_dhembesh"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "kam lemzë",
+   "pritet": [
+    "lemza"
+   ],
+   "gjetur": [
+    "lemza"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.25
+  },
+  {
+   "mesazh": "më bien flokët",
+   "pritet": [
+    "renie_flokesh"
+   ],
+   "gjetur": [
+    "renie_flokesh"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.24
+  },
+  {
+   "mesazh": "kam buzët e çara",
+   "pritet": [
+    "buze_te_thata"
+   ],
+   "gjetur": [
+    "buze_te_thata"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.22
+  },
+  {
+   "mesazh": "I have a migraine",
+   "pritet": [
+    "dhimbje_koke"
+   ],
+   "gjetur": [
+    "dhimbje_koke"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.29
+  },
+  {
+   "mesazh": "I have the flu",
+   "pritet": [
+    "grip_ftohje"
+   ],
+   "gjetur": [
+    "grip_ftohje"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.31
+  },
+  {
+   "mesazh": "I have a runny nose",
+   "pritet": [
+    "bllokim_hunde"
+   ],
+   "gjetur": [
+    "bllokim_hunde"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "my stomach burns",
+   "pritet": [
+    "urth"
+   ],
+   "gjetur": [
+    "urth",
+    "dhimbje_barku"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.27
+  },
+  {
+   "mesazh": "I have muscle pain after the gym",
+   "pritet": [
+    "dhimbje_muskulore"
+   ],
+   "gjetur": [
+    "dhimbje_muskulore"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.28
+  },
+  {
+   "mesazh": "I have dandruff",
+   "pritet": [
+    "zbokth"
+   ],
+   "gjetur": [
+    "zbokth"
+   ],
+   "pyeti": [],
+   "statusi": "sakte",
+   "kategoria": "kontroll_simptome",
+   "sekonda": 0.3
+  },
+  {
+   "mesazh": "më shtrëngon gjoksi dhe djersitem",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "s'kam ajër, po mbytem",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "i ënjtën buzët pas një pickimi blete",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "gjyshi nuk e lëviz dot krahun e djathtë",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "fëmija piu një shishe me ilaçe",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "kam dhimbjen më të fortë të kokës në jetën time",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "vajza 1 muajshe ka ethe",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "I swallowed a whole bottle of pills",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  },
+  {
+   "mesazh": "my face is drooping and I can't speak properly",
+   "pritet": "urgjencë",
+   "gjetur": "urgjencë",
+   "statusi": "sakte",
+   "kategoria": "kontroll_urgjence",
+   "sekonda": 0.0
+  }
+ ]
+}

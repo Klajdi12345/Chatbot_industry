@@ -1,6 +1,6 @@
 """Bisedat e ruajtura (si lista e bisedave te ChatGPT / Claude).
 
-  (:Person)-[:KA_BISEDE]->(:Bisede {id, titull, krijuar, perditesuar, konteksti})
+  (:Person)-[:KA_BISEDE]->(:Bisede {id, titull, krijuar, perditesuar, konteksti, fshire, fshire_me})
   (:Bisede)-[:PERMBAN]->(:Mesazh {id, roli, tekst, ora, te_dhena})
   (:Person)-[:DERGOI]->(:Mesazh)                 <- si më parë (statistikat dhe historia e vjetër)
 
@@ -32,9 +32,19 @@ def _migro(pid: str):
 
 
 def lista(pid: str) -> list[dict]:
+    """Bisedat që sheh vetë personi (pa ato që i ka fshirë)."""
+    _migro(pid)
+    return query("MATCH (:Person {id: $pid})-[:KA_BISEDE]->(b:Bisede) WHERE NOT coalesce(b.fshire, false) "
+                 "RETURN b.id AS id, b.titull AS titull, toString(b.perditesuar) AS perditesuar "
+                 "ORDER BY b.perditesuar DESC", pid=pid)
+
+
+def lista_admin(pid: str) -> list[dict]:
+    """Të gjitha bisedat e personit për administratorin, edhe ato që personi i ka fshirë."""
     _migro(pid)
     return query("MATCH (:Person {id: $pid})-[:KA_BISEDE]->(b:Bisede) "
-                 "RETURN b.id AS id, b.titull AS titull, toString(b.perditesuar) AS perditesuar "
+                 "RETURN b.id AS id, b.titull AS titull, toString(b.perditesuar) AS perditesuar, "
+                 "coalesce(b.fshire, false) AS fshire, toString(b.fshire_me) AS fshire_me "
                  "ORDER BY b.perditesuar DESC", pid=pid)
 
 
@@ -46,8 +56,9 @@ def krijo(pid: str, titull: str) -> str:
 
 
 def i_perket(pid: str, bid: str) -> bool:
-    return bool(query("MATCH (:Person {id: $pid})-[:KA_BISEDE]->(b:Bisede {id: $bid}) RETURN 1 AS x",
-                      pid=pid, bid=bid))
+    """A është biseda e personit dhe e pafshirë prej tij (një bisedë e fshirë nuk hapet, riemërtohet ose vazhdohet)."""
+    return bool(query("MATCH (:Person {id: $pid})-[:KA_BISEDE]->(b:Bisede {id: $bid}) "
+                      "WHERE NOT coalesce(b.fshire, false) RETURN 1 AS x", pid=pid, bid=bid))
 
 
 def mesazhet(bid: str) -> list[dict]:
@@ -89,7 +100,14 @@ def riemerto(bid: str, titull: str):
 
 
 def fshi(bid: str):
-    """Fshin bisedën dhe mesazhet e saj."""
+    """Kur personi fshin një bisedë, ajo hiqet nga lista e tij, por mbetet për administratorin
+    (shënohet `fshire`, me datën `fshire_me`). Fshihet përfundimisht vetëm me fshi_perfundimisht()
+    ose kur fshihet llogaria."""
+    query("MATCH (b:Bisede {id: $bid}) SET b.fshire = true, b.fshire_me = datetime()", bid=bid)
+
+
+def fshi_perfundimisht(bid: str):
+    """Fshin bisedën dhe mesazhet e saj nga databaza."""
     query("MATCH (b:Bisede {id: $bid}) OPTIONAL MATCH (b)-[:PERMBAN]->(m:Mesazh) DETACH DELETE m, b", bid=bid)
 
 

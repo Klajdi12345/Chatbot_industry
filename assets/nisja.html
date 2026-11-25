@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<title>FarmaBot</title>
+<link rel="icon" href="ikona.png">
+<style>
+  :root { color-scheme: light dark; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+    font-family: "Segoe UI", system-ui, sans-serif; background: Canvas; color: CanvasText;
+  }
+  img { width: 88px; height: 88px; }
+  h1 { font-size: 22px; font-weight: 600; margin: 0; }
+  p { margin: 0; opacity: .7; font-size: 14px; text-align: center; max-width: 420px; line-height: 1.5; }
+  .rrotull {
+    width: 26px; height: 26px; border-radius: 50%;
+    border: 3px solid color-mix(in srgb, CanvasText 15%, transparent); border-top-color: #0f766e;
+    animation: rr 0.9s linear infinite;
+  }
+  @keyframes rr { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+  <img src="ikona.png" alt="">
+  <h1>FarmaBot po niset</h1>
+  <div class="rrotull" id="rrotull"></div>
+  <p id="teksti">Po ndizen modelet dhe databaza. Herën e parë mund të zgjasë deri në një minutë.</p>
+<script>
+  // Kontrollon çdo sekondë nëse aplikacioni (port 8501) është gati, pastaj kalon te ai.
+  const URL_APP = "http://localhost:8501/";
+  const fillimi = Date.now();
+  async function kontrollo() {
+    try {
+      await fetch(URL_APP, { mode: "no-cors", cache: "no-store" });
+      location.replace(URL_APP);
+      return;
+    } catch (_) { /* ende jo gati */ }
+    if (Date.now() - fillimi > 240000) {
+      document.getElementById("rrotull").style.display = "none";
+      document.getElementById("teksti").textContent =
+        "FarmaBot nuk u nis. Mbyll këtë dritare dhe provo përsëri; nëse vazhdon, shiko dosjen logs\\ te projekti.";
+      return;
+    }
+    setTimeout(kontrollo, 1000);
+  }
+  kontrollo();
+</script>
+</body>
+</html>

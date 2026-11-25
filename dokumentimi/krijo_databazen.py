@@ -247,7 +247,7 @@ tabele(["Pyetja", "Përgjigjja"], [
     ["Ku janë skedarët e databazës?", "chatbot_industri\\neo4j_local\\server\\data\\databases\\neo4j"],
     ["Ku ruhen përdoruesit?", "Nyjet (:Llogari) dhe (:Person) në databazë (kapitulli 6)"],
     ["Ku ruhen backup-et?", f"{DOSJA_BACKUP} (kapitulli 9)"],
-    ["Si niset?", "Ikona FarmaBot në Desktop (nis_farmabot.ps1) e nis vetë"],
+    ["Si niset?", "Ikona FarmaBot në Desktop (nis_farmabot.pyw) e nis vetë"],
 ], [5.6, 11.0], kod_kolona=())
 
 h("1.1 Dy pjesët e databazës", 2)
@@ -329,8 +329,8 @@ set JAVA_HOME=C:\\Users\\Admin\\chatbot_industri\\neo4j_local\\jre
 bin\\cypher-shell.bat -u neo4j -p <fjalekalimi> "MATCH (n) RETURN count(n);\"""")
 h("3.4 Nisja dhe ndalimi", 2)
 tabele(["Veprimi", "Si"], [
-    ["Nis gjithçka", "Ikona FarmaBot në Desktop (nis_farmabot.ps1): Ollama → Neo4j → aplikacioni"],
-    ["Ndal", "“Ndal FarmaBot” në dosjen e projektit (ndal_farmabot.ps1): ndalon aplikacionin dhe Neo4j"],
+    ["Nis gjithçka", "Ikona FarmaBot në Desktop (nis_farmabot.pyw): Ollama → Neo4j → aplikacioni"],
+    ["Ndal", "“Ndal FarmaBot” në dosjen e projektit (ndal_farmabot.pyw): ndalon aplikacionin dhe Neo4j"],
     ["Kontrollo nëse punon", "netstat -ano | findstr 7687   (duhet LISTENING)"],
     ["Nis vetëm Neo4j", "neo4j_local\\server\\bin\\neo4j.bat console  (me JAVA_HOME si më sipër)"],
 ], [4.2, 12.4], kod_kolona=())
@@ -432,10 +432,15 @@ tabele(["Nyja.fusha", "Kuptimi"], [
     ["Bisede.id / titull", "Identifikuesi dhe titulli (merret nga mesazhi i parë; mund të riemërtohet)"],
     ["Bisede.krijuar / perditesuar", "Datat (lista renditet sipas perditesuar)"],
     ["Bisede.konteksti", "JSON: simptomat, ilaçet, pyetja sqaruese në pritje, që biseda të vazhdojë kur rihapet"],
+    ["Bisede.fshire / fshire_me", "true dhe data kur përdoruesi e fshiu bisedën: zhduket nga lista e tij, por mbetet "
+                                  "me mesazhet për administratorin (Admin → Përdoruesit → Bisedat)"],
     ["Mesazh.roli", "user (personi) ose assistant (bota)"],
     ["Mesazh.tekst / ora", "Teksti dhe koha"],
     ["Mesazh.te_dhena", "JSON: kartat e ilaçeve, hapat e mendimit, burimet; për t'i rishfaqur"],
 ], [5.4, 11.2], kod_kolona=(0,))
+p("Kur përdoruesi fshin një bisedë, ajo vetëm shënohet `fshire = true` (nuk fshihet nga databaza). Përdoruesi nuk e "
+  "sheh, nuk e hap dhe nuk e vazhdon dot më; admini e sheh me shënimin “Fshirë nga përdoruesi”. Bisedat fshihen "
+  "përfundimisht vetëm kur fshihet llogaria (nga vetë personi ose nga admini), ose me `bisedat.fshi_perfundimisht()`.")
 p(f"Aktualisht: {NUMRAT.get('Bisede', 0)} biseda me {NUMRAT.get('Mesazh', 0)} mesazhe. Vizitorët (pa llogari) "
   "**nuk** ruhen në databazë: biseda e tyre mbetet vetëm në sesionin e shfletuesit.")
 

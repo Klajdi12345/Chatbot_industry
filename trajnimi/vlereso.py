@@ -2,6 +2,7 @@
 
     python -m trajnimi.vlereso            → raport te trajnimi/raportet/ dhe përmbledhje në ekran
     python -m trajnimi.vlereso --gabimet  → shfaq edhe çdo rast të gabuar
+    python -m trajnimi.vlereso --gjykatesi [N] → edhe gjykatësi (gemma3:4b) lexon N përgjigje (shiko gjykatesi.py)
 
 Çfarë matet:
   simptome / anglisht  bota gjen simptomën e duhur (ose, të paktën, e pyet personin mes kandidatëve)
@@ -184,9 +185,22 @@ if __name__ == "__main__":
     a = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     a.add_argument("--gabimet", action="store_true", help="shfaq çdo rast të gabuar")
     a.add_argument("--kategori", nargs="*", choices=list(EMRAT), help="vetëm këto kategori")
+    a.add_argument("--gjykatesi", nargs="?", type=int, const=40, metavar="N",
+                   help="gjykatësi (gemma3:4b) lexon N përgjigje (parazgjedhje 40)")
     args = a.parse_args()
     r = vlereso(on_progres=lambda i, n, k: print(f"\r  {i}/{n} {k:12}", end="", flush=True), kategorite=args.kategori)
     print()
+    if args.gjykatesi:
+        from trajnimi import gjykatesi
+        if gjykatesi.gati():
+            r["gjykatesi"] = gjykatesi.gjyko_te_gjitha(
+                args.gjykatesi, on_progres=lambda i, n, k: print(f"\r  gjykatësi {i}/{n} {k:12}", end="", flush=True))
+            print()
+        else:
+            print(f"Gjykatësi u anashkalua: {gjykatesi.GJYKATESI_MODEL} nuk është i instaluar.")
     f = ruaj(r)
     shtyp(r, args.gabimet)
+    if "gjykatesi" in r:
+        from trajnimi import gjykatesi
+        gjykatesi.shtyp(r["gjykatesi"])
     print(f"\nRaporti: {f}")

@@ -1,0 +1,2758 @@
+{
+ "_pershkrimi": "Dataset i thyerjeve dhe sëmundjeve për FarmaBot. Çdo hyrje ndjek skemën më poshtë; validohet me: python valido_semundjet.py",
+ "_skema_versioni": 1,
+ "hyrjet": [
+  {
+   "id": "thyerje_klavikule",
+   "emri_shqip": "Thyerje e klavikulës",
+   "emri_anglisht": "Clavicle fracture",
+   "kodi_icd10": "S42.0",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e kockës së klavikulës (kocka e qafës), zakonisht në pjesën e mesme. Një nga thyerjet më të shpeshta te fëmijët dhe të rinjtë.",
+   "shkaqet": [
+    "rënie mbi shpatull",
+    "rënie mbi dorën e shtrirë",
+    "goditje e drejtpërdrejtë në sport ose aksident"
+   ],
+   "faktoret_e_rrezikut": [
+    "sportet me kontakt",
+    "çiklizmi",
+    "mosha e re",
+    "osteoporoza te të moshuarit"
+   ],
+   "simptomat": [
+    "dhimbje në shpatull ose në klavikulë",
+    "ënjtje dhe mavijosje",
+    "deformim ose gungë mbi klavikulë",
+    "vështirësi për të ngritur krahun"
+   ],
+   "shenjat_urgjente": [
+    "lëkura e shpuar nga kocka",
+    "mpirje ose dobësi e krahut",
+    "dora e ftohtë ose e zbehtë",
+    "vështirësi në frymëmarrje"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e klavikulës"
+   ],
+   "trajtimi_konservativ": [
+    "fashë mbajtëse e krahut (sling)",
+    "qetësues dhimbjeje",
+    "fizioterapi pas fazës akute"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me pllakë dhe vida",
+    "fiksim me shufër intramedulare (për thyerje të zhvendosura ose të shkurtuara)"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 12,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "mosbashkim i kockës",
+    "bashkim në pozicion të gabuar",
+    "gungë e përhershme",
+    "dëmtim i nervave ose enëve (rrallë)"
+   ],
+   "parandalimi": [
+    "mbrojtëse në sport",
+    "helmetë dhe kujdes në biçikletë",
+    "parandalimi i rënieve"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_humerusi_proksimal",
+   "emri_shqip": "Thyerje e pjesës së sipërme të humerusit",
+   "emri_anglisht": "Proximal humerus fracture",
+   "kodi_icd10": "S42.2",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e pjesës së sipërme të kockës së krahut, pranë nyjës së shpatullës. Shumë e shpeshtë te të moshuarit me osteoporozë.",
+   "shkaqet": [
+    "rënie mbi dorën e shtrirë",
+    "rënie anash mbi shpatull",
+    "aksident me energji të lartë te të rinjtë"
+   ],
+   "faktoret_e_rrezikut": [
+    "osteoporoza",
+    "mosha mbi 65 vjeç",
+    "gjinia femërore",
+    "rëniet e shpeshta"
+   ],
+   "simptomat": [
+    "dhimbje e fortë në shpatull",
+    "ënjtje dhe mavijosje që zbret në krah",
+    "lëvizje e kufizuar e shpatullës"
+   ],
+   "shenjat_urgjente": [
+    "mpirje e krahut ose e dorës",
+    "dora e ftohtë ose e zbehtë",
+    "deformim i dukshëm"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e shpatullës",
+    "skaner (CT) për thyerjet e ndërlikuara"
+   ],
+   "trajtimi_konservativ": [
+    "fashë mbajtëse e krahut",
+    "qetësues dhimbjeje",
+    "fizioterapi e hershme me lëvizje të lehta"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me pllakë dhe vida",
+    "shufër intramedulare",
+    "protezë e shpatullës për thyerjet e rënda"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 12,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "ngurtësi e shpatullës",
+    "nekrozë avaskulare e kokës së humerusit",
+    "dëmtim i nervit aksilar"
+   ],
+   "parandalimi": [
+    "trajtimi i osteoporozës",
+    "parandalimi i rënieve në shtëpi",
+    "ushtrime për ekuilibrin"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_trupi_humerusit",
+   "emri_shqip": "Thyerje e trupit të humerusit",
+   "emri_anglisht": "Humeral shaft fracture",
+   "kodi_icd10": "S42.3",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e pjesës së mesme të kockës së krahut (humerusit).",
+   "shkaqet": [
+    "goditje e drejtpërdrejtë",
+    "rënie",
+    "aksident rrugor",
+    "rrotullim i fortë i krahut"
+   ],
+   "faktoret_e_rrezikut": [
+    "aksidentet me energji të lartë",
+    "osteoporoza",
+    "tumoret e kockës (thyerje patologjike)"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje në mes të krahut",
+    "deformim ose shkurtim i krahut",
+    "pamundësi për të lëvizur krahun"
+   ],
+   "shenjat_urgjente": [
+    "dora e varur, nuk ngre dot kyçin e dorës (dëmtim i nervit radial)",
+    "mpirje e dorës",
+    "kocka e dukshme përmes lëkurës"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik dhe neurologjik",
+    "radiografi e humerusit"
+   ],
+   "trajtimi_konservativ": [
+    "imobilizim me ortezë funksionale",
+    "qetësues dhimbjeje",
+    "fizioterapi"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me pllakë dhe vida",
+    "shufër intramedulare"
+   ],
+   "koha_e_sherimit": {
+    "min": 10,
+    "max": 16,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "dëmtim i nervit radial",
+    "mosbashkim",
+    "bashkim në pozicion të gabuar"
+   ],
+   "parandalimi": [
+    "siguria në rrugë dhe në punë",
+    "trajtimi i osteoporozës"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_humerusi_distal",
+   "emri_shqip": "Thyerje e pjesës së poshtme të humerusit (suprakondilare)",
+   "emri_anglisht": "Distal humerus (supracondylar) fracture",
+   "kodi_icd10": "S42.4",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e humerusit mbi bërryl. Thyerja suprakondilare është thyerja më e shpeshtë e bërrylit te fëmijët.",
+   "shkaqet": [
+    "rënie mbi dorën e shtrirë",
+    "rënie nga pemët, shtretërit marinarë ose lodrat e lojërave"
+   ],
+   "faktoret_e_rrezikut": [
+    "fëmijët 5–7 vjeç",
+    "lojërat në lartësi",
+    "osteoporoza te të moshuarit"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje e fortë në bërryl",
+    "bërryli nuk përkulet ose nuk drejtohet",
+    "deformim i bërrylit"
+   ],
+   "shenjat_urgjente": [
+    "dora e ftohtë, e zbehtë ose pa puls",
+    "mpirje e gishtave",
+    "dhimbje që rritet shumë pas imobilizimit (sindromë kompartimenti)"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik, i pulsit dhe i nervave",
+    "radiografi e bërrylit"
+   ],
+   "trajtimi_konservativ": [
+    "gips ose longetë për thyerjet pa zhvendosje",
+    "qetësues dhimbjeje"
+   ],
+   "trajtimi_kirurgjik": [
+    "reduktim dhe fiksim me tela (te fëmijët)",
+    "fiksim me pllaka (te të rriturit)"
+   ],
+   "koha_e_sherimit": {
+    "min": 4,
+    "max": 16,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "dëmtim i arteries brakiale ose i nervave",
+    "sindromë kompartimenti",
+    "deformim i bërrylit (cubitus varus)",
+    "ngurtësi e bërrylit"
+   ],
+   "parandalimi": [
+    "mbikëqyrja e fëmijëve në lartësi",
+    "sipërfaqe të buta te këndet e lojërave"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_olekranonit",
+   "emri_shqip": "Thyerje e olekranonit",
+   "emri_anglisht": "Olecranon fracture",
+   "kodi_icd10": "S52.0",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e majës së kockës ulna në pjesën e pasme të bërrylit (olekranoni).",
+   "shkaqet": [
+    "rënie drejtpërdrejt mbi bërryl",
+    "rënie mbi dorën e shtrirë me tkurrje të fortë të tricepsit"
+   ],
+   "faktoret_e_rrezikut": [
+    "mosha e madhe",
+    "osteoporoza",
+    "sportet me rënie"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje në pjesën e pasme të bërrylit",
+    "pamundësi për të drejtuar bërrylin kundër rezistencës",
+    "mavijosje"
+   ],
+   "shenjat_urgjente": [
+    "plagë e hapur mbi bërryl",
+    "mpirje e gishtave të vegjël",
+    "dora e ftohtë"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e bërrylit"
+   ],
+   "trajtimi_konservativ": [
+    "longetë ose gips për thyerjet pa zhvendosje",
+    "qetësues dhimbjeje"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me tela tension-band",
+    "fiksim me pllakë dhe vida"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 12,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "ngurtësi e bërrylit",
+    "pengesë nga materiali i fiksimit",
+    "artrozë pas lëndimit"
+   ],
+   "parandalimi": [
+    "parandalimi i rënieve",
+    "mbrojtëse bërryli në sport"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_koka_radiusit",
+   "emri_shqip": "Thyerje e kokës së radiusit",
+   "emri_anglisht": "Radial head fracture",
+   "kodi_icd10": "S52.1",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e pjesës së sipërme të kockës radius, në anën e jashtme të bërrylit. Thyerja më e shpeshtë e bërrylit te të rriturit.",
+   "shkaqet": [
+    "rënie mbi dorën e shtrirë"
+   ],
+   "faktoret_e_rrezikut": [
+    "sportet me rënie",
+    "mosha e mesme",
+    "osteoporoza"
+   ],
+   "simptomat": [
+    "dhimbje në anën e jashtme të bërrylit",
+    "dhimbje kur rrotullohet parakrahu",
+    "ënjtje e bërrylit",
+    "bërryli nuk drejtohet plotësisht"
+   ],
+   "shenjat_urgjente": [
+    "deformim i bërrylit (mund të ketë dislokim)",
+    "mpirje e dorës",
+    "plagë e hapur"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e bërrylit",
+    "skaner (CT) për thyerjet me shumë copa"
+   ],
+   "trajtimi_konservativ": [
+    "fashë mbajtëse për pak ditë",
+    "lëvizje e hershme e bërrylit",
+    "qetësues dhimbjeje"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me vida",
+    "heqje ose protezë e kokës së radiusit për thyerjet e rënda"
+   ],
+   "koha_e_sherimit": {
+    "min": 4,
+    "max": 8,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "ngurtësi e bërrylit",
+    "humbje e lëvizjes së rrotullimit",
+    "artrozë"
+   ],
+   "parandalimi": [
+    "parandalimi i rënieve",
+    "mbrojtëse në sport"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_parakrahu_te_dyja",
+   "emri_shqip": "Thyerje e trupit të radiusit dhe ulnës",
+   "emri_anglisht": "Fracture of shafts of both radius and ulna",
+   "kodi_icd10": "S52.4",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e të dy kockave të parakrahut (radius dhe ulna) në pjesën e mesme.",
+   "shkaqet": [
+    "rënie mbi dorën e shtrirë",
+    "goditje e drejtpërdrejtë",
+    "aksident rrugor ose sportiv"
+   ],
+   "faktoret_e_rrezikut": [
+    "fëmijët dhe adoleshentët",
+    "sportet me kontakt",
+    "aksidentet me energji të lartë"
+   ],
+   "simptomat": [
+    "dhimbje e fortë dhe ënjtje e parakrahut",
+    "deformim i dukshëm",
+    "pamundësi për të rrotulluar parakrahun"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje që rritet shumë dhe parakrahu i tendosur (sindromë kompartimenti)",
+    "mpirje ose gishta të zbehtë",
+    "kocka e dukshme përmes lëkurës"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik dhe i qarkullimit",
+    "radiografi e parakrahut me bërrylin dhe kyçin e dorës"
+   ],
+   "trajtimi_konservativ": [
+    "reduktim dhe gips i gjatë (sidomos te fëmijët)"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me pllaka dhe vida (te të rriturit)",
+    "shufra elastike intramedulare (te fëmijët)"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 16,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "sindromë kompartimenti",
+    "mosbashkim",
+    "humbje e rrotullimit të parakrahut",
+    "rithyerje"
+   ],
+   "parandalimi": [
+    "mbrojtëse në sport",
+    "siguria në rrugë"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_radiusi_distal",
+   "emri_shqip": "Thyerje e pjesës së poshtme të radiusit",
+   "emri_anglisht": "Distal radius fracture",
+   "kodi_icd10": "S52.5",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e radiusit pranë kyçit të dorës (përfshin thyerjen Colles dhe Smith). Thyerja më e shpeshtë e krahut.",
+   "shkaqet": [
+    "rënie mbi dorën e shtrirë"
+   ],
+   "faktoret_e_rrezikut": [
+    "osteoporoza",
+    "gratë pas menopauzës",
+    "sportet si skijimi dhe patinazhi",
+    "rëniet në akull"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje e kyçit të dorës",
+    "deformim në formë 'pirune'",
+    "mavijosje",
+    "vështirësi për të kapur sende"
+   ],
+   "shenjat_urgjente": [
+    "mpirje e gishtave (dëmtim i nervit median)",
+    "gishta të ftohtë ose të zbehtë",
+    "plagë e hapur"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e kyçit të dorës",
+    "skaner (CT) për thyerjet brenda nyjës"
+   ],
+   "trajtimi_konservativ": [
+    "reduktim i mbyllur dhe gips",
+    "qetësues dhimbjeje",
+    "fizioterapi pas heqjes së gipsit"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me pllakë dhe vida",
+    "tela perkutane",
+    "fiksues i jashtëm"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 8,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "ngurtësi e kyçit të dorës",
+    "sindromë e tunelit karpal",
+    "sindromë e dhimbjes rajonale komplekse",
+    "artrozë"
+   ],
+   "parandalimi": [
+    "trajtimi i osteoporozës",
+    "mbrojtëse kyçi në sport",
+    "kujdes në akull"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_skafoidit",
+   "emri_shqip": "Thyerje e kockës skafoide",
+   "emri_anglisht": "Scaphoid fracture",
+   "kodi_icd10": "S62.0",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e kockës skafoide (navikulare) të kyçit të dorës, në anën e gishtit të madh. Shpesh nuk duket në radiografinë e parë.",
+   "shkaqet": [
+    "rënie mbi dorën e shtrirë"
+   ],
+   "faktoret_e_rrezikut": [
+    "të rinjtë aktivë",
+    "sportet me rënie",
+    "aksidentet me motor"
+   ],
+   "simptomat": [
+    "dhimbje në anën e gishtit të madh të kyçit",
+    "dhimbje në 'kutinë e duhanit anatomike'",
+    "ënjtje e lehtë",
+    "dhimbje kur kapet diçka"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje e vazhdueshme pas rënies edhe me radiografi normale (duhet kontroll i përsëritur)"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi me pamje të posaçme të skafoidit",
+    "MRI ose skaner (CT) nëse radiografia është normale"
+   ],
+   "trajtimi_konservativ": [
+    "gips që përfshin gishtin e madh"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me vidë (për thyerje të zhvendosura ose në polin proksimal)",
+    "graft kockor për mosbashkim"
+   ],
+   "koha_e_sherimit": {
+    "min": 8,
+    "max": 12,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "mosbashkim",
+    "nekrozë avaskulare",
+    "artrozë e kyçit të dorës"
+   ],
+   "parandalimi": [
+    "mbrojtëse kyçi në sport",
+    "kontroll mjekësor për çdo dhimbje kyçi pas rënies"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_metakarpale",
+   "emri_shqip": "Thyerje e kockave metakarpale",
+   "emri_anglisht": "Metacarpal fracture",
+   "kodi_icd10": "S62.3",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e kockave të pëllëmbës (përveç gishtit të madh), p.sh. 'thyerja e boksierit' e metakarpit të pestë.",
+   "shkaqet": [
+    "goditje me grusht",
+    "rënie mbi dorë",
+    "shtypje e dorës"
+   ],
+   "faktoret_e_rrezikut": [
+    "përleshjet",
+    "sportet me kontakt",
+    "punët me makineri"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje në pëllëmbë ose mbi dorë",
+    "nyja e gishtit e rrafshuar",
+    "gishti rrotullohet kur mbyllet grushti"
+   ],
+   "shenjat_urgjente": [
+    "plagë mbi nyjë pas goditjes me grusht mbi dhëmbë (rrezik infeksioni)",
+    "gishta të ftohtë ose të mpirë"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik i rrotullimit të gishtave",
+    "radiografi e dorës"
+   ],
+   "trajtimi_konservativ": [
+    "longetë ose ortezë",
+    "lidhje e gishtit me fqinjin (buddy taping)",
+    "qetësues dhimbjeje"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me tela",
+    "fiksim me pllakë ose vida për thyerjet e paqëndrueshme"
+   ],
+   "koha_e_sherimit": {
+    "min": 4,
+    "max": 6,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "rrotullim i gishtit",
+    "ngurtësi",
+    "infeksion (te plagët nga dhëmbët)"
+   ],
+   "parandalimi": [
+    "shmangia e përleshjeve",
+    "doreza mbrojtëse në punë dhe sport"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_falange_dore",
+   "emri_shqip": "Thyerje e gishtit të dorës",
+   "emri_anglisht": "Finger (phalanx) fracture",
+   "kodi_icd10": "S62.6",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e një prej falangave të gishtave të dorës (përveç gishtit të madh).",
+   "shkaqet": [
+    "shtypje e gishtit në derë",
+    "goditje me top",
+    "rënie"
+   ],
+   "faktoret_e_rrezikut": [
+    "sportet me top",
+    "punët manuale",
+    "fëmijët"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje e gishtit",
+    "mavijosje",
+    "deformim ose rrotullim i gishtit",
+    "vështirësi për të përkulur gishtin"
+   ],
+   "shenjat_urgjente": [
+    "gishti i ftohtë ose i zbehtë",
+    "plagë e hapur ose thoni i shkulur me thyerje",
+    "deformim i madh"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e gishtit"
+   ],
+   "trajtimi_konservativ": [
+    "lidhje me gishtin fqinj (buddy taping)",
+    "longetë e vogël",
+    "qetësues dhimbjeje"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me tela ose vida të vogla për thyerjet e paqëndrueshme ose brenda nyjës"
+   ],
+   "koha_e_sherimit": {
+    "min": 3,
+    "max": 6,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "ngurtësi e gishtit",
+    "rrotullim i përhershëm",
+    "artrozë e nyjës"
+   ],
+   "parandalimi": [
+    "kujdes me dyert",
+    "doreza në punë"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_qafa_femurit",
+   "emri_shqip": "Thyerje e qafës së femurit",
+   "emri_anglisht": "Femoral neck fracture",
+   "kodi_icd10": "S72.0",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e kofshës në qafën e femurit, brenda kapsulës së nyjës së ijës. Lëndim serioz te të moshuarit.",
+   "shkaqet": [
+    "rënie nga lartësia e trupit te të moshuarit",
+    "aksident me energji të lartë te të rinjtë"
+   ],
+   "faktoret_e_rrezikut": [
+    "osteoporoza",
+    "mosha mbi 70 vjeç",
+    "gjinia femërore",
+    "ilaçet që shkaktojnë marramendje",
+    "shikimi i dobët"
+   ],
+   "simptomat": [
+    "dhimbje në ijë ose në kofshë",
+    "pamundësi për të qëndruar në këmbë ose për të ecur",
+    "këmba e shkurtuar dhe e rrotulluar nga jashtë"
+   ],
+   "shenjat_urgjente": [
+    "çdo i moshuar që pas rënies nuk ngrihet dot ose nuk ec dot duhet dërguar menjëherë në spital"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e ijës",
+    "MRI nëse radiografia është normale por dyshimi mbetet"
+   ],
+   "trajtimi_konservativ": [
+    "vetëm për raste të rralla kur operacioni nuk është i mundur"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me vida",
+    "protezë e pjesshme (hemiartroplastikë)",
+    "protezë totale e ijës"
+   ],
+   "koha_e_sherimit": {
+    "min": 12,
+    "max": 24,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "nekrozë avaskulare e kokës së femurit",
+    "mosbashkim",
+    "trombozë e venave të thella",
+    "pneumoni dhe plagë shtrati",
+    "humbje e pavarësisë"
+   ],
+   "parandalimi": [
+    "trajtimi i osteoporozës",
+    "parandalimi i rënieve (dritë, qilima të fiksuar, mbajtëse)",
+    "ushtrime për forcën dhe ekuilibrin",
+    "rishikimi i ilaçeve që shkaktojnë marramendje"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_pertrokanterike",
+   "emri_shqip": "Thyerje pertrokanterike e femurit",
+   "emri_anglisht": "Pertrochanteric (intertrochanteric) fracture",
+   "kodi_icd10": "S72.1",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e ijës jashtë kapsulës së nyjës, mes trokanterit të madh dhe të vogël të femurit.",
+   "shkaqet": [
+    "rënie te të moshuarit"
+   ],
+   "faktoret_e_rrezikut": [
+    "osteoporoza",
+    "mosha e madhe",
+    "rëniet e shpeshta",
+    "sëmundjet neurologjike"
+   ],
+   "simptomat": [
+    "dhimbje e fortë në ijë",
+    "pamundësi për të ecur",
+    "këmba e shkurtuar dhe e rrotulluar nga jashtë",
+    "mavijosje në anë të ijës"
+   ],
+   "shenjat_urgjente": [
+    "i moshuar që nuk ngrihet dot pas rënies",
+    "konfuzion ose dobësi e madhe pas rënies"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e ijës dhe e femurit"
+   ],
+   "trajtimi_konservativ": [
+    "vetëm kur operacioni nuk është i mundur"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me vidë dhe pllakë rrëshqitëse (DHS)",
+    "shufër intramedulare cefalomedulare"
+   ],
+   "koha_e_sherimit": {
+    "min": 12,
+    "max": 16,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "trombozë e venave të thella",
+    "pneumoni",
+    "dështim i fiksimit",
+    "humbje e lëvizshmërisë"
+   ],
+   "parandalimi": [
+    "trajtimi i osteoporozës",
+    "parandalimi i rënieve",
+    "ushtrime për ekuilibrin"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_trupi_femurit",
+   "emri_shqip": "Thyerje e trupit të femurit",
+   "emri_anglisht": "Femoral shaft fracture",
+   "kodi_icd10": "S72.3",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e pjesës së mesme të kockës së kofshës, zakonisht nga lëndime me energji të lartë.",
+   "shkaqet": [
+    "aksident rrugor",
+    "rënie nga lartësi",
+    "plagë nga arma zjarri"
+   ],
+   "faktoret_e_rrezikut": [
+    "drejtimi i automjeteve dhe motoçikletave",
+    "punët në lartësi",
+    "osteoporoza dhe përdorimi afatgjatë i bisfosfonateve (thyerje atipike)"
+   ],
+   "simptomat": [
+    "dhimbje e fortë në kofshë",
+    "deformim dhe shkurtim i këmbës",
+    "pamundësi për të lëvizur këmbën",
+    "ënjtje e madhe"
+   ],
+   "shenjat_urgjente": [
+    "gjakderdhje e madhe e brendshme (zbehje, rrahje të shpejta të zemrës)",
+    "kocka përmes lëkurës",
+    "këmba e ftohtë ose pa puls",
+    "telefono 127/112"
+   ],
+   "diagnoza": [
+    "vlerësim i plotë i traumës",
+    "radiografi e femurit, ijës dhe gjurit"
+   ],
+   "trajtimi_konservativ": [
+    "tërheqje dhe gips te fëmijët e vegjël"
+   ],
+   "trajtimi_kirurgjik": [
+    "shufër intramedulare",
+    "fiksim me pllakë",
+    "fiksues i jashtëm në raste të rënda"
+   ],
+   "koha_e_sherimit": {
+    "min": 16,
+    "max": 24,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "humbje e madhe gjaku",
+    "embolizëm yndyror",
+    "trombozë",
+    "mosbashkim",
+    "infeksion"
+   ],
+   "parandalimi": [
+    "rripi i sigurimit dhe helmeta",
+    "siguria në punë në lartësi"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_femuri_distal",
+   "emri_shqip": "Thyerje e pjesës së poshtme të femurit",
+   "emri_anglisht": "Distal femur fracture",
+   "kodi_icd10": "S72.4",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e femurit pak mbi gju, ndonjëherë brenda nyjës së gjurit.",
+   "shkaqet": [
+    "rënie mbi gju te të moshuarit",
+    "aksident rrugor te të rinjtë"
+   ],
+   "faktoret_e_rrezikut": [
+    "osteoporoza",
+    "protezë e gjurit (thyerje rreth protezës)",
+    "mosha e madhe"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje mbi gju",
+    "pamundësi për të ngarkuar këmbën",
+    "deformim i gjurit"
+   ],
+   "shenjat_urgjente": [
+    "këmba e ftohtë ose pa puls poshtë gjurit",
+    "kocka përmes lëkurës"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik dhe i qarkullimit",
+    "radiografi",
+    "skaner (CT) për thyerjet brenda nyjës"
+   ],
+   "trajtimi_konservativ": [
+    "ortezë ose gips vetëm për thyerje pa zhvendosje te pacientë që nuk operohen"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me pllakë",
+    "shufër intramedulare retrograde",
+    "protezë e gjurit në raste të zgjedhura"
+   ],
+   "koha_e_sherimit": {
+    "min": 12,
+    "max": 20,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "ngurtësi e gjurit",
+    "artrozë",
+    "mosbashkim",
+    "trombozë"
+   ],
+   "parandalimi": [
+    "trajtimi i osteoporozës",
+    "parandalimi i rënieve"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_pateles",
+   "emri_shqip": "Thyerje e patelës",
+   "emri_anglisht": "Patella fracture",
+   "kodi_icd10": "S82.0",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e kupës së gjurit (patelës).",
+   "shkaqet": [
+    "rënie drejtpërdrejt mbi gju",
+    "goditje e gjurit në panelin e makinës",
+    "tkurrje e fortë e kuadricepsit"
+   ],
+   "faktoret_e_rrezikut": [
+    "mosha e madhe",
+    "sportet",
+    "aksidentet rrugore"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje e gjurit",
+    "pamundësi për të drejtuar këmbën ose për ta ngritur të drejtë",
+    "mavijosje"
+   ],
+   "shenjat_urgjente": [
+    "plagë e hapur mbi gju",
+    "ënjtje shumë e madhe me lëkurë të tendosur"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik (ngritja e këmbës së drejtë)",
+    "radiografi e gjurit"
+   ],
+   "trajtimi_konservativ": [
+    "ortezë ose gips me gjurin të drejtë për thyerjet pa zhvendosje"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me tela tension-band",
+    "vida ose pllakë",
+    "heqje e pjesshme e patelës për copat e vogla"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 12,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "ngurtësi e gjurit",
+    "dobësi e kuadricepsit",
+    "artrozë patelofemorale",
+    "pengesë nga materiali i fiksimit"
+   ],
+   "parandalimi": [
+    "rripi i sigurimit",
+    "mbrojtëse gjuri në sport",
+    "parandalimi i rënieve"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_platoja_tibiale",
+   "emri_shqip": "Thyerje e pjesës së sipërme të tibias (plato tibiale)",
+   "emri_anglisht": "Tibial plateau fracture",
+   "kodi_icd10": "S82.1",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e pjesës së sipërme të tibias që përfshin sipërfaqen e nyjës së gjurit.",
+   "shkaqet": [
+    "goditje anash gjurit (p.sh. nga parakolpi i makinës)",
+    "rënie nga lartësi",
+    "rënie te të moshuarit me osteoporozë"
+   ],
+   "faktoret_e_rrezikut": [
+    "aksidentet rrugore",
+    "skijimi",
+    "osteoporoza"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje e gjurit",
+    "pamundësi për të ngarkuar këmbën",
+    "gjuri i paqëndrueshëm"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje që rritet shumë dhe kërci i tendosur (sindromë kompartimenti)",
+    "këmba e ftohtë ose e mpirë",
+    "plagë e hapur"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik dhe i qarkullimit",
+    "radiografi",
+    "skaner (CT)",
+    "MRI për ligamentet dhe meniskët"
+   ],
+   "trajtimi_konservativ": [
+    "ortezë dhe mos-ngarkim i këmbës për thyerjet pa zhvendosje"
+   ],
+   "trajtimi_kirurgjik": [
+    "ngritje e sipërfaqes dhe fiksim me pllaka dhe vida",
+    "fiksues i jashtëm i përkohshëm"
+   ],
+   "koha_e_sherimit": {
+    "min": 12,
+    "max": 16,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "artrozë e gjurit",
+    "ngurtësi",
+    "sindromë kompartimenti",
+    "dëmtim i ligamenteve ose meniskut"
+   ],
+   "parandalimi": [
+    "siguria në rrugë",
+    "trajtimi i osteoporozës"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_trupi_tibias",
+   "emri_shqip": "Thyerje e trupit të tibias",
+   "emri_anglisht": "Tibial shaft fracture",
+   "kodi_icd10": "S82.2",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e pjesës së mesme të kockës së kërcirit (tibias), shpesh bashkë me fibulën. Thyerja më e shpeshtë e kockave të gjata.",
+   "shkaqet": [
+    "aksident rrugor",
+    "lëndim sportiv me rrotullim",
+    "rënie"
+   ],
+   "faktoret_e_rrezikut": [
+    "futbolli dhe skijimi",
+    "motoçikletat",
+    "osteoporoza"
+   ],
+   "simptomat": [
+    "dhimbje e fortë në kërci",
+    "deformim",
+    "pamundësi për të ecur",
+    "ënjtje"
+   ],
+   "shenjat_urgjente": [
+    "kocka përmes lëkurës (thyerje e hapur: rrezik i lartë infeksioni)",
+    "dhimbje që rritet shumë dhe kërci i tendosur",
+    "këmba e ftohtë ose e mpirë"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik dhe i qarkullimit",
+    "radiografi e kërcirit me gjurin dhe kyçin e këmbës"
+   ],
+   "trajtimi_konservativ": [
+    "gips i gjatë dhe pastaj ortezë funksionale për thyerjet e qëndrueshme"
+   ],
+   "trajtimi_kirurgjik": [
+    "shufër intramedulare",
+    "pllakë",
+    "fiksues i jashtëm për thyerjet e hapura"
+   ],
+   "koha_e_sherimit": {
+    "min": 16,
+    "max": 24,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "sindromë kompartimenti",
+    "infeksion",
+    "bashkim i vonuar ose mosbashkim",
+    "dhimbje e gjurit pas shufrës"
+   ],
+   "parandalimi": [
+    "mbrojtëse kërciri në futboll",
+    "siguria në rrugë"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_maleolit_medial",
+   "emri_shqip": "Thyerje e maleolit të brendshëm",
+   "emri_anglisht": "Medial malleolus fracture",
+   "kodi_icd10": "S82.5",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e kockës së brendshme të kyçit të këmbës (maleoli medial i tibias).",
+   "shkaqet": [
+    "përdredhje e kyçit të këmbës",
+    "rënie",
+    "lëndim sportiv"
+   ],
+   "faktoret_e_rrezikut": [
+    "sportet me kërcime",
+    "terreni i pabarabartë",
+    "obeziteti",
+    "osteoporoza"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje në anën e brendshme të kyçit",
+    "mavijosje",
+    "vështirësi për të ngarkuar këmbën"
+   ],
+   "shenjat_urgjente": [
+    "deformim i kyçit (mund të ketë dislokim)",
+    "këmba e ftohtë ose e mpirë",
+    "plagë e hapur"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik (rregullat e Otavës për kyçin e këmbës)",
+    "radiografi e kyçit"
+   ],
+   "trajtimi_konservativ": [
+    "gips ose çizme ortopedike për thyerjet pa zhvendosje"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me vida"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 10,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "mosbashkim",
+    "artrozë e kyçit",
+    "ngurtësi"
+   ],
+   "parandalimi": [
+    "këpucë të përshtatshme",
+    "ushtrime për ekuilibrin",
+    "kujdes në terren të pabarabartë"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_maleolit_lateral",
+   "emri_shqip": "Thyerje e maleolit të jashtëm",
+   "emri_anglisht": "Lateral malleolus fracture",
+   "kodi_icd10": "S82.6",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e pjesës së poshtme të fibulës në anën e jashtme të kyçit të këmbës. Thyerja më e shpeshtë e kyçit të këmbës.",
+   "shkaqet": [
+    "përdredhje e kyçit nga brenda",
+    "rënie",
+    "lëndim sportiv"
+   ],
+   "faktoret_e_rrezikut": [
+    "sportet me kërcime dhe ndryshime drejtimi",
+    "takat e larta",
+    "terreni i pabarabartë",
+    "obeziteti"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje në anën e jashtme të kyçit",
+    "mavijosje",
+    "vështirësi për të ecur"
+   ],
+   "shenjat_urgjente": [
+    "deformim i kyçit",
+    "këmba e ftohtë ose e mpirë",
+    "plagë e hapur"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik (rregullat e Otavës për kyçin e këmbës)",
+    "radiografi e kyçit"
+   ],
+   "trajtimi_konservativ": [
+    "çizme ortopedike ose gips për thyerjet e qëndrueshme",
+    "ngarkim i hershëm sipas mjekut"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me pllakë dhe vida për thyerjet e paqëndrueshme"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 8,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "paqëndrueshmëri e kyçit",
+    "artrozë",
+    "ngurtësi"
+   ],
+   "parandalimi": [
+    "këpucë të përshtatshme",
+    "ushtrime për ekuilibrin dhe forcën e kyçit"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_bimaleolare",
+   "emri_shqip": "Thyerje bimaleolare dhe trimaleolare e kyçit të këmbës",
+   "emri_anglisht": "Bimalleolar and trimalleolar ankle fracture",
+   "kodi_icd10": "S82.8",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e dy ose tre pjesëve të kyçit të këmbës; e paqëndrueshme dhe zakonisht kërkon operacion.",
+   "shkaqet": [
+    "përdredhje e fortë e kyçit",
+    "rënie nga lartësi",
+    "aksident"
+   ],
+   "faktoret_e_rrezikut": [
+    "obeziteti",
+    "osteoporoza",
+    "diabeti",
+    "sportet"
+   ],
+   "simptomat": [
+    "dhimbje e fortë dhe ënjtje e madhe e kyçit",
+    "deformim",
+    "pamundësi për të ngarkuar këmbën"
+   ],
+   "shenjat_urgjente": [
+    "kyçi i dislokuar ose i deformuar",
+    "këmba e ftohtë, e zbehtë ose e mpirë",
+    "lëkura e tendosur ose e shpuar"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik dhe i qarkullimit",
+    "radiografi",
+    "skaner (CT) për thyerjet trimaleolare"
+   ],
+   "trajtimi_konservativ": [
+    "reduktim dhe gips vetëm kur operacioni nuk është i mundur"
+   ],
+   "trajtimi_kirurgjik": [
+    "reduktim i hapur dhe fiksim me pllaka dhe vida"
+   ],
+   "koha_e_sherimit": {
+    "min": 8,
+    "max": 12,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "artrozë e kyçit",
+    "infeksion i plagës",
+    "trombozë",
+    "ngurtësi"
+   ],
+   "parandalimi": [
+    "parandalimi i rënieve",
+    "kontrolli i diabetit dhe i peshës"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_kalkaneusit",
+   "emri_shqip": "Thyerje e kalkaneusit (thembrës)",
+   "emri_anglisht": "Calcaneus fracture",
+   "kodi_icd10": "S92.0",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e kockës së thembrës, zakonisht nga rënia në këmbë nga lartësi.",
+   "shkaqet": [
+    "rënie nga shkallët, skelat ose çatia",
+    "aksident rrugor"
+   ],
+   "faktoret_e_rrezikut": [
+    "punët në lartësi",
+    "aksidentet rrugore",
+    "osteoporoza"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje e thembrës",
+    "mavijosje në shputë",
+    "pamundësi për të ngarkuar këmbën",
+    "thembra e zgjeruar"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje në shpinë pas rënies nga lartësi (mund të ketë edhe thyerje rruazash)",
+    "ënjtje shumë e madhe me flluska",
+    "këmba e ftohtë"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik dhe i shpinës",
+    "radiografi",
+    "skaner (CT)"
+   ],
+   "trajtimi_konservativ": [
+    "ngritje e këmbës, akull, mos-ngarkim i këmbës",
+    "çizme ortopedike"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me pllakë ose vida",
+    "artrodezë për thyerjet shumë të rënda"
+   ],
+   "koha_e_sherimit": {
+    "min": 12,
+    "max": 16,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "artrozë subtalare",
+    "dhimbje kronike e thembrës",
+    "probleme me plagën",
+    "sindromë kompartimenti e shputës"
+   ],
+   "parandalimi": [
+    "siguria në punë në lartësi",
+    "shkallë të qëndrueshme"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_talusit",
+   "emri_shqip": "Thyerje e talusit",
+   "emri_anglisht": "Talus fracture",
+   "kodi_icd10": "S92.1",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e kockës talus që lidh këmbën me kyçin e këmbës.",
+   "shkaqet": [
+    "aksident rrugor",
+    "rënie nga lartësi",
+    "përdredhje e fortë e kyçit (p.sh. në snowboard)"
+   ],
+   "faktoret_e_rrezikut": [
+    "aksidentet me energji të lartë",
+    "snowboard-i"
+   ],
+   "simptomat": [
+    "dhimbje e fortë në kyçin e këmbës",
+    "ënjtje",
+    "pamundësi për të ngarkuar këmbën"
+   ],
+   "shenjat_urgjente": [
+    "deformim i kyçit",
+    "lëkura e tendosur ose e zbehtë mbi kyç",
+    "këmba e ftohtë"
+   ],
+   "diagnoza": [
+    "radiografi",
+    "skaner (CT)",
+    "MRI për thyerjet e vogla"
+   ],
+   "trajtimi_konservativ": [
+    "gips dhe mos-ngarkim i këmbës për thyerjet pa zhvendosje"
+   ],
+   "trajtimi_kirurgjik": [
+    "reduktim dhe fiksim me vida"
+   ],
+   "koha_e_sherimit": {
+    "min": 8,
+    "max": 16,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "nekrozë avaskulare",
+    "artrozë",
+    "dhimbje kronike"
+   ],
+   "parandalimi": [
+    "siguria në rrugë",
+    "mbrojtëse në sportet e dimrit"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_metatarsale",
+   "emri_shqip": "Thyerje e kockave metatarsale",
+   "emri_anglisht": "Metatarsal fracture",
+   "kodi_icd10": "S92.3",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e një prej pesë kockave të gjata të shputës; përfshin thyerjet nga stresi dhe thyerjen e metatarsit të pestë.",
+   "shkaqet": [
+    "përdredhje e këmbës",
+    "rënie e një sendi të rëndë mbi këmbë",
+    "ngarkesë e përsëritur (vrapim, marshim)"
+   ],
+   "faktoret_e_rrezikut": [
+    "vrapimi dhe vallëzimi",
+    "osteoporoza",
+    "rritja e shpejtë e stërvitjes",
+    "këpucët e papërshtatshme"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje në pjesën e sipërme të shputës",
+    "mavijosje",
+    "dhimbje kur ecën"
+   ],
+   "shenjat_urgjente": [
+    "gishtat e ftohtë ose të zbehtë",
+    "plagë e hapur"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e shputës",
+    "MRI ose skintigrafi për thyerjet nga stresi"
+   ],
+   "trajtimi_konservativ": [
+    "këpucë me sholl të fortë ose çizme ortopedike",
+    "pushim dhe akull",
+    "qetësues dhimbjeje"
+   ],
+   "trajtimi_kirurgjik": [
+    "fiksim me vidë (p.sh. thyerja Jones e metatarsit të pestë te sportistët)"
+   ],
+   "koha_e_sherimit": {
+    "min": 6,
+    "max": 8,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "bashkim i vonuar (sidomos thyerja Jones)",
+    "dhimbje kronike",
+    "rithyerje"
+   ],
+   "parandalimi": [
+    "rritje graduale e stërvitjes",
+    "këpucë të përshtatshme",
+    "këpucë mbrojtëse në punë"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; AAOS OrthoInfo; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "thyerje_gishti_kembes",
+   "emri_shqip": "Thyerje e gishtit të këmbës",
+   "emri_anglisht": "Toe fracture",
+   "kodi_icd10": "S92.5",
+   "kategoria": "thyerje",
+   "pjesa_e_trupit_ose_sistemi": "skeletor",
+   "pershkrimi": "Thyerje e një prej gishtave të vegjël të këmbës (gishti i madh ka kodin S92.4).",
+   "shkaqet": [
+    "goditje e gishtit te mobiljet",
+    "rënie e një sendi mbi gisht"
+   ],
+   "faktoret_e_rrezikut": [
+    "ecja zbathur",
+    "punët me sende të rënda"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje e gishtit",
+    "mavijosje",
+    "deformim i lehtë",
+    "dhimbje kur vishet këpuca"
+   ],
+   "shenjat_urgjente": [
+    "gishti i ftohtë ose blu",
+    "plagë e hapur ose thoni i shkulur",
+    "deformim i madh"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi nëse ka deformim ose dyshim për gishtin e madh"
+   ],
+   "trajtimi_konservativ": [
+    "lidhje me gishtin fqinj (buddy taping)",
+    "këpucë me sholl të fortë",
+    "akull dhe ngritje e këmbës",
+    "qetësues dhimbjeje"
+   ],
+   "trajtimi_kirurgjik": [],
+   "koha_e_sherimit": {
+    "min": 4,
+    "max": 6,
+    "njesia": "javë"
+   },
+   "komplikimet": [
+    "ngurtësi",
+    "deformim i përhershëm (rrallë)",
+    "artrozë"
+   ],
+   "parandalimi": [
+    "mos ec zbathur në errësirë",
+    "këpucë mbrojtëse në punë"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "diabeti_tip2",
+   "emri_shqip": "Diabeti tip 2",
+   "emri_anglisht": "Type 2 diabetes mellitus",
+   "kodi_icd10": "E11",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "endokrin",
+   "pershkrimi": "Sëmundje kronike ku trupi nuk e përdor mirë insulinën dhe sheqeri në gjak mbetet i lartë.",
+   "shkaqet": [
+    "rezistencë ndaj insulinës",
+    "prodhim i pamjaftueshëm i insulinës nga pankreasi"
+   ],
+   "faktoret_e_rrezikut": [
+    "mbipesha dhe obeziteti",
+    "mungesa e aktivitetit fizik",
+    "historia familjare",
+    "mosha mbi 45 vjeç",
+    "diabeti gjatë shtatzënisë"
+   ],
+   "simptomat": [
+    "etje e shtuar",
+    "urinim i shpeshtë",
+    "lodhje",
+    "shikim i turbullt",
+    "plagë që shërohen ngadalë",
+    "shpesh pa simptoma në fillim"
+   ],
+   "shenjat_urgjente": [
+    "konfuzion, djersitje dhe dridhje (sheqer shumë i ulët)",
+    "etje e madhe, të vjella, frymëmarrje e shpejtë (sheqer shumë i lartë)",
+    "humbje e vetëdijes"
+   ],
+   "diagnoza": [
+    "glicemia esëll",
+    "hemoglobina e glikuar (HbA1c)",
+    "testi i tolerancës ndaj glukozës"
+   ],
+   "trajtimi_konservativ": [
+    "dietë dhe ulje e peshës",
+    "aktivitet fizik i rregullt",
+    "ilaçe me recetë (p.sh. metformina) sipas mjekut",
+    "insulinë kur nevojitet",
+    "kontrolle të rregullta të syve, këmbëve dhe veshkave"
+   ],
+   "trajtimi_kirurgjik": [
+    "kirurgji bariatrike te obeziteti i rëndë, në raste të zgjedhura"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: kontroll gjatë gjithë jetës; mund të hyjë në remision me ulje peshe"
+   },
+   "komplikimet": [
+    "sëmundje e zemrës dhe insult",
+    "dëmtim i veshkave",
+    "dëmtim i syve (retinopati)",
+    "neuropati dhe plagë në këmbë"
+   ],
+   "parandalimi": [
+    "peshë e shëndetshme",
+    "aktivitet fizik",
+    "dietë me pak sheqer dhe ushqime të përpunuara"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "diabeti_tip1",
+   "emri_shqip": "Diabeti tip 1",
+   "emri_anglisht": "Type 1 diabetes mellitus",
+   "kodi_icd10": "E10",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "endokrin",
+   "pershkrimi": "Sëmundje autoimune ku pankreasi nuk prodhon insulinë. Zakonisht fillon te fëmijët dhe të rinjtë.",
+   "shkaqet": [
+    "shkatërrim autoimun i qelizave beta të pankreasit"
+   ],
+   "faktoret_e_rrezikut": [
+    "historia familjare",
+    "faktorë gjenetikë",
+    "sëmundje të tjera autoimune"
+   ],
+   "simptomat": [
+    "etje e madhe",
+    "urinim i shpeshtë",
+    "humbje peshe pa arsye",
+    "lodhje",
+    "shikim i turbullt"
+   ],
+   "shenjat_urgjente": [
+    "të vjella, dhimbje barku, frymë me erë frutash, frymëmarrje e thellë (ketoacidozë)",
+    "konfuzion ose humbje e vetëdijes",
+    "sheqer shumë i ulët pas insulinës"
+   ],
+   "diagnoza": [
+    "glicemia",
+    "HbA1c",
+    "ketonet në gjak ose urinë",
+    "antitrupat e pankreasit"
+   ],
+   "trajtimi_konservativ": [
+    "insulinë çdo ditë (me injeksione ose pompë)",
+    "matje e rregullt e sheqerit",
+    "edukim për ushqimin dhe numërimin e karbohidrateve"
+   ],
+   "trajtimi_kirurgjik": [
+    "transplant pankreasi ose ishujsh në raste shumë të zgjedhura"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: insulinë gjatë gjithë jetës"
+   },
+   "komplikimet": [
+    "ketoacidozë diabetike",
+    "hipoglicemi",
+    "dëmtim i syve, veshkave dhe nervave",
+    "sëmundje e zemrës"
+   ],
+   "parandalimi": [
+    "nuk ka parandalim të njohur; diagnoza e hershme parandalon ketoacidozën"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "hipertensioni",
+   "emri_shqip": "Hipertensioni arterial (tensioni i lartë)",
+   "emri_anglisht": "Essential (primary) hypertension",
+   "kodi_icd10": "I10",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "kardiovaskular",
+   "pershkrimi": "Presion i gjakut vazhdimisht i lartë (zakonisht 140/90 mmHg ose më shumë), shpesh pa simptoma.",
+   "shkaqet": [
+    "shpesh pa shkak të vetëm (hipertension primar)",
+    "kombinim i trashëgimisë dhe stilit të jetesës"
+   ],
+   "faktoret_e_rrezikut": [
+    "kripa e shumtë në ushqim",
+    "mbipesha",
+    "mungesa e aktivitetit",
+    "alkooli dhe duhani",
+    "mosha",
+    "historia familjare",
+    "stresi"
+   ],
+   "simptomat": [
+    "shpesh asnjë simptomë",
+    "dhimbje koke",
+    "marramendje",
+    "gjakderdhje nga hunda (rrallë)"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje gjoksi",
+    "dhimbje koke e fortë e papritur me konfuzion ose të vjella",
+    "dobësi e një ane të trupit ose të folur i vështirë",
+    "shikim i humbur",
+    "tension mbi 180/120 me simptoma: telefono 127/112"
+   ],
+   "diagnoza": [
+    "matje e përsëritur e tensionit",
+    "matje në shtëpi ose 24-orëshe (Holter tensioni)",
+    "analiza gjaku dhe urine",
+    "EKG"
+   ],
+   "trajtimi_konservativ": [
+    "pak kripë",
+    "ulje e peshës",
+    "aktivitet fizik",
+    "ndalim i duhanit dhe pak alkool",
+    "ilaçe me recetë sipas mjekut"
+   ],
+   "trajtimi_kirurgjik": [],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: kontroll dhe trajtim gjatë gjithë jetës"
+   },
+   "komplikimet": [
+    "insult",
+    "infarkt i zemrës",
+    "dështim i zemrës",
+    "dëmtim i veshkave",
+    "dëmtim i syve"
+   ],
+   "parandalimi": [
+    "pak kripë",
+    "peshë e shëndetshme",
+    "aktivitet fizik",
+    "pa duhan",
+    "matje e rregullt e tensionit"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "semundja_ishemike_kronike",
+   "emri_shqip": "Sëmundja ishemike kronike e zemrës",
+   "emri_anglisht": "Chronic ischaemic heart disease",
+   "kodi_icd10": "I25",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "kardiovaskular",
+   "pershkrimi": "Ngushtim i arterieve të zemrës (koronareve) nga ateroskleroza, që zvogëlon gjakun që shkon te zemra.",
+   "shkaqet": [
+    "ateroskleroza e arterieve koronare"
+   ],
+   "faktoret_e_rrezikut": [
+    "duhani",
+    "tensioni i lartë",
+    "kolesteroli i lartë",
+    "diabeti",
+    "mbipesha",
+    "mosha",
+    "historia familjare"
+   ],
+   "simptomat": [
+    "dhimbje ose shtrëngim në gjoks gjatë lodhjes (anginë)",
+    "gulçim",
+    "lodhje"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje gjoksi që zgjat mbi 10 minuta ose nuk qetësohet me pushim",
+    "dhimbje që përhapet në krah, nofull ose shpinë, me djersitje: telefono 127/112"
+   ],
+   "diagnoza": [
+    "EKG",
+    "testi i ngarkesës",
+    "ekokardiografi",
+    "angiografi koronare",
+    "analiza kolesteroli"
+   ],
+   "trajtimi_konservativ": [
+    "ilaçe me recetë sipas kardiologut",
+    "ndalim i duhanit",
+    "dietë dhe aktivitet fizik",
+    "rehabilitim kardiak"
+   ],
+   "trajtimi_kirurgjik": [
+    "angioplastikë me stent",
+    "bypass koronar"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: trajtim dhe kontroll gjatë gjithë jetës"
+   },
+   "komplikimet": [
+    "infarkt i zemrës",
+    "dështim i zemrës",
+    "aritmi",
+    "vdekje e papritur"
+   ],
+   "parandalimi": [
+    "pa duhan",
+    "kontrolli i tensionit, kolesterolit dhe diabetit",
+    "aktivitet fizik",
+    "dietë mesdhetare"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "deshtimi_zemres",
+   "emri_shqip": "Dështimi i zemrës (insuficienca kardiake)",
+   "emri_anglisht": "Heart failure",
+   "kodi_icd10": "I50",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "kardiovaskular",
+   "pershkrimi": "Gjendje ku zemra nuk pompon gjak sa i duhet trupit.",
+   "shkaqet": [
+    "sëmundja ishemike e zemrës dhe infarkti",
+    "tensioni i lartë",
+    "sëmundjet e valvulave",
+    "kardiomiopatitë"
+   ],
+   "faktoret_e_rrezikut": [
+    "tensioni i lartë",
+    "diabeti",
+    "infarkti i mëparshëm",
+    "alkooli",
+    "obeziteti"
+   ],
+   "simptomat": [
+    "gulçim gjatë lodhjes ose kur shtrihet",
+    "ënjtje e këmbëve dhe kyçeve",
+    "lodhje",
+    "shtim i shpejtë peshe nga lëngjet",
+    "kollë natën"
+   ],
+   "shenjat_urgjente": [
+    "gulçim i rëndë ose që zgjon natën",
+    "pështymë rozë me shkumë",
+    "dhimbje gjoksi",
+    "të fikët"
+   ],
+   "diagnoza": [
+    "ekokardiografi",
+    "analiza NT-proBNP",
+    "EKG",
+    "radiografi e kraharorit"
+   ],
+   "trajtimi_konservativ": [
+    "ilaçe me recetë sipas kardiologut",
+    "pak kripë dhe kufizim i lëngjeve sipas mjekut",
+    "peshim çdo ditë",
+    "aktivitet i lehtë i rregullt"
+   ],
+   "trajtimi_kirurgjik": [
+    "defibrilator ose stimulues biventrikular",
+    "operacion i valvulave",
+    "transplant zemre në raste të rënda"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: trajtim gjatë gjithë jetës"
+   },
+   "komplikimet": [
+    "aritmi",
+    "dëmtim i veshkave",
+    "edemë pulmonare",
+    "shtrime të përsëritura në spital"
+   ],
+   "parandalimi": [
+    "kontrolli i tensionit dhe diabetit",
+    "pa duhan",
+    "pak alkool"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "fibrilacioni_atrial",
+   "emri_shqip": "Fibrilacioni atrial",
+   "emri_anglisht": "Atrial fibrillation",
+   "kodi_icd10": "I48",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "kardiovaskular",
+   "pershkrimi": "Rrahje e çrregullt dhe shpesh e shpejtë e zemrës; rrit shumë rrezikun e insultit.",
+   "shkaqet": [
+    "tensioni i lartë",
+    "sëmundjet e zemrës dhe valvulave",
+    "hipertiroidizmi",
+    "alkooli"
+   ],
+   "faktoret_e_rrezikut": [
+    "mosha",
+    "tensioni i lartë",
+    "obeziteti",
+    "apnea e gjumit",
+    "diabeti"
+   ],
+   "simptomat": [
+    "palpitacione",
+    "rrahje të çrregullta",
+    "lodhje",
+    "gulçim",
+    "marramendje",
+    "ndonjëherë pa simptoma"
+   ],
+   "shenjat_urgjente": [
+    "shenja insulti (fytyrë e shtrembër, dobësi e krahut, e folur e vështirë)",
+    "dhimbje gjoksi",
+    "të fikët"
+   ],
+   "diagnoza": [
+    "EKG",
+    "Holter 24-orësh",
+    "ekokardiografi",
+    "analizat e tiroides"
+   ],
+   "trajtimi_konservativ": [
+    "ilaçe kundër mpiksjes së gjakut me recetë",
+    "ilaçe për ritmin ose shpejtësinë e zemrës",
+    "trajtimi i shkaqeve"
+   ],
+   "trajtimi_kirurgjik": [
+    "kardioversion",
+    "ablacion me kateter",
+    "mbyllje e veshkës atriale"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: shpesh kërkon trajtim gjatë gjithë jetës"
+   },
+   "komplikimet": [
+    "insult",
+    "dështim i zemrës"
+   ],
+   "parandalimi": [
+    "kontrolli i tensionit",
+    "pak alkool",
+    "peshë e shëndetshme"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "astma",
+   "emri_shqip": "Astma",
+   "emri_anglisht": "Asthma",
+   "kodi_icd10": "J45",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "respirator",
+   "pershkrimi": "Inflamacion kronik i rrugëve të frymëmarrjes me kriza ngushtimi, fishkëllimë dhe gulçimi.",
+   "shkaqet": [
+    "inflamacion i rrugëve të frymëmarrjes",
+    "ndjeshmëri ndaj alergjeneve dhe ngacmuesve"
+   ],
+   "faktoret_e_rrezikut": [
+    "alergjitë dhe ekzema",
+    "historia familjare",
+    "tymi i duhanit",
+    "ndotja e ajrit",
+    "infeksionet virale"
+   ],
+   "simptomat": [
+    "gulçim",
+    "fishkëllimë në gjoks",
+    "shtrëngim gjoksi",
+    "kollë sidomos natën ose me lodhje"
+   ],
+   "shenjat_urgjente": [
+    "nuk flet dot fjali të plota nga gulçimi",
+    "buzë ose thonj blu",
+    "inhalatori qetësues nuk ndihmon",
+    "përgjumje ose konfuzion: telefono 127/112"
+   ],
+   "diagnoza": [
+    "spirometri me test bronkodilatimi",
+    "matja e fluksit maksimal (peak flow)",
+    "teste alergjie"
+   ],
+   "trajtimi_konservativ": [
+    "inhalatorë me recetë (qetësues dhe mbrojtës) sipas mjekut",
+    "plan veprimi për krizat",
+    "shmangia e ngacmuesve"
+   ],
+   "trajtimi_kirurgjik": [],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: mund të kontrollohet mirë me trajtim"
+   },
+   "komplikimet": [
+    "kriza të rënda astmatike",
+    "shtrime në spital",
+    "ngushtim i përhershëm i rrugëve të frymëmarrjes"
+   ],
+   "parandalimi": [
+    "pa duhan në shtëpi",
+    "shmangia e alergjeneve",
+    "vaksina e gripit"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "semundja_pulmonare_obstruktive",
+   "emri_shqip": "Sëmundja pulmonare obstruktive kronike (SPOK / COPD)",
+   "emri_anglisht": "Chronic obstructive pulmonary disease",
+   "kodi_icd10": "J44",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "respirator",
+   "pershkrimi": "Sëmundje kronike e mushkërive me ngushtim të përhershëm të rrugëve të frymëmarrjes (bronkit kronik dhe emfizemë).",
+   "shkaqet": [
+    "duhani",
+    "tymi nga djegia e drurit ose qymyrit në shtëpi",
+    "pluhurat dhe kimikatet në punë"
+   ],
+   "faktoret_e_rrezikut": [
+    "pirja e duhanit",
+    "mosha mbi 40 vjeç",
+    "ndotja e ajrit",
+    "mungesa e alfa-1 antitripsinës"
+   ],
+   "simptomat": [
+    "gulçim që shtohet me kohën",
+    "kollë kronike me pështymë",
+    "fishkëllimë",
+    "infeksione të shpeshta të gjoksit"
+   ],
+   "shenjat_urgjente": [
+    "gulçim i rëndë",
+    "buzë blu",
+    "konfuzion ose përgjumje",
+    "dhimbje gjoksi"
+   ],
+   "diagnoza": [
+    "spirometri",
+    "radiografi e kraharorit",
+    "oksimetri"
+   ],
+   "trajtimi_konservativ": [
+    "ndalimi i duhanit",
+    "inhalatorë me recetë",
+    "rehabilitim pulmonar",
+    "vaksina e gripit dhe pneumokokut",
+    "oksigjen në shtëpi në raste të rënda"
+   ],
+   "trajtimi_kirurgjik": [
+    "reduktim i vëllimit të mushkërisë",
+    "transplant mushkërie në raste të zgjedhura"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: progresive, trajtim gjatë gjithë jetës"
+   },
+   "komplikimet": [
+    "përkeqësime akute",
+    "dështim respirator",
+    "dështim i zemrës së djathtë",
+    "kancer i mushkërive"
+   ],
+   "parandalimi": [
+    "mos pi duhan ose ndaloje",
+    "ventilim i mirë kur gatuhet ose ngrohet me dru",
+    "mbrojtje në punë"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "osteoartriti_gjurit",
+   "emri_shqip": "Osteoartriti i gjurit (gonartroza)",
+   "emri_anglisht": "Osteoarthritis of the knee (gonarthrosis)",
+   "kodi_icd10": "M17",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "muskulor-skeletor",
+   "pershkrimi": "Konsumim i kërcit të nyjës së gjurit, me dhimbje dhe ngurtësi që shtohen me kohën.",
+   "shkaqet": [
+    "konsumim i kërcit me moshën",
+    "lëndime të mëparshme të gjurit"
+   ],
+   "faktoret_e_rrezikut": [
+    "mosha",
+    "mbipesha",
+    "gjinia femërore",
+    "lëndimet e gjurit",
+    "punët me gjunjëzim"
+   ],
+   "simptomat": [
+    "dhimbje e gjurit kur ecën ose ngjit shkallë",
+    "ngurtësi në mëngjes (nën 30 minuta)",
+    "ënjtje",
+    "kërcitje"
+   ],
+   "shenjat_urgjente": [
+    "gjuri i nxehtë, i kuq dhe i ënjtur me temperaturë (mund të jetë infeksion)",
+    "pamundësi e papritur për të ecur"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "radiografi e gjurit në këmbë"
+   ],
+   "trajtimi_konservativ": [
+    "ulje e peshës",
+    "ushtrime dhe fizioterapi",
+    "qetësues dhimbjeje (paracetamol, xhel diklofenak)",
+    "injeksione në nyjë sipas mjekut"
+   ],
+   "trajtimi_kirurgjik": [
+    "protezë e pjesshme ose totale e gjurit",
+    "osteotomi te të rinjtë"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: simptomat kontrollohen, kërci nuk rigjenerohet"
+   },
+   "komplikimet": [
+    "humbje e lëvizshmërisë",
+    "deformim i këmbës",
+    "rënie"
+   ],
+   "parandalimi": [
+    "peshë e shëndetshme",
+    "forcimi i muskujve të kofshës",
+    "mbrojtja e gjurit nga lëndimet"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "artriti_reumatoid",
+   "emri_shqip": "Artriti reumatoid",
+   "emri_anglisht": "Rheumatoid arthritis",
+   "kodi_icd10": "M06.9",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "imunitar",
+   "pershkrimi": "Sëmundje autoimune që shkakton inflamacion të shumë nyjave, zakonisht të duarve dhe këmbëve, në të dyja anët.",
+   "shkaqet": [
+    "sistemi imunitar sulmon membranën e nyjave"
+   ],
+   "faktoret_e_rrezikut": [
+    "gjinia femërore",
+    "duhani",
+    "historia familjare",
+    "mosha 30–60 vjeç"
+   ],
+   "simptomat": [
+    "dhimbje dhe ënjtje e nyjave të vogla të duarve",
+    "ngurtësi në mëngjes mbi 30 minuta",
+    "lodhje",
+    "temperaturë e lehtë"
+   ],
+   "shenjat_urgjente": [
+    "nyjë e nxehtë dhe e kuqe me temperaturë",
+    "gulçim ose dhimbje gjoksi",
+    "temperaturë gjatë trajtimit me ilaçe imunosupresive"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "faktori reumatoid dhe anti-CCP",
+    "SE dhe CRP",
+    "radiografi ose ekografi e nyjave"
+   ],
+   "trajtimi_konservativ": [
+    "ilaçe me recetë që ndryshojnë sëmundjen (p.sh. metotreksat) sipas reumatologut",
+    "fizioterapi",
+    "qetësues dhimbjeje"
+   ],
+   "trajtimi_kirurgjik": [
+    "sinovektomi",
+    "protezë nyje",
+    "korrigjim i deformimeve"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: trajtimi i hershëm parandalon dëmtimin e nyjave"
+   },
+   "komplikimet": [
+    "deformim i nyjave",
+    "sëmundje e zemrës",
+    "osteoporozë",
+    "infeksione nga trajtimi"
+   ],
+   "parandalimi": [
+    "pa duhan",
+    "diagnoza dhe trajtimi i hershëm"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "osteoporoza",
+   "emri_shqip": "Osteoporoza",
+   "emri_anglisht": "Osteoporosis without pathological fracture",
+   "kodi_icd10": "M81",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "muskulor-skeletor",
+   "pershkrimi": "Dobësim i kockave që i bën të thyhen lehtë (ija, kyçi i dorës, rruazat). Kur ka thyerje, kodi është M80.",
+   "shkaqet": [
+    "humbje e masës kockore me moshën",
+    "rënia e estrogjenit pas menopauzës"
+   ],
+   "faktoret_e_rrezikut": [
+    "gratë pas menopauzës",
+    "mosha",
+    "pesha e ulët",
+    "duhani dhe alkooli",
+    "kortikosteroidet afatgjata",
+    "mungesa e kalciumit dhe vitaminës D"
+   ],
+   "simptomat": [
+    "zakonisht pa simptoma derisa ndodh një thyerje",
+    "humbje e gjatësisë",
+    "kurrizi i përkulur",
+    "dhimbje shpine nga thyerjet e rruazave"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje e fortë shpine ose ije pas një rënieje të vogël (mund të jetë thyerje)"
+   ],
+   "diagnoza": [
+    "densitometri kockore (DXA)",
+    "vlerësimi i rrezikut të thyerjes (FRAX)",
+    "analiza kalciumi dhe vitamine D"
+   ],
+   "trajtimi_konservativ": [
+    "kalcium dhe vitaminë D",
+    "ushtrime me peshë",
+    "ilaçe me recetë (p.sh. bisfosfonate) sipas mjekut",
+    "parandalimi i rënieve"
+   ],
+   "trajtimi_kirurgjik": [],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: trajtimi ul rrezikun e thyerjeve"
+   },
+   "komplikimet": [
+    "thyerje e ijës",
+    "thyerje e rruazave",
+    "thyerje e kyçit të dorës"
+   ],
+   "parandalimi": [
+    "kalcium dhe vitaminë D të mjaftueshme",
+    "aktivitet fizik",
+    "pa duhan",
+    "pak alkool"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "hipotiroidizmi",
+   "emri_shqip": "Hipotiroidizmi",
+   "emri_anglisht": "Hypothyroidism, unspecified",
+   "kodi_icd10": "E03.9",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "endokrin",
+   "pershkrimi": "Gjëndra tiroide prodhon pak hormon, dhe metabolizmi ngadalësohet.",
+   "shkaqet": [
+    "tiroiditi Hashimoto",
+    "heqja ose trajtimi i tiroides",
+    "mungesa e jodit",
+    "disa ilaçe"
+   ],
+   "faktoret_e_rrezikut": [
+    "gjinia femërore",
+    "mosha",
+    "sëmundjet autoimune",
+    "historia familjare",
+    "pas lindjes"
+   ],
+   "simptomat": [
+    "lodhje",
+    "shtim peshe",
+    "ndjesi të ftohti",
+    "lëkurë e thatë",
+    "kapsllëk",
+    "humor i ulët",
+    "rënie flokësh"
+   ],
+   "shenjat_urgjente": [
+    "përgjumje e rëndë, konfuzion, temperaturë e ulët e trupit (rrallë: koma miksedematoze)"
+   ],
+   "diagnoza": [
+    "TSH dhe FT4 në gjak",
+    "antitrupat anti-TPO",
+    "ekografi e tiroides"
+   ],
+   "trajtimi_konservativ": [
+    "levotiroksinë me recetë çdo ditë",
+    "kontroll i TSH-së sipas mjekut"
+   ],
+   "trajtimi_kirurgjik": [],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: zakonisht trajtim gjatë gjithë jetës"
+   },
+   "komplikimet": [
+    "kolesterol i lartë",
+    "probleme në shtatzëni",
+    "sëmundje e zemrës"
+   ],
+   "parandalimi": [
+    "kripë e jodizuar",
+    "kontroll te gratë shtatzëna dhe pas lindjes"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "semundja_kronike_veshkave",
+   "emri_shqip": "Sëmundja kronike e veshkave",
+   "emri_anglisht": "Chronic kidney disease",
+   "kodi_icd10": "N18",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "urinar",
+   "pershkrimi": "Humbje graduale e funksionit të veshkave për më shumë se 3 muaj.",
+   "shkaqet": [
+    "diabeti",
+    "tensioni i lartë",
+    "glomerulonefriti",
+    "sëmundja policistike e veshkave"
+   ],
+   "faktoret_e_rrezikut": [
+    "diabeti",
+    "tensioni i lartë",
+    "mosha",
+    "historia familjare",
+    "përdorimi i gjatë i NSAID-ve"
+   ],
+   "simptomat": [
+    "shpesh pa simptoma në fillim",
+    "lodhje",
+    "ënjtje e këmbëve",
+    "urinim i shtuar natën",
+    "kruajtje",
+    "humbje oreksi"
+   ],
+   "shenjat_urgjente": [
+    "urinë shumë e pakët ose aspak",
+    "gulçim i rëndë",
+    "konfuzion",
+    "dobësi e madhe e muskujve"
+   ],
+   "diagnoza": [
+    "kreatinina dhe filtrimi glomerular (eGFR)",
+    "albumina në urinë",
+    "ekografi e veshkave"
+   ],
+   "trajtimi_konservativ": [
+    "kontrolli i tensionit dhe i sheqerit",
+    "ilaçe me recetë sipas nefrologut",
+    "dietë me pak kripë",
+    "shmangia e NSAID-ve pa këshillë mjeku"
+   ],
+   "trajtimi_kirurgjik": [
+    "dializë",
+    "transplant veshke"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: synimi është ngadalësimi i përparimit"
+   },
+   "komplikimet": [
+    "dështim i veshkave",
+    "sëmundje e zemrës",
+    "anemi",
+    "dobësim i kockave",
+    "kalium i lartë"
+   ],
+   "parandalimi": [
+    "kontrolli i diabetit dhe tensionit",
+    "shmangia e qetësuesve NSAID për kohë të gjatë",
+    "kontroll i rregullt i veshkave te personat në rrezik"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "podagra",
+   "emri_shqip": "Podagra (cermë)",
+   "emri_anglisht": "Gout",
+   "kodi_icd10": "M10",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "muskulor-skeletor",
+   "pershkrimi": "Artrit nga kristalet e acidit urik, me kriza dhimbjeje shumë të fortë, shpesh në gishtin e madh të këmbës.",
+   "shkaqet": [
+    "acid urik i lartë në gjak"
+   ],
+   "faktoret_e_rrezikut": [
+    "gjinia mashkullore",
+    "mbipesha",
+    "alkooli (sidomos birra)",
+    "mishi i kuq dhe frutat e detit",
+    "pijet me fruktozë",
+    "diuretikët",
+    "sëmundja e veshkave"
+   ],
+   "simptomat": [
+    "dhimbje e papritur dhe shumë e fortë në një nyjë",
+    "nyja e kuqe, e nxehtë dhe e ënjtur",
+    "shpesh natën"
+   ],
+   "shenjat_urgjente": [
+    "nyjë e kuqe dhe e nxehtë me temperaturë dhe dridhje (duhet përjashtuar infeksioni)"
+   ],
+   "diagnoza": [
+    "ekzaminim klinik",
+    "acidi urik në gjak",
+    "analiza e lëngut të nyjës për kristale"
+   ],
+   "trajtimi_konservativ": [
+    "qetësues anti-inflamatorë ose ilaçe të tjera me recetë gjatë krizës",
+    "ilaçe me recetë që ulin acidin urik (p.sh. alopurinol)",
+    "akull dhe pushim i nyjës",
+    "ndryshim i dietës"
+   ],
+   "trajtimi_kirurgjik": [
+    "heqje e tofeve të mëdha në raste të rralla"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: krizat zgjasin rreth 1–2 javë; sëmundja kërkon kontroll afatgjatë"
+   },
+   "komplikimet": [
+    "kriza të përsëritura",
+    "tofe",
+    "gurë në veshka",
+    "dëmtim i nyjave"
+   ],
+   "parandalimi": [
+    "pak alkool",
+    "peshë e shëndetshme",
+    "pak mish i kuq dhe pije të ëmbla",
+    "ujë i mjaftueshëm"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "hiperlipidemia",
+   "emri_shqip": "Kolesteroli i lartë (hiperlipidemia)",
+   "emri_anglisht": "Disorders of lipoprotein metabolism (hyperlipidaemia)",
+   "kodi_icd10": "E78",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "metabolik",
+   "pershkrimi": "Nivele të larta të kolesterolit ose triglicerideve në gjak, që rrisin rrezikun e sëmundjeve të zemrës.",
+   "shkaqet": [
+    "dieta me yndyrna të ngopura",
+    "trashëgimia (hiperkolesterolemia familjare)",
+    "diabeti dhe hipotiroidizmi"
+   ],
+   "faktoret_e_rrezikut": [
+    "mbipesha",
+    "mungesa e aktivitetit",
+    "duhani",
+    "historia familjare",
+    "diabeti"
+   ],
+   "simptomat": [
+    "zakonisht pa simptoma"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje gjoksi ose shenja insulti (si pasojë e aterosklerozës): telefono 127/112"
+   ],
+   "diagnoza": [
+    "profili lipidik në gjak (kolesterol total, LDL, HDL, trigliceride)"
+   ],
+   "trajtimi_konservativ": [
+    "dietë mesdhetare",
+    "aktivitet fizik",
+    "ulje e peshës",
+    "ilaçe me recetë (p.sh. statina) sipas mjekut"
+   ],
+   "trajtimi_kirurgjik": [],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: kontroll afatgjatë"
+   },
+   "komplikimet": [
+    "ateroskleroza",
+    "infarkt i zemrës",
+    "insult",
+    "pankreatit (trigliceride shumë të larta)"
+   ],
+   "parandalimi": [
+    "dietë e shëndetshme",
+    "aktivitet fizik",
+    "pa duhan",
+    "kontroll i kolesterolit pas moshës 40 vjeç"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "obeziteti",
+   "emri_shqip": "Obeziteti",
+   "emri_anglisht": "Obesity",
+   "kodi_icd10": "E66",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "metabolik",
+   "pershkrimi": "Grumbullim i tepërt i yndyrës në trup, zakonisht me indeks të masës trupore (BMI) 30 ose më shumë.",
+   "shkaqet": [
+    "më shumë kalori se sa harxhohen",
+    "faktorë gjenetikë dhe hormonalë",
+    "disa ilaçe"
+   ],
+   "faktoret_e_rrezikut": [
+    "ushqimet e përpunuara dhe pijet e ëmbla",
+    "mungesa e aktivitetit",
+    "gjumi i pakët",
+    "stresi",
+    "historia familjare"
+   ],
+   "simptomat": [
+    "peshë e tepërt",
+    "gulçim gjatë lodhjes",
+    "dhimbje nyjash",
+    "gërhitje dhe apne gjumi"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje gjoksi",
+    "gulçim i rëndë"
+   ],
+   "diagnoza": [
+    "BMI",
+    "perimetri i belit",
+    "analiza për diabetin, kolesterolin dhe tiroiden"
+   ],
+   "trajtimi_konservativ": [
+    "dietë e balancuar me më pak kalori",
+    "aktivitet fizik i rregullt",
+    "mbështetje psikologjike",
+    "ilaçe me recetë sipas mjekut"
+   ],
+   "trajtimi_kirurgjik": [
+    "kirurgji bariatrike (bypass gastrik, sleeve) për obezitet të rëndë"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: kërkon ndryshim afatgjatë të stilit të jetesës"
+   },
+   "komplikimet": [
+    "diabeti tip 2",
+    "tensioni i lartë",
+    "sëmundje e zemrës",
+    "osteoartrit",
+    "apne gjumi",
+    "disa lloje kanceri"
+   ],
+   "parandalimi": [
+    "ushqim i shëndetshëm",
+    "aktivitet fizik",
+    "gjumë i mjaftueshëm",
+    "pak pije të ëmbla"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "depresioni_rekurent",
+   "emri_shqip": "Çrregullimi depresiv rekurent",
+   "emri_anglisht": "Recurrent depressive disorder",
+   "kodi_icd10": "F33",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "psikik",
+   "pershkrimi": "Episode të përsëritura depresioni me humor të ulët dhe humbje interesi për të paktën dy javë.",
+   "shkaqet": [
+    "kombinim i faktorëve biologjikë, psikologjikë dhe shoqërorë",
+    "ngjarje stresuese të jetës"
+   ],
+   "faktoret_e_rrezikut": [
+    "historia familjare",
+    "episode të mëparshme",
+    "sëmundje kronike",
+    "vetmia",
+    "alkooli dhe drogat"
+   ],
+   "simptomat": [
+    "humor i ulët",
+    "humbje interesi dhe kënaqësie",
+    "lodhje",
+    "gjumë i prishur",
+    "ndryshim oreksi",
+    "vështirësi përqendrimi",
+    "ndjenja faji ose pavlerësie"
+   ],
+   "shenjat_urgjente": [
+    "mendime ose plane për vetëvrasje: telefono menjëherë 127/112 ose shko në urgjencë",
+    "nuk ha ose nuk pi për ditë"
+   ],
+   "diagnoza": [
+    "vlerësim klinik nga mjeku ose psikiatri",
+    "pyetësorë (p.sh. PHQ-9)",
+    "përjashtimi i shkaqeve fizike (p.sh. tiroidja)"
+   ],
+   "trajtimi_konservativ": [
+    "psikoterapi",
+    "ilaçe antidepresive me recetë sipas mjekut",
+    "aktivitet fizik",
+    "mbështetje sociale"
+   ],
+   "trajtimi_kirurgjik": [],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: episodet zakonisht përmirësohen me trajtim, por mund të përsëriten"
+   },
+   "komplikimet": [
+    "vetëvrasje",
+    "abuzim me alkool",
+    "humbje e punës dhe e marrëdhënieve"
+   ],
+   "parandalimi": [
+    "vazhdimi i trajtimit sipas mjekut",
+    "gjumë i rregullt",
+    "aktivitet fizik",
+    "kërkimi i ndihmës herët"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "epilepsia",
+   "emri_shqip": "Epilepsia",
+   "emri_anglisht": "Epilepsy",
+   "kodi_icd10": "G40",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "nervor",
+   "pershkrimi": "Sëmundje e trurit me kriza (konvulsione) të përsëritura pa shkak të menjëhershëm.",
+   "shkaqet": [
+    "shpesh i panjohur",
+    "lëndime të kokës",
+    "insult",
+    "infeksione të trurit",
+    "faktorë gjenetikë"
+   ],
+   "faktoret_e_rrezikut": [
+    "historia familjare",
+    "traumat e kokës",
+    "insulti",
+    "konvulsionet nga temperatura te fëmijët (rrallë)"
+   ],
+   "simptomat": [
+    "kriza me dridhje të trupit",
+    "humbje e vetëdijes",
+    "ngurtësim",
+    "momente 'shkëputjeje'",
+    "konfuzion pas krizës"
+   ],
+   "shenjat_urgjente": [
+    "kriza që zgjat mbi 5 minuta ose kriza njëra pas tjetrës",
+    "kriza e parë në jetë",
+    "lëndim gjatë krizës ose kriza në ujë",
+    "nuk merr frymë normalisht pas krizës: telefono 127/112"
+   ],
+   "diagnoza": [
+    "elektroencefalogramë (EEG)",
+    "MRI e trurit",
+    "analiza gjaku"
+   ],
+   "trajtimi_konservativ": [
+    "ilaçe antiepileptike me recetë sipas neurologut",
+    "gjumë i rregullt",
+    "shmangia e alkoolit dhe ngacmuesve"
+   ],
+   "trajtimi_kirurgjik": [
+    "kirurgji epilepsie për raste rezistente",
+    "stimulator i nervit vagus"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: shumë persona arrijnë pa kriza me trajtim"
+   },
+   "komplikimet": [
+    "lëndime gjatë krizave",
+    "status epileptik",
+    "vdekje e papritur në epilepsi (rrallë)"
+   ],
+   "parandalimi": [
+    "mbrojtja e kokës (helmetë, rrip sigurimi)",
+    "marrja e rregullt e ilaçeve"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "refluksi_gastroezofageal",
+   "emri_shqip": "Sëmundja e refluksit gastroezofageal (GERD)",
+   "emri_anglisht": "Gastro-oesophageal reflux disease",
+   "kodi_icd10": "K21",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "tretës",
+   "pershkrimi": "Kthim i shpeshtë i acidit të stomakut në ezofag, me urth dhe dëmtim të mundshëm të ezofagut.",
+   "shkaqet": [
+    "dobësim i valvulës mes ezofagut dhe stomakut",
+    "hernia hiatale"
+   ],
+   "faktoret_e_rrezikut": [
+    "mbipesha",
+    "shtatzënia",
+    "duhani",
+    "ushqimet e rënda dhe me yndyrë",
+    "kafeja dhe alkooli",
+    "shtrirja pas ngrënies"
+   ],
+   "simptomat": [
+    "urth (djegie pas kockës së gjoksit)",
+    "acid ose ushqim që kthehet në gojë",
+    "kollë ose ngjirje e zërit",
+    "dhimbje gjoksi pas ngrënies"
+   ],
+   "shenjat_urgjente": [
+    "dhimbje gjoksi me djersitje ose që përhapet në krah (duhet përjashtuar zemra): telefono 127/112",
+    "të vjella me gjak ose jashtëqitje e zezë",
+    "vështirësi në gëlltitje",
+    "humbje peshe pa arsye"
+   ],
+   "diagnoza": [
+    "simptomat dhe përgjigja ndaj trajtimit",
+    "endoskopi",
+    "matja e pH-së së ezofagut"
+   ],
+   "trajtimi_konservativ": [
+    "vakte të vogla",
+    "mos u shtri 3 orë pas ngrënies",
+    "ngritje e kokës së shtratit",
+    "ulje e peshës",
+    "antacide ose alginate pa recetë",
+    "frenues të acidit sipas mjekut"
+   ],
+   "trajtimi_kirurgjik": [
+    "fundoplikaturë laparoskopike"
+   ],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: shpesh rikthehet; ezofagiti shërohet zakonisht brenda 4–8 javësh me trajtim"
+   },
+   "komplikimet": [
+    "ezofagit",
+    "ngushtim i ezofagut",
+    "ezofagu i Barrett-it"
+   ],
+   "parandalimi": [
+    "peshë e shëndetshme",
+    "pa duhan",
+    "pak ushqime të rënda natën"
+   ],
+   "burimi": "WHO ICD-10 (kodi); MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  },
+  {
+   "id": "migrena",
+   "emri_shqip": "Migrena",
+   "emri_anglisht": "Migraine",
+   "kodi_icd10": "G43",
+   "kategoria": "sëmundje",
+   "pjesa_e_trupit_ose_sistemi": "nervor",
+   "pershkrimi": "Dhimbje koke e përsëritur, shpesh në njërën anë, pulsuese, me të përzier dhe ndjeshmëri ndaj dritës.",
+   "shkaqet": [
+    "ndryshime në aktivitetin e trurit dhe të enëve të gjakut",
+    "predispozitë gjenetike"
+   ],
+   "faktoret_e_rrezikut": [
+    "gjinia femërore",
+    "historia familjare",
+    "ndryshimet hormonale",
+    "stresi",
+    "gjumi i parregullt",
+    "disa ushqime dhe alkooli"
+   ],
+   "simptomat": [
+    "dhimbje koke pulsuese, mesatare deri e fortë",
+    "të përzier ose të vjella",
+    "ndjeshmëri ndaj dritës dhe zhurmës",
+    "aura (drita ose vija para syve) te disa persona"
+   ],
+   "shenjat_urgjente": [
+    "dhimbja më e fortë e jetës që vjen papritur",
+    "dhimbje me temperaturë dhe qafë të ngurtë",
+    "dobësi, mpirje ose të folur i vështirë",
+    "dhimbje pas goditjes në kokë"
+   ],
+   "diagnoza": [
+    "diagnozë klinike sipas simptomave",
+    "imazheri e trurit vetëm kur ka shenja alarmi"
+   ],
+   "trajtimi_konservativ": [
+    "qetësues pa recetë herët gjatë krizës (paracetamol, ibuprofen)",
+    "ilaçe me recetë (triptane) sipas mjekut",
+    "pushim në dhomë të errët",
+    "ilaçe parandaluese sipas mjekut për kriza të shpeshta",
+    "ditar i krizave"
+   ],
+   "trajtimi_kirurgjik": [],
+   "koha_e_sherimit": {
+    "min": null,
+    "max": null,
+    "njesia": "javë",
+    "shenim": "kronike: krizat zgjasin 4–72 orë; sëmundja kontrollohet me kohë"
+   },
+   "komplikimet": [
+    "dhimbje koke nga përdorimi i tepërt i qetësuesve",
+    "migrenë kronike"
+   ],
+   "parandalimi": [
+    "gjumë i rregullt",
+    "vakte të rregullta dhe ujë",
+    "shmangia e ngacmuesve personalë",
+    "mos merr qetësues më shumë se 10–15 ditë në muaj"
+   ],
+   "burimi": "WHO ICD-10 (kodi); WHO Fact sheets; MSD Manual; NHS",
+   "data_e_shtimit": "2026-11-24"
+  }
+ ]
+}

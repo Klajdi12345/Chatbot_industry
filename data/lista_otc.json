@@ -1,0 +1,5698 @@
+{
+ "burimi": "C:\\Users\\Admin\\AppData\\Local\\Temp\\claude\\838757565bfd39b2\\832f181d-b2c8-46e7-86f3-95d7c1eec634\\scratchpad\\akbpm_otc\\otc.pdf",
+ "urdhri": "Nr. 501, datë 3.7.2018 (FZ 2018/103)",
+ "barna": 813,
+ "lista": [
+  {
+   "nr": 1,
+   "emri_tregtar": "ABROBION",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 125ml"
+  },
+  {
+   "nr": 2,
+   "emri_tregtar": "ABROLEN",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 125ml"
+  },
+  {
+   "nr": 3,
+   "emri_tregtar": "ABUFENE",
+   "forma_doza": "Tableta 400 mg",
+   "lenda_aktive": "BETA-ALANINE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 4,
+   "emri_tregtar": "ACC 200",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 200 mg/qeskë",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 5,
+   "emri_tregtar": "ACC AKUT 600 MG",
+   "forma_doza": "Tableta eferveshente 600 mg",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 6,
+   "emri_tregtar": "ACC KINDERSAFT",
+   "forma_doza": "Tretësirë për përdorim nga goja 20 mg/ml",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 1 shishe me 100ml"
+  },
+  {
+   "nr": 7,
+   "emri_tregtar": "ACECYS",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 200 mg/qeskë",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 8,
+   "emri_tregtar": "ACECYS ACUTE",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 600 mg/qeskë",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 9,
+   "emri_tregtar": "ACERBINE",
+   "forma_doza": "Pomadë (0,7g + 0.05g + 0.0133g)/100g",
+   "lenda_aktive": "MALIC ACID + BENZOIC ACID + SALICYLIC ACID",
+   "paketimi": "Kuti me 1 tubet me 30 g"
+  },
+  {
+   "nr": 10,
+   "emri_tregtar": "ACERBINE",
+   "forma_doza": "Tretësirë kutane (2.1525g + 0.041g + 0.154g)/100g",
+   "lenda_aktive": "MALIC ACID + SALYCILIC ACID + BENZOIC ACID",
+   "paketimi": "Kuti me 1 flakon spray me 80 ml"
+  },
+  {
+   "nr": 11,
+   "emri_tregtar": "ACESTAD",
+   "forma_doza": "Tableta eferveshente 200 mg",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 12,
+   "emri_tregtar": "ACESTAD",
+   "forma_doza": "Tableta eferveshente 600 mg",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 13,
+   "emri_tregtar": "ACETYSAL CARDIO",
+   "forma_doza": "Tableta gastrorezistente 100 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 14,
+   "emri_tregtar": "ACICLINLABIALE",
+   "forma_doza": "Stik kutan 5%",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 aplikator me 2.5g"
+  },
+  {
+   "nr": 15,
+   "emri_tregtar": "ACICLOSTAD GEGEN LIPPENHERPES",
+   "forma_doza": "Krem 50 mg/g",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 tubet me 2g"
+  },
+  {
+   "nr": 16,
+   "emri_tregtar": "ACICLOVIR ABC",
+   "forma_doza": "Krem 5%",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 tubet me 10g"
+  },
+  {
+   "nr": 17,
+   "emri_tregtar": "ACIDE FOLIQUE CCD 0.4 MG",
+   "forma_doza": "Tableta 0.4 mg",
+   "lenda_aktive": "FOLIC ACID",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 18,
+   "emri_tregtar": "ACIDO SALICILICO NOVA ARGENTIA",
+   "forma_doza": "Pomadë 5%",
+   "lenda_aktive": "SALICYLIC ACID",
+   "paketimi": "Kuti me 1 tubet 30 g"
+  },
+  {
+   "nr": 19,
+   "emri_tregtar": "ACQUA PER PREPARAZIONI INIETTABILI MONICO",
+   "forma_doza": "Ujë për injeksion",
+   "lenda_aktive": "WATER FOR INJECTION",
+   "paketimi": "Kuti me 10 ampula 5ml"
+  },
+  {
+   "nr": 20,
+   "emri_tregtar": "ACTICARBINE",
+   "forma_doza": "Tableta të veshura (70 mg + 14 mg)",
+   "lenda_aktive": "ACTIVATED CHARCOAL + PAPAVERINE HYDROCHLORIDE",
+   "paketimi": "Kuti me 42"
+  },
+  {
+   "nr": 21,
+   "emri_tregtar": "ACTIFED",
+   "forma_doza": "Shurup 30 mg/5ml + 1.25 mg/5ml",
+   "lenda_aktive": "PSEUDOEPHEDRINE + TRIPROLIDINE",
+   "paketimi": "Kuti me 1 shishe 100ml"
+  },
+  {
+   "nr": 22,
+   "emri_tregtar": "ACTISOUFRE",
+   "forma_doza": "Tretësirë për spraj në gojë dhe hundë",
+   "lenda_aktive": "SODIUM MONOSULFIDE + SACCHAROMYCES CEREVISIAE",
+   "paketimi": "Kuti me 1 shishe me 100ml"
+  },
+  {
+   "nr": 23,
+   "emri_tregtar": "ACTONORM Xhel",
+   "forma_doza": "Pezulli për përdorim nga goja (220 mg + 200 mg + 25 mg)/5ml",
+   "lenda_aktive": "ALUMINIUM HYDROXIDE + MAGNESIUM HYDROXIDE + ACTIVATED DIMETHICONE",
+   "paketimi": "Kuti me 1 shishe me 200ml"
+  },
+  {
+   "nr": 24,
+   "emri_tregtar": "ADOLORIN",
+   "forma_doza": "Tableta (50 mg + 250 mg + 300 mg)",
+   "lenda_aktive": "CAFFEINE + PROPYPHENAZONE + PARACETAMOL",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 25,
+   "emri_tregtar": "ADVIT",
+   "forma_doza": "Tretësirë për përdorim nga goja, pika (10000IU + 10000IU)/1ml",
+   "lenda_aktive": "VITAMIN A + VITAMIN D",
+   "paketimi": "Kuti me 1shishe plastike 20ml"
+  },
+  {
+   "nr": 26,
+   "emri_tregtar": "AEROGAL",
+   "forma_doza": "Shurup 0.5 mg/ml",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 60ml"
+  },
+  {
+   "nr": 27,
+   "emri_tregtar": "A-FERIN HOT",
+   "forma_doza": "Granula (500 mg + 60 mg)/ qeskë",
+   "lenda_aktive": "PARACETAMOL + PSEUDOEPHEDRINE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 28,
+   "emri_tregtar": "A-FERIN PLUS",
+   "forma_doza": "Shurup (3.2g + 0.3g + 0.02g)/100ml",
+   "lenda_aktive": "PARACETAMOL + PSEUDOEPHEDRINE + CHLORPHENIRAMINEE",
+   "paketimi": "Kuti me 1 shishe qelqi 100ml"
+  },
+  {
+   "nr": 29,
+   "emri_tregtar": "AFLEN",
+   "forma_doza": "Kapsula të forta 300 mg",
+   "lenda_aktive": "TRIFLUSAL",
+   "paketimi": "Kuti me 50"
+  },
+  {
+   "nr": 30,
+   "emri_tregtar": "AGELMIN",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 31,
+   "emri_tregtar": "AGIOLAX",
+   "forma_doza": "Granula ë2.6g + 0.11g + (0.34-0.66g)]/5g",
+   "lenda_aktive": "PLANTAGO OVATA+ ISPAGHULA + SENNA",
+   "paketimi": "Kuti me 100g"
+  },
+  {
+   "nr": 32,
+   "emri_tregtar": "ALBADOL",
+   "forma_doza": "Tabletë e veshur me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 30 tableta"
+  },
+  {
+   "nr": 33,
+   "emri_tregtar": "ALBADOL PLUS",
+   "forma_doza": "Tabletë (400 mg + 325 mg)",
+   "lenda_aktive": "IBUPROFEN + PARACETAMOL",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 34,
+   "emri_tregtar": "ALCET",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 35,
+   "emri_tregtar": "ALERINIT",
+   "forma_doza": "Tableta të veshura me film 5 mg",
+   "lenda_aktive": "LEVOCETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 36,
+   "emri_tregtar": "ALERIX",
+   "forma_doza": "Tabletë e veshur me film 120 mg",
+   "lenda_aktive": "FEXOFENADINE",
+   "paketimi": "Kuti me 10 tableta"
+  },
+  {
+   "nr": 37,
+   "emri_tregtar": "ALGINE",
+   "forma_doza": "Tableta (20 mg + 150 mg + 50 mg + 300 mg)",
+   "lenda_aktive": "CAFFEINE + PHENACETIN + BARBITAL + AMINOPHENAZONE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 38,
+   "emri_tregtar": "ALGOFREN",
+   "forma_doza": "Shurup 100 mg/5ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 shishe qelqi me 150ml"
+  },
+  {
+   "nr": 39,
+   "emri_tregtar": "ALKOOL BORIK",
+   "forma_doza": "Tretësirë 25 mg/ml",
+   "lenda_aktive": "BORIC ACID",
+   "paketimi": "Kuti me flakon me 10ml"
+  },
+  {
+   "nr": 40,
+   "emri_tregtar": "ALOPEXY",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 2%",
+   "lenda_aktive": "MINOXIDIL",
+   "paketimi": "Kuti me 1 flakon me 60ml"
+  },
+  {
+   "nr": 41,
+   "emri_tregtar": "ALORA",
+   "forma_doza": "Shurup 694 mg/5ml",
+   "lenda_aktive": "PASSIFLORA FLUID EXTRACT",
+   "paketimi": "Kuti me 1 flakon qelqi 100ml"
+  },
+  {
+   "nr": 42,
+   "emri_tregtar": "ALORA",
+   "forma_doza": "Tableta të veshura 100 mg",
+   "lenda_aktive": "PASSIFLORA DRY EXTRACT",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 43,
+   "emri_tregtar": "ALOXIDIL",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 2g/100g",
+   "lenda_aktive": "MINOXYDIL",
+   "paketimi": "Kuti me 1 flakon me 60ml"
+  },
+  {
+   "nr": 44,
+   "emri_tregtar": "ALRINAST",
+   "forma_doza": "Shurup 2.5 mg/5ml",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 150ml"
+  },
+  {
+   "nr": 45,
+   "emri_tregtar": "ALRINAST",
+   "forma_doza": "Tableta të veshura me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 46,
+   "emri_tregtar": "ALRINAST",
+   "forma_doza": "Shurup 2,5 mg/5ml",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 1 flakon qelqi me 80ml"
+  },
+  {
+   "nr": 47,
+   "emri_tregtar": "ALRINAST",
+   "forma_doza": "Tabletë e veshur me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 48,
+   "emri_tregtar": "ALTERGEN",
+   "forma_doza": "Krem (0.2% + 1%)",
+   "lenda_aktive": "HYALURONIC ACID + SILVER SULFADIAZINE",
+   "paketimi": "Kuti me 1 tubet me 25g"
+  },
+  {
+   "nr": 49,
+   "emri_tregtar": "ALUKOL",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "ALUMINIUM HYDROXIDE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 50,
+   "emri_tregtar": "ALVOFEN EXPRESS",
+   "forma_doza": "Kapsula të buta 200 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 51,
+   "emri_tregtar": "ALVOFEN EXPRESS",
+   "forma_doza": "Kapsula të buta 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 52,
+   "emri_tregtar": "AMBREKS",
+   "forma_doza": "Shurup 15 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me flakon me 100ml"
+  },
+  {
+   "nr": 53,
+   "emri_tregtar": "AMBREKS",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me shishe qelqi me 150ml"
+  },
+  {
+   "nr": 54,
+   "emri_tregtar": "AMBROTUS",
+   "forma_doza": "Shurup 30 mg/10ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me shishe qelqi me 200ml"
+  },
+  {
+   "nr": 55,
+   "emri_tregtar": "AMOBRONC",
+   "forma_doza": "Shurup 15 mg/5ml",
+   "lenda_aktive": "AMBROXOL",
+   "paketimi": "Kuti me 1 flakon qelqi me 200ml"
+  },
+  {
+   "nr": 56,
+   "emri_tregtar": "ANALGIN",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "METAMIZOLE SODIUM",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 57,
+   "emri_tregtar": "ANALGINA-RAD",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "METAMIZOLE SODIUM",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 58,
+   "emri_tregtar": "ANALGINE",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "METAMIZOLE SODIUM",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 59,
+   "emri_tregtar": "ANAPRAN EC",
+   "forma_doza": "Tableta të veshura enterike 250 mg",
+   "lenda_aktive": "NAPROXEN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 60,
+   "emri_tregtar": "ANCOPIR",
+   "forma_doza": "Tabletë e veshur (0.3 mg + 100 mg + 200 mg)",
+   "lenda_aktive": "CYANOCOBALAMINE + PYRIDOXINE + THIAMINE",
+   "paketimi": "Kuti me 5 ampula me 2ml"
+  },
+  {
+   "nr": 61,
+   "emri_tregtar": "ANGAL",
+   "forma_doza": "Tableta-karamele (5 mg+1 mg)",
+   "lenda_aktive": "CHLORHEXIDINE + LIDOCAINE",
+   "paketimi": "Kuti me 24"
+  },
+  {
+   "nr": 62,
+   "emri_tregtar": "ANGAL LEMON",
+   "forma_doza": "Tabletë për t’u mbajtur në gojë (5 mg +1 mg)",
+   "lenda_aktive": "CHLORHEXIDINE + LIDOCAINE",
+   "paketimi": "Kuti me 24 tableta"
+  },
+  {
+   "nr": 63,
+   "emri_tregtar": "ANGAL S",
+   "forma_doza": "Spraj për fyt, tretësirë (2.1 mg + 0.5 mg)/ml",
+   "lenda_aktive": "CHLORHEXIDINEE + LIDOCAINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 30ml"
+  },
+  {
+   "nr": 64,
+   "emri_tregtar": "ANTARENE",
+   "forma_doza": "Xhel 5%",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 65,
+   "emri_tregtar": "ANTARENE",
+   "forma_doza": "Tableta 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 66,
+   "emri_tregtar": "ANTARENE",
+   "forma_doza": "Pezulli për përdorim nga goja 20 mg/ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 flakon me 150ml"
+  },
+  {
+   "nr": 67,
+   "emri_tregtar": "ANTIFUNGOL",
+   "forma_doza": "Krem 10 mg / g",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 tubet me 50 g"
+  },
+  {
+   "nr": 68,
+   "emri_tregtar": "ANTIHEMORROIDALE",
+   "forma_doza": "Suposta (0.03g + 0.08g + 0.10g + 0.10g + 0.10g + 0.04g)",
+   "lenda_aktive": "EPHEDRINE + LIDOCAINE+ BISMUTH SUBGALLATE + ZINC OXIDE + PERU BALSAM + CASTOR OIL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 69,
+   "emri_tregtar": "ANTROLIN",
+   "forma_doza": "Krem për përdorim rektal (0.3 mg + 1.5 mg)/100g",
+   "lenda_aktive": "NIFEDIPINE + LIDOCAINE HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 tubet 30g"
+  },
+  {
+   "nr": 70,
+   "emri_tregtar": "ANZIBEL LOZENGE WITH HONEY AND LEMON FLAVOR",
+   "forma_doza": "Tableta-karamele (5 mg + 4 mg + 3 mg)",
+   "lenda_aktive": "CHLORHEXIDINE+ BENZOCAINE + ENOXOLONE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 71,
+   "emri_tregtar": "ANZIBEL LOZENGE WITH MENTHOL FLAVOR",
+   "forma_doza": "Tableta-karamele (5 mg + 4 mg + 3 mg)",
+   "lenda_aktive": "CHLORHEXIDINE + BENZOCAINE + ENOXOLONE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 72,
+   "emri_tregtar": "APIREKS",
+   "forma_doza": "Pezulli për përdorim nga goja 100 mg/5ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 flakon me 100ml"
+  },
+  {
+   "nr": 73,
+   "emri_tregtar": "APOTEL",
+   "forma_doza": "Tableta eferveshente 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 74,
+   "emri_tregtar": "APOTEL",
+   "forma_doza": "Suposta 125 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 5"
+  },
+  {
+   "nr": 75,
+   "emri_tregtar": "APOTEL",
+   "forma_doza": "Suposta 250 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 5"
+  },
+  {
+   "nr": 76,
+   "emri_tregtar": "APOTEL",
+   "forma_doza": "Suposta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 5"
+  },
+  {
+   "nr": 77,
+   "emri_tregtar": "APRANAX PLUS",
+   "forma_doza": "Xhel (100 mg+50 mg)/g",
+   "lenda_aktive": "NAPROXEN + LIDOCAINE",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 78,
+   "emri_tregtar": "APRINOL",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 125ml"
+  },
+  {
+   "nr": 79,
+   "emri_tregtar": "APRINOL",
+   "forma_doza": "Shurup 15 mg/15ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 125ml"
+  },
+  {
+   "nr": 80,
+   "emri_tregtar": "AQUA AD INIECTABILIA ALKALOID",
+   "forma_doza": "Ujë për injeksion",
+   "lenda_aktive": "WATER FOR INJECTION",
+   "paketimi": "Kuti me 10 ampula 5ml"
+  },
+  {
+   "nr": 81,
+   "emri_tregtar": "ARFEN",
+   "forma_doza": "Suposta 125 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 82,
+   "emri_tregtar": "ARFEN",
+   "forma_doza": "Suposta 250 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 83,
+   "emri_tregtar": "ARFEN",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 84,
+   "emri_tregtar": "ARGEDIN",
+   "forma_doza": "Krem 10 mg/g",
+   "lenda_aktive": "SILVER SULFADIAZINE",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 85,
+   "emri_tregtar": "ARGENTO PROTEINATO NOVA ARGENTIA",
+   "forma_doza": "Pika për hundë, tretësirë 0.5% (w/w)",
+   "lenda_aktive": "PROTEINATED SILVER",
+   "paketimi": "Kuti me 1 flakon 10ml"
+  },
+  {
+   "nr": 86,
+   "emri_tregtar": "ARGENTO PROTEINATO NOVA ARGENTIA",
+   "forma_doza": "Pika për hundë, tretësirë 1% (w/w)",
+   "lenda_aktive": "PROTEINATED SILVER",
+   "paketimi": "Kuti me 1 flakon 10ml"
+  },
+  {
+   "nr": 87,
+   "emri_tregtar": "ARGENTO PROTEINATO NOVA ARGENTIA",
+   "forma_doza": "Pika për hundë, tretësirë 2% (w/w)",
+   "lenda_aktive": "PROTEINATED SILVER",
+   "paketimi": "Kuti me 1 flakon 10ml"
+  },
+  {
+   "nr": 88,
+   "emri_tregtar": "ARIA-DES",
+   "forma_doza": "Tabletë e veshur me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 89,
+   "emri_tregtar": "ARTROSILENE",
+   "forma_doza": "Shkumë për përdorim në lëkurë 15%",
+   "lenda_aktive": "KETOPROFEN",
+   "paketimi": "Kuti me 1 kontejner me 50ml"
+  },
+  {
+   "nr": 90,
+   "emri_tregtar": "ARTROSILENE",
+   "forma_doza": "Xhel 5%",
+   "lenda_aktive": "KETOPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 91,
+   "emri_tregtar": "ARTHRODONT",
+   "forma_doza": "Pastë për mishrat e dhëmbëve 1%",
+   "lenda_aktive": "ENOXOLONE",
+   "paketimi": "Kuti me 1 tubet me 80g"
+  },
+  {
+   "nr": 92,
+   "emri_tregtar": "ARTHROLOC",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 1500 mg/qeskë",
+   "lenda_aktive": "GLUCOSAMINE SULPHATE",
+   "paketimi": "Kuti me 30 qeska"
+  },
+  {
+   "nr": 93,
+   "emri_tregtar": "ASIST",
+   "forma_doza": "Kapsula 200 mg",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 94,
+   "emri_tregtar": "ASIST 4%",
+   "forma_doza": "Granula për shurup 4 g / 100ml",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 1 shishe me 100 ml"
+  },
+  {
+   "nr": 95,
+   "emri_tregtar": "ASIST 4%",
+   "forma_doza": "Granula për shurup 6 g/150ml",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 1 shishe me 150 ml"
+  },
+  {
+   "nr": 96,
+   "emri_tregtar": "ASIST PLUS",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 600 mg/ qeskë",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 30 qeska"
+  },
+  {
+   "nr": 97,
+   "emri_tregtar": "ASP",
+   "forma_doza": "Tabletë 100 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID",
+   "paketimi": "Kuti me 60 tableta"
+  },
+  {
+   "nr": 98,
+   "emri_tregtar": "ASPIRIN",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 99,
+   "emri_tregtar": "ASPIRIN PLUS C",
+   "forma_doza": "Tableta eferveshente 400 mg + 240 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID + ASCORBIC ACID",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 100,
+   "emri_tregtar": "ASPIRIN PROTECT",
+   "forma_doza": "Tableta gastrorezistente 100 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 101,
+   "emri_tregtar": "ASPIRINE",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 102,
+   "emri_tregtar": "ATASOL FORTE tablets 500 mg",
+   "forma_doza": "Tabletë 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe me 100 tableta"
+  },
+  {
+   "nr": 103,
+   "emri_tregtar": "AULIN 3%",
+   "forma_doza": "Xhel 3g/100g",
+   "lenda_aktive": "NIMESULIDE",
+   "paketimi": "Kuti me 1 tubet 50g"
+  },
+  {
+   "nr": 104,
+   "emri_tregtar": "BABY LUUF BALSAM",
+   "forma_doza": "Balsam (15 mg + 40 mg + 10 mg)/g",
+   "lenda_aktive": "EUCALYPTUS OIL + TERPENTINE OIL + THYME OIL",
+   "paketimi": "Kuti me 1 shishe qelqi me 30g"
+  },
+  {
+   "nr": 105,
+   "emri_tregtar": "BASIFLUX",
+   "forma_doza": "Shurup 0.8 mg/ml",
+   "lenda_aktive": "BROMHEXINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 200ml"
+  },
+  {
+   "nr": 106,
+   "emri_tregtar": "B-COMPLEX",
+   "forma_doza": "Tableta të veshura (4 mg + 5 mg + 2 mg + 1µg + 5 mg + 25 mg + 20 mg)",
+   "lenda_aktive": "THIAMINE + RIBOFLAVIN + PYRIDOXINE + CYANOCOBALAMIN + CALCIUM PANTOTHENATE + NICOTINAMIDE + PARA-AMINOBENZOIC ACID",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 107,
+   "emri_tregtar": "BEKUNIS",
+   "forma_doza": "Tabletë 5 mg",
+   "lenda_aktive": "BISACODYL",
+   "paketimi": "Kuti me 45 tableta"
+  },
+  {
+   "nr": 108,
+   "emri_tregtar": "BEKUNIS",
+   "forma_doza": "Çaj bimor 60g/100g",
+   "lenda_aktive": "SENNA GLYCOSIDES",
+   "paketimi": "Kuti me 55g"
+  },
+  {
+   "nr": 109,
+   "emri_tregtar": "BENEKID PLUS",
+   "forma_doza": "Pezulli për përdorim nga goja 160 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me nje shishe qelqi me 120ml"
+  },
+  {
+   "nr": 110,
+   "emri_tregtar": "BENLEK",
+   "forma_doza": "Tabletë (500 mg + 38.75 mg + 50 mg)",
+   "lenda_aktive": "METAMIZOL + THIAMINE + CAFFEINE",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 111,
+   "emri_tregtar": "BEN-U-RON",
+   "forma_doza": "Suposta 125 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 112,
+   "emri_tregtar": "BEN-U-RON",
+   "forma_doza": "Suposta 250 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 113,
+   "emri_tregtar": "BEN-U-RON",
+   "forma_doza": "Shurup 200 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 flakon 100ml"
+  },
+  {
+   "nr": 114,
+   "emri_tregtar": "BEN-U-RON",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 115,
+   "emri_tregtar": "BEPANTHEN",
+   "forma_doza": "Krem 50 mg/g",
+   "lenda_aktive": "DEXPANTHENOL",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 116,
+   "emri_tregtar": "BEPANTHEN",
+   "forma_doza": "Pomadë 50 mg/g",
+   "lenda_aktive": "DEXPANTHENOL",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 117,
+   "emri_tregtar": "BEPANTHEN plus",
+   "forma_doza": "Krem (50 mg + 5 mg)/g",
+   "lenda_aktive": "DEXPANTHENOL",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 118,
+   "emri_tregtar": "BÉRES DROPS PLUS",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim nga goja, pika (2 mg + 1,14 mg + 0,40 mg + 0,31 mg + 0.25 mg + 0.19 mg + 0.12 mg + 0.11 mg +0.10 mg + 0.090 mg + 0.025 mg) ml"
+  },
+  {
+   "nr": 119,
+   "emri_tregtar": "BETADINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pomadë 100 mg/1g"
+  },
+  {
+   "nr": 120,
+   "emri_tregtar": "BETADINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Ovulë 200 mg"
+  },
+  {
+   "nr": 121,
+   "emri_tregtar": "BETADINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim në lëkurë 10g/100ml"
+  },
+  {
+   "nr": 122,
+   "emri_tregtar": "BETRIMINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup (10 mg + 10 mg + 0.1 mg)/5ml"
+  },
+  {
+   "nr": 123,
+   "emri_tregtar": "BILOBIL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Kapsula të forta 40 mg"
+  },
+  {
+   "nr": 124,
+   "emri_tregtar": "BILOBIL FORTE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Kapsula të forta 120 mg"
+  },
+  {
+   "nr": 125,
+   "emri_tregtar": "BILOBIL FORTE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Kapsula të forta 80 mg"
+  },
+  {
+   "nr": 126,
+   "emri_tregtar": "BIOFLOR",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pluhur për pezulli për përdorim nga goja 282.5 mg/qeskë"
+  },
+  {
+   "nr": 127,
+   "emri_tregtar": "BIOFLOR",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Kapsula 282.5 mg"
+  },
+  {
+   "nr": 128,
+   "emri_tregtar": "BISACODYL-GRINDEKS",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë gastrorezistente 5 mg"
+  },
+  {
+   "nr": 129,
+   "emri_tregtar": "BISALAX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta gastrorezistente 5 mg"
+  },
+  {
+   "nr": 130,
+   "emri_tregtar": "",
+   "forma_doza": "BISOLVON",
+   "lenda_aktive": "",
+   "paketimi": ""
+  },
+  {
+   "nr": 131,
+   "emri_tregtar": "BISOLVON",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta 8 mg"
+  },
+  {
+   "nr": 132,
+   "emri_tregtar": "BLOKMAX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë e veshur me film 200 mg"
+  },
+  {
+   "nr": 133,
+   "emri_tregtar": "BLOKMAX FOR KIDS",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pezulli për përdorim nga goja 100 mg/5ml"
+  },
+  {
+   "nr": 134,
+   "emri_tregtar": "BLOKMAX FORTE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë e veshur me film 400 mg"
+  },
+  {
+   "nr": 135,
+   "emri_tregtar": "BLUMETILEN 1%",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim të jashtëm 1%"
+  },
+  {
+   "nr": 136,
+   "emri_tregtar": "BOROMENTOL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta të veshura (10 mg + 5 mg + 2 mg + 2 mg)"
+  },
+  {
+   "nr": 137,
+   "emri_tregtar": "BROMEX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 5 mg/5ml"
+  },
+  {
+   "nr": 138,
+   "emri_tregtar": "BROMHEKSINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pika për përdorim nga goja, tretësirë x 2 mg/ml"
+  },
+  {
+   "nr": 139,
+   "emri_tregtar": "BROMHEKSINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta 8 mg"
+  },
+  {
+   "nr": 140,
+   "emri_tregtar": "BROMHEXINE SOPHARMA",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 4 mg/5ml"
+  },
+  {
+   "nr": 141,
+   "emri_tregtar": "BRONAX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 4 mg/5ml"
+  },
+  {
+   "nr": 142,
+   "emri_tregtar": "BRONCHOBOS",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 2.5%"
+  },
+  {
+   "nr": 143,
+   "emri_tregtar": "BRONCHOBOS",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 5%"
+  },
+  {
+   "nr": 144,
+   "emri_tregtar": "BRONCHOSTOP SINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim nga goja (0.77g + 7.69g)/100g"
+  },
+  {
+   "nr": 145,
+   "emri_tregtar": "BRONCHOSTOP Thymian Eibisch Hustensaft",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim nga goja (13.5g + 11.53g)/100g"
+  },
+  {
+   "nr": 146,
+   "emri_tregtar": "BRONCHOSTOP Thymian Eibisch sine Hustensaft",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim nga goja (0.7g + 4.96g)/100g"
+  },
+  {
+   "nr": 147,
+   "emri_tregtar": "BRONCHOSTOP Thymian Salbe Hals-und Rachenspraj",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Spraj oromukozal (32g + 32g) / 100g"
+  },
+  {
+   "nr": 148,
+   "emri_tregtar": "BRONCHOTUSSINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 4 mg/5ml"
+  },
+  {
+   "nr": 149,
+   "emri_tregtar": "BRONCOSIL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 6 mg/ml"
+  },
+  {
+   "nr": 150,
+   "emri_tregtar": "",
+   "forma_doza": "BRON-HAL",
+   "lenda_aktive": "",
+   "paketimi": ""
+  },
+  {
+   "nr": 151,
+   "emri_tregtar": "BRONLES",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Kapsula të forta 375 mg"
+  },
+  {
+   "nr": 152,
+   "emri_tregtar": "BRONLES",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim nga goja 250 mg/5ml"
+  },
+  {
+   "nr": 153,
+   "emri_tregtar": "BRONLES",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim nga goja, for children 125 mg/5ml"
+  },
+  {
+   "nr": 154,
+   "emri_tregtar": "BRUFEN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta 400 mg"
+  },
+  {
+   "nr": 155,
+   "emri_tregtar": "BRUFEN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Granula eferveshente 200 mg/qeskë"
+  },
+  {
+   "nr": 156,
+   "emri_tregtar": "BRUFEN EFFECT",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Granula eferveshente 400 mg/qeskë"
+  },
+  {
+   "nr": 157,
+   "emri_tregtar": "BRUFEN SYRUP",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 100 mg/5 ml"
+  },
+  {
+   "nr": 158,
+   "emri_tregtar": "BRULEX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pomadë (5g + 0.5g + 0.03g + 0.0036g + 1g)/100g"
+  },
+  {
+   "nr": 159,
+   "emri_tregtar": "BUSCOPAN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta të veshura 10 mg"
+  },
+  {
+   "nr": 160,
+   "emri_tregtar": "BUSCOPAN 10 MG",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Suposta 10 mg"
+  },
+  {
+   "nr": 161,
+   "emri_tregtar": "CADTRE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Granula eferveshente (1000 mg + 880 IU)/qeskë"
+  },
+  {
+   "nr": 162,
+   "emri_tregtar": "CAFFETIN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta (250 mg + 210 mg + 50 mg + 10 mg)"
+  },
+  {
+   "nr": 163,
+   "emri_tregtar": "CAFFETIN COLD",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta të veshura me film (500 mg + 30 mg + 15 mg + 60 mg)"
+  },
+  {
+   "nr": 164,
+   "emri_tregtar": "CAFFETIN COLDMAX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pluhur për tretësirë për përdorim nga goja (1000 mg + 12.2 mg)/qeskë"
+  },
+  {
+   "nr": 165,
+   "emri_tregtar": "CAFFETIN MENSTRUAL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta të veshura me film 200 mg"
+  },
+  {
+   "nr": 166,
+   "emri_tregtar": "CAFFETIN SC",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta (250 mg + 210 mg + 50 mg)"
+  },
+  {
+   "nr": 167,
+   "emri_tregtar": "CALCIGEN D",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta për t’u përtypur (600 mg + 400 I.U.)"
+  },
+  {
+   "nr": 168,
+   "emri_tregtar": "CALCIRAD",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta 500 mg"
+  },
+  {
+   "nr": 169,
+   "emri_tregtar": "CALCIUM 500 MG HEXAL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta eferveshente 500 mg"
+  },
+  {
+   "nr": 170,
+   "emri_tregtar": "CALCIUMVITAC",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta eferveshente (260 mg + 500 mg)"
+  },
+  {
+   "nr": 171,
+   "emri_tregtar": "CALIXAM",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Krem 10 mg/g"
+  },
+  {
+   "nr": 172,
+   "emri_tregtar": "CALMABEN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta të veshura 50 mg"
+  },
+  {
+   "nr": 173,
+   "emri_tregtar": "CANESTEN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Krem 1% (10 mg/g)"
+  },
+  {
+   "nr": 174,
+   "emri_tregtar": "CANESTEN",
+   "forma_doza": "Tretësirë 1g/100ml",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 shishe me 20ml"
+  },
+  {
+   "nr": 175,
+   "emri_tregtar": "CANESTEN 3",
+   "forma_doza": "Krem vaginal 20 mg/g",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 tubet me 20g"
+  },
+  {
+   "nr": 176,
+   "emri_tregtar": "CANESTEN 3",
+   "forma_doza": "Tableta vaginale 200 mg",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 3 tableta vaginale"
+  },
+  {
+   "nr": 177,
+   "emri_tregtar": "CARBOSYLANE",
+   "forma_doza": "Kapsula (140 mg + 45 mg)",
+   "lenda_aktive": "ACTIVATED CHARCOAL + SIMETHICONE",
+   "paketimi": "Kuti me 24 + 24 ose 48 + 48 kapsula"
+  },
+  {
+   "nr": 178,
+   "emri_tregtar": "CARDIOPIRIN",
+   "forma_doza": "Tableta gastrorezistente 100 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 179,
+   "emri_tregtar": "CARE HAEMORRHOID RELIEF Pomadë",
+   "forma_doza": "Pomadë (0.5% w/w + 0.5% w/w)",
+   "lenda_aktive": "ALLANTOIN + LIDOCAINE",
+   "paketimi": "Kuti me 1 tubet plastik me 25g"
+  },
+  {
+   "nr": 180,
+   "emri_tregtar": "CATHEJELL",
+   "forma_doza": "Xhel (2g + 0.05g)/100g",
+   "lenda_aktive": "LIDOCAINE + CHLORHEXIDINE",
+   "paketimi": "Kuti me 25 shiringa me 12.5g"
+  },
+  {
+   "nr": 181,
+   "emri_tregtar": "CETERIS",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 182,
+   "emri_tregtar": "CETIRIZINA ABC",
+   "forma_doza": "Tableta 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 183,
+   "emri_tregtar": "CETIRIZINA BLUEPHARMA",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 184,
+   "emri_tregtar": "CETIRIZINA GP",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 185,
+   "emri_tregtar": "CETIRIZINE",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 186,
+   "emri_tregtar": "CICLOVIRAL",
+   "forma_doza": "Krem 50 mg/g",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 tubet me 10g"
+  },
+  {
+   "nr": 187,
+   "emri_tregtar": "CISTIDIL",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "L- CISTEINE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 188,
+   "emri_tregtar": "CIVRAL",
+   "forma_doza": "Krem 5%",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 tubet me 3g"
+  },
+  {
+   "nr": 189,
+   "emri_tregtar": "CLARUS",
+   "forma_doza": "Tretësirë për përdorim nga goja 0.5 mg/ml",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 1 flakon qelqi me 150ml"
+  },
+  {
+   "nr": 190,
+   "emri_tregtar": "CLODERM CREME 1%",
+   "forma_doza": "Krem 10 mg/1g",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 tubet me 20g"
+  },
+  {
+   "nr": 191,
+   "emri_tregtar": "CLOTRI-DENK 1% Krem",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 tubet me 20g"
+  },
+  {
+   "nr": 192,
+   "emri_tregtar": "CLOTRIMAZOL BASI",
+   "forma_doza": "Krem 10 mg/g",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 tubet me 20g ose 50g"
+  },
+  {
+   "nr": 193,
+   "emri_tregtar": "CLOTRIMAZOL BASI",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 10 mg/g",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 shishe plastike me 20g"
+  },
+  {
+   "nr": 194,
+   "emri_tregtar": "CLOTRIMAZOLE ATB",
+   "forma_doza": "Krem 10 mg/g",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 tubet me 35g"
+  },
+  {
+   "nr": 195,
+   "emri_tregtar": "COCO-SCALP",
+   "forma_doza": "Pomadë (2% + 4% + 12%) w/e",
+   "lenda_aktive": "SALICYLIC ACID + SULFUR PRECIPITATED + COAL TAR",
+   "paketimi": "Kuti me 1 tubet 40g"
+  },
+  {
+   "nr": 196,
+   "emri_tregtar": "COLDAWAY COLD & FLU",
+   "forma_doza": "Tableta të veshura me film (200 mg + 30 mg)",
+   "lenda_aktive": "IBUPROFEN + PSEUDOEPHEDRIN",
+   "paketimi": "Kuti me 24"
+  },
+  {
+   "nr": 197,
+   "emri_tregtar": "COLDREX",
+   "forma_doza": "Tableta (500 mg + 30 mg + 25 mg + 20 mg + 5 mg)",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + CAFFEINE + TERPINE + PHENYLEPHRINE",
+   "paketimi": "Kuti me 12 ose 24"
+  },
+  {
+   "nr": 198,
+   "emri_tregtar": "COLDREX HONEY & LEMON",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (750 mg + 60 mg + 10 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + PHENYLEPHRINE HYDROCHLORIDE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 199,
+   "emri_tregtar": "COLLUNOVAR 0.11%",
+   "forma_doza": "Tretësirë për spraj 0.11%",
+   "lenda_aktive": "CHLORHEXIDIN",
+   "paketimi": "Kuti me 1 flakon me 40ml"
+  },
+  {
+   "nr": 200,
+   "emri_tregtar": "CONNETTIVINA PLUS",
+   "forma_doza": "Krem (0.2% + 1%)",
+   "lenda_aktive": "HYALURONIC ACID + SILVER SULPHADIAZINE",
+   "paketimi": "Kuti me 1 tubet me 25g"
+  },
+  {
+   "nr": 201,
+   "emri_tregtar": "CONNETTIVINA PLUS",
+   "forma_doza": "Garze e imprenjuar (2 mg + 40 mg)/10cm 10cm",
+   "lenda_aktive": "HYALURONIC ACID + SILVER SULPHADIAZINE",
+   "paketimi": "Kuti me 10 garza 10 me 10cm"
+  },
+  {
+   "nr": 202,
+   "emri_tregtar": "CONNETTIVINA PLUS",
+   "forma_doza": "Garze e imprenjuar(4 mg + 80 mg)/10cm 20cm",
+   "lenda_aktive": "HYALURONIC ACID + SILVER SULPHADIAZINE",
+   "paketimi": "Kuti me 10 garza 10 me 20cm"
+  },
+  {
+   "nr": 203,
+   "emri_tregtar": "CONNETTIVINA PLUS",
+   "forma_doza": "Garze e imprenjuar (12 mg + 240 mg)/20cm 30cm",
+   "lenda_aktive": "HYALURONIC ACID + SILVER SULPHADIAZINE",
+   "paketimi": "Kuti me 5 garza 20 me 30cm"
+  },
+  {
+   "nr": 204,
+   "emri_tregtar": "CONTRAHIST",
+   "forma_doza": "Tableta të veshura me film 5 mg",
+   "lenda_aktive": "LEVOCETIRIZINE",
+   "paketimi": "Kuti me 28"
+  },
+  {
+   "nr": 205,
+   "emri_tregtar": "CONTRAHIST",
+   "forma_doza": "Tretësirë për përdorim nga goja 0.5 mg/ml",
+   "lenda_aktive": "LEVOCETIRIZINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 200ml"
+  },
+  {
+   "nr": 206,
+   "emri_tregtar": "COQUELUSEDAL PARACETAMOL",
+   "forma_doza": "Suposta 250 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 207,
+   "emri_tregtar": "COQUELUSEDAL PARACETAMOL",
+   "forma_doza": "Suposta 100 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 208,
+   "emri_tregtar": "CUTISAN",
+   "forma_doza": "Pluhur për përdorim lokal 1g/100 g",
+   "lenda_aktive": "TRICLOCARBAN",
+   "paketimi": "flakon 80g"
+  },
+  {
+   "nr": 209,
+   "emri_tregtar": "CYCLO 3 FORT",
+   "forma_doza": "Kapsula të forta (150 mg + 150 mg + 100 mg)",
+   "lenda_aktive": "RUSCUS EXTRACT + HESPERIDIN METHYLCHALCONE + ASCORBIC ACID",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 210,
+   "emri_tregtar": "CYNACUR",
+   "forma_doza": "Tableta të veshura 300 mg",
+   "lenda_aktive": "DRY EXTRACT OF ARTICHOKE LEAVES",
+   "paketimi": "Kuti me 20 ose 50"
+  },
+  {
+   "nr": 211,
+   "emri_tregtar": "CYNARIX",
+   "forma_doza": "Tableta të veshura 55 mg",
+   "lenda_aktive": "CYNARAE FOLIUM",
+   "paketimi": "Kuti me 24"
+  },
+  {
+   "nr": 212,
+   "emri_tregtar": "CYTEAL",
+   "forma_doza": "Tretësirë për përdorim të jashtëm (0.1g + 0.5ml + 0.3g)/100ml",
+   "lenda_aktive": "HEXAMIDINE + CHLORHEXIDINE + CHLOROCRESOL",
+   "paketimi": "Flakon me 250 ml"
+  },
+  {
+   "nr": 213,
+   "emri_tregtar": "DAGESIL",
+   "forma_doza": "Xhel 10 mg/g",
+   "lenda_aktive": "DICLOFENAC",
+   "paketimi": "Kuti me 1 tubet me 100g"
+  },
+  {
+   "nr": 214,
+   "emri_tregtar": "DAKTANOL",
+   "forma_doza": "Xhel për përdorim në gojë 0,02",
+   "lenda_aktive": "MICONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 215,
+   "emri_tregtar": "DALERON",
+   "forma_doza": "Pezulli për përdorim nga goja 120 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1shishe qelqi 100ml"
+  },
+  {
+   "nr": 216,
+   "emri_tregtar": "DALERON",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 217,
+   "emri_tregtar": "DALERON C",
+   "forma_doza": "Granula për tretësirë për përdorim nga goja (500 mg + 20 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID",
+   "paketimi": "Kuti me 10 ose 24 qeska"
+  },
+  {
+   "nr": 218,
+   "emri_tregtar": "DALERON C JUNIOR",
+   "forma_doza": "Granula për tretësirë për përdorim nga goja (120 mg + 10 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 219,
+   "emri_tregtar": "DALERON COLD3",
+   "forma_doza": "Tableta të veshura me film (325 mg + 30 mg + 15 mg)",
+   "lenda_aktive": "PARACETAMOL+ PSEUDOEPHEDRINE HYDROCHLORIDE + DEXTROMETHORPHAN HYDROBROMIDE",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 220,
+   "emri_tregtar": "DASSELTA",
+   "forma_doza": "Tableta të veshura me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 221,
+   "emri_tregtar": "DEEP HEAT RUB",
+   "forma_doza": "Krem (1.97% + 1.47% + 5.910% + 12.8%)",
+   "lenda_aktive": "EUCALYPTUS OIL + TURPENTINE OIL + MENTHOL + METHYL SALICILATE",
+   "paketimi": "Kuti me 1 tubet me 67 g"
+  },
+  {
+   "nr": 222,
+   "emri_tregtar": "DEEP RELIEF",
+   "forma_doza": "Xhel (5% + 3%)",
+   "lenda_aktive": "IBUPROFEN + LEVOMENTHOL",
+   "paketimi": "Kuti me 1 tubet me 50 g"
+  },
+  {
+   "nr": 223,
+   "emri_tregtar": "DEFLAMOL",
+   "forma_doza": "Pomadë (350 IU + 400 IU)/g",
+   "lenda_aktive": "RETINOL PALMITATE + ERGOCALCIFEROL",
+   "paketimi": "Kuti me 1 tubet 18g"
+  },
+  {
+   "nr": 224,
+   "emri_tregtar": "DEKSALGIN",
+   "forma_doza": "Tableta të veshura 25 mg",
+   "lenda_aktive": "DEXKETOPROFEN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 225,
+   "emri_tregtar": "DEKSALGIN",
+   "forma_doza": "Xhel 12.5 mg/g",
+   "lenda_aktive": "DEXKETOPROFEN",
+   "paketimi": "Kuti me 1 tubet me 60g"
+  },
+  {
+   "nr": 226,
+   "emri_tregtar": "DERMASPOR",
+   "forma_doza": "Xhel 0.5%",
+   "lenda_aktive": "FLUCONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 227,
+   "emri_tregtar": "DERMODRIN",
+   "forma_doza": "Pomadë 2g/100g",
+   "lenda_aktive": "DIPHENHYDRAMINE",
+   "paketimi": "Kuti me 1 tubet me 20g"
+  },
+  {
+   "nr": 228,
+   "emri_tregtar": "DESLODIN",
+   "forma_doza": "Shurup 2.5 mg/5ml",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 1 flakon qelqi me 150ml"
+  },
+  {
+   "nr": 229,
+   "emri_tregtar": "DESLORATADINA NORMON 0.5 MG/ML SOLUCION ORAL",
+   "forma_doza": "Tretësirë për përdorim nga goja 0.5 mg/ml",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 1 flakon me 120ml"
+  },
+  {
+   "nr": 230,
+   "emri_tregtar": "DESLORATADINA NORMON 5 MG COMPRIMIDOS RECUBIERTOS CON PELICULA",
+   "forma_doza": "Tabletë e veshur me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 231,
+   "emri_tregtar": "DESLORATADINE ALVOGEN",
+   "forma_doza": "Tableta të veshura me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 232,
+   "emri_tregtar": "DESLORATADINE ALVOGEN",
+   "forma_doza": "Tretësirë për përdorim nga goja 0.5 mg/ml",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 1 shishe me 120ml"
+  },
+  {
+   "nr": 233,
+   "emri_tregtar": "DEXERYL",
+   "forma_doza": "Krem (15g + 8g + 2g)/100g",
+   "lenda_aktive": "GLYCEROL + PETROLATUM (WHITE SOFT PARAFFIN) + LIQUID PARAFFIN",
+   "paketimi": "Kuti me tubet me 250g"
+  },
+  {
+   "nr": 234,
+   "emri_tregtar": "DEXIREN",
+   "forma_doza": "Tableta të veshura 25 mg",
+   "lenda_aktive": "DEXKETOPROFEN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 235,
+   "emri_tregtar": "DEXKETOPROFENO NORMON",
+   "forma_doza": "Tabletë e veshur me film 12.5 mg",
+   "lenda_aktive": "DEXKETOPROFEN",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 236,
+   "emri_tregtar": "DEXKETOPROFENO NORMON",
+   "forma_doza": "Tabletë e veshur me film 25 mg",
+   "lenda_aktive": "DEXKETOPROFEN",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 237,
+   "emri_tregtar": "DEXKETOPROFENO NORMON",
+   "forma_doza": "Granula për tretësirë për përdorim nga goja 25 mg/qeskë",
+   "lenda_aktive": "DEXKETOPROFEN",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 238,
+   "emri_tregtar": "DIACOL",
+   "forma_doza": "Shurup 1.8 mg/ml",
+   "lenda_aktive": "DEXTROMETHORPHAN",
+   "paketimi": "Kuti me 1 shishe qelqi me 200ml"
+  },
+  {
+   "nr": 239,
+   "emri_tregtar": "DICLAC SCHMERZXhel",
+   "forma_doza": "Xhel 1%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 tubet me 100g"
+  },
+  {
+   "nr": 240,
+   "emri_tregtar": "DICLODENT",
+   "forma_doza": "Tretësirë, për përdorim oromukozal 0.74 mg/ml",
+   "lenda_aktive": "DICLOFENAC",
+   "paketimi": "Kuti me 1 flakon qelqi me 200ml"
+  },
+  {
+   "nr": 241,
+   "emri_tregtar": "DIFRAREL",
+   "forma_doza": "Tableta të veshura (100 mg + 5 mg)",
+   "lenda_aktive": "ANTHOCYANOSIDIC EXTRACT OF VACCINIUM MYRTILLUS + BETA-CAROTENE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 242,
+   "emri_tregtar": "DIFRAREL E",
+   "forma_doza": "Tableta të veshura (50 mg + 50 mg)",
+   "lenda_aktive": "ANTHOCYANOSIDIC EXTRACT OF BLUEBERRIES + ALPHA-TOCOPHERYL ACETATE",
+   "paketimi": "Kuti me 24"
+  },
+  {
+   "nr": 243,
+   "emri_tregtar": "DIKLORON",
+   "forma_doza": "Xhel 1% (w/w)",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 tubet e 50g"
+  },
+  {
+   "nr": 244,
+   "emri_tregtar": "DIMEGAN",
+   "forma_doza": "Kapsula 12 mg",
+   "lenda_aktive": "BROMPHENIRAMINE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 245,
+   "emri_tregtar": "DIMIDON",
+   "forma_doza": "Tabletë e veshur me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 246,
+   "emri_tregtar": "DIMIDON",
+   "forma_doza": "Pezulli për përdorim nga goja 20 mg/ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 flakon qelqi me 200ml"
+  },
+  {
+   "nr": 247,
+   "emri_tregtar": "DIOVOL PLUS",
+   "forma_doza": "Tabletë (300 mg+100 mg+25 mg)",
+   "lenda_aktive": "ALUMINIUM HYDROXIDE + MAGNESIUM HYDROXIDE + SIMETHICONE",
+   "paketimi": "Kuti me 50 tableta"
+  },
+  {
+   "nr": 248,
+   "emri_tregtar": "DIVIDOL",
+   "forma_doza": "Tableta të veshura 10 mg",
+   "lenda_aktive": "HYOSCINE BUTYLBROMIDE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 249,
+   "emri_tregtar": "DOLOFIX",
+   "forma_doza": "Tabletë 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 30 tableta"
+  },
+  {
+   "nr": 250,
+   "emri_tregtar": "DOLOFIX EXTRA",
+   "forma_doza": "Tabletë (500 mg + 65 mg)",
+   "lenda_aktive": "PARACETAMOL + CAFFEINE",
+   "paketimi": "Kuti me 10 tableta"
+  },
+  {
+   "nr": 251,
+   "emri_tregtar": "DOLOFIX FORTE",
+   "forma_doza": "Tabletë 750 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 252,
+   "emri_tregtar": "DOLOFLEX",
+   "forma_doza": "Spraj 4%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 shishe-spraj qelqi me 25g"
+  },
+  {
+   "nr": 253,
+   "emri_tregtar": "DOLOHOT",
+   "forma_doza": "Pluhur për pezulli për përdorim nga goja (500 mg + 2 mg + 5 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + CHLORPHENIRAMINE + PHENYLEPHRINE",
+   "paketimi": "Kuti me 5 qeska"
+  },
+  {
+   "nr": 254,
+   "emri_tregtar": "DOLOKIDS",
+   "forma_doza": "Shurup 120 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe me 100ml"
+  },
+  {
+   "nr": 255,
+   "emri_tregtar": "DOLOKIDS GRIP",
+   "forma_doza": "Shurup (100 mg + 20 mg + 1 mg)/5ml",
+   "lenda_aktive": "PARACETAMOL + PSEUDOEPHEDRINE + CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 1 flakon me 100ml"
+  },
+  {
+   "nr": 256,
+   "emri_tregtar": "DONA",
+   "forma_doza": "Tableta të veshura me film 750 mg",
+   "lenda_aktive": "GLUCOSAMINE SULPHATE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 257,
+   "emri_tregtar": "DONA",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 1500 mg/qeskë",
+   "lenda_aktive": "GLUCOSAMINE SULPHATE",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 258,
+   "emri_tregtar": "DOROXAN",
+   "forma_doza": "Shkumë për përdorim në lëkurë 1%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 kontejner nen presion me 50 ml"
+  },
+  {
+   "nr": 259,
+   "emri_tregtar": "DOXAFIN",
+   "forma_doza": "Tabletë e veshur me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 260,
+   "emri_tregtar": "DRENOXOL",
+   "forma_doza": "Shurup 3 mg/ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 20 ampula me 10ml"
+  },
+  {
+   "nr": 261,
+   "emri_tregtar": "DRENOXOL",
+   "forma_doza": "Shurup 3 mg/ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me flakon me 100ml"
+  },
+  {
+   "nr": 262,
+   "emri_tregtar": "DULCOLAX",
+   "forma_doza": "Tableta të veshura 5 mg",
+   "lenda_aktive": "BISACODYL",
+   "paketimi": "Kuti me 40"
+  },
+  {
+   "nr": 263,
+   "emri_tregtar": "DULCOLAX",
+   "forma_doza": "Suposta 10 mg",
+   "lenda_aktive": "BISACODYL",
+   "paketimi": "Kuti me 6"
+  },
+  {
+   "nr": 264,
+   "emri_tregtar": "DUOVIT",
+   "forma_doza": "Tableta të veshura (5000 IU + 200 IU + 60 mg + 13 mg + 10 mg + 5 mg + 2 mg + 1.2 mg + 1 mg + 0.4 mg + 3µg) + Tableta të veshura me ngjyrë blu (20 mg + 15 mg + 12 mg + 10 mg + 3 mg + 1 mg + 1 mg + 0.1 mg)",
+   "lenda_aktive": "RETINILPALMITAT + CHOLECALCIFEROL + ASCORBIC ACID + NICOTINAMIDE + TOCOPHERYL ACETATE + CALCIUM PANTOTHENATE + PYRIDOXINE + RIBOFLAVINE + THIAMINE+ FOLIC ACID + CYANOCOBALAMINE) + Tabletat e veshura me ngjyrë blu: MAGNESIUM LACTATE)+ CALCIUM HYDROGEN PHOSPHATE DIHYDRATE + CALCIUM HYDROGEN PHOSPHATE DIHYDRATE) + FERROUS FUMARATE)+ ZINC SULPHATE + COPPER SULPHATE PENTAHYDRATE)+ MANGANESE SULPHATE MONOHYDRATE+ SODIUM MOLYBDATE DIHYDRATE)",
+   "paketimi": "Kuti me 40"
+  },
+  {
+   "nr": 265,
+   "emri_tregtar": "DUPHALAC",
+   "forma_doza": "Shurup 667 g/1 L",
+   "lenda_aktive": "LACTULOSE",
+   "paketimi": "shishe me 200 ml"
+  },
+  {
+   "nr": 266,
+   "emri_tregtar": "DURILAC",
+   "forma_doza": "Xhel 1%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 267,
+   "emri_tregtar": "ECHINACIN CAPSETTEN MADAUS",
+   "forma_doza": "Tableta-karamele 88.5 mg",
+   "lenda_aktive": "PURPLE CONEFLOWER (ECHINACEA PURPUREA)",
+   "paketimi": "Kuti me 40"
+  },
+  {
+   "nr": 268,
+   "emri_tregtar": "ECHINACIN JUICE MADAUS LIQUID",
+   "forma_doza": "Tretësirë 2.34g/100g",
+   "lenda_aktive": "PURPLE CONEFLOWER (ECHINACEA PURPUREA)",
+   "paketimi": "Kuti me 1 shishe qelqi me 100ml"
+  },
+  {
+   "nr": 269,
+   "emri_tregtar": "ECHINACIN LIQUIDUM MADAUS",
+   "forma_doza": "Tretësirë 80g/100g",
+   "lenda_aktive": "ECHINACEA PURPUREA",
+   "paketimi": "Kuti me 1 flakon 50ml"
+  },
+  {
+   "nr": 270,
+   "emri_tregtar": "ECHINACIN TABLETS MADAUS",
+   "forma_doza": "Tableta 100 mg",
+   "lenda_aktive": "ECHINACEA PURPUREA",
+   "paketimi": "Kuti me 1 shishe qelqi 50"
+  },
+  {
+   "nr": 271,
+   "emri_tregtar": "ECONAZOL",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "ECONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 272,
+   "emri_tregtar": "ECONAZOLE EG 1%",
+   "forma_doza": "Krem 1% (w/w)",
+   "lenda_aktive": "ECONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 273,
+   "emri_tregtar": "ECONAZOLE EG 1%",
+   "forma_doza": "Emulsion për lëkurë 1% (w/w)",
+   "lenda_aktive": "ECONAZOLE",
+   "paketimi": "Kuti me 1 flakon me 30g"
+  },
+  {
+   "nr": 274,
+   "emri_tregtar": "EFISOL",
+   "forma_doza": "Tableta-karamele 30 mg + 0.25 mg",
+   "lenda_aktive": "ASCORBIC ACID + DEQUALINUM CHLORIDE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 275,
+   "emri_tregtar": "EKONAL",
+   "forma_doza": "Ovulë vaginale 150 mg",
+   "lenda_aktive": "ECONAZOLE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 276,
+   "emri_tregtar": "ELEVIT PRONATAL",
+   "forma_doza": "Tableta të veshura me film (3600 IU + 1.5 mg + 1.8 mg + 2.6 mg + 4µg + 100 mg + 500 IU + 15 IU + 10 mg + 0.2 mg + 19 mg + 0.8 mg + 125 mg + 60 mg + 100 mg + 1 mg + 1 mg + 125 mg + 7.5 mg)",
+   "lenda_aktive": "RETINOL PALMITATE + THIAMINE + RIBOFLAVINE + PYRIDOXINE + CYANOCOBALAMIN + ASCORBIC ACID + CHOLECALCIFEROL + TOCOPHEROL ACETATE) + CALCIUM PANTOTHENATE + BIOTIN + NICOTINAMIDE + FOLIC ACID + CALCIUM + IRON + MAGNESIUM + MANGANESE + COPPER + PHOSPHORUS + ZINC",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 277,
+   "emri_tregtar": "ELUDRIL",
+   "forma_doza": "Tretësirë për spraj (0.05g + 0.015g)",
+   "lenda_aktive": "CHLORHEXIDINE + TETRACAINE",
+   "paketimi": "Kuti me 1 shishe nen presion me 55ml"
+  },
+  {
+   "nr": 278,
+   "emri_tregtar": "ELUDRILPRO",
+   "forma_doza": "Tretësirë për gargare (0.5ml + 0.5g) / 100ml",
+   "lenda_aktive": "CHLORHEXIDINE + CHLOROBUTANOL",
+   "paketimi": "Kuti me shishe me 200ml"
+  },
+  {
+   "nr": 279,
+   "emri_tregtar": "ELLA ONE",
+   "forma_doza": "Tabletë 30 mg",
+   "lenda_aktive": "ULIPRISTAL ACETATE",
+   "paketimi": "Kuti me 1 tabletë"
+  },
+  {
+   "nr": 280,
+   "emri_tregtar": "EMESAN K Children's Suposta",
+   "forma_doza": "Suposta 20 mg",
+   "lenda_aktive": "DIPHENHYDRAMINE",
+   "paketimi": "Kuti me 5"
+  },
+  {
+   "nr": 281,
+   "emri_tregtar": "ENEMA COOPER",
+   "forma_doza": "Tretësirë për përdorim rektal (7.5 + 20)g / 125ml",
+   "lenda_aktive": "SODIUM PHOSPHATE DIBASIC + SODIUM PHOSPHATE MONOBASIC",
+   "paketimi": "Kuti me 1 shishe plastike 125ml"
+  },
+  {
+   "nr": 282,
+   "emri_tregtar": "ENTEROFURYL",
+   "forma_doza": "Kapsula 200 mg",
+   "lenda_aktive": "NIFUROXAZIDE",
+   "paketimi": "Kuti me 8"
+  },
+  {
+   "nr": 283,
+   "emri_tregtar": "ENTEROFURYL",
+   "forma_doza": "Kapsula të forta 100 mg",
+   "lenda_aktive": "NIFUROXAZIDE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 284,
+   "emri_tregtar": "ENTEROFURYL",
+   "forma_doza": "Pezulli për përdorim nga goja 200 mg/5ml",
+   "lenda_aktive": "NIFUROXAZIDE",
+   "paketimi": "Kuti me 1 shishe qelqi 90ml"
+  },
+  {
+   "nr": 285,
+   "emri_tregtar": "ENTEROGERMINA",
+   "forma_doza": "Pezulli për përdorim nga goja 2 miliard/5ml",
+   "lenda_aktive": "BACILLUS CLAUSII",
+   "paketimi": "Kuti me 10 ose 20 flakonë"
+  },
+  {
+   "nr": 286,
+   "emri_tregtar": "ENTEROSEPT",
+   "forma_doza": "Tableta (250 mg + 25 mg)",
+   "lenda_aktive": "CLIOQUINOL + CETRIMIDE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 287,
+   "emri_tregtar": "ENJOMIN",
+   "forma_doza": "Supost 50 mg",
+   "lenda_aktive": "DIMENHYDRINATE",
+   "paketimi": "Kuti me 4 suposta"
+  },
+  {
+   "nr": 288,
+   "emri_tregtar": "ESPUMISAN EMULSION",
+   "forma_doza": "Emulsion, pika për përdorim nga goja 40 mg/ml",
+   "lenda_aktive": "SIMETICONE",
+   "paketimi": "Kuti me 1 shishe qelqi 30ml"
+  },
+  {
+   "nr": 289,
+   "emri_tregtar": "ESPUMISAN PERLEN",
+   "forma_doza": "Kapsula të buta 40 mg",
+   "lenda_aktive": "SIMETICONE",
+   "paketimi": "Kuti me 25 ose 50"
+  },
+  {
+   "nr": 290,
+   "emri_tregtar": "EUCARBON",
+   "forma_doza": "Tableta (105 mg + 25 mg + 180 mg + 50 mg + 0.5 mg + 0.5 mg)",
+   "lenda_aktive": "SENNAE FOLIUM + RHEI RADIX + CARBO + SULPHUR + MENTHAE PIPERITAE AETHEROLEUM + FOENICULI AETHEROLEUM",
+   "paketimi": "Kuti me 10 ose 30"
+  },
+  {
+   "nr": 291,
+   "emri_tregtar": "EUDORLIN",
+   "forma_doza": "Pezulli për përdorim nga goja 20 mg/ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me shishe me 100ml"
+  },
+  {
+   "nr": 292,
+   "emri_tregtar": "EUDORLIN EXTRA",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 10 ose 20"
+  },
+  {
+   "nr": 293,
+   "emri_tregtar": "EUGENOL",
+   "forma_doza": "Tretësirë 100%",
+   "lenda_aktive": "EUGENOL",
+   "paketimi": "Kuti me 1 flakon me 5 ml"
+  },
+  {
+   "nr": 294,
+   "emri_tregtar": "EXPECTORANS No5",
+   "forma_doza": "Shurup (6.41 g + 1.92 g + 0.08 g + 0.09 g)/100g",
+   "lenda_aktive": "ALTHAEAE RADIX EXTRACTUM FLUIDUM, + SODIUM BENZOATE + POTASSIUM BROMIDE + AMMONIUM CHLORIDE",
+   "paketimi": "Kuti me 1 flakon me 90ml"
+  },
+  {
+   "nr": 295,
+   "emri_tregtar": "FASDOL",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 10 ose 20"
+  },
+  {
+   "nr": 296,
+   "emri_tregtar": "FASDOL",
+   "forma_doza": "Pezulli për përdorim nga goja 100 mg/5ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 shishe qelqi me 150ml"
+  },
+  {
+   "nr": 297,
+   "emri_tregtar": "FASTUM",
+   "forma_doza": "Xhel 2.5%",
+   "lenda_aktive": "KETOPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 298,
+   "emri_tregtar": "FAVE DE FUCA",
+   "forma_doza": "Tableta (126 mg + 222 mg + 170 mg)",
+   "lenda_aktive": "FUCUS VESICULOSUS + RHAMNUS FRANGULA + RHAMNUS PURSHIANA",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 299,
+   "emri_tregtar": "FEBRICET",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 120 mg/5ml"
+  },
+  {
+   "nr": 300,
+   "emri_tregtar": "FEVERFLU",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pluhur për tretësirë për përdorim nga goja (500 mg + 200 mg + 25 mg)/qeskë"
+  },
+  {
+   "nr": 301,
+   "emri_tregtar": "FEXOFENADIN E",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta të veshura me film 120 mg"
+  },
+  {
+   "nr": 302,
+   "emri_tregtar": "FINALGON",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pomadë (0.4g + 2.5g)/100g"
+  },
+  {
+   "nr": 303,
+   "emri_tregtar": "FINATUX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 50 mg/ml"
+  },
+  {
+   "nr": 304,
+   "emri_tregtar": "FITOSTIMOLINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Krem 15%"
+  },
+  {
+   "nr": 305,
+   "emri_tregtar": "FITOSTIMOLINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Garzë e imprenjuar 15%"
+  },
+  {
+   "nr": 306,
+   "emri_tregtar": "FITOSTIMOLINE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Ovulë 600 mg"
+  },
+  {
+   "nr": 307,
+   "emri_tregtar": "FLAVAMED FORTE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta eferveshente 60 mg"
+  },
+  {
+   "nr": 308,
+   "emri_tregtar": "",
+   "forma_doza": "FLECOXIN",
+   "lenda_aktive": "",
+   "paketimi": ""
+  },
+  {
+   "nr": 309,
+   "emri_tregtar": "FLEVENOL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta të veshura me film 500 mg"
+  },
+  {
+   "nr": 310,
+   "emri_tregtar": "FLEXEN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Xhel 2.5%"
+  },
+  {
+   "nr": 311,
+   "emri_tregtar": "FLONIDAN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta 10 mg"
+  },
+  {
+   "nr": 312,
+   "emri_tregtar": "FLONIDAN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pezulli për përdorim nga goja 5 mg/5ml"
+  },
+  {
+   "nr": 313,
+   "emri_tregtar": "FLUDITEC",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 20 mg/ml"
+  },
+  {
+   "nr": 314,
+   "emri_tregtar": "FLUDITEC",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 50 mg/ml"
+  },
+  {
+   "nr": 315,
+   "emri_tregtar": "FLUIBRON",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për nebulizator 15 mg/2ml"
+  },
+  {
+   "nr": 316,
+   "emri_tregtar": "FLUIFORT",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Granula për tretësirë për përdorim nga goja 2.7g"
+  },
+  {
+   "nr": 317,
+   "emri_tregtar": "FLUIFORT",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 90 mg/ml"
+  },
+  {
+   "nr": 318,
+   "emri_tregtar": "FLUIFORT",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 2.7g/10ml"
+  },
+  {
+   "nr": 319,
+   "emri_tregtar": "FLUIMUCIL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta eferveshente 600 mg"
+  },
+  {
+   "nr": 320,
+   "emri_tregtar": "FLUIMUCIL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Granula për tretësirë për përdorim nga goja 600 mg/qeskë"
+  },
+  {
+   "nr": 321,
+   "emri_tregtar": "FLUIMUCIL MUCOLITICO",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 100 mg/5ml"
+  },
+  {
+   "nr": 322,
+   "emri_tregtar": "FLUIMUCIL MUCOLITICO",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Granula për tretësirë për përdorim nga goja 200 mg/qeskë"
+  },
+  {
+   "nr": 323,
+   "emri_tregtar": "FOLIDEX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë 400mcg"
+  },
+  {
+   "nr": 324,
+   "emri_tregtar": "FURASOL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pluhur për tretësirë për përdorim të jashtëm 100 mg"
+  },
+  {
+   "nr": 325,
+   "emri_tregtar": "FUSCINA FENICA NOVA ARGENTIA",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim në lëkurë (4g + 0.3g + 10g + 1g)/100g"
+  },
+  {
+   "nr": 326,
+   "emri_tregtar": "GASTREN CHEWABLE TABLET",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë për t’u përtypur (680 mg + 80 mg)"
+  },
+  {
+   "nr": 327,
+   "emri_tregtar": "GASTREN DUO",
+   "forma_doza": "Pezulli për përdorim nga goja (12000 mg + 1400 mg + 3000 mg)/100ml",
+   "lenda_aktive": "CALCIUM CARBONATE + MAGNESIUM CARBONATE + SODIUM ALGINATE",
+   "paketimi": "Kuti me 1 shishe qelqi me 100ml"
+  },
+  {
+   "nr": 328,
+   "emri_tregtar": "GASTROGUARD",
+   "forma_doza": "Tabletë për t’u përtypur (680 mg+80 mg)",
+   "lenda_aktive": "CALCIUM CARBONATE + MAGNESIUM CARBONATE",
+   "paketimi": "Kuti me 24 tableta"
+  },
+  {
+   "nr": 329,
+   "emri_tregtar": "GASTROPROTECT",
+   "forma_doza": "Tabletë për t’u përtypur (10 mg + 165 mg + 800 mg)",
+   "lenda_aktive": "FAMOTIDINE + MAGNESIUM HYDROXIDE + CALCIUM CARBONATE",
+   "paketimi": "Kuti me 24 tableta"
+  },
+  {
+   "nr": 330,
+   "emri_tregtar": "GAVISCON -L PEPPERMINT FLAVOUR",
+   "forma_doza": "Pezulli për përdorim nga goja (250 mg + 133.5 mg)/5ml",
+   "lenda_aktive": "SODIUM ALGINATE + SODIUM HYDROGEN CARBONATE",
+   "paketimi": "Kuti me 1 flakon qelqi me 500ml"
+  },
+  {
+   "nr": 331,
+   "emri_tregtar": "GAVISCON PEPPERMINT TABLETS",
+   "forma_doza": "Tabletë për t’u përtypur (250 mg + 133.5 mg + 80 mg)",
+   "lenda_aktive": "SODIUM ALGINATE + SODIUM HYDROGEN CARBONATE + CALCIUM CARBONATE",
+   "paketimi": "Kuti me 32 tableta"
+  },
+  {
+   "nr": 332,
+   "emri_tregtar": "GENCIANE VIOLET 1%",
+   "forma_doza": "Tretësirë për përdorim të jashtëm 1%",
+   "lenda_aktive": "METHYLROSALINIUM CHLORIDE",
+   "paketimi": "Kuti me 1 flakon me 30ml"
+  },
+  {
+   "nr": 333,
+   "emri_tregtar": "GENERIT",
+   "forma_doza": "Tretësirë, pika për përdorim nga goja 10 mg/ml",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20 flakone monodoze, secili me 1ml"
+  },
+  {
+   "nr": 334,
+   "emri_tregtar": "GENERIT",
+   "forma_doza": "Tretësirë, pika për përdorim nga goja 10 mg/ml",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 1 flakon me 20ml"
+  },
+  {
+   "nr": 335,
+   "emri_tregtar": "GINETANTUM",
+   "forma_doza": "Pluhur për tretësirë për përdorim të jashtëm 500 mg/qeskë",
+   "lenda_aktive": "BENZYDAMINE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 336,
+   "emri_tregtar": "GINETANTUM",
+   "forma_doza": "Tretësirë për përdorim vaginal 0.1%",
+   "lenda_aktive": "BENZYDAMINE",
+   "paketimi": "Kuti me 5 flakone, secili me 140ml"
+  },
+  {
+   "nr": 337,
+   "emri_tregtar": "GINO-DAKTANOL",
+   "forma_doza": "Ovule vaginale 200 mg",
+   "lenda_aktive": "MICONAZOLE",
+   "paketimi": "Kuti me 7 ovula"
+  },
+  {
+   "nr": 338,
+   "emri_tregtar": "GLICEROLO CAMOMILLA E MALVA",
+   "forma_doza": "Tretësirë për përdorim rektal 2.25g",
+   "lenda_aktive": "GLICEROL",
+   "paketimi": "Kuti me 6 kontejner"
+  },
+  {
+   "nr": 339,
+   "emri_tregtar": "GLICEROLO NOVA ARGENTIA",
+   "forma_doza": "Tretësirë për përdorim rektal 2.25 g/flakon",
+   "lenda_aktive": "GLYCEROL",
+   "paketimi": "Kuti me 6 flakone monodoze"
+  },
+  {
+   "nr": 340,
+   "emri_tregtar": "GLICEROLO NOVA ARGENTIA",
+   "forma_doza": "Tretësirë për përdorim rektal 6.75 g/flakon",
+   "lenda_aktive": "GLYCEROL",
+   "paketimi": "Kuti me 6 flakone monodoze"
+  },
+  {
+   "nr": 341,
+   "emri_tregtar": "GLUCOSAMINA BLUEPHARMA",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 1500 mg",
+   "lenda_aktive": "GLUCOSAMINE SULPHATE",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 342,
+   "emri_tregtar": "GRAVOL EASY TO SWALLOW TABLETS",
+   "forma_doza": "Tabletë 50 mg",
+   "lenda_aktive": "DIMENHYDRINATE",
+   "paketimi": "Kuti me 30 tableta"
+  },
+  {
+   "nr": 343,
+   "emri_tregtar": "GRAVOL KIDS COMFORT SHAPED SUPPOSITORIES",
+   "forma_doza": "Supost 25 mg",
+   "lenda_aktive": "DIMENHYDRINATE",
+   "paketimi": "Kuti me 10 suposta"
+  },
+  {
+   "nr": 344,
+   "emri_tregtar": "GRAVOL KIDS LIQUID",
+   "forma_doza": "Shurup 15 mg/5ml",
+   "lenda_aktive": "DIMENHYDRINATE",
+   "paketimi": "Kuti me 1 shishe me 75ml"
+  },
+  {
+   "nr": 345,
+   "emri_tregtar": "GRIPOBLOCK",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (750 mg + 60 mg +10 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + PHENYLEPHRINE HYDROCHLORIDE",
+   "paketimi": "Kuti me 12 qeska"
+  },
+  {
+   "nr": 346,
+   "emri_tregtar": "GRIPOBLOCK JUNIOR",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (300 mg + 20 mg +5 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + PHENYLEPHRINE HYDROCHLORIDE",
+   "paketimi": "Kuti me 12 qeska"
+  },
+  {
+   "nr": 347,
+   "emri_tregtar": "GRIPOFLEKS 750",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (750 mg + 70 mg + 10 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + PHENYLEPHRINE",
+   "paketimi": "Kuti me 5 qeska"
+  },
+  {
+   "nr": 348,
+   "emri_tregtar": "GRIPOFLEX 500",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (500 mg + 200 mg + 25 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + PHENIRAMINE MALEATE",
+   "paketimi": "Kuti me 5 qeska"
+  },
+  {
+   "nr": 349,
+   "emri_tregtar": "GRIPORT",
+   "forma_doza": "Tabletë e veshur me film (650 mg + 4 mg + 60 mg)",
+   "lenda_aktive": "PARACETAMOL + CHLORPHENIRAMINE + PSEUDOEPHEDRINE",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 350,
+   "emri_tregtar": "GRIPPOSTAD C",
+   "forma_doza": "Kapsula (200 mg + 150 mg + 25 mg + 2.5 mg)",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + CAFFEINE + CHLORPHENAMINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 351,
+   "emri_tregtar": "GRIPPOSTAD HOT DRINK",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 600 mg/5g qeskë",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 352,
+   "emri_tregtar": "GYNO - PEVARYL",
+   "forma_doza": "Ovulë vaginale 150 mg",
+   "lenda_aktive": "ECONAZOLE",
+   "paketimi": "Kuti me 3"
+  },
+  {
+   "nr": 353,
+   "emri_tregtar": "GYNO - PEVARYL",
+   "forma_doza": "Ovulë vaginale 50 mg",
+   "lenda_aktive": "ECONAZOLE",
+   "paketimi": "Kuti me 15"
+  },
+  {
+   "nr": 354,
+   "emri_tregtar": "HELMINTOX",
+   "forma_doza": "Tableta të veshura me film 125 mg",
+   "lenda_aktive": "PYRANTEL EMBONATE",
+   "paketimi": "Kuti me 6"
+  },
+  {
+   "nr": 355,
+   "emri_tregtar": "HELMINTOX",
+   "forma_doza": "Tableta të veshura me film 250 mg",
+   "lenda_aktive": "PYRANTEL EMBONATE",
+   "paketimi": "Kuti me 3"
+  },
+  {
+   "nr": 356,
+   "emri_tregtar": "HELMINTOX",
+   "forma_doza": "Pezulli për përdorim nga goja 125 mg/5ml",
+   "lenda_aktive": "PYRANTEL EMBONATE",
+   "paketimi": "Kuti me 1 shishe qelqi 15ml"
+  },
+  {
+   "nr": 357,
+   "emri_tregtar": "HEPALGAN",
+   "forma_doza": "Xhel 3000IU/g",
+   "lenda_aktive": "HEPARIN",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 358,
+   "emri_tregtar": "HEPALIP FORTE",
+   "forma_doza": "Kapsula (300 mg + 30 mg + 6 mg + 6 mg + 6 mg + 6 mg)",
+   "lenda_aktive": "ESSENTIAL PHOSPHOLIPIDS + NICOTINAMIDE + PYRIDOXINE HYDROCHLORIDE + RIBOFLAVIN + THIAMINE NITRATE + TOCOPHERYL ACETATE",
+   "paketimi": "Kuti me 50"
+  },
+  {
+   "nr": 359,
+   "emri_tregtar": "HEPATHROMBIN",
+   "forma_doza": "Xhel 300 I.U./g",
+   "lenda_aktive": "HEPARIN SODIUM",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 360,
+   "emri_tregtar": "HEPATHROMBIN",
+   "forma_doza": "Xhel 500 I.U./g",
+   "lenda_aktive": "HEPARIN SODIUM",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 361,
+   "emri_tregtar": "HEPATHROMBIN",
+   "forma_doza": "Krem 300 I.U./g",
+   "lenda_aktive": "HEPARIN SODIUM",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 362,
+   "emri_tregtar": "HEPATHROMBIN",
+   "forma_doza": "Krem 500 I.U./g",
+   "lenda_aktive": "HEPARIN SODIUM",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 363,
+   "emri_tregtar": "HERBION Cowslip syrup",
+   "forma_doza": "Shurup",
+   "lenda_aktive": "PRIMULAE VERIS/ELATIOR + THYMUS VULGARIS",
+   "paketimi": "Kuti me 1 shishe qelqi me 150ml"
+  },
+  {
+   "nr": 364,
+   "emri_tregtar": "HERBION IVY",
+   "forma_doza": "Shurup 7 mg/ml",
+   "lenda_aktive": "HEDERA HELIX L., FOLIUM DRY EXTRACT",
+   "paketimi": "Kuti me 1 flakon qelqi me 150ml"
+  },
+  {
+   "nr": 365,
+   "emri_tregtar": "HERBION PLANTAIN SYRUP",
+   "forma_doza": "Shurup (2,5g +65 mg)/5ml",
+   "lenda_aktive": "PLANTAGO LANCEOLATA+ MALVA SYLVESTRIS L., EXTRACT + ASCORBIC ACID",
+   "paketimi": "Kuti me 1 shishe qelqi me 150ml"
+  },
+  {
+   "nr": 366,
+   "emri_tregtar": "HERNOVIR",
+   "forma_doza": "Krem 5%",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 tubet me 10g"
+  },
+  {
+   "nr": 367,
+   "emri_tregtar": "HERPLEX",
+   "forma_doza": "Krem 50 mg/g",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 tubet me 5g ose 10g"
+  },
+  {
+   "nr": 368,
+   "emri_tregtar": "HISTASIN",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 10 ose 20"
+  },
+  {
+   "nr": 369,
+   "emri_tregtar": "HISTERGAN Krem",
+   "forma_doza": "Krem 2% (w/w)",
+   "lenda_aktive": "DIPHENHYDRAMINE",
+   "paketimi": "Kuti me 1 tubet me 25g"
+  },
+  {
+   "nr": 370,
+   "emri_tregtar": "HIVOTEX",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 125ml"
+  },
+  {
+   "nr": 371,
+   "emri_tregtar": "HYDROCUTAN",
+   "forma_doza": "Pomadë 1%",
+   "lenda_aktive": "HYDROCORTISONE",
+   "paketimi": "Kuti me nje tubet me 30g"
+  },
+  {
+   "nr": 372,
+   "emri_tregtar": "IBALGIN",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPRFOFEN",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 373,
+   "emri_tregtar": "IBALGIN",
+   "forma_doza": "Xhel 5%",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 374,
+   "emri_tregtar": "IBALGIN RAPID",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 375,
+   "emri_tregtar": "IBUACTIVE",
+   "forma_doza": "Krem 5%",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 376,
+   "emri_tregtar": "IBUDOLOR DUO",
+   "forma_doza": "Xhel (50 mg + 30 mg)/g",
+   "lenda_aktive": "IBUPROFEN + LEVOMENTHOL",
+   "paketimi": "Kuti me 1 tubet me 60g"
+  },
+  {
+   "nr": 377,
+   "emri_tregtar": "IBUFEN",
+   "forma_doza": "Xhel 50 mg/g",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 378,
+   "emri_tregtar": "IBUHEXAL 2% KINDERSAFT",
+   "forma_doza": "Pezulli për përdorim nga goja 100 mg/5ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 shishe plastike me 100ml"
+  },
+  {
+   "nr": 379,
+   "emri_tregtar": "IBUKLIN",
+   "forma_doza": "Suposta 150 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 380,
+   "emri_tregtar": "IBUKLIN",
+   "forma_doza": "Suposta 75 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 381,
+   "emri_tregtar": "IBULEK",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 400 mg/qeskë",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 382,
+   "emri_tregtar": "IBUPROFEN",
+   "forma_doza": "Krem 10%",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 383,
+   "emri_tregtar": "IBUPROFEN",
+   "forma_doza": "Shurup 100 mg/5ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 shishe qelqi me 100ml"
+  },
+  {
+   "nr": 384,
+   "emri_tregtar": "IBUPROFEN",
+   "forma_doza": "Tableta të veshura me film 200 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 385,
+   "emri_tregtar": "IBUPROFEN",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 386,
+   "emri_tregtar": "IBUPROFEN",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 387,
+   "emri_tregtar": "IBUPROFENO ARGININA CODRAMOL",
+   "forma_doza": "Granula për tretësirë për përdorim nga goja 400 mg/qeska",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 388,
+   "emri_tregtar": "IBUTOP CREAM",
+   "forma_doza": "Krem 5g/100g",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 tubet me 20g ose 50g"
+  },
+  {
+   "nr": 389,
+   "emri_tregtar": "IBUTOP FAST",
+   "forma_doza": "Kapsula 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 10 kapsula"
+  },
+  {
+   "nr": 390,
+   "emri_tregtar": "IBUTOP GEL",
+   "forma_doza": "Xhel 5g/100g",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 tubet me 20g ose 50g"
+  },
+  {
+   "nr": 391,
+   "emri_tregtar": "ICTAMMOLO NOVA ARGENTIA",
+   "forma_doza": "Pomadë 10%",
+   "lenda_aktive": "ICHTHAMMOL",
+   "paketimi": "Kuti me tubet me 30g"
+  },
+  {
+   "nr": 392,
+   "emri_tregtar": "IDEOS",
+   "forma_doza": "Tableta për t’u përtypur (500 mg + 400 IU)",
+   "lenda_aktive": "CALCIUM CARBONATE + CHOLECALCIFEROL",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 393,
+   "emri_tregtar": "IKTIOL",
+   "forma_doza": "Pomadë 10%",
+   "lenda_aktive": "ICHTHAMMOL",
+   "paketimi": "Kuti me 1 tubet me 20g"
+  },
+  {
+   "nr": 394,
+   "emri_tregtar": "IMIDIN FUR KINDER",
+   "forma_doza": "Pika për hundë, tretësirë 0.5 mg/ml",
+   "lenda_aktive": "XYLOMETAZOLINE",
+   "paketimi": "Kuti me 1 shishe qelqi 10ml"
+  },
+  {
+   "nr": 395,
+   "emri_tregtar": "IMIDIN N",
+   "forma_doza": "Spraj për hundë, tretësirë 1 mg/ml",
+   "lenda_aktive": "XYLOMETAZOLINE",
+   "paketimi": "Kuti me 1 shishe qelqi 10ml"
+  },
+  {
+   "nr": 396,
+   "emri_tregtar": "IMODIUM",
+   "forma_doza": "Kapsula 2 mg",
+   "lenda_aktive": "LOPERAMIDE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 397,
+   "emri_tregtar": "IMOPER",
+   "forma_doza": "Shurup 667 mg/ml",
+   "lenda_aktive": "LACTULOSE",
+   "paketimi": "Kuti me 1 shishe me 200 ml"
+  },
+  {
+   "nr": 398,
+   "emri_tregtar": "INDOVASIN",
+   "forma_doza": "Xhel (30 mg/g + 20 mg/g)",
+   "lenda_aktive": "TROXERUTIN + INDOMETACIN",
+   "paketimi": "Kuti me 1 tubet 45 g"
+  },
+  {
+   "nr": 399,
+   "emri_tregtar": "INFLAFORTE",
+   "forma_doza": "Tretësirë, pika për përdorim në lëkurë 1.5%",
+   "lenda_aktive": "DICLOFENAC",
+   "paketimi": "Kuti me nje flakon me 30ml"
+  },
+  {
+   "nr": 400,
+   "emri_tregtar": "IPSOFLOG",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "PIROXICAM",
+   "paketimi": "Kuti me 1 tubet 50g"
+  },
+  {
+   "nr": 401,
+   "emri_tregtar": "ISTAMEX",
+   "forma_doza": "Shurup 2 mg/5ml",
+   "lenda_aktive": "CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 1 shishe plastike me 100ml"
+  },
+  {
+   "nr": 402,
+   "emri_tregtar": "ISTAMEX",
+   "forma_doza": "Tableta 4 mg",
+   "lenda_aktive": "CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 403,
+   "emri_tregtar": "ITAMI",
+   "forma_doza": "Patch i medikuar 140 mg",
+   "lenda_aktive": "DICLOFENAC",
+   "paketimi": "Kuti me 5 ose 10 patch-e"
+  },
+  {
+   "nr": 404,
+   "emri_tregtar": "ITIMADOL",
+   "forma_doza": "Shkumë për përdorim të jashtëm 3%",
+   "lenda_aktive": "DICLOFENAC",
+   "paketimi": "Kuti me 1 ene mbajtese nen presion me 50g"
+  },
+  {
+   "nr": 405,
+   "emri_tregtar": "JENAPROFEN 400 MG",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 406,
+   "emri_tregtar": "JODASEPT KUPRO",
+   "forma_doza": "Tretësirë për përdorim kutan 0,1",
+   "lenda_aktive": "POVIDONE IODINE",
+   "paketimi": "Kuti me 1 flakon me 50ml ose 100ml, ose 1000ml"
+  },
+  {
+   "nr": 407,
+   "emri_tregtar": "JODASEPT KUPRO",
+   "forma_doza": "Pomadë për përdorim kutan 10%",
+   "lenda_aktive": "POVIDONE IODINE",
+   "paketimi": "Kuti me 1 tubet me 20g ose 90g"
+  },
+  {
+   "nr": 408,
+   "emri_tregtar": "JODEX",
+   "forma_doza": "Spraj, tretësirë 8.5% (w/v)",
+   "lenda_aktive": "POVIDONE IODINE",
+   "paketimi": "Kuti me 1 flakon 30ml"
+  },
+  {
+   "nr": 409,
+   "emri_tregtar": "JODIO 5%",
+   "forma_doza": "Tretësirë për përdorim të jashtëm 5%",
+   "lenda_aktive": "IODINE",
+   "paketimi": "Kuti me 1 flakon me 10ml"
+  },
+  {
+   "nr": 410,
+   "emri_tregtar": "JODIO 5%",
+   "forma_doza": "Tretësirë për përdorim të jashtëm 5%",
+   "lenda_aktive": "IODINE",
+   "paketimi": "Kuti me 1 flakon me 10ml"
+  },
+  {
+   "nr": 411,
+   "emri_tregtar": "JODOCUR",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 10g/100ml",
+   "lenda_aktive": "POVIDONE IODINE",
+   "paketimi": "Kuti me shishe plastike 100ml"
+  },
+  {
+   "nr": 412,
+   "emri_tregtar": "JUNIOR IBUPROFEN SUSPENSION 100 MG/5ML",
+   "forma_doza": "Pezulli për përdorim nga goja 100 mg/5ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 shishe me 100ml"
+  },
+  {
+   "nr": 413,
+   "emri_tregtar": "KALCIUM GLUKONAT",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "CALCIUM GLUCONATE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 414,
+   "emri_tregtar": "KAMFART",
+   "forma_doza": "Krem (20 mg + 10 mg + 10 mg + 10 mg)/g",
+   "lenda_aktive": "CAMPHOR + METHYL SALICYLATE + BENZYL NICOTINATE + MENTHOL",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 415,
+   "emri_tregtar": "KAMILLAN SUPRA",
+   "forma_doza": "Tretësirë 100g/100g",
+   "lenda_aktive": "CHAMOMILE (FLOWER) EXTRACT",
+   "paketimi": "Kuti me 1 shishe qelqi me 30ml"
+  },
+  {
+   "nr": 416,
+   "emri_tregtar": "KARDIOSPIR",
+   "forma_doza": "Tableta të veshura enterike 100 mg",
+   "lenda_aktive": "ACETYLSALICILIC ACID",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 417,
+   "emri_tregtar": "KASTELAN",
+   "forma_doza": "Tretësirë për përdorim të jashtëm (2% + 0.5% + 4% + 1%)",
+   "lenda_aktive": "PHENOL+FUCHSIN+RESORCINOL+BORIC ACID",
+   "paketimi": "Kuti me 1 flakon me 30ml"
+  },
+  {
+   "nr": 418,
+   "emri_tregtar": "KATARIN",
+   "forma_doza": "Kapsula (250 mg + 100 mg + 2 mg)",
+   "lenda_aktive": "PARACETAMOL + OXOLAMINE + CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 419,
+   "emri_tregtar": "KATARIN",
+   "forma_doza": "Shurup (120 mg + 50 mg + 1 mg/5ml)",
+   "lenda_aktive": "PARACETAMOL + OXOLAMINE + CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 1 shishe 100ml"
+  },
+  {
+   "nr": 420,
+   "emri_tregtar": "KATARIN FORTE",
+   "forma_doza": "Tableta të veshura me film 650 mg + 200 mg + 4 mg + 60 mg",
+   "lenda_aktive": "PARACETAMOL + OXOLAMINE CITRATE + CHLORPHENIRAMINE + PSEUDOEPHEDRIN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 421,
+   "emri_tregtar": "KENDIX",
+   "forma_doza": "Krem 5%",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 tubet me 2g"
+  },
+  {
+   "nr": 422,
+   "emri_tregtar": "KETOCONAZOL KORHISPANA",
+   "forma_doza": "Xhel 2%",
+   "lenda_aktive": "KETOCONAZOLE",
+   "paketimi": "Kuti me 1 shishe me 100ml"
+  },
+  {
+   "nr": 423,
+   "emri_tregtar": "KETONAL",
+   "forma_doza": "Xhel 2.5%",
+   "lenda_aktive": "KETOPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 424,
+   "emri_tregtar": "KETONAL",
+   "forma_doza": "Krem 5%",
+   "lenda_aktive": "KETOPROFEN",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 425,
+   "emri_tregtar": "KETORAL",
+   "forma_doza": "Shampo 2g/100ml",
+   "lenda_aktive": "KETOCONAZOLE",
+   "paketimi": "Kuti me 1 shishe me 100ml"
+  },
+  {
+   "nr": 426,
+   "emri_tregtar": "KINDER LUUF BALSAM",
+   "forma_doza": "Balsam (50 mg + 27.5 mg + 15 mg + 50 mg + 2.5 mg/g",
+   "lenda_aktive": "CAMPHOR + MENTHOL + EUCALYPTUS OIL + TERPENTINE OIL + THYMOL",
+   "paketimi": "Kuti me 1 shishe qelqi me 30g"
+  },
+  {
+   "nr": 427,
+   "emri_tregtar": "KLOREMIN",
+   "forma_doza": "Tretësirë për gargare (0.3g + 1.2ml)/200ml",
+   "lenda_aktive": "BENZYDAMINE + CHLORHEXIDINE",
+   "paketimi": "Kuti me 1 flakon plastikme 200ml"
+  },
+  {
+   "nr": 428,
+   "emri_tregtar": "KLOROBEN",
+   "forma_doza": "Tretësirë për gargare (0.12% + 0.15%)",
+   "lenda_aktive": "CHLORHEXIDINE + BENZYDAMINE",
+   "paketimi": "Kuti me 1 flakon me 200ml"
+  },
+  {
+   "nr": 429,
+   "emri_tregtar": "KLOROBEN",
+   "forma_doza": "Tretësirë për spray oral (0.15% + 0.12%)",
+   "lenda_aktive": "CHLORHEXIDINE + BENZYDAMINE",
+   "paketimi": "Kuti me 1 flakon me 30ml"
+  },
+  {
+   "nr": 430,
+   "emri_tregtar": "KLORUR BANZALKONI",
+   "forma_doza": "Tretësirë 10% - 1000ml",
+   "lenda_aktive": "BENZALCONIUM CHLORIDE",
+   "paketimi": "Flakon me 50ml"
+  },
+  {
+   "nr": 431,
+   "emri_tregtar": "KLORUR BENZALKONI",
+   "forma_doza": "Tretësirë 5%",
+   "lenda_aktive": "BENZALCONIUM CHLORIDE",
+   "paketimi": "Shishe plastike me 1000ml"
+  },
+  {
+   "nr": 432,
+   "emri_tregtar": "LACRINORM",
+   "forma_doza": "Xhel për sy (0.01% + 0.2%)",
+   "lenda_aktive": "BENZALKONIUM CHLORIDE + CARBOPOL 980",
+   "paketimi": "Kuti me 1 tubet me 10g"
+  },
+  {
+   "nr": 433,
+   "emri_tregtar": "LACRISOL",
+   "forma_doza": "Pika për sy, tretësirë (0.0045% + 0.5%) w/v",
+   "lenda_aktive": "BENZALKONIUM CHLORIDE + HYDROXYPROPYLMETHYLCELLULOSE",
+   "paketimi": "Kuti me 1 flakon me 10ml"
+  },
+  {
+   "nr": 434,
+   "emri_tregtar": "LAEVOLAC",
+   "forma_doza": "Koncentrat për tretësirë për përdorim nga goja 67g/100ml",
+   "lenda_aktive": "LACTULOSE",
+   "paketimi": "Kuti me 1 shishe plastike me 100ml ose 500ml"
+  },
+  {
+   "nr": 435,
+   "emri_tregtar": "LATOREN",
+   "forma_doza": "Tableta 10 mg",
+   "lenda_aktive": "LORATADINE",
+   "paketimi": "Kuti me 28"
+  },
+  {
+   "nr": 436,
+   "emri_tregtar": "LATTULOSIO ABC",
+   "forma_doza": "Shurup 66,7 g/100ml",
+   "lenda_aktive": "LACTULOSE",
+   "paketimi": "Kuti me 1 shishe me 180ml"
+  },
+  {
+   "nr": 437,
+   "emri_tregtar": "LENTRICA",
+   "forma_doza": "Tabletë e veshur me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 30 tableta"
+  },
+  {
+   "nr": 438,
+   "emri_tregtar": "LEODEX",
+   "forma_doza": "Tabletë e veshur me film 25 mg",
+   "lenda_aktive": "DEXKETOPROFEN",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 439,
+   "emri_tregtar": "LEVIORINIL",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 7 ose 20"
+  },
+  {
+   "nr": 440,
+   "emri_tregtar": "LEVIORINIL",
+   "forma_doza": "Pika për përdorim nga goja, tretësirë 10 mg/ml",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 1 flakon qelqi me 20ml"
+  },
+  {
+   "nr": 441,
+   "emri_tregtar": "LEVOCETIRIZIN HEXAL",
+   "forma_doza": "Tableta të veshura me film 5 mg",
+   "lenda_aktive": "LEVOCETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 442,
+   "emri_tregtar": "LEVOTUSS",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "LEVODROPROPIZINE",
+   "paketimi": "Kuti me flakon me 200ml"
+  },
+  {
+   "nr": 443,
+   "emri_tregtar": "LEVOTUSS",
+   "forma_doza": "Tretësirë për pika për përdorim nga goja 60 mg/ml",
+   "lenda_aktive": "LEVODROPROPIZINE",
+   "paketimi": "Kuti me flakon me 30ml"
+  },
+  {
+   "nr": 444,
+   "emri_tregtar": "LEVOTUSS",
+   "forma_doza": "Shurup 60 mg/10ml",
+   "lenda_aktive": "LEVODROPROPIZINE",
+   "paketimi": "Kuti me 10 qeska me 10ml"
+  },
+  {
+   "nr": 445,
+   "emri_tregtar": "LEVOTUSS",
+   "forma_doza": "Tabletë 60 mg",
+   "lenda_aktive": "LEVODROPROPIZINE",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 446,
+   "emri_tregtar": "LIDOCAINA CLORIDRATO E IDROCORTISONE ACETATO",
+   "forma_doza": "Krem (1.5% + 1%) w/w",
+   "lenda_aktive": "LIDOCAINE + HYDROCORTISONE ACETATE",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 447,
+   "emri_tregtar": "LIDOPROCT",
+   "forma_doza": "Pomadë rektale (180 mg + 50 mg + 35 mg +2,5 mg)",
+   "lenda_aktive": "ZINC OXIDE + LIDOCAINE + ALUMINIUM SUBACETATE + HYDROCORTISONE ACETATE",
+   "paketimi": "Kuti me 1 tubet me 20g"
+  },
+  {
+   "nr": 448,
+   "emri_tregtar": "LINEX BABY",
+   "forma_doza": "Pluhur për pezulli për përdorim nga goja (1 10¹) CFU",
+   "lenda_aktive": "BIFIDOBACTERIUM ANIMALIS SUBSP. LACTIS",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 449,
+   "emri_tregtar": "LINEX FORTE",
+   "forma_doza": "Kapsula 2.000,00 MIO CFU",
+   "lenda_aktive": "LACTOBACILLUS ACIDOPHILUS + BIFIDOBACTERIUM ANIMALIS SUBSP. LACTIS",
+   "paketimi": "Kuti me 14"
+  },
+  {
+   "nr": 450,
+   "emri_tregtar": "LIOTON",
+   "forma_doza": "Xhel 1000 I.U./1g",
+   "lenda_aktive": "HEPARIN SODIUM",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 451,
+   "emri_tregtar": "LISOMUCIN",
+   "forma_doza": "Tretësirë, pika për përdorim nga goja 2 mg/ml",
+   "lenda_aktive": "BROMHEXINE",
+   "paketimi": "Kuti me 1 flakon qelqi me 15ml"
+  },
+  {
+   "nr": 452,
+   "emri_tregtar": "LOCION MALATION",
+   "forma_doza": "Tretësirë për përdorim të jashtëm 0.5g/100ml",
+   "lenda_aktive": "MALATHION",
+   "paketimi": "Flakon me 100ml"
+  },
+  {
+   "nr": 453,
+   "emri_tregtar": "LOMEXIN",
+   "forma_doza": "Krem vaginal 2%",
+   "lenda_aktive": "FENTICONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 78g"
+  },
+  {
+   "nr": 454,
+   "emri_tregtar": "LOMEXIN",
+   "forma_doza": "Kapsula vaginale të buta 600 mg",
+   "lenda_aktive": "FENTICONAZOLE",
+   "paketimi": "Kuti me 2"
+  },
+  {
+   "nr": 455,
+   "emri_tregtar": "LOMEXIN",
+   "forma_doza": "Krem 2%",
+   "lenda_aktive": "FENTICONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 456,
+   "emri_tregtar": "LOPEGEN",
+   "forma_doza": "Kapsula 2 mg",
+   "lenda_aktive": "LOPERAMIDE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 457,
+   "emri_tregtar": "LOPERAMID",
+   "forma_doza": "Tableta 2 mg",
+   "lenda_aktive": "LOPERAMIDE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 458,
+   "emri_tregtar": "LOPERAMID",
+   "forma_doza": "Tableta 2 mg",
+   "lenda_aktive": "LOPERAMIDE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 459,
+   "emri_tregtar": "LORADE",
+   "forma_doza": "Tableta 10 mg",
+   "lenda_aktive": "LORATADINE",
+   "paketimi": "Kuti me 10 ose 20 tableta"
+  },
+  {
+   "nr": 460,
+   "emri_tregtar": "LORADERM",
+   "forma_doza": "Shurup 5 mg/5ml",
+   "lenda_aktive": "LORATADINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 120ml ose 150ml"
+  },
+  {
+   "nr": 461,
+   "emri_tregtar": "LORADERM",
+   "forma_doza": "Tableta 10 mg",
+   "lenda_aktive": "LORATADINE",
+   "paketimi": "Kuti me 7"
+  },
+  {
+   "nr": 462,
+   "emri_tregtar": "LORATADIN",
+   "forma_doza": "Tableta 10 mg",
+   "lenda_aktive": "LORATADIN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 463,
+   "emri_tregtar": "LORDES",
+   "forma_doza": "Tableta të veshura me film 5 mg",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 464,
+   "emri_tregtar": "LORDES",
+   "forma_doza": "Shurup 2.5 mg/5ml",
+   "lenda_aktive": "DESLORATADINE",
+   "paketimi": "Kuti me 1 shishe me 150ml"
+  },
+  {
+   "nr": 465,
+   "emri_tregtar": "LUNA",
+   "forma_doza": "Tabletë e veshur me film (500 mg + 25 mg)",
+   "lenda_aktive": "PARACETAMOL + DIMENHYDRAMINE",
+   "paketimi": "Kuti me 10 tableta"
+  },
+  {
+   "nr": 466,
+   "emri_tregtar": "LUNGES",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "LEVODROPROPIZINE",
+   "paketimi": "Kuti me 1 flakon qelqi me 150ml"
+  },
+  {
+   "nr": 467,
+   "emri_tregtar": "LUUF",
+   "forma_doza": "Spraj për hundë, tretësirë (1 mg + 1 mg)/ml",
+   "lenda_aktive": "NAPHAZOLINE + DIPHENHYDRAMINE",
+   "paketimi": "Kuti me 1 shishe spraj 15ml"
+  },
+  {
+   "nr": 468,
+   "emri_tregtar": "LYSOBACT",
+   "forma_doza": "Krem 20 mg/g",
+   "lenda_aktive": "LYSOZYME",
+   "paketimi": "Kuti me 1 tubet me 15g"
+  },
+  {
+   "nr": 469,
+   "emri_tregtar": "LYSOBACT COMPLETE SPRAY",
+   "forma_doza": "Tretësirë për spray oromukozal (20 + 1.5 + 0.5) mg/ml",
+   "lenda_aktive": "LYSOZIME + CETYLPYRIDINIUM CHLORIDE + LIDOCAINE",
+   "paketimi": "Kuti me 1 flakon qelqi me 30ml"
+  },
+  {
+   "nr": 470,
+   "emri_tregtar": "LYSOBACT DUO",
+   "forma_doza": "Tabletë që tretet në gojë (20 mg + 1.5 mg)",
+   "lenda_aktive": "LYSOZIME + CETYLPYRIDINUM",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 471,
+   "emri_tregtar": "MAALOX MAUX D'ESTOMAC",
+   "forma_doza": "Pezulli për përdorim nga goja (4g + 3.5g) / 100ml",
+   "lenda_aktive": "MAGNESIUM HYDROXIDE + ALUMINIUM HYDROXIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 250ml"
+  },
+  {
+   "nr": 472,
+   "emri_tregtar": "MAALOX MAUX D'ESTOMAC",
+   "forma_doza": "Tableta për t’u përtypur(400 mg + 400 mg)",
+   "lenda_aktive": "MAGNESIUM HYDROXIDE + ALUMINIUM HYDROXIDE",
+   "paketimi": "Kuti me 40"
+  },
+  {
+   "nr": 473,
+   "emri_tregtar": "MAGNE B6",
+   "forma_doza": "Tableta (470 mg + 5 mg)",
+   "lenda_aktive": "MAGNESIUM LACTATE + PYRIDOXINE",
+   "paketimi": "Kuti me 50"
+  },
+  {
+   "nr": 474,
+   "emri_tregtar": "MAGNESPASMYL",
+   "forma_doza": "Tableta 47.4 mg",
+   "lenda_aktive": "MAGNESIUM LACTATE",
+   "paketimi": "Kuti me 50"
+  },
+  {
+   "nr": 475,
+   "emri_tregtar": "MAXICLEAR COLD & FLU RELIEF",
+   "forma_doza": "Tableta (5 mg + 500 mg)",
+   "lenda_aktive": "PHENYLEPHRINE + PARACETAMOL",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 476,
+   "emri_tregtar": "MAXICLEAR SINUS RELIEF",
+   "forma_doza": "Tableta 10 mg",
+   "lenda_aktive": "PHENYLEPHRINE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 477,
+   "emri_tregtar": "MAXICLEAR SINUS & PAIN RELIEF",
+   "forma_doza": "Tableta (5 mg + 500 mg)",
+   "lenda_aktive": "PHENYLEPHRINE + PARACETAMOL",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 478,
+   "emri_tregtar": "MEBHIDROLINE",
+   "forma_doza": "Tableta 50 mg",
+   "lenda_aktive": "MEBHYDROLIN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 479,
+   "emri_tregtar": "MENTOLO ZETA",
+   "forma_doza": "Pluhur për përdorim në lëkurë 1%",
+   "lenda_aktive": "MENTHOL",
+   "paketimi": "Kuti me 1 flakon me 100g"
+  },
+  {
+   "nr": 480,
+   "emri_tregtar": "METAFENEX",
+   "forma_doza": "Tableta (200 mg + 325 mg)",
+   "lenda_aktive": "IBUPROFEN + PARACETAMOL",
+   "paketimi": "Kuti me 10 ose 20"
+  },
+  {
+   "nr": 481,
+   "emri_tregtar": "METSIL DROPS",
+   "forma_doza": "Tretësirë për përdorim nga goja, pika 2g/30ml",
+   "lenda_aktive": "SIMETHICONE",
+   "paketimi": "Kuti me 1 flakon 30ml"
+  },
+  {
+   "nr": 482,
+   "emri_tregtar": "METSIL FORT",
+   "forma_doza": "Tableta-karamele 80 mg",
+   "lenda_aktive": "SIMETHICONE",
+   "paketimi": "Kuti me 50"
+  },
+  {
+   "nr": 483,
+   "emri_tregtar": "MIGRETIL",
+   "forma_doza": "Tableta të veshura me film (100 mg + 400 mg + 1 mg + 0.1 mg)",
+   "lenda_aktive": "CAFFEINE + PARACETAMOL + ERGOTAMINE + BELLADONNA ALKALOIDS",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 484,
+   "emri_tregtar": "MINAMOL PLUS",
+   "forma_doza": "Tabletë (250 mg + 150 mg + 50 mg)",
+   "lenda_aktive": "PARACETAMOL + PROPIFENAZONE + CAFFEINE",
+   "paketimi": "Kuti me 30 tableta"
+  },
+  {
+   "nr": 485,
+   "emri_tregtar": "MIOTENS CONTRATTURE E DOLORE",
+   "forma_doza": "Shkumë për përdorim kutan 0.25%",
+   "lenda_aktive": "THIOCOLCHICOSIDE",
+   "paketimi": "Kuti me 1 ene nen presion me 30 ml"
+  },
+  {
+   "nr": 486,
+   "emri_tregtar": "MODOLEX",
+   "forma_doza": "Pomadë rektale (40 mg + 20 mg)/g",
+   "lenda_aktive": "CALCIUM DOBESILATE + LIDOCAINE",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 487,
+   "emri_tregtar": "MOMENDOL",
+   "forma_doza": "Tabletë e veshur me film 220 mg",
+   "lenda_aktive": "NAPROXEN",
+   "paketimi": "Kuti me 12 ose 24 tableta"
+  },
+  {
+   "nr": 488,
+   "emri_tregtar": "MOMENT",
+   "forma_doza": "Tretësirë për pika për përdorim nga goja 20g/100ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 flakon me 12.5ml"
+  },
+  {
+   "nr": 489,
+   "emri_tregtar": "MOMENT",
+   "forma_doza": "Tabletë e veshur 200 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 24 tableta"
+  },
+  {
+   "nr": 490,
+   "emri_tregtar": "MOMENTACT",
+   "forma_doza": "Tableta eferveshente 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 491,
+   "emri_tregtar": "MUCOCIS",
+   "forma_doza": "Shurup 2g/100ml",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 200ml"
+  },
+  {
+   "nr": 492,
+   "emri_tregtar": "MUCOCIS",
+   "forma_doza": "Shurup 50 mg/ml",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 1 flakon me 200ml"
+  },
+  {
+   "nr": 493,
+   "emri_tregtar": "MUCOLISIN",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 100ml"
+  },
+  {
+   "nr": 494,
+   "emri_tregtar": "MUCOSOFT",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 600 mg/qeskë",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 495,
+   "emri_tregtar": "MUCOSOLVAN",
+   "forma_doza": "Kapsula retarde 75 mg",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 496,
+   "emri_tregtar": "MUCOSOLVAN",
+   "forma_doza": "Shurup 15 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 100ml ose 200ml"
+  },
+  {
+   "nr": 497,
+   "emri_tregtar": "MUCOSOLVAN",
+   "forma_doza": "Shurup 30 mg/5ml",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 100m ose 200ml"
+  },
+  {
+   "nr": 498,
+   "emri_tregtar": "MUCOTREIS",
+   "forma_doza": "Shurup 50 mg/ml",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 150ml"
+  },
+  {
+   "nr": 499,
+   "emri_tregtar": "MUCOTREIS",
+   "forma_doza": "Shurup 20 mg/ml",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 150ml"
+  },
+  {
+   "nr": 500,
+   "emri_tregtar": "MUKOLITINE A",
+   "forma_doza": "Shurup 5%",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 1shishe qelqi me 150ml"
+  },
+  {
+   "nr": 501,
+   "emri_tregtar": "MUKOLITINE P",
+   "forma_doza": "Shurup 2%",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 1shishe qelqi me 150ml"
+  },
+  {
+   "nr": 502,
+   "emri_tregtar": "MUXOL",
+   "forma_doza": "Tretësirë për përdorim nga goja 0.3%",
+   "lenda_aktive": "AMBROXOL HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 shishe qelqi me 180ml"
+  },
+  {
+   "nr": 503,
+   "emri_tregtar": "MYCOCUR",
+   "forma_doza": "Spraj për lëkurë 1%",
+   "lenda_aktive": "TERBINAFINE",
+   "paketimi": "Kuti me flakon 30ml"
+  },
+  {
+   "nr": 504,
+   "emri_tregtar": "MYCOCUR 1%",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "TERBINAFINE",
+   "paketimi": "Kuti me tubet 15g"
+  },
+  {
+   "nr": 505,
+   "emri_tregtar": "MYCONAFINE 1%",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "TERBINAFINE",
+   "paketimi": "Kuti me 1 tubet 15g"
+  },
+  {
+   "nr": 506,
+   "emri_tregtar": "MYCORIL",
+   "forma_doza": "Tretësirë për spraj 1% (w/v)",
+   "lenda_aktive": "CLOTRIMAZOLE",
+   "paketimi": "Kuti me 1 shishe"
+  },
+  {
+   "nr": 507,
+   "emri_tregtar": "MYCOSTER",
+   "forma_doza": "Tretësirë për përdorim lokal 8% (w/w)",
+   "lenda_aktive": "CICLOPIROXOLAMINE",
+   "paketimi": "Kuti me 1 shishe me 3 ml"
+  },
+  {
+   "nr": 508,
+   "emri_tregtar": "MYCOSTER",
+   "forma_doza": "Krem 1% (w/v)",
+   "lenda_aktive": "CICLOPIROXOLAMINE",
+   "paketimi": "Kuti me 1 tubet me 30 g"
+  },
+  {
+   "nr": 509,
+   "emri_tregtar": "MYCOSTER",
+   "forma_doza": "Pluhur për përdorim në lëkurë 1% (w/w)",
+   "lenda_aktive": "CICLOPIROXOLAMINE",
+   "paketimi": "Kuti me 1 shishe me 30 g"
+  },
+  {
+   "nr": 510,
+   "emri_tregtar": "MYCOSTER",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 1% (w/v)",
+   "lenda_aktive": "CICLOPIROXOLAMINE",
+   "paketimi": "Kuti me 1 shishe me 30 ml"
+  },
+  {
+   "nr": 511,
+   "emri_tregtar": "NAFAZOLINE",
+   "forma_doza": "Spraj për hundë, tretësirë 1 mg/ml",
+   "lenda_aktive": "NAPHAZOLINE",
+   "paketimi": "Kuti me 1 shishe plastike 10ml"
+  },
+  {
+   "nr": 512,
+   "emri_tregtar": "NAFAZOLINE 0.1%",
+   "forma_doza": "Pika për hundë, tretësirë 1 mg/ml",
+   "lenda_aktive": "NAPHAZOLINE",
+   "paketimi": "Kuti me 1 shishe plastike 10ml"
+  },
+  {
+   "nr": 513,
+   "emri_tregtar": "NALGESIN S",
+   "forma_doza": "Tableta të veshura me film 275 mg",
+   "lenda_aktive": "NAPROXEN",
+   "paketimi": "Kuti me 10 ose 20"
+  },
+  {
+   "nr": 514,
+   "emri_tregtar": "NAPRIUS",
+   "forma_doza": "Xhel 10%",
+   "lenda_aktive": "NAPROXEN",
+   "paketimi": "Kuti me 1 tubet 30g"
+  },
+  {
+   "nr": 515,
+   "emri_tregtar": "NATECAL D3",
+   "forma_doza": "Tableta për t’u përtypur (600 mg + 400 I.U.)",
+   "lenda_aktive": "CALCIUM CARBONATE + COLECALCIFEROL",
+   "paketimi": "Kuti me 1 shishe me 60"
+  },
+  {
+   "nr": 516,
+   "emri_tregtar": "NAZOPASS",
+   "forma_doza": "Tretësirë, pika për përdorim në hundë 0.25 mg/ml",
+   "lenda_aktive": "OXYMETAZOLINE",
+   "paketimi": "Kuti me nje flakon plastik me 10ml"
+  },
+  {
+   "nr": 517,
+   "emri_tregtar": "NAZOPASS",
+   "forma_doza": "Tretësirë, pika për përdorim në hundë 0.5 mg/ml",
+   "lenda_aktive": "OXYMETAZOLINE",
+   "paketimi": "Kuti me nje flakon plastik me 10ml"
+  },
+  {
+   "nr": 518,
+   "emri_tregtar": "NEO - MYCODERMOL",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "CICLOPIROXOLAMINE",
+   "paketimi": "Kuti me tubet me 20g"
+  },
+  {
+   "nr": 519,
+   "emri_tregtar": "NEO - MYCODERMOL",
+   "forma_doza": "Tretësirë për përdorim lokal 1% (w/v)",
+   "lenda_aktive": "CICLOPIROXOLAMINE",
+   "paketimi": "Kuti me flakon me 20ml"
+  },
+  {
+   "nr": 520,
+   "emri_tregtar": "NERITA",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 1500 mg/qeskë",
+   "lenda_aktive": "GLUCOSAMINE SULPHATE",
+   "paketimi": "Kuti me 30 qeska"
+  },
+  {
+   "nr": 521,
+   "emri_tregtar": "NEUROBEX",
+   "forma_doza": "Tableta të veshura (15 mg + 10 mg + 0.02 mg)",
+   "lenda_aktive": "THIAMINE + PYRIDOXINE + CYANOCOBALAMIN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 522,
+   "emri_tregtar": "NICOTINELL FRUIT",
+   "forma_doza": "Çamçakëz 2 mg",
+   "lenda_aktive": "NICOTINE",
+   "paketimi": "Kuti me 24"
+  },
+  {
+   "nr": 523,
+   "emri_tregtar": "NICOTINELL FRUIT",
+   "forma_doza": "Çamçakëz 4 mg",
+   "lenda_aktive": "NICOTINE",
+   "paketimi": "Kuti me 24"
+  },
+  {
+   "nr": 524,
+   "emri_tregtar": "NIFUROXAZIDE EG",
+   "forma_doza": "Kapsula 200 mg",
+   "lenda_aktive": "NIFUROXAZIDE",
+   "paketimi": "Kuti me 28"
+  },
+  {
+   "nr": 525,
+   "emri_tregtar": "NIMOKAIN",
+   "forma_doza": "Xhel (0.5g + 2.5g)/100 g",
+   "lenda_aktive": "NIMESULID + LIDOCAINE",
+   "paketimi": "Kuti me 1 tubet me 50g"
+  },
+  {
+   "nr": 526,
+   "emri_tregtar": "NIZORAL",
+   "forma_doza": "Krem 20 mg/g",
+   "lenda_aktive": "KETOCONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 527,
+   "emri_tregtar": "NIZORAL",
+   "forma_doza": "Shampo 20 mg/g",
+   "lenda_aktive": "KETOCONAZOLE",
+   "paketimi": "Kuti me 1 shishe me 60ml"
+  },
+  {
+   "nr": 528,
+   "emri_tregtar": "NOMIGREN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë e veshur me film (200 mg + 80 mg + 25 mg + 20 mg + 0.75 mg)"
+  },
+  {
+   "nr": 529,
+   "emri_tregtar": "",
+   "forma_doza": "NORLEVO",
+   "lenda_aktive": "",
+   "paketimi": ""
+  },
+  {
+   "nr": 530,
+   "emri_tregtar": "NO-SPA",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta 40 mg"
+  },
+  {
+   "nr": 531,
+   "emri_tregtar": "NOTUSS",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Shurup 7,5 mg/5ml (1,5 mg/ml)"
+  },
+  {
+   "nr": 532,
+   "emri_tregtar": "NOVAGO",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë 50 mg"
+  },
+  {
+   "nr": 533,
+   "emri_tregtar": "NOVAZOL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për pika për përdorim nga goja 500 mg/ml"
+  },
+  {
+   "nr": 534,
+   "emri_tregtar": "NOVOLAX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tableta të veshura 5 mg"
+  },
+  {
+   "nr": 535,
+   "emri_tregtar": "NOZETAL 0.05%",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pika për hundë, tretësirë 0.5 mg/ml"
+  },
+  {
+   "nr": 536,
+   "emri_tregtar": "NOZETAL 0.1%",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pika për hundë, tretësirë 1 mg/ml"
+  },
+  {
+   "nr": 537,
+   "emri_tregtar": "NUROFARM",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë e veshur me film (200 mg + 30 mg)"
+  },
+  {
+   "nr": 538,
+   "emri_tregtar": "NUROFEN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Kapsula të buta 400 mg"
+  },
+  {
+   "nr": 539,
+   "emri_tregtar": "NUROFEN COLD AND FLU",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë e veshur (200 mg + 30 mg)"
+  },
+  {
+   "nr": 540,
+   "emri_tregtar": "NUROFEN EXPRESS",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë e veshur 256 mg"
+  },
+  {
+   "nr": 541,
+   "emri_tregtar": "NUROFEN FOR CHILDREN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pezulli për përdorim nga goja 100 mg /5ml"
+  },
+  {
+   "nr": 542,
+   "emri_tregtar": "ODRINOL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për përdorim rektal (20.8 + 7.8)g/130ml"
+  },
+  {
+   "nr": 543,
+   "emri_tregtar": "OKI INFLAMAZIONE E DOLORE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për gargare 1.6%"
+  },
+  {
+   "nr": 544,
+   "emri_tregtar": "OKI INFLAMMAZIONE E DOLORE",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Spray oromukozal 0,16%"
+  },
+  {
+   "nr": 545,
+   "emri_tregtar": "OKITASK",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Granula 40 mg"
+  },
+  {
+   "nr": 546,
+   "emri_tregtar": "OKITASK",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë e veshur me film 40 mg"
+  },
+  {
+   "nr": 547,
+   "emri_tregtar": "OLEDRO",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tabletë (250 mg + 2 mg + 5 mg + 100 mg)"
+  },
+  {
+   "nr": 548,
+   "emri_tregtar": "OLEDRO HOT",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Granula eferveshente (500 mg + 2 mg + 10 mg + 100 mg)/qeskë"
+  },
+  {
+   "nr": 549,
+   "emri_tregtar": "OLEOVIT D3",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pika për përdorim nga goja, tretësirë 14400 IU/ml"
+  },
+  {
+   "nr": 550,
+   "emri_tregtar": "OPERIL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pika për hundë, tretësirë 0.5 mg/ml"
+  },
+  {
+   "nr": 551,
+   "emri_tregtar": "OPERIL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Spraj për hundë, tretësirë 0.5 mg/ml"
+  },
+  {
+   "nr": 552,
+   "emri_tregtar": "OPERIL P",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Spraj për hundë, tretësirë 0.25 mg/ml"
+  },
+  {
+   "nr": 553,
+   "emri_tregtar": "OPERIL P",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pika për hundë, tretësirë 0.25 mg/ml"
+  },
+  {
+   "nr": 554,
+   "emri_tregtar": "ORALSEPT",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Tretësirë për spraj në gojë 1.5 mg/ml"
+  },
+  {
+   "nr": 555,
+   "emri_tregtar": "ORBIFEN",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pezulli për përdorim nga goja 100 mg/5ml"
+  },
+  {
+   "nr": 556,
+   "emri_tregtar": "OTIPAX",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pika për vesh, tretësirë (4g + 1g)/100g"
+  },
+  {
+   "nr": 557,
+   "emri_tregtar": "OTOL",
+   "forma_doza": "",
+   "lenda_aktive": "",
+   "paketimi": "Pika për vesh tretësirë (30 mg + 20 mg + 50 mg)/ml"
+  },
+  {
+   "nr": 558,
+   "emri_tregtar": "OVOL DROPS",
+   "forma_doza": "Tretësirë, pika për përdorim nga goja 40 mg/ml",
+   "lenda_aktive": "SIMETHICONE (SILICONES)",
+   "paketimi": "Kuti me 1 shishe plastikeme 15ml"
+  },
+  {
+   "nr": 559,
+   "emri_tregtar": "OXEZOLE",
+   "forma_doza": "Spray për përdorim në lëkurë 1%",
+   "lenda_aktive": "OXICONAZOLE",
+   "paketimi": "Kuti me 1 flakon plastik me 20ml"
+  },
+  {
+   "nr": 560,
+   "emri_tregtar": "OXEZOLE",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "OXICONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 10g"
+  },
+  {
+   "nr": 561,
+   "emri_tregtar": "OXISEPT 10%",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 10%",
+   "lenda_aktive": "POVIDONE IODINE",
+   "paketimi": "Kuti me 1 shishe plastike 240ml"
+  },
+  {
+   "nr": 562,
+   "emri_tregtar": "PAIDOFEBRIL",
+   "forma_doza": "Pezulli për përdorim nga goja 100 mg/5ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 shishe me 200ml"
+  },
+  {
+   "nr": 563,
+   "emri_tregtar": "PANADOL ADVANCE",
+   "forma_doza": "Tableta të veshura me film500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 564,
+   "emri_tregtar": "PANADOL EXTRA",
+   "forma_doza": "Tableta të veshura me film (500 mg + 65 mg)",
+   "lenda_aktive": "PARACETAMOL + CAFFEINE",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 565,
+   "emri_tregtar": "PANFUREX",
+   "forma_doza": "Pezulli për përdorim nga goja 4% (w/w)",
+   "lenda_aktive": "NIFUROXAZIDE",
+   "paketimi": "Kuti me 1 shishe 90ml"
+  },
+  {
+   "nr": 566,
+   "emri_tregtar": "PANSORAL",
+   "forma_doza": "Xhel për përdorim oromukozal (8.7g + 0.01g)/100g",
+   "lenda_aktive": "CHOLINE SALICYLATE + CETALKONIUM CHLORIDE",
+   "paketimi": "Kuti me 1 tubet me 15g"
+  },
+  {
+   "nr": 567,
+   "emri_tregtar": "PANTELMIN",
+   "forma_doza": "Tableta 100ng",
+   "lenda_aktive": "MEBENDAZOLE",
+   "paketimi": "Kuti me 6"
+  },
+  {
+   "nr": 568,
+   "emri_tregtar": "PARACETAMAX",
+   "forma_doza": "Tableta të veshura me film 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 24"
+  },
+  {
+   "nr": 569,
+   "emri_tregtar": "PARACETAMAX KIDS",
+   "forma_doza": "Tretësirë për përdorim nga goja 24 mg/ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe 100ml"
+  },
+  {
+   "nr": 570,
+   "emri_tregtar": "PARACETAMOL",
+   "forma_doza": "Pezulli për përdorim nga goja 120 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe qelqi 100ml"
+  },
+  {
+   "nr": 571,
+   "emri_tregtar": "PARACETAMOL",
+   "forma_doza": "Pezulli për përdorim nga goja 250 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe qelqi 100ml"
+  },
+  {
+   "nr": 572,
+   "emri_tregtar": "PARACETAMOL",
+   "forma_doza": "Suposta 100 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 573,
+   "emri_tregtar": "PARACETAMOL",
+   "forma_doza": "Suposta 125 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 574,
+   "emri_tregtar": "PARACETAMOL",
+   "forma_doza": "Suposta 250 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 575,
+   "emri_tregtar": "PARACETAMOL",
+   "forma_doza": "Shurup 120 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe qelqi 100ml"
+  },
+  {
+   "nr": 576,
+   "emri_tregtar": "PARACETAMOL",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20 ose 60"
+  },
+  {
+   "nr": 577,
+   "emri_tregtar": "PARACETAMOL + KOFEIN",
+   "forma_doza": "Tableta (500 mg + 65 mg)",
+   "lenda_aktive": "PARACETAMOL + CAFFEINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 578,
+   "emri_tregtar": "PARACETAMOL ATB",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 579,
+   "emri_tregtar": "PARACETAMOL EG",
+   "forma_doza": "Tableta eferveshente 1000 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 8"
+  },
+  {
+   "nr": 580,
+   "emri_tregtar": "PARACETAMOL SOPHARMA",
+   "forma_doza": "Shurup 120 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe 125ml"
+  },
+  {
+   "nr": 581,
+   "emri_tregtar": "PARACETAMOLO NOVA ARGENTIA",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 582,
+   "emri_tregtar": "PARAFEN",
+   "forma_doza": "Tableta të veshura me film (200 mg + 500 mg)",
+   "lenda_aktive": "IBUPROFEN + PARACETAMOL",
+   "paketimi": "Kuti me 10 ose 20"
+  },
+  {
+   "nr": 583,
+   "emri_tregtar": "PARALEN GRIP",
+   "forma_doza": "Tableta të veshura me film (500 mg + 25 mg + 5 mg)",
+   "lenda_aktive": "PARACETAMOL + CAFFEINE + PHENYLEPHRINE",
+   "paketimi": "Kuti me 12 ose 24"
+  },
+  {
+   "nr": 584,
+   "emri_tregtar": "PARALEN GRIP HORKY NAPOJ",
+   "forma_doza": "Granula për pezulli për përdorim nga goja (650 mg + 10 mg/qeskë)",
+   "lenda_aktive": "PARACETAMOL + PHENYEPHRINE",
+   "paketimi": "Kuti me 6 qeska"
+  },
+  {
+   "nr": 585,
+   "emri_tregtar": "PARAMOLAN",
+   "forma_doza": "Tretësirë për përdorim nga goja 24 mg/ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe qelqi 100ml ose 200ml"
+  },
+  {
+   "nr": 586,
+   "emri_tregtar": "PARAMOLAN",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 587,
+   "emri_tregtar": "PARAMOLAN",
+   "forma_doza": "Tretësirë për përdorim nga goja 24 mg/ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 flakon qelqi me 100ml ose 200ml"
+  },
+  {
+   "nr": 588,
+   "emri_tregtar": "PARAMOLAN C",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (500 mg + 250 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ACID ASCORBIC",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 589,
+   "emri_tregtar": "PARASIDOSE",
+   "forma_doza": "Shampo 0.2g/100ml",
+   "lenda_aktive": "PHENOTHRINE",
+   "paketimi": "Kuti me 1 shishe 100ml"
+  },
+  {
+   "nr": 590,
+   "emri_tregtar": "PARCOTEN",
+   "forma_doza": "Tableta (500 mg + 10 mg)",
+   "lenda_aktive": "PARACETAMOL + CODEINE PHOSPHATE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 591,
+   "emri_tregtar": "PEDIFEN",
+   "forma_doza": "Shurup 100 mg/5ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 flakon qelqi me 100ml"
+  },
+  {
+   "nr": 592,
+   "emri_tregtar": "PEKTUSOL",
+   "forma_doza": "Shurup 15 mg/5ml",
+   "lenda_aktive": "DEXTROMETHORPHAN",
+   "paketimi": "Kuti me 1 shishe qelqi me 100ml"
+  },
+  {
+   "nr": 593,
+   "emri_tregtar": "PENNSAID",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 1.5%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 shishe plastike me 30ml"
+  },
+  {
+   "nr": 594,
+   "emri_tregtar": "PERSEN",
+   "forma_doza": "Tableta të veshura (35 mg + 17.5 mg + 17.5 mg)",
+   "lenda_aktive": "VALERIANA OFFICINALIS + MELISSA + MENTHA PIPERITA",
+   "paketimi": "Kuti me 40"
+  },
+  {
+   "nr": 595,
+   "emri_tregtar": "PERTUSINE",
+   "forma_doza": "Shurup (120 mg + 10 mg)/g",
+   "lenda_aktive": "THYMI HERBA EXTRACT + POTASSIUM BROMIDE",
+   "paketimi": "Kuti me 1 shishe qelqi 100g"
+  },
+  {
+   "nr": 596,
+   "emri_tregtar": "PE-TAM adults",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 597,
+   "emri_tregtar": "PHARMAGRIP",
+   "forma_doza": "Kapsula të forta (500 mg + 10 mg + 4 mg)",
+   "lenda_aktive": "PARACETAMOL + PHENYLEPHRINE + CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 14"
+  },
+  {
+   "nr": 598,
+   "emri_tregtar": "PHARMAGRIP",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (650 mg + 10 mg + 4 mg)",
+   "lenda_aktive": "PARACETAMOL + PHENYLEPHRINE + CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 599,
+   "emri_tregtar": "PHARMATEX",
+   "forma_doza": "Ovulë 18.9 mg",
+   "lenda_aktive": "BENZALKONIUM CHLORIDE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 600,
+   "emri_tregtar": "PHARMATEX",
+   "forma_doza": "Tableta vaginale 20 mg",
+   "lenda_aktive": "BENZALKONIUM CHLORIDE",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 601,
+   "emri_tregtar": "PHARYNGEAL",
+   "forma_doza": "Tretësirë për spray oromukozal (2 + 0.5) mg/ml",
+   "lenda_aktive": "CHLORHEXIDINE + LIDOCAINE",
+   "paketimi": "Kuti me 1 flakon qelqi me 30ml"
+  },
+  {
+   "nr": 602,
+   "emri_tregtar": "PHLEBODIA",
+   "forma_doza": "Tableta të veshura me film 600 mg",
+   "lenda_aktive": "DIOSMIN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 603,
+   "emri_tregtar": "PHLOROGLUCINOL EG",
+   "forma_doza": "Tableta-karamele 80 mg",
+   "lenda_aktive": "PHLOROGLUCINOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 604,
+   "emri_tregtar": "PIKOVIT",
+   "forma_doza": "Tableta të veshura (600 IU + 80 IU + 10 mg + 0.25 mg + 0.3 mg + 0.3 mg + 0.2µg + 3 mg + 1.2 mg + 0.04 mg + 12.5 mg + 10 mg)",
+   "lenda_aktive": "RETINYL PALMITATE + CHOLECALCIFEROL + ASCORBIC ACID + THIAMINE + RIBOFLAVIN + PYRIDOXINE + CYANOCOBALAMIN + NICOTINAMIDE + CALCIUM PANTHOTENATE + FOLIC ACID + CALCIUM HYDROGEN PHOSPHATE + CALCIUM HYDROGEN PHOSPHATE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 605,
+   "emri_tregtar": "PIKOVIT",
+   "forma_doza": "Shurup (900 IU + 100 IU + 50 mg + 1 mg + 1 mg + 0.6 mg + 1µg + 5 mg + 2 mg)/5ml",
+   "lenda_aktive": "RETINYL PALMITATE + CHOLECALCIFEROL + ASCORBIC ACID + THIAMINE + RIBOFLAVIN + PYRIDOXINE + CYANOCOBALAMIN + NICOTINAMIDE + DEXPANTHENOL",
+   "paketimi": "Kuti me 1 flakon 150ml"
+  },
+  {
+   "nr": 606,
+   "emri_tregtar": "PIKOVIT FORTE",
+   "forma_doza": "Tableta të veshura (5000 IU + 400 IU + 60 mg + 20 mg + 15 mg + 10 mg + 2 mg + 1.7 mg + 1.5 mg + 0.4 mg + 6µg)",
+   "lenda_aktive": "RETYNIL PALMITATE + CHOLECALCIFEROL + ASCORBIC ACID + NICOTINAMIDE + TOCOPHERYL ACETATE + CALCIUM PANTOTHENATE + PYRIDOXINE + RIBOFLAVIN + VITAMIN B1 (THIAMINE NITRATE) + FOLIC ACID + VITAMIN B12 (CYANOCOBALAMIN)",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 607,
+   "emri_tregtar": "PIPERAZINE",
+   "forma_doza": "Tableta 250 mg",
+   "lenda_aktive": "PIPERAZINE ADIPATE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 608,
+   "emri_tregtar": "PLANTABEN",
+   "forma_doza": "Pluhur eferveshent 3.5g",
+   "lenda_aktive": "PLANTAGO OVATA (ISPAGHULA)",
+   "paketimi": "Kuti me 30 qeska"
+  },
+  {
+   "nr": 609,
+   "emri_tregtar": "PONSTAN",
+   "forma_doza": "Tableta të veshura me film 500 mg",
+   "lenda_aktive": "MEFENAMIC ACID",
+   "paketimi": "Kuti me 15"
+  },
+  {
+   "nr": 610,
+   "emri_tregtar": "PONSTAN",
+   "forma_doza": "Pezulli për përdorim nga goja 50 mg/5ml",
+   "lenda_aktive": "MEFENAMIC ACID",
+   "paketimi": "Kuti me 1 shishe qelqi me 125ml"
+  },
+  {
+   "nr": 611,
+   "emri_tregtar": "POSTINOR-2",
+   "forma_doza": "Tableta 0.75 mg",
+   "lenda_aktive": "LEVONORGESTREL",
+   "paketimi": "Kuti me 2"
+  },
+  {
+   "nr": 612,
+   "emri_tregtar": "POVIDON JOD",
+   "forma_doza": "Tretësirë 10% (w/w)",
+   "lenda_aktive": "POVIDONE IODINE",
+   "paketimi": "Kuti me 1 shishe plastike 100ml"
+  },
+  {
+   "nr": 613,
+   "emri_tregtar": "POVIDON JOD",
+   "forma_doza": "Ovulë 200 mg",
+   "lenda_aktive": "POVIDONE IODINE",
+   "paketimi": "Kuti me 14"
+  },
+  {
+   "nr": 614,
+   "emri_tregtar": "POVIDON JOD",
+   "forma_doza": "Tretësirë 100 mg/ml",
+   "lenda_aktive": "POVIDONE IODINE",
+   "paketimi": "Kuti me 1 shishe plastike 100ml"
+  },
+  {
+   "nr": 615,
+   "emri_tregtar": "PRESSING",
+   "forma_doza": "Shurup 5 mg/5ml",
+   "lenda_aktive": "LORATADINE",
+   "paketimi": "Kuti me 1 shishe me 120ml"
+  },
+  {
+   "nr": 616,
+   "emri_tregtar": "PRIAXEN",
+   "forma_doza": "Tableta 250 mg",
+   "lenda_aktive": "NAPROXEN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 617,
+   "emri_tregtar": "PRIZITEC",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 618,
+   "emri_tregtar": "PRIZITEC",
+   "forma_doza": "Pika për përdorim nga goja, tretësirë 10 mg/ml",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 1 shishe qelqi of 20ml"
+  },
+  {
+   "nr": 619,
+   "emri_tregtar": "PRODBENZOATE",
+   "forma_doza": "Emulsion 25% (w/v)",
+   "lenda_aktive": "BENZYL BENZOATE",
+   "paketimi": "Kuti me 1 shishe plastike me 200ml"
+  },
+  {
+   "nr": 620,
+   "emri_tregtar": "PROMETAZINA NOVA ARGENTIA",
+   "forma_doza": "Krem 2% (w/w)",
+   "lenda_aktive": "PROMETHAZINE",
+   "paketimi": "Kuti me 1 tubet 30 g"
+  },
+  {
+   "nr": 621,
+   "emri_tregtar": "PROMETAZINA ZETA FARMACEUTICI",
+   "forma_doza": "Krem 2%",
+   "lenda_aktive": "PROMETHAZINE",
+   "paketimi": "Kuti me 1 tubet 30g"
+  },
+  {
+   "nr": 622,
+   "emri_tregtar": "PRONAX",
+   "forma_doza": "Tableta të veshura me film 250 mg",
+   "lenda_aktive": "NAPROXEN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 623,
+   "emri_tregtar": "PROSTATA STADA",
+   "forma_doza": "Tableta të veshura me film 125 mg",
+   "lenda_aktive": "STINGING NETTLE ROOT",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 624,
+   "emri_tregtar": "PROTARGOL",
+   "forma_doza": "Tretësirë, pika për hundë ose vesh 0.5%",
+   "lenda_aktive": "SILVER PROTEINATE",
+   "paketimi": "Kuti me 1 flakon me 10ml"
+  },
+  {
+   "nr": 625,
+   "emri_tregtar": "PROTARGOL",
+   "forma_doza": "Tretësirë, pika për hundë ose vesh 1%",
+   "lenda_aktive": "SILVER PROTEINATE",
+   "paketimi": "Kuti me 1 flakon me 10ml"
+  },
+  {
+   "nr": 626,
+   "emri_tregtar": "PROTARGOL",
+   "forma_doza": "Tretësirë, pika për hundë ose vesh 2%",
+   "lenda_aktive": "SILVER PROTEINATE",
+   "paketimi": "Kuti me 1 flakon me 10ml"
+  },
+  {
+   "nr": 627,
+   "emri_tregtar": "PULMOBAILLY",
+   "forma_doza": "Tretësirë për përdorim nga goja (0.08g + 1.5g)/100ml",
+   "lenda_aktive": "CODEINE + GUAIACOL",
+   "paketimi": "Kuti me 1 shishe me 125ml"
+  },
+  {
+   "nr": 628,
+   "emri_tregtar": "PULMODEXANE 30 MG",
+   "forma_doza": "Tableta të veshura me film s 30 mg",
+   "lenda_aktive": "DEXTROMETHORPHAN",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 629,
+   "emri_tregtar": "PULMODEXANE 300 MG/100ML SANS SUCRE",
+   "forma_doza": "Tretësirë për përdorim nga goja 300 mg/100ml",
+   "lenda_aktive": "DEXTROMETHORPHAN",
+   "paketimi": "Kuti me 1 shishe me 150ml"
+  },
+  {
+   "nr": 630,
+   "emri_tregtar": "PULMOSERUM",
+   "forma_doza": "Tretësirë për përdorim nga goja (0.08g +0.5g)/100ml",
+   "lenda_aktive": "CODEINE + GUAIACOL",
+   "paketimi": "Kuti me 1 shishe me 200ml"
+  },
+  {
+   "nr": 631,
+   "emri_tregtar": "PURGO - PIL",
+   "forma_doza": "Tableta gastrorezistente 10 mg",
+   "lenda_aktive": "BISACODYL",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 632,
+   "emri_tregtar": "PYOREX",
+   "forma_doza": "Pastë dhëmbësh (0.0067g + 0.76g)/100g",
+   "lenda_aktive": "ETHACIDRINE LACTATE + RICINOLEATE SODIUM",
+   "paketimi": "Kuti me 1 tubet me 90g"
+  },
+  {
+   "nr": 633,
+   "emri_tregtar": "RAD-ASPIRINA",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 634,
+   "emri_tregtar": "RADERMIN",
+   "forma_doza": "Xhel 10%",
+   "lenda_aktive": "ETOFENAMATE",
+   "paketimi": "Kuti me 1 tubet me 100g"
+  },
+  {
+   "nr": 635,
+   "emri_tregtar": "RANIMED ANTACID SANDOZ",
+   "forma_doza": "Tableta të veshura me film 75 mg",
+   "lenda_aktive": "RANITIDINE",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 636,
+   "emri_tregtar": "RAPIDOL",
+   "forma_doza": "Kapsula të buta 200 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 637,
+   "emri_tregtar": "RAPIDOL S",
+   "forma_doza": "Kapsula të buta 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 638,
+   "emri_tregtar": "REKONAZOL",
+   "forma_doza": "Krem 20 mg/g",
+   "lenda_aktive": "KETOCONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 639,
+   "emri_tregtar": "REMETHAN",
+   "forma_doza": "Xhel 1%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 tubet me 20g ose 50g"
+  },
+  {
+   "nr": 640,
+   "emri_tregtar": "REPARIL",
+   "forma_doza": "Tableta të veshura gastrorezistente 20 mg",
+   "lenda_aktive": "ESCIN",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 641,
+   "emri_tregtar": "REPARIL-Xhel N",
+   "forma_doza": "Xhel (1g + 5g)/100g",
+   "lenda_aktive": "ESCIN + DIETHYLAMINE SALICYLATE",
+   "paketimi": "Kuti me 1 tubet me 100g"
+  },
+  {
+   "nr": 642,
+   "emri_tregtar": "RESOCINE",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 1500 mg/qeskë",
+   "lenda_aktive": "GLUCOSAMINE SULPHATE",
+   "paketimi": "Kuti me 30 qeska"
+  },
+  {
+   "nr": 643,
+   "emri_tregtar": "RESPIBIEN",
+   "forma_doza": "Spraj për hundë, tretësirë 0.5 mg/ml",
+   "lenda_aktive": "OXYMETAZOLINE",
+   "paketimi": "Kuti me 1 flakon 15ml"
+  },
+  {
+   "nr": 644,
+   "emri_tregtar": "RHINAMIDE",
+   "forma_doza": "Spraj për hundë, tretësirë 91G + 0.2G)/100ml",
+   "lenda_aktive": "EPHEDRINE + BENZOIC ACID",
+   "paketimi": "Kuti me 1 flakon-nebulizator me 20ml"
+  },
+  {
+   "nr": 645,
+   "emri_tregtar": "RHINOCAP",
+   "forma_doza": "Kapsula (10 mg + 20 mg + 25 mg)",
+   "lenda_aktive": "DIMENHYDRINATE + PHENYLEPHRINE + CAFFEINE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 646,
+   "emri_tregtar": "RHINOSTOP",
+   "forma_doza": "Shurup (101 mg + 20.20 mg + 1.01 mg)",
+   "lenda_aktive": "PARACETAMOL + PSEUDOEPHEDRINE + CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 1 shishe 100ml"
+  },
+  {
+   "nr": 647,
+   "emri_tregtar": "RHINOSTOP",
+   "forma_doza": "Tableta (251 mg + 61.2 mg + 2.54 mg)",
+   "lenda_aktive": "PARACETAMOL + PSEUDOEPHEDRINE + CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 648,
+   "emri_tregtar": "RINASEK",
+   "forma_doza": "Shurup (30 mg + 1.25 mg)/5ml",
+   "lenda_aktive": "PSEUDOEPHEDRINE + TRIPROLIDINE",
+   "paketimi": "Kuti me 1 shishe me 100ml"
+  },
+  {
+   "nr": 649,
+   "emri_tregtar": "RINASEK",
+   "forma_doza": "Tableta (60 mg + 2.5 mg)",
+   "lenda_aktive": "PSEUDOEPHEDRINE + TRIPROLIDINE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 650,
+   "emri_tregtar": "RINOFLUIMUCIL",
+   "forma_doza": "Spraj për hundë, tretësirë (1% + 0.5%)",
+   "lenda_aktive": "ACETYLCYSTEINE + TUAMINOHEPTANE SULPHATE",
+   "paketimi": "Kuti me 1 shishe qelqi me 10ml"
+  },
+  {
+   "nr": 651,
+   "emri_tregtar": "RIOPAN",
+   "forma_doza": "Xhel oromukozal 1600 mg/10ml",
+   "lenda_aktive": "MAGALDRATE",
+   "paketimi": "Kuti me 10 ose 20 qeska"
+  },
+  {
+   "nr": 652,
+   "emri_tregtar": "RIVANOL",
+   "forma_doza": "Tretësirë 0.1%",
+   "lenda_aktive": "ETHACRIDINE LACTATE",
+   "paketimi": "Kuti me 1 shishe qelqi me 100ml"
+  },
+  {
+   "nr": 653,
+   "emri_tregtar": "ROFEN",
+   "forma_doza": "Xhel 2.5%",
+   "lenda_aktive": "KETOPROFEN",
+   "paketimi": "Kuti me 1 tubet me 50 mg"
+  },
+  {
+   "nr": 654,
+   "emri_tregtar": "ROWACHOL",
+   "forma_doza": "Kapsula të buta gastrorezistente (13.6 mg + 3.4 mg + 5 mg + 2 mg + 6 mg + 32 mg + 5 mg)",
+   "lenda_aktive": "α-PINENE + β-PINENE + CAMPHENE + CINEOL + MENTHONE + LEVOMENTHOL + BORNEOL",
+   "paketimi": "Kuti me 30 ose 50"
+  },
+  {
+   "nr": 655,
+   "emri_tregtar": "ROWACHOL",
+   "forma_doza": "Pika për përdorim nga goja, tretësirë (13.6 mg + 3.4 mg + 5 mg + 2 mg + 6 mg + 32 mg + 5 mg) / 100g",
+   "lenda_aktive": "α-PINENE + β-PINENE + CAMPHENE + CINEOL + MENTHONE + MENTOL + BORNEOL",
+   "paketimi": "Kuti me 1 flakon-pikatore qelqi 10ml ose 20ml"
+  },
+  {
+   "nr": 656,
+   "emri_tregtar": "ROWATINEX",
+   "forma_doza": "Kapsula të buta gastrorezistente (24.8 mg + 6.2 mg + 15 mg + 3 mg + 4 mg + 10 mg + 4 mg)",
+   "lenda_aktive": "α-PINENE + β-PINENE + CAMPHENE + CINEOL + FENCHONE + BORNEOL + ANETHOL",
+   "paketimi": "Kuti me 30; Kuti me 50"
+  },
+  {
+   "nr": 657,
+   "emri_tregtar": "ROWATINEX",
+   "forma_doza": "Pika për përdorim nga goja, tretësirë (24.8 mg + 6.2 mg + 15 mg + 3 mg + 4 mg + 10 mg + 4 mg)/100g",
+   "lenda_aktive": "α-PINENE + β-PINENE + CAMPHENE + CINEOL + FENCHONE + BORNEOL + ANETHOL",
+   "paketimi": "Kuti me 1 flakon-pikatore qelqi 10ml ose 20ml"
+  },
+  {
+   "nr": 658,
+   "emri_tregtar": "RUPAN",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 659,
+   "emri_tregtar": "RUPAN",
+   "forma_doza": "Tableta të veshura me film 200 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 660,
+   "emri_tregtar": "RUTACID",
+   "forma_doza": "Tableta për t’u përtypur 500 mg",
+   "lenda_aktive": "HYDROTALCITE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 661,
+   "emri_tregtar": "RUVOMINOX",
+   "forma_doza": "Xhel për përdorim të jashtëm 10 mg/g",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 tubet me 100g"
+  },
+  {
+   "nr": 662,
+   "emri_tregtar": "SALONPAS",
+   "forma_doza": "Plaster (1.32 + 1.2 + 0.26 + 0.42) mg/cm2",
+   "lenda_aktive": "METHYL SALICYLATE + MENTHOL + CAMPHOR + TOCOPHEROL ACETATE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 663,
+   "emri_tregtar": "SALOSPIR",
+   "forma_doza": "Tableta gastrorezistente 100 mg",
+   "lenda_aktive": "ACETYLSALICYLIC ACID",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 664,
+   "emri_tregtar": "SEDAFEIN",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (500 mg + 65 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + CAFFEINE",
+   "paketimi": "Kuti me 6 qeska"
+  },
+  {
+   "nr": 665,
+   "emri_tregtar": "SEDALGIN-NEO",
+   "forma_doza": "Tableta (300 mg + 150 mg + 50 mg + 15 mg + 10 mg)",
+   "lenda_aktive": "PARACETAMOL + METAMIZOLE SODIUM + CAFFEINE + PHENOBARBITAL + CODEINE PHOSPHATE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 666,
+   "emri_tregtar": "SEPTANAZAL FOR ADULTS",
+   "forma_doza": "Spraj për hundë, tretësirë (1 mg + 50 mg)/1ml",
+   "lenda_aktive": "XYLOMETAZOLINE + DEXPANTHENOL",
+   "paketimi": "Kuti me 1 shishe 10ml"
+  },
+  {
+   "nr": 667,
+   "emri_tregtar": "SEPTANAZAL FOR CHILDREN",
+   "forma_doza": "Spraj për hundë, tretësirë (0.5 mg + 50 mg)/1ml",
+   "lenda_aktive": "XYLOMETAZOLINE + DEXPANTHENOL",
+   "paketimi": "Kuti me 1 shishe 10ml"
+  },
+  {
+   "nr": 668,
+   "emri_tregtar": "SEPTOLETE APPLE",
+   "forma_doza": "Tableta-karamele 1.2 mg",
+   "lenda_aktive": "CETYLPYRIDINUM CHLORIDE",
+   "paketimi": "Kuti me 18"
+  },
+  {
+   "nr": 669,
+   "emri_tregtar": "SEPTOLETE CHERRY",
+   "forma_doza": "Tableta-karamele 1.2 mg",
+   "lenda_aktive": "CETYLPYRIDINUM CHLORIDE",
+   "paketimi": "Kuti me 18"
+  },
+  {
+   "nr": 670,
+   "emri_tregtar": "SEPTOLETE D MENTHOL",
+   "forma_doza": "Tableta-karamele 1 mg",
+   "lenda_aktive": "BENZALKONIUM CHLORIDE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 671,
+   "emri_tregtar": "SEPTOLETE LEMON",
+   "forma_doza": "Tableta-karamele 1.2 mg",
+   "lenda_aktive": "CETYLPYRIDINUM CHLORIDE",
+   "paketimi": "Kuti me 18"
+  },
+  {
+   "nr": 672,
+   "emri_tregtar": "SEPTOLETE MENTHOL",
+   "forma_doza": "Tableta-karamele 1 mg",
+   "lenda_aktive": "BENZALKONIUM CHLORIDE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 673,
+   "emri_tregtar": "SEPTOLETE PLUS",
+   "forma_doza": "Tableta-karamele (5 mg+1 mg)",
+   "lenda_aktive": "BENZOCAINE + CETYLPYRIDINE CHLORIDE",
+   "paketimi": "Kuti me 18"
+  },
+  {
+   "nr": 674,
+   "emri_tregtar": "SEPTOLETE PLUS",
+   "forma_doza": "Tretësirë për spraj për përdorim nga goja (2 mg + 10 mg)/ml",
+   "lenda_aktive": "CETYLPYRIDINUM CHLORIDE + BENZOCAINE",
+   "paketimi": "Kuti me 1 kontejner plastik me 30ml"
+  },
+  {
+   "nr": 675,
+   "emri_tregtar": "SEPTOLETE PLUS HONEY AND LIME",
+   "forma_doza": "Tableta-karamele (5 mg + 1 mg)",
+   "lenda_aktive": "BENZOCAINE + CETYLPIRIDINIUM CHLORIDE",
+   "paketimi": "Kuti me 18"
+  },
+  {
+   "nr": 676,
+   "emri_tregtar": "SEPTOLETE TOTAL",
+   "forma_doza": "Spray oromukozal (1.5 mg + 5 mg)/ml",
+   "lenda_aktive": "BENZYDAMINE + CETYLPYRIDINIUM",
+   "paketimi": "Kuti me 1 flakon plastik për spray me 30ml"
+  },
+  {
+   "nr": 677,
+   "emri_tregtar": "SEPTOLETE TOTAL",
+   "forma_doza": "Tabletë për t’u mbajtur në gojë (3 mg + 1 mg)",
+   "lenda_aktive": "BENZYDAMINE + CETYLPYRIDINIUM",
+   "paketimi": "Kuti me 16 tableta"
+  },
+  {
+   "nr": 678,
+   "emri_tregtar": "SERTOFEN",
+   "forma_doza": "Tabletë e veshur me film 25 mg",
+   "lenda_aktive": "DEXKETOPROFEN",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 679,
+   "emri_tregtar": "SERRAGRIP",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (650 mg + 10 mg + 4 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + PHENYEPHRINE + CHLORPHENAMINE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 680,
+   "emri_tregtar": "SINEDOL",
+   "forma_doza": "Xhel (500IU + 150 mg + 25 mg)g",
+   "lenda_aktive": "HEPARIN SODIUM + DIMETHYL SULFOXIDE + DEXPANTHENOL",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 681,
+   "emri_tregtar": "SIVERIO",
+   "forma_doza": "Pezulli për përdorim nga goja 40 mg/ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 flakon me 100ml"
+  },
+  {
+   "nr": 682,
+   "emri_tregtar": "SKINOREN 20%",
+   "forma_doza": "Krem 20G/100G",
+   "lenda_aktive": "AZELAIC ACID",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 683,
+   "emri_tregtar": "SNUP",
+   "forma_doza": "Tretësirë për spray për hundë 0,0005",
+   "lenda_aktive": "XYLOMETAZOLINE",
+   "paketimi": "Kuti me 1 flakon me 10ml"
+  },
+  {
+   "nr": 684,
+   "emri_tregtar": "SNUP",
+   "forma_doza": "Tretësirë për spray për hundë 0,001",
+   "lenda_aktive": "XYLOMETAZOLINE",
+   "paketimi": "Kuti me 1 flakon me 10ml"
+  },
+  {
+   "nr": 685,
+   "emri_tregtar": "SODIO BICARBONATO NOVA ARGENTIA",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "SODIUM BICARBONATE",
+   "paketimi": "Kuti me 50"
+  },
+  {
+   "nr": 686,
+   "emri_tregtar": "SODIO FOSFATO NOVA ARGENTIA",
+   "forma_doza": "Tretësirë për përdorim rektal (16% + 6%)",
+   "lenda_aktive": "MONOBASIC SODIUM PHOSPHATE + DIBASIC SODIUM PHOSPHATE",
+   "paketimi": "Kuti me 1 shishe me 120ml"
+  },
+  {
+   "nr": 687,
+   "emri_tregtar": "SOLCOSERYL",
+   "forma_doza": "Xhel 4.15 mg/g",
+   "lenda_aktive": "PROTEIN-FREE HAEMODIALYSATE OF BLOOD OF VEAL CALVES",
+   "paketimi": "Kuti me 1 tubet 20g"
+  },
+  {
+   "nr": 688,
+   "emri_tregtar": "SOLCOSERYL",
+   "forma_doza": "Pomadë 2.07 mg/g",
+   "lenda_aktive": "PROTEIN-FREE HAEMODIALYSATE OF BLOOD OF VEAL CALVES",
+   "paketimi": "Kuti me 1 tubet 20g"
+  },
+  {
+   "nr": 689,
+   "emri_tregtar": "SOLTRIK",
+   "forma_doza": "Pezulli për përdorim nga goja 100 mg/5ml",
+   "lenda_aktive": "MEBENDAZOLE",
+   "paketimi": "Kuti me 1 shishe me 30ml"
+  },
+  {
+   "nr": 690,
+   "emri_tregtar": "SOLUBACTER",
+   "forma_doza": "Tretësirë për përdorim lokal 1g/100 ml",
+   "lenda_aktive": "TRICLOCARBAN",
+   "paketimi": "Kuti me 1 flakon 150ml ose 400ml"
+  },
+  {
+   "nr": 691,
+   "emri_tregtar": "SOLUCION FIZIOLOGJIK",
+   "forma_doza": "Tretësirë 0.9%",
+   "lenda_aktive": "SODIUM CHLORIDE",
+   "paketimi": "Kuti me flakon 10ml"
+  },
+  {
+   "nr": 692,
+   "emri_tregtar": "SOLUCIS",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 1500 mg/qeskë",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 693,
+   "emri_tregtar": "SOLUCIS",
+   "forma_doza": "Shurup 100 mg/ml",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 200ml"
+  },
+  {
+   "nr": 694,
+   "emri_tregtar": "SOLUCIS",
+   "forma_doza": "Shurup 50 mg/ml",
+   "lenda_aktive": "CARBOCISTEINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 200ml"
+  },
+  {
+   "nr": 695,
+   "emri_tregtar": "SOPULMIN",
+   "forma_doza": "Tretësirë për nebulizator 40 mg/3 ml",
+   "lenda_aktive": "SOBREROL",
+   "paketimi": "Kuti me 10 ampula me 3 ml"
+  },
+  {
+   "nr": 696,
+   "emri_tregtar": "SOPULMIN",
+   "forma_doza": "Suposta 100 mg",
+   "lenda_aktive": "SOBREROL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 697,
+   "emri_tregtar": "SOPULMIN",
+   "forma_doza": "Shurup 40 mg/5 ml",
+   "lenda_aktive": "SOBREROL",
+   "paketimi": "Kuti me 1 flakon me 200 ml"
+  },
+  {
+   "nr": 698,
+   "emri_tregtar": "SPASMOBLOC",
+   "forma_doza": "Tableta (500 mg + 5 mg + 0,1 mg)",
+   "lenda_aktive": "METAMIZOLE SODIUM + PITOFENONE + FENPIVERINIUM",
+   "paketimi": "Kuti me 20 tableta"
+  },
+  {
+   "nr": 699,
+   "emri_tregtar": "SPAZMOTEK PLUS",
+   "forma_doza": "Tableta të veshura me film (500 mg + 10 mg)",
+   "lenda_aktive": "PARACETAMOL + HYOSCINE N-BUTYLBROMIDE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 700,
+   "emri_tregtar": "SPIDIDOL",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 701,
+   "emri_tregtar": "SPIDIDOL",
+   "forma_doza": "Granula për tretësirë për përdorim nga goja 400 mg/qeskë",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 12 qeska"
+  },
+  {
+   "nr": 702,
+   "emri_tregtar": "SPIDIFEN",
+   "forma_doza": "Tableta të veshura me film 400 mg",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 703,
+   "emri_tregtar": "SPIRITUS AETHYLICUS KUPRO 95%",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 95% (v/v)",
+   "lenda_aktive": "ETHANOL",
+   "paketimi": "Shishe plastike me 100ml ose 1000ml"
+  },
+  {
+   "nr": 704,
+   "emri_tregtar": "STIDERM GEL",
+   "forma_doza": "Xhel (15 mg + 15 mg + 55 mg)/g",
+   "lenda_aktive": "MEPYRAMINE + LIDOCAINE + DEXPANTHENOL",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 705,
+   "emri_tregtar": "STIMOL",
+   "forma_doza": "Tretësirë për përdorim nga goja 1g/10ml",
+   "lenda_aktive": "CITRULLINE MALATE",
+   "paketimi": "Kuti me 18 qeska"
+  },
+  {
+   "nr": 706,
+   "emri_tregtar": "STOMAKURAN",
+   "forma_doza": "Pezulli 40%",
+   "lenda_aktive": "SULFANILAMIDE",
+   "paketimi": "Kuti me 1 shishe qelqi 15g"
+  },
+  {
+   "nr": 707,
+   "emri_tregtar": "STREPSILS HONEY & LEMON",
+   "forma_doza": "Tabletë për t’u mbajtur në gojë (1.2 mg + 0.6 mg)",
+   "lenda_aktive": "DICHLOROBENZYL ALCOHOL + AMYLMETACRESOL",
+   "paketimi": "Kuti me 24 tableta"
+  },
+  {
+   "nr": 708,
+   "emri_tregtar": "STREPSILS PLUS",
+   "forma_doza": "Tabletë për t’u mbajtur në gojë (1.2 mg + 0.6 mg + 1.56 mg)",
+   "lenda_aktive": "2.4 DICHLOROBENZYL ALCOHOL + AMYLMETACRESOL + LIDOCAINE",
+   "paketimi": "Kuti me 24 tableta"
+  },
+  {
+   "nr": 709,
+   "emri_tregtar": "STREPSILS STRAWBERRY SUGAR FREE",
+   "forma_doza": "Tabletë për t’u mbajtur në gojë (1.2 mg + 0.6 mg)",
+   "lenda_aktive": "DICHLOROBENZYL ALCOHOL + AMYLMETACRESOL",
+   "paketimi": "Kuti me 24 tableta"
+  },
+  {
+   "nr": 710,
+   "emri_tregtar": "STRUCTUM",
+   "forma_doza": "Kapsula 500 mg",
+   "lenda_aktive": "CHONDROITIN SULFATE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 711,
+   "emri_tregtar": "SUFIGAL",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 1500 mg/qeskë",
+   "lenda_aktive": "GLUCOSAMINE SULPHATE",
+   "paketimi": "Kuti me 30 qeska"
+  },
+  {
+   "nr": 712,
+   "emri_tregtar": "SUPOFEN",
+   "forma_doza": "Suposta 125 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 713,
+   "emri_tregtar": "SUPOFEN",
+   "forma_doza": "Suposta 250 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 714,
+   "emri_tregtar": "SUPOFEN",
+   "forma_doza": "Shurup 40 mg/ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe qelqi 85ml"
+  },
+  {
+   "nr": 715,
+   "emri_tregtar": "SUPOFEN",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 716,
+   "emri_tregtar": "SURFONT",
+   "forma_doza": "Tableta 100 mg",
+   "lenda_aktive": "MEBENDAZOLE",
+   "paketimi": "Kuti me 6"
+  },
+  {
+   "nr": 717,
+   "emri_tregtar": "SYMPATHYL",
+   "forma_doza": "Tableta të veshura me film (20 mg + 75 mg + 125.35 mg)",
+   "lenda_aktive": "ESCHSCHOLTZIA EXTRACT + HAWTHORN BLOSSOM EXTRACT + MAGNESIUM OXIDE",
+   "paketimi": "Kuti me 40"
+  },
+  {
+   "nr": 718,
+   "emri_tregtar": "TACHICAF",
+   "forma_doza": "Granula eferveshente për tretësirë për përdorim nga goja (1000 mg + 130 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + CAFFEINE",
+   "paketimi": "Kuti me 16 qeska"
+  },
+  {
+   "nr": 719,
+   "emri_tregtar": "TACHIFLUDEC (Lemon and Honey flavour)",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (600 mg + 40 mg + 10 mg)/ qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + PHENYLEPHRINE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 720,
+   "emri_tregtar": "TACHIFLUDEC (Lemon flavour)",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (600 mg + 40 mg + 10 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + ASCORBIC ACID + PHENYLEPHRINE",
+   "paketimi": "Kuti me 10 qeska"
+  },
+  {
+   "nr": 721,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Granula eferveshente 125 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 722,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Granula eferveshente 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 723,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Tableta eferveshente 1000 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 12"
+  },
+  {
+   "nr": 724,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Suposta 1000 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 725,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Suposta 125 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 726,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Suposta 250 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 727,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Suposta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 728,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 729,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Pika për përdorim nga goja, tretësirë 100 mg/ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe 30ml"
+  },
+  {
+   "nr": 730,
+   "emri_tregtar": "TACHIPIRINA",
+   "forma_doza": "Shurup 120 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 shishe qelqi 120ml"
+  },
+  {
+   "nr": 731,
+   "emri_tregtar": "TANFLEX",
+   "forma_doza": "Tretësirë për gargare 180 mg/120ml",
+   "lenda_aktive": "BENZYDAMIN",
+   "paketimi": "Kuti me flakon me 120ml"
+  },
+  {
+   "nr": 732,
+   "emri_tregtar": "TANFLEX",
+   "forma_doza": "Tretësirë për spraj në gojë 0.15%",
+   "lenda_aktive": "BENZYDAMIN",
+   "paketimi": "Kuti me flakon me 30ml"
+  },
+  {
+   "nr": 733,
+   "emri_tregtar": "TANFLEX PLUS",
+   "forma_doza": "Tretësirë për spray (0.15% + 0.12%)",
+   "lenda_aktive": "BENZYDAMINE + CHLORHEXIDINE",
+   "paketimi": "Kuti me 1 flakon qelqi/pompë për spray me 30ml"
+  },
+  {
+   "nr": 734,
+   "emri_tregtar": "TANTUM VERDE",
+   "forma_doza": "Tretësirë për gargare 0.15% (w/v)",
+   "lenda_aktive": "BENZYDAMINE",
+   "paketimi": "Kuti me 1 flakon me 120ml"
+  },
+  {
+   "nr": 735,
+   "emri_tregtar": "TANTUM VERDE",
+   "forma_doza": "Tretësirë për spraj në gojë 0.15% (w/v)",
+   "lenda_aktive": "BENZYDAMINE",
+   "paketimi": "Kuti me 1 flakon-nebulizator me 30ml"
+  },
+  {
+   "nr": 736,
+   "emri_tregtar": "TANTUM VERDE",
+   "forma_doza": "Tretësirë për spraj në gojë 0.3% (w/v)",
+   "lenda_aktive": "BENZYDAMINE",
+   "paketimi": "Kuti me 1 flakon-nebulizator me 15ml"
+  },
+  {
+   "nr": 737,
+   "emri_tregtar": "TANTUM VERDE P",
+   "forma_doza": "Tableta-karamele 3 mg",
+   "lenda_aktive": "BENZYDAMINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 738,
+   "emri_tregtar": "TARDYFERON",
+   "forma_doza": "Tableta të veshura 80 mg",
+   "lenda_aktive": "FERROUS SULPHATE",
+   "paketimi": ""
+  },
+  {
+   "nr": 739,
+   "emri_tregtar": "TARDYFERON B9",
+   "forma_doza": "Tableta (50 mg + 0.35 mg)",
+   "lenda_aktive": "FERROUS SULPHATE + FOLIC ACID",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 740,
+   "emri_tregtar": "TAVIPEC",
+   "forma_doza": "Kapsula150 mg",
+   "lenda_aktive": "LAVANDULAE LATIFOLIAE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 741,
+   "emri_tregtar": "TEARPROL",
+   "forma_doza": "Tretësirë, pika për sy (0,1% + 0,3%",
+   "lenda_aktive": "DEXTRAN + HYPROMELLOSE",
+   "paketimi": "Kuti me 1 flakon-pikatore plastik me 15ml"
+  },
+  {
+   "nr": 742,
+   "emri_tregtar": "TEARS NATURALE II",
+   "forma_doza": "Pika për sy, tretësirë (1 mg + 3 mg)/ml",
+   "lenda_aktive": "DEXTRAN 70 + HYPROMELLOSE",
+   "paketimi": "Kuti me 1 flakon me 15ml"
+  },
+  {
+   "nr": 743,
+   "emri_tregtar": "TELARIX",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 744,
+   "emri_tregtar": "TELFAST",
+   "forma_doza": "Tableta të veshura me film 120 mg",
+   "lenda_aktive": "FEXOFENADIN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 745,
+   "emri_tregtar": "TEMAGIN PAC",
+   "forma_doza": "Tableta (250 mg + 250 mg + 50 mg)",
+   "lenda_aktive": "ACETYLSALICYLIC ACID + PARACETAMOL + CAFFEINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 746,
+   "emri_tregtar": "TEMAGIN PARACETAMOL PLUS",
+   "forma_doza": "Tableta (350 mg + 50 mg)",
+   "lenda_aktive": "PARACETAMOL + CAFFEINE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 747,
+   "emri_tregtar": "TEMPALGIN",
+   "forma_doza": "Tableta të veshura me film (500 mg + 20 mg)",
+   "lenda_aktive": "METAMIZOLE SODIUM + TRIACETONAMINE-4- TOLUENSULFONATE",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 748,
+   "emri_tregtar": "TERAGRIP",
+   "forma_doza": "Tabletë e veshur me film (650 mg + 10 mg + 4 mg)",
+   "lenda_aktive": "PARACETAMOL + PHENYLEPHRINE + CHLORPHENIRAMINE",
+   "paketimi": "Kuti me 30 tableta"
+  },
+  {
+   "nr": 749,
+   "emri_tregtar": "TERBIGRAM",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "TERBINAFINE",
+   "paketimi": "Kuti me 1 tubet 30g"
+  },
+  {
+   "nr": 750,
+   "emri_tregtar": "TERBIGRAM",
+   "forma_doza": "Tretësirë për lëkurë 1%",
+   "lenda_aktive": "TERBINAFINE",
+   "paketimi": "Kuti me 1 shishe plastike 30ml"
+  },
+  {
+   "nr": 751,
+   "emri_tregtar": "TERBITAL",
+   "forma_doza": "Krem 10 mg/g",
+   "lenda_aktive": "TERBINAFINE",
+   "paketimi": "Kuti me tubet 15g"
+  },
+  {
+   "nr": 752,
+   "emri_tregtar": "TERBONILE",
+   "forma_doza": "Krem 1%",
+   "lenda_aktive": "TERBINAFINE",
+   "paketimi": "Kuti me 1 tubet 15g"
+  },
+  {
+   "nr": 753,
+   "emri_tregtar": "TERBONILE",
+   "forma_doza": "Spraj për lëkurë 1%",
+   "lenda_aktive": "TERBINAFINE",
+   "paketimi": "Kuti me 1 shishe 30ml"
+  },
+  {
+   "nr": 754,
+   "emri_tregtar": "TERBUL",
+   "forma_doza": "Krem 10 mg/g",
+   "lenda_aktive": "TIOCONAZOLE",
+   "paketimi": "Kuti me 1 tubet me 30g"
+  },
+  {
+   "nr": 755,
+   "emri_tregtar": "TETRAMIL",
+   "forma_doza": "Pika për sy, tretësirë (0.3% + 0.05%) w/v",
+   "lenda_aktive": "PHENIRAMINE MALEATE + TETRYZOLINE HYDROCHLORIDE",
+   "paketimi": "Kuti me 1 flakon 10ml"
+  },
+  {
+   "nr": 756,
+   "emri_tregtar": "TIYOKAS",
+   "forma_doza": "Xhel (1.25% + 0.25%)",
+   "lenda_aktive": "DEXKETOPROFEN + THIOCOLCHICOSIDE",
+   "paketimi": "Kuti me nje tubet me 30g"
+  },
+  {
+   "nr": 757,
+   "emri_tregtar": "TOCELIV",
+   "forma_doza": "Shurup 2 mg/ml",
+   "lenda_aktive": "DEXTROMETHORPHAN",
+   "paketimi": "Kuti me 1 flakon qelqi me 200ml"
+  },
+  {
+   "nr": 758,
+   "emri_tregtar": "TOT'HEMA",
+   "forma_doza": "Tretësirë për përdorim nga goja (50 mg + 1.33 mg + 0.7 mg)/10ml",
+   "lenda_aktive": "FERROUS GLUCONATE + MANGANESE GLUCONATE + COPPER GLUCONATE",
+   "paketimi": "Kuti me 20 ampoules me 10ml"
+  },
+  {
+   "nr": 759,
+   "emri_tregtar": "TRAKTUS",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja 600 mg/qeskë",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 30 qeska"
+  },
+  {
+   "nr": 760,
+   "emri_tregtar": "TRAVMAGEL",
+   "forma_doza": "Xhel 1%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 tubet me 60 g"
+  },
+  {
+   "nr": 761,
+   "emri_tregtar": "TREBON-N",
+   "forma_doza": "Granula për pezulli për përdorim nga goja 200 mg/qeskë",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 762,
+   "emri_tregtar": "TREBON-N",
+   "forma_doza": "Granula për pezulli për përdorim nga goja 600 mg/qeskë",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 20 qeska"
+  },
+  {
+   "nr": 763,
+   "emri_tregtar": "TREBON-N",
+   "forma_doza": "Pluhur për pezulli për përdorim nga goja 200 mg/5ml",
+   "lenda_aktive": "ACETYLCYSTEINE",
+   "paketimi": "Kuti me 1 shishe qelqi me 120ml"
+  },
+  {
+   "nr": 764,
+   "emri_tregtar": "TRIBESTAN",
+   "forma_doza": "Tableta të veshura me film 250 mg",
+   "lenda_aktive": "TRIBULUS TERRESTRIS",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 765,
+   "emri_tregtar": "TRIFENE",
+   "forma_doza": "Pezulli për përdorim nga goja 20 mg/ml",
+   "lenda_aktive": "IBUPROFEN",
+   "paketimi": "Kuti me 1 shishe qelqi me 200ml"
+  },
+  {
+   "nr": 766,
+   "emri_tregtar": "TROMALYT",
+   "forma_doza": "Kapsula të forta me çlirim të ngadalte 150 mg",
+   "lenda_aktive": "ACETYLSALICILIC ACID",
+   "paketimi": "Kuti me 28"
+  },
+  {
+   "nr": 767,
+   "emri_tregtar": "TROPEX",
+   "forma_doza": "Pika për vesh, tretësirë 5% (w/v)",
+   "lenda_aktive": "PHENAZONE",
+   "paketimi": "Kuti me 1 shishe qelqi me 10ml"
+  },
+  {
+   "nr": 768,
+   "emri_tregtar": "TROXEVASIN",
+   "forma_doza": "Xhel 2%",
+   "lenda_aktive": "TROXERUTIN",
+   "paketimi": "Kuti me 1 tubet 40g"
+  },
+  {
+   "nr": 769,
+   "emri_tregtar": "TUSIPEKTOL",
+   "forma_doza": "Shurup (0.6 mg + 0.08 mg + 40 mg + 90 mg)/1g",
+   "lenda_aktive": "CODEINE+ BENZALDEHYDE + TOLU BALSAM + THYME",
+   "paketimi": "Kuti me 1 shishe me 100g"
+  },
+  {
+   "nr": 770,
+   "emri_tregtar": "TUSSAVIT",
+   "forma_doza": "Shurup (7.53g + 7.53g)/100g",
+   "lenda_aktive": "THYME EXTRACT + PLANTAGO LANCEOLATA",
+   "paketimi": "Kuti me 1 shishe qelqi me 125g ose 250g"
+  },
+  {
+   "nr": 771,
+   "emri_tregtar": "TUSSIDANE SUGAR FREE (SANS SUCRE)",
+   "forma_doza": "Tretësirë për përdorim nga goja 1.5 mg/ml",
+   "lenda_aktive": "DEXTROMETHORPHAN",
+   "paketimi": "Kuti me 1 shishe qelqi me 250ml"
+  },
+  {
+   "nr": 772,
+   "emri_tregtar": "TYLOFEN HOT PACKET",
+   "forma_doza": "Pluhur për tretësirë për përdorim nga goja (500 mg + 4 mg + 10 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + CHLORPHENIRAMINE + PHENYLEPHRINE",
+   "paketimi": "Kuti me 12 qeska"
+  },
+  {
+   "nr": 773,
+   "emri_tregtar": "TYLOL",
+   "forma_doza": "Tableta 500 mg",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 774,
+   "emri_tregtar": "TYLOL COLD",
+   "forma_doza": "Shurup (160 mg + 1 mg + 5 mg +15 mg)/5ml",
+   "lenda_aktive": "PARACETAMOL + CHLORPHENIRAMINE + DEXTROMETHORPHAN + PSEUDOEPHEDRINE",
+   "paketimi": "Kuti me 1 flakon 100ml"
+  },
+  {
+   "nr": 775,
+   "emri_tregtar": "TYLOL HOT",
+   "forma_doza": "Granula eferveshente për pezulli për përdorim nga goja (500 mg + 4 mg + 60 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + CHLORPHENIRAMINE + PSEUDOEPHEDRINE",
+   "paketimi": "Kuti me 12 qeska"
+  },
+  {
+   "nr": 776,
+   "emri_tregtar": "TYLOL HOT PEDIATRIC",
+   "forma_doza": "Pluhur eferveshent për pezulli për përdorim nga goja (250 mg + 2 mg + 30 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + CHLORPHENIRAMINE+ PSEUDOEPHEDRINE",
+   "paketimi": "Kuti me 12 qeska"
+  },
+  {
+   "nr": 777,
+   "emri_tregtar": "TYLOL HOT-D",
+   "forma_doza": "Pluhur eferveshent për pezulli për përdorim nga goja (500 mg + 4 mg + 60 mg)/qeskë",
+   "lenda_aktive": "PARACETAMOL + CHLORPHENIRAMINE + PSEUDOEPHEDRINE",
+   "paketimi": "Kuti me 12 qeska"
+  },
+  {
+   "nr": 778,
+   "emri_tregtar": "TYLOL SUSPENSION",
+   "forma_doza": "Pezulli për përdorim nga goja 120 mg/5ml",
+   "lenda_aktive": "PARACETAMOL",
+   "paketimi": "Kuti me 1 flakon 100ml"
+  },
+  {
+   "nr": 779,
+   "emri_tregtar": "THEINOL",
+   "forma_doza": "Tretësirë për përdorim nga goja (2.7g + 0.266g)/100ml",
+   "lenda_aktive": "PARACETAMOL + CAFFEINE",
+   "paketimi": "Kuti me 1 shishe 125ml"
+  },
+  {
+   "nr": 780,
+   "emri_tregtar": "UJË I OKSIGJENUAR",
+   "forma_doza": "Tretësirë 30 mg/ml",
+   "lenda_aktive": "HYDROGEN PEROXIDE",
+   "paketimi": "Flakon me 100ml"
+  },
+  {
+   "nr": 781,
+   "emri_tregtar": "UJË PËR INJEKSION",
+   "forma_doza": "Ujë për injeksion",
+   "lenda_aktive": "WATER FOR INJECTION",
+   "paketimi": "Kuti me 10 ampula 2ml, 5ml ose 10ml"
+  },
+  {
+   "nr": 782,
+   "emri_tregtar": "ULTRA STRENGTH OVOL",
+   "forma_doza": "Tabletë 180 mg",
+   "lenda_aktive": "SIMETHICONE",
+   "paketimi": "Kuti me 16 ose 32 tableta"
+  },
+  {
+   "nr": 783,
+   "emri_tregtar": "VACONTIL",
+   "forma_doza": "Tabletë 2 mg",
+   "lenda_aktive": "LOPERAMIDE",
+   "paketimi": "Kuti me 40 tableta"
+  },
+  {
+   "nr": 784,
+   "emri_tregtar": "VAGOSTABYL",
+   "forma_doza": "Tableta të veshura (50 mg + 45 mg + 10 mg + 50 mg)",
+   "lenda_aktive": "HAWTHORN EXTRACT + LEMON BALM EXTRACT + CALCIUM LACTATE + MAGNESIUM THIOSULPHATE",
+   "paketimi": "Kuti me 40"
+  },
+  {
+   "nr": 785,
+   "emri_tregtar": "VALERIANA NOVA ARGENTIA",
+   "forma_doza": "Tableta 50 mg",
+   "lenda_aktive": "VALERIANA OFFICINALIS EXTRACT",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 786,
+   "emri_tregtar": "VARUMIN",
+   "forma_doza": "Tretësirë perorale (99.5 mg + 0.3g)/100ml (VARUMIN 1) + (99.5 mg + 0.8g)/100ml (VARUMIN 2)",
+   "lenda_aktive": "VISCI HERBA EXTRACT + PROPOLIS + ALOE DRY EXTRACT + RADIX INULAE HELENII EXTRACT(INULA) + COPRTEX CORNUS MAS + CALLENDULAE EXTRACT + HERBA MILEFOLII EXTRACT + RHIZOMA CYNODON DACTILLON EXTRACT + ALOE DRY EXTRACT",
+   "paketimi": "Kuti me 1 shishe qelqi"
+  },
+  {
+   "nr": 787,
+   "emri_tregtar": "VASOCODEINE NAPHAZOLINE",
+   "forma_doza": "Spraj për hundë, tretësirë 0.1%",
+   "lenda_aktive": "NAPHAZOLINE",
+   "paketimi": "Kuti me 1 flakon 15ml"
+  },
+  {
+   "nr": 788,
+   "emri_tregtar": "VENOSAN",
+   "forma_doza": "Xhel (10 mg + 10 mg + 100 IU)/1g",
+   "lenda_aktive": "AESCIN + ESSENTIAL PHOSPHOLIPIDS + HEPARIN SODIUM",
+   "paketimi": "Kuti me 1 tubet me 40g"
+  },
+  {
+   "nr": 789,
+   "emri_tregtar": "VENOSMINE",
+   "forma_doza": "Tableta 450 mg",
+   "lenda_aktive": "DIOSMIN",
+   "paketimi": "Kuti me 20"
+  },
+  {
+   "nr": 790,
+   "emri_tregtar": "VERMOX",
+   "forma_doza": "Pezulli për përdorim nga goja 20 mg/ml",
+   "lenda_aktive": "MEBENDAZOLE",
+   "paketimi": "Kuti me 1 shishe qelqi me 30ml"
+  },
+  {
+   "nr": 791,
+   "emri_tregtar": "VEROLAX",
+   "forma_doza": "Tretësirë për përdorim rektal 2.25g",
+   "lenda_aktive": "GLYCERIN",
+   "paketimi": "Kuti me 6"
+  },
+  {
+   "nr": 792,
+   "emri_tregtar": "VEROLAX",
+   "forma_doza": "Tretësirë për përdorim rektal 6.75g",
+   "lenda_aktive": "GLYCERIN",
+   "paketimi": "Kuti me 6"
+  },
+  {
+   "nr": 793,
+   "emri_tregtar": "VILONIT",
+   "forma_doza": "Xhel për përdorim të jashtëm 10 mg/g",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 tubet me 100g"
+  },
+  {
+   "nr": 794,
+   "emri_tregtar": "VIRANTI 5%",
+   "forma_doza": "Stik kutan 5%",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 stik kutan"
+  },
+  {
+   "nr": 795,
+   "emri_tregtar": "VIRZIN",
+   "forma_doza": "Krem 5%",
+   "lenda_aktive": "ACICLOVIR",
+   "paketimi": "Kuti me 1 tubet me 5g ose 15g"
+  },
+  {
+   "nr": 796,
+   "emri_tregtar": "VITAMIN B1",
+   "forma_doza": "Tableta 10 mg",
+   "lenda_aktive": "THIAMINE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 797,
+   "emri_tregtar": "VITAMIN B6",
+   "forma_doza": "Tableta 25 mg",
+   "lenda_aktive": "PYRIDOXINE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 798,
+   "emri_tregtar": "VITAMINE B KOMPLEKS",
+   "forma_doza": "Tableta të veshura (5 mg + 2 mg + 2 mg + 30 mg)",
+   "lenda_aktive": "THIAMINE + PYRIDOXINE+ RIBOFLAVIN + NICOTINAMIDE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 799,
+   "emri_tregtar": "VITAMINE B KOMPLEKS",
+   "forma_doza": "Tableta të veshura (5 mg + 2 mg + 2 mg + 30 mg)",
+   "lenda_aktive": "THIAMINE HYDROCHLORIDE + PIRIDOXINE HYDROCHLORIDE + RIBOFLAVIN + NICOTINAMIDE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 800,
+   "emri_tregtar": "VITAMINE B1",
+   "forma_doza": "Tableta 10 mg",
+   "lenda_aktive": "THIAMINE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 801,
+   "emri_tregtar": "VITAMINE B6",
+   "forma_doza": "Tableta 25 mg",
+   "lenda_aktive": "PYRIDOXINE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 802,
+   "emri_tregtar": "VITAMINE C",
+   "forma_doza": "Tableta 100 mg",
+   "lenda_aktive": "ASCORBIC ACID",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 803,
+   "emri_tregtar": "VITAMINE C",
+   "forma_doza": "Tableta 100 mg",
+   "lenda_aktive": "ASCORBIC ACID",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 804,
+   "emri_tregtar": "VITAMINE C QUALIPHAR",
+   "forma_doza": "Tableta-karamele 500 mg",
+   "lenda_aktive": "ASCORBIC ACID + CALCIUM ASCORBATE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 805,
+   "emri_tregtar": "VITAMINE E",
+   "forma_doza": "Tableta të veshura 10 mg",
+   "lenda_aktive": "TOCOPHEROL ACETATE",
+   "paketimi": "Kuti me 60"
+  },
+  {
+   "nr": 806,
+   "emri_tregtar": "VURDON",
+   "forma_doza": "Tretësirë për përdorim në lëkurë 1.5%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me 1 flakon plastik me 30ml"
+  },
+  {
+   "nr": 807,
+   "emri_tregtar": "VURDON",
+   "forma_doza": "Xhel për përdorim të jashtëm 1%",
+   "lenda_aktive": "DICLOFENAC SODIUM",
+   "paketimi": "Kuti me tubet me 25g ose 100g"
+  },
+  {
+   "nr": 808,
+   "emri_tregtar": "XYZAL",
+   "forma_doza": "Tableta të veshura me film 5 mg",
+   "lenda_aktive": "LEVOCETIRIZINE",
+   "paketimi": "Kuti me 10"
+  },
+  {
+   "nr": 809,
+   "emri_tregtar": "XYZAL",
+   "forma_doza": "Tretësirë për pika për përdorim nga goja 5 mg/ml",
+   "lenda_aktive": "LEVOCETIRIZINE",
+   "paketimi": "Kuti me shishe me 20ml"
+  },
+  {
+   "nr": 810,
+   "emri_tregtar": "ZICAM",
+   "forma_doza": "Xhel për përdorim në hundë 0.05%",
+   "lenda_aktive": "OXYMETAZOLINE",
+   "paketimi": "Kuti me 1 flakon 15ml"
+  },
+  {
+   "nr": 811,
+   "emri_tregtar": "ZINCO OSSIDO NOVA ARGENTIA",
+   "forma_doza": "Pomadë 10% (w/w)",
+   "lenda_aktive": "ZINC OXIDE",
+   "paketimi": "Kuti me 1 tubet 30g"
+  },
+  {
+   "nr": 812,
+   "emri_tregtar": "ZIREX",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 30"
+  },
+  {
+   "nr": 813,
+   "emri_tregtar": "ZYRTEC",
+   "forma_doza": "Tableta të veshura me film 10 mg",
+   "lenda_aktive": "CETIRIZINE",
+   "paketimi": "Kuti me 10"
+  }
+ ]
+}
